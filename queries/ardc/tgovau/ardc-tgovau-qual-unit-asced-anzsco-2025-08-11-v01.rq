@@ -1,0 +1,99 @@
+/* -----------------------------------------------------------
+Title: ARDC → TGA quals + units + ASCED + ANZSCO (seeded)
+Endpoint: https://demo.vocabs.ardc.edu.au/repository/api/sparql/dewr_skills-knowledge-graph_11-august-2025
+Graphs:
+  - https://data.jobsandskills.gov.au/graph/Skills
+  - https://data.jobsandskills.gov.au/graph/TrainingGovAu
+  - https://data.jobsandskills.gov.au/graph/ASCED
+  - https://data.jobsandskills.gov.au/graph/ANZSCO
+Notes:
+  - schema.org is HTTPS in this store
+  - ANZSCO traversal bounded (no * range)
+----------------------------------------------------------- */
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms:<http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+
+SELECT DISTINCT
+  ?qualification ?unit
+  ?experience
+  ?level ?levelLabel
+  ?asced ?ascedLabel
+  ?tgaIndustry ?tgaIndustryLabel
+  ?tgaOccupation ?tgaOccupationLabel
+  ?occupation ?occupationLabel
+  ?recognizedBy
+WHERE {
+  # Seed quals that DO have unit links (keeps it fast)
+  {
+    SELECT DISTINCT ?qualification
+    WHERE {
+      GRAPH <https://data.jobsandskills.gov.au/graph/TrainingGovAu> {
+        ?unit dcterms:isRequiredBy ?qualification .
+      }
+    }
+    LIMIT 50           # bump slowly if you want more rows
+  }
+
+  GRAPH <https://data.jobsandskills.gov.au/graph/TrainingGovAu> {
+    OPTIONAL { ?unit dcterms:isRequiredBy ?qualification . }
+    OPTIONAL { ?qualification dcterms:requires ?unit . }  # just in case some are reciprocal
+
+    OPTIONAL { ?qualification schema:recognizedBy ?recognizedBy . }
+
+    OPTIONAL { ?qualification schema:OccupationalExperienceRequirements ?experience . }
+    OPTIONAL { ?qualification schema:experienceRequirements ?experience . }  # fallback, often 0 here
+
+    OPTIONAL {
+      ?qualification schema:credentialCategory ?level .
+      OPTIONAL {
+        ?level skos:prefLabel ?levelLabel .
+        FILTER (lang(?levelLabel) = "" || langMatches(lang(?levelLabel),"en"))
+      }
+    }
+
+    OPTIONAL { ?qualification schema:about ?asced . }
+
+    OPTIONAL {
+      ?tgaIndustry schema:qualifications ?qualification ;
+                   skos:inScheme <https://training.gov.au/trainingIndustry/1> ;
+                   skos:prefLabel ?tgaIndustryLabel .
+    }
+    OPTIONAL {
+      ?tgaOccupation schema:qualifications ?qualification ;
+                     skos:inScheme <https://training.gov.au/trainingOccupation/1> ;
+                     skos:prefLabel ?tgaOccupationLabel .
+    }
+  }
+
+  OPTIONAL {
+    GRAPH <https://data.jobsandskills.gov.au/graph/ASCED> {
+      ?asced skos:prefLabel ?ascedLabel .
+      FILTER (lang(?ascedLabel) = "" || langMatches(lang(?ascedLabel),"en"))
+    }
+  }
+
+  OPTIONAL {
+    GRAPH <https://data.jobsandskills.gov.au/graph/ANZSCO> {
+      VALUES ?schema_quals { <https://schema.org/qualifications> }
+      {
+        ?occupationParent ?schema_quals ?qualification .
+        BIND(?occupationParent AS ?occupation)
+      }
+      UNION {
+        ?occupationParent ?schema_quals ?qualification .
+        ?occupationParent skos:narrower ?occupation .
+      }
+      UNION {
+        ?occupationParent ?schema_quals ?qualification .
+        ?occupationParent skos:narrower/skos:narrower ?occupation .
+      }
+      UNION {
+        ?occupationParent ?schema_quals ?qualification .
+        ?occupationParent skos:narrower/skos:narrower/skos:narrower ?occupation .
+      }
+      OPTIONAL { ?occupation skos:prefLabel ?occupationLabel . }
+    }
+  }
+}
+LIMIT 300
