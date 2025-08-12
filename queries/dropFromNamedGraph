@@ -1,0 +1,5 @@
+# drops a triple from a named graph
+
+PREFIX schema: <https://schema.org/>
+DELETE { GRAPH <https://data.jobsandskills.gov.au/graph/TrainingGovAu> { ?x a schema:credentialCategory } }
+WHERE  { GRAPH <https://data.jobsandskills.gov.au/graph/TrainingGovAu> { ?x a schema:credentialCategory } }
