@@ -1,0 +1,600 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix schema: <https://schema.org/> .
+
+<https://ror.org/05mbkbj54>
+a schema:Organization ;
+schema:name "United States Department of Labor" ;
+schema:url "http://www.dol.gov/"^^xsd:anyURI 
+.
+
+<https://linked.data.gov.au/org/jsa>
+a schema:Organization ;
+schema:name "Jobs and Skills Australia"@en ;
+schema:url: "https://www.jobsandskills.gov.au/"^^xsd:anyURI
+.
+
+<http://example.com/ONET>
+  a skos:ConceptScheme;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:title "ONET"@en;
+  dcterms:created "2025-02-24T04:24:20.420Z"^^xsd:dateTime;
+  dcterms:publisher <https://linked.data.gov.au/org/jsa> ;
+  dcterms:description "ONET Online"@en;
+  skos:definition "O*NET OnLine has detailed descriptions of the world of work for use by job seekers, workforce development and HR professionals, students, developers and researchers."@en ;
+  skos:historyNote "Presented here in RDF as part of the National Skills Taxonomy project at Jobs and Skills Australia"@en ;
+  schema:citation "https://www.onetonline.org/"^^xsd:anyURI ;
+  skos:prefLabel "ONET"@en;
+  dcterms:subject "Skills"@en;
+  dcterms:modified "2025-03-03T05:39:19.843Z"^^xsd:dateTime;
+  skos:hasTopConcept <http://example.com/ONET/66ce2a2a-23e8-41f2-814e-ef53dafc8e32>,
+    <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284> .
+
+<http://example.com/ONET/66ce2a2a-23e8-41f2-814e-ef53dafc8e32>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:25:07.192Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Basic skills are developed capacities that facilitate learning or the more rapid acquisition of knowledge. Open and explore the folders below to see the different categories and levels of information. Ratings on occupations are available at the most detailed level."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:topConceptOf <http://example.com/ONET> ;
+  skos:prefLabel "Basic skills"@en;
+  skos:narrower <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168>,
+    <http://example.com/ONET/79490531-7b90-45b1-bc1a-15ddaaf0421a>;
+  dcterms:modified "2025-03-07T04:00:25.844Z"^^xsd:dateTime .
+
+<http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:27:19.767Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Background structures needed to work with and acquire more specific skills in a variety of different domains."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:prefLabel "Content skills"@en;
+  skos:narrower <http://example.com/ONET/0e828b54-d181-4c16-97a8-4aa50fee7d44>,
+    <http://example.com/ONET/6879266f-6314-44d8-8de7-40b245c07ecd>,
+    <http://example.com/ONET/9ae25600-00e4-49d5-89e7-120a7b47fe34>,
+    <http://example.com/ONET/18c8cb4e-7eae-47bf-95f6-f047c488d7f2>,
+    <http://example.com/ONET/76f4301a-fbcf-4d3c-88d4-41d38b530fd2>,
+    <http://example.com/ONET/4a59f937-c4eb-4372-a14d-132a85661b81>;
+  dcterms:modified "2025-02-26T04:49:47.333Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/66ce2a2a-23e8-41f2-814e-ef53dafc8e32> .
+
+<http://example.com/ONET/6879266f-6314-44d8-8de7-40b245c07ecd>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:42:06.501Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Using mathematics to solve problems."@en;
+  skos:inScheme <http://example.com/ONET> ;
+   skos:notation "2.A.1.e"^^xsd:token ;
+  skos:prefLabel "Mathematics"@en;
+  dcterms:modified "2025-02-26T04:50:09.876Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168> .
+
+<http://example.com/ONET/76f4301a-fbcf-4d3c-88d4-41d38b530fd2>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:42:30.809Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Talking to others to convey information effectively."@en;
+  skos:inScheme <http://example.com/ONET> ;
+   skos:notation "2.A.1.d"^^xsd:token ;
+  skos:prefLabel "Speaking"@en;
+  dcterms:modified "2025-02-26T04:50:17.268Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168> .
+
+<http://example.com/ONET/9ae25600-00e4-49d5-89e7-120a7b47fe34>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:42:19.105Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Understanding written sentences and paragraphs in work-related documents."@en;
+  skos:inScheme <http://example.com/ONET> ;
+   skos:notation "2.A.1.a"^^xsd:token ;
+  skos:prefLabel "Reading Comprehesion"@en;
+  dcterms:modified "2025-02-26T04:50:11.856Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168> .
+
+<http://example.com/ONET/4a59f937-c4eb-4372-a14d-132a85661b81>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:42:40.172Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Communicating effectively in writing as appropriate for the needs of the audience."@en;
+  skos:inScheme <http://example.com/ONET> ;
+   skos:notation "2.A.1.c"^^xsd:token ;
+  skos:prefLabel "Writing"@en;
+  dcterms:modified "2025-02-26T04:50:20.017Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168> .
+
+<http://example.com/ONET/0e828b54-d181-4c16-97a8-4aa50fee7d44>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:28:07.566Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Giving full attention to what other people are saying, taking time to understand the points being made, asking questions as appropriate, and not interrupting at inappropriate times."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:notation "2.A.1.b"^^xsd:token ;
+  skos:prefLabel "Active listening"@en;
+  dcterms:modified "2025-02-26T04:50:07.097Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168> .
+
+<http://example.com/ONET/18c8cb4e-7eae-47bf-95f6-f047c488d7f2>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:42:25.026Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Using scientific rules and methods to solve problems."@en;
+  skos:inScheme <http://example.com/ONET> ;
+   skos:notation "2.A.1.f"^^xsd:token ;
+  skos:prefLabel "Science"@en;
+  dcterms:modified "2025-02-26T04:50:15.212Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168> .
+
+<http://example.com/ONET/79490531-7b90-45b1-bc1a-15ddaaf0421a>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:27:33.830Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Procedures that contribute to the more rapid acquisition of knowledge and skill across a variety of domains."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:prefLabel "Process skills"@en;
+  skos:narrower <http://example.com/ONET/5bcce485-9e47-4c03-8487-b1f1d1a33cf5>,
+    <http://example.com/ONET/96d16fa8-c173-4a57-9498-743ea784cf3f>,
+    <http://example.com/ONET/bd86a6dd-00f2-4984-ad05-807ceaf5e8c7>,
+    <http://example.com/ONET/560a8150-9321-4f87-a08b-d0cb10dbf295>;
+  dcterms:modified "2025-03-03T05:39:04.438Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/66ce2a2a-23e8-41f2-814e-ef53dafc8e32> .
+
+<http://example.com/ONET/bd86a6dd-00f2-4984-ad05-807ceaf5e8c7>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:44:59.800Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Monitoring/Assessing performance of yourself, other individuals, or organizations to make improvements or take corrective action."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:notation "2.A.2.d"^^xsd:token ;
+  skos:prefLabel "Monitoring"@en;
+  dcterms:modified "2025-02-26T04:50:32.316Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/79490531-7b90-45b1-bc1a-15ddaaf0421a> .
+
+<http://example.com/ONET/560a8150-9321-4f87-a08b-d0cb10dbf295>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-03-03T05:39:19.803Z"^^xsd:dateTime;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:notation "2.A.2.a"^^xsd:token ;
+  skos:prefLabel "Critical Thinking"@en;
+  skos:definition "Using logic and reasoning to identify the strengths and weaknesses of alternative solutions, conclusions, or approaches to problems."@en ;
+  dcterms:modified "2025-03-03T05:39:19.843Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/79490531-7b90-45b1-bc1a-15ddaaf0421a> .
+
+<http://example.com/ONET/5bcce485-9e47-4c03-8487-b1f1d1a33cf5>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:44:33.013Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Understanding the implications of new information for both current and future problem-solving and decision-making."@en;
+  skos:inScheme <http://example.com/ONET> ;
+   skos:notation "2.A.2.b"^^xsd:token ;
+  skos:prefLabel "Active learning"@en;
+  skos:definition "Understanding the implications of new information for both current and future problem-solving and decision-making."@en ;
+  dcterms:modified "2025-02-26T04:50:25.454Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/79490531-7b90-45b1-bc1a-15ddaaf0421a> .
+
+<http://example.com/ONET/96d16fa8-c173-4a57-9498-743ea784cf3f>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:44:52.718Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Selecting and using training/instructional methods and procedures appropriate for the situation when learning or teaching new things."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:notation "2.A.2.c"^^xsd:token ;
+  skos:prefLabel "Learning Strategies"@en;
+  skos:definition "Selecting and using training/instructional methods and procedures appropriate for the situation when learning or teaching new things."@en ;
+  dcterms:modified "2025-02-26T04:50:30.256Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/79490531-7b90-45b1-bc1a-15ddaaf0421a> .
+
+<http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:25:23.662Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Cross-functional skills are developed capacities that facilitate performance of activities that occur across jobs. Open and explore the folders below to see the different categories and levels of information. Ratings on occupations are available at the most detailed level."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:topConceptOf <http://example.com/ONET> ;
+  skos:prefLabel "Cross-Functional Skills"@en;
+  skos:narrower <http://example.com/ONET/70c0464f-44d7-4176-a654-524942f55573>,
+    <http://example.com/ONET/7acd1a44-49d9-482a-8695-403b284d09c3>,
+    <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce>,
+    <http://example.com/ONET/0a0a08e0-2744-4d81-bca8-2085fbb51faf>,
+    <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+  dcterms:modified "2025-02-26T04:49:52.153Z"^^xsd:dateTime .
+
+<http://example.com/ONET/70c0464f-44d7-4176-a654-524942f55573>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:56:26.337Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Developed capacities used to solve novel, ill-defined problems in complex, real-world settings."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:prefLabel "Complex Problem Solving Skills"@en;
+  skos:narrower <http://example.com/ONET/446af634-ad59-4e82-bcea-709bb388bbb9>;
+  dcterms:modified "2025-02-26T04:49:54.622Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284> .
+
+<http://example.com/ONET/446af634-ad59-4e82-bcea-709bb388bbb9>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:58:55.697Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:notation "2.B.2.i"^^xsd:token ;
+  skos:prefLabel "Complex Problem Solving"@en;
+  dcterms:modified "2025-02-26T04:50:42.235Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/70c0464f-44d7-4176-a654-524942f55573> .
+
+<http://example.com/ONET/0a0a08e0-2744-4d81-bca8-2085fbb51faf>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:56:56.882Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Developed capacities used to understand, monitor, and improve socio-technical systems."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:prefLabel "Systems Skills"@en;
+  skos:narrower <http://example.com/ONET/ba76569a-ce92-4988-bfcb-bf7acd165124>,
+    <http://example.com/ONET/12ae4b44-a7e1-494e-ac01-79c4da68d214>,
+    <http://example.com/ONET/eff5fb3d-9c07-4e1e-936b-af0c653ac951>;
+  dcterms:modified "2025-02-26T04:50:00.060Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284> .
+
+<http://example.com/ONET/ba76569a-ce92-4988-bfcb-bf7acd165124>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:07:33.324Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Considering the relative costs and benefits of potential actions to choose the most appropriate one."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.4.e"^^xsd:token ;
+  skos:prefLabel "Judgment and Decision Making"@en;
+  dcterms:modified "2025-02-26T04:51:14.219Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/0a0a08e0-2744-4d81-bca8-2085fbb51faf> .
+
+<http://example.com/ONET/12ae4b44-a7e1-494e-ac01-79c4da68d214>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:07:46.252Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Determining how a system should work and how changes in conditions, operations, and the environment will affect outcomes."@en;
+  skos:inScheme <http://example.com/ONET> ;
+        skos:notation "2.B.4.g"^^xsd:token ;
+  skos:prefLabel "Systems Analysis"@en;
+  dcterms:modified "2025-02-26T04:51:15.949Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/0a0a08e0-2744-4d81-bca8-2085fbb51faf> .
+
+<http://example.com/ONET/eff5fb3d-9c07-4e1e-936b-af0c653ac951>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:07:56.027Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Identifying measures or indicators of system performance and the actions needed to improve or correct performance, relative to the goals of the system."@en;
+  skos:inScheme <http://example.com/ONET> ;
+        skos:notation "2.B.4.h"^^xsd:token ;
+  skos:prefLabel "Systems Evaluation"@en;
+  dcterms:modified "2025-02-26T04:51:19.179Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/0a0a08e0-2744-4d81-bca8-2085fbb51faf> .
+
+<http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:57:05.211Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Developed capacities used to design, set-up, operate, and correct malfunctions involving application of machines or technological systems."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:prefLabel "Technical Skills"@en;
+  skos:narrower <http://example.com/ONET/2c00f89b-215d-46b1-9f76-2fd521593b65>,
+    <http://example.com/ONET/9d84fb54-e69b-4cad-9c87-a3a7c1b537e1>,
+    <http://example.com/ONET/d690eea0-fc6b-4bd7-a0b4-b11f1c7186aa>,
+    <http://example.com/ONET/4b35d001-ca13-440a-b259-45564fc1146f>,
+    <http://example.com/ONET/d2566666-3d19-40e4-8584-b15240b511df>,
+    <http://example.com/ONET/476c50a1-130f-4069-8494-38f50d84d339>,
+    <http://example.com/ONET/2c847e25-6477-4b51-9c69-c1e90243c7f6>,
+    <http://example.com/ONET/cc484d83-ff51-4e4a-8986-bcddef0be042>,
+    <http://example.com/ONET/e2b8ff5c-7dfc-496d-b22c-879d5e63d318>,
+    <http://example.com/ONET/fcad7934-ca31-47f6-bd02-06bd00840f63>,
+    <http://example.com/ONET/b20dcf59-83ad-4397-9ef8-835a4b590ae3>;
+  dcterms:modified "2025-02-26T04:50:01.808Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284> .
+
+<http://example.com/ONET/d690eea0-fc6b-4bd7-a0b4-b11f1c7186aa>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:09:45.417Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Installing equipment, machines, wiring, or programs to meet specifications."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.3.d"^^xsd:token ;
+  skos:prefLabel "Installation"@en;
+  dcterms:modified "2025-02-26T04:51:31.022Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65> .
+
+<http://example.com/ONET/2c847e25-6477-4b51-9c69-c1e90243c7f6>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:10:19.139Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Writing computer programs for various purposes."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.3.e"^^xsd:token ;
+  skos:prefLabel "Programming"@en;
+  dcterms:modified "2025-02-26T04:51:37.831Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65> .
+
+<http://example.com/ONET/d2566666-3d19-40e4-8584-b15240b511df>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:10:02.566Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Analyzing needs and product requirements to create a design."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.3.a"^^xsd:token ;
+  skos:prefLabel "Operations Analysis"@en;
+  dcterms:modified "2025-02-26T04:51:34.421Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65> .
+
+<http://example.com/ONET/e2b8ff5c-7dfc-496d-b22c-879d5e63d318>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:10:36.125Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Repairing machines or systems using the needed tools."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.3.l"^^xsd:token ;
+  skos:prefLabel "Repairing"@en;
+  dcterms:modified "2025-02-26T04:51:41.172Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65> .
+
+<http://example.com/ONET/fcad7934-ca31-47f6-bd02-06bd00840f63>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:10:43.645Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Generating or adapting equipment and technology to serve user needs."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.3.b"^^xsd:token ;
+  skos:prefLabel "Technology Design"@en;
+  dcterms:modified "2025-02-26T04:51:42.731Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65> .
+
+<http://example.com/ONET/2c00f89b-215d-46b1-9f76-2fd521593b65>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:09:28.369Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Performing routine maintenance on equipment and determining when and what kind of maintenance is needed."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.3.j"^^xsd:token ;
+  skos:prefLabel "Equipment Maintenance"@en;
+  dcterms:modified "2025-03-21T03:37:39.308Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65> .
+
+<http://example.com/ONET/476c50a1-130f-4069-8494-38f50d84d339>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:10:11.111Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Watching gauges, dials, or other indicators to make sure a machine is working properly."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.3.g"^^xsd:token ;
+  skos:prefLabel "Operations Monitoring"@en;
+  dcterms:modified "2025-02-26T04:51:36.059Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65> .
+
+<http://example.com/ONET/4b35d001-ca13-440a-b259-45564fc1146f>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:09:53.262Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Controlling operations of equipment or systems."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.3.h"^^xsd:token ;
+  skos:prefLabel "Operation and Control"@en;
+  dcterms:modified "2025-02-26T04:51:32.719Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65> .
+
+<http://example.com/ONET/9d84fb54-e69b-4cad-9c87-a3a7c1b537e1>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:09:36.981Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Determining the kind of tools and equipment needed to do a job."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.3.c"^^xsd:token ;
+  skos:prefLabel "Equipment Selection"@en;
+  dcterms:modified "2025-02-26T04:51:29.239Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65> .
+
+<http://example.com/ONET/b20dcf59-83ad-4397-9ef8-835a4b590ae3>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:10:52.191Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Determining causes of operating errors and deciding what to do about it."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.3.k"^^xsd:token ;
+  skos:prefLabel "Troubleshooting"@en;
+  dcterms:modified "2025-02-26T04:51:44.408Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65> .
+
+<http://example.com/ONET/cc484d83-ff51-4e4a-8986-bcddef0be042>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:10:28.291Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Conducting tests and inspections of products, services, or processes to evaluate quality or performance."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.3.m"^^xsd:token ;
+  skos:prefLabel "Quality Control Analysis"@en;
+  dcterms:modified "2025-02-26T04:51:39.507Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65> .
+
+<http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:56:48.270Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Developed capacities used to work with people to achieve goals."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:prefLabel "Social Skills"@en;
+  skos:narrower <http://example.com/ONET/72eab2d0-6a6a-4c9d-a316-6bac27757e29>,
+    <http://example.com/ONET/04a93f4a-4f1c-426c-9e62-3cad2d317a74>,
+    <http://example.com/ONET/c4d03976-b776-4aaf-8121-aa4ff474f51f>,
+    <http://example.com/ONET/a0a9b1b6-e875-4d93-b91f-31c9a68547bc>,
+    <http://example.com/ONET/d6462710-eaa8-4de5-84cb-1859a7873553>,
+    <http://example.com/ONET/a1b8971a-af5d-4a1a-89a1-f9f8c857619e>;
+  dcterms:modified "2025-02-26T04:49:58.292Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284> .
+
+<http://example.com/ONET/c4d03976-b776-4aaf-8121-aa4ff474f51f>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:03:01.013Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Bringing others together and trying to reconcile differences."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.1.d"^^xsd:token ;
+  skos:prefLabel "Negotiation"@en;
+  dcterms:modified "2025-02-26T04:51:02.976Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce> .
+
+<http://example.com/ONET/a0a9b1b6-e875-4d93-b91f-31c9a68547bc>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:03:10.298Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Persuading others to change their minds or behavior."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.1.c"^^xsd:token ;
+  skos:prefLabel "Persuasion"@en;
+  dcterms:modified "2025-02-26T04:51:04.607Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce> .
+
+<http://example.com/ONET/04a93f4a-4f1c-426c-9e62-3cad2d317a74>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:02:51.718Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Teaching others how to do something."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.1.e"^^xsd:token ;
+  skos:prefLabel "Instructing"@en;
+  dcterms:modified "2025-02-26T04:51:00.868Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce> .
+
+<http://example.com/ONET/d6462710-eaa8-4de5-84cb-1859a7873553>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:03:19.915Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Actively looking for ways to help people."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.1.f"^^xsd:token ;
+  skos:prefLabel "Service Orientation"@en;
+  dcterms:modified "2025-02-26T04:51:06.300Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce> .
+
+<http://example.com/ONET/72eab2d0-6a6a-4c9d-a316-6bac27757e29>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:02:39.612Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Adjusting actions in relation to others' actions."@en;
+  skos:inScheme <http://example.com/ONET> ;
+    skos:notation "2.B.1.b"^^xsd:token ;
+  skos:prefLabel "Coordination"@en;
+  dcterms:modified "2025-02-26T04:50:59.183Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce> .
+
+<http://example.com/ONET/a1b8971a-af5d-4a1a-89a1-f9f8c857619e>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:03:28.856Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Being aware of others' reactions and understanding why they react as they do."@en;
+  skos:inScheme <http://example.com/ONET> ;
+      skos:notation "2.B.1.a"^^xsd:token ;
+  skos:prefLabel "Social Perceptiveness"@en;
+  dcterms:modified "2025-02-26T04:51:08.133Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce> .
+
+<http://example.com/ONET/7acd1a44-49d9-482a-8695-403b284d09c3>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T04:56:38.358Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Developed capacities used to allocate resources efficiently."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:prefLabel "Resource Management Skills"@en;
+  skos:narrower <http://example.com/ONET/6dc33a26-a67f-4544-8015-90a380607abe>,
+    <http://example.com/ONET/edf48ff3-94de-4841-a78b-1db3d75db88f>,
+    <http://example.com/ONET/97951619-71e8-4da1-a9ae-0e12baba5305>,
+    <http://example.com/ONET/2117437e-d196-4437-b4ae-a9296d06224c>;
+  dcterms:modified "2025-02-26T04:49:56.498Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284> .
+
+<http://example.com/ONET/6dc33a26-a67f-4544-8015-90a380607abe>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:00:46.836Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Determining how money will be spent to get the work done, and accounting for these expenditures."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:notation "2.B.5.b"^^xsd:token ;
+  skos:prefLabel "Management of Financial Resources"@en;
+  dcterms:modified "2025-02-26T04:50:47.674Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/7acd1a44-49d9-482a-8695-403b284d09c3> .
+
+<http://example.com/ONET/edf48ff3-94de-4841-a78b-1db3d75db88f>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:00:56.140Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Obtaining and seeing to the appropriate use of equipment, facilities, and materials needed to do certain work."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:notation "2.B.5.c"^^xsd:token ;
+  skos:prefLabel "Management of Material Resources"@en;
+  dcterms:modified "2025-02-26T04:50:50.203Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/7acd1a44-49d9-482a-8695-403b284d09c3> .
+
+<http://example.com/ONET/97951619-71e8-4da1-a9ae-0e12baba5305>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:01:05.818Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Motivating, developing, and directing people as they work, identifying the best people for the job."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:notation "2.B.5.d"^^xsd:token ;
+  skos:prefLabel "Management of Personnel Resources"@en;
+  dcterms:modified "2025-02-26T04:50:52.052Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/7acd1a44-49d9-482a-8695-403b284d09c3> .
+
+<http://example.com/ONET/2117437e-d196-4437-b4ae-a9296d06224c>
+  a skos:Concept;
+  dcterms:creator <https://ror.org/05mbkbj54>;
+  dcterms:created "2025-02-24T05:01:15.300Z"^^xsd:dateTime;
+  rdfs:isDefinedBy <https://www.onetonline.org/>;
+  skos:definition "Managing one's own time and the time of others."@en;
+  skos:inScheme <http://example.com/ONET> ;
+  skos:notation "2.B.5.a"^^xsd:token ;
+  skos:prefLabel "Time Management"@en;
+  dcterms:modified "2025-02-26T04:50:54.581Z"^^xsd:dateTime;
+  skos:broader <http://example.com/ONET/7acd1a44-49d9-482a-8695-403b284d09c3> .
