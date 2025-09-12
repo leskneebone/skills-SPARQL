@@ -1,0 +1,1291 @@
+PREFIX dbpedia: <http://dbpedia.org/resource/>
+PREFIX dc:      <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+PREFIX prov:    <http://www.w3.org/ns/prov#>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema:  <https://schema.org/>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+PREFIX skosxl:  <http://www.w3.org/2008/05/skos-xl#>
+PREFIX tags:    <http://www.holygoat.co.uk/owl/redwood/0.1/tags/>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
+
+<https://data.jobsandskills.gov.au/graph/onet> {
+    <https://linked.data.gov.au/org/jsa>
+            rdf:type     schema:Organization;
+            schema:name  "Jobs and Skills Australia"@en;
+            schema:url:  "https://www.jobsandskills.gov.au/"^^xsd:anyURI .
+    
+    <https://ror.org/05mbkbj54>
+            rdf:type     schema:Organization;
+            schema:name  "United States Department of Labor";
+            schema:url   "http://www.dol.gov/"^^xsd:anyURI .
+    
+    <http://example.com/ONET>
+            rdf:type             skos:ConceptScheme;
+            dcterms:created      "2025-02-24T04:24:20.42Z"^^xsd:dateTime;
+            dcterms:creator      <https://ror.org/05mbkbj54>;
+            dcterms:description  "ONET Online"@en;
+            dcterms:modified     "2025-03-03T05:39:19.843Z"^^xsd:dateTime;
+            dcterms:publisher    <https://linked.data.gov.au/org/jsa>;
+            dcterms:subject      "Skills"@en;
+            dcterms:title        "ONET"@en;
+            skos:definition      "O*NET OnLine has detailed descriptions of the world of work for use by job seekers, workforce development and HR professionals, students, developers and researchers."@en;
+            skos:hasTopConcept   <http://example.com/ONET/66ce2a2a-23e8-41f2-814e-ef53dafc8e32> , <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284>;
+            skos:historyNote     "Presented here in RDF as part of the National Skills Taxonomy project at Jobs and Skills Australia"@en;
+            skos:prefLabel       "ONET"@en;
+            schema:citation      "https://www.onetonline.org/"^^xsd:anyURI .
+    
+    <http://example.com/ONET/66ce2a2a-23e8-41f2-814e-ef53dafc8e32>
+            rdf:type           skos:Concept;
+            rdfs:isDefinedBy   <https://www.onetonline.org/>;
+            dcterms:created    "2025-02-24T04:25:07.192Z"^^xsd:dateTime;
+            dcterms:creator    <https://ror.org/05mbkbj54>;
+            dcterms:modified   "2025-03-07T04:00:25.844Z"^^xsd:dateTime;
+            skos:definition    "Basic skills are developed capacities that facilitate learning or the more rapid acquisition of knowledge. Open and explore the folders below to see the different categories and levels of information. Ratings on occupations are available at the most detailed level."@en;
+            skos:inScheme      <http://example.com/ONET>;
+            skos:narrower      <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168> , <http://example.com/ONET/79490531-7b90-45b1-bc1a-15ddaaf0421a>;
+            skos:prefLabel     "Basic skills"@en;
+            skos:topConceptOf  <http://example.com/ONET> .
+    
+    <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284>
+            rdf:type           skos:Concept;
+            rdfs:isDefinedBy   <https://www.onetonline.org/>;
+            dcterms:created    "2025-02-24T04:25:23.662Z"^^xsd:dateTime;
+            dcterms:creator    <https://ror.org/05mbkbj54>;
+            dcterms:modified   "2025-02-26T04:49:52.153Z"^^xsd:dateTime;
+            skos:definition    "Cross-functional skills are developed capacities that facilitate performance of activities that occur across jobs. Open and explore the folders below to see the different categories and levels of information. Ratings on occupations are available at the most detailed level."@en;
+            skos:inScheme      <http://example.com/ONET>;
+            skos:narrower      <http://example.com/ONET/70c0464f-44d7-4176-a654-524942f55573> , <http://example.com/ONET/7acd1a44-49d9-482a-8695-403b284d09c3> , <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce> , <http://example.com/ONET/0a0a08e0-2744-4d81-bca8-2085fbb51faf> , <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+            skos:prefLabel     "Cross-Functional Skills"@en;
+            skos:topConceptOf  <http://example.com/ONET> .
+    
+    <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:27:19.767Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:49:47.333Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/66ce2a2a-23e8-41f2-814e-ef53dafc8e32>;
+            skos:definition   "Background structures needed to work with and acquire more specific skills in a variety of different domains."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:narrower     <http://example.com/ONET/0e828b54-d181-4c16-97a8-4aa50fee7d44> , <http://example.com/ONET/6879266f-6314-44d8-8de7-40b245c07ecd> , <http://example.com/ONET/9ae25600-00e4-49d5-89e7-120a7b47fe34> , <http://example.com/ONET/18c8cb4e-7eae-47bf-95f6-f047c488d7f2> , <http://example.com/ONET/76f4301a-fbcf-4d3c-88d4-41d38b530fd2> , <http://example.com/ONET/4a59f937-c4eb-4372-a14d-132a85661b81>;
+            skos:prefLabel    "Content skills"@en .
+    
+    <http://example.com/ONET/79490531-7b90-45b1-bc1a-15ddaaf0421a>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:27:33.83Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-03-03T05:39:04.438Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/66ce2a2a-23e8-41f2-814e-ef53dafc8e32>;
+            skos:definition   "Procedures that contribute to the more rapid acquisition of knowledge and skill across a variety of domains."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:narrower     <http://example.com/ONET/5bcce485-9e47-4c03-8487-b1f1d1a33cf5> , <http://example.com/ONET/96d16fa8-c173-4a57-9498-743ea784cf3f> , <http://example.com/ONET/bd86a6dd-00f2-4984-ad05-807ceaf5e8c7> , <http://example.com/ONET/560a8150-9321-4f87-a08b-d0cb10dbf295>;
+            skos:prefLabel    "Process skills"@en .
+    
+    <http://example.com/ONET/0e828b54-d181-4c16-97a8-4aa50fee7d44>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:28:07.566Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:07.097Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168>;
+            skos:definition   "Giving full attention to what other people are saying, taking time to understand the points being made, asking questions as appropriate, and not interrupting at inappropriate times."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.A.1.b"^^xsd:token;
+            skos:prefLabel    "Active listening"@en .
+    
+    <http://example.com/ONET/6879266f-6314-44d8-8de7-40b245c07ecd>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:42:06.501Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:09.876Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168>;
+            skos:definition   "Using mathematics to solve problems."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.A.1.e"^^xsd:token;
+            skos:prefLabel    "Mathematics"@en .
+    
+    <http://example.com/ONET/9ae25600-00e4-49d5-89e7-120a7b47fe34>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:42:19.105Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:11.856Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168>;
+            skos:definition   "Understanding written sentences and paragraphs in work-related documents."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.A.1.a"^^xsd:token;
+            skos:prefLabel    "Reading Comprehesion"@en .
+    
+    <http://example.com/ONET/18c8cb4e-7eae-47bf-95f6-f047c488d7f2>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:42:25.026Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:15.212Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168>;
+            skos:definition   "Using scientific rules and methods to solve problems."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.A.1.f"^^xsd:token;
+            skos:prefLabel    "Science"@en .
+    
+    <http://example.com/ONET/76f4301a-fbcf-4d3c-88d4-41d38b530fd2>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:42:30.809Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:17.268Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168>;
+            skos:definition   "Talking to others to convey information effectively."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.A.1.d"^^xsd:token;
+            skos:prefLabel    "Speaking"@en .
+    
+    <http://example.com/ONET/4a59f937-c4eb-4372-a14d-132a85661b81>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:42:40.172Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:20.017Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/08b687df-c5f1-481f-a992-5d68c4ec0168>;
+            skos:definition   "Communicating effectively in writing as appropriate for the needs of the audience."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.A.1.c"^^xsd:token;
+            skos:prefLabel    "Writing"@en .
+    
+    <http://example.com/ONET/5bcce485-9e47-4c03-8487-b1f1d1a33cf5>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:44:33.013Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:25.454Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/79490531-7b90-45b1-bc1a-15ddaaf0421a>;
+            skos:definition   "Understanding the implications of new information for both current and future problem-solving and decision-making."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.A.2.b"^^xsd:token;
+            skos:prefLabel    "Active learning"@en .
+    
+    <http://example.com/ONET/96d16fa8-c173-4a57-9498-743ea784cf3f>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:44:52.718Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:30.256Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/79490531-7b90-45b1-bc1a-15ddaaf0421a>;
+            skos:definition   "Selecting and using training/instructional methods and procedures appropriate for the situation when learning or teaching new things."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.A.2.c"^^xsd:token;
+            skos:prefLabel    "Learning Strategies"@en .
+    
+    <http://example.com/ONET/bd86a6dd-00f2-4984-ad05-807ceaf5e8c7>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:44:59.8Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:32.316Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/79490531-7b90-45b1-bc1a-15ddaaf0421a>;
+            skos:definition   "Monitoring/Assessing performance of yourself, other individuals, or organizations to make improvements or take corrective action."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.A.2.d"^^xsd:token;
+            skos:prefLabel    "Monitoring"@en .
+    
+    <http://example.com/ONET/560a8150-9321-4f87-a08b-d0cb10dbf295>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-03T05:39:19.803Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-03-03T05:39:19.843Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/79490531-7b90-45b1-bc1a-15ddaaf0421a>;
+            skos:definition   "Using logic and reasoning to identify the strengths and weaknesses of alternative solutions, conclusions, or approaches to problems."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.A.2.a"^^xsd:token;
+            skos:prefLabel    "Critical Thinking"@en .
+    
+    <http://example.com/ONET/70c0464f-44d7-4176-a654-524942f55573>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:56:26.337Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:49:54.622Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284>;
+            skos:definition   "Developed capacities used to solve novel, ill-defined problems in complex, real-world settings."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:narrower     <http://example.com/ONET/446af634-ad59-4e82-bcea-709bb388bbb9>;
+            skos:prefLabel    "Complex Problem Solving Skills"@en .
+    
+    <http://example.com/ONET/7acd1a44-49d9-482a-8695-403b284d09c3>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:56:38.358Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:49:56.498Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284>;
+            skos:definition   "Developed capacities used to allocate resources efficiently."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:narrower     <http://example.com/ONET/6dc33a26-a67f-4544-8015-90a380607abe> , <http://example.com/ONET/edf48ff3-94de-4841-a78b-1db3d75db88f> , <http://example.com/ONET/97951619-71e8-4da1-a9ae-0e12baba5305> , <http://example.com/ONET/2117437e-d196-4437-b4ae-a9296d06224c>;
+            skos:prefLabel    "Resource Management Skills"@en .
+    
+    <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:56:48.27Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:49:58.292Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284>;
+            skos:definition   "Developed capacities used to work with people to achieve goals."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:narrower     <http://example.com/ONET/72eab2d0-6a6a-4c9d-a316-6bac27757e29> , <http://example.com/ONET/04a93f4a-4f1c-426c-9e62-3cad2d317a74> , <http://example.com/ONET/c4d03976-b776-4aaf-8121-aa4ff474f51f> , <http://example.com/ONET/a0a9b1b6-e875-4d93-b91f-31c9a68547bc> , <http://example.com/ONET/d6462710-eaa8-4de5-84cb-1859a7873553> , <http://example.com/ONET/a1b8971a-af5d-4a1a-89a1-f9f8c857619e>;
+            skos:prefLabel    "Social Skills"@en .
+    
+    <http://example.com/ONET/0a0a08e0-2744-4d81-bca8-2085fbb51faf>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:56:56.882Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:00.06Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284>;
+            skos:definition   "Developed capacities used to understand, monitor, and improve socio-technical systems."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:narrower     <http://example.com/ONET/ba76569a-ce92-4988-bfcb-bf7acd165124> , <http://example.com/ONET/12ae4b44-a7e1-494e-ac01-79c4da68d214> , <http://example.com/ONET/eff5fb3d-9c07-4e1e-936b-af0c653ac951>;
+            skos:prefLabel    "Systems Skills"@en .
+    
+    <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:57:05.211Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:01.808Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/96504666-8898-40be-a3fb-94f975a10284>;
+            skos:definition   "Developed capacities used to design, set-up, operate, and correct malfunctions involving application of machines or technological systems."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:narrower     <http://example.com/ONET/2c00f89b-215d-46b1-9f76-2fd521593b65> , <http://example.com/ONET/9d84fb54-e69b-4cad-9c87-a3a7c1b537e1> , <http://example.com/ONET/d690eea0-fc6b-4bd7-a0b4-b11f1c7186aa> , <http://example.com/ONET/4b35d001-ca13-440a-b259-45564fc1146f> , <http://example.com/ONET/d2566666-3d19-40e4-8584-b15240b511df> , <http://example.com/ONET/476c50a1-130f-4069-8494-38f50d84d339> , <http://example.com/ONET/2c847e25-6477-4b51-9c69-c1e90243c7f6> , <http://example.com/ONET/cc484d83-ff51-4e4a-8986-bcddef0be042> , <http://example.com/ONET/e2b8ff5c-7dfc-496d-b22c-879d5e63d318> , <http://example.com/ONET/fcad7934-ca31-47f6-bd02-06bd00840f63> , <http://example.com/ONET/b20dcf59-83ad-4397-9ef8-835a4b590ae3>;
+            skos:prefLabel    "Technical Skills"@en .
+    
+    <http://example.com/ONET/446af634-ad59-4e82-bcea-709bb388bbb9>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T04:58:55.697Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:42.235Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/70c0464f-44d7-4176-a654-524942f55573>;
+            skos:definition   "Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.2.i"^^xsd:token;
+            skos:prefLabel    "Complex Problem Solving"@en .
+    
+    <http://example.com/ONET/ba76569a-ce92-4988-bfcb-bf7acd165124>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:07:33.324Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:14.219Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/0a0a08e0-2744-4d81-bca8-2085fbb51faf>;
+            skos:definition   "Considering the relative costs and benefits of potential actions to choose the most appropriate one."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.4.e"^^xsd:token;
+            skos:prefLabel    "Judgment and Decision Making"@en .
+    
+    <http://example.com/ONET/12ae4b44-a7e1-494e-ac01-79c4da68d214>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:07:46.252Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:15.949Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/0a0a08e0-2744-4d81-bca8-2085fbb51faf>;
+            skos:definition   "Determining how a system should work and how changes in conditions, operations, and the environment will affect outcomes."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.4.g"^^xsd:token;
+            skos:prefLabel    "Systems Analysis"@en .
+    
+    <http://example.com/ONET/eff5fb3d-9c07-4e1e-936b-af0c653ac951>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:07:56.027Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:19.179Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/0a0a08e0-2744-4d81-bca8-2085fbb51faf>;
+            skos:definition   "Identifying measures or indicators of system performance and the actions needed to improve or correct performance, relative to the goals of the system."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.4.h"^^xsd:token;
+            skos:prefLabel    "Systems Evaluation"@en .
+    
+    <http://example.com/ONET/2c00f89b-215d-46b1-9f76-2fd521593b65>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:09:28.369Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-03-21T03:37:39.308Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+            skos:definition   "Performing routine maintenance on equipment and determining when and what kind of maintenance is needed."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.3.j"^^xsd:token;
+            skos:prefLabel    "Equipment Maintenance"@en .
+    
+    <http://example.com/ONET/9d84fb54-e69b-4cad-9c87-a3a7c1b537e1>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:09:36.981Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:29.239Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+            skos:definition   "Determining the kind of tools and equipment needed to do a job."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.3.c"^^xsd:token;
+            skos:prefLabel    "Equipment Selection"@en .
+    
+    <http://example.com/ONET/d690eea0-fc6b-4bd7-a0b4-b11f1c7186aa>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:09:45.417Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:31.022Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+            skos:definition   "Installing equipment, machines, wiring, or programs to meet specifications."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.3.d"^^xsd:token;
+            skos:prefLabel    "Installation"@en .
+    
+    <http://example.com/ONET/4b35d001-ca13-440a-b259-45564fc1146f>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:09:53.262Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:32.719Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+            skos:definition   "Controlling operations of equipment or systems."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.3.h"^^xsd:token;
+            skos:prefLabel    "Operation and Control"@en .
+    
+    <http://example.com/ONET/d2566666-3d19-40e4-8584-b15240b511df>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:10:02.566Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:34.421Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+            skos:definition   "Analyzing needs and product requirements to create a design."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.3.a"^^xsd:token;
+            skos:prefLabel    "Operations Analysis"@en .
+    
+    <http://example.com/ONET/476c50a1-130f-4069-8494-38f50d84d339>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:10:11.111Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:36.059Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+            skos:definition   "Watching gauges, dials, or other indicators to make sure a machine is working properly."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.3.g"^^xsd:token;
+            skos:prefLabel    "Operations Monitoring"@en .
+    
+    <http://example.com/ONET/2c847e25-6477-4b51-9c69-c1e90243c7f6>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:10:19.139Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:37.831Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+            skos:definition   "Writing computer programs for various purposes."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.3.e"^^xsd:token;
+            skos:prefLabel    "Programming"@en .
+    
+    <http://example.com/ONET/cc484d83-ff51-4e4a-8986-bcddef0be042>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:10:28.291Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:39.507Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+            skos:definition   "Conducting tests and inspections of products, services, or processes to evaluate quality or performance."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.3.m"^^xsd:token;
+            skos:prefLabel    "Quality Control Analysis"@en .
+    
+    <http://example.com/ONET/e2b8ff5c-7dfc-496d-b22c-879d5e63d318>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:10:36.125Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:41.172Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+            skos:definition   "Repairing machines or systems using the needed tools."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.3.l"^^xsd:token;
+            skos:prefLabel    "Repairing"@en .
+    
+    <http://example.com/ONET/fcad7934-ca31-47f6-bd02-06bd00840f63>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:10:43.645Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:42.731Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+            skos:definition   "Generating or adapting equipment and technology to serve user needs."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.3.b"^^xsd:token;
+            skos:prefLabel    "Technology Design"@en .
+    
+    <http://example.com/ONET/b20dcf59-83ad-4397-9ef8-835a4b590ae3>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:10:52.191Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:44.408Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/64ea3630-dc6e-4a28-af87-13bfc2ad8f65>;
+            skos:definition   "Determining causes of operating errors and deciding what to do about it."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.3.k"^^xsd:token;
+            skos:prefLabel    "Troubleshooting"@en .
+    
+    <http://example.com/ONET/72eab2d0-6a6a-4c9d-a316-6bac27757e29>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:02:39.612Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:59.183Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce>;
+            skos:definition   "Adjusting actions in relation to others' actions."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.1.b"^^xsd:token;
+            skos:prefLabel    "Coordination"@en .
+    
+    <http://example.com/ONET/04a93f4a-4f1c-426c-9e62-3cad2d317a74>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:02:51.718Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:00.868Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce>;
+            skos:definition   "Teaching others how to do something."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.1.e"^^xsd:token;
+            skos:prefLabel    "Instructing"@en .
+    
+    <http://example.com/ONET/c4d03976-b776-4aaf-8121-aa4ff474f51f>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:03:01.013Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:02.976Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce>;
+            skos:definition   "Bringing others together and trying to reconcile differences."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.1.d"^^xsd:token;
+            skos:prefLabel    "Negotiation"@en .
+    
+    <http://example.com/ONET/a0a9b1b6-e875-4d93-b91f-31c9a68547bc>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:03:10.298Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:04.607Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce>;
+            skos:definition   "Persuading others to change their minds or behavior."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.1.c"^^xsd:token;
+            skos:prefLabel    "Persuasion"@en .
+    
+    <http://example.com/ONET/d6462710-eaa8-4de5-84cb-1859a7873553>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:03:19.915Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:06.3Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce>;
+            skos:definition   "Actively looking for ways to help people."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.1.f"^^xsd:token;
+            skos:prefLabel    "Service Orientation"@en .
+    
+    <http://example.com/ONET/a1b8971a-af5d-4a1a-89a1-f9f8c857619e>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:03:28.856Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:51:08.133Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/c8d80c9a-5cd6-4c0f-8eff-177fac240fce>;
+            skos:definition   "Being aware of others' reactions and understanding why they react as they do."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.1.a"^^xsd:token;
+            skos:prefLabel    "Social Perceptiveness"@en .
+    
+    <http://example.com/ONET/6dc33a26-a67f-4544-8015-90a380607abe>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:00:46.836Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:47.674Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/7acd1a44-49d9-482a-8695-403b284d09c3>;
+            skos:definition   "Determining how money will be spent to get the work done, and accounting for these expenditures."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.5.b"^^xsd:token;
+            skos:prefLabel    "Management of Financial Resources"@en .
+    
+    <http://example.com/ONET/edf48ff3-94de-4841-a78b-1db3d75db88f>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:00:56.14Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:50.203Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/7acd1a44-49d9-482a-8695-403b284d09c3>;
+            skos:definition   "Obtaining and seeing to the appropriate use of equipment, facilities, and materials needed to do certain work."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.5.c"^^xsd:token;
+            skos:prefLabel    "Management of Material Resources"@en .
+    
+    <http://example.com/ONET/97951619-71e8-4da1-a9ae-0e12baba5305>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:01:05.818Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:52.052Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/7acd1a44-49d9-482a-8695-403b284d09c3>;
+            skos:definition   "Motivating, developing, and directing people as they work, identifying the best people for the job."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.5.d"^^xsd:token;
+            skos:prefLabel    "Management of Personnel Resources"@en .
+    
+    <http://example.com/ONET/2117437e-d196-4437-b4ae-a9296d06224c>
+            rdf:type          skos:Concept;
+            rdfs:isDefinedBy  <https://www.onetonline.org/>;
+            dcterms:created   "2025-02-24T05:01:15.3Z"^^xsd:dateTime;
+            dcterms:creator   <https://ror.org/05mbkbj54>;
+            dcterms:modified  "2025-02-26T04:50:54.581Z"^^xsd:dateTime;
+            skos:broader      <http://example.com/ONET/7acd1a44-49d9-482a-8695-403b284d09c3>;
+            skos:definition   "Managing one's own time and the time of others."@en;
+            skos:inScheme     <http://example.com/ONET>;
+            skos:notation     "2.B.5.a"^^xsd:token;
+            skos:prefLabel    "Time Management"@en .
+}
+
+<https://data.jobsandskills.gov.au/graph/WEFskills> {
+    <http://example.com/WEFGST>
+            rdf:type            skos:ConceptScheme;
+            dcterms:created     "2025-03-06T02:28:59.763Z"^^xsd:dateTime;
+            dcterms:creator     <https://ror.org/05wm3vw64>;
+            dcterms:modified    "2025-03-07T04:07:12.514Z"^^xsd:dateTime;
+            dcterms:publisher   <https://linked.data.gov.au/org/jsa>;
+            dcterms:subject     "Skills"@en;
+            dcterms:title       "WEF Global Skills Taxonomy"@en;
+            skos:definition     "The Global Skills Taxonomy is a comprehensive, structured framework developed by the World Economic Forum and its network of partners to define, categorize, and organize the essential skills required in today’s workforce. It serves as a common language for employers, educators, and policymakers by providing standardized definitions and classifications, fostering alignment and a shared understanding of labour market trends and skill demands."@en;
+            skos:hasTopConcept  <http://example.com/WEFGST/0a9ac146-77e9-4ad3-94d5-ab9f62c8cd02>;
+            skos:historyNote    "The WEF Global Skills Taxonomy is presented here in RDF by Jobs and Skills Australia"@en;
+            skos:prefLabel      "WEF Global Skills Taxonomy"@en .
+    
+    <https://ror.org/05wm3vw64>
+            rdf:type     prov:Organization;
+            schema:name  "World Economic Forum"@en;
+            schema:url   "https://www.weforum.org/"^^xsd:anyURI .
+    
+    <https://linked.data.gov.au/org/jsa>
+            rdf:type     prov:Organization;
+            schema:name  "Jobs and Skills Australia"@en;
+            schema:url   "https://jobsandskills.gov.au"^^xsd:anyURI .
+    
+    <http://example.com/WEFGST/0a9ac146-77e9-4ad3-94d5-ab9f62c8cd02>
+            rdf:type           skos:Concept;
+            dcterms:created    "2025-03-06T02:34:20.432Z"^^xsd:dateTime;
+            dcterms:modified   "2025-03-07T04:07:09.592Z"^^xsd:dateTime;
+            dcterms:source     "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:inScheme      <http://example.com/WEFGST>;
+            skos:narrower      <http://example.com/WEFGST/67bac4bd-6131-4b95-a6f1-a8e0eb45df9e> , <http://example.com/WEFGST/2b9f062d-41b8-4108-9cdf-40cc1efaf5e4> , <http://example.com/WEFGST/e634918b-4f3e-467b-ab1c-66aecad6fc8d> , <http://example.com/WEFGST/b804fbe2-e09d-4fd1-9e03-9cb5758f8b43> , <http://example.com/WEFGST/e8cdd6ea-4ef1-426b-9f24-e37b563559d5>;
+            skos:prefLabel     "Skills, Knowledge and abilities"@en;
+            skos:topConceptOf  <http://example.com/WEFGST> .
+    
+    <http://example.com/WEFGST/67bac4bd-6131-4b95-a6f1-a8e0eb45df9e>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.454Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:09.632Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/0a9ac146-77e9-4ad3-94d5-ab9f62c8cd02>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/898b7810-2ecc-46c6-a1b3-e452d07af9c8> , <http://example.com/WEFGST/595b98f9-24b7-4696-9eb0-e6d7e63a796a>;
+            skos:prefLabel    "Physical abilities"@en .
+    
+    <http://example.com/WEFGST/2b9f062d-41b8-4108-9cdf-40cc1efaf5e4>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.719Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:09.671Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/0a9ac146-77e9-4ad3-94d5-ab9f62c8cd02>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/e83c6ddd-7648-4ddb-9f26-bc015304bfc7> , <http://example.com/WEFGST/214bf93c-d300-42cd-81e5-9c7e3ca8d481> , <http://example.com/WEFGST/37b553e3-7c65-413f-b6b0-7cc1a0303558>;
+            skos:prefLabel    "Cognitive skills"@en .
+    
+    <http://example.com/WEFGST/e634918b-4f3e-467b-ab1c-66aecad6fc8d>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.645Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:09.709Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/0a9ac146-77e9-4ad3-94d5-ab9f62c8cd02>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/ccf12791-3881-4f93-a8a7-de5e3b27837d> , <http://example.com/WEFGST/545565f7-2069-436e-8243-efe39197353b> , <http://example.com/WEFGST/7c2d58fd-fed0-40e0-8a90-0c9b81764805> , <http://example.com/WEFGST/b69be616-3e77-4a9f-bf49-96af4a792bf6>;
+            skos:prefLabel    "Management skills"@en .
+    
+    <http://example.com/WEFGST/b804fbe2-e09d-4fd1-9e03-9cb5758f8b43>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.942Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:09.747Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/0a9ac146-77e9-4ad3-94d5-ab9f62c8cd02>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/7f60d3b5-07d7-4bca-9ca0-78eed9298d44> , <http://example.com/WEFGST/89234341-1235-476f-a6c8-3cb662bfa53f>;
+            skos:prefLabel    "Engagement skills"@en .
+    
+    <http://example.com/WEFGST/e8cdd6ea-4ef1-426b-9f24-e37b563559d5>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.093Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:09.785Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/0a9ac146-77e9-4ad3-94d5-ab9f62c8cd02>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/a82a2b20-328b-4f55-bc4f-2557918b2446> , <http://example.com/WEFGST/db95361d-6956-42ed-b0dc-f810359234bb> , <http://example.com/WEFGST/b30fc93c-99c3-4005-b4c8-33442f7a76e2> , <http://example.com/WEFGST/a2336259-d93d-4d3e-bf98-0bbdf1b1cf5e> , <http://example.com/WEFGST/c1e1b25e-619e-4e1a-a92b-739f242ce82a>;
+            skos:prefLabel    "Technology skills"@en .
+    
+    <http://example.com/WEFGST/e83c6ddd-7648-4ddb-9f26-bc015304bfc7>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.748Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:09.901Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/2b9f062d-41b8-4108-9cdf-40cc1efaf5e4>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/e5611029-38b5-4df6-9702-10f70470d6e8> , <http://example.com/WEFGST/9fc90204-8eb8-4e8c-9a7e-af340d766c7f> , <http://example.com/WEFGST/0e93e4d0-70b7-413b-8675-38655a9a3216>;
+            skos:prefLabel    "Creativity and problem solving"@en .
+    
+    <http://example.com/WEFGST/214bf93c-d300-42cd-81e5-9c7e3ca8d481>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.926Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:09.941Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/2b9f062d-41b8-4108-9cdf-40cc1efaf5e4>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/be1fcf9a-62e4-4113-80b1-4631cf2f739a> , <http://example.com/WEFGST/d3dfd17d-0342-4ede-b276-b265c254719a> , <http://example.com/WEFGST/769a56e3-0441-4e94-8486-b507f029775d> , <http://example.com/WEFGST/bac12539-a0a6-4f1a-8f27-cdb635c5dc7f>;
+            skos:prefLabel    "Mathematical and statistical thinking"@en .
+    
+    <http://example.com/WEFGST/37b553e3-7c65-413f-b6b0-7cc1a0303558>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.506Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:09.981Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/2b9f062d-41b8-4108-9cdf-40cc1efaf5e4>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/cb1c2879-c53c-4c2c-9f07-d612e18708e8> , <http://example.com/WEFGST/0708e1fd-8fe3-43e7-80e1-40cd9b0bbfcd> , <http://example.com/WEFGST/cf8eae15-d451-4446-97ba-3449435cc3c4> , <http://example.com/WEFGST/fa59733b-a8fe-4f80-b499-f2d959541ecd> , <http://example.com/WEFGST/994dd3d5-ca81-44a0-bbcb-4ed2cec95a86>;
+            skos:prefLabel    "Speaking, writing and languages"@en .
+    
+    <http://example.com/WEFGST/e5611029-38b5-4df6-9702-10f70470d6e8>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.773Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.784Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/e83c6ddd-7648-4ddb-9f26-bc015304bfc7>;
+            skos:definition   "Capacity to bring a new idea or concept into existence through imagination and to imagine something that does not exist."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Creative thinking"@en .
+    
+    <http://example.com/WEFGST/9fc90204-8eb8-4e8c-9a7e-af340d766c7f>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.809Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.83Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/e83c6ddd-7648-4ddb-9f26-bc015304bfc7>;
+            skos:definition   "Capacity to break down concepts and complex ideas into basic or fundamental principles. Includes critical thinking, whereby judgements are made by analysing and interpreting facts and information."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Analytical thinking"@en .
+    
+    <http://example.com/WEFGST/0e93e4d0-70b7-413b-8675-38655a9a3216>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.859Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.875Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/e83c6ddd-7648-4ddb-9f26-bc015304bfc7>;
+            skos:definition   "Capacity to understand how concepts work together, embrace a multidisciplinary approach, and identify patterns over time."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Systems thinking"@en .
+    
+    <http://example.com/WEFGST/be1fcf9a-62e4-4113-80b1-4631cf2f739a>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.422Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.914Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/214bf93c-d300-42cd-81e5-9c7e3ca8d481>;
+            skos:definition   "The ability to rapidly and accurately add, subtract, multiply and divide."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Number facility"@en .
+    
+    <http://example.com/WEFGST/d3dfd17d-0342-4ede-b276-b265c254719a>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.442Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.954Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/214bf93c-d300-42cd-81e5-9c7e3ca8d481>;
+            skos:definition   "The ability to synthesise quantitative information into pertinent calculations or estimates given precise or approximate information."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Calculating and estimating"@en .
+    
+    <http://example.com/WEFGST/769a56e3-0441-4e94-8486-b507f029775d>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.464Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.995Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/214bf93c-d300-42cd-81e5-9c7e3ca8d481>;
+            skos:definition   "Solving equations and using advanced mathematical techniques."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Algebraic facility"@en .
+    
+    <http://example.com/WEFGST/bac12539-a0a6-4f1a-8f27-cdb635c5dc7f>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.486Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.038Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/214bf93c-d300-42cd-81e5-9c7e3ca8d481>;
+            skos:definition   "Making statistical inferences from data and using statistical techniques to determine the properties of complex systems."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Data analysis and mathematical modelling"@en .
+    
+    <http://example.com/WEFGST/cb1c2879-c53c-4c2c-9f07-d612e18708e8>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.526Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.077Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/37b553e3-7c65-413f-b6b0-7cc1a0303558>;
+            skos:definition   "Understanding written sentences and paragraphs in work-related documents."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Reading"@en .
+    
+    <http://example.com/WEFGST/0708e1fd-8fe3-43e7-80e1-40cd9b0bbfcd>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.547Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.117Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/37b553e3-7c65-413f-b6b0-7cc1a0303558>;
+            skos:definition   "Talking to others to convey information effectively."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Speaking"@en .
+    
+    <http://example.com/WEFGST/cf8eae15-d451-4446-97ba-3449435cc3c4>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.569Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.155Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/37b553e3-7c65-413f-b6b0-7cc1a0303558>;
+            skos:definition   "Communicating effectively in writing as appropriate for the needs of the audience."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Writing"@en .
+    
+    <http://example.com/WEFGST/fa59733b-a8fe-4f80-b499-f2d959541ecd>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.594Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.194Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/37b553e3-7c65-413f-b6b0-7cc1a0303558>;
+            skos:definition   "Synthesising text resources into a coherent narrative with a specified style or for a target audience."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Editing"@en .
+    
+    <http://example.com/WEFGST/994dd3d5-ca81-44a0-bbcb-4ed2cec95a86>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.62Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.234Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/37b553e3-7c65-413f-b6b0-7cc1a0303558>;
+            skos:definition   "Communicating through reading, writing, speaking and listening in foreign languages."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Multi-lingualism"@en .
+    
+    <http://example.com/WEFGST/898b7810-2ecc-46c6-a1b3-e452d07af9c8>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.478Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:09.823Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/67bac4bd-6131-4b95-a6f1-a8e0eb45df9e>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/fc93602c-d50f-4669-95d1-55691b5b5220> , <http://example.com/WEFGST/40f1f49c-6ed0-4b37-ba31-070a729831aa> , <http://example.com/WEFGST/b989a522-5be3-43fd-9986-557eb8d4c0cc>;
+            skos:prefLabel    "Manual dexterity, endurance and precision"@en .
+    
+    <http://example.com/WEFGST/595b98f9-24b7-4696-9eb0-e6d7e63a796a>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.579Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-14T03:29:13.89Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/67bac4bd-6131-4b95-a6f1-a8e0eb45df9e>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/b20f5f85-838c-420d-8466-b7dfef7116e6> , <http://example.com/WEFGST/6c3f828a-790d-4312-87f0-bcff30548f93> , <http://example.com/WEFGST/8411e4ca-00f0-4245-9dff-4549f0828bad> , <http://example.com/WEFGST/f8b49cc1-ad8e-4d00-8d19-b669e2b265d5>;
+            skos:prefLabel    "Sensory processing abilities"@en .
+    
+    <http://example.com/WEFGST/b20f5f85-838c-420d-8466-b7dfef7116e6>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.604Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.617Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/595b98f9-24b7-4696-9eb0-e6d7e63a796a>;
+            skos:definition   "Abilities relating to resolving details, perceiving depth, differentiating colours and intensities, and seeing in low light, at oblique angles and in bright lighting."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Visual abilities"@en .
+    
+    <http://example.com/WEFGST/6c3f828a-790d-4312-87f0-bcff30548f93>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.626Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.659Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/595b98f9-24b7-4696-9eb0-e6d7e63a796a>;
+            skos:definition   "Abilities relating to distinguishing and isolating sounds, interpreting speech and speaking clearly."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Auditory abilities"@en .
+    
+    <http://example.com/WEFGST/8411e4ca-00f0-4245-9dff-4549f0828bad>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.65Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.701Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/595b98f9-24b7-4696-9eb0-e6d7e63a796a>;
+            skos:definition   "The ability to remember and organise information, identify patterns and differences, concentrate, and shift attention between sources of information."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Information-processing abilities"@en .
+    
+    <http://example.com/WEFGST/f8b49cc1-ad8e-4d00-8d19-b669e2b265d5>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.681Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.741Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/595b98f9-24b7-4696-9eb0-e6d7e63a796a>;
+            skos:definition   "The ability to mentally manipulate objects and perceive locations relative to an environment."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Spatial abilities"@en .
+    
+    <http://example.com/WEFGST/fc93602c-d50f-4669-95d1-55691b5b5220>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.504Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.491Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/898b7810-2ecc-46c6-a1b3-e452d07af9c8>;
+            skos:definition   "The ability to steadily, precisely and responsively grasp, manipulate, and assemble objects or adjust the controls of a machine."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Dexterity"@en .
+    
+    <http://example.com/WEFGST/40f1f49c-6ed0-4b37-ba31-070a729831aa>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.528Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.533Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/898b7810-2ecc-46c6-a1b3-e452d07af9c8>;
+            skos:definition   "The ability to exert muscle force in short bursts or over long periods with endurance to fatigue."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Strength and stamina"@en .
+    
+    <http://example.com/WEFGST/b989a522-5be3-43fd-9986-557eb8d4c0cc>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:20.552Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.576Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/898b7810-2ecc-46c6-a1b3-e452d07af9c8>;
+            skos:definition   "The ability to bend, stretch, twist, and reach, and coordinate these movements when the whole body is in motion, while maintaining balance and stability"@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Flexibility and coordination"@en .
+    
+    <http://example.com/WEFGST/7f60d3b5-07d7-4bca-9ca0-78eed9298d44>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.962Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.177Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/b804fbe2-e09d-4fd1-9e03-9cb5758f8b43>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/dfe2bfeb-97fe-43cb-b479-b60d1c8a79b1> , <http://example.com/WEFGST/085e1895-ca1c-4ee3-a84a-abdd947623fd>;
+            skos:prefLabel    "Marketing and media"@en .
+    
+    <http://example.com/WEFGST/89234341-1235-476f-a6c8-3cb662bfa53f>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.026Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.217Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/b804fbe2-e09d-4fd1-9e03-9cb5758f8b43>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/56e6080a-bd82-44de-ac34-38f5edc397ed> , <http://example.com/WEFGST/7359d07f-9dae-487e-be45-b9c62ac8c5a9>;
+            skos:prefLabel    "Customer experience"@en .
+    
+    <http://example.com/WEFGST/dfe2bfeb-97fe-43cb-b479-b60d1c8a79b1>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.984Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.683Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/7f60d3b5-07d7-4bca-9ca0-78eed9298d44>;
+            skos:definition   "Capacity to identify and shape effective value propositions for products and services, as well as to sell products on that basis."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Sales, communication and marketing of products and services"@en .
+    
+    <http://example.com/WEFGST/085e1895-ca1c-4ee3-a84a-abdd947623fd>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.005Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.725Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/7f60d3b5-07d7-4bca-9ca0-78eed9298d44>;
+            skos:definition   "Using the internet, mobile devices, social media, search engines and other online channels to reach consumers."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Digital marketing"@en .
+    
+    <http://example.com/WEFGST/56e6080a-bd82-44de-ac34-38f5edc397ed>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.048Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.768Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/89234341-1235-476f-a6c8-3cb662bfa53f>;
+            skos:definition   "Responding to customer enquiries in a manner that balances speed and quality, and represents brand values."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Customer service"@en .
+    
+    <http://example.com/WEFGST/7359d07f-9dae-487e-be45-b9c62ac8c5a9>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.07Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.808Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/89234341-1235-476f-a6c8-3cb662bfa53f>;
+            skos:definition   "Managing and developing a portfolio of client relationships over extended periods to accomplish an operational strategy."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Customer relationship management"@en .
+    
+    <http://example.com/WEFGST/ccf12791-3881-4f93-a8a7-de5e3b27837d>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.665Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.019Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/e634918b-4f3e-467b-ab1c-66aecad6fc8d>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/074133e1-31eb-4a10-baa5-6fb773457d6f> , <http://example.com/WEFGST/a6930331-6da9-435c-a729-042179879b65>;
+            skos:prefLabel    "Talent management"@en .
+    
+    <http://example.com/WEFGST/545565f7-2069-436e-8243-efe39197353b>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.727Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.059Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/e634918b-4f3e-467b-ab1c-66aecad6fc8d>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/b19f0e4d-51c1-4648-a8a2-680aa7ba6b52> , <http://example.com/WEFGST/734b9f53-d194-4df5-8db9-469ebabb338d> , <http://example.com/WEFGST/bcfc8caf-06ea-475b-9b2c-0c6b6833eda6>;
+            skos:prefLabel    "Operations and logistics"@en .
+    
+    <http://example.com/WEFGST/7c2d58fd-fed0-40e0-8a90-0c9b81764805>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.81Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.097Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/e634918b-4f3e-467b-ab1c-66aecad6fc8d>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/6fffa062-7536-451b-b3f9-1e95eb6f2720> , <http://example.com/WEFGST/67991569-80d2-4fbd-84ff-01293124c747>;
+            skos:prefLabel    "Financial management"@en .
+    
+    <http://example.com/WEFGST/b69be616-3e77-4a9f-bf49-96af4a792bf6>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.865Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.134Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/e634918b-4f3e-467b-ab1c-66aecad6fc8d>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/bedf28b5-96ff-4a8e-8771-4d518e0877dc> , <http://example.com/WEFGST/f5145733-89b7-40f8-8794-0e23efe91ada> , <http://example.com/WEFGST/659da579-61cf-427a-889d-8be1c8ba6172>;
+            skos:prefLabel    "Quality management"@en .
+    
+    <http://example.com/WEFGST/6fffa062-7536-451b-b3f9-1e95eb6f2720>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.828Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.467Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/7c2d58fd-fed0-40e0-8a90-0c9b81764805>;
+            skos:definition   "Tracking the flow of money that has been spent."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Accounting"@en .
+    
+    <http://example.com/WEFGST/67991569-80d2-4fbd-84ff-01293124c747>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.846Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.51Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/7c2d58fd-fed0-40e0-8a90-0c9b81764805>;
+            skos:definition   "Budgeting money that will be spent, managing financial portfolios, and tracking economic trends which affect business performance."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Finance"@en .
+    
+    <http://example.com/WEFGST/b19f0e4d-51c1-4648-a8a2-680aa7ba6b52>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.748Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.35Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/545565f7-2069-436e-8243-efe39197353b>;
+            skos:definition   "Capacity to coordinate time-sensitive schedules in cooperation with others."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Coordination and time management"@en .
+    
+    <http://example.com/WEFGST/734b9f53-d194-4df5-8db9-469ebabb338d>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.769Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.389Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/545565f7-2069-436e-8243-efe39197353b>;
+            skos:definition   "Capacity to lead the work of a team to identify, select and implement the appropriate changes, tools, and improvements to achieve and deliver a defined goal."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Project management"@en .
+    
+    <http://example.com/WEFGST/bcfc8caf-06ea-475b-9b2c-0c6b6833eda6>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.79Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.427Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/545565f7-2069-436e-8243-efe39197353b>;
+            skos:definition   "Optimising the flow of the goods and services which are required to realise a product or goal."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Supply-chain management"@en .
+    
+    <http://example.com/WEFGST/074133e1-31eb-4a10-baa5-6fb773457d6f>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.686Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.273Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/ccf12791-3881-4f93-a8a7-de5e3b27837d>;
+            skos:definition   "Accurately evaluating a candidate or colleague’s proficiencies and characteristics over their full profile of skills, knowledge, abilities and attitudes."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Skill evaluation"@en .
+    
+    <http://example.com/WEFGST/a6930331-6da9-435c-a729-042179879b65>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.707Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.311Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/ccf12791-3881-4f93-a8a7-de5e3b27837d>;
+            skos:definition   "Identifying developmental or hiring solutions to bridge a team’s skills gaps and ensuring knowledge transfer when team members transition to new roles."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Talent planning and development"@en .
+    
+    <http://example.com/WEFGST/bedf28b5-96ff-4a8e-8771-4d518e0877dc>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.885Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.552Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/b69be616-3e77-4a9f-bf49-96af4a792bf6>;
+            skos:definition   "Setting quality objectives, specifying operational processes to achieve them, providing confidence they will be effective, and improving them based on experience."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Quality assurance"@en .
+    
+    <http://example.com/WEFGST/f5145733-89b7-40f8-8794-0e23efe91ada>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.905Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.596Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/b69be616-3e77-4a9f-bf49-96af4a792bf6>;
+            skos:definition   "Inspecting products to ensure they fulfil quality requirements."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Quality control"@en .
+    
+    <http://example.com/WEFGST/659da579-61cf-427a-889d-8be1c8ba6172>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:21.924Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.641Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/b69be616-3e77-4a9f-bf49-96af4a792bf6>;
+            skos:definition   "Assessing, prioritising and mitigating the effect of uncertainty on objectives, to enhance institutional resilience."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Risk management"@en .
+    
+    <http://example.com/WEFGST/a82a2b20-328b-4f55-bc4f-2557918b2446>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.114Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.27Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/e8cdd6ea-4ef1-426b-9f24-e37b563559d5>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/69c24bb3-08d0-425d-923c-b50e5045a020> , <http://example.com/WEFGST/4fda7259-b144-495e-965b-a31f207a1eaf> , <http://example.com/WEFGST/bebc1c85-9544-4779-a73f-43e420b28906>;
+            skos:prefLabel    "Technology literacy"@en .
+    
+    <http://example.com/WEFGST/db95361d-6956-42ed-b0dc-f810359234bb>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.2Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.319Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/e8cdd6ea-4ef1-426b-9f24-e37b563559d5>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/c1656813-25e4-4235-bb27-9b1e2c799937> , <http://example.com/WEFGST/5f469463-0d4b-4b36-9299-db64d200cd6a> , <http://example.com/WEFGST/6fa4d4fa-96f5-4fca-a56c-60c18fa57fd2>;
+            skos:prefLabel    "Programming"@en .
+    
+    <http://example.com/WEFGST/b30fc93c-99c3-4005-b4c8-33442f7a76e2>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.282Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.366Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/e8cdd6ea-4ef1-426b-9f24-e37b563559d5>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/6aba2110-d2c1-4ad0-9f52-b3699b87eb3e> , <http://example.com/WEFGST/67c59734-2e7a-4edb-a911-dcefc6af9e34> , <http://example.com/WEFGST/688f51b4-1e2b-4789-b12e-834043d9273f>;
+            skos:prefLabel    "Design and user experience"@en .
+    
+    <http://example.com/WEFGST/a2336259-d93d-4d3e-bf98-0bbdf1b1cf5e>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.379Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.409Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/e8cdd6ea-4ef1-426b-9f24-e37b563559d5>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/6028a6d1-298e-476b-892d-fa63c13f55b1> , <http://example.com/WEFGST/3658a3d6-886f-4255-a31f-979b0b0b4397> , <http://example.com/WEFGST/60574e00-f499-47fc-983c-4dfa3cbc7b49>;
+            skos:prefLabel    "Networks and cybersecurity"@en .
+    
+    <http://example.com/WEFGST/c1e1b25e-619e-4e1a-a92b-739f242ce82a>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.472Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:10.448Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/e8cdd6ea-4ef1-426b-9f24-e37b563559d5>;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:narrower     <http://example.com/WEFGST/1469466d-bcb6-43ab-bda0-65da29dbda81> , <http://example.com/WEFGST/b0f98594-dbf5-488b-aef4-2a09ab4e182e> , <http://example.com/WEFGST/d61cec92-04fb-4515-accf-021c11e5888e>;
+            skos:prefLabel    "Artificial intelligence and big data"@en .
+    
+    <http://example.com/WEFGST/69c24bb3-08d0-425d-923c-b50e5045a020>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.135Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.854Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/a82a2b20-328b-4f55-bc4f-2557918b2446>;
+            skos:definition   "Using software designed to help get work done faster and more efficiently."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Collaboration and productivity software"@en .
+    
+    <http://example.com/WEFGST/4fda7259-b144-495e-965b-a31f207a1eaf>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.156Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.898Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/a82a2b20-328b-4f55-bc4f-2557918b2446>;
+            skos:definition   "Using technologies that assist in industrial production and manufacturing processes."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Manufacturing technologies"@en .
+    
+    <http://example.com/WEFGST/bebc1c85-9544-4779-a73f-43e420b28906>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.177Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.94Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/a82a2b20-328b-4f55-bc4f-2557918b2446>;
+            skos:definition   "Installing equipment, machines, wiring or programs to meet specifications."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Installation"@en .
+    
+    <http://example.com/WEFGST/6028a6d1-298e-476b-892d-fa63c13f55b1>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.405Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:12.282Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/a2336259-d93d-4d3e-bf98-0bbdf1b1cf5e>;
+            skos:definition   "Setting up a connected network of computing devices, such as laptops, desktops, servers, smartphones, tablets and internet-of-things devices that communicate with one another."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Computer hardware and networking"@en .
+    
+    <http://example.com/WEFGST/3658a3d6-886f-4255-a31f-979b0b0b4397>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.43Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:12.329Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/a2336259-d93d-4d3e-bf98-0bbdf1b1cf5e>;
+            skos:definition   "Using technologies, processes and practices to protect computers, networks, programs and data from unauthorised access or attacks that are aimed for exploitation."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Cybersecurity and application security"@en .
+    
+    <http://example.com/WEFGST/60574e00-f499-47fc-983c-4dfa3cbc7b49>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.451Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:12.377Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/a2336259-d93d-4d3e-bf98-0bbdf1b1cf5e>;
+            skos:definition   "Delivering computing services over the internet."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Cloud computing"@en .
+    
+    <http://example.com/WEFGST/6aba2110-d2c1-4ad0-9f52-b3699b87eb3e>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.307Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:12.119Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/b30fc93c-99c3-4005-b4c8-33442f7a76e2>;
+            skos:definition   "Designing technology from a user's perspective by balancing considerations such as practical usability, ergonomics, perception, cognition, social psychology, consumer behaviour and environmental impact."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Human-technology interaction"@en .
+    
+    <http://example.com/WEFGST/67c59734-2e7a-4edb-a911-dcefc6af9e34>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.333Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:12.167Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/b30fc93c-99c3-4005-b4c8-33442f7a76e2>;
+            skos:definition   "Developing applications for mobile devices."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Mobile development"@en .
+    
+    <http://example.com/WEFGST/688f51b4-1e2b-4789-b12e-834043d9273f>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.355Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:12.231Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/b30fc93c-99c3-4005-b4c8-33442f7a76e2>;
+            skos:definition   "Building and maintaining websites."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Web development"@en .
+    
+    <http://example.com/WEFGST/c1656813-25e4-4235-bb27-9b1e2c799937>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.221Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:11.983Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/db95361d-6956-42ed-b0dc-f810359234bb>;
+            skos:definition   "Writing simple programs using calls to subroutines."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Functional programming"@en .
+    
+    <http://example.com/WEFGST/5f469463-0d4b-4b36-9299-db64d200cd6a>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.241Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:12.025Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/db95361d-6956-42ed-b0dc-f810359234bb>;
+            skos:definition   "Using data encapsulation and inheritance to develop well designed programming projects, often as part of a team."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Object-oriented programming"@en .
+    
+    <http://example.com/WEFGST/6fa4d4fa-96f5-4fca-a56c-60c18fa57fd2>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.261Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:12.071Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/db95361d-6956-42ed-b0dc-f810359234bb>;
+            skos:definition   "Looking at real-world scenarios and creating models that can be processed by a computer."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Computational thinking"@en .
+    
+    <http://example.com/WEFGST/1469466d-bcb6-43ab-bda0-65da29dbda81>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.491Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:12.425Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/c1e1b25e-619e-4e1a-a92b-739f242ce82a>;
+            skos:definition   "Accessing, cleaning and sorting large data sets, and using software tools to visualise the results."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Data mining"@en .
+    
+    <http://example.com/WEFGST/b0f98594-dbf5-488b-aef4-2a09ab4e182e>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.511Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:12.47Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/c1e1b25e-619e-4e1a-a92b-739f242ce82a>;
+            skos:definition   "Designing neural networks which can be trained to reliably make decisions based on example data."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Supervised learning"@en .
+    
+    <http://example.com/WEFGST/d61cec92-04fb-4515-accf-021c11e5888e>
+            rdf:type          skos:Concept;
+            dcterms:created   "2025-03-06T02:34:22.53Z"^^xsd:dateTime;
+            dcterms:modified  "2025-03-07T04:07:12.514Z"^^xsd:dateTime;
+            dcterms:source    "https://www1.reskillingrevolution2030.org/skills-taxonomy"^^xsd:anyURI;
+            skos:broader      <http://example.com/WEFGST/c1e1b25e-619e-4e1a-a92b-739f242ce82a>;
+            skos:definition   "Designing neural networks which can detect clusters and patterns in large and complex data sets without human guidance."@en;
+            skos:inScheme     <http://example.com/WEFGST>;
+            skos:prefLabel    "Unsupervised learning"@en .
+}
