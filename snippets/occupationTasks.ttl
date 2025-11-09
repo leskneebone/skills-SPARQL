@@ -11,17 +11,17 @@
 jsa:
 a schema:Organization ;
 schema:name "Jobs and Skills Australia"@en ;
-schema:url "https://wwww.jobsandskills.gov.au"^^xsd:anyURI
+schema:url "https://wwww.jobsandskills.gov.au"^^xsd:anyURI ;
 .
 
-occtstcs:
+occtskcs:
   a skos:ConceptScheme ;
   skos:prefLabel "Occupation Task Concepts"@en ;
   dcterms:title "Occupation Task Concepts"@en ;
   skos:prefLabel "Occupation Task Concepts"@en ;
   skos:definition "Jobs and Skills Australia Occupation tasks vocabulary that are part of the JSA ANZSCO Profiles"@en ;
-  dcterms:creator JSA: ;
-  dcterms:publisher JSA: ;
+  dcterms:creator jsa: ;
+  dcterms:publisher jsa: ;
   dcterms:source "https://www.jobsandskills.gov.au/data/occupation-and-industry-profiles/occupations"^^xsd:anyURI ;
   dcterms:license ccby:
   .
