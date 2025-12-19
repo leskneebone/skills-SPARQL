@@ -67,5 +67,8 @@ flowchart LR
   Qualification -->|schema:about | ASCED
   Qualification -->|schema:credentialCategory | AQFType
   AQFType -->|nst:skillLevel | AQFLevel
+  ANZSCO -->|schema:qualifications | Qualification
+  ANZSCO -->|skos:exactMatch | OSCA
+  Industry -->|schema:qualifications | Qualification
 
 ```
