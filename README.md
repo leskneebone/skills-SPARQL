@@ -48,3 +48,23 @@ Notes:
   - schema.org is HTTPS in this store
   - ANZSCO traversal bounded (no * range)
 ----------------------------------------------------------- */
+
+
+```mermaid
+flowchart LR
+  Skill -->|skos:narrower| NarrowerSkill
+  Skill -->|dcterms:source | Unit
+  Skill -->|schema:about | SkillRecord
+  SkilRecord-->|dcterms:hasPart | SkillCategory
+  SkilRecord-->|dcterms:hasPart | SkillContext
+  Skill -->|skos:member | SkillFamily
+  SkillFamily -->|skos:member | SkillDomain
+  SkillDomain -->|skos:related | TGAPackage
+  Unit -->|dcterms:isRequiredBy| Qualification
+  Unit -->|dcterms:isReferencedBy | Qualification
+  Qualification -->|dcterms:isPartOf | TGAPackage
+  Qualification -->|schema:about | ASCED
+  Qualification -->|schema:credentialCategory | AQFType
+  AQFType -->|nst:skillLevel | AQFLevel
+
+```
