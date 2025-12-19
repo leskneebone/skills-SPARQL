@@ -56,7 +56,8 @@ flowchart LR
   Skill -->|dcterms:source | Unit
   Skill -->|schema:about | SkillRecord
   SkillRecord-->|dcterms:hasPart | SkillCategory
-  SkilRecord-->|dcterms:hasPart | SkillContext
+  SkillRecord-->|dcterms:hasPart | SkillContext
+  SkillRecord-->|dcterms:hasPart | SkillLevel
   Skill -->|skos:member | SkillFamily
   SkillFamily -->|skos:member | SkillDomain
   SkillDomain -->|skos:related | TGAPackage
