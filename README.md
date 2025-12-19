@@ -55,7 +55,7 @@ flowchart LR
   Skill -->|skos:narrower| NarrowerSkill
   Skill -->|dcterms:source | Unit
   Skill -->|schema:about | SkillRecord
-  SkilRecord-->|dcterms:hasPart | SkillCategory
+  SkillRecord-->|dcterms:hasPart | SkillCategory
   SkilRecord-->|dcterms:hasPart | SkillContext
   Skill -->|skos:member | SkillFamily
   SkillFamily -->|skos:member | SkillDomain
