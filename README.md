@@ -72,3 +72,11 @@ flowchart LR
   ANZSCO -->|skos:exactMatch | OSCA
 
 ```
+
+```mermaid
+flowchart LR
+RDFLibGitPrez
+KAIGitPrezManifest
+KAItoolPrezManifest
+KAIdocsPrezOverview
+
