@@ -61,8 +61,8 @@ flowchart LR
   Skill -->|skos:member | SkillFamily
   SkillFamily -->|skos:member | SkillDomain
   SkillDomain -->|skos:related | TGAPackage
-  Unit -->|dcterms:isRequiredBy| Qualification
-  Unit -->|dcterms:isReferencedBy | Qualification
+  Course -->|dcterms:isRequiredBy| Qualification
+  Course -->|dcterms:isReferencedBy | Qualification
   Qualification -->|dcterms:isPartOf | TGAPackage
   Qualification -->|schema:about | ASCED
   Qualification -->|schema:credentialCategory | AQFType
