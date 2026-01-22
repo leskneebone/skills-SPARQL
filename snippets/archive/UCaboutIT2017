@@ -1,0 +1,201 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix it2017: <https://data.jobsandskills.gov.au/def/it2017/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix ucmajor: <https://www.canberra.edu.au/major/> .
+@prefix ucunit: <https://www.canberra.edu.au/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ucmajor:SM0056 a schema:Course ;
+    dcterms:source <https://www.canberra.edu.au/course/706AA/9> ;
+    schema:courseCode "SM0056" ;
+    schema:educationalLevel "Undergraduate Major"@en ;
+    schema:hasPart ucunit:11484,
+        ucunit:11485,
+        ucunit:11488,
+        ucunit:11514,
+        ucunit:11759,
+        ucunit:11906,
+        ucunit:11907,
+        ucunit:4483,
+        ucunit:8019,
+        ucunit:9074,
+        ucunit:9788 ;
+    schema:name "Specialist Major in Cybersecurity and System Administration"@en ;
+    schema:numberOfCredits "24"^^xsd:integer .
+
+ucunit:11484 a schema:Course ;
+    dcterms:source "https://www.canberra.edu.au/unit/11484/1/2026"^^xsd:anyURI ;
+    schema:about it2017:ITE-NET ;
+    schema:courseCode "11484" ;
+    schema:educationalLevel "Undergraduate Level 3"@en ;
+    schema:learningOutcome "Competently identify, analyse and formulate the requirements for a network design"@en,
+        "Demonstrate the understanding to evaluate architectural design and components that best meet the requirements"@en,
+        "Develop a broad design of network systems for specific real life deployment scenarios"@en,
+        "Disseminate knowledge, ideas and opinions effectively and professionally"@en,
+        "Plan the process of architecting a networking system and use interpersonal skills to work collaboratively"@en ;
+    schema:name "Network Architecture"@en ;
+    schema:numberOfCredits "3"^^xsd:integer .
+
+ucunit:11485 a schema:Course ;
+    dcterms:source "https://www.canberra.edu.au/unit/11485/1/2026"^^xsd:anyURI ;
+    schema:about it2017:ITE-NET ;
+    schema:courseCode "11485" ;
+    schema:educationalLevel "Undergraduate Level 1"@en ;
+    schema:learningOutcome "Demonstrate a comprehensive understanding of the key theoretical concepts and practical techniques associated with the TCP/IP protocol suite, effectively leverage this knowledge as a tool for addressing real-world networking challenges"@en,
+        "Demonstrate an understanding of the basic issues in network management and how to set up and manage simple data networks"@en,
+        "Demonstrate an understanding of the discipline of network engineering, its importance and relevance to digital communication and communities of practice"@en,
+        "Describe the building blocks that form a modern network"@en ;
+    schema:name "Introduction to Network Engineering"@en ;
+    schema:numberOfCredits "3"^^xsd:integer .
+
+ucunit:11487 a schema:Course ;
+    dcterms:replacedBy ucunit:11759 ;
+    owl:deprecated true ;
+    schema:about it2017:ITE-CSP,
+        it2017:ITE-IST,
+        it2017:ITE-PFT,
+        it2017:ITE-SPA ;
+    schema:courseCode "11487" ;
+    schema:educationalLevel "Undergraduate Level 3"@en ;
+    schema:name "Information Security"@en ;
+    schema:numberOfCredits "3"^^xsd:integer .
+
+ucunit:11488 a schema:Course ;
+    dcterms:source "https://www.canberra.edu.au/unit/11488/1/2022"^^xsd:anyURI ;
+    schema:about it2017:ITE-CSP,
+        it2017:ITE-SPA ;
+    schema:courseCode "11488" ;
+    schema:educationalLevel "Undergraduate Level 1"@en ;
+    schema:learningOutcome "Describe the basic concepts of various encryption algorithms and choose appropriate encryption algorithms for applications"@en,
+        "Explain security threats, such as malicious software and DOS etc. and apply appropriate counter measures, such as firewall, multiple security models, and authentication and authorisation etc"@en,
+        "Further strengthen important generic skills, such as communication, analysis and inquiry, problem solving, independent and group working, and professionalism and social responsibility."@en,
+        "Undertake the basic tasks in managing IT infrastructure in a hypothetical or real case scenario, including desktop and server and computers, network, help desk operation, and security"@en ;
+    schema:name "Security and Support in IT"@en ;
+    schema:numberOfCredits "3"^^xsd:integer .
+
+ucunit:11514 a schema:Course ;
+    dcterms:source "https://www.canberra.edu.au/unit/11514/2/2026"^^xsd:anyURI ;
+    schema:about it2017:ITE-CSP,
+        it2017:ITE-NET,
+        it2017:ITE-SPA ;
+    schema:courseCode "11514" ;
+    schema:educationalLevel "Undergraduate Level 3"@en ;
+    schema:learningOutcome "Apply security best practices to servers and network devices"@en,
+        "Communicate technical information professionally"@en,
+        "Configure and manage system services on modern operating systems"@en,
+        "Design, deploy, and troubleshoot network services"@en,
+        "Monitor and maintain system health"@en ;
+    schema:name "System and Network Administration"@en ;
+    schema:numberOfCredits "3"^^xsd:integer .
+
+ucunit:11906 a schema:Course ;
+    dcterms:source "https://www.canberra.edu.au/unit/11906/1/2026"^^xsd:anyURI ;
+    schema:about it2017:ITE-CSP,
+        it2017:ITE-PFT,
+        it2017:ITE-SPA ;
+    schema:courseCode "11906" ;
+    schema:educationalLevel "Undergraduate Level 1"@en ;
+    schema:learningOutcome "Describe the cyber-security threat landscape"@en,
+        "Explain foundational cyber-security concepts and controls"@en,
+        "Explain the organisational and social context of cyber security"@en,
+        "Recognise common cyber threats and vulnerabilities"@en,
+        "Understand basic protective measures and user-level practices"@en ;
+    schema:name "Introduction to Cyber Security"@en ;
+    schema:numberOfCredits "3"^^xsd:integer .
+
+ucunit:11907 a schema:Course ;
+    dcterms:source "https://www.canberra.edu.au/unit/11907/1/2026"^^xsd:anyURI ;
+    schema:about it2017:ITE-CSP,
+        it2017:ITE-IST,
+        it2017:ITE-PFT,
+        it2017:ITE-SPA ;
+    schema:courseCode "11907" ;
+    schema:educationalLevel "Undergraduate Level 3"@en ;
+    schema:learningOutcome "Analyse complex cyber-security threats and attack scenarios"@en,
+        "Apply risk management techniques to cyber-security decision-making"@en,
+        "Design and evaluate advanced security controls and architectures"@en,
+        "Evaluate emerging cyber-security challenges and practices"@en,
+        "Respond to and manage cyber-security incidents"@en ;
+    schema:name "Advanced Cyber Security"@en ;
+    schema:numberOfCredits "3"^^xsd:integer .
+
+ucunit:4483 a schema:Course ;
+    dcterms:source "https://www.canberra.edu.au/unit/4483/11/2026"^^xsd:anyURI ;
+    schema:about it2017:ITE-SWF ;
+    schema:courseCode "4483" ;
+    schema:educationalLevel "Undergraduate Level 1"@en ;
+    schema:learningOutcome "Develop software applications by conforming to basic object-oriented principles of inheritance, polymorphism and encapsulation"@en,
+        "Enhance software usability with user interaction involving file input/output, database connectivity and graphical user interfaces"@en,
+        "Interpret coding using object-oriented programming paradigm"@en,
+        "Perform testing and validation for creating robust and reliable software by handling of events and exceptions"@en,
+        "Program simple software applications with an emphasis on creation of objects and classes along with basic procedural programming constructs"@en ;
+    schema:name "Software Technology 1"@en ;
+    schema:numberOfCredits "3"^^xsd:integer .
+
+ucunit:8019 a schema:Course ;
+    dcterms:source "https://www.canberra.edu.au/unit/8019/5/2022"^^xsd:anyURI ;
+    schema:about it2017:ITE-CSP,
+        it2017:ITE-NET,
+        it2017:ITE-SPA ;
+    schema:courseCode "8019" ;
+    schema:educationalLevel "Undergraduate Level 3"@en ;
+    schema:learningOutcome "Describe basic cryptographic functionality, including symmetric ciphers, public key encryption, and digital signatures"@en,
+        "Describe existing secure network architectures by applying security technologies such as firewalls, intrusion detection systems, and malicious software scanners"@en,
+        "Discuss how privacy and social engineering issues can impact system design"@en,
+        "Evaluate the security of systems that use cryptography and secure communication techniques"@en,
+        "Identify the vulnerability of information systems and justify specific security technologies, settings, and parameters that can improve system security design"@en ;
+    schema:name "Computer and Network Security"@en ;
+    schema:numberOfCredits "3"^^xsd:integer .
+
+ucunit:9074 a schema:Course ;
+    dcterms:source "https://www.canberra.edu.au/unit/9074/5/2026"^^xsd:anyURI ;
+    schema:about it2017:ITE-CSP,
+        it2017:ITE-SPA ;
+    schema:courseCode "9074" ;
+    schema:educationalLevel "Undergraduate Level 2"@en ;
+    schema:learningOutcome "Apply current industry best-practices to the analysis of digital evidence when given some hypothetical and real case scenarios"@en,
+        "Describe the role of digital forensics in criminal investigations, corporate investigation and auditing, and IT security operation"@en,
+        "Explain how data are stored on a local computer, remotely on the Internet, and also the general structures of the local computer and the Internet"@en,
+        "Further strengthen important generic skills, such as communication, analysis and inquiry, problem solving, independent and group working, and professionalism and social responsibility."@en,
+        "Undertake basic digital forensic investigation, from data acquisition and validation to evidence discovering, analysing, validating, and presenting, by using a variety of digital forensics tools"@en ;
+    schema:name "Introduction to Digital Forensics"@en ;
+    schema:numberOfCredits "3"^^xsd:integer .
+
+ucunit:9788 a schema:Course ;
+    dcterms: "https://www.canberra.edu.au/unit/9788/3/2026"^^xsd:anyURI ;
+    schema:about it2017:ITE-GPP ;
+    schema:courseCode "9788" ;
+    schema:educationalLevel "Undergraduate Level 3"@en ;
+    schema:learningOutcome "Adapt and generalise the lessons learnt and apply knowledge acquired in similar work situations"@en,
+        "Appraise the key issues and challenges facing ICT today and relate those issues in a modern organisation"@en,
+        "Establish the business values of ICT, assess and prioritise ICT solutions and formulate strategies and plans to meet business requirements"@en,
+        "Evaluate risks of key ICT trends and be able to develop high level approaches and strategies to manage the risks"@en,
+        "Understand the holistic and integrated nature of ICT trends and opportunities and apply the understanding in a work environment"@en ;
+    schema:name "Contemporary IT & E Issues"@en ;
+    schema:numberOfCredits "3"^^xsd:integer .
+
+ucunit:11759 a schema:Course ;
+    dcterms:replaces ucunit:11487 ;
+    dcterms:source "https://www.canberra.edu.au/unit/11759/1/2026"^^xsd:anyURI ;
+    schema:about it2017:ITE-CSP,
+        it2017:ITE-IST,
+        it2017:ITE-PFT,
+        it2017:ITE-SPA ;
+    schema:courseCode "11759" ;
+    schema:educationalLevel "Undergraduate Level 3"@en ;
+    schema:learningOutcome "Apply information security principles and practices to mitigate risks"@en,
+        "Assess common security threats and vulnerabilities"@en,
+        "Communicate security concepts and strategies to diverse audiences"@en,
+        "Evaluate security controls and policies"@en,
+        "Explain core information security concepts"@en ;
+    schema:name "Information Security"@en ;
+    schema:numberOfCredits "3"^^xsd:integer .
+
+ucunit:8019
+  owl:deprecated true ;
+  dcterms:isReplacedBy ucunit:11907 .
+
+ucunit:11488
+  owl:deprecated true ;
+  dcterms:isReplacedBy ucunit:11906 .
