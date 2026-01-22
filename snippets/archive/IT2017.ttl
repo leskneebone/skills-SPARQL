@@ -1,11 +1,11 @@
-@prefix acm: <https://data.jobsandskills.gov.au/def/acm-cc/> .
-@prefix acmcs: <https://data.jobsandskills.gov.au/def/acm-cc> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix it2017: <https://data.jobsandskills.gov.au/def/it2017/> .
-@prefix it2017cs: <https://data.jobsandskills.gov.au/def/it2017> .
-@prefix ror: <https://ror.org/>. 
-@prefix schema: <https://schema.org/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+PREFIX acm: <https://data.jobsandskills.gov.au/def/acm-cc/>
+PREFIX acmcs: <https://data.jobsandskills.gov.au/def/acm-cc>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX it2017: <https://data.jobsandskills.gov.au/def/it2017/>
+PREFIX it2017cs: <https://data.jobsandskills.gov.au/def/it2017>
+PREFIX ror: <https://ror.org/>
+PREFIX schema: <https://schema.org>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 ror:03wsadn68
 a schema:Organization ;
