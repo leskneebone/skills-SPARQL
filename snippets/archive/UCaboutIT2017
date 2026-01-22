@@ -1,10 +1,10 @@
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix it2017: <https://data.jobsandskills.gov.au/def/it2017/> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix schema: <https://schema.org/> .
-@prefix ucmajor: <https://www.canberra.edu.au/major/> .
-@prefix ucunit: <https://www.canberra.edu.au/unit/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX it2017: <https://data.jobsandskills.gov.au/def/it2017/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX schema: <https://schema.org/>
+PREFIX ucmajor: <https://www.canberra.edu.au/major/>
+PREFIX ucunit: <https://www.canberra.edu.au/unit/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 ucmajor:SM0056 a schema:Course ;
     dcterms:source <https://www.canberra.edu.au/course/706AA/9> ;
@@ -95,6 +95,7 @@ ucunit:11906 a schema:Course ;
         it2017:ITE-PFT,
         it2017:ITE-SPA ;
     schema:courseCode "11906" ;
+    dcterms:replaces ucunit:11488 ;
     schema:educationalLevel "Undergraduate Level 1"@en ;
     schema:learningOutcome "Describe the cyber-security threat landscape"@en,
         "Explain foundational cyber-security concepts and controls"@en,
@@ -111,6 +112,7 @@ ucunit:11907 a schema:Course ;
         it2017:ITE-PFT,
         it2017:ITE-SPA ;
     schema:courseCode "11907" ;
+dcterms:replaces ucunit:8019 ;
     schema:educationalLevel "Undergraduate Level 3"@en ;
     schema:learningOutcome "Analyse complex cyber-security threats and attack scenarios"@en,
         "Apply risk management techniques to cyber-security decision-making"@en,
