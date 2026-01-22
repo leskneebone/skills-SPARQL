@@ -1,10 +1,10 @@
-@prefix schema: <https://schema.org/> .
-@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix tgaqual: <https://training.gov.au/tgaQualifications/> .
-@prefix tgaunit: <https://training.gov.au/training/details/> .
-@prefix it2017: <https://data.jobsandskills.gov.au/def/it2017/> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+PREFIX schema: <https://schema.org/>
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX tgaqual: <https://training.gov.au/tgaQualifications/>
+PREFIX tgaunit: <https://training.gov.au/training/details/>
+PREFIX it2017: <https://data.jobsandskills.gov.au/def/it2017/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 #################################################################
 # Cert IV in IT (ICT40120) — CORE units
@@ -47,7 +47,7 @@ tgaunit:ICTICT443
   schema:about it2017:ITE-PFT .
 
 #################################################################
-# Cert IV in IT (ICT40120) — Electives shortlist for Francis
+# Cert IV in IT (ICT40120) — Electives shortlist
 # (sysadmin/support + networking + cyber + cloud)
 #################################################################
 
