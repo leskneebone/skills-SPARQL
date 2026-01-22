@@ -3,8 +3,16 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix it2017: <https://data.jobsandskills.gov.au/def/it2017/> .
 @prefix it2017cs: <https://data.jobsandskills.gov.au/def/it2017> .
+@prefix ror: <https://ror.org/>. 
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ror:03wsadn68
+a schema:Organization ;
+schema:name: "Association for Computing Machinery" ;
+schema:url: "http://www.acm.org/"^^xsd:anyURI 
+.
+
 
 acm:ITE-GPP a skos:Concept ;
     skos:inScheme acmcs: ;
@@ -1243,6 +1251,9 @@ it2017:ITE-CSP a skos:Concept ;
 
 acmcs: a skos:ConceptScheme ;
     dcterms:source <https://doi.org/10.1145/3173161> ;
+    dcterms:creator ror:03wsadn68 ;
+    skos:definition "IT2017 proposes a learner-centered framework for programs that prepare successful IT graduates for professional careers or further academic study."@en ;
+    skos:historyNote "Presented here for the first time in RDF by Jobs and Skills Australia"@en ;
     skos:hasTopConcept acm:ITE-GPP,
         acm:ITE-IMA,
         acm:ITE-IST,
@@ -1256,6 +1267,9 @@ acmcs: a skos:ConceptScheme ;
 
 it2017cs: a skos:ConceptScheme ;
     dcterms:source <https://doi.org/10.1145/3173161> ;
+    dcterms:creator ror:03wsadn68 ;
+    skos:definition "IT2017 proposes a learner-centered framework for programs that prepare successful IT graduates for professional careers or further academic study."@en ;
+    skos:historyNote "Presented here for the first time in RDF by Jobs and Skills Australia"@en ;
     skos:hasTopConcept it2017:ITE-CSP,
         it2017:ITE-GPP,
         it2017:ITE-IMA,
