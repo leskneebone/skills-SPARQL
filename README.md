@@ -81,6 +81,7 @@ KAItoolPrezManifest
 KAIdocsPrezOverview
 ```
 
+```mermaid
 flowchart TB
 
   %% --- VET PATHWAY ---
@@ -109,3 +110,4 @@ flowchart TB
 
   ACM --> OPS
   ACM --> PROF
+```
