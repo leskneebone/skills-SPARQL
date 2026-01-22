@@ -79,7 +79,7 @@ RDFLibGitPrez
 KAIGitPrezManifest
 KAItoolPrezManifest
 KAIdocsPrezOverview
-
+```
 
 flowchart TB
 
