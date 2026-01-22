@@ -1,0 +1,1270 @@
+@prefix acm: <https://data.jobsandskills.gov.au/def/acm-cc/> .
+@prefix acmcs: <https://data.jobsandskills.gov.au/def/acm-cc> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix it2017: <https://data.jobsandskills.gov.au/def/it2017/> .
+@prefix it2017cs: <https://data.jobsandskills.gov.au/def/it2017> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+acm:ITE-GPP a skos:Concept ;
+    skos:inScheme acmcs: ;
+    skos:notation "ITE-GPP" ;
+    skos:prefLabel "Global Professional Practice"@en ;
+    skos:scopeNote """1. Importance of identifying and understanding essential skills required for a successful career within the industry, including professional oral and written communication skills.
+2. Identification of ways teamwork integrates throughout IT and ways IT supports an organization.
+3. Social and professional contexts of information technology and computing, and adherence to ethical codes of conduct."""@en ;
+    skos:topConceptOf acmcs: ;
+    schema:skills "A. Analyze the importance of communication skills in a team environment and determine how these skills contribute to the optimization of organization goals. (Communication and teamwork)"@en,
+        "B. Evaluate the specific skills necessary for maintaining continued employment in an IT career that involves system development in an environmental context. (Employability)"@en,
+        "C. Develop IT policies within an organization that include privacy, legal, and ethical considerations as they relate to a corporate setting. (Legal and ethical)"@en,
+        "D. Evaluate related issues facing an IT project and develop a project plan using a cost/benefit analysis including risk considerations in creating an effective project plan from its start to its completion. (Project management)"@en .
+
+acm:ITE-IMA a skos:Concept ;
+    skos:inScheme acmcs: ;
+    skos:notation "ITE-IMA" ;
+    skos:prefLabel "Information Management"@en ;
+    skos:scopeNote """1. Tools and techniques for efficient data modeling, collection, organization, retrieval, and management.
+2. How to extract information from data to make data meaningful to the organization.
+3. How to develop, deploy, manage and integrate data and information systems to support the organization.
+4. Safety and security issues associated with data and information.
+5. Tools and techniques for producing useful knowledge from information."""@en ;
+    skos:topConceptOf acmcs: ;
+    schema:skills "A. Express how the growth of the internet and demands for information have changed data handling and transactional and analytical processing, and led to the creation of special purpose databases. (Requirements)"@en,
+        "B. Design and implement a physical model based on appropriate organization rules for a given scenario including the impact of normalization and indexes. (Requirements and development)"@en,
+        "C. Create working SQL statements for simple and intermediate queries to create and modify data and database objects to store, manipulate and analyze enterprise data. (Testing and performance)"@en,
+        "D. Analyze ways data fragmentation, replication, and allocation affect database performance in an enterprise environment. (Integration and evaluation)"@en,
+        "E. Perform major database administration tasks such as create and manage database users, roles and privileges, backup, and restore database objects to ensure organizational efficiency, continuity, and information security. (Testing and performance)"@en .
+
+acm:ITE-IST a skos:Concept ;
+    skos:inScheme acmcs: ;
+    skos:notation "ITE-IST" ;
+    skos:prefLabel "Integrated Systems Technology"@en ;
+    skos:scopeNote """1. Scripting languages, their uses and architectures.
+2. Application programming interfaces.
+3. Programming practices to facilitate the management, integration, and security of the systems that support an organization."""@en ;
+    skos:topConceptOf acmcs: ;
+    schema:skills "A. Illustrate how to code and store characters, images and other forms of data in computers and show why data conversion is often a necessity when merging disparate computing systems together. (Data mapping and exchange)"@en,
+        "B. Show how a commonly used intersystem communication protocol works, including its advantages and disadvantages. (Intersystem communication protocols)"@en,
+        "C. Design, debug and test a script that includes selection, repetition and parameter passing. (Integrative programming and scripting)"@en,
+        "D. Illustrate the goals of secure coding, and show how to use these goals as guideposts in dealing with preventing buffer overflow, wrapper code, and securing method access. (Defensible integration)"@en .
+
+acm:ITE-NET a skos:Concept ;
+    skos:inScheme acmcs: ;
+    skos:notation "ITE-NET" ;
+    skos:prefLabel "Networking"@en ;
+    skos:scopeNote """1. Topology of ad hoc and fixed networks of all sizes.
+2. Role of the layered model in standards evolution and interoperability.
+3. Physical layer through routing layer issues.
+4. Higher layers related to applications and security, such as functions and design.
+5. Approaches to designing for and modeling latency, throughput, and error rate."""@en ;
+    skos:topConceptOf acmcs: ;
+    schema:skills "A. Analyze and compare the characteristics of various communication protocols and how they support application requirements within a telecommunication system. (Requirements and Technologies)"@en,
+        "B. Analyze and compare several networking topologies in terms of robustness, expandability, and throughput used within a cloud enterprise. (Technologies)"@en,
+        "C. Describe different network standards, components, and requirements of network protocols within a distributed computing setting. (Network protocol technologies)"@en,
+        "D. Produce managerial policies to address server breakdown issues within a banking system. (Risk Management)"@en,
+        "E. Explain different main issues related to network management. (Network Management)"@en .
+
+acm:ITE-PFT a skos:Concept ;
+    skos:inScheme acmcs: ;
+    skos:notation "ITE-PFT" ;
+    skos:prefLabel "Platform Technologies"@en ;
+    skos:scopeNote """1. Comparison of various operating systems available, including their respective characteristics, advantages and disadvantages.
+2. Selection, deployment, integration and administration of platforms or components to support the organization’s IT infrastructure.
+3. Fundamentals of hardware and software and how they integrate to form the essential components of IT systems."""@en ;
+    skos:topConceptOf acmcs: ;
+    schema:skills "A. Describe how the historical development of hardware and operating system computing platforms produced the computing systems we have today. (Computing systems)"@en,
+        "B. Show how to choose among operating system options, and install at least an operating system on a computer device. (Operating systems)"@en,
+        "C. Justify the need for power and heat budgets within an IT environment, and document the factors needed when considering power and heat in a computing system. (Computing infrastructure)"@en,
+        "D. Produce a block diagram, including interconnections, of the main parts of a computer, and illustrate methods used on a computer for storing and retrieving data. (Architecture and organization)"@en .
+
+acm:ITE-SPA a skos:Concept ;
+    skos:inScheme acmcs: ;
+    skos:notation "ITE-SPA" ;
+    skos:prefLabel "System Paradigms"@en ;
+    skos:scopeNote """1. Skills and tools to gather requirements, source code development, evaluation and integration of components into a single system, and system validation.
+2. Design, selection, application, deployment, and management of computing systems to support an organization.
+3. Skills and concepts essential to the administration of operating systems, networks, software, file systems, file servers, web systems, database systems, and system documentation, policies, and procedures.
+4. Fundamentals of project management and the interplay between IT applications and related organizational processes.
+5. System integration issues, including integration in a system of systems and federation of systems, role of architectures in systems integration, performance and effectiveness.
+6. Education and support of users of computing systems."""@en ;
+    skos:topConceptOf acmcs: ;
+    schema:skills "A. Justify the way IT systems within an organization can represent stakeholders using different architectures and the ways these architectures relate to a system lifecycle. (Requirements and development)"@en,
+        "B. Demonstrate a procurement process for software and hardware acquisition and explain the procedures one might use for testing the critical issues that could affect IT system performance. (Testing and performance)"@en,
+        "C. Evaluate integration choices for middleware platforms and demonstrate how these choices affect testing and evaluation within the development of an IT system. (Integration and evaluation)"@en,
+        "D. Use knowledge of information technology and sensitivity to the goals and constraints of the organization to develop and monitor effective and appropriate system administration policies within a government environment. (System governance)"@en,
+        "E. Develop and implement procedures and employ technologies to achieve administrative policies within a corporate environment. (Operational activities)"@en,
+        "F. Organize personnel and information technology resources into appropriate administrative domains in a technical center. (Operational domains)"@en,
+        "G. Use appropriate and emerging technologies to improve performance of systems and discover the cause of performance problems in a system. (Performance analysis)"@en .
+
+acm:ITE-SWF a skos:Concept ;
+    skos:inScheme acmcs: ;
+    skos:notation "ITE-SWF" ;
+    skos:prefLabel "Software Fundamentals"@en ;
+    skos:scopeNote """1. Skills and fundamental programming concepts, data structures, and algorithmic processes.
+2. Programming strategies and practices for efficient problem solving.
+3. Programming paradigms to solve a variety of programming problems."""@en ;
+    skos:topConceptOf acmcs: ;
+    schema:skills "A. Use multiple levels of abstraction and select appropriate data structures to create a new program that is socially relevant and requires teamwork. (Program development)"@en,
+        "B. Evaluate how to write a program in terms of program style, intended behavior on specific inputs, correctness of program components, and descriptions of program functionality. (App development practices)"@en,
+        "C. Develop algorithms to solve a computational problem and explain how programs implement algorithms in terms of instruction processing, program execution, and running processes. (Algorithm development)"@en,
+        "D. Collaborate in the creation of an interesting and relevant app (mobile or web) based on user experience design, functionality, and security analysis and build the app’s program using standard libraries, unit testing tools, and collaborative version control. (App development practices)"@en .
+
+acm:ITE-UXD a skos:Concept ;
+    skos:inScheme acmcs: ;
+    skos:notation "ITE-UXD" ;
+    skos:prefLabel "User Experience Design"@en ;
+    skos:scopeNote """1. Understanding of advocacy for the user in the development of IT applications and systems.
+2. Development of a mind-set that recognizes the importance of users, context of use, and organizational contexts.
+3. Employment of user-centered methodologies in the design, development, evaluation, and deployment of IT applications and systems.
+4. Application of evaluation criteria, benchmarks, and standards.
+5. User and task analysis, human factors, ergonomics, accessibility standards, experience design, and cognitive psychology."""@en ;
+    skos:topConceptOf acmcs: ;
+    schema:skills "A. Design an interactive application, applying a user-centered design cycle and related tools and techniques (e.g., prototyping), aiming at usability and relevant user experience within a corporate environment. (Design tools and techniques)"@en,
+        "B. For a case of user centered design, analyze and evaluate the context of use, stakeholder needs, state-of-the-art interaction opportunities, and envisioned solutions, considering user attitude and applying relevant tools and techniques (e.g., heuristic evaluation), aiming at universal access and inclusiveness, and showing a responsive design attitude, considering assistive technologies and culture sensitive design. (Stakeholder needs)"@en,
+        "C. For evaluation of user-centered design, articulate evaluation criteria and compliance to relevant standards. (Benchmarks and standards)"@en,
+        "D. In design and analysis, apply knowledge from related disciplines including human information processing, anthropology and ethnography, and ergonomics/human factors. (Integrative design)"@en,
+        "E. Apply experience design for a service domain related to several disciplines, focusing on multiple stakeholders and collaborating in an interdisciplinary design team. (Application design)"@en .
+
+acm:ITE-WMS a skos:Concept ;
+    skos:inScheme acmcs: ;
+    skos:notation "ITE-WMS" ;
+    skos:prefLabel "Web and Mobile Systems"@en ;
+    skos:scopeNote """1. Web-based applications including related software, databases, interfaces, and digital media.
+2. Mobile applications including related software, databases, interfaces, and digital media.
+3. Contemporary web technologies, social media."""@en ;
+    skos:topConceptOf acmcs: ;
+    schema:skills "A. Design a responsive web application utilizing a web framework and presentation technologies in support of a diverse online community. (Web application development)"@en,
+        "B. Develop a mobile app that is usable, efficient, and secure on more than one device. (Mobile app development)"@en,
+        "C. Analyze a web or mobile system and correct security vulnerabilities. (Web and mobile security)"@en,
+        "D. Implement storage, transfer, and retrieval of digital media in a web application with appropriate file, database, or streaming formats. (Digital media storage and transfer)"@en,
+        "E. Describe the major components of a web system and how they function together, including the web server, database, analytics, and front end. (Web system infrastructure)"@en .
+
+it2017:ITE-CSP-01 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-01" ;
+    skos:prefLabel "Perspectives and impact"@en .
+
+it2017:ITE-CSP-02 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-02" ;
+    skos:prefLabel "Policy goals and mechanisms"@en .
+
+it2017:ITE-CSP-03 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-03" ;
+    skos:prefLabel "Security services, mechanisms, and countermeasures"@en ;
+    schema:teaches "a. Analyze the tradeoffs of balancing key security properties (Confidentiality, Integrity, and Availability)."@en,
+        "b. Make sense of the concepts of risk, threats, vulnerabilities and attack vectors (including the fact that there is no such thing as perfect security)."@en,
+        "c. Document an example of “countermeasures” for specific threats."@en,
+        "d. Produce a list capabilities and tools that identify cybersecurity risks on an ongoing basis."@en,
+        "e. Show the concept of identity management and how it is important."@en,
+        "f. Make meaning of the concepts of authentication, authorization, and access control."@en,
+        "g. Argue for the benefit of multi-factor authentication."@en .
+
+it2017:ITE-CSP-04 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-04" ;
+    skos:prefLabel "Cyber-attacks and detection"@en ;
+    schema:teaches "a. Contrast the roles of prevention, deterrence, and detection mechanisms."@en,
+        "b. Recognize password guessing, port scanning, SQL injection probes, and other cyberattacks in log files."@en,
+        "c. Make sense of the role and limitations of signature-based and behavioral-based anti-virus technology."@en,
+        "d. Contrast host-based and network-based intrusion detection systems."@en,
+        "e. Design several rules for a network-based intrusion detection system that will protect against specific known attacks."@en,
+        "f. Describe how the use of deception by malware is used to evade security mechanisms."@en .
+
+it2017:ITE-CSP-05 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-05" ;
+    skos:prefLabel "High assurance systems"@en ;
+    schema:teaches "a. Make sense of the concepts of trust and trustworthiness."@en,
+        "b. Describe how the principle of least privilege and isolation is applied to system design."@en,
+        "c. Describe how the principles of fail-safe and deny-by-default fit high assurance systems."@en,
+        "d. Describe how mediation and the Principle of Complete Mediation apply."@en,
+        "e. Make sense of the concept of trusted computing including trusted computing base and attack surface and the principle of minimizing trusted computing base."@en,
+        "f. Describe how commercial approaches to delivering high-assurance services, including SE Linux, Security Enhanced hypervisors, role-based access systems, and digital signatures are applied to code and data."@en,
+        "g. Document the role of formal methods in creating high assurance software and systems."@en,
+        "h. Describe how Trusted Platform Modules (TPMs) are used in creating high assurance systems."@en .
+
+it2017:ITE-CSP-06 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-06" ;
+    skos:prefLabel "Vulnerabilities, threats, and risk"@en ;
+    schema:teaches "a. Express the differences between vulnerabilities, threats, and risk."@en,
+        "b. Describe how security mechanisms can contain vulnerabilities."@en,
+        "c. Use a risk management framework."@en,
+        "d. Use penetration-testing tools to identify a vulnerability."@en,
+        "e. Derive several benefits of defense in depth, e.g., having multiple layers of defenses."@en,
+        "f. Describe how security issues arise at boundaries between components."@en,
+        "g. Use the National Vulnerability Database to determine if software installed on a server or network component has a known vulnerability."@en,
+        "h. Recognize vulnerabilities, threats and risks that are distinct to network infrastructure, cloud computing servers, desktop computers, and mobile devices."@en,
+        "i. Use a buffer-overflow attack against a server that reads an unbounded data into a fixed-size data structure."@en,
+        "j. Use a cross-site scripting attack against a server that does not properly sanitize user input prior to displaying the results in a browser."@en .
+
+it2017:ITE-CSP-07 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-07" ;
+    skos:prefLabel "Anonymity systems"@en ;
+    schema:teaches "a. Compare the limitations and strengths of anonymous communication and payment systems currently in use."@en,
+        "b. Propose legitimate and illicit uses of anonymity systems."@en,
+        "c. Model policies for prohibiting or using anonymity systems within an organization."@en,
+        "d. Use an anonymity system (e.g., Tor)."@en,
+        "e. Document the kind of information not protected by an anonymous communication system."@en,
+        "f. Evaluate the impact of search queries on maintaining anonymity."@en,
+        "g. Evaluate the implications of DNS queries on maintaining anonymity."@en .
+
+it2017:ITE-CSP-08 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-08" ;
+    skos:prefLabel "Usable security"@en ;
+    schema:teaches "a. Describe how the concept of “psychological acceptability” and the importance of usability impact security mechanism design."@en,
+        "b. Make sense of research studies that consistently demonstrate that a trust-oriented interface design can facilitate the development of more trustworthy systems."@en,
+        "c. Design a user interface for a security mechanism."@en,
+        "d. Analyze a security policy and/or procedure to show where it considers, or fails to consider, human factors."@en,
+        "e. Critique the ability of complex password policies to achieve the desired goal of preventing unauthorized access to sensitive systems."@en,
+        "f. Recognize the differences between erasing pointers to information and overwriting the information as they apply to file systems, databases, and cloud storage."@en,
+        "g. Judge the effectiveness of an authentication mechanism from the perspective of a person who is visually impaired."@en,
+        "h. Design and develop software suite for a new digital currency."@en .
+
+it2017:ITE-CSP-09 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-09" ;
+    skos:prefLabel "Cryptography overview"@en ;
+    schema:teaches "a. Exhibit comprehension of the terms encryption, decryption, key, public key cryptography, symmetric cryptography, algorithm, key length, key escrow, key recover, key splitting, random number generator, nonce, initialization vector, cryptographic mode, plaintext, cipher text, S/MIME, PGP, IPsec, TLS."@en,
+        "b. Contrast encryption, digital signatures, and hash functions."@en,
+        "c. Compare encryption for data at rest and data in motion."@en,
+        "d. Make sense of block-level encryption, file-level encryption, and application-level encryption for encrypted storage."@en,
+        "e. Argue for why it is preferred to use validated, proven algorithms and implementations rather than developing new ones."@en .
+
+it2017:ITE-CSP-10 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-10" ;
+    skos:prefLabel "Malware fundamentals"@en ;
+    schema:teaches "a. Tell a story of how malware is concealed and the impact that malware might have on a system."@en,
+        "b. Use signature-based or behavior detection malware countermeasures to address malware infection mechanisms."@en,
+        "c. Propose where within the architectures of organization's information systems it might be most effective to provide protection from malware."@en,
+        "c. Propose where within the architectures of organization’s information systems it might be most effective to provide protection from malware."@en,
+        "d. Debug a system (network, computer, or application) for the presence of malware."@en,
+        "e. Use techniques for safely isolating malware samples from infected systems and classifying the sample."@en .
+
+it2017:ITE-CSP-11 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-11" ;
+    skos:prefLabel "Mitigation and recovery"@en ;
+    schema:teaches "a. Discuss a risk mitigation and incident recovery plan."@en,
+        "b. Perform a mitigation of a malware infection on an enterprise client and an enterprise server."@en,
+        "c. Document the managerial and forensic steps for recovery after detecting a hostile insider."@en,
+        "d. Contrast backup and recovery plans designed to protect against natural disasters from those designed to protect against hostile actors."@en,
+        "e. Document examples of the steps taken after a credential is lost or compromised."@en,
+        "f. Describe how supply chain risks could be reduced."@en .
+
+it2017:ITE-CSP-12 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-12" ;
+    skos:prefLabel "Personal information"@en ;
+    schema:teaches "a. Make sense of the terms Personal Information, Personally Identifiable Information, De-Identification, Anonymization, Pseudonym, Masking, and Unmasking."@en,
+        "b. Describe how the Fair Information Practices apply to personal information and how online entities collect and use personal information."@en,
+        "c. Classify several categories of personal information according to privacy and disclosure risk."@en,
+        "d. Contrast policies for collecting, processing, storing, sharing, and disposing of personal information."@en,
+        "e. Illustrate the role and limitations of encryption for protecting personal information."@en,
+        "f. Make sense of policies and technologies for isolating personal data from enterprise data."@en,
+        "g. Analyze approaches for controlling access to personal information."@en .
+
+it2017:ITE-CSP-13 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-13" ;
+    skos:prefLabel "Operational issues"@en ;
+    schema:teaches "a. Show how one determines the exposure and plans for the recovery of a lost laptop and mobile device."@en,
+        "b. Document standards that apply to an organization's information security posture."@en,
+        "b. Document standards that apply to an organization’s information security posture."@en,
+        "c. Evaluate potential vendors with respect to their security offerings."@en,
+        "d. Make meaning of emerging threats, vulnerabilities, and mitigations."@en,
+        "e. Design a continuing education program."@en,
+        "f. Make sense of the challenges of recruitment and retention of security personnel."@en,
+        "g. Suggest and implement digital currency extensions using relevant scripting techniques (colored coins paradigm)"@en,
+        "g. Suggest and implement digital currency extensions using relevant scripting techniques (colored coins paradigm)."@en .
+
+it2017:ITE-CSP-14 a skos:Concept ;
+    skos:broader it2017:ITE-CSP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-CSP-14" ;
+    skos:prefLabel "Reporting requirements"@en ;
+    schema:teaches "a. Document legal and regulatory requirements for sharing of threat and breach information."@en,
+        "b. Contrast different vulnerability disclosure policies, including “full disclosure,” and “responsible disclosure.”"@en,
+        "c. Make sense of the concept of privacy breach versus security breach and the governing rules that apply to both types of breach."@en .
+
+it2017:ITE-GPP-01 a skos:Concept ;
+    skos:broader it2017:ITE-GPP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-GPP-01" ;
+    skos:prefLabel "Perspectives and impact"@en ;
+    schema:teaches "a. Describe the nature of professionalism and its place in the field of information technology."@en,
+        "b. Contrast ethical and legal issues as related to information technology."@en,
+        "c. Describe how IT uses or benefits from social and professional issues."@en .
+
+it2017:ITE-GPP-02 a skos:Concept ;
+    skos:broader it2017:ITE-GPP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-GPP-02" ;
+    skos:prefLabel "Professional issues and responsibilities"@en ;
+    schema:teaches "a. Contrast the professional context of information technology and computing and adherence to ethical codes of conduct."@en,
+        "b. Describe and critique several historical, professional, ethical, and legal aspects of computing."@en .
+
+it2017:ITE-GPP-03 a skos:Concept ;
+    skos:broader it2017:ITE-GPP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-GPP-03" ;
+    skos:prefLabel "IT governance and resource management"@en ;
+    schema:teaches "a. Analyze the expanding role of IT governance and its effect on organizations."@en,
+        "b. Be aware of management issues in IT governance."@en,
+        "c. Compare and contrast organizational cultures and their impact on IT governance."@en,
+        "d. Justify the appropriate resources needed to administer the system."@en,
+        "e. Compare and contrast several alternative vendors of system resources."@en,
+        "f. Develop naming conventions for the resources in a system."@en,
+        "g. Create and justify several appropriate policies and procedures to manage resources in a system."@en .
+
+it2017:ITE-GPP-04 a skos:Concept ;
+    skos:broader it2017:ITE-GPP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-GPP-04" ;
+    skos:prefLabel "Risk identification and evaluation"@en ;
+    schema:teaches "a. Analyze the role of risk to an organization and ways to identify key risk factors."@en,
+        "b. Evaluate various risks and appropriate actions."@en,
+        "c. Design and build a risk matrix."@en .
+
+it2017:ITE-GPP-05 a skos:Concept ;
+    skos:broader it2017:ITE-GPP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-GPP-05" ;
+    skos:prefLabel "Environmental issues"@en ;
+    schema:teaches "a. Analyze and critique ways to develop green IT policies and standards and learn to identify green IT."@en,
+        "b. Contrast several frameworks for green computing."@en,
+        "c. Describe several uses of green computing for improving energy efficiency."@en .
+
+it2017:ITE-GPP-06 a skos:Concept ;
+    skos:broader it2017:ITE-GPP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-GPP-06" ;
+    skos:prefLabel "Ethical, legal, and privacy issues"@en ;
+    schema:teaches "a. Evaluate the role of legal, ethical, and privacy issues within IT as it relates to organizations."@en,
+        "b. Reflect on whether existing laws need modification to keep up with technology."@en,
+        "c. Model a computer use policy that includes privacy, legal, and ethical considerations for all employees."@en,
+        "d. Contrast ethical algorithms with algorithms that are ethically neutral."@en .
+
+it2017:ITE-GPP-07 a skos:Concept ;
+    skos:broader it2017:ITE-GPP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-GPP-07" ;
+    skos:prefLabel "Intellectual property"@en ;
+    schema:teaches "a. Describe the foundations of intellectual property."@en,
+        "b. Critique several transnational issues concerning intellectual property."@en,
+        "c. Distinguish among employees, contractors, and consultants and offer the implications of each hiring class."@en,
+        "d. Compare software patents and contrast with other forms of intellectual property protection."@en .
+
+it2017:ITE-GPP-08 a skos:Concept ;
+    skos:broader it2017:ITE-GPP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-GPP-08" ;
+    skos:prefLabel "Project management principles"@en ;
+    schema:teaches "a. Describe the key components of a project plan."@en,
+        "b. Show the importance of a cost/benefit analysis to the successful implementation of a project plan."@en,
+        "c. Evaluate appropriate project planning and tracking tools."@en,
+        "d. Illustrate how to identify the lessons learned in a project closeout and review session."@en .
+
+it2017:ITE-GPP-09 a skos:Concept ;
+    skos:broader it2017:ITE-GPP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-GPP-09" ;
+    skos:prefLabel "Communications"@en ;
+    schema:teaches "a. Evaluate several strategies for effective professional communication in writing and in speaking."@en,
+        "b. Create well-organized technical reports that are structured according to acceptable standards."@en,
+        "c. Analyze and describe the role of communications within IT as well as in building relationships with the organizations."@en,
+        "d. Illustrate several essential skills for communicating within a team environment."@en .
+
+it2017:ITE-GPP-10 a skos:Concept ;
+    skos:broader it2017:ITE-GPP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-GPP-10" ;
+    skos:prefLabel "Teamwork and conflict management"@en ;
+    schema:teaches "a. Analyze several skill sets needed to function effectively in a team environment."@en,
+        "b. Contrast several ways in which industry approaches teamwork toward a common goal."@en,
+        "c. Describe and critique several ways that conflict management aids in building stronger teams."@en .
+
+it2017:ITE-GPP-11 a skos:Concept ;
+    skos:broader it2017:ITE-GPP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-GPP-11" ;
+    skos:prefLabel "Employability skills and careers in IT"@en ;
+    schema:teaches "a. Evaluate viable skill sets essential to a career in IT."@en,
+        "b. Illustrate the elements of a successful technical resume."@en,
+        "c. Reflect on the need for industry experience within the IT field."@en,
+        "d. Compare the important elements needed for a strong interview for an IT position."@en .
+
+it2017:ITE-GPP-12 a skos:Concept ;
+    skos:broader it2017:ITE-GPP ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-GPP-12" ;
+    skos:prefLabel "Information systems principles"@en ;
+    schema:teaches "a. Critique ways in which information systems supports organizational requirements."@en,
+        "b. Describe the system development life cycle, its phases, and models."@en,
+        "c. Evaluate the effectiveness and efficiency of a system."@en,
+        "d. Contrast several high-level IT strategies to avoid obstacles to achieve organizational goals."@en .
+
+it2017:ITE-IMA-01 a skos:Concept ;
+    skos:broader it2017:ITE-IMA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IMA-01" ;
+    skos:prefLabel "Perspectives and impact"@en ;
+    schema:teaches "a. Describe how data storage and retrieval has changed over time."@en,
+        "b. Justify the advantages of a database approach compared to traditional file processing."@en,
+        "c. Describe how the growth of the internet and demands for information for users outside the organization (customers and suppliers) impact data handling and processing."@en,
+        "d. Tell a brief history of database models and their evolution."@en .
+
+it2017:ITE-IMA-02 a skos:Concept ;
+    skos:broader it2017:ITE-IMA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IMA-02" ;
+    skos:prefLabel "Data-information concepts"@en ;
+    schema:teaches "a. Describe the role of data, information, and databases in organizations."@en,
+        "b. Compare and use key terms such as: information, data, database, database management system, metadata, and data mining."@en,
+        "c. Illustrate data quality, accuracy, and timeliness, and explain how their absence will impact organizations."@en,
+        "d. Describe mechanisms for data collection and their implications (automated data collection, input forms, sources)."@en,
+        "e. Describe basic issues of data retention, including the need for retention, physical storage, backup, and security."@en .
+
+it2017:ITE-IMA-03 a skos:Concept ;
+    skos:broader it2017:ITE-IMA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IMA-03" ;
+    skos:prefLabel "Data modeling"@en ;
+    schema:teaches "a. Design Entity Relationship diagrams based on appropriate organizational rules for a given scenario."@en,
+        "b. Describe the relationship between a logical model and a physical model."@en,
+        "c. Evaluate importance of database constraints."@en,
+        "d. Design a physical model for the best performance including impact of normalization and indexes."@en,
+        "e. Compare and contrast the differences and similarities between the relational and the dimensional data modeling (OLTP vs. OLAP)."@en .
+
+it2017:ITE-IMA-04 a skos:Concept ;
+    skos:broader it2017:ITE-IMA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IMA-04" ;
+    skos:prefLabel "Database query languages"@en ;
+    schema:teaches "a. Create, modify, and query database objects using the Structured Query Language (SQL)."@en,
+        "b. Perform filtering and sorting data using various clauses including where, order by, between, like, group by, and having."@en,
+        "c. Use joins to select data across multiple tables."@en,
+        "d. Use embedded SQL queries."@en,
+        "e. Perform calculations in a query using calculated fields and aggregate functions."@en,
+        "f. Create updatable and non-updatable views."@en .
+
+it2017:ITE-IMA-05 a skos:Concept ;
+    skos:broader it2017:ITE-IMA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IMA-05" ;
+    skos:prefLabel "Data organization architecture"@en ;
+    schema:teaches "a. Demonstrate select, project, union, intersection, set difference, and natural join relational operations using simple example relations provided."@en,
+        "b. Contrast and compare relational databases concepts and non-relational databases including object-oriented, XML, NewSQL and NoSQL databases."@en,
+        "c. Express the relationship between functional dependencies and keys, and give examples."@en,
+        "d. Evaluate data integrity and provide examples of entity and referential integrity."@en,
+        "e. Analyze how data fragmentation, replication and allocation affect database performance."@en .
+
+it2017:ITE-IMA-06 a skos:Concept ;
+    skos:broader it2017:ITE-IMA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IMA-06" ;
+    skos:prefLabel "Special-purpose databases"@en ;
+    schema:teaches "a. Describe major concepts of object oriented, XML, NewSQL, and NoSQL databases."@en,
+        "b. Demonstrate an understanding of online analytical processing and data warehouse systems."@en,
+        "c. Describe methods of data mining and what insights may be gained by these methods."@en .
+
+it2017:ITE-IMA-07 a skos:Concept ;
+    skos:broader it2017:ITE-IMA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IMA-07" ;
+    skos:prefLabel "Managing the database environment"@en ;
+    schema:teaches "a. Contrast and compare data administration and database administration."@en,
+        "b. Describe tasks commonly performed by database administrators."@en,
+        "c. Create and manage database users, roles, and privileges."@en,
+        "d. Consider the concept of database security and backup and recovery."@en,
+        "e. Evaluate the importance of metadata in database environment."@en .
+
+it2017:ITE-IST-01 a skos:Concept ;
+    skos:broader it2017:ITE-IST ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IST-01" ;
+    skos:prefLabel "Perspectives and impact"@en ;
+    schema:teaches "a. Describe how integrating various modules can produce a working system."@en,
+        "b. Describe how integration is an important function of all IT professionals."@en .
+
+it2017:ITE-IST-02 a skos:Concept ;
+    skos:broader it2017:ITE-IST ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IST-02" ;
+    skos:prefLabel "Data mapping and exchange"@en ;
+    schema:teaches "a. Produce a definition for the term ‘metadata.'"@en,
+        "b. Describe how ASCII, EBCDIC, and Unicode are used to encode data, and show how each should be used."@en,
+        "c. Describe how XML and the document object model are being used to integrate and exchange data between systems."@en,
+        "d. Use DTD to create a document definition for a data structure. Given a DTD for data structure, create an XML document with real data."@en,
+        "e. Describe how XSL, XSLT and XPath are used to transform data streams."@en .
+
+it2017:ITE-IST-03 a skos:Concept ;
+    skos:broader it2017:ITE-IST ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IST-03" ;
+    skos:prefLabel "Intersystem communication protocols"@en ;
+    schema:teaches "a. Describe how different types of architectures must be considered for integrating systems."@en,
+        "b. Demonstrate the role of DCOM, CORBA, and RMI in distributed processing."@en,
+        "c. Describe how web services are used to integrate disparate applications in an organization. Describe the role of the WSDL, SOAP, and UDDI architectures in creating and using web services."@en,
+        "d. Demonstrate the role of socket programming in communicating between systems. Contrast the protocols and uses of TCP/IP sockets and Datagram sockets."@en,
+        "e. Describe the purpose of message and queuing services and demonstrate how they work. Illustrate the protocol used by one messaging service (e.g., JMS)."@en,
+        "f. List the commonly used low level data communications protocols (e.g., RS232), describe how to know when each protocol should be used, and illustrate the protocol for one low-level communication protocol."@en .
+
+it2017:ITE-IST-04 a skos:Concept ;
+    skos:broader it2017:ITE-IST ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IST-04" ;
+    skos:prefLabel "Integrative programming"@en ;
+    schema:teaches "a. Describe how design patterns are useful in integrative programming."@en,
+        "b. Evaluate the motivation for using each of the following design patterns: MVC, singleton, factory method, façade, proxy, decorator, and observer."@en,
+        "c. Describe how a programming interface is used in programming, and illustrate with an example when the use of a programming interface simplified the development of a system."@en,
+        "d. Define the concept of inheritance and describe how it can be applied to encourage code reuse."@en,
+        "e. Design an abstract class and use inheritance to create a class that extends the abstract class."@en,
+        "f. Design, develop, and test an application that uses the abstract class."@en .
+
+it2017:ITE-IST-05 a skos:Concept ;
+    skos:broader it2017:ITE-IST ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IST-05" ;
+    skos:prefLabel "Scripting techniques"@en ;
+    schema:teaches "a. Describe how scripting languages are used for web scripting, server-side scripting, and operating system scripting."@en,
+        "b. Write, debug, and test a script that includes selection, repetition, and parameter passing."@en .
+
+it2017:ITE-IST-06 a skos:Concept ;
+    skos:broader it2017:ITE-IST ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-IST-06" ;
+    skos:prefLabel "Defensible integration"@en ;
+    schema:teaches "a. Contrast evidence-based security vs. code access security."@en,
+        "b. Define and evaluate several goals of secure coding."@en,
+        "c. Justify the guidelines for authenticating and defining permissions to systems services and resources."@en,
+        """d. For each of the following “best secure coding” practices, give an example of a problem that can occur when the practice is not followed and then describe how to overcome the problem.
+1. Preventing buffer overflow
+2. Securing state data
+3. Securing method access
+4. Wrapper code
+5. Unmanaged code
+6. Validation of user input
+7. Remoting considerations
+8. Protected objects
+9. Serialization
+10. Robust error handling"""@en .
+
+it2017:ITE-NET-01 a skos:Concept ;
+    skos:broader it2017:ITE-NET ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-NET-01" ;
+    skos:prefLabel "Perspectives and impact"@en ;
+    schema:teaches "a. Describe networking and the research scope of networking study."@en,
+        "b. Identify some components of a network."@en,
+        "c. Name several network devices and describe their purpose."@en,
+        "d. Describe ways information technology uses or benefits from networks."@en,
+        "e. Illustrate the role of networks in information technology."@en,
+        "f. Identify people who influenced or contributed to the area of networks."@en,
+        "g. Identify several contributors to networks and relate their achievements to the area."@en .
+
+it2017:ITE-NET-02 a skos:Concept ;
+    skos:broader it2017:ITE-NET ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-NET-02" ;
+    skos:prefLabel "Foundations of networking"@en ;
+    schema:teaches "a. Identify several current standards (e.g., RFC's and IEEE 802) and describe how standards' bodies and the standardization process impact networking technology."@en,
+        "b. Contrast the OSI and internet models as they apply to contemporary communication protocols."@en,
+        "c. Analyze why different technologies are deployed in different contexts of networking, such as topology, bandwidth, distance, and number of users."@en,
+        "d. Express the basic components and media of network systems and distinguish between LANs and WANs."@en,
+        "e. Describe how bandwidth and latency impact throughput in a data communications channel."@en,
+        "f. Deploy a basic Ethernet LAN and compare it to other network topologies."@en,
+        "g. Exhibit the concept and allocation of addressing scheme which involves port numbers, IPv4 and IPv6 address."@en,
+        "h. Configure a client and a server operating system and connect the client machine to the server over a LAN."@en,
+        "i. Analyze and compare the characteristics of various communication protocols and how they support application requirements."@en,
+        "j. Demonstrate the ability to solve basic problems and perform basic troubleshooting operations on LANs and connected devices."@en .
+
+it2017:ITE-NET-03 a skos:Concept ;
+    skos:broader it2017:ITE-NET ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-NET-03" ;
+    skos:prefLabel "Physical layer"@en ;
+    schema:teaches "a. Show how the variables of Shannon's law impact channel capacity."@en,
+        "b. Compare the bandwidth characteristics of several types of physical communication media."@en,
+        "c. Contrast the historical evolution of the switched and routed infrastructures."@en,
+        "d. Analyze the physical challenges inherent in wireless-fixed and wireless-mobile communication channels."@en,
+        "e. Compare methods of error detection and correction such as parity, cyclic redundancy check (CRC), and error detection and correction (EDC)."@en,
+        "f. Describe the development of modern communication standards, addressing both de jure and de facto standards."@en,
+        "g. Choose the appropriate compression methodology (lossy or lossless) for a given type of application."@en,
+        "h. Analyze and compare four networking topologies in terms of robustness, expandability, and throughput."@en .
+
+it2017:ITE-NET-04 a skos:Concept ;
+    skos:broader it2017:ITE-NET ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-NET-04" ;
+    skos:prefLabel "Networking and interconnectivity"@en ;
+    schema:teaches "a. Describe the seven layers of the OSI model."@en,
+        "b. Contrast the differences between circuit switching and packet switching."@en,
+        "c. Contrast point-to-point network line configuration with multipoint configuration."@en,
+        "d. Illustrate some networking and internetworking devices such as repeaters, bridges, switches, routers, and gateways."@en,
+        "e. Recognize network topologies such as mesh, star, tree, bus, ring, 3-D torus."@en,
+        "f. Contrast connection-oriented services with connectionless services."@en,
+        "g. Teach network protocol features such as syntax, semantics, and timing."@en,
+        "h. Be aware of layered protocol software (stacks) such as physical-layer networking concepts, data-link layer concepts, internetworking, and routing."@en,
+        "i. Contrast protocol suites such as IPv4, IPv6, IPvN, and TCP/UDP."@en,
+        "j. Evaluate the operation principles of some main protocols, such as FTP and SNMP."@en,
+        "k. Identify network standards and standardization bodies."@en .
+
+it2017:ITE-NET-05 a skos:Concept ;
+    skos:broader it2017:ITE-NET ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-NET-05" ;
+    skos:prefLabel "Routing, switching, and internetworking"@en ;
+    schema:teaches "a. Describe data communications and telecommunications models, digital signal processing, topologies, protocols, standards, and architectures that are in use today."@en,
+        "b. Identify the basic concepts of LAN and WAN technologies and topologies."@en,
+        "c. Describe different components and requirements of network protocols."@en,
+        "d. Discuss the concepts and the “building blocks” of today's data communication networks such as switches, routers, and cabling."@en,
+        "e. Describe the operation and function of 802.1 devices and protocols."@en,
+        "f. Describe the necessary hardware (switches and routers) and components (routing algorithms and protocols) used to establish communication between multiple networks."@en,
+        "g. Analyze the effect of various topologies, applications, and devices on network performance topics such as latency, jitter, response time, window size, connection loss, and quality of service."@en .
+
+it2017:ITE-NET-06 a skos:Concept ;
+    skos:broader it2017:ITE-NET ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-NET-06" ;
+    skos:prefLabel "Application networking services"@en ;
+    schema:teaches "a. Describe web software stack technologies such as LAMP solution stack (Linux, Apache HTTP server, MySQL, PHP/Perl/Python)."@en,
+        "b. Describe the key components of a web solution stack using LAMP as an illustrative example."@en,
+        "c. Illustrate several roles and responsibilities of clients and servers for a range of possible applications."@en,
+        "d. Select several tools that will ensure an efficient approach to implementing various client-server possibilities."@en,
+        "e. Design and implement a simple interactive web-based application (for example, a simple web form that collects information from the client and stores it in a file on the server)."@en,
+        "f. Contrast peer-to-peer, client-server, and cloud networks."@en,
+        "g. Describe several web technologies such as dynamic HTML and the client-side model, server-side model."@en,
+        "h. Describe several characteristics of web servers such as handling permissions, file management, capabilities of common server architectures."@en,
+        "i. Use the support tools for website creation and web management."@en,
+        "j. Design the architecture and services of email systems."@en,
+        "k. Describe the role of networking in database and file service applications."@en,
+        "l. Demonstrate the working process of DNS, steps of a resolver looking up a remote name."@en,
+        "m. Analyze the impact on the world-wide web portion of the internet if most of all routers ceased to function."@en,
+        "n. Solve the problem of distributing content, the architecture of content distribution network and peer-to-peer network."@en .
+
+it2017:ITE-NET-07 a skos:Concept ;
+    skos:broader it2017:ITE-NET ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-NET-07" ;
+    skos:prefLabel "Network management"@en ;
+    schema:teaches "a. Propose several main issues related to network management."@en,
+        "b. Discuss four typical architectures for network management including the management console, aggregators, and device agents."@en,
+        "c. Demonstrate the management of a device such as an enterprise switch through a management console."@en,
+        "d. Compare various network management techniques as they apply to wired and wireless networks such as topics on devices, users, quality of service, deployment, and configuration of these technologies."@en,
+        "e. Discuss the address resolution protocol (ARP) for associating IP addresses with MAC addresses."@en,
+        "f. Exhibit the concepts of domain names and domain name systems (DNS)."@en,
+        "g. Describe the dynamic host configuration protocol (DHCP)."@en,
+        "h. Describe several issues related to internet service providers (ISPs)."@en,
+        "i. Illustrate several quality-of-service issues such as performance and failure recovery."@en,
+        "j. Describe ad hoc networks."@en,
+        "k. Teach troubleshooting principles and techniques related to networks."@en,
+        "l. Describe management functional areas related to networks."@en .
+
+it2017:ITE-PFT-01 a skos:Concept ;
+    skos:broader it2017:ITE-PFT ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-PFT-01" ;
+    skos:prefLabel "Perspectives and impact"@en ;
+    schema:teaches "a. Describe how the historical development of hardware and operating system computing platforms produced the computing operating systems we have today."@en .
+
+it2017:ITE-PFT-02 a skos:Concept ;
+    skos:broader it2017:ITE-PFT ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-PFT-02" ;
+    skos:prefLabel "Operating systems"@en ;
+    schema:teaches "a. Describe how the components and functions of an operating system work together to provide a computing platform."@en,
+        "b. Demonstrate the ability to use both Windows and Unix-class systems."@en,
+        "c. Describe how the similarities and differences between Windows and Unix-class systems provide different advantages for these computing platforms."@en,
+        "d. Demonstrate the main benefits of using scripts to perform operating systems tasks by automating a computing task."@en .
+
+it2017:ITE-PFT-03 a skos:Concept ;
+    skos:broader it2017:ITE-PFT ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-PFT-03" ;
+    skos:prefLabel "Computing infrastructures"@en ;
+    schema:teaches "a. Analyze the power requirements for a computer system."@en,
+        "b. Justify the need for power and heat budgets within an IT environment."@en,
+        "c. Describe how the various types of servers meet different organizational requirements."@en,
+        "d. Justify the need for hardware and software integration."@en .
+
+it2017:ITE-PFT-04 a skos:Concept ;
+    skos:broader it2017:ITE-PFT ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-PFT-04" ;
+    skos:prefLabel "Architecture and organization"@en ;
+    schema:teaches "a. Describe how numbers and characters are represented in a computer."@en,
+        "b. Produce a block diagram, including interconnections, of the main parts of a computer."@en,
+        "c. Describe how a computer stores and retrieves information to and from memory and hard drives."@en,
+        "d. Produce a definition for each of these terms: bus, handshaking, serial, parallel, data rate."@en .
+
+it2017:ITE-PFT-05 a skos:Concept ;
+    skos:broader it2017:ITE-PFT ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-PFT-05" ;
+    skos:prefLabel "Application execution environment"@en ;
+    schema:teaches "a. Design a simple finite state machine with at least six states and four conditional branches, then build and troubleshoot it."@en,
+        "b. Compare the performance of two different computers with two different operating systems."@en,
+        "c. Illustrate the advantages and disadvantages of the five main hardware implementation options."@en .
+
+it2017:ITE-SPA-01 a skos:Concept ;
+    skos:broader it2017:ITE-SPA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SPA-01" ;
+    skos:prefLabel "Perspectives and impact"@en ;
+    schema:teaches "a. Contrast system integration and system architecture."@en,
+        "b. Explain the system integration from the organizational perspective."@en .
+
+it2017:ITE-SPA-02 a skos:Concept ;
+    skos:broader it2017:ITE-SPA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SPA-02" ;
+    skos:prefLabel "Requirements"@en ;
+    schema:teaches "a. Compare the various requirements modeling techniques."@en,
+        "b. Contrast between non-functional and functional requirements."@en,
+        "c. Demonstrate the structure of a detailed use case."@en,
+        "d. Express a use case based on relating functional requirements."@en,
+        "e. Illustrate the types of event flows in a use case and under which conditions they occur."@en,
+        "f. Describe how requirements gathering complements a system development lifecycle."@en,
+        "g. Describe how use cases drive testing throughout a system lifecycle."@en .
+
+it2017:ITE-SPA-03 a skos:Concept ;
+    skos:broader it2017:ITE-SPA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SPA-03" ;
+    skos:prefLabel "System architecture"@en ;
+    schema:teaches "a. Demonstrate “architecture” in the context of system integration and architecture reflecting IEEE Standard 1471."@en,
+        "b. Justify how complex systems can be represented using architectural views and how this facilitates system evolution over time."@en,
+        "c. Describe how some specific architectural views relate to the system lifecycle."@en,
+        "d. Contrast the SOA, Zachman Framework, ITIL, COBIT, and ISO 20,000 architectural frameworks."@en,
+        "e. Describe how modeling tools support the description and management of architectural views with examples."@en .
+
+it2017:ITE-SPA-04 a skos:Concept ;
+    skos:broader it2017:ITE-SPA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SPA-04" ;
+    skos:prefLabel "Acquisition and sourcing"@en ;
+    schema:teaches "a. Contrast between build and buy in software and hardware acquisition."@en,
+        "b. Demonstrate the advantages and drawbacks of building and buying in general."@en,
+        "c. Contrast between in-sourcing and out-sourcing for the acquisition of IT services and support."@en,
+        "d. Contrast the advantages and drawbacks of in-sourcing and out-sourcing in general."@en,
+        "e. Demonstrate the importance of testing, evaluation, and benchmarking in any IT sourcing decision."@en,
+        "f. Demonstrate primary components in a request for proposal (RFP)."@en,
+        "g. Contrast the advantages and drawbacks of using RFPs in an IT sourcing decision."@en,
+        "h. Express the importance of a well-structured contract in any IT sourcing decision."@en,
+        "i. Given an RFP, justify one or more products that satisfy the criteria of the RFP."@en .
+
+it2017:ITE-SPA-05 a skos:Concept ;
+    skos:broader it2017:ITE-SPA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SPA-05" ;
+    skos:prefLabel "Testing and quality assurance"@en ;
+    schema:teaches "a. Express different ways for current testing standards."@en,
+        "b. Demonstrate the various components of usability testing."@en,
+        "c. Express different ways to execute and evaluate an acceptance test."@en .
+
+it2017:ITE-SPA-06 a skos:Concept ;
+    skos:broader it2017:ITE-SPA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SPA-06" ;
+    skos:prefLabel "Integration and deployment"@en ;
+    schema:teaches "a. Express different ways for middleware platforms."@en,
+        "b. Demonstrate the advantages and disadvantages of some middleware platforms."@en,
+        "c. Justify major considerations for the selection of an enterprise integration platform."@en,
+        "d. Express different ways of integration using the “wrapper” approach."@en,
+        "e. Express different ways of integration using the “glue code” approach."@en,
+        "f. Describe how a framework facilitates integration of components."@en,
+        "g. Describe how the data warehouse concept relates to enterprise information integration."@en,
+        "h. Describe how integration choices affect testing and evaluation."@en .
+
+it2017:ITE-SPA-07 a skos:Concept ;
+    skos:broader it2017:ITE-SPA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SPA-07" ;
+    skos:prefLabel "System governance"@en ;
+    schema:teaches "a. Compare alternative vendors of systems resources and justify a selection."@en,
+        "b. Develop policies for a networked system in an application domain (e.g., health care organization)."@en,
+        "c. Develop policies for a network that includes low capacity embedded devices (e.g., a smart home)."@en,
+        "d. Develop a disaster recovery plan for a small enterprise."@en .
+
+it2017:ITE-SPA-08 a skos:Concept ;
+    skos:broader it2017:ITE-SPA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SPA-08" ;
+    skos:prefLabel "Operational activities"@en ;
+    schema:teaches "a. Design and implement a user and group administrative structure that allows users to use system resources effectively."@en,
+        "b. Design and construct development resources regarding administrative policies for different types of users."@en,
+        "c. Develop and monitor project plans for major system administration activities."@en,
+        "d. Install, configure, and test appropriate software and other resources."@en,
+        "e. Install, configure, and test automated device management technologies."@en,
+        "f. Design and implement a backup and restore strategy for a system."@en .
+
+it2017:ITE-SPA-09 a skos:Concept ;
+    skos:broader it2017:ITE-SPA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SPA-09" ;
+    skos:prefLabel "Operational domains"@en ;
+    schema:teaches "a. Describe the scope of each operational domain in a system."@en,
+        "b. Develop and justify policies for each domain that allow for smooth interaction between domains without sacrificing security."@en,
+        "c. Develop and justify resource allocation plans for various operational domains."@en .
+
+it2017:ITE-SPA-10 a skos:Concept ;
+    skos:broader it2017:ITE-SPA ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SPA-10" ;
+    skos:prefLabel "Performance analysis"@en ;
+    schema:teaches "a. Design and implement a backup and restore strategy for a system."@en,
+        "b. Test the veracity of a disaster recovery plan for a small enterprise."@en,
+        "c. Confirm the accuracy and completeness of a backup."@en .
+
+it2017:ITE-SWF-01 a skos:Concept ;
+    skos:broader it2017:ITE-SWF ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SWF-01" ;
+    skos:prefLabel "Perspectives and impact"@en ;
+    schema:teaches "a. Reflect on how the creation of software has changed our lives."@en,
+        "b. Synthesize how software has helped people, organizations, and society to solve problems."@en,
+        "c. Describe several ways in which software has created new knowledge."@en .
+
+it2017:ITE-SWF-02 a skos:Concept ;
+    skos:broader it2017:ITE-SWF ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SWF-02" ;
+    skos:prefLabel "Concepts and techniques"@en ;
+    schema:teaches "a. Compare multiple levels of abstraction to write programs (constants, expressions, statements, procedures, parameterization, and libraries)."@en,
+        "b. Select appropriate built-in data types and library data structures (abstract data types) to model, represent, and process program data."@en,
+        "c. Use procedures and parameterization to reduce the complexity of writing and maintaining programs and to generalize solutions."@en,
+        "d. Explain multiple levels of hardware architecture abstractions (processor, special purpose cards, memory organization, and storage) and software abstractions (source code, integrated components, running processes) involved in developing complex programs."@en,
+        "e. Create new programs by modifying and combining existing programs."@en .
+
+it2017:ITE-SWF-03 a skos:Concept ;
+    skos:broader it2017:ITE-SWF ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SWF-03" ;
+    skos:prefLabel "Problem-solving strategies"@en ;
+    schema:teaches "a. Explain abstractions used to represent digital data."@en,
+        "b. Develop abstractions when writing a program or an IT artifact."@en,
+        "c. Apply decomposition strategy to design a solution to a complex problem."@en,
+        "d. Explain appropriateness of iterative and recursive problem solutions."@en,
+        "e. Write programs that use iterative and recursive techniques to solve computational problems."@en .
+
+it2017:ITE-SWF-04 a skos:Concept ;
+    skos:broader it2017:ITE-SWF ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SWF-04" ;
+    skos:prefLabel "Program development"@en ;
+    schema:teaches "a. Develop a correct program to solve problems by using an iterative process, documentation of program components, and consultation with program users."@en,
+        "b. Use appropriate abstractions to facilitate writing programs: collections, procedures, application programming interfaces, and libraries."@en,
+        "c. Evaluate how a program is written in terms of program style, intended behavior on specific inputs, correctness of program components, and descriptions of program functionality."@en,
+        "d. Develop a program by using tools relevant to current industry practices: version control, project hosting, and deployment services."@en,
+        "e. Demonstrate collaboration strategies that consider multiple perspectives, diverse talents, and sociocultural experiences."@en .
+
+it2017:ITE-SWF-05 a skos:Concept ;
+    skos:broader it2017:ITE-SWF ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SWF-05" ;
+    skos:prefLabel "Fundamental data structures"@en ;
+    schema:teaches "a. Write programs that use data structures (built-in, library, and programmer-defined): strings, lists, and maps."@en,
+        "b. Analyze the performance of different implementations of data structures."@en,
+        "c. Decide on appropriate data structures for modeling a given problem."@en,
+        "d. Explain appropriateness of selected data structures."@en .
+
+it2017:ITE-SWF-06 a skos:Concept ;
+    skos:broader it2017:ITE-SWF ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SWF-06" ;
+    skos:prefLabel "Algorithm principles and development"@en ;
+    schema:teaches "a. Describe why and how algorithms solve computational problems."@en,
+        "b. Create algorithms to solve a computational problem."@en,
+        "c. Explain how programs implement algorithms in terms of instruction processing, program execution, and running processes."@en,
+        "d. Apply appropriate mathematical concepts in programing: expressions, abstract data types, recurrence relations, and formal reasoning on algorithm's efficiency and correctness."@en,
+        "e. Evaluate empirically the efficiency of an algorithm."@en .
+
+it2017:ITE-SWF-07 a skos:Concept ;
+    skos:broader it2017:ITE-SWF ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-SWF-07" ;
+    skos:prefLabel "Modern app programming practices"@en ;
+    schema:teaches "a. Create web and mobile apps with effective interfaces that respond to events generated by rich user interactions, sensors, and other capabilities of the computing device."@en,
+        "b. Analyze usability, functionality, and suitability of an app program."@en,
+        "c. Collaborate in the creation of interesting and relevant apps."@en,
+        "d. Build and debug app programs using standard libraries, unit testing tools, and debuggers."@en,
+        "e. Evaluate readability and clarity of app programs based on program style, documentation, pre- and post-conditions, and procedural abstractions."@en .
+
+it2017:ITE-UXD-01 a skos:Concept ;
+    skos:broader it2017:ITE-UXD ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-UXD-01" ;
+    skos:prefLabel "Perspectives and impact"@en ;
+    schema:teaches "a. Show when human factors first became an issue in computer hardware and software design."@en,
+        "b. Define the meaning of human-computer interaction or HCI."@en,
+        "c. Define the meaning of user experience design or UXD."@en,
+        "d. Describe the evolution from human factors to User Experience Design (UX)."@en,
+        "e. Contrast the physical and non-physical aspects of UXD."@en,
+        "f. Identify several modern high-tech computing technologies that present UXD challenges."@en,
+        "g. Describe several reasons for making UXD an essential part of the information technology discipline."@en .
+
+it2017:ITE-UXD-02 a skos:Concept ;
+    skos:broader it2017:ITE-UXD ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-UXD-02" ;
+    skos:prefLabel "Human factors in design"@en ;
+    schema:teaches "a. Explain the conceptual terms for analyzing human interaction with products (e.g., affordance and feedback)."@en,
+        "b. Analyze several different user populations or user cultures regarding their abilities to use software and hardware products."@en,
+        "c. Explain the importance of user abilities and characteristics in the usability of products."@en,
+        "d. Illustrate several ways cognitive and social principles apply to product design."@en,
+        "e. Illustrate several ways that physical aspects of product design affect usability."@en,
+        "f. Identify several goals, activities, and tasks related to an UX project."@en,
+        "g. Describe how creative innovation techniques such as brainstorming can lead to optimal user interfaces."@en .
+
+it2017:ITE-UXD-03 a skos:Concept ;
+    skos:broader it2017:ITE-UXD ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-UXD-03" ;
+    skos:prefLabel "Effective interfaces"@en ;
+    schema:teaches "a. Explain how the user interface (UI) and interaction affect usability."@en,
+        "b. Design an interface that effectively employs localization and globalization technologies."@en,
+        "c. Adapt an interface to more effectively relate to users' characteristics (e.g., age, education, cultural differences)."@en,
+        "d. Design a user experience using storyboarding techniques."@en,
+        "e. Design and justify a low-fidelity prototype for a system or product."@en,
+        "f. Design and justify a high-fidelity prototype for a system or product."@en,
+        "g. Demonstrate the advantages of user interface modalities other than windows, icons, menus and pointers in some situations."@en .
+
+it2017:ITE-UXD-04 a skos:Concept ;
+    skos:broader it2017:ITE-UXD ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-UXD-04" ;
+    skos:prefLabel "Application domain aspects"@en ;
+    schema:teaches "a. Describe different types of interactive environments."@en,
+        "b. Describe several differences in developing user interfaces for different application environments and types of services."@en,
+        "c. Represent the connection between the design of a user interface and a model of user domain expertise."@en,
+        "d. Compare descriptions of cognitive models with the model names."@en,
+        "e. Propose cognitive models to the design of application user interfaces."@en,
+        "f. Argue for social psychology in the design of a user interface"@en,
+        "g. Show how contextual, societal, cultural, and organizational factors can be applied in the design of a user interface."@en,
+        "h. Analyze an IT mediated service with several different user types and various stakeholders including a service provider."@en .
+
+it2017:ITE-UXD-05 a skos:Concept ;
+    skos:broader it2017:ITE-UXD ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-UXD-05" ;
+    skos:prefLabel "Affective user experiences"@en ;
+    schema:teaches "a. Illustrate how a user develops an emotional reaction to or attachment to a product, service, or system."@en,
+        "b. Describe how a user’s emotional reaction to an interface can interfere with product or service acceptance."@en,
+        "c. Describe how a user’s emotional reaction to a product can advance product or service acceptance."@en .
+
+it2017:ITE-UXD-06 a skos:Concept ;
+    skos:broader it2017:ITE-UXD ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-UXD-06" ;
+    skos:prefLabel "Human-centered evaluation"@en ;
+    schema:teaches "a. Demonstrate several general principles used in the heuristic evaluation of a user interface design."@en,
+        "b. Teach usability performance and preference metrics: learning, task time, task completion, effectiveness, and user satisfaction."@en,
+        "c. Describe common usability guidelines and standards."@en,
+        "d. Demonstrate several ways of measuring application usability employing a heuristic evaluation."@en,
+        "e. Produce documentation for an existing system or product with storyboarding techniques."@en,
+        "f. Create an appropriate usability test plan."@en,
+        "g. Propose several ways to measure product usability from performance and preference metrics."@en .
+
+it2017:ITE-UXD-07 a skos:Concept ;
+    skos:broader it2017:ITE-UXD ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-UXD-07" ;
+    skos:prefLabel "Assistive technologies and accessibility"@en ;
+    schema:teaches "a. Describe several main principles for universal design."@en,
+        "b. Illustrate the advantages and disadvantages of biometric access control."@en,
+        "c. Describe the symptoms of repetitive stress syndrome; list some of the approaches that can ameliorate the problem."@en,
+        "d. Use accessibility guidelines and standards in the design of a user interface."@en,
+        "e. Design a user interface to effectively use accessibility features such as an automated narrator."@en,
+        "f. Describe a criterion for choosing a biometric access system for a given application."@en,
+        "g. Propose an assistive technology computer device for persons with visual, hearing, cognitive, or motor difficulties."@en,
+        "h. Describe a possible interface that allows a user with severe physical disabilities to use a website."@en,
+        "i. Describe the structure and components of an assistive technology."@en .
+
+it2017:ITE-UXD-08 a skos:Concept ;
+    skos:broader it2017:ITE-UXD ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-UXD-08" ;
+    skos:prefLabel "User advocacy"@en ;
+    schema:teaches "a. Express the advantages and disadvantages for using a human-centered software development approach."@en,
+        "b. Analyze and model the user environment and context of use before designing a software application."@en,
+        "c. Analyze user groups and develop appropriate personas to represent them in design."@en,
+        "d. Propose appropriate user tasks for an application under consideration."@en,
+        "e. Describe the effect of socialization on the effectiveness of an application interface."@en,
+        "f. Demonstrate the importance of evaluating the impact of proposed system changes on the user experience."@en .
+
+it2017:ITE-WMS-01 a skos:Concept ;
+    skos:broader it2017:ITE-WMS ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-WMS-01" ;
+    skos:prefLabel "Perspectives and impact"@en ;
+    schema:teaches "a. Describe how the world-wide web has impacted people’s lives over time."@en,
+        "b. Illustrate the growth and changes in mobile devices and applications over time."@en .
+
+it2017:ITE-WMS-02 a skos:Concept ;
+    skos:broader it2017:ITE-WMS ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-WMS-02" ;
+    skos:prefLabel "Technologies"@en ;
+    schema:teaches "a. Describe the role of HTTP and HTTPS in the context of web applications."@en,
+        """b. Build a simple web site that:
+- organizes information effectively,
+- uses valid HTML and CSS, and
+- applies appropriate web standards from standards bodies such as W3C."""@en,
+        """c. Develop a web or mobile application that:
+- uses industry-standard technologies,
+- integrates serialized data in a structured format such as XML or JSON both synchronously and asynchronously,
+- validates data inputs on the client- and server-side as appropriate,
+- uses cookies,
+- reads or modifies data in a server-side database, and
+- uses JavaScript."""@en,
+        "d. Express the constraints involved in state management (cookies, query strings, sessions) in the web and mobile context."@en,
+        "e. Contrast client-side with server-side security issues."@en .
+
+it2017:ITE-WMS-03 a skos:Concept ;
+    skos:broader it2017:ITE-WMS ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-WMS-03" ;
+    skos:prefLabel "Digital media"@en ;
+    schema:teaches """a. Compare characteristics such as color depth, compression, codec, and server requirements for:
+- graphic media file formats and
+- streaming media formats."""@en,
+        "b. Propose a graphic file type for a given set of image characteristics."@en,
+        "c. Provide metaphors for issues involved in deploying and serving media content."@en .
+
+it2017:ITE-WMS-04 a skos:Concept ;
+    skos:broader it2017:ITE-WMS ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-WMS-04" ;
+    skos:prefLabel "Applications concepts"@en ;
+    schema:teaches "a. Express constraints that mobile platforms put on developers, including the performance vs. power tradeoff."@en,
+        "b. Contrast mobile programming, web programming, and general-purpose programming."@en,
+        "c. Apply principles of UXD to enhance the user experience of a web site or mobile application."@en,
+        "d. Evaluate the design and architecture of a web or mobile system, including issues such as design patterns (including MVC), layers, tradeoffs between redundancy and scalability, state management, and search engine optimization."@en .
+
+it2017:ITE-WMS-05 a skos:Concept ;
+    skos:broader it2017:ITE-WMS ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-WMS-05" ;
+    skos:prefLabel "Development Frameworks"@en ;
+    schema:teaches "a. Use industry-standard tools and technologies for web and mobile development."@en,
+        "b. Argue for the advantages and disadvantages of development frameworks for web and mobile development."@en,
+        "c. Use a development framework such as jQuery, Angular, Laravel, ASP.NET MVC, Django, or WordPress."@en,
+        "d. Use collaboration tools such as GitHub to work with a team on a web or mobile application."@en .
+
+it2017:ITE-WMS-06 a skos:Concept ;
+    skos:broader it2017:ITE-WMS ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-WMS-06" ;
+    skos:prefLabel "Vulnerabilities"@en ;
+    schema:teaches "a. Illustrate browser security models including same-origin policy and thread models in web security."@en,
+        "b. Describe how authentication, secure certificates, and secure communication can be used in web sessions."@en,
+        """c. Instruct others on common types of vulnerabilities and attacks in web and mobile applications, such as:
+- using web page graphics as web beacons,
+- using cookies to compromise privacy,
+- denial of service attacks,
+- cross-site scripting attacks, and
+- SQL injection attacks."""@en,
+        """d. Secure a web or mobile application and defend against common attacks using techniques such as:
+- client-side security capabilities,
+- public key encryption,
+- security certificates, and
+- safely persisting user logins (such as “remember me” functionality)."""@en,
+        "e. Use accepted standards to ensure that user input on web pages does not affect server-side processes."@en .
+
+it2017:ITE-WMS-07 a skos:Concept ;
+    skos:broader it2017:ITE-WMS ;
+    skos:inScheme it2017cs: ;
+    skos:notation "ITE-WMS-07" ;
+    skos:prefLabel "Social software"@en ;
+    schema:teaches "a. Illustrate the difference between asynchronous and synchronous communication on the web."@en,
+        "b. Contrast the characteristics of various web- and mobile-based communication media."@en .
+
+it2017:ITE-PFT a skos:Concept ;
+    skos:inScheme it2017cs: ;
+    skos:narrower it2017:ITE-PFT-01,
+        it2017:ITE-PFT-02,
+        it2017:ITE-PFT-03,
+        it2017:ITE-PFT-04,
+        it2017:ITE-PFT-05 ;
+    skos:notation "ITE-PFT" ;
+    skos:prefLabel "Platform Technologies"@en ;
+    skos:topConceptOf it2017cs: .
+
+it2017:ITE-IST a skos:Concept ;
+    skos:inScheme it2017cs: ;
+    skos:narrower it2017:ITE-IST-01,
+        it2017:ITE-IST-02,
+        it2017:ITE-IST-03,
+        it2017:ITE-IST-04,
+        it2017:ITE-IST-05,
+        it2017:ITE-IST-06 ;
+    skos:notation "ITE-IST" ;
+    skos:prefLabel "Integrated Systems Technology"@en ;
+    skos:topConceptOf it2017cs: .
+
+it2017:ITE-IMA a skos:Concept ;
+    skos:inScheme it2017cs: ;
+    skos:narrower it2017:ITE-IMA-01,
+        it2017:ITE-IMA-02,
+        it2017:ITE-IMA-03,
+        it2017:ITE-IMA-04,
+        it2017:ITE-IMA-05,
+        it2017:ITE-IMA-06,
+        it2017:ITE-IMA-07 ;
+    skos:notation "ITE-IMA" ;
+    skos:prefLabel "Information Management"@en ;
+    skos:topConceptOf it2017cs: .
+
+it2017:ITE-NET a skos:Concept ;
+    skos:inScheme it2017cs: ;
+    skos:narrower it2017:ITE-NET-01,
+        it2017:ITE-NET-02,
+        it2017:ITE-NET-03,
+        it2017:ITE-NET-04,
+        it2017:ITE-NET-05,
+        it2017:ITE-NET-06,
+        it2017:ITE-NET-07 ;
+    skos:notation "ITE-NET" ;
+    skos:prefLabel "Networking"@en ;
+    skos:topConceptOf it2017cs: .
+
+it2017:ITE-SWF a skos:Concept ;
+    skos:inScheme it2017cs: ;
+    skos:narrower it2017:ITE-SWF-01,
+        it2017:ITE-SWF-02,
+        it2017:ITE-SWF-03,
+        it2017:ITE-SWF-04,
+        it2017:ITE-SWF-05,
+        it2017:ITE-SWF-06,
+        it2017:ITE-SWF-07 ;
+    skos:notation "ITE-SWF" ;
+    skos:prefLabel "Software Fundamentals"@en ;
+    skos:topConceptOf it2017cs: .
+
+it2017:ITE-WMS a skos:Concept ;
+    skos:inScheme it2017cs: ;
+    skos:narrower it2017:ITE-WMS-01,
+        it2017:ITE-WMS-02,
+        it2017:ITE-WMS-03,
+        it2017:ITE-WMS-04,
+        it2017:ITE-WMS-05,
+        it2017:ITE-WMS-06,
+        it2017:ITE-WMS-07 ;
+    skos:notation "ITE-WMS" ;
+    skos:prefLabel "Web and Mobile Systems"@en ;
+    skos:topConceptOf it2017cs: .
+
+it2017:ITE-UXD a skos:Concept ;
+    skos:inScheme it2017cs: ;
+    skos:narrower it2017:ITE-UXD-01,
+        it2017:ITE-UXD-02,
+        it2017:ITE-UXD-03,
+        it2017:ITE-UXD-04,
+        it2017:ITE-UXD-05,
+        it2017:ITE-UXD-06,
+        it2017:ITE-UXD-07,
+        it2017:ITE-UXD-08 ;
+    skos:notation "ITE-UXD" ;
+    skos:prefLabel "User Experience Design"@en ;
+    skos:topConceptOf it2017cs: .
+
+it2017:ITE-SPA a skos:Concept ;
+    skos:inScheme it2017cs: ;
+    skos:narrower it2017:ITE-SPA-01,
+        it2017:ITE-SPA-02,
+        it2017:ITE-SPA-03,
+        it2017:ITE-SPA-04,
+        it2017:ITE-SPA-05,
+        it2017:ITE-SPA-06,
+        it2017:ITE-SPA-07,
+        it2017:ITE-SPA-08,
+        it2017:ITE-SPA-09,
+        it2017:ITE-SPA-10 ;
+    skos:notation "ITE-SPA" ;
+    skos:prefLabel "System Paradigms"@en ;
+    skos:topConceptOf it2017cs: .
+
+it2017:ITE-GPP a skos:Concept ;
+    skos:inScheme it2017cs: ;
+    skos:narrower it2017:ITE-GPP-01,
+        it2017:ITE-GPP-02,
+        it2017:ITE-GPP-03,
+        it2017:ITE-GPP-04,
+        it2017:ITE-GPP-05,
+        it2017:ITE-GPP-06,
+        it2017:ITE-GPP-07,
+        it2017:ITE-GPP-08,
+        it2017:ITE-GPP-09,
+        it2017:ITE-GPP-10,
+        it2017:ITE-GPP-11,
+        it2017:ITE-GPP-12 ;
+    skos:notation "ITE-GPP" ;
+    skos:prefLabel "Global Professional Practice"@en ;
+    skos:topConceptOf it2017cs: .
+
+it2017:ITE-CSP a skos:Concept ;
+    skos:inScheme it2017cs: ;
+    skos:narrower it2017:ITE-CSP-01,
+        it2017:ITE-CSP-02,
+        it2017:ITE-CSP-03,
+        it2017:ITE-CSP-04,
+        it2017:ITE-CSP-05,
+        it2017:ITE-CSP-06,
+        it2017:ITE-CSP-07,
+        it2017:ITE-CSP-08,
+        it2017:ITE-CSP-09,
+        it2017:ITE-CSP-10,
+        it2017:ITE-CSP-11,
+        it2017:ITE-CSP-12,
+        it2017:ITE-CSP-13,
+        it2017:ITE-CSP-14 ;
+    skos:notation "ITE-CSP" ;
+    skos:prefLabel "Cybersecurity Principles"@en ;
+    skos:topConceptOf it2017cs: .
+
+acmcs: a skos:ConceptScheme ;
+    dcterms:source <https://doi.org/10.1145/3173161> ;
+    skos:hasTopConcept acm:ITE-GPP,
+        acm:ITE-IMA,
+        acm:ITE-IST,
+        acm:ITE-NET,
+        acm:ITE-PFT,
+        acm:ITE-SPA,
+        acm:ITE-SWF,
+        acm:ITE-UXD,
+        acm:ITE-WMS ;
+    skos:prefLabel "IT2017 Essential IT Domains (stub)"@en .
+
+it2017cs: a skos:ConceptScheme ;
+    dcterms:source <https://doi.org/10.1145/3173161> ;
+    skos:hasTopConcept it2017:ITE-CSP,
+        it2017:ITE-GPP,
+        it2017:ITE-IMA,
+        it2017:ITE-IST,
+        it2017:ITE-NET,
+        it2017:ITE-PFT,
+        it2017:ITE-SPA,
+        it2017:ITE-SWF,
+        it2017:ITE-UXD,
+        it2017:ITE-WMS ;
+    skos:prefLabel "IT2017 Essential IT Domains and Subdomains (stub)"@en .
+
