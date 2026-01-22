@@ -83,30 +83,29 @@ KAIdocsPrezOverview
 
 flowchart TB
 
-    %% --- VET PATHWAY ---
-    C3["Cert III in IT<br/>(Entry / Foundations)"]
-    C4["Cert IV in IT<br/>(ICT40120)<br/><br/>• Operational skills<br/>• Tool & task focused<br/>• Workplace competencies"]
+  %% --- VET PATHWAY ---
+  C3["Cert III in IT\n(Entry / Foundations)"]
+  C4["Cert IV in IT (ICT40120)\nOperational skills\nTool & task focused\nWorkplace competencies"]
 
-    %% --- HE PATHWAY ---
-    BACH["Bachelor of IT<br/>Specialist Major:<br/>Cybersecurity & System Administration<br/>(UC SM0056)<br/><br/>• Conceptual integration<br/>• Architecture & design<br/>• Governance & risk"]
+  %% --- HE PATHWAY ---
+  BACH["Bachelor of IT\nSpecialist Major: Cybersecurity & System Administration\n(UC SM0056)\nConceptual integration\nArchitecture & design\nGovernance & risk"]
 
-    %% --- SEMANTIC BRIDGE ---
-    ACM["ACM IT2017 Domains<br/><br/>• ITE-CSP (Cybersecurity)<br/>• ITE-SPA (Systems & Platforms)<br/>• ITE-NET (Networking)<br/>• ITE-IST (InfoSec Tech)<br/>• ITE-PFT (Platforms)<br/>• ITE-GPP (Professional Practice)<br/>• ITE-SWF (Software)"]
+  %% --- SEMANTIC BRIDGE ---
+  ACM["ACM IT2017 Domains\nITE-CSP Cybersecurity\nITE-SPA Systems & Platforms\nITE-NET Networking\nITE-IST InfoSec Tech\nITE-PFT Platforms\nITE-GPP Professional Practice\nITE-SWF Software"]
 
-    %% --- DECISION / OUTCOMES ---
-    OPS["Operational Progression<br/>(Sys admin, support, ICT ops)"]
-    PROF["Professional / Architectural Progression<br/>(Security, architecture, leadership)"]
+  %% --- DECISION / OUTCOMES ---
+  OPS["Operational progression\n(Sys admin, support, ICT ops)"]
+  PROF["Professional / architectural progression\n(Security, architecture, leadership)"]
 
-    %% --- FLOWS ---
-    C3 --> C4
-    C4 --> OPS
+  %% --- FLOWS ---
+  C3 --> C4
+  C4 --> OPS
 
-    C4 -. "limited credit\n(selective exemptions)" .-> BACH
-    C3 --> BACH
+  C4 -. "limited credit\n(selective exemptions)" .-> BACH
+  C3 --> BACH
 
-    C4 --> ACM
-    BACH --> ACM
+  C4 --> ACM
+  BACH --> ACM
 
-    ACM --> OPS
-    ACM --> PROF
-
+  ACM --> OPS
+  ACM --> PROF
