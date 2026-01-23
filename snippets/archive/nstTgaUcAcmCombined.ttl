@@ -2202,7 +2202,7 @@ it2017:ITE-WMS-07 a skos:Concept ;
         "b. Contrast the characteristics of various web- and mobile-based communication media."@en .
 
 ucunit:11484 a schema:Course ;
-    dcterms:source "https://www.canberra.edu.au/unit/11484/1/2026"^^xsd:anyURI ;
+    schema:citation " "https://www.canberra.edu.au/unit/11484/1/2026"^^xsd:anyURI ;
     schema:about it2017:ITE-NET ;
     schema:courseCode "11484" ;
     schema:educationalLevel "Undergraduate Level 3"@en ;
@@ -2215,7 +2215,7 @@ ucunit:11484 a schema:Course ;
     schema:numberOfCredits 3 .
 
 ucunit:11485 a schema:Course ;
-    dcterms:source "https://www.canberra.edu.au/unit/11485/1/2026"^^xsd:anyURI ;
+    schema:citation " "https://www.canberra.edu.au/unit/11485/1/2026"^^xsd:anyURI ;
     schema:about it2017:ITE-NET ;
     schema:courseCode "11485" ;
     schema:educationalLevel "Undergraduate Level 1"@en ;
@@ -2240,7 +2240,7 @@ ucunit:11487 a schema:Course ;
 
 ucunit:11488 a schema:Course ;
     dcterms:isReplacedBy ucunit:11906 ;
-    dcterms:source "https://www.canberra.edu.au/unit/11488/1/2022"^^xsd:anyURI ;
+    schema:citation " "https://www.canberra.edu.au/unit/11488/1/2022"^^xsd:anyURI ;
     owl:deprecated true ;
     schema:about it2017:ITE-CSP,
         it2017:ITE-SPA ;
@@ -2254,7 +2254,7 @@ ucunit:11488 a schema:Course ;
     schema:numberOfCredits 3 .
 
 ucunit:11514 a schema:Course ;
-    dcterms:source "https://www.canberra.edu.au/unit/11514/2/2026"^^xsd:anyURI ;
+    schema:citation " "https://www.canberra.edu.au/unit/11514/2/2026"^^xsd:anyURI ;
     schema:about it2017:ITE-CSP,
         it2017:ITE-NET,
         it2017:ITE-SPA ;
@@ -2269,7 +2269,7 @@ ucunit:11514 a schema:Course ;
     schema:numberOfCredits 3 .
 
 ucunit:4483 a schema:Course ;
-    dcterms:source "https://www.canberra.edu.au/unit/4483/11/2026"^^xsd:anyURI ;
+    schema:citation "https://www.canberra.edu.au/unit/4483/11/2026"^^xsd:anyURI ;
     schema:about it2017:ITE-SWF ;
     schema:courseCode "4483" ;
     schema:educationalLevel "Undergraduate Level 1"@en ;
@@ -2283,7 +2283,7 @@ ucunit:4483 a schema:Course ;
 
 ucunit:8019 a schema:Course ;
     dcterms:isReplacedBy ucunit:11907 ;
-    dcterms:source "https://www.canberra.edu.au/unit/8019/5/2022"^^xsd:anyURI ;
+    schema:citation "https://www.canberra.edu.au/unit/8019/5/2022"^^xsd:anyURI ;
     owl:deprecated true ;
     schema:about it2017:ITE-CSP,
         it2017:ITE-NET,
@@ -2299,7 +2299,7 @@ ucunit:8019 a schema:Course ;
     schema:numberOfCredits 3 .
 
 ucunit:9074 a schema:Course ;
-    dcterms:source "https://www.canberra.edu.au/unit/9074/5/2026"^^xsd:anyURI ;
+    schema:citation "https://www.canberra.edu.au/unit/9074/5/2026"^^xsd:anyURI ;
     schema:about it2017:ITE-CSP,
         it2017:ITE-SPA ;
     schema:courseCode "9074" ;
@@ -2327,7 +2327,7 @@ ucunit:9788 a schema:Course ;
 
 ucunit:11759 a schema:Course ;
     dcterms:replaces ucunit:11487 ;
-    dcterms:source "https://www.canberra.edu.au/unit/11759/1/2026"^^xsd:anyURI ;
+    schema:citation "https://www.canberra.edu.au/unit/11759/1/2026"^^xsd:anyURI ;
     schema:about it2017:ITE-CSP,
         it2017:ITE-IST,
         it2017:ITE-PFT,
@@ -2343,7 +2343,7 @@ ucunit:11759 a schema:Course ;
     schema:numberOfCredits 3 .
 
 ucunit:11906 a schema:Course ;
-    dcterms:source "https://www.canberra.edu.au/unit/11906/1/2026"^^xsd:anyURI ;
+    schema:citation "https://www.canberra.edu.au/unit/11906/1/2026"^^xsd:anyURI ;
     schema:about it2017:ITE-CSP,
         it2017:ITE-PFT,
         it2017:ITE-SPA ;
@@ -2358,7 +2358,7 @@ ucunit:11906 a schema:Course ;
     schema:numberOfCredits 3 .
 
 ucunit:11907 a schema:Course ;
-    dcterms:source "https://www.canberra.edu.au/unit/11907/1/2026"^^xsd:anyURI ;
+    schema:citation "https://www.canberra.edu.au/unit/11907/1/2026"^^xsd:anyURI ;
     schema:about it2017:ITE-CSP,
         it2017:ITE-IST,
         it2017:ITE-PFT,
