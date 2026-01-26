@@ -1,8 +1,9 @@
 PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX tgaqual: <https://training.gov.au/tgaQualifications/>
 
-SELECT ?subject tgaqual:ICT30120
+SELECT ?subject ?predicate (tgaqual:ICT30120 AS ?object)
 WHERE {
-  { ?subject dcterms:isReferencedBy ?object . }
+  { ?predicate dcterms:isReferencedBy ?object . }
   UNION
-  { ?subject dcterms:isRequiredBy ?object . }
+  { ?predicate dcterms:isRequiredBy ?object . }
 }
