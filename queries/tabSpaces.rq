@@ -1,0 +1,6 @@
+SELECT	?s	?p	?o
+WHERE	{
+VALUES	?o	{<https://training.gov.au/tgaQualifications/ICT30120>}
+?s	?p	?o	.
+FILTER	(?p=<http://purl.org/dc/terms/isReferencedBy>||?p=<http://purl.org/dc/terms/isRequiredBy>)
+}
