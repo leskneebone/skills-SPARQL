@@ -1,11 +1,7 @@
-Excellent — this is exactly the point where the graph work starts to *pay off*.
 
-I’ll do this in two passes, as requested:
 
 1. **Map the CSP bullets → candidate NST skill types** (not asserting exact URIs, just the *kind* of skills you already have or would expect in NST)
 2. **Translate that into a plain-English “what Francis gains / doesn’t gain” comparison** suitable for a decision-maker
-
-I’ll stay disciplined: no credential politics, no RDF jargon in the second half.
 
 ---
 
