@@ -11,3 +11,5 @@ WHERE {
     BIND(<http://purl.org/dc/terms/isRequiredBy> AS ?predicate)
   }
 }
+
+# No terminal matches ' ' in the current parser context, at line 1 col 35 SELECT ?subject ?predicate ?object ^ Expected one of: * __ANON_1 * LEFT_PARENTHESIS * __ANON_4 * VAR1 * VAR2 * LEFT_CURLY_BRACE
