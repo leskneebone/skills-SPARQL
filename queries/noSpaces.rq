@@ -1,9 +1,10 @@
-SELECT(?s AS ?s)(?p AS ?p)(?o AS ?o)WHERE{
-VALUES(?o){(<https://training.gov.au/tgaQualifications/ICT30120>)}
-{?s<http://purl.org/dc/terms/isReferencedBy>?o.BIND(<http://purl.org/dc/terms/isReferencedBy>AS?p)}
-UNION
-{?s<http://purl.org/dc/terms/isRequiredBy>?o.BIND(<http://purl.org/dc/terms/isRequiredBy>AS?p)}
+SELECT ?s ?p ?o
+WHERE{
+VALUES ?o{<https://training.gov.au/tgaQualifications/ICT30120>}
+?s ?p ?o.
+FILTER(?p=<http://purl.org/dc/terms/isReferencedBy>||?p=<http://purl.org/dc/terms/isRequiredBy>)
 }
+
 
 # error in Safari: No terminal matches ' ' in the current parser context, at line 1 col 43 LECT(?s AS ?s)(?p AS ?p)(?o AS ?o)WHERE{ ^ Expected one of: * STRING_LITERAL_LONG2 * __ANON_16 * RIGHT_CURLY_BRACE * NIL * STRING_LITERAL_LONG1 * __ANON_74 * __ANON_78 * STRING_LITERAL1 * __ANON_77 * PNAME_NS * LEFT_PARENTHESIS * __ANON_80 * BLANK_NODE_LABEL * VAR1 * DECIMAL_POSITIVE * ANON * LSQB * DOUBLE * DOUBLE_NEGATIVE * __ANON_79 * DOUBLE_POSITIVE * DECIMAL_NEGATIVE * IRIREF * INTEGER_NEGATIVE * DECIMAL * INTEGER * VAR2 * __ANON_75 * INTEGER_POSITIVE * STRING_LITERAL2 * FALSE * __ANON_73 * PNAME_LN * TRUE * LEFT_CURLY_BRACE
 # error in Chrome: No terminal matches ' ' in the current parser context, at line 1 col 43 LECT(?s AS ?s)(?p AS ?p)(?o AS ?o)WHERE{ ^ Expected one of: * STRING_LITERAL_LONG2 * __ANON_16 * RIGHT_CURLY_BRACE * NIL * STRING_LITERAL_LONG1 * __ANON_74 * __ANON_78 * STRING_LITERAL1 * __ANON_77 * PNAME_NS * LEFT_PARENTHESIS * __ANON_80 * BLANK_NODE_LABEL * VAR1 * DECIMAL_POSITIVE * ANON * LSQB * DOUBLE * DOUBLE_NEGATIVE * __ANON_79 * DOUBLE_POSITIVE * DECIMAL_NEGATIVE * IRIREF * INTEGER_NEGATIVE * DECIMAL * INTEGER * VAR2 * __ANON_75 * INTEGER_POSITIVE * STRING_LITERAL2 * FALSE * __ANON_73 * PNAME_LN * TRUE * LEFT_CURLY_BRACE
