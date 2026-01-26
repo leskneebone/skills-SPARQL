@@ -1,0 +1,8 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?subject tgaqual:ICT30120
+WHERE {
+  { ?subject dcterms:isReferencedBy ?object . }
+  UNION
+  { ?subject dcterms:isRequiredBy ?object . }
+}
