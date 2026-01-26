@@ -8,4 +8,4 @@ WHERE {
   { ?predicate dcterms:isRequiredBy ?object . }
 }
 
-# No terminal matches ' ' in the current parser context, at line 1 col 44 FIX dcterms: <http://purl.org/dc/terms/> ^ Expected one of: * PREFIX * __ANON_16 * __ANON_0 * __ANON_3 * BASE * __ANON_2
+# Validation error (MS Edge, DEWR operating environment): No terminal matches ' ' in the current parser context, at line 1 col 44 FIX dcterms: <http://purl.org/dc/terms/> ^ Expected one of: * PREFIX * __ANON_16 * __ANON_0 * __ANON_3 * BASE * __ANON_2
