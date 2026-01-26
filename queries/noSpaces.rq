@@ -1,0 +1,6 @@
+SELECT(?s AS ?s)(?p AS ?p)(?o AS ?o)WHERE{
+VALUES(?o){(<https://training.gov.au/tgaQualifications/ICT30120>)}
+{?s<http://purl.org/dc/terms/isReferencedBy>?o.BIND(<http://purl.org/dc/terms/isReferencedBy>AS?p)}
+UNION
+{?s<http://purl.org/dc/terms/isRequiredBy>?o.BIND(<http://purl.org/dc/terms/isRequiredBy>AS?p)}
+}
