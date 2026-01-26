@@ -11,3 +11,5 @@ WHERE {
     BIND(<https://purl.org/dc/terms/isRequiredBy> AS ?p)
     }
 }
+
+# No terminal matches ' ' in the current parser context, at line 1 col 16 SELECT ?s ?p ?o ^ Expected one of: * __ANON_1 * LEFT_PARENTHESIS * __ANON_4 * VAR1 * VAR2 * LEFT_CURLY_BRACE
