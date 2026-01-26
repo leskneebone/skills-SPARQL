@@ -11,7 +11,6 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix schema: <https://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix sfia: <https://rdf.sfia-online.org/9/ontology/> .
 @prefix skillcat: <https://test.linked.data.gov.au/def/nst/ontology#skillcat> .
 @prefix skillctx: <https://test.linked.data.gov.au/def/nst/ontology#skillctx> .
 @prefix tgaqual: <https://training.gov.au/tgaQualifications/> .
@@ -30,7 +29,7 @@ nst:121141 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Collects test results and system logs, analyzes them, and implements adjustments to improve performance."@en ;
     skos:prefLabel "Log Analysis Review"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "log parsing; test result evaluation; system monitoring; troubleshooting; incident response"@en .
 
 nst:121143 a skos:Concept , nsto:Skill ;
@@ -41,7 +40,7 @@ nst:121143 a skos:Concept , nsto:Skill ;
         "Network Functionality Testing"@en ;
     skos:definition "Conducts network security infrastructure deployment tests following organisational procedures to verify component functionality."@en ;
     skos:prefLabel "Network Deployment Testing"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "network security; deployment automation; testing procedures; infrastructure components; compliance standards; connectivity verification; network monitoring; performance testing; troubleshooting; protocol analysis; cutover procedures; incident response testing; telecommunications equipment; technical manual compliance; network validation"@en .
 
 nst:121144 a skos:Concept , nsto:Skill ;
@@ -51,7 +50,7 @@ nst:121144 a skos:Concept , nsto:Skill ;
     skos:altLabel "Risk Based Implementation"@en ;
     skos:definition "Designs and implements maintenance and alert workflows for risk and security threats following organisational procedures."@en ;
     skos:prefLabel "Risk Alert Process Design"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "risk management; security monitoring; incident response; alerting systems; governance and compliance; risk assessment; security controls; compliance governance; risk management framework; policy enforcement"@en .
 
 nst:121146 a skos:Concept , nsto:Skill ;
@@ -63,7 +62,7 @@ nst:121146 a skos:Concept , nsto:Skill ;
         "Security Integrity Verification"@en ;
     skos:definition "Performs scheduled network security reviews following organisational procedures to assess and maintain infrastructure integrity."@en ;
     skos:prefLabel "Routine Security Review"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "network security; security audit; vulnerability assessment; firewall monitoring; SIEM; firewall; intrusion detection; VPN; access control; security monitoring; information assurance; encryption"@en .
 
 nst:121149 a skos:Concept , nsto:Skill ;
@@ -72,7 +71,7 @@ nst:121149 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Assesses multiple industry-standard network security providers, comparing features and suitability for organizational needs."@en ;
     skos:prefLabel "Security Provider Evaluation"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "network security; security vendors; cybersecurity risk assessment; vendor compliance; security solutions evaluation"@en .
 
 nst:121150 a skos:Concept , nsto:Skill ;
@@ -81,7 +80,7 @@ nst:121150 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Gathers security requirements by interviewing personnel, defining scope, and coordinating site access."@en ;
     skos:prefLabel "Security Requirements Gathering"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "information security; requirements elicitation; stakeholder interview; site access coordination; risk assessment"@en .
 
 nst:121151 a skos:Concept , nsto:Skill ;
@@ -91,7 +90,7 @@ nst:121151 a skos:Concept , nsto:Skill ;
     skos:altLabel "Technology Platform Utilisation"@en ;
     skos:definition "Deploys server, application, and user security solutions aligned with network security specifications."@en ;
     skos:prefLabel "Security Technology Implementation"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "network security; server hardening; application security; user authentication; firewall; cybersecurity; online identity protection; security platforms; threat mitigation; digital hygiene"@en .
 
 nst:121152 a skos:Concept , nsto:Skill ;
@@ -104,7 +103,7 @@ nst:121152 a skos:Concept , nsto:Skill ;
         "Threat Trend Analysis"@en ;
     skos:definition "Continuously tracks emerging digital security developments to inform risk assessments and protective measures."@en ;
     skos:prefLabel "Security Threat Assessment"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "risk assessment; threat modeling; vulnerability analysis; likelihood evaluation; risk matrix; cybersecurity; threat intelligence; trend monitoring; vulnerability assessment; security analytics; risk register; ISO 27001; NIST CSF; vulnerability scanning; security policies; compliance frameworks; vulnerability tracking; security news feeds; digital risk monitoring; vulnerability management; SIEM; cyber risk assessment"@en .
 
 nst:121158 a skos:Concept , nsto:Skill ;
@@ -114,7 +113,7 @@ nst:121158 a skos:Concept , nsto:Skill ;
     skos:altLabel "Security Incident Troubleshooting"@en ;
     skos:definition "Verifies incidents by analyzing logs to determine if they stem from network or system issues."@en ;
     skos:prefLabel "Incident Verification"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "incident response; network monitoring; system diagnostics; security analysis; SIEM; intrusion detection; log analysis; threat hunting"@en .
 
 nst:121160 a skos:Concept , nsto:Skill ;
@@ -123,7 +122,7 @@ nst:121160 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Reviews legislation and internal policies to ensure cyber security incident handling complies with legal standards."@en ;
     skos:prefLabel "Legislative Compliance Review"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "regulatory frameworks; cybersecurity policy analysis; risk governance; incident response standards; legal compliance auditing; regulatory compliance; codes of practice; wildlife welfare legislation; compliance auditing; environmental law; legislation analysis; standards interpretation; compliance audit; statutory requirements; governance and risk management; policy and standards analysis; compliance management systems"@en .
 
 nst:121161 a skos:Concept , nsto:Skill ;
@@ -135,7 +134,7 @@ nst:121161 a skos:Concept , nsto:Skill ;
         "Log Analysis"@en ;
     skos:definition "Reviews application responses, persistent data stores, and function logs to verify accuracy and troubleshoot issues."@en ;
     skos:prefLabel "Log Data Analysis"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "SIEM; syslog; network monitoring; security incident response; audit trails; audit logs; log analysis; security monitoring; configuration management; log parsing; event correlation; incident detection; application logging; persistent data store monitoring; error detection; performance metrics; log aggregation tools; Splunk; ELK stack; anomaly detection; system monitoring"@en .
 
 nst:121162 a skos:Concept , nsto:Skill ;
@@ -144,7 +143,7 @@ nst:121162 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Explains network vs system incident distinctions to appropriate personnel during incident response."@en ;
     skos:prefLabel "Network System Differentiation"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "incident response; network operations; system administration; escalation procedures; ITIL incident classification"@en .
 
 nst:121167 a skos:Concept , nsto:Skill ;
@@ -153,7 +152,7 @@ nst:121167 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Creates organization-specific security baselines and measurable metrics to monitor compliance and risk."@en ;
     skos:prefLabel "Baseline Metric Development"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "security baseline; risk assessment; compliance; governance; NIST framework"@en .
 
 nst:121169 a skos:Concept , nsto:Skill ;
@@ -162,7 +161,7 @@ nst:121169 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:hybrid ;
     skos:definition "Analyzes data classifications and access levels across operational processes, aligning them with strategic objectives."@en ;
     skos:prefLabel "Data Classification Analysis"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "data governance; access control; information security; metadata management; risk compliance"@en .
 
 nst:121172 a skos:Concept , nsto:Skill ;
@@ -171,7 +170,7 @@ nst:121172 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Secures management approval by presenting and aligning information security strategy plans."@en ;
     skos:prefLabel "Management Buy In"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "stakeholder engagement; executive sponsorship; security governance; risk approval; strategic planning"@en .
 
 nst:121177 a skos:Concept , nsto:Skill ;
@@ -185,7 +184,7 @@ nst:121177 a skos:Concept , nsto:Skill ;
         "Security Planning"@en ;
     skos:definition "Develops written security plans outlining investigation requirements, resource protection, and exhibit safeguarding."@en ;
     skos:prefLabel "Security Strategy Planning"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "information security governance; risk management framework; security policy development; ISO 27001 compliance; strategic action planning; network security; security architecture; risk assessment; security policy; compliance; exhibit protection; security protocols; access control; chain of custody; cybersecurity governance; risk mitigation; security monitoring; countermeasure evaluation; NIST/ISO 27001 frameworks; threat analysis; security governance; vulnerability evaluation; organizational security objectives; threat modeling; incident response plan; compliance frameworks; strategic security planning; incident response"@en .
 
 nst:121178 a skos:Concept , nsto:Skill ;
@@ -208,7 +207,7 @@ nst:121178 a skos:Concept , nsto:Skill ;
         "Security Control Audit"@en ;
     skos:definition "Audits current and proposed security controls and incident reporting processes to ensure compliance and effectiveness."@en ;
     skos:prefLabel "Security Testing Execution"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "penetration testing; vulnerability assessment; security controls validation; risk management; information security frameworks; vulnerability scanning; application security; static analysis; dynamic analysis; information security controls; risk assessment; compliance frameworks; internal audit procedures; security governance; information systems evaluation; data integrity controls; security compliance; efficiency performance monitoring; risk assessment auditing; incident reporting; control mechanisms; ISO 27001; physical security; access control; security audit; threat analysis; audit; financial controls; transaction monitoring; regulatory compliance; control testing; compliance; SOX; audit software; compliance monitoring; internal audit; governance controls; business process review; security architecture; threat modeling; NIST framework; incident response; governance; compliance testing; cybersecurity; threat monitoring; security controls; SIEM; trust accounting; internal controls; audit procedures; hierarchy of controls; control assessment; compliance reporting"@en .
 
 nst:121188 a skos:Concept , nsto:Skill ;
@@ -217,7 +216,7 @@ nst:121188 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:hybrid ;
     skos:definition "Generates and shares practical ideas to address system vulnerabilities during hybrid team sessions."@en ;
     skos:prefLabel "Risk Mitigation Ideation"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "vulnerability analysis; threat modeling; mitigation strategies; risk assessment; ideation techniques"@en .
 
 nst:121189 a skos:Concept , nsto:Skill ;
@@ -226,7 +225,7 @@ nst:121189 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:hybrid ;
     skos:definition "Evaluates and selects appropriate scanning tools during hybrid vulnerability assessments based on project criteria."@en ;
     skos:prefLabel "Scanning Tool Selection"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "vulnerability assessment; security scanning tools; risk analysis; penetration testing; tool evaluation criteria"@en .
 
 nst:121190 a skos:Concept , nsto:Skill ;
@@ -235,7 +234,7 @@ nst:121190 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Conducts stakeholder discussions to convey identified vulnerabilities from assessments and penetration tests."@en ;
     skos:prefLabel "Stakeholder Discussion"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "vulnerability assessment; penetration testing; risk communication; security stakeholders; threat analysis"@en .
 
 nst:121192 a skos:Concept , nsto:Skill ;
@@ -244,7 +243,7 @@ nst:121192 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:hybrid ;
     skos:definition "Plans schedules vulnerability testing regimes, defining documentation requirements to meet organisational needs in hybrid environments."@en ;
     skos:prefLabel "Vulnerability Assessment Planning"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "penetration testing; risk assessment; test schedule; security documentation; compliance frameworks"@en .
 
 nst:121199 a skos:Concept , nsto:Skill ;
@@ -253,7 +252,7 @@ nst:121199 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Creates test baselines and defines metrics following organisational procedures to benchmark performance."@en ;
     skos:prefLabel "Metric Baseline Creation"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "performance metrics; baseline development; test procedures; quality assurance; benchmarking"@en .
 
 nst:121201 a skos:Concept , nsto:Skill ;
@@ -262,7 +261,7 @@ nst:121201 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Defines and validates RTO and RPO during disaster recovery planning to ensure timely restoration."@en ;
     skos:prefLabel "Recovery Objective Definition"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "disaster recovery; business continuity; recovery time objective; recovery point objective; backup strategy"@en .
 
 nst:121202 a skos:Concept , nsto:Skill ;
@@ -271,7 +270,7 @@ nst:121202 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Forms a response committee, assigning roles per organisational procedures to coordinate actions."@en ;
     skos:prefLabel "Response Committee Establishment"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "stakeholder management; governance framework; roles and responsibilities; emergency response planning; organizational procedures"@en .
 
 nst:121206 a skos:Concept , nsto:Skill ;
@@ -281,7 +280,7 @@ nst:121206 a skos:Concept , nsto:Skill ;
     skos:altLabel "Assistance Escalation Coordination"@en ;
     skos:definition "Coordinates escalation by identifying knowledge gaps and promptly consulting relevant experts to resolve customer queries."@en ;
     skos:prefLabel "Escalation Coordination"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "incident management; third‑party liaison; service escalation; stakeholder coordination; critical incident response; emergency response; crisis communication; escalation procedures; customer support; ticketing system; service desk"@en .
 
 nst:121208 a skos:Concept , nsto:Skill ;
@@ -290,7 +289,7 @@ nst:121208 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Activates incident response plan, verifies containment of cyber incident by monitoring systems."@en ;
     skos:prefLabel "Incident Containment"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "incident response; cybersecurity; threat containment; security operations center; SIEM"@en .
 
 nst:121210 a skos:Concept , nsto:Skill ;
@@ -300,7 +299,7 @@ nst:121210 a skos:Concept , nsto:Skill ;
     skos:altLabel "Incident Confirmation"@en ;
     skos:definition "Verifies incident type and location by following organizational cyber security policies and procedures."@en ;
     skos:prefLabel "Incident Identification"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "cybersecurity; incident response; threat detection; SIEM; security forensics; cybersecurity incident response; incident verification; security policy compliance; network forensics"@en .
 
 nst:121214 a skos:Concept , nsto:Skill ;
@@ -313,7 +312,7 @@ nst:121214 a skos:Concept , nsto:Skill ;
         "Security Tool Utilization"@en ;
     skos:definition "Utilizes specialized security tools and software to detect, analyze, and remediate cyber incidents."@en ;
     skos:prefLabel "Network Security"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "intrusion detection; SIEM; firewall configuration; incident response; threat analysis; log monitoring; threat hunting; cybersecurity operations; threat detection; log analysis; vulnerability assessment; audit trails; cybersecurity; threat intelligence"@en .
 
 nst:121219 a skos:Concept , nsto:Skill ;
@@ -322,7 +321,7 @@ nst:121219 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Tests implemented solutions, documents results, and escalates issues to senior staff."@en ;
     skos:prefLabel "Solution Testing"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "validation; quality assurance; issue escalation; troubleshooting; test execution; software validation; user acceptance testing; test criteria assessment; digital solution evaluation; functional testing; test case design; documentation; business process testing; error‑proofing; fault detection; FMEA; materials analysis; validation testing; modification procedures; quality control; lab instrumentation; photonics; optical testing; test protocols; analogue electronics; circuit testing; bench verification; measurement instruments; audio electronics; circuit troubleshooting; signal analysis; oscilloscope testing; prototype validation; air traffic control; systems validation; simulation testing; performance verification; engineering modification; industrial control systems; SCADA; PLC validation; automation troubleshooting; power electronics; single‑phase control; performance validation; energy efficiency; performance testing; simulation modeling; pilot implementation; sustainability metrics; pilot testing; iterative optimization; prototype evaluation; engineering analysis; security testing; risk mitigation; performance evaluation; protective solutions"@en .
 
 nst:121221 a skos:Concept , nsto:Skill ;
@@ -331,7 +330,7 @@ nst:121221 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Ingests data logs into the analytic platform per user instructions, ensuring data availability for analysis."@en ;
     skos:prefLabel "Analytic Platform Operation"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "data ingestion; log analytics; ETL pipelines; analytics platform; monitoring"@en .
 
 nst:121222 a skos:Concept , nsto:Skill ;
@@ -340,7 +339,7 @@ nst:121222 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:theoretical ;
     skos:definition "Identifies relevant laws and internal policies to guide collection, analysis, and interpretation of threat data."@en ;
     skos:prefLabel "Compliance Requirement Identification"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "regulatory compliance; legislation; policy analysis; threat intelligence; risk assessment"@en .
 
 nst:121227 a skos:Concept , nsto:Skill ;
@@ -349,7 +348,7 @@ nst:121227 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Develops and validates mitigation strategies, action steps, and lessons learned with relevant personnel."@en ;
     skos:prefLabel "Mitigation Strategy Recommendation"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "risk management; lessons learned analysis; action planning; stakeholder engagement; mitigation planning; risk assessment; contingency planning; impact analysis; risk register; preventive measures"@en .
 
 nst:121229 a skos:Concept , nsto:Skill ;
@@ -358,7 +357,7 @@ nst:121229 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:theoretical ;
     skos:definition "Identifies network and data source security equipment by analyzing system diagrams and documentation."@en ;
     skos:prefLabel "Security Equipment Identification"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "cybersecurity; network security; asset inventory; IDS; firewall"@en .
 
 nst:121232 a skos:Concept , nsto:Skill ;
@@ -368,7 +367,7 @@ nst:121232 a skos:Concept , nsto:Skill ;
     skos:altLabel "Dataset Creation Procedures"@en ;
     skos:definition "Compiles alerts, logs, and event reports into structured datasets following organizational policies."@en ;
     skos:prefLabel "Threat Data Collection"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "threat intelligence; log analysis; SIEM; incident response; security monitoring; data ingestion; data governance; ETL processes"@en .
 
 nst:123267 a skos:Concept , nsto:Skill ;
@@ -381,7 +380,7 @@ nst:123267 a skos:Concept , nsto:Skill ;
         "Security Control Improvement"@en ;
     skos:definition "Validates and redesigns ICT system and application security controls to remediate operational vulnerabilities."@en ;
     skos:prefLabel "Control Implementation Testing"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "cybersecurity controls; implementation testing; risk mitigation; security documentation; compliance frameworks; security testing; compliance documentation; ISO 27001; risk gap analysis; NIST framework; vulnerability mitigation; cybersecurity risk assessment; control frameworks; NIST CSF; ISO 27001 compliance; cybersecurity; vulnerability assessment; control testing; ICT security"@en .
 
 nst:123269 a skos:Concept , nsto:Skill ;
@@ -390,7 +389,7 @@ nst:123269 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:hybrid ;
     skos:definition "Conducts unconstrained critical analysis to generate and test security control improvements across hybrid environments."@en ;
     skos:prefLabel "Critical Security Analysis"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "risk assessment; threat modeling; security controls; vulnerability analysis; security governance"@en .
 
 nst:123270 a skos:Concept , nsto:Skill ;
@@ -399,7 +398,7 @@ nst:123270 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Evaluates existing security controls against standards to pinpoint compliance gaps."@en ;
     skos:prefLabel "Cyber Security Gap Analysis"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "risk assessment; security controls; ISO 27001; NIST CSF; vulnerability assessment"@en .
 
 nst:123271 a skos:Concept , nsto:Skill ;
@@ -408,7 +407,7 @@ nst:123271 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Reviews asset register for currency, identifies new valuable assets and emerging threats."@en ;
     skos:prefLabel "New Asset Identification"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "asset register; risk assessment; threat analysis; asset valuation; inventory management"@en .
 
 nst:123273 a skos:Concept , nsto:Skill ;
@@ -417,7 +416,7 @@ nst:123273 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Aligns chosen cyber security controls with identified gaps to meet the organization’s risk appetite."@en ;
     skos:prefLabel "Risk Appetite Alignment"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "cybersecurity controls; risk appetite; risk assessment; control frameworks; ISO 27001"@en .
 
 nst:123274 a skos:Concept , nsto:Skill ;
@@ -428,7 +427,7 @@ nst:123274 a skos:Concept , nsto:Skill ;
         "Security Architecture Presentation"@en ;
     skos:definition "Delivers concise verbal security briefings, tailoring language to audience to present recommendations and reports."@en ;
     skos:prefLabel "Security Briefing Delivery"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "verbal reporting; audience tailoring; security protocols; recommendation delivery; clear articulation; cybersecurity; risk assessment; technical briefing; security controls; stakeholder communication; information security; enterprise architecture; security frameworks; technical presentation"@en .
 
 nst:123278 a skos:Concept , nsto:Skill ;
@@ -445,7 +444,7 @@ nst:123278 a skos:Concept , nsto:Skill ;
         "Risk Severity Estimation"@en ;
     skos:definition "Assigns risk levels to identified cyber threats using a defined measurement scale to prioritize mitigation."@en ;
     skos:prefLabel "Threat Risk Assessment"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "cybersecurity; risk analysis; asset inventory; threat modeling; security requirements documentation; cyber risk assessment; risk scoring; measurement scale; risk matrix; risk assessment; risk classification; risk management; severity rating; hazard analysis; quantitative scoring; risk criteria; security assessment; threat analysis; vulnerability evaluation; risk identification; information security standards; hazard identification; control implementation; risk mitigation; safety compliance; risk register; security controls; compliance; vulnerability management; likelihood assessment; impact analysis; hazard evaluation; risk rating; safety documentation; risk management procedures; likelihood analysis; consequence evaluation; data evaluation; assessment criteria; control requirements; mitigation planning; vulnerability analysis; ISO 27001; vulnerability assessment; site audit; risk evaluation; impact assessment; security governance"@en .
 
 nst:125975 a skos:Concept , nsto:Skill ;
@@ -454,7 +453,7 @@ nst:125975 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:hybrid ;
     skos:definition "Designs basic algorithms from program specs, outlining steps and flow for implementation."@en ;
     skos:prefLabel "Algorithm Design"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "algorithmic thinking; pseudocode; computational complexity; data structures; software engineering"@en .
 
 nst:125985 a skos:Concept , nsto:Skill ;
@@ -464,7 +463,7 @@ nst:125985 a skos:Concept , nsto:Skill ;
     skos:altLabel "Problem Solving Coding"@en ;
     skos:definition "Applies coding techniques to solve integrated hybrid scenarios, debugging and optimizing solutions across platforms."@en ;
     skos:prefLabel "Programming Problem Solving"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "algorithm design; debugging; code implementation; logical reasoning; IDE; algorithmic thinking; computational thinking; programming logic; software development"@en .
 
 nst:127597 a skos:Concept , nsto:Skill ;
@@ -473,7 +472,7 @@ nst:127597 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Reviews code repositories and designs tailored backup procedures to protect data assets."@en ;
     skos:prefLabel "Backup Procedure Development"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "disaster recovery; data retention; backup automation; storage management; version control; backup strategy; restoration testing; data integrity; backup scheduling"@en .
 
 nst:127598 a skos:Concept , nsto:Skill ;
@@ -482,7 +481,7 @@ nst:127598 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Evaluates current backup and blackout plans to define optimal backup strategy."@en ;
     skos:prefLabel "Backup Strategy Determination"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "disaster recovery; business continuity; backup planning; RPO; RTO"@en .
 
 nst:127604 a skos:Concept , nsto:Skill ;
@@ -494,7 +493,7 @@ nst:127604 a skos:Concept , nsto:Skill ;
         "Results Communication Reporting"@en ;
     skos:definition "Prepares and presents modification results reports to designated personnel, ensuring clear communication of outcomes."@en ;
     skos:prefLabel "Modification Reporting"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "reporting; change management; stakeholder communication; technical documentation; results analysis; technical reporting; scientific communication; data visualization; procedural compliance; engineering analysis; incident documentation; test outcome communication; quality assurance reporting; stakeholder notification; ticketing systems; incident reporting; tolerance monitoring; quality assurance; risk management; stakeholder reporting; repair authorization; findings communication; compliance records; visual storytelling; technical writing; presentation design; audience analysis; communication tools"@en .
 
 nst:127606 a skos:Concept , nsto:Skill ;
@@ -503,7 +502,7 @@ nst:127606 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Locates and verifies repository availability and up-to-dateness through systematic searches and version checks."@en ;
     skos:prefLabel "Repository Identification"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "version control; source code management; repository audit; Git; repository health"@en .
 
 nst:127610 a skos:Concept , nsto:Skill ;
@@ -512,7 +511,7 @@ nst:127610 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Communicates modification impacts to users, explaining implications for their workflows and decisions."@en ;
     skos:prefLabel "User Impact Communication"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "impact analysis; change management; stakeholder communication; user notifications; risk communication"@en .
 
 nst:127670 a skos:Concept , nsto:Skill ;
@@ -521,7 +520,7 @@ nst:127670 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Evaluates built‑in and third‑party encryption tools and deploys them to secure data."@en ;
     skos:prefLabel "Encryption Deployment"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "cryptography; key management; TLS/SSL; AES; data protection"@en .
 
 nst:127671 a skos:Concept , nsto:Skill ;
@@ -530,7 +529,7 @@ nst:127671 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Reviews existing classifications and creates a file security categorisation scheme to protect data."@en ;
     skos:prefLabel "File Security Categorisation"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "information security; data classification; access control; security policy; sensitivity labeling"@en .
 
 nst:127673 a skos:Concept , nsto:Skill ;
@@ -540,7 +539,7 @@ nst:127673 a skos:Concept , nsto:Skill ;
     skos:altLabel "Security Policy Review"@en ;
     skos:definition "Evaluates password robustness using designated tools and aligns with organisational complexity policies, tightening as needed."@en ;
     skos:prefLabel "Password Strength Assessment"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "information security; password policy compliance; entropy analysis; password auditing tools; cybersecurity guidelines; password policy; compliance; risk assessment; access control"@en .
 
 nst:127681 a skos:Concept , nsto:Skill ;
@@ -549,7 +548,7 @@ nst:127681 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Manages accounts by accessing ICT systems following procedures and adjusting settings to meet security policies."@en ;
     skos:prefLabel "User Account Management"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "identity management; access control; user provisioning; security policies; directory services"@en .
 
 nst:127685 a skos:Concept , nsto:Skill ;
@@ -559,7 +558,7 @@ nst:127685 a skos:Concept , nsto:Skill ;
     skos:altLabel "Compliance Reporting Preparation"@en ;
     skos:definition "Creates and maintains disaster recovery documentation aligned with organisational standards and requirements."@en ;
     skos:prefLabel "Disaster Recovery Documentation"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "business continuity; recovery procedures; ISO 22301; risk assessment; ITIL; disaster recovery planning; regulatory compliance; cloud governance; risk management"@en .
 
 nst:127692 a skos:Concept , nsto:Skill ;
@@ -569,7 +568,7 @@ nst:127692 a skos:Concept , nsto:Skill ;
     skos:altLabel "Work Prioritisation"@en ;
     skos:definition "Sequences, schedules, and prioritises own tasks to meet deadlines and maintain workflow efficiency."@en ;
     skos:prefLabel "Self Management Planning"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "task prioritization; workload scheduling; personal productivity; time management tools; sequencing and planning; task scheduling; time management; prioritisation methods; workflow planning; productivity tools"@en .
 
 nst:127693 a skos:Concept , nsto:Skill ;
@@ -578,7 +577,7 @@ nst:127693 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:hybrid ;
     skos:definition "Assesses ICT system performance against organizational benchmarks in hybrid environments to decide maintenance initiation."@en ;
     skos:prefLabel "System Effectiveness Evaluation"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "ICT performance metrics; benchmark analysis; organizational requirements alignment; maintenance decision criteria; IT service level monitoring; explosives safety; security management; performance assessment; risk compliance; policy evaluation"@en .
 
 nst:127694 a skos:Concept , nsto:Skill ;
@@ -587,7 +586,7 @@ nst:127694 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Optimizes restored ICT systems by adjusting configurations to meet organisational performance and security standards."@en ;
     skos:prefLabel "System Restoration Optimisation"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "ICT performance tuning; service level compliance; configuration management; disaster recovery; capacity planning"@en .
 
 nst:127696 a skos:Concept , nsto:Skill ;
@@ -597,7 +596,7 @@ nst:127696 a skos:Concept , nsto:Skill ;
     skos:altLabel "Login Security Monitoring"@en ;
     skos:definition "Monitors system logins, verifying each user’s access aligns with assigned permission levels."@en ;
     skos:prefLabel "User Access Monitoring"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "access control; user permissions; audit logging; security monitoring; identity and access management; authentication; intrusion detection; log analysis; SIEM"@en .
 
 nst:127703 a skos:Concept , nsto:Skill ;
@@ -621,7 +620,7 @@ nst:127703 a skos:Concept , nsto:Skill ;
         "Escalation Coordination"@en ;
     skos:definition "Coordinates issue escalation by identifying problems and directing them to appropriate personnel for timely resolution."@en ;
     skos:prefLabel "Escalation Handling"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "change management; incident response; ITIL; service desk; priority triage; referral; issue triage; customer service; support hierarchy; ticketing system; incident management; complaint handling; escalation matrix; organizational policy; conflict resolution; customer complaint handling; escalation procedures; service desk workflow; stakeholder communication; stakeholder consultation; risk assessment; service desk processes; ITIL escalation procedures; client support; SLA compliance; triage; authority levels; issue resolution; CRM; ITIL escalation; standard operating procedures; triage process; authorization workflow; priority routing; fault escalation; technical troubleshooting; service desk communication; root cause analysis; authority limits; approval chain; risk governance; payment escalation; accounts receivable; stakeholder liaison; escalation protocol; vulnerability escalation; risk mitigation; service desk procedures; service level agreement; escalation protocols; security operations; reporting hierarchy; policy compliance; non‑routine enquiries; advice referral; organizational procedures; issue escalation; supervisor handoff; responsibility boundaries; maintenance coordination; hierarchical escalation; follow‑up tracking; management reporting; incident ticketing; incident reporting; email security; threat detection; risk management; ITIL workflow; stakeholder management; marketing operations; issue tracking; cross‑functional liaison; service‑desk workflow; incident resolution; chain of command"@en .
 
 nst:127704 a skos:Concept , nsto:Skill ;
@@ -632,7 +631,7 @@ nst:127704 a skos:Concept , nsto:Skill ;
         "Problem Issue Analysis"@en ;
     skos:definition "Diagnoses support issues by discussing difficulties and change requests with clients to determine root causes."@en ;
     skos:prefLabel "Issue Diagnosis"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "troubleshooting; root cause analysis; user support; change management; incident management; issue tracking; client support documentation; service desk tools; client management; issue resolution; behavioral risk assessment; conflict resolution; case analysis"@en .
 
 nst:127706 a skos:Concept , nsto:Skill ;
@@ -641,7 +640,7 @@ nst:127706 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Diagnoses and resolves first-level user issues remotely via phone, chat, or remote-control tools."@en ;
     skos:prefLabel "Remote Troubleshooting"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "first-level support; remote desktop; screen sharing; ticketing system; IT helpdesk"@en .
 
 nst:127707 a skos:Concept , nsto:Skill ;
@@ -651,7 +650,7 @@ nst:127707 a skos:Concept , nsto:Skill ;
     skos:altLabel "Technical Change Documentation"@en ;
     skos:definition "Records required system changes in detailed resolution documents to track modifications and support maintenance."@en ;
     skos:prefLabel "Resolution Documentation"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "change management; technical documentation; version control; configuration management; revision tracking; technical writing; procedural compliance; audit trail"@en .
 
 nst:127708 a skos:Concept , nsto:Skill ;
@@ -661,7 +660,7 @@ nst:127708 a skos:Concept , nsto:Skill ;
     skos:altLabel "Satisfaction Confirmation"@en ;
     skos:definition "Verifies customer satisfaction by confirming responses meet their needs during interactions."@en ;
     skos:prefLabel "Satisfaction Verification"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "client satisfaction; issue resolution confirmation; service policy compliance; feedback collection; customer experience; customer satisfaction; needs assessment; feedback validation; service quality; CRM; customer feedback; expectation management; client communication"@en .
 
 nst:127717 a skos:Concept , nsto:Skill ;
@@ -670,7 +669,7 @@ nst:127717 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Prepares OS support documentation outlining compatible operating systems and configuration requirements."@en ;
     skos:prefLabel "Os Documentation Preparation"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "operating system support; technical documentation; system requirements; software support specifications; IT documentation tools"@en .
 
 nst:127718 a skos:Concept , nsto:Skill ;
@@ -680,7 +679,7 @@ nst:127718 a skos:Concept , nsto:Skill ;
     skos:altLabel "Troubleshooting Operating Anomalies"@en ;
     skos:definition "Diagnoses OS, network, and software faults by applying logical troubleshooting aligned with configurations and procedures."@en ;
     skos:prefLabel "Os Issue Diagnosis"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "operating system troubleshooting; system diagnostics; error log analysis; user support; hardware-software compatibility; operating system diagnostics; network fault analysis; software error debugging; system configuration management; root cause analysis"@en .
 
 nst:127721 a skos:Concept , nsto:Skill ;
@@ -690,7 +689,7 @@ nst:127721 a skos:Concept , nsto:Skill ;
     skos:altLabel "Troubleshoot System Access"@en ;
     skos:definition "Diagnoses and resolves user access issues by analyzing permission settings and applying corrective configurations."@en ;
     skos:prefLabel "Security Permission Troubleshooting"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "access control; permission audit; Active Directory; IAM; troubleshooting; authentication; user provisioning; IT support"@en .
 
 nst:127726 a skos:Concept , nsto:Skill ;
@@ -700,7 +699,7 @@ nst:127726 a skos:Concept , nsto:Skill ;
     skos:altLabel "Technical Support Assessment"@en ;
     skos:definition "Assesses and records technical support needs by following organisational policies and procedures."@en ;
     skos:prefLabel "Support Requirement Analysis"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "requirements gathering; stakeholder analysis; user needs assessment; IT support processes; service level management; service level agreement; ITIL; policy compliance; ticketing system; service level; troubleshooting; SLA"@en .
 
 nst:127743 a skos:Concept , nsto:Skill ;
@@ -709,7 +708,7 @@ nst:127743 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Secures OS client evaluations and approvals by coordinating requests, reviewing feedback, and confirming acceptance."@en ;
     skos:prefLabel "Client Evaluation Handling"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "client liaison; evaluation workflow; approval process; stakeholder communication; CRM"@en .
 
 nst:127745 a skos:Concept , nsto:Skill ;
@@ -718,7 +717,7 @@ nst:127745 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "using built-in tools like ping, ipconfig, netstat, and sfc /scannow (Windows) or traceroute, df, host, dig (Linux/macOS) to diagnose network, system file, disk, and power issues by checking connectivity, IP details, DNS, process stats, and system integrity, often requiring administrator privileges for deeper scans and resets like netsh commands or running system file checkers"@en ;
     skos:prefLabel "Command Line Troubleshooting"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "shell scripting; system utilities; debugging; command syntax; diagnostic tools"@en .
 
 nst:127747 a skos:Concept , nsto:Skill ;
@@ -732,7 +731,7 @@ nst:127747 a skos:Concept , nsto:Skill ;
         "Functional System Testing"@en ;
     skos:definition "Executes OS function tests following organisational procedures to verify system performance and compliance."@en ;
     skos:prefLabel "Os Functionality Testing"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "operating system; functional testing; system validation; test procedures; software QA; system analysis; operational validation; system behavior; performance verification; functionality assessment; process mapping; requirements gathering; performance evaluation; systems engineering; requirements analysis; UML modeling; control systems; simulation testing; functional verification; operational integrity; test automation; simulation; motion control; system verification; test execution; quality assurance; test automation tools; software testing; test instrumentation; maintenance documentation; component alignment; verification; communication equipment; compliance; hardware testing"@en .
 
 nst:127749 a skos:Concept , nsto:Skill ;
@@ -741,7 +740,7 @@ nst:127749 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Configures and tunes operating systems to meet specific organisational and client performance criteria."@en ;
     skos:prefLabel "Os Performance Optimisation"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "operating system tuning; resource management; performance monitoring; benchmarking tools; kernel optimization"@en .
 
 nst:127750 a skos:Concept , nsto:Skill ;
@@ -750,7 +749,7 @@ nst:127750 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Creates detailed OS installation and functionality documents following organisational standards."@en ;
     skos:prefLabel "Os Procedure Documentation"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "operating system installation; technical documentation; standard operating procedures; configuration management; ITIL change management"@en .
 
 nst:127751 a skos:Concept , nsto:Skill ;
@@ -759,7 +758,7 @@ nst:127751 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:hybrid ;
     skos:definition "Formulates operating system recommendations and delivers them to designated personnel in hybrid environments."@en ;
     skos:prefLabel "Os Recommendation Formulation"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "operating system selection; technology assessment; IT governance; stakeholder communication; compatibility analysis"@en .
 
 nst:127752 a skos:Concept , nsto:Skill ;
@@ -769,7 +768,7 @@ nst:127752 a skos:Concept , nsto:Skill ;
     skos:altLabel "Operating System Selection"@en ;
     skos:definition "Evaluates operating system compatibility by reviewing vendor sites, specs, and system requirements in hybrid environments."@en ;
     skos:prefLabel "Os Suitability Research"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "operating system; system requirements; vendor evaluation; technical specifications; compatibility analysis; system requirements analysis; software compatibility; platform evaluation; OS deployment; hardware compatibility; software versioning; compatibility assessment; IT infrastructure; deployment planning"@en .
 
 nst:127753 a skos:Concept , nsto:Skill ;
@@ -778,7 +777,7 @@ nst:127753 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:hybrid ;
     skos:definition "Identifies and selects appropriate operating system troubleshooting methods in hybrid environments."@en ;
     skos:prefLabel "Problem Resolution Strategy"@en ;
-    sfia:level nstsl:2 ;
+    nsto:level nstsl:2 ;
     schema:keywords "troubleshooting; operating system; root cause analysis; incident management; diagnostic tools"@en .
 
 nst:127757 a skos:Concept , nsto:Skill ;
@@ -787,7 +786,7 @@ nst:127757 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Identifies system directory structures and configures virtual memory settings to optimize performance."@en ;
     skos:prefLabel "Virtual Memory Administration"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "memory paging; swap space management; operating system kernel; directory structure navigation; system administration"@en .
 
 nst:127767 a skos:Concept , nsto:Skill ;
@@ -796,7 +795,7 @@ nst:127767 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Designs solutions and implements rollback mechanisms to ensure safe deployment."@en ;
     skos:prefLabel "Solution Formulation"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "solution design; rollback strategy; contingency planning; risk mitigation; implementation planning; problem solving; text reformulation; translation workflow; linguistic adaptation; decision making"@en .
 
 nst:127772 a skos:Concept , nsto:Skill ;
@@ -805,7 +804,7 @@ nst:127772 a skos:Concept , nsto:Skill ;
     dcterms:type skillctx:practical ;
     skos:definition "Systematically tests individual variables per organisational procedures to pinpoint and isolate system issues."@en ;
     skos:prefLabel "Variable Isolation Testing"@en ;
-    sfia:level nstsl:3 ;
+    nsto:level nstsl:3 ;
     schema:keywords "troubleshooting; root cause analysis; fault isolation; diagnostic testing; procedural compliance"@en .
 
 ####################
