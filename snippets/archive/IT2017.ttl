@@ -1,11 +1,11 @@
-PREFIX acm: <https://data.jobsandskills.gov.au/def/acm-cc/>
-PREFIX acmcs: <https://data.jobsandskills.gov.au/def/acm-cc>
+PREFIX asn: <http://purl.org/ASN/schema/core/>
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX it2017: <https://data.jobsandskills.gov.au/def/it2017/>
 PREFIX it2017cs: <https://data.jobsandskills.gov.au/def/it2017>
 PREFIX ror: <https://ror.org/>
 PREFIX schema: <https://schema.org>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 ror:03wsadn68
 a schema:Organization ;
@@ -13,153 +13,29 @@ schema:name: "Association for Computing Machinery" ;
 schema:url: "http://www.acm.org/"^^xsd:anyURI 
 .
 
-
-acm:ITE-GPP a skos:Concept ;
-    skos:inScheme acmcs: ;
-    skos:notation "ITE-GPP" ;
-    skos:prefLabel "Global Professional Practice"@en ;
-    skos:scopeNote """1. Importance of identifying and understanding essential skills required for a successful career within the industry, including professional oral and written communication skills.
-2. Identification of ways teamwork integrates throughout IT and ways IT supports an organization.
-3. Social and professional contexts of information technology and computing, and adherence to ethical codes of conduct."""@en ;
-    skos:topConceptOf acmcs: ;
-    schema:skills "A. Analyze the importance of communication skills in a team environment and determine how these skills contribute to the optimization of organization goals. (Communication and teamwork)"@en,
-        "B. Evaluate the specific skills necessary for maintaining continued employment in an IT career that involves system development in an environmental context. (Employability)"@en,
-        "C. Develop IT policies within an organization that include privacy, legal, and ethical considerations as they relate to a corporate setting. (Legal and ethical)"@en,
-        "D. Evaluate related issues facing an IT project and develop a project plan using a cost/benefit analysis including risk considerations in creating an effective project plan from its start to its completion. (Project management)"@en .
-
-acm:ITE-IMA a skos:Concept ;
-    skos:inScheme acmcs: ;
-    skos:notation "ITE-IMA" ;
-    skos:prefLabel "Information Management"@en ;
-    skos:scopeNote """1. Tools and techniques for efficient data modeling, collection, organization, retrieval, and management.
-2. How to extract information from data to make data meaningful to the organization.
-3. How to develop, deploy, manage and integrate data and information systems to support the organization.
-4. Safety and security issues associated with data and information.
-5. Tools and techniques for producing useful knowledge from information."""@en ;
-    skos:topConceptOf acmcs: ;
-    schema:skills "A. Express how the growth of the internet and demands for information have changed data handling and transactional and analytical processing, and led to the creation of special purpose databases. (Requirements)"@en,
-        "B. Design and implement a physical model based on appropriate organization rules for a given scenario including the impact of normalization and indexes. (Requirements and development)"@en,
-        "C. Create working SQL statements for simple and intermediate queries to create and modify data and database objects to store, manipulate and analyze enterprise data. (Testing and performance)"@en,
-        "D. Analyze ways data fragmentation, replication, and allocation affect database performance in an enterprise environment. (Integration and evaluation)"@en,
-        "E. Perform major database administration tasks such as create and manage database users, roles and privileges, backup, and restore database objects to ensure organizational efficiency, continuity, and information security. (Testing and performance)"@en .
-
-acm:ITE-IST a skos:Concept ;
-    skos:inScheme acmcs: ;
-    skos:notation "ITE-IST" ;
-    skos:prefLabel "Integrated Systems Technology"@en ;
-    skos:scopeNote """1. Scripting languages, their uses and architectures.
-2. Application programming interfaces.
-3. Programming practices to facilitate the management, integration, and security of the systems that support an organization."""@en ;
-    skos:topConceptOf acmcs: ;
-    schema:skills "A. Illustrate how to code and store characters, images and other forms of data in computers and show why data conversion is often a necessity when merging disparate computing systems together. (Data mapping and exchange)"@en,
-        "B. Show how a commonly used intersystem communication protocol works, including its advantages and disadvantages. (Intersystem communication protocols)"@en,
-        "C. Design, debug and test a script that includes selection, repetition and parameter passing. (Integrative programming and scripting)"@en,
-        "D. Illustrate the goals of secure coding, and show how to use these goals as guideposts in dealing with preventing buffer overflow, wrapper code, and securing method access. (Defensible integration)"@en .
-
-acm:ITE-NET a skos:Concept ;
-    skos:inScheme acmcs: ;
-    skos:notation "ITE-NET" ;
-    skos:prefLabel "Networking"@en ;
-    skos:scopeNote """1. Topology of ad hoc and fixed networks of all sizes.
-2. Role of the layered model in standards evolution and interoperability.
-3. Physical layer through routing layer issues.
-4. Higher layers related to applications and security, such as functions and design.
-5. Approaches to designing for and modeling latency, throughput, and error rate."""@en ;
-    skos:topConceptOf acmcs: ;
-    schema:skills "A. Analyze and compare the characteristics of various communication protocols and how they support application requirements within a telecommunication system. (Requirements and Technologies)"@en,
-        "B. Analyze and compare several networking topologies in terms of robustness, expandability, and throughput used within a cloud enterprise. (Technologies)"@en,
-        "C. Describe different network standards, components, and requirements of network protocols within a distributed computing setting. (Network protocol technologies)"@en,
-        "D. Produce managerial policies to address server breakdown issues within a banking system. (Risk Management)"@en,
-        "E. Explain different main issues related to network management. (Network Management)"@en .
-
-acm:ITE-PFT a skos:Concept ;
-    skos:inScheme acmcs: ;
-    skos:notation "ITE-PFT" ;
-    skos:prefLabel "Platform Technologies"@en ;
-    skos:scopeNote """1. Comparison of various operating systems available, including their respective characteristics, advantages and disadvantages.
-2. Selection, deployment, integration and administration of platforms or components to support the organization’s IT infrastructure.
-3. Fundamentals of hardware and software and how they integrate to form the essential components of IT systems."""@en ;
-    skos:topConceptOf acmcs: ;
-    schema:skills "A. Describe how the historical development of hardware and operating system computing platforms produced the computing systems we have today. (Computing systems)"@en,
-        "B. Show how to choose among operating system options, and install at least an operating system on a computer device. (Operating systems)"@en,
-        "C. Justify the need for power and heat budgets within an IT environment, and document the factors needed when considering power and heat in a computing system. (Computing infrastructure)"@en,
-        "D. Produce a block diagram, including interconnections, of the main parts of a computer, and illustrate methods used on a computer for storing and retrieving data. (Architecture and organization)"@en .
-
-acm:ITE-SPA a skos:Concept ;
-    skos:inScheme acmcs: ;
-    skos:notation "ITE-SPA" ;
-    skos:prefLabel "System Paradigms"@en ;
-    skos:scopeNote """1. Skills and tools to gather requirements, source code development, evaluation and integration of components into a single system, and system validation.
-2. Design, selection, application, deployment, and management of computing systems to support an organization.
-3. Skills and concepts essential to the administration of operating systems, networks, software, file systems, file servers, web systems, database systems, and system documentation, policies, and procedures.
-4. Fundamentals of project management and the interplay between IT applications and related organizational processes.
-5. System integration issues, including integration in a system of systems and federation of systems, role of architectures in systems integration, performance and effectiveness.
-6. Education and support of users of computing systems."""@en ;
-    skos:topConceptOf acmcs: ;
-    schema:skills "A. Justify the way IT systems within an organization can represent stakeholders using different architectures and the ways these architectures relate to a system lifecycle. (Requirements and development)"@en,
-        "B. Demonstrate a procurement process for software and hardware acquisition and explain the procedures one might use for testing the critical issues that could affect IT system performance. (Testing and performance)"@en,
-        "C. Evaluate integration choices for middleware platforms and demonstrate how these choices affect testing and evaluation within the development of an IT system. (Integration and evaluation)"@en,
-        "D. Use knowledge of information technology and sensitivity to the goals and constraints of the organization to develop and monitor effective and appropriate system administration policies within a government environment. (System governance)"@en,
-        "E. Develop and implement procedures and employ technologies to achieve administrative policies within a corporate environment. (Operational activities)"@en,
-        "F. Organize personnel and information technology resources into appropriate administrative domains in a technical center. (Operational domains)"@en,
-        "G. Use appropriate and emerging technologies to improve performance of systems and discover the cause of performance problems in a system. (Performance analysis)"@en .
-
-acm:ITE-SWF a skos:Concept ;
-    skos:inScheme acmcs: ;
-    skos:notation "ITE-SWF" ;
-    skos:prefLabel "Software Fundamentals"@en ;
-    skos:scopeNote """1. Skills and fundamental programming concepts, data structures, and algorithmic processes.
-2. Programming strategies and practices for efficient problem solving.
-3. Programming paradigms to solve a variety of programming problems."""@en ;
-    skos:topConceptOf acmcs: ;
-    schema:skills "A. Use multiple levels of abstraction and select appropriate data structures to create a new program that is socially relevant and requires teamwork. (Program development)"@en,
-        "B. Evaluate how to write a program in terms of program style, intended behavior on specific inputs, correctness of program components, and descriptions of program functionality. (App development practices)"@en,
-        "C. Develop algorithms to solve a computational problem and explain how programs implement algorithms in terms of instruction processing, program execution, and running processes. (Algorithm development)"@en,
-        "D. Collaborate in the creation of an interesting and relevant app (mobile or web) based on user experience design, functionality, and security analysis and build the app’s program using standard libraries, unit testing tools, and collaborative version control. (App development practices)"@en .
-
-acm:ITE-UXD a skos:Concept ;
-    skos:inScheme acmcs: ;
-    skos:notation "ITE-UXD" ;
-    skos:prefLabel "User Experience Design"@en ;
-    skos:scopeNote """1. Understanding of advocacy for the user in the development of IT applications and systems.
-2. Development of a mind-set that recognizes the importance of users, context of use, and organizational contexts.
-3. Employment of user-centered methodologies in the design, development, evaluation, and deployment of IT applications and systems.
-4. Application of evaluation criteria, benchmarks, and standards.
-5. User and task analysis, human factors, ergonomics, accessibility standards, experience design, and cognitive psychology."""@en ;
-    skos:topConceptOf acmcs: ;
-    schema:skills "A. Design an interactive application, applying a user-centered design cycle and related tools and techniques (e.g., prototyping), aiming at usability and relevant user experience within a corporate environment. (Design tools and techniques)"@en,
-        "B. For a case of user centered design, analyze and evaluate the context of use, stakeholder needs, state-of-the-art interaction opportunities, and envisioned solutions, considering user attitude and applying relevant tools and techniques (e.g., heuristic evaluation), aiming at universal access and inclusiveness, and showing a responsive design attitude, considering assistive technologies and culture sensitive design. (Stakeholder needs)"@en,
-        "C. For evaluation of user-centered design, articulate evaluation criteria and compliance to relevant standards. (Benchmarks and standards)"@en,
-        "D. In design and analysis, apply knowledge from related disciplines including human information processing, anthropology and ethnography, and ergonomics/human factors. (Integrative design)"@en,
-        "E. Apply experience design for a service domain related to several disciplines, focusing on multiple stakeholders and collaborating in an interdisciplinary design team. (Application design)"@en .
-
-acm:ITE-WMS a skos:Concept ;
-    skos:inScheme acmcs: ;
-    skos:notation "ITE-WMS" ;
-    skos:prefLabel "Web and Mobile Systems"@en ;
-    skos:scopeNote """1. Web-based applications including related software, databases, interfaces, and digital media.
-2. Mobile applications including related software, databases, interfaces, and digital media.
-3. Contemporary web technologies, social media."""@en ;
-    skos:topConceptOf acmcs: ;
-    schema:skills "A. Design a responsive web application utilizing a web framework and presentation technologies in support of a diverse online community. (Web application development)"@en,
-        "B. Develop a mobile app that is usable, efficient, and secure on more than one device. (Mobile app development)"@en,
-        "C. Analyze a web or mobile system and correct security vulnerabilities. (Web and mobile security)"@en,
-        "D. Implement storage, transfer, and retrieval of digital media in a web application with appropriate file, database, or streaming formats. (Digital media storage and transfer)"@en,
-        "E. Describe the major components of a web system and how they function together, including the web server, database, analytics, and front end. (Web system infrastructure)"@en .
-
-it2017:ITE-CSP-01 a skos:Concept ;
+it2017:ITE-CSP-01 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-01" ;
-    skos:prefLabel "Perspectives and impact"@en .
+    skos:prefLabel "Perspectives and impact"@en ;
+    schema:teaches "a. Make sense of the hard problem areas in cybersecurity that continue to make cybersecurity a challenge to implement."@en ,
+        "b. Describe how a significant cybersecurity event has led to increased organizational focus on cybersecurity."@en ,
+        "c. Tell a story of a significant cybersecurity advance."@en ,
+        "d. Evaluate when the Confidentiality, Integrity and Availability (CIA) of information has been or could be violated with regards to providing trust of information."@en ,
+        "e. Compare and evaluate different approaches/implementations of digital currencies."@en .
 
-it2017:ITE-CSP-02 a skos:Concept ;
+it2017:ITE-CSP-02 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-02" ;
-    skos:prefLabel "Policy goals and mechanisms"@en .
+    skos:prefLabel "Policy goals and mechanisms"@en ;
+    schema:teaches "a. Recognize when an organization focus is on compliance with standards vs. state of the practice vs. state of the art."@en ,
+        "b. Be aware of multiple definitions for the word “policy” within a cybersecurity context."@en ,
+        "c. Consider vulnerability notification and the issues associated with fixing or not fixing vulnerabilities and disclosing or not disclosing vulnerabilities."@en ,
+        "d. Contrast the implications of relying on open design or the secrecy of design for security."@en ,
+        "e. Express why cybersecurity is a societal imperative."@en .
 
-it2017:ITE-CSP-03 a skos:Concept ;
+it2017:ITE-CSP-03 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-03" ;
@@ -172,7 +48,7 @@ it2017:ITE-CSP-03 a skos:Concept ;
         "f. Make meaning of the concepts of authentication, authorization, and access control."@en,
         "g. Argue for the benefit of multi-factor authentication."@en .
 
-it2017:ITE-CSP-04 a skos:Concept ;
+it2017:ITE-CSP-04 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-04" ;
@@ -184,7 +60,7 @@ it2017:ITE-CSP-04 a skos:Concept ;
         "e. Design several rules for a network-based intrusion detection system that will protect against specific known attacks."@en,
         "f. Describe how the use of deception by malware is used to evade security mechanisms."@en .
 
-it2017:ITE-CSP-05 a skos:Concept ;
+it2017:ITE-CSP-05 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-05" ;
@@ -198,7 +74,7 @@ it2017:ITE-CSP-05 a skos:Concept ;
         "g. Document the role of formal methods in creating high assurance software and systems."@en,
         "h. Describe how Trusted Platform Modules (TPMs) are used in creating high assurance systems."@en .
 
-it2017:ITE-CSP-06 a skos:Concept ;
+it2017:ITE-CSP-06 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-06" ;
@@ -214,7 +90,7 @@ it2017:ITE-CSP-06 a skos:Concept ;
         "i. Use a buffer-overflow attack against a server that reads an unbounded data into a fixed-size data structure."@en,
         "j. Use a cross-site scripting attack against a server that does not properly sanitize user input prior to displaying the results in a browser."@en .
 
-it2017:ITE-CSP-07 a skos:Concept ;
+it2017:ITE-CSP-07 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-07" ;
@@ -227,7 +103,7 @@ it2017:ITE-CSP-07 a skos:Concept ;
         "f. Evaluate the impact of search queries on maintaining anonymity."@en,
         "g. Evaluate the implications of DNS queries on maintaining anonymity."@en .
 
-it2017:ITE-CSP-08 a skos:Concept ;
+it2017:ITE-CSP-08 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-08" ;
@@ -241,7 +117,7 @@ it2017:ITE-CSP-08 a skos:Concept ;
         "g. Judge the effectiveness of an authentication mechanism from the perspective of a person who is visually impaired."@en,
         "h. Design and develop software suite for a new digital currency."@en .
 
-it2017:ITE-CSP-09 a skos:Concept ;
+it2017:ITE-CSP-09 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-09" ;
@@ -252,7 +128,7 @@ it2017:ITE-CSP-09 a skos:Concept ;
         "d. Make sense of block-level encryption, file-level encryption, and application-level encryption for encrypted storage."@en,
         "e. Argue for why it is preferred to use validated, proven algorithms and implementations rather than developing new ones."@en .
 
-it2017:ITE-CSP-10 a skos:Concept ;
+it2017:ITE-CSP-10 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-10" ;
@@ -264,7 +140,7 @@ it2017:ITE-CSP-10 a skos:Concept ;
         "d. Debug a system (network, computer, or application) for the presence of malware."@en,
         "e. Use techniques for safely isolating malware samples from infected systems and classifying the sample."@en .
 
-it2017:ITE-CSP-11 a skos:Concept ;
+it2017:ITE-CSP-11 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-11" ;
@@ -276,7 +152,7 @@ it2017:ITE-CSP-11 a skos:Concept ;
         "e. Document examples of the steps taken after a credential is lost or compromised."@en,
         "f. Describe how supply chain risks could be reduced."@en .
 
-it2017:ITE-CSP-12 a skos:Concept ;
+it2017:ITE-CSP-12 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-12" ;
@@ -289,7 +165,7 @@ it2017:ITE-CSP-12 a skos:Concept ;
         "f. Make sense of policies and technologies for isolating personal data from enterprise data."@en,
         "g. Analyze approaches for controlling access to personal information."@en .
 
-it2017:ITE-CSP-13 a skos:Concept ;
+it2017:ITE-CSP-13 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-13" ;
@@ -304,7 +180,7 @@ it2017:ITE-CSP-13 a skos:Concept ;
         "g. Suggest and implement digital currency extensions using relevant scripting techniques (colored coins paradigm)"@en,
         "g. Suggest and implement digital currency extensions using relevant scripting techniques (colored coins paradigm)."@en .
 
-it2017:ITE-CSP-14 a skos:Concept ;
+it2017:ITE-CSP-14 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-CSP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-CSP-14" ;
@@ -313,7 +189,7 @@ it2017:ITE-CSP-14 a skos:Concept ;
         "b. Contrast different vulnerability disclosure policies, including “full disclosure,” and “responsible disclosure.”"@en,
         "c. Make sense of the concept of privacy breach versus security breach and the governing rules that apply to both types of breach."@en .
 
-it2017:ITE-GPP-01 a skos:Concept ;
+it2017:ITE-GPP-01 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-GPP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-GPP-01" ;
@@ -322,7 +198,7 @@ it2017:ITE-GPP-01 a skos:Concept ;
         "b. Contrast ethical and legal issues as related to information technology."@en,
         "c. Describe how IT uses or benefits from social and professional issues."@en .
 
-it2017:ITE-GPP-02 a skos:Concept ;
+it2017:ITE-GPP-02 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-GPP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-GPP-02" ;
@@ -330,7 +206,7 @@ it2017:ITE-GPP-02 a skos:Concept ;
     schema:teaches "a. Contrast the professional context of information technology and computing and adherence to ethical codes of conduct."@en,
         "b. Describe and critique several historical, professional, ethical, and legal aspects of computing."@en .
 
-it2017:ITE-GPP-03 a skos:Concept ;
+it2017:ITE-GPP-03 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-GPP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-GPP-03" ;
@@ -343,7 +219,7 @@ it2017:ITE-GPP-03 a skos:Concept ;
         "f. Develop naming conventions for the resources in a system."@en,
         "g. Create and justify several appropriate policies and procedures to manage resources in a system."@en .
 
-it2017:ITE-GPP-04 a skos:Concept ;
+it2017:ITE-GPP-04 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-GPP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-GPP-04" ;
@@ -352,7 +228,7 @@ it2017:ITE-GPP-04 a skos:Concept ;
         "b. Evaluate various risks and appropriate actions."@en,
         "c. Design and build a risk matrix."@en .
 
-it2017:ITE-GPP-05 a skos:Concept ;
+it2017:ITE-GPP-05 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-GPP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-GPP-05" ;
@@ -361,7 +237,7 @@ it2017:ITE-GPP-05 a skos:Concept ;
         "b. Contrast several frameworks for green computing."@en,
         "c. Describe several uses of green computing for improving energy efficiency."@en .
 
-it2017:ITE-GPP-06 a skos:Concept ;
+it2017:ITE-GPP-06 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-GPP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-GPP-06" ;
@@ -371,7 +247,7 @@ it2017:ITE-GPP-06 a skos:Concept ;
         "c. Model a computer use policy that includes privacy, legal, and ethical considerations for all employees."@en,
         "d. Contrast ethical algorithms with algorithms that are ethically neutral."@en .
 
-it2017:ITE-GPP-07 a skos:Concept ;
+it2017:ITE-GPP-07 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-GPP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-GPP-07" ;
@@ -381,7 +257,7 @@ it2017:ITE-GPP-07 a skos:Concept ;
         "c. Distinguish among employees, contractors, and consultants and offer the implications of each hiring class."@en,
         "d. Compare software patents and contrast with other forms of intellectual property protection."@en .
 
-it2017:ITE-GPP-08 a skos:Concept ;
+it2017:ITE-GPP-08 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-GPP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-GPP-08" ;
@@ -391,7 +267,7 @@ it2017:ITE-GPP-08 a skos:Concept ;
         "c. Evaluate appropriate project planning and tracking tools."@en,
         "d. Illustrate how to identify the lessons learned in a project closeout and review session."@en .
 
-it2017:ITE-GPP-09 a skos:Concept ;
+it2017:ITE-GPP-09 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-GPP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-GPP-09" ;
@@ -401,7 +277,7 @@ it2017:ITE-GPP-09 a skos:Concept ;
         "c. Analyze and describe the role of communications within IT as well as in building relationships with the organizations."@en,
         "d. Illustrate several essential skills for communicating within a team environment."@en .
 
-it2017:ITE-GPP-10 a skos:Concept ;
+it2017:ITE-GPP-10 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-GPP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-GPP-10" ;
@@ -410,7 +286,7 @@ it2017:ITE-GPP-10 a skos:Concept ;
         "b. Contrast several ways in which industry approaches teamwork toward a common goal."@en,
         "c. Describe and critique several ways that conflict management aids in building stronger teams."@en .
 
-it2017:ITE-GPP-11 a skos:Concept ;
+it2017:ITE-GPP-11 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-GPP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-GPP-11" ;
@@ -420,7 +296,7 @@ it2017:ITE-GPP-11 a skos:Concept ;
         "c. Reflect on the need for industry experience within the IT field."@en,
         "d. Compare the important elements needed for a strong interview for an IT position."@en .
 
-it2017:ITE-GPP-12 a skos:Concept ;
+it2017:ITE-GPP-12 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-GPP ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-GPP-12" ;
@@ -430,7 +306,7 @@ it2017:ITE-GPP-12 a skos:Concept ;
         "c. Evaluate the effectiveness and efficiency of a system."@en,
         "d. Contrast several high-level IT strategies to avoid obstacles to achieve organizational goals."@en .
 
-it2017:ITE-IMA-01 a skos:Concept ;
+it2017:ITE-IMA-01 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IMA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IMA-01" ;
@@ -440,7 +316,7 @@ it2017:ITE-IMA-01 a skos:Concept ;
         "c. Describe how the growth of the internet and demands for information for users outside the organization (customers and suppliers) impact data handling and processing."@en,
         "d. Tell a brief history of database models and their evolution."@en .
 
-it2017:ITE-IMA-02 a skos:Concept ;
+it2017:ITE-IMA-02 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IMA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IMA-02" ;
@@ -451,7 +327,7 @@ it2017:ITE-IMA-02 a skos:Concept ;
         "d. Describe mechanisms for data collection and their implications (automated data collection, input forms, sources)."@en,
         "e. Describe basic issues of data retention, including the need for retention, physical storage, backup, and security."@en .
 
-it2017:ITE-IMA-03 a skos:Concept ;
+it2017:ITE-IMA-03 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IMA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IMA-03" ;
@@ -462,7 +338,7 @@ it2017:ITE-IMA-03 a skos:Concept ;
         "d. Design a physical model for the best performance including impact of normalization and indexes."@en,
         "e. Compare and contrast the differences and similarities between the relational and the dimensional data modeling (OLTP vs. OLAP)."@en .
 
-it2017:ITE-IMA-04 a skos:Concept ;
+it2017:ITE-IMA-04 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IMA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IMA-04" ;
@@ -474,7 +350,7 @@ it2017:ITE-IMA-04 a skos:Concept ;
         "e. Perform calculations in a query using calculated fields and aggregate functions."@en,
         "f. Create updatable and non-updatable views."@en .
 
-it2017:ITE-IMA-05 a skos:Concept ;
+it2017:ITE-IMA-05 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IMA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IMA-05" ;
@@ -485,7 +361,7 @@ it2017:ITE-IMA-05 a skos:Concept ;
         "d. Evaluate data integrity and provide examples of entity and referential integrity."@en,
         "e. Analyze how data fragmentation, replication and allocation affect database performance."@en .
 
-it2017:ITE-IMA-06 a skos:Concept ;
+it2017:ITE-IMA-06 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IMA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IMA-06" ;
@@ -494,7 +370,7 @@ it2017:ITE-IMA-06 a skos:Concept ;
         "b. Demonstrate an understanding of online analytical processing and data warehouse systems."@en,
         "c. Describe methods of data mining and what insights may be gained by these methods."@en .
 
-it2017:ITE-IMA-07 a skos:Concept ;
+it2017:ITE-IMA-07 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IMA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IMA-07" ;
@@ -505,7 +381,7 @@ it2017:ITE-IMA-07 a skos:Concept ;
         "d. Consider the concept of database security and backup and recovery."@en,
         "e. Evaluate the importance of metadata in database environment."@en .
 
-it2017:ITE-IST-01 a skos:Concept ;
+it2017:ITE-IST-01 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IST ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IST-01" ;
@@ -513,7 +389,7 @@ it2017:ITE-IST-01 a skos:Concept ;
     schema:teaches "a. Describe how integrating various modules can produce a working system."@en,
         "b. Describe how integration is an important function of all IT professionals."@en .
 
-it2017:ITE-IST-02 a skos:Concept ;
+it2017:ITE-IST-02 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IST ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IST-02" ;
@@ -524,7 +400,7 @@ it2017:ITE-IST-02 a skos:Concept ;
         "d. Use DTD to create a document definition for a data structure. Given a DTD for data structure, create an XML document with real data."@en,
         "e. Describe how XSL, XSLT and XPath are used to transform data streams."@en .
 
-it2017:ITE-IST-03 a skos:Concept ;
+it2017:ITE-IST-03 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IST ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IST-03" ;
@@ -536,7 +412,7 @@ it2017:ITE-IST-03 a skos:Concept ;
         "e. Describe the purpose of message and queuing services and demonstrate how they work. Illustrate the protocol used by one messaging service (e.g., JMS)."@en,
         "f. List the commonly used low level data communications protocols (e.g., RS232), describe how to know when each protocol should be used, and illustrate the protocol for one low-level communication protocol."@en .
 
-it2017:ITE-IST-04 a skos:Concept ;
+it2017:ITE-IST-04 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IST ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IST-04" ;
@@ -548,7 +424,7 @@ it2017:ITE-IST-04 a skos:Concept ;
         "e. Design an abstract class and use inheritance to create a class that extends the abstract class."@en,
         "f. Design, develop, and test an application that uses the abstract class."@en .
 
-it2017:ITE-IST-05 a skos:Concept ;
+it2017:ITE-IST-05 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IST ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IST-05" ;
@@ -556,7 +432,7 @@ it2017:ITE-IST-05 a skos:Concept ;
     schema:teaches "a. Describe how scripting languages are used for web scripting, server-side scripting, and operating system scripting."@en,
         "b. Write, debug, and test a script that includes selection, repetition, and parameter passing."@en .
 
-it2017:ITE-IST-06 a skos:Concept ;
+it2017:ITE-IST-06 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-IST ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-IST-06" ;
@@ -576,7 +452,7 @@ it2017:ITE-IST-06 a skos:Concept ;
 9. Serialization
 10. Robust error handling"""@en .
 
-it2017:ITE-NET-01 a skos:Concept ;
+it2017:ITE-NET-01 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-NET ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-NET-01" ;
@@ -589,7 +465,7 @@ it2017:ITE-NET-01 a skos:Concept ;
         "f. Identify people who influenced or contributed to the area of networks."@en,
         "g. Identify several contributors to networks and relate their achievements to the area."@en .
 
-it2017:ITE-NET-02 a skos:Concept ;
+it2017:ITE-NET-02 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-NET ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-NET-02" ;
@@ -605,7 +481,7 @@ it2017:ITE-NET-02 a skos:Concept ;
         "i. Analyze and compare the characteristics of various communication protocols and how they support application requirements."@en,
         "j. Demonstrate the ability to solve basic problems and perform basic troubleshooting operations on LANs and connected devices."@en .
 
-it2017:ITE-NET-03 a skos:Concept ;
+it2017:ITE-NET-03 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-NET ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-NET-03" ;
@@ -619,7 +495,7 @@ it2017:ITE-NET-03 a skos:Concept ;
         "g. Choose the appropriate compression methodology (lossy or lossless) for a given type of application."@en,
         "h. Analyze and compare four networking topologies in terms of robustness, expandability, and throughput."@en .
 
-it2017:ITE-NET-04 a skos:Concept ;
+it2017:ITE-NET-04 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-NET ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-NET-04" ;
@@ -636,7 +512,7 @@ it2017:ITE-NET-04 a skos:Concept ;
         "j. Evaluate the operation principles of some main protocols, such as FTP and SNMP."@en,
         "k. Identify network standards and standardization bodies."@en .
 
-it2017:ITE-NET-05 a skos:Concept ;
+it2017:ITE-NET-05 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-NET ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-NET-05" ;
@@ -649,7 +525,7 @@ it2017:ITE-NET-05 a skos:Concept ;
         "f. Describe the necessary hardware (switches and routers) and components (routing algorithms and protocols) used to establish communication between multiple networks."@en,
         "g. Analyze the effect of various topologies, applications, and devices on network performance topics such as latency, jitter, response time, window size, connection loss, and quality of service."@en .
 
-it2017:ITE-NET-06 a skos:Concept ;
+it2017:ITE-NET-06 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-NET ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-NET-06" ;
@@ -669,7 +545,7 @@ it2017:ITE-NET-06 a skos:Concept ;
         "m. Analyze the impact on the world-wide web portion of the internet if most of all routers ceased to function."@en,
         "n. Solve the problem of distributing content, the architecture of content distribution network and peer-to-peer network."@en .
 
-it2017:ITE-NET-07 a skos:Concept ;
+it2017:ITE-NET-07 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-NET ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-NET-07" ;
@@ -687,14 +563,14 @@ it2017:ITE-NET-07 a skos:Concept ;
         "k. Teach troubleshooting principles and techniques related to networks."@en,
         "l. Describe management functional areas related to networks."@en .
 
-it2017:ITE-PFT-01 a skos:Concept ;
+it2017:ITE-PFT-01 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-PFT ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-PFT-01" ;
     skos:prefLabel "Perspectives and impact"@en ;
     schema:teaches "a. Describe how the historical development of hardware and operating system computing platforms produced the computing operating systems we have today."@en .
 
-it2017:ITE-PFT-02 a skos:Concept ;
+it2017:ITE-PFT-02 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-PFT ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-PFT-02" ;
@@ -704,7 +580,7 @@ it2017:ITE-PFT-02 a skos:Concept ;
         "c. Describe how the similarities and differences between Windows and Unix-class systems provide different advantages for these computing platforms."@en,
         "d. Demonstrate the main benefits of using scripts to perform operating systems tasks by automating a computing task."@en .
 
-it2017:ITE-PFT-03 a skos:Concept ;
+it2017:ITE-PFT-03 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-PFT ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-PFT-03" ;
@@ -714,7 +590,7 @@ it2017:ITE-PFT-03 a skos:Concept ;
         "c. Describe how the various types of servers meet different organizational requirements."@en,
         "d. Justify the need for hardware and software integration."@en .
 
-it2017:ITE-PFT-04 a skos:Concept ;
+it2017:ITE-PFT-04 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-PFT ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-PFT-04" ;
@@ -724,7 +600,7 @@ it2017:ITE-PFT-04 a skos:Concept ;
         "c. Describe how a computer stores and retrieves information to and from memory and hard drives."@en,
         "d. Produce a definition for each of these terms: bus, handshaking, serial, parallel, data rate."@en .
 
-it2017:ITE-PFT-05 a skos:Concept ;
+it2017:ITE-PFT-05 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-PFT ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-PFT-05" ;
@@ -733,7 +609,7 @@ it2017:ITE-PFT-05 a skos:Concept ;
         "b. Compare the performance of two different computers with two different operating systems."@en,
         "c. Illustrate the advantages and disadvantages of the five main hardware implementation options."@en .
 
-it2017:ITE-SPA-01 a skos:Concept ;
+it2017:ITE-SPA-01 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SPA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SPA-01" ;
@@ -741,7 +617,7 @@ it2017:ITE-SPA-01 a skos:Concept ;
     schema:teaches "a. Contrast system integration and system architecture."@en,
         "b. Explain the system integration from the organizational perspective."@en .
 
-it2017:ITE-SPA-02 a skos:Concept ;
+it2017:ITE-SPA-02 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SPA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SPA-02" ;
@@ -754,7 +630,7 @@ it2017:ITE-SPA-02 a skos:Concept ;
         "f. Describe how requirements gathering complements a system development lifecycle."@en,
         "g. Describe how use cases drive testing throughout a system lifecycle."@en .
 
-it2017:ITE-SPA-03 a skos:Concept ;
+it2017:ITE-SPA-03 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SPA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SPA-03" ;
@@ -765,7 +641,7 @@ it2017:ITE-SPA-03 a skos:Concept ;
         "d. Contrast the SOA, Zachman Framework, ITIL, COBIT, and ISO 20,000 architectural frameworks."@en,
         "e. Describe how modeling tools support the description and management of architectural views with examples."@en .
 
-it2017:ITE-SPA-04 a skos:Concept ;
+it2017:ITE-SPA-04 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SPA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SPA-04" ;
@@ -780,7 +656,7 @@ it2017:ITE-SPA-04 a skos:Concept ;
         "h. Express the importance of a well-structured contract in any IT sourcing decision."@en,
         "i. Given an RFP, justify one or more products that satisfy the criteria of the RFP."@en .
 
-it2017:ITE-SPA-05 a skos:Concept ;
+it2017:ITE-SPA-05 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SPA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SPA-05" ;
@@ -789,7 +665,7 @@ it2017:ITE-SPA-05 a skos:Concept ;
         "b. Demonstrate the various components of usability testing."@en,
         "c. Express different ways to execute and evaluate an acceptance test."@en .
 
-it2017:ITE-SPA-06 a skos:Concept ;
+it2017:ITE-SPA-06 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SPA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SPA-06" ;
@@ -803,7 +679,7 @@ it2017:ITE-SPA-06 a skos:Concept ;
         "g. Describe how the data warehouse concept relates to enterprise information integration."@en,
         "h. Describe how integration choices affect testing and evaluation."@en .
 
-it2017:ITE-SPA-07 a skos:Concept ;
+it2017:ITE-SPA-07 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SPA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SPA-07" ;
@@ -813,7 +689,7 @@ it2017:ITE-SPA-07 a skos:Concept ;
         "c. Develop policies for a network that includes low capacity embedded devices (e.g., a smart home)."@en,
         "d. Develop a disaster recovery plan for a small enterprise."@en .
 
-it2017:ITE-SPA-08 a skos:Concept ;
+it2017:ITE-SPA-08 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SPA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SPA-08" ;
@@ -825,7 +701,7 @@ it2017:ITE-SPA-08 a skos:Concept ;
         "e. Install, configure, and test automated device management technologies."@en,
         "f. Design and implement a backup and restore strategy for a system."@en .
 
-it2017:ITE-SPA-09 a skos:Concept ;
+it2017:ITE-SPA-09 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SPA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SPA-09" ;
@@ -834,7 +710,7 @@ it2017:ITE-SPA-09 a skos:Concept ;
         "b. Develop and justify policies for each domain that allow for smooth interaction between domains without sacrificing security."@en,
         "c. Develop and justify resource allocation plans for various operational domains."@en .
 
-it2017:ITE-SPA-10 a skos:Concept ;
+it2017:ITE-SPA-10 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SPA ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SPA-10" ;
@@ -843,7 +719,7 @@ it2017:ITE-SPA-10 a skos:Concept ;
         "b. Test the veracity of a disaster recovery plan for a small enterprise."@en,
         "c. Confirm the accuracy and completeness of a backup."@en .
 
-it2017:ITE-SWF-01 a skos:Concept ;
+it2017:ITE-SWF-01 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SWF ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SWF-01" ;
@@ -852,7 +728,7 @@ it2017:ITE-SWF-01 a skos:Concept ;
         "b. Synthesize how software has helped people, organizations, and society to solve problems."@en,
         "c. Describe several ways in which software has created new knowledge."@en .
 
-it2017:ITE-SWF-02 a skos:Concept ;
+it2017:ITE-SWF-02 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SWF ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SWF-02" ;
@@ -863,7 +739,7 @@ it2017:ITE-SWF-02 a skos:Concept ;
         "d. Explain multiple levels of hardware architecture abstractions (processor, special purpose cards, memory organization, and storage) and software abstractions (source code, integrated components, running processes) involved in developing complex programs."@en,
         "e. Create new programs by modifying and combining existing programs."@en .
 
-it2017:ITE-SWF-03 a skos:Concept ;
+it2017:ITE-SWF-03 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SWF ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SWF-03" ;
@@ -874,7 +750,7 @@ it2017:ITE-SWF-03 a skos:Concept ;
         "d. Explain appropriateness of iterative and recursive problem solutions."@en,
         "e. Write programs that use iterative and recursive techniques to solve computational problems."@en .
 
-it2017:ITE-SWF-04 a skos:Concept ;
+it2017:ITE-SWF-04 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SWF ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SWF-04" ;
@@ -885,7 +761,7 @@ it2017:ITE-SWF-04 a skos:Concept ;
         "d. Develop a program by using tools relevant to current industry practices: version control, project hosting, and deployment services."@en,
         "e. Demonstrate collaboration strategies that consider multiple perspectives, diverse talents, and sociocultural experiences."@en .
 
-it2017:ITE-SWF-05 a skos:Concept ;
+it2017:ITE-SWF-05 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SWF ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SWF-05" ;
@@ -895,7 +771,7 @@ it2017:ITE-SWF-05 a skos:Concept ;
         "c. Decide on appropriate data structures for modeling a given problem."@en,
         "d. Explain appropriateness of selected data structures."@en .
 
-it2017:ITE-SWF-06 a skos:Concept ;
+it2017:ITE-SWF-06 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SWF ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SWF-06" ;
@@ -906,7 +782,7 @@ it2017:ITE-SWF-06 a skos:Concept ;
         "d. Apply appropriate mathematical concepts in programing: expressions, abstract data types, recurrence relations, and formal reasoning on algorithm's efficiency and correctness."@en,
         "e. Evaluate empirically the efficiency of an algorithm."@en .
 
-it2017:ITE-SWF-07 a skos:Concept ;
+it2017:ITE-SWF-07 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-SWF ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-SWF-07" ;
@@ -917,7 +793,7 @@ it2017:ITE-SWF-07 a skos:Concept ;
         "d. Build and debug app programs using standard libraries, unit testing tools, and debuggers."@en,
         "e. Evaluate readability and clarity of app programs based on program style, documentation, pre- and post-conditions, and procedural abstractions."@en .
 
-it2017:ITE-UXD-01 a skos:Concept ;
+it2017:ITE-UXD-01 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-UXD ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-UXD-01" ;
@@ -930,7 +806,7 @@ it2017:ITE-UXD-01 a skos:Concept ;
         "f. Identify several modern high-tech computing technologies that present UXD challenges."@en,
         "g. Describe several reasons for making UXD an essential part of the information technology discipline."@en .
 
-it2017:ITE-UXD-02 a skos:Concept ;
+it2017:ITE-UXD-02 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-UXD ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-UXD-02" ;
@@ -943,7 +819,7 @@ it2017:ITE-UXD-02 a skos:Concept ;
         "f. Identify several goals, activities, and tasks related to an UX project."@en,
         "g. Describe how creative innovation techniques such as brainstorming can lead to optimal user interfaces."@en .
 
-it2017:ITE-UXD-03 a skos:Concept ;
+it2017:ITE-UXD-03 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-UXD ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-UXD-03" ;
@@ -956,7 +832,7 @@ it2017:ITE-UXD-03 a skos:Concept ;
         "f. Design and justify a high-fidelity prototype for a system or product."@en,
         "g. Demonstrate the advantages of user interface modalities other than windows, icons, menus and pointers in some situations."@en .
 
-it2017:ITE-UXD-04 a skos:Concept ;
+it2017:ITE-UXD-04 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-UXD ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-UXD-04" ;
@@ -970,7 +846,7 @@ it2017:ITE-UXD-04 a skos:Concept ;
         "g. Show how contextual, societal, cultural, and organizational factors can be applied in the design of a user interface."@en,
         "h. Analyze an IT mediated service with several different user types and various stakeholders including a service provider."@en .
 
-it2017:ITE-UXD-05 a skos:Concept ;
+it2017:ITE-UXD-05 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-UXD ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-UXD-05" ;
@@ -979,7 +855,7 @@ it2017:ITE-UXD-05 a skos:Concept ;
         "b. Describe how a user’s emotional reaction to an interface can interfere with product or service acceptance."@en,
         "c. Describe how a user’s emotional reaction to a product can advance product or service acceptance."@en .
 
-it2017:ITE-UXD-06 a skos:Concept ;
+it2017:ITE-UXD-06 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-UXD ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-UXD-06" ;
@@ -992,7 +868,7 @@ it2017:ITE-UXD-06 a skos:Concept ;
         "f. Create an appropriate usability test plan."@en,
         "g. Propose several ways to measure product usability from performance and preference metrics."@en .
 
-it2017:ITE-UXD-07 a skos:Concept ;
+it2017:ITE-UXD-07 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-UXD ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-UXD-07" ;
@@ -1007,7 +883,7 @@ it2017:ITE-UXD-07 a skos:Concept ;
         "h. Describe a possible interface that allows a user with severe physical disabilities to use a website."@en,
         "i. Describe the structure and components of an assistive technology."@en .
 
-it2017:ITE-UXD-08 a skos:Concept ;
+it2017:ITE-UXD-08 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-UXD ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-UXD-08" ;
@@ -1019,7 +895,7 @@ it2017:ITE-UXD-08 a skos:Concept ;
         "e. Describe the effect of socialization on the effectiveness of an application interface."@en,
         "f. Demonstrate the importance of evaluating the impact of proposed system changes on the user experience."@en .
 
-it2017:ITE-WMS-01 a skos:Concept ;
+it2017:ITE-WMS-01 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-WMS ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-WMS-01" ;
@@ -1027,7 +903,7 @@ it2017:ITE-WMS-01 a skos:Concept ;
     schema:teaches "a. Describe how the world-wide web has impacted people’s lives over time."@en,
         "b. Illustrate the growth and changes in mobile devices and applications over time."@en .
 
-it2017:ITE-WMS-02 a skos:Concept ;
+it2017:ITE-WMS-02 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-WMS ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-WMS-02" ;
@@ -1047,7 +923,7 @@ it2017:ITE-WMS-02 a skos:Concept ;
         "d. Express the constraints involved in state management (cookies, query strings, sessions) in the web and mobile context."@en,
         "e. Contrast client-side with server-side security issues."@en .
 
-it2017:ITE-WMS-03 a skos:Concept ;
+it2017:ITE-WMS-03 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-WMS ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-WMS-03" ;
@@ -1058,7 +934,7 @@ it2017:ITE-WMS-03 a skos:Concept ;
         "b. Propose a graphic file type for a given set of image characteristics."@en,
         "c. Provide metaphors for issues involved in deploying and serving media content."@en .
 
-it2017:ITE-WMS-04 a skos:Concept ;
+it2017:ITE-WMS-04 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-WMS ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-WMS-04" ;
@@ -1068,7 +944,7 @@ it2017:ITE-WMS-04 a skos:Concept ;
         "c. Apply principles of UXD to enhance the user experience of a web site or mobile application."@en,
         "d. Evaluate the design and architecture of a web or mobile system, including issues such as design patterns (including MVC), layers, tradeoffs between redundancy and scalability, state management, and search engine optimization."@en .
 
-it2017:ITE-WMS-05 a skos:Concept ;
+it2017:ITE-WMS-05 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-WMS ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-WMS-05" ;
@@ -1078,7 +954,7 @@ it2017:ITE-WMS-05 a skos:Concept ;
         "c. Use a development framework such as jQuery, Angular, Laravel, ASP.NET MVC, Django, or WordPress."@en,
         "d. Use collaboration tools such as GitHub to work with a team on a web or mobile application."@en .
 
-it2017:ITE-WMS-06 a skos:Concept ;
+it2017:ITE-WMS-06 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-WMS ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-WMS-06" ;
@@ -1098,7 +974,7 @@ it2017:ITE-WMS-06 a skos:Concept ;
 - safely persisting user logins (such as “remember me” functionality)."""@en,
         "e. Use accepted standards to ensure that user input on web pages does not affect server-side processes."@en .
 
-it2017:ITE-WMS-07 a skos:Concept ;
+it2017:ITE-WMS-07 a skos:Concept , asn:Statement ;
     skos:broader it2017:ITE-WMS ;
     skos:inScheme it2017cs: ;
     skos:notation "ITE-WMS-07" ;
@@ -1106,179 +982,4 @@ it2017:ITE-WMS-07 a skos:Concept ;
     schema:teaches "a. Illustrate the difference between asynchronous and synchronous communication on the web."@en,
         "b. Contrast the characteristics of various web- and mobile-based communication media."@en .
 
-it2017:ITE-PFT a skos:Concept ;
-    skos:inScheme it2017cs: ;
-    skos:narrower it2017:ITE-PFT-01,
-        it2017:ITE-PFT-02,
-        it2017:ITE-PFT-03,
-        it2017:ITE-PFT-04,
-        it2017:ITE-PFT-05 ;
-    skos:notation "ITE-PFT" ;
-    skos:prefLabel "Platform Technologies"@en ;
-    skos:topConceptOf it2017cs: .
-
-it2017:ITE-IST a skos:Concept ;
-    skos:inScheme it2017cs: ;
-    skos:narrower it2017:ITE-IST-01,
-        it2017:ITE-IST-02,
-        it2017:ITE-IST-03,
-        it2017:ITE-IST-04,
-        it2017:ITE-IST-05,
-        it2017:ITE-IST-06 ;
-    skos:notation "ITE-IST" ;
-    skos:prefLabel "Integrated Systems Technology"@en ;
-    skos:topConceptOf it2017cs: .
-
-it2017:ITE-IMA a skos:Concept ;
-    skos:inScheme it2017cs: ;
-    skos:narrower it2017:ITE-IMA-01,
-        it2017:ITE-IMA-02,
-        it2017:ITE-IMA-03,
-        it2017:ITE-IMA-04,
-        it2017:ITE-IMA-05,
-        it2017:ITE-IMA-06,
-        it2017:ITE-IMA-07 ;
-    skos:notation "ITE-IMA" ;
-    skos:prefLabel "Information Management"@en ;
-    skos:topConceptOf it2017cs: .
-
-it2017:ITE-NET a skos:Concept ;
-    skos:inScheme it2017cs: ;
-    skos:narrower it2017:ITE-NET-01,
-        it2017:ITE-NET-02,
-        it2017:ITE-NET-03,
-        it2017:ITE-NET-04,
-        it2017:ITE-NET-05,
-        it2017:ITE-NET-06,
-        it2017:ITE-NET-07 ;
-    skos:notation "ITE-NET" ;
-    skos:prefLabel "Networking"@en ;
-    skos:topConceptOf it2017cs: .
-
-it2017:ITE-SWF a skos:Concept ;
-    skos:inScheme it2017cs: ;
-    skos:narrower it2017:ITE-SWF-01,
-        it2017:ITE-SWF-02,
-        it2017:ITE-SWF-03,
-        it2017:ITE-SWF-04,
-        it2017:ITE-SWF-05,
-        it2017:ITE-SWF-06,
-        it2017:ITE-SWF-07 ;
-    skos:notation "ITE-SWF" ;
-    skos:prefLabel "Software Fundamentals"@en ;
-    skos:topConceptOf it2017cs: .
-
-it2017:ITE-WMS a skos:Concept ;
-    skos:inScheme it2017cs: ;
-    skos:narrower it2017:ITE-WMS-01,
-        it2017:ITE-WMS-02,
-        it2017:ITE-WMS-03,
-        it2017:ITE-WMS-04,
-        it2017:ITE-WMS-05,
-        it2017:ITE-WMS-06,
-        it2017:ITE-WMS-07 ;
-    skos:notation "ITE-WMS" ;
-    skos:prefLabel "Web and Mobile Systems"@en ;
-    skos:topConceptOf it2017cs: .
-
-it2017:ITE-UXD a skos:Concept ;
-    skos:inScheme it2017cs: ;
-    skos:narrower it2017:ITE-UXD-01,
-        it2017:ITE-UXD-02,
-        it2017:ITE-UXD-03,
-        it2017:ITE-UXD-04,
-        it2017:ITE-UXD-05,
-        it2017:ITE-UXD-06,
-        it2017:ITE-UXD-07,
-        it2017:ITE-UXD-08 ;
-    skos:notation "ITE-UXD" ;
-    skos:prefLabel "User Experience Design"@en ;
-    skos:topConceptOf it2017cs: .
-
-it2017:ITE-SPA a skos:Concept ;
-    skos:inScheme it2017cs: ;
-    skos:narrower it2017:ITE-SPA-01,
-        it2017:ITE-SPA-02,
-        it2017:ITE-SPA-03,
-        it2017:ITE-SPA-04,
-        it2017:ITE-SPA-05,
-        it2017:ITE-SPA-06,
-        it2017:ITE-SPA-07,
-        it2017:ITE-SPA-08,
-        it2017:ITE-SPA-09,
-        it2017:ITE-SPA-10 ;
-    skos:notation "ITE-SPA" ;
-    skos:prefLabel "System Paradigms"@en ;
-    skos:topConceptOf it2017cs: .
-
-it2017:ITE-GPP a skos:Concept ;
-    skos:inScheme it2017cs: ;
-    skos:narrower it2017:ITE-GPP-01,
-        it2017:ITE-GPP-02,
-        it2017:ITE-GPP-03,
-        it2017:ITE-GPP-04,
-        it2017:ITE-GPP-05,
-        it2017:ITE-GPP-06,
-        it2017:ITE-GPP-07,
-        it2017:ITE-GPP-08,
-        it2017:ITE-GPP-09,
-        it2017:ITE-GPP-10,
-        it2017:ITE-GPP-11,
-        it2017:ITE-GPP-12 ;
-    skos:notation "ITE-GPP" ;
-    skos:prefLabel "Global Professional Practice"@en ;
-    skos:topConceptOf it2017cs: .
-
-it2017:ITE-CSP a skos:Concept ;
-    skos:inScheme it2017cs: ;
-    skos:narrower it2017:ITE-CSP-01,
-        it2017:ITE-CSP-02,
-        it2017:ITE-CSP-03,
-        it2017:ITE-CSP-04,
-        it2017:ITE-CSP-05,
-        it2017:ITE-CSP-06,
-        it2017:ITE-CSP-07,
-        it2017:ITE-CSP-08,
-        it2017:ITE-CSP-09,
-        it2017:ITE-CSP-10,
-        it2017:ITE-CSP-11,
-        it2017:ITE-CSP-12,
-        it2017:ITE-CSP-13,
-        it2017:ITE-CSP-14 ;
-    skos:notation "ITE-CSP" ;
-    skos:prefLabel "Cybersecurity Principles"@en ;
-    skos:topConceptOf it2017cs: .
-
-acmcs: a skos:ConceptScheme ;
-    dcterms:source <https://doi.org/10.1145/3173161> ;
-    dcterms:creator ror:03wsadn68 ;
-    skos:definition "IT2017 proposes a learner-centered framework for programs that prepare successful IT graduates for professional careers or further academic study."@en ;
-    skos:historyNote "Presented here for the first time in RDF by Jobs and Skills Australia"@en ;
-    skos:hasTopConcept acm:ITE-GPP,
-        acm:ITE-IMA,
-        acm:ITE-IST,
-        acm:ITE-NET,
-        acm:ITE-PFT,
-        acm:ITE-SPA,
-        acm:ITE-SWF,
-        acm:ITE-UXD,
-        acm:ITE-WMS ;
-    skos:prefLabel "IT2017 Essential IT Domains (stub)"@en .
-
-it2017cs: a skos:ConceptScheme ;
-    dcterms:source <https://doi.org/10.1145/3173161> ;
-    dcterms:creator ror:03wsadn68 ;
-    skos:definition "IT2017 proposes a learner-centered framework for programs that prepare successful IT graduates for professional careers or further academic study."@en ;
-    skos:historyNote "Presented here for the first time in RDF by Jobs and Skills Australia"@en ;
-    skos:hasTopConcept it2017:ITE-CSP,
-        it2017:ITE-GPP,
-        it2017:ITE-IMA,
-        it2017:ITE-IST,
-        it2017:ITE-NET,
-        it2017:ITE-PFT,
-        it2017:ITE-SPA,
-        it2017:ITE-SWF,
-        it2017:ITE-UXD,
-        it2017:ITE-WMS ;
-    skos:prefLabel "IT2017 Essential IT Domains and Subdomains (stub)"@en .
 
