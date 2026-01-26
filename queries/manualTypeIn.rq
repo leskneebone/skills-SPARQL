@@ -1,0 +1,13 @@
+SELECT ?s ?p ?o
+WHERE {
+  VALUES ?o { <https://training.gov.au/tgaQualifications/ICT30120> }
+  {
+    ?s <https://purl.org/dc/terms/isReferencedBy> ?o .
+    BIND(<https://purl.org/dc/terms/isReferencedBy> AS ?p)
+    }
+    UNION
+    {
+    ?s <https://purl.org/dc/terms/isRequiredBy> ?o .
+    BIND(<https://purl.org/dc/terms/isRequiredBy> AS ?p)
+    }
+}
