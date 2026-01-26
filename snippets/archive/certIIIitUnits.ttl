@@ -1,0 +1,869 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://training.gov.au/training/details/BSBTEC201> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ACM40921>,
+        <https://training.gov.au/tgaQualifications/AHC20724>,
+        <https://training.gov.au/tgaQualifications/AHC21024>,
+        <https://training.gov.au/tgaQualifications/AHC30122>,
+        <https://training.gov.au/tgaQualifications/AHC32522>,
+        <https://training.gov.au/tgaQualifications/AHC33325>,
+        <https://training.gov.au/tgaQualifications/AUR31020>,
+        <https://training.gov.au/tgaQualifications/BSB20120>,
+        <https://training.gov.au/tgaQualifications/BSB30120>,
+        <https://training.gov.au/tgaQualifications/CPC50620>,
+        <https://training.gov.au/tgaQualifications/CUA10220>,
+        <https://training.gov.au/tgaQualifications/CUA10320>,
+        <https://training.gov.au/tgaQualifications/CUA20220>,
+        <https://training.gov.au/tgaQualifications/CUA20420>,
+        <https://training.gov.au/tgaQualifications/CUA20520>,
+        <https://training.gov.au/tgaQualifications/CUA20620>,
+        <https://training.gov.au/tgaQualifications/CUA20720>,
+        <https://training.gov.au/tgaQualifications/CUA30220>,
+        <https://training.gov.au/tgaQualifications/CUA30420>,
+        <https://training.gov.au/tgaQualifications/CUA30520>,
+        <https://training.gov.au/tgaQualifications/CUA30620>,
+        <https://training.gov.au/tgaQualifications/CUA31120>,
+        <https://training.gov.au/tgaQualifications/FBP20122>,
+        <https://training.gov.au/tgaQualifications/FBP20418>,
+        <https://training.gov.au/tgaQualifications/FNS30420>,
+        <https://training.gov.au/tgaQualifications/FNS42022>,
+        <https://training.gov.au/tgaQualifications/FWP30622>,
+        <https://training.gov.au/tgaQualifications/FWP31220>,
+        <https://training.gov.au/tgaQualifications/HLT23221>,
+        <https://training.gov.au/tgaQualifications/HLT35021>,
+        <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/LGA20120>,
+        <https://training.gov.au/tgaQualifications/MSF40122>,
+        <https://training.gov.au/tgaQualifications/PSP20122>,
+        <https://training.gov.au/tgaQualifications/PUA30822>,
+        <https://training.gov.au/tgaQualifications/RGR20221>,
+        <https://training.gov.au/tgaQualifications/SIS20122>,
+        <https://training.gov.au/tgaQualifications/SIS30122>,
+        <https://training.gov.au/tgaQualifications/SIT20122>,
+        <https://training.gov.au/tgaQualifications/SIT20322>,
+        <https://training.gov.au/tgaQualifications/SIT30122>,
+        <https://training.gov.au/tgaQualifications/SIT30522>,
+        <https://training.gov.au/tgaQualifications/SIT30622>,
+        <https://training.gov.au/tgaQualifications/TLI20421> ;
+    dcterms:isRequiredBy <https://training.gov.au/tgaQualifications/BSB30320>,
+        <https://training.gov.au/tgaQualifications/BSB30420>,
+        <https://training.gov.au/tgaQualifications/FNS20120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Use business software applications"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/BSBXCS301> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/BSB30120>,
+        <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Protect own personal online profile from cyber security threats"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/BSBXCS302> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/BSB30120>,
+        <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/SIT30222> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Identify and report online security threats"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/BSBXCS303> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/BSB30120>,
+        <https://training.gov.au/tgaQualifications/BSB30220>,
+        <https://training.gov.au/tgaQualifications/BSB30420>,
+        <https://training.gov.au/tgaQualifications/ICT20120> ;
+    dcterms:isRequiredBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Securely manage personally identifiable information and workplace information"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/BSBXCS401> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/BSB40120>,
+        <https://training.gov.au/tgaQualifications/BSB40620>,
+        <https://training.gov.au/tgaQualifications/BSB40720>,
+        <https://training.gov.au/tgaQualifications/BSB40920>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Maintain security of digital devices"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/BSBXCS402> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/BSB40120>,
+        <https://training.gov.au/tgaQualifications/BSB40320>,
+        <https://training.gov.au/tgaQualifications/BSB41021>,
+        <https://training.gov.au/tgaQualifications/BSB50120>,
+        <https://training.gov.au/tgaQualifications/BSB50520>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/SIT30222>,
+        <https://training.gov.au/tgaQualifications/SIT40122>,
+        <https://training.gov.au/tgaQualifications/SIT50122>,
+        <https://training.gov.au/tgaQualifications/SIT50322>,
+        <https://training.gov.au/tgaQualifications/SIT60122>,
+        <https://training.gov.au/tgaQualifications/SIT60222> ;
+    dcterms:isRequiredBy <https://training.gov.au/tgaQualifications/ICT50220>,
+        <https://training.gov.au/tgaQualifications/ICT60220> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Promote workplace cyber security awareness and best practices"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/BSBXCS403> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/BSB40120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Contribute to cyber security threat assessments"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/BSBXCS404> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/BSB40120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    dcterms:isRequiredBy <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Contribute to cyber security risk management"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/BSBXCS405> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/BSB40120>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/SIT40122>,
+        <https://training.gov.au/tgaQualifications/SIT50122>,
+        <https://training.gov.au/tgaQualifications/SIT50322>,
+        <https://training.gov.au/tgaQualifications/SIT60122>,
+        <https://training.gov.au/tgaQualifications/SIT60222> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Contribute to cyber security incident responses"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/BSBXTW301> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ACM30122>,
+        <https://training.gov.au/tgaQualifications/ACM30821>,
+        <https://training.gov.au/tgaQualifications/AMP30216>,
+        <https://training.gov.au/tgaQualifications/AUR20320>,
+        <https://training.gov.au/tgaQualifications/AUR20520>,
+        <https://training.gov.au/tgaQualifications/AUR22021>,
+        <https://training.gov.au/tgaQualifications/AUR32220>,
+        <https://training.gov.au/tgaQualifications/AVI30319>,
+        <https://training.gov.au/tgaQualifications/BSB30120>,
+        <https://training.gov.au/tgaQualifications/BSB30320>,
+        <https://training.gov.au/tgaQualifications/CPP30321>,
+        <https://training.gov.au/tgaQualifications/CPP30821>,
+        <https://training.gov.au/tgaQualifications/FNS30420>,
+        <https://training.gov.au/tgaQualifications/FWP30322>,
+        <https://training.gov.au/tgaQualifications/FWP30920>,
+        <https://training.gov.au/tgaQualifications/FWP31220>,
+        <https://training.gov.au/tgaQualifications/LGA30120>,
+        <https://training.gov.au/tgaQualifications/MAR30122>,
+        <https://training.gov.au/tgaQualifications/PPM30121>,
+        <https://training.gov.au/tgaQualifications/RII30920>,
+        <https://training.gov.au/tgaQualifications/SFI40319>,
+        <https://training.gov.au/tgaQualifications/SIS30321> ;
+    dcterms:isRequiredBy <https://training.gov.au/tgaQualifications/BSB30420>,
+        <https://training.gov.au/tgaQualifications/CHC35021>,
+        <https://training.gov.au/tgaQualifications/FWP30622>,
+        <https://training.gov.au/tgaQualifications/FWP40420>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/MAR20121> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Work in a team"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/CUAANM301> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA31020>,
+        <https://training.gov.au/tgaQualifications/CUA41220>,
+        <https://training.gov.au/tgaQualifications/ICP31420>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Create 2D digital animations"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/CUAANM302> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA30520>,
+        <https://training.gov.au/tgaQualifications/CUA31020>,
+        <https://training.gov.au/tgaQualifications/CUA31120>,
+        <https://training.gov.au/tgaQualifications/CUA41220>,
+        <https://training.gov.au/tgaQualifications/CUA51020>,
+        <https://training.gov.au/tgaQualifications/ICP40120>,
+        <https://training.gov.au/tgaQualifications/ICP50120>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/MSF60122> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Create 3D digital animations"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/CUADIG211> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA20220>,
+        <https://training.gov.au/tgaQualifications/CUA20320>,
+        <https://training.gov.au/tgaQualifications/CUA20620>,
+        <https://training.gov.au/tgaQualifications/CUA30220>,
+        <https://training.gov.au/tgaQualifications/CUA30420>,
+        <https://training.gov.au/tgaQualifications/CUA30720>,
+        <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Maintain interactive content"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/CUADIG303> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA30220>,
+        <https://training.gov.au/tgaQualifications/CUA30420>,
+        <https://training.gov.au/tgaQualifications/CUA30520>,
+        <https://training.gov.au/tgaQualifications/CUA30720>,
+        <https://training.gov.au/tgaQualifications/CUA30920>,
+        <https://training.gov.au/tgaQualifications/CUA31020>,
+        <https://training.gov.au/tgaQualifications/CUA31120>,
+        <https://training.gov.au/tgaQualifications/CUA40420>,
+        <https://training.gov.au/tgaQualifications/CUA40720>,
+        <https://training.gov.au/tgaQualifications/CUA41120>,
+        <https://training.gov.au/tgaQualifications/CUA41220>,
+        <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/MSF40122>,
+        <https://training.gov.au/tgaQualifications/MSF40222>,
+        <https://training.gov.au/tgaQualifications/MSF50222>,
+        <https://training.gov.au/tgaQualifications/MSF60122> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Produce and prepare photo images"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/CUADIG304> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA30520>,
+        <https://training.gov.au/tgaQualifications/CUA30720>,
+        <https://training.gov.au/tgaQualifications/CUA31020>,
+        <https://training.gov.au/tgaQualifications/CUA31120>,
+        <https://training.gov.au/tgaQualifications/CUA40720>,
+        <https://training.gov.au/tgaQualifications/CUA41220>,
+        <https://training.gov.au/tgaQualifications/CUA50720>,
+        <https://training.gov.au/tgaQualifications/ICP40120>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/MSF31018>,
+        <https://training.gov.au/tgaQualifications/MSF40122>,
+        <https://training.gov.au/tgaQualifications/MSF50222>,
+        <https://training.gov.au/tgaQualifications/MSF60122>,
+        <https://training.gov.au/tgaQualifications/SIR50217> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Create visual design components"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/CUADIG311> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA30420>,
+        <https://training.gov.au/tgaQualifications/CUA30720>,
+        <https://training.gov.au/tgaQualifications/CUA31020>,
+        <https://training.gov.au/tgaQualifications/CUA40420>,
+        <https://training.gov.au/tgaQualifications/CUA40720>,
+        <https://training.gov.au/tgaQualifications/CUA41220>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Prepare video assets"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/CUADIG312> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA30520>,
+        <https://training.gov.au/tgaQualifications/CUA30720>,
+        <https://training.gov.au/tgaQualifications/CUA30920>,
+        <https://training.gov.au/tgaQualifications/CUA31020>,
+        <https://training.gov.au/tgaQualifications/CUA31120>,
+        <https://training.gov.au/tgaQualifications/CUA40720>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Author interactive sequences"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/CUAPOS211> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA20220>,
+        <https://training.gov.au/tgaQualifications/CUA30420>,
+        <https://training.gov.au/tgaQualifications/CUA31020>,
+        <https://training.gov.au/tgaQualifications/CUA41220>,
+        <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Perform basic vision and sound editing"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/CUASOU212> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA20220>,
+        <https://training.gov.au/tgaQualifications/CUA20620>,
+        <https://training.gov.au/tgaQualifications/CUA30420>,
+        <https://training.gov.au/tgaQualifications/CUA30920>,
+        <https://training.gov.au/tgaQualifications/CUA31020>,
+        <https://training.gov.au/tgaQualifications/CUA40920>,
+        <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Perform basic sound editing"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICPDMT3460> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICP31420>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Incorporate video into multimedia presentations"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTCLD301> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Evaluate characteristics of cloud computing solutions and services"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTCLD401> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Configure cloud services"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTDMT405> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Produce interactive animations"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTGAM304> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Develop three-dimensional (3D) models for digital games"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTGAM305> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Apply simple textures and shading to three-dimensional (3D) models for digital games"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTGAM306> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Review and apply traditional animation principles"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT213> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    dcterms:isRequiredBy <https://training.gov.au/tgaQualifications/ICT20120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Use computer operating systems and hardware"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT214> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/AHC20724>,
+        <https://training.gov.au/tgaQualifications/AHC32724>,
+        <https://training.gov.au/tgaQualifications/CPP20121>,
+        <https://training.gov.au/tgaQualifications/CUA20220>,
+        <https://training.gov.au/tgaQualifications/CUA30420>,
+        <https://training.gov.au/tgaQualifications/CUA30520>,
+        <https://training.gov.au/tgaQualifications/CUA31120>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/LGA20120>,
+        <https://training.gov.au/tgaQualifications/PSP50822>,
+        <https://training.gov.au/tgaQualifications/PSP50922>,
+        <https://training.gov.au/tgaQualifications/RII21222>,
+        <https://training.gov.au/tgaQualifications/SIS20221>,
+        <https://training.gov.au/tgaQualifications/SIS20321>,
+        <https://training.gov.au/tgaQualifications/SIS20419>,
+        <https://training.gov.au/tgaQualifications/SIS30421>,
+        <https://training.gov.au/tgaQualifications/SIS30619>,
+        <https://training.gov.au/tgaQualifications/UEE20520>,
+        <https://training.gov.au/tgaQualifications/UEE20920>,
+        <https://training.gov.au/tgaQualifications/UEE21020>,
+        <https://training.gov.au/tgaQualifications/UEE21220>,
+        <https://training.gov.au/tgaQualifications/UEE21620>,
+        <https://training.gov.au/tgaQualifications/UEE21920>,
+        <https://training.gov.au/tgaQualifications/UEE22020>,
+        <https://training.gov.au/tgaQualifications/UEE22120>,
+        <https://training.gov.au/tgaQualifications/UEE30120>,
+        <https://training.gov.au/tgaQualifications/UEE30220>,
+        <https://training.gov.au/tgaQualifications/UEE30320>,
+        <https://training.gov.au/tgaQualifications/UEE30420>,
+        <https://training.gov.au/tgaQualifications/UEE30620>,
+        <https://training.gov.au/tgaQualifications/UEE30720>,
+        <https://training.gov.au/tgaQualifications/UEE30920>,
+        <https://training.gov.au/tgaQualifications/UEE31020>,
+        <https://training.gov.au/tgaQualifications/UEE31220>,
+        <https://training.gov.au/tgaQualifications/UEE31420>,
+        <https://training.gov.au/tgaQualifications/UEE32120>,
+        <https://training.gov.au/tgaQualifications/UEE32225>,
+        <https://training.gov.au/tgaQualifications/UEE40120>,
+        <https://training.gov.au/tgaQualifications/UEE40220>,
+        <https://training.gov.au/tgaQualifications/UEE40320>,
+        <https://training.gov.au/tgaQualifications/UEE40420>,
+        <https://training.gov.au/tgaQualifications/UEE40520>,
+        <https://training.gov.au/tgaQualifications/UEE40620>,
+        <https://training.gov.au/tgaQualifications/UEE40720>,
+        <https://training.gov.au/tgaQualifications/UEE40820>,
+        <https://training.gov.au/tgaQualifications/UEE40920>,
+        <https://training.gov.au/tgaQualifications/UEE41020>,
+        <https://training.gov.au/tgaQualifications/UEE41120>,
+        <https://training.gov.au/tgaQualifications/UEE41223>,
+        <https://training.gov.au/tgaQualifications/UEE41520>,
+        <https://training.gov.au/tgaQualifications/UEE41720>,
+        <https://training.gov.au/tgaQualifications/UEE42120>,
+        <https://training.gov.au/tgaQualifications/UEE42220>,
+        <https://training.gov.au/tgaQualifications/UEE42622>,
+        <https://training.gov.au/tgaQualifications/UEE42725>,
+        <https://training.gov.au/tgaQualifications/UEE42825>,
+        <https://training.gov.au/tgaQualifications/UEE42925>,
+        <https://training.gov.au/tgaQualifications/UEE43020>,
+        <https://training.gov.au/tgaQualifications/UEE43220>,
+        <https://training.gov.au/tgaQualifications/UEE43322>,
+        <https://training.gov.au/tgaQualifications/UEE50122>,
+        <https://training.gov.au/tgaQualifications/UEE50220>,
+        <https://training.gov.au/tgaQualifications/UEE50325>,
+        <https://training.gov.au/tgaQualifications/UEE50420>,
+        <https://training.gov.au/tgaQualifications/UEE50520>,
+        <https://training.gov.au/tgaQualifications/UEE50722>,
+        <https://training.gov.au/tgaQualifications/UEE50920>,
+        <https://training.gov.au/tgaQualifications/UEE51020>,
+        <https://training.gov.au/tgaQualifications/UEE51120>,
+        <https://training.gov.au/tgaQualifications/UEE53020>,
+        <https://training.gov.au/tgaQualifications/UEE60922>,
+        <https://training.gov.au/tgaQualifications/UEE61521>,
+        <https://training.gov.au/tgaQualifications/UEE61720>,
+        <https://training.gov.au/tgaQualifications/UEE62022>,
+        <https://training.gov.au/tgaQualifications/UEE62122>,
+        <https://training.gov.au/tgaQualifications/UEE62420>,
+        <https://training.gov.au/tgaQualifications/UEG20122>,
+        <https://training.gov.au/tgaQualifications/UEG30122>,
+        <https://training.gov.au/tgaQualifications/UEG40222>,
+        <https://training.gov.au/tgaQualifications/UEP40622> ;
+    dcterms:isRequiredBy <https://training.gov.au/tgaQualifications/CPP30221>,
+        <https://training.gov.au/tgaQualifications/CUA20520>,
+        <https://training.gov.au/tgaQualifications/ICT20120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Operate application software packages"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT215> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA20220>,
+        <https://training.gov.au/tgaQualifications/CUA20420>,
+        <https://training.gov.au/tgaQualifications/CUA20520>,
+        <https://training.gov.au/tgaQualifications/CUA20620>,
+        <https://training.gov.au/tgaQualifications/CUA20720>,
+        <https://training.gov.au/tgaQualifications/CUA30420>,
+        <https://training.gov.au/tgaQualifications/CUA30520>,
+        <https://training.gov.au/tgaQualifications/CUA31120>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/UEP40322> ;
+    dcterms:isRequiredBy <https://training.gov.au/tgaQualifications/ICT20120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Operate digital media technology packages"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT216> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Design and create basic organisational documents"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT219> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Interact and resolve queries with ICT clients"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT221> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/BSB10120>,
+        <https://training.gov.au/tgaQualifications/CPP20121>,
+        <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/RII21222> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Identify and use specific industry standard technologies"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT222> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Research and share ICT solutions for Indigenous users"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT309> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Create ICT user documentation"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT310> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Identify and use industry specific technologies"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT311> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Customise packaged software applications"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT312> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA30420>,
+        <https://training.gov.au/tgaQualifications/CUA30520>,
+        <https://training.gov.au/tgaQualifications/CUA30620>,
+        <https://training.gov.au/tgaQualifications/CUA30720>,
+        <https://training.gov.au/tgaQualifications/CUA31020>,
+        <https://training.gov.au/tgaQualifications/CUA31120>,
+        <https://training.gov.au/tgaQualifications/CUA40420>,
+        <https://training.gov.au/tgaQualifications/CUA40720>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/RII40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Use advanced features of applications"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT313> a skos:Concept,
+        schema:Course ;
+    dcterms:isRequiredBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Identify IP, ethics and privacy policies in ICT environments"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT314> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT30524> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Connect internal hardware components"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT315> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT30524> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Implement system software changes"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT316> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT30524> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Implement new technology"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT317> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT30524> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Maintain standard operating environments"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT318> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Validate test cases and develop proof of concepts"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTICT438> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Select, configure and deploy software and hardware testing tools"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTNWK307> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/UEE50122>,
+        <https://training.gov.au/tgaQualifications/UEE61720> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Provide network systems administration"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTNWK308> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Determine and action network problems"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTNWK309> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/UEE40120>,
+        <https://training.gov.au/tgaQualifications/UEE50122>,
+        <https://training.gov.au/tgaQualifications/UEE61720> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Configure and administer network operating systems"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTNWK310> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Administer network peripherals"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTNWK311> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA30420>,
+        <https://training.gov.au/tgaQualifications/CUA40420>,
+        <https://training.gov.au/tgaQualifications/CUA41220>,
+        <https://training.gov.au/tgaQualifications/DEF50420>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT30524> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Install and test network protocols"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTPMG301> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Contribute as part of an IT project management team"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTPRG302> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30524>,
+        <https://training.gov.au/tgaQualifications/ICT41219>,
+        <https://training.gov.au/tgaQualifications/UEE62122> ;
+    dcterms:isRequiredBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Apply introductory programming techniques"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTPRG430> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120>,
+        <https://training.gov.au/tgaQualifications/ICT41119>,
+        <https://training.gov.au/tgaQualifications/ICT41219>,
+        <https://training.gov.au/tgaQualifications/UEE62122> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Apply introductory object-oriented language skills"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTPRG435> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CPP41721>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Write scripts for software applications"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS210> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Update and maintain hardware, software and documentation inventories"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS211> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Develop solutions for basic ICT malfunctions and problems"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS212> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Record the requirements of client support requests"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS213> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/DEF40520>,
+        <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Maintain the integrity of ICT systems"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS214> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Protect devices from spam and destructive software"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS215> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Protect and secure information assets"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS216> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Maintain ICT equipment and replace consumables"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS217> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Connect a home based local wireless network"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS305> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/BSB30120>,
+        <https://training.gov.au/tgaQualifications/ICT30524> ;
+    dcterms:isRequiredBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Provide ICT advice to clients"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS308> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT30524> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Run standard diagnostic tests"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS309> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA31020>,
+        <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Maintain and repair ICT equipment and software"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS310> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Install, configure and secure a small office or home office network"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS311> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT30524> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Maintain computer hardware"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS312> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT30524> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Provide basic system administration"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTSAS440> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Monitor and administer security of ICT systems"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTWEB304> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA40720>,
+        <https://training.gov.au/tgaQualifications/CUA40820>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Build simple web pages"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTWEB305> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Produce digital images for the web"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTWEB306> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/BSB30420>,
+        <https://training.gov.au/tgaQualifications/BSB40720>,
+        <https://training.gov.au/tgaQualifications/CUA20520>,
+        <https://training.gov.au/tgaQualifications/CUA20620>,
+        <https://training.gov.au/tgaQualifications/CUA30920>,
+        <https://training.gov.au/tgaQualifications/CUA31020>,
+        <https://training.gov.au/tgaQualifications/ICT20120>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Develop web presence using social media"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTWEB431> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/ICT30120>,
+        <https://training.gov.au/tgaQualifications/ICT40120> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Create and style simple markup language documents"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
+<https://training.gov.au/training/details/ICTWHS204> a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy <https://training.gov.au/tgaQualifications/CUA31020>,
+        <https://training.gov.au/tgaQualifications/ICT30120> ;
+    dcterms:isRequiredBy <https://training.gov.au/tgaQualifications/CPP20319>,
+        <https://training.gov.au/tgaQualifications/ICT20219>,
+        <https://training.gov.au/tgaQualifications/ICT20319>,
+        <https://training.gov.au/tgaQualifications/ICT30419>,
+        <https://training.gov.au/tgaQualifications/ICT30524> ;
+    skos:inScheme <http://training.gov.au/tgaUnit> ;
+    skos:prefLabel "Follow work health and safety and environmental policy and procedures"@en ;
+    skos:topConceptOf <http://training.gov.au/tgaUnit> .
+
