@@ -1,0 +1,13 @@
+SELECT ?subject ?predicate ?object
+WHERE {
+  VALUES ?object { <https://training.gov.au/tgaQualifications/ICT30120> }
+  {
+    ?subject <http://purl.org/dc/terms/isReferencedBy> ?object .
+    BIND(<http://purl.org/dc/terms/isReferencedBy> AS ?predicate)
+  }
+  UNION
+  {
+    ?subject <http://purl.org/dc/terms/isRequiredBy> ?object .
+    BIND(<http://purl.org/dc/terms/isRequiredBy> AS ?predicate)
+  }
+}
