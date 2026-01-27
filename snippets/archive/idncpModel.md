@@ -1,5 +1,6 @@
 
 ```mermaid
+flowchart TB
 
 flowchart TB
   %% Core SKOS
