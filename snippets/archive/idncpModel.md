@@ -1,4 +1,5 @@
 
+```mermaid
 flowchart TB
   %% Core SKOS
   CS[skos: Concept<br/>Scheme]
@@ -47,3 +48,4 @@ flowchart TB
 
   C -->|skos:inScheme| ROLE
   R -->|dcat:theme [1..*]| THEME
+```
