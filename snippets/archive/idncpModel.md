@@ -1,5 +1,6 @@
 
 ```mermaid
+
 flowchart TB
   %% Core SKOS
   CS[skos: Concept<br/>Scheme]
