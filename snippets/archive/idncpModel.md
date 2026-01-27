@@ -1,32 +1,30 @@
-
 ```mermaid
-
 flowchart TB
   %% Core SKOS
-  CS[skos: Concept<br/>Scheme]
-  C[skos:<br/>Concept]
+  CS["skos: Concept Scheme"]
+  C["skos: Concept"]
 
   C -->|skos:inScheme| CS
 
   %% PROV attribution pattern
-  AG{{prov:<br/>Agent}}
-  ATT[prov:<br/>Attribution]
+  AG{{"prov: Agent"}}
+  ATT["prov: Attribution"]
 
   ATT -->|prov:agent| AG
   ATT -->|dcat:hasRole| C
 
   %% DCAT resource pattern
-  R[dcat:<br/>Resource]
-  CAT[dcat:<br/>Catalog]
-  DS[dcat:<br/>Dataset]
+  R["dcat: Resource"]
+  CAT["dcat: Catalog"]
+  DS["dcat: Dataset"]
 
   R -->|prov:qualifiedAttribution| ATT
   CAT --> R
   DS --> R
 
   %% Catalog instances
-  IAC[IDN Indigenous<br/>Agents Catalogue]
-  IDC[IDN Dataset<br/>Catalogue]
+  IAC["IDN Indigenous Agents Catalogue"]
+  IDC["IDN Dataset Catalogue"]
 
   IAC -->|rdf:type| CAT
   IDC -->|rdf:type| CAT
@@ -35,11 +33,11 @@ flowchart TB
   IDC -->|dcterms:hasPart| DS
 
   %% External concept schemes / vocabularies
-  LCL[LC Labels]
-  CARE[CARE<br/>Principles]
-  FAIR[FAIR<br/>Principles]
-  ROLE[IDN Role<br/>Codes]
-  THEME[IDN Data<br/>Themes]
+  LCL["LC Labels"]
+  CARE["CARE Principles"]
+  FAIR["FAIR Principles"]
+  ROLE["IDN Role Codes"]
+  THEME["IDN Data Themes"]
 
   LCL -->|rdf:type| CS
   CARE -->|rdf:type| CS
@@ -48,5 +46,5 @@ flowchart TB
   THEME -->|rdf:type| CS
 
   C -->|skos:inScheme| ROLE
-  R -->|dcat:theme [1..*]| THEME
+  R -->|"dcat:theme (1..*)"| THEME
 ```
