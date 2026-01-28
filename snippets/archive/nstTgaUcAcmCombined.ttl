@@ -23,6 +23,64 @@
 # NST Skills
 #######################
 
+# skills sourced from Cert III elective units related to cybersecurity
+
+nst:SK051900 a skos:Concept , nsto:Skill ;
+    dcterms:source tgaunit:BSBXCS302 ;
+    dcterms:subject skillcat:technical ;
+    dcterms:type skillctx:practical ;
+    skos:definition "Monitors devices, identifies potential breaches, blocks threats, and logs reports per policy."@en ;
+    skos:prefLabel "Breach Blocking"@en ;
+    nsto:level nstsl:2 ;
+    schema:keywords "cybersecurity; incident response; endpoint protection; SIEM; policy compliance"@en .
+
+nst:SK051908 a skos:Concept , nsto:Skill ;
+    dcterms:source tgaunit:BSBXCS302 ;
+    dcterms:subject skillcat:cognitive ;
+    dcterms:type skillctx:practical ;
+    skos:definition "Examines and updates policies to mitigate online security breach risks."@en ;
+    skos:prefLabel "Policy Review"@en ;
+    nsto:level nstsl:2 ;
+    schema:keywords "cybersecurity; risk assessment; compliance; information security governance; incident response planning; occupational health and safety; policy analysis; first aid compliance; workplace procedures"@en .
+
+nst:SK051918 a skos:Concept , nsto:Skill ;
+    dcterms:source tgaunit:BSBXCS303 ;
+    dcterms:subject skillcat:technical ;
+    dcterms:type skillctx:practical ;
+    skos:definition "Structures acquired datasets into logical folders and standardized naming for quick retrieval."@en ;
+    skos:prefLabel "Data Set Organization"@en ;
+    nsto:level nstsl:2 ;
+    schema:keywords "data management; metadata tagging; file naming conventions; folder hierarchy; data retrieval"@en .
+
+nst:SK051921 a skos:Concept , nsto:Skill ;
+    dcterms:source tgaunit:BSBXCS303 ;
+    dcterms:subject skillcat:technical ;
+    dcterms:type skillctx:practical ;
+    skos:definition "Detects and documents infrastructure failures or attacks, reporting them to maintain data integrity."@en ;
+    skos:prefLabel "Infrastructure Fault Reporting"@en ;
+    nsto:level nstsl:2 ;
+    schema:keywords "network monitoring; incident reporting; vulnerability assessment; data integrity; fault detection"@en .
+
+nst:SK051925 a skos:Concept , nsto:Skill ;
+    dcterms:source tgaunit:BSBXCS303 ;
+    dcterms:subject skillcat:technical ;
+    dcterms:type skillctx:practical ;
+    skos:definition "Implements organization’s privacy policies on all confidential data devices, ensuring secure handling."@en ;
+    skos:prefLabel "Privacy Policy Application"@en ;
+    nsto:level nstsl:2 ;
+    schema:keywords "data protection; confidentiality compliance; information security; policy enforcement; access control; GDPR; information security governance; policy drafting"@en .
+
+nst:SK051927 a skos:Concept , nsto:Skill ;
+    dcterms:source tgaunit:BSBXCS303 ;
+    dcterms:subject skillcat:cognitive ;
+    dcterms:type skillctx:practical ;
+    skos:definition "Reviews workplace data assets and applies organisational policies to pinpoint sensitive information."@en ;
+    skos:prefLabel "Sensitive Data Identification"@en ;
+    nsto:level nstsl:2 ;
+    schema:keywords "data classification; privacy compliance; PII detection; information security policies; data governance"@en .
+
+# skills sourced from Cert IV IT
+
 nst:121141 a skos:Concept , nsto:Skill ;
     dcterms:source tgaunit:ICTCYS401 ;
     dcterms:subject skillcat:cognitive ;
@@ -808,7 +866,883 @@ nst:127772 a skos:Concept , nsto:Skill ;
     schema:keywords "troubleshooting; root cause analysis; fault isolation; diagnostic testing; procedural compliance"@en .
 
 ####################
-# TGA Units
+# TGA Cert III IT Units
+####################
+
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tgaqual: <https://training.gov.au/tgaQualifications/> .
+@prefix tgaunit: <https://training.gov.au/training/details/> .
+@prefix tgaunitcs: <http://training.gov.au/tgaUnit> .
+
+tgaunit:BSBTEC201 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ACM40921,
+        tgaqual:AHC20724,
+        tgaqual:AHC21024,
+        tgaqual:AHC30122,
+        tgaqual:AHC32522,
+        tgaqual:AHC33325,
+        tgaqual:AUR31020,
+        tgaqual:BSB20120,
+        tgaqual:BSB30120,
+        tgaqual:CPC50620,
+        tgaqual:CUA10220,
+        tgaqual:CUA10320,
+        tgaqual:CUA20220,
+        tgaqual:CUA20420,
+        tgaqual:CUA20520,
+        tgaqual:CUA20620,
+        tgaqual:CUA20720,
+        tgaqual:CUA30220,
+        tgaqual:CUA30420,
+        tgaqual:CUA30520,
+        tgaqual:CUA30620,
+        tgaqual:CUA31120,
+        tgaqual:FBP20122,
+        tgaqual:FBP20418,
+        tgaqual:FNS30420,
+        tgaqual:FNS42022,
+        tgaqual:FWP30622,
+        tgaqual:FWP31220,
+        tgaqual:HLT23221,
+        tgaqual:HLT35021,
+        tgaqual:ICT20120,
+        tgaqual:ICT30120,
+        tgaqual:LGA20120,
+        tgaqual:MSF40122,
+        tgaqual:PSP20122,
+        tgaqual:PUA30822,
+        tgaqual:RGR20221,
+        tgaqual:SIS20122,
+        tgaqual:SIS30122,
+        tgaqual:SIT20122,
+        tgaqual:SIT20322,
+        tgaqual:SIT30122,
+        tgaqual:SIT30522,
+        tgaqual:SIT30622,
+        tgaqual:TLI20421 ;
+    dcterms:isRequiredBy tgaqual:BSB30320,
+        tgaqual:BSB30420,
+        tgaqual:FNS20120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Use business software applications"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:BSBXCS301 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:BSB30120,
+        tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Protect own personal online profile from cyber security threats"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:BSBXCS302 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:BSB30120,
+        tgaqual:ICT20120,
+        tgaqual:ICT30120,
+        tgaqual:SIT30222 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Identify and report online security threats"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:BSBXCS303 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:BSB30120,
+        tgaqual:BSB30220,
+        tgaqual:BSB30420,
+        tgaqual:ICT20120 ;
+    dcterms:isRequiredBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Securely manage personally identifiable information and workplace information"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:BSBXCS401 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:BSB40120,
+        tgaqual:BSB40620,
+        tgaqual:BSB40720,
+        tgaqual:BSB40920,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Maintain security of digital devices"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:BSBXCS402 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:BSB40120,
+        tgaqual:BSB40320,
+        tgaqual:BSB41021,
+        tgaqual:BSB50120,
+        tgaqual:BSB50520,
+        tgaqual:ICT30120,
+        tgaqual:SIT30222,
+        tgaqual:SIT40122,
+        tgaqual:SIT50122,
+        tgaqual:SIT50322,
+        tgaqual:SIT60122,
+        tgaqual:SIT60222 ;
+    dcterms:isRequiredBy tgaqual:ICT50220,
+        tgaqual:ICT60220 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Promote workplace cyber security awareness and best practices"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:BSBXCS403 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:BSB40120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Contribute to cyber security threat assessments"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:BSBXCS404 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:BSB40120,
+        tgaqual:ICT30120 ;
+    dcterms:isRequiredBy tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Contribute to cyber security risk management"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:BSBXCS405 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:BSB40120,
+        tgaqual:ICT30120,
+        tgaqual:SIT40122,
+        tgaqual:SIT50122,
+        tgaqual:SIT50322,
+        tgaqual:SIT60122,
+        tgaqual:SIT60222 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Contribute to cyber security incident responses"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:BSBXTW301 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ACM30122,
+        tgaqual:ACM30821,
+        tgaqual:AMP30216,
+        tgaqual:AUR20320,
+        tgaqual:AUR20520,
+        tgaqual:AUR22021,
+        tgaqual:AUR32220,
+        tgaqual:AVI30319,
+        tgaqual:BSB30120,
+        tgaqual:BSB30320,
+        tgaqual:CPP30321,
+        tgaqual:CPP30821,
+        tgaqual:FNS30420,
+        tgaqual:FWP30322,
+        tgaqual:FWP30920,
+        tgaqual:FWP31220,
+        tgaqual:LGA30120,
+        tgaqual:MAR30122,
+        tgaqual:PPM30121,
+        tgaqual:RII30920,
+        tgaqual:SFI40319,
+        tgaqual:SIS30321 ;
+    dcterms:isRequiredBy tgaqual:BSB30420,
+        tgaqual:CHC35021,
+        tgaqual:FWP30622,
+        tgaqual:FWP40420,
+        tgaqual:ICT30120,
+        tgaqual:MAR20121 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Work in a team"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:CUAANM301 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA31020,
+        tgaqual:CUA41220,
+        tgaqual:ICP31420,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Create 2D digital animations"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:CUAANM302 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA30520,
+        tgaqual:CUA31020,
+        tgaqual:CUA31120,
+        tgaqual:CUA41220,
+        tgaqual:CUA51020,
+        tgaqual:ICP40120,
+        tgaqual:ICP50120,
+        tgaqual:ICT30120,
+        tgaqual:MSF60122 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Create 3D digital animations"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:CUADIG211 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA20220,
+        tgaqual:CUA20320,
+        tgaqual:CUA20620,
+        tgaqual:CUA30220,
+        tgaqual:CUA30420,
+        tgaqual:CUA30720,
+        tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Maintain interactive content"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:CUADIG303 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA30220,
+        tgaqual:CUA30420,
+        tgaqual:CUA30520,
+        tgaqual:CUA30720,
+        tgaqual:CUA30920,
+        tgaqual:CUA31020,
+        tgaqual:CUA31120,
+        tgaqual:CUA40420,
+        tgaqual:CUA40720,
+        tgaqual:CUA41120,
+        tgaqual:CUA41220,
+        tgaqual:ICT20120,
+        tgaqual:ICT30120,
+        tgaqual:MSF40122,
+        tgaqual:MSF40222,
+        tgaqual:MSF50222,
+        tgaqual:MSF60122 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Produce and prepare photo images"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:CUADIG304 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA30520,
+        tgaqual:CUA30720,
+        tgaqual:CUA31020,
+        tgaqual:CUA31120,
+        tgaqual:CUA40720,
+        tgaqual:CUA41220,
+        tgaqual:CUA50720,
+        tgaqual:ICP40120,
+        tgaqual:ICT30120,
+        tgaqual:MSF31018,
+        tgaqual:MSF40122,
+        tgaqual:MSF50222,
+        tgaqual:MSF60122,
+        tgaqual:SIR50217 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Create visual design components"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:CUADIG311 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA30420,
+        tgaqual:CUA30720,
+        tgaqual:CUA31020,
+        tgaqual:CUA40420,
+        tgaqual:CUA40720,
+        tgaqual:CUA41220,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Prepare video assets"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:CUADIG312 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA30520,
+        tgaqual:CUA30720,
+        tgaqual:CUA30920,
+        tgaqual:CUA31020,
+        tgaqual:CUA31120,
+        tgaqual:CUA40720,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Author interactive sequences"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:CUAPOS211 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA20220,
+        tgaqual:CUA30420,
+        tgaqual:CUA31020,
+        tgaqual:CUA41220,
+        tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Perform basic vision and sound editing"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:CUASOU212 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA20220,
+        tgaqual:CUA20620,
+        tgaqual:CUA30420,
+        tgaqual:CUA30920,
+        tgaqual:CUA31020,
+        tgaqual:CUA40920,
+        tgaqual:ICT20120,
+        tgaqual:ICT30120,
+        tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Perform basic sound editing"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICPDMT3460 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICP31420,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Incorporate video into multimedia presentations"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTCLD301 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Evaluate characteristics of cloud computing solutions and services"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTCLD401 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Configure cloud services"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTDMT405 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Produce interactive animations"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTGAM304 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Develop three-dimensional (3D) models for digital games"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTGAM305 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Apply simple textures and shading to three-dimensional (3D) models for digital games"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTGAM306 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Review and apply traditional animation principles"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT213 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    dcterms:isRequiredBy tgaqual:ICT20120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Use computer operating systems and hardware"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT214 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:AHC20724,
+        tgaqual:AHC32724,
+        tgaqual:CPP20121,
+        tgaqual:CUA20220,
+        tgaqual:CUA30420,
+        tgaqual:CUA30520,
+        tgaqual:CUA31120,
+        tgaqual:ICT30120,
+        tgaqual:LGA20120,
+        tgaqual:PSP50822,
+        tgaqual:PSP50922,
+        tgaqual:RII21222,
+        tgaqual:SIS20221,
+        tgaqual:SIS20321,
+        tgaqual:SIS20419,
+        tgaqual:SIS30421,
+        tgaqual:SIS30619,
+        tgaqual:UEE20520,
+        tgaqual:UEE20920,
+        tgaqual:UEE21020,
+        tgaqual:UEE21220,
+        tgaqual:UEE21620,
+        tgaqual:UEE21920,
+        tgaqual:UEE22020,
+        tgaqual:UEE22120,
+        tgaqual:UEE30120,
+        tgaqual:UEE30220,
+        tgaqual:UEE30320,
+        tgaqual:UEE30420,
+        tgaqual:UEE30620,
+        tgaqual:UEE30720,
+        tgaqual:UEE30920,
+        tgaqual:UEE31020,
+        tgaqual:UEE31220,
+        tgaqual:UEE31420,
+        tgaqual:UEE32120,
+        tgaqual:UEE32225,
+        tgaqual:UEE40120,
+        tgaqual:UEE40220,
+        tgaqual:UEE40320,
+        tgaqual:UEE40420,
+        tgaqual:UEE40520,
+        tgaqual:UEE40620,
+        tgaqual:UEE40720,
+        tgaqual:UEE40820,
+        tgaqual:UEE40920,
+        tgaqual:UEE41020,
+        tgaqual:UEE41120,
+        tgaqual:UEE41223,
+        tgaqual:UEE41520,
+        tgaqual:UEE41720,
+        tgaqual:UEE42120,
+        tgaqual:UEE42220,
+        tgaqual:UEE42622,
+        tgaqual:UEE42725,
+        tgaqual:UEE42825,
+        tgaqual:UEE42925,
+        tgaqual:UEE43020,
+        tgaqual:UEE43220,
+        tgaqual:UEE43322,
+        tgaqual:UEE50122,
+        tgaqual:UEE50220,
+        tgaqual:UEE50325,
+        tgaqual:UEE50420,
+        tgaqual:UEE50520,
+        tgaqual:UEE50722,
+        tgaqual:UEE50920,
+        tgaqual:UEE51020,
+        tgaqual:UEE51120,
+        tgaqual:UEE53020,
+        tgaqual:UEE60922,
+        tgaqual:UEE61521,
+        tgaqual:UEE61720,
+        tgaqual:UEE62022,
+        tgaqual:UEE62122,
+        tgaqual:UEE62420,
+        tgaqual:UEG20122,
+        tgaqual:UEG30122,
+        tgaqual:UEG40222,
+        tgaqual:UEP40622 ;
+    dcterms:isRequiredBy tgaqual:CPP30221,
+        tgaqual:CUA20520,
+        tgaqual:ICT20120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Operate application software packages"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT215 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA20220,
+        tgaqual:CUA20420,
+        tgaqual:CUA20520,
+        tgaqual:CUA20620,
+        tgaqual:CUA20720,
+        tgaqual:CUA30420,
+        tgaqual:CUA30520,
+        tgaqual:CUA31120,
+        tgaqual:ICT30120,
+        tgaqual:UEP40322 ;
+    dcterms:isRequiredBy tgaqual:ICT20120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Operate digital media technology packages"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT216 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Design and create basic organisational documents"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT219 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Interact and resolve queries with ICT clients"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT221 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:BSB10120,
+        tgaqual:CPP20121,
+        tgaqual:ICT20120,
+        tgaqual:ICT30120,
+        tgaqual:RII21222 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Identify and use specific industry standard technologies"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT222 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Research and share ICT solutions for Indigenous users"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT309 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Create ICT user documentation"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT310 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Identify and use industry specific technologies"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT311 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Customise packaged software applications"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT312 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA30420,
+        tgaqual:CUA30520,
+        tgaqual:CUA30620,
+        tgaqual:CUA30720,
+        tgaqual:CUA31020,
+        tgaqual:CUA31120,
+        tgaqual:CUA40420,
+        tgaqual:CUA40720,
+        tgaqual:ICT30120,
+        tgaqual:RII40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Use advanced features of applications"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT313 a skos:Concept,
+        schema:Course ;
+    dcterms:isRequiredBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Identify IP, ethics and privacy policies in ICT environments"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT314 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT30524 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Connect internal hardware components"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT315 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT30524 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Implement system software changes"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT316 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT30524 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Implement new technology"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT317 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT30524 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Maintain standard operating environments"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT318 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Validate test cases and develop proof of concepts"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTICT438 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Select, configure and deploy software and hardware testing tools"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTNWK307 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:UEE50122,
+        tgaqual:UEE61720 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Provide network systems administration"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTNWK308 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Determine and action network problems"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTNWK309 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:UEE40120,
+        tgaqual:UEE50122,
+        tgaqual:UEE61720 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Configure and administer network operating systems"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTNWK310 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Administer network peripherals"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTNWK311 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA30420,
+        tgaqual:CUA40420,
+        tgaqual:CUA41220,
+        tgaqual:DEF50420,
+        tgaqual:ICT30120,
+        tgaqual:ICT30524 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Install and test network protocols"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTPMG301 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Contribute as part of an IT project management team"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTPRG302 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30524,
+        tgaqual:ICT41219,
+        tgaqual:UEE62122 ;
+    dcterms:isRequiredBy tgaqual:ICT30120,
+        tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Apply introductory programming techniques"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTPRG430 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT40120,
+        tgaqual:ICT41119,
+        tgaqual:ICT41219,
+        tgaqual:UEE62122 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Apply introductory object-oriented language skills"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTPRG435 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CPP41721,
+        tgaqual:ICT30120,
+        tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Write scripts for software applications"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS210 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Update and maintain hardware, software and documentation inventories"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS211 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Develop solutions for basic ICT malfunctions and problems"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS212 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Record the requirements of client support requests"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS213 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:DEF40520,
+        tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Maintain the integrity of ICT systems"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS214 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT20120,
+        tgaqual:ICT30120,
+        tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Protect devices from spam and destructive software"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS215 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT20120,
+        tgaqual:ICT30120,
+        tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Protect and secure information assets"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS216 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Maintain ICT equipment and replace consumables"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS217 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Connect a home based local wireless network"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS305 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:BSB30120,
+        tgaqual:ICT30524 ;
+    dcterms:isRequiredBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Provide ICT advice to clients"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS308 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT30524 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Run standard diagnostic tests"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS309 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA31020,
+        tgaqual:ICT30120,
+        tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Maintain and repair ICT equipment and software"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS310 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Install, configure and secure a small office or home office network"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS311 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT30524 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Maintain computer hardware"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS312 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT30524 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Provide basic system administration"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTSAS440 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Monitor and administer security of ICT systems"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTWEB304 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA40720,
+        tgaqual:CUA40820,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Build simple web pages"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTWEB305 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Produce digital images for the web"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTWEB306 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:BSB30420,
+        tgaqual:BSB40720,
+        tgaqual:CUA20520,
+        tgaqual:CUA20620,
+        tgaqual:CUA30920,
+        tgaqual:CUA31020,
+        tgaqual:ICT20120,
+        tgaqual:ICT30120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Develop web presence using social media"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTWEB431 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:ICT30120,
+        tgaqual:ICT40120 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Create and style simple markup language documents"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+tgaunit:ICTWHS204 a skos:Concept,
+        schema:Course ;
+    dcterms:isReferencedBy tgaqual:CUA31020,
+        tgaqual:ICT30120 ;
+    dcterms:isRequiredBy tgaqual:CPP20319,
+        tgaqual:ICT20219,
+        tgaqual:ICT20319,
+        tgaqual:ICT30419,
+        tgaqual:ICT30524 ;
+    skos:inScheme tgaunitcs: ;
+    skos:prefLabel "Follow work health and safety and environmental policy and procedures"@en ;
+    skos:topConceptOf tgaunitcs: .
+
+####################
+# TGA Cert IV IT Units
 ####################
 
 tgaunit:BSBXCS404 a skos:Concept,
@@ -2519,5 +3453,4 @@ it2017:ITE-WMS-07 a skos:Concept , asn:Statement ;
     skos:prefLabel "Social software"@en ;
     schema:teaches "a. Illustrate the difference between asynchronous and synchronous communication on the web."@en,
         "b. Contrast the characteristics of various web- and mobile-based communication media."@en .
-
 
