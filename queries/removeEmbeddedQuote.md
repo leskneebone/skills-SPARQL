@@ -109,6 +109,41 @@ Replace with:
 
 (Then do the 4-step process above.)
 
+**Find:**
+```regex
+[‘’]
+```
+
+Replace with:
+
+'
+
+\u00A0
+
+Find:
+[–—]
+
+Replace:
+
+-
+
+Find:
+
+…
+
+Replace:
+
+...
+
+
+Find:
+
+[\u200B-\u200F\u202A-\u202E\u2066-\u2069\uFEFF]
+
+Replace:
+
+
+
 ---
 
 ## Quick reality check on your snippet
