@@ -91,6 +91,11 @@ Replace with:
 
 Find:
 [\u200B-\u200F\u202A-\u202E\u2066-\u2069\uFEFF]
+
+Find:
+[₀₁₂₃₄₅₆₇₈₉]
+
+
 Do you get any results? If yes, delete them first — that’s the #1 candidate for the validator freeze.
 
 ---
