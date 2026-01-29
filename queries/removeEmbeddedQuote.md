@@ -89,6 +89,10 @@ Replace with:
 
 ✅ Result: only the *delimiting* quotes remain; all internal quotes inside keywords are removed.
 
+Find:
+[\u200B-\u200F\u202A-\u202E\u2066-\u2069\uFEFF]
+Do you get any results? If yes, delete them first — that’s the #1 candidate for the validator freeze.
+
 ---
 
 ## If the “quotes” are actually smart quotes
