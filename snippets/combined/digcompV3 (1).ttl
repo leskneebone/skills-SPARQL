@@ -1,0 +1,431 @@
+PREFIX digcomp:      <http://example.com/digComp/>
+PREFIX digcompcs:    <http://example.com/digComp>
+PREFIX digproflvl:   <http://example.com/digComp/level/>
+PREFIX digproflvlcs: <http://example.com/digComp/level>
+PREFIX dcterms:      <http://purl.org/dc/terms/>
+PREFIX esco:	     <http://data.europa.eu/esco/model#> 
+PREFIX id:           <http://id.loc.gov/vocabulary/identifiers/>
+PREFIX jsa: 	     <https://linked.data.gov.au/org/jsa>
+PREFIX rdf: 	     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: 	     <http://www.w3.org/2002/07/owl#>
+PREFIX prov: 	     <http://www.w3.org/ns/prov#>
+PREFIX rdfs: 	     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ror:          <https://ror.org/>
+PREFIX skos: 	     <http://www.w3.org/2004/02/skos/core#>
+PREFIX ror:		     <https://ror.org/>
+PREFIX schema:       <https://schema.org/>
+PREFIX xsd:		     <http://www.w3.org/2001/XMLSchema#>
+
+ror:04j5wtv36
+a schema:Organization ;
+schema:name "Directorate-General Joint Research Centre"@en ;
+schema:url "https://ec.europa.eu/info/departments/joint-research-centre_en"^^xsd:anyURI
+.
+
+ror:01qanyf14
+a schema:Organization ;
+schema:name "Directorate-General for Employment, Social Affairs and Inclusion"@en ;
+schema:url "https://ec.europa.eu/social/"^^xsd:anyURI
+.
+
+jsa: a schema:Organization ;
+schema:name "Jobs and Skills Australia"@en ;
+schema:url "https://www.jobsandskills.gov.au"^^xsd:anyURI
+.
+
+digcompcs:
+  a skos:ConceptScheme;
+  dcterms:creator ror:04j5wtv36 ;
+  dcterms:contributor ror:01qanyf14 ;
+  dcterms:publisher jsa: ;
+  dcterms:title "DigComp"@en;
+  skos:prefLabel "DigComp 3.0"@en;
+  skos:altLable "DigComp 3.0 – European Digital Competence Framework, fifth edition"@en ;
+  dcterms:created "2025"^^xsd:date ;
+  dcterms:modified "2025"^^xsd:date ;
+  dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+  dcterms:description "Jobs and Skills Australia RDF presentation of the Digital competency framework for citizens"@en;
+  skos:definition "Jobs and Skills Australia RDF presentation of the Digital competency framework for citizens"@en;
+  dcterms:subject "Skills"@en;
+  dcterms:source "https://data.europa.eu/doi/10.2760/0001149"^^xsd:anyURI ;
+  dcterms:bibliographicCitation "Cosgrove, J. and Cachia, R., DigComp 3.0: European Digital Competence Framework - Fifth Edition, Publications Office of the European Union, Luxembourg, 2025, https://data.europa.eu/doi/10.2760/0001149, JRC144121." ;
+  schema:identifier "9789268326770"^^id:isbn , "JRC144121" ;
+  skos:hasTopConcept digcomp:ded05862-dc66-4564-9223-890481316a44 ,
+    digcomp:6e024199-248f-40cb-84c3-c0ae3dd36e06 ,
+    digcomp:6a85adb3-9529-4630-85d2-8831f5be8ee6 ,
+    digcomp:7b36b6e6-e9c6-43fa-a874-8c1bc09e46cf ,
+    digcomp:a4f9a0b6-3415-471d-8eb1-72fcbbf0800b
+.
+
+digcomp:6a85adb3-9529-4630-85d2-8831f5be8ee6
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:15:39.154Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:topConceptOf digcompcs:;
+  skos:prefLabel "Information and data literacy"@en;
+  skos:definition "To articulate information needs, and to search for, locate and retrieve digital information and content. To judge the relevance of the source and its content in digital environments. To critically evaluate digital sources, content, and processes used to generate them. To store, manage, organise and analyse digital information and data."@en ;
+  skos:notation "1";
+  skos:narrower digcomp:5ee39c36-4d89-4bfb-97bc-d1b904386960 ,
+    digcomp:9ef843e5-a771-4fed-896c-27070a8173bb ,
+    digcomp:ccd20172-7e9c-4d36-9aba-3a0986081c65 .
+
+digcomp:5ee39c36-4d89-4bfb-97bc-d1b904386960
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:18:04.291Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Browsing, searching and filtering information"@en;
+  skos:altLabel "Browsing, searching and filtering data, information and digital content"@en;
+  skos:definition "To articulate information needs, to know how and where to search for information and content in digital environments, and to access and navigate between them. To select appropriate digital tools to create, implement and update searches in digital environments and to be able to distinguish between relevant and irrelevant information and content."@en ;
+  skos:notation "1.1";
+  dcterms:modified "2025-03-03T05:47:12.460Z"^^xsd:dateTime;
+  skos:broader digcomp:6a85adb3-9529-4630-85d2-8831f5be8ee6 .
+
+digcomp:9ef843e5-a771-4fed-896c-27070a8173bb
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:18:23.925Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Evaluating information"@en;
+  skos:altLabel "Evaluating data, information and digital content"@en ;
+  skos:definition "To assess and compare the credibility and reliability of sources of information and content in digital environments. To interpret and critically evaluate information and content in digital environments, and the processes used to generate them."@en ;
+  skos:notation "1.2";
+  dcterms:modified "2025-03-03T05:47:14.565Z"^^xsd:dateTime;
+  skos:broader digcomp:6a85adb3-9529-4630-85d2-8831f5be8ee6 .
+
+digcomp:ccd20172-7e9c-4d36-9aba-3a0986081c65
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:18:36.527Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Managing information"@en;
+  skos:altLabel "Managing data, information and digital content"@en;
+  skos:definition "To organise, store and retrieve information and data in digital environments. To collect, process and analyse information and data in structured digital environments."@en ;
+  skos:notation "1.3";
+  dcterms:modified "2025-03-03T05:47:16.662Z"^^xsd:dateTime;
+  skos:broader digcomp:6a85adb3-9529-4630-85d2-8831f5be8ee6 .
+
+digcomp:ded05862-dc66-4564-9223-890481316a44
+  a skos:Concept , esco:Skill ;  
+	dcterms:created "2025-02-25T23:15:54.223Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:topConceptOf digcompcs:;
+  skos:prefLabel "Communication and collaboration"@en;
+  skos:definition "To interact, share, communicate and collaborate in digital environments while being aware of cultural, generational and other diversity and the features and limitations of digital technologies. To participate in society through digital technologies. To assert one’s rights and exercise choice in digital environments. To manage one’s digital presence, identity and reputation."@en ;
+  skos:notation "2";
+  skos:narrower digcomp:d6bb5cf7-1480-402a-9eb3-a511eb4cb945 ,
+    digcomp:22191328-30b0-4b90-8ddb-c49d38a44cd2 ,
+    digcomp:b0d88c6e-42da-44ab-a156-51e0b14f0180 ,
+    digcomp:135ca7d8-bf57-44e8-ba27-0016a0871dda ,
+    digcomp:43d68b7a-6bcf-4e2f-bc14-4f601bb73fb0 ,
+    digcomp:4b7ad738-5959-422c-aacf-0ce9c4073e77 .
+
+digcomp:b0d88c6e-42da-44ab-a156-51e0b14f0180
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:23:34.086Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Interacting through and with digital technologies"@en;
+  skos:altLabel "Interacting through digital technologies"@en;
+  skos:definition "To interact through and with a variety of digital technologies, and to use appropriate digital communication for a given context."@en ;
+  skos:notation "2.1";
+  dcterms:modified "2025-03-03T05:46:44.689Z"^^xsd:dateTime;
+  skos:broader digcomp:ded05862-dc66-4564-9223-890481316a44 .
+
+digcomp:4b7ad738-5959-422c-aacf-0ce9c4073e77
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:23:47.973Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Sharing through digital technologies"@en;
+  skos:definition "To share information and content ethically and responsibly with others through appropriate digital technologies."@en ;
+  skos:notation "2.2";
+  dcterms:modified "2025-03-03T05:46:51.648Z"^^xsd:dateTime;
+  skos:broader digcomp:ded05862-dc66-4564-9223-890481316a44 .
+
+digcomp:22191328-30b0-4b90-8ddb-c49d38a44cd2
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:24:06.313Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Engaging in citizenship through digital technologies"@en;
+  skos:definition "To participate in society through the ethical and responsible use of digital platforms and services. To seek opportunities for self-empowerment and participation through appropriate digital technologies. To be aware of and assert one’s rights, and to exercise choice, in digital environments."@en ;
+  skos:notation "2.3";
+  dcterms:modified "2025-03-03T05:46:42.515Z"^^xsd:dateTime;
+  skos:broader digcomp:ded05862-dc66-4564-9223-890481316a44 .
+
+digcomp:d6bb5cf7-1480-402a-9eb3-a511eb4cb945
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:24:18.416Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Collaborating through digital technologies"@en;
+  skos:definition "To use digital technologies ethically and responsibly for collaborative purposes, and for the co-construction and co-creation of information, resources and knowledge."@en ;
+  skos:notation "2.4";
+  dcterms:modified "2025-03-03T05:46:40.470Z"^^xsd:dateTime;
+  skos:broader digcomp:ded05862-dc66-4564-9223-890481316a44 .
+
+digcomp:43d68b7a-6bcf-4e2f-bc14-4f601bb73fb0
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:24:25.906Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Digital behaviour"@en;
+  skos:altLabel "Netiquette"@en;
+  skos:definition "To be aware of behavioural norms, and to know how to behave respectfully while using digital technologies and interacting in digital environments. To adapt communication to specific contexts, and to be aware of and respect cultural, generational and other diversity in digital environments."@en ;
+  skos:notation "2.5";
+  dcterms:modified "2025-03-03T05:46:49.530Z"^^xsd:dateTime;
+  skos:broader digcomp:ded05862-dc66-4564-9223-890481316a44 .
+  
+  digcomp:135ca7d8-bf57-44e8-ba27-0016a0871dda
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:24:36.838Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Managing digital identity"@en;
+  skos:definition "To manage one or multiple digital identities. To take actions to help protect one’s digital reputation (how one is perceived based on online presence), and to manage one’s digital footprint (the data that is produced through use of and by digital platforms and services)."@en ;
+  skos:notation "2.6";
+  dcterms:modified "2025-03-03T05:46:47.340Z"^^xsd:dateTime;
+  skos:broader digcomp:ded05862-dc66-4564-9223-890481316a44 .
+
+digcomp:6e024199-248f-40cb-84c3-c0ae3dd36e06
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:16:08.407Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:topConceptOf digcompcs:;
+  skos:prefLabel "Content creation"@en;
+  skos:altLabel "Digital content creation"@en;
+  skos:definition "To create and edit digital content. To improve and integrate information and content into an existing body of knowledge while understanding how copyright and licences are to be applied, adopting an ethical and responsible approach in the creation, improvement and integration of digital content. To know how to apply computational thinking and programming techniques to give instructions to a computer system."@en ;
+  skos:notation "3";
+  skos:narrower digcomp:4a0b2c9c-9a1a-4530-95bb-607321707d1d ,
+    digcomp:e3c81318-0964-4d71-ba5f-b85c099d4bf9 ,
+    digcomp:c31c4623-ece5-4c15-be4e-f6d5bde77e71 ,
+    digcomp:63d748e7-ff24-4392-82ae-47d780c0cbee .
+
+digcomp:e3c81318-0964-4d71-ba5f-b85c099d4bf9
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:26:32.363Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Developing digital content"@en;
+  skos:definition "To use digital technologies ethically and responsibly to create and edit a variety of content. To express oneself through digital means."@en ;
+  skos:notation "3.1";
+  dcterms:modified "2025-03-03T05:47:00.468Z"^^xsd:dateTime;
+  skos:broader digcomp:6e024199-248f-40cb-84c3-c0ae3dd36e06 .
+
+digcomp:c31c4623-ece5-4c15-be4e-f6d5bde77e71
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:26:47.952Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Integrating and re-elaborating digital content"@en;
+  skos:definition "To modify, refine and integrate new information and content into existing knowledge and resources to create new and original content and knowledge."@en ;
+  skos:notation "3.2";
+  dcterms:modified "2025-03-03T05:47:02.328Z"^^xsd:dateTime;
+  skos:broader digcomp:6e024199-248f-40cb-84c3-c0ae3dd36e06 .
+
+digcomp:4a0b2c9c-9a1a-4530-95bb-607321707d1d
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:26:58.910Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Copyright and licenses"@en;
+  skos:definition "To understand how copyright and licences, as well as associated legal and ethical issues, apply to digital content, and how to correctly apply them."@en ;
+  skos:notation "3.3";
+  dcterms:modified "2025-03-03T05:46:57.811Z"^^xsd:dateTime;
+  skos:broader digcomp:6e024199-248f-40cb-84c3-c0ae3dd36e06 .
+
+digcomp:63d748e7-ff24-4392-82ae-47d780c0cbee
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:27:05.058Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Computational thinking and programming"@en;
+  skos:altLabel "Programming"@en;  
+  skos:definition "To plan and develop a sequence of understandable instructions for a computing system to solve a given problem or perform a specific task."@en ;
+  skos:notation "3.4";
+  dcterms:modified "2025-03-03T05:47:06.906Z"^^xsd:dateTime;
+  skos:broader digcomp:6e024199-248f-40cb-84c3-c0ae3dd36e06 .
+
+digcomp:a4f9a0b6-3415-471d-8eb1-72fcbbf0800b
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:16:14.179Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:topConceptOf digcompcs:;
+  skos:prefLabel "Safety, wellbeing and responsible use"@en;
+  skos:altLabel "Safety"@en ;
+  skos:definition "To protect, devices, content, personal data and privacy in digital environments. To support physical, mental and social wellbeing of oneself and others, and to be aware of the benefits and risks of digital technologies for wellbeing and social inclusion. To be aware of the environmental impact of digital technologies and their use, to take action to reduce such impact, and to use digital technologies to support sustainability."@en ;
+  skos:notation "4";
+  skos:narrower digcomp:776fb14b-1793-4412-a666-9629f28f7048 ,
+    digcomp:8ab59992-805e-42ce-8de1-bb5da0d8c32a ,
+    digcomp:5aed599f-7889-4a73-8e74-90e592c38467 ,
+    digcomp:d1aec613-7e6c-4e8a-bb49-f7273fc4c5fe .
+
+digcomp:776fb14b-1793-4412-a666-9629f28f7048
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:28:06.406Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Protecting devices"@en;
+  skos:definition "To apply safety and cybersecurity measures in order to protect digital devices and content. To be aware of the evolving nature of risks and threats in digital environments, and to have due regard to security of digital devices and their contents"@en ;
+  skos:notation "4.1";
+  dcterms:modified "2025-03-03T05:47:36.433Z"^^xsd:dateTime;
+  skos:broader digcomp:a4f9a0b6-3415-471d-8eb1-72fcbbf0800b .
+
+digcomp:5aed599f-7889-4a73-8e74-90e592c38467
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:28:17.277Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Protecting personal data and privacy"@en;
+  skos:definition "To be aware of and exercise one’s rights in relation to personal data and privacy in digital environments. To evaluate and manage privacy risks and protect personal data and privacy in digital environments. To use and share one’s own and others’ personal data safely, ethically and responsibly. "@en ;
+  skos:notation "4.2";
+  dcterms:modified "2025-03-03T05:47:40.728Z"^^xsd:dateTime;
+  skos:broader digcomp:a4f9a0b6-3415-471d-8eb1-72fcbbf0800b .
+
+digcomp:8ab59992-805e-42ce-8de1-bb5da0d8c32a
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:28:28.850Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Supporting wellbeing"@en;
+  skos:altLabel "Protecting health and well-being"@en;
+  skos:definition "To use digital technologies in ways that support wellbeing and inclusion. To minimise risks and threats to physical, mental and social wellbeing of oneself and others while using digital technologies. To balance usage of digital technologies with offline activities to support wellbeing. To take action to help protect oneself and others from possible dangers in digital environments (e.g. cyberbullying, harmful content), and to know how to respond to such dangers. "@en ;
+  skos:notation "4.3";
+  dcterms:modified "2025-03-03T05:47:38.791Z"^^xsd:dateTime;
+  skos:broader digcomp:a4f9a0b6-3415-471d-8eb1-72fcbbf0800b .
+
+digcomp:d1aec613-7e6c-4e8a-bb49-f7273fc4c5fe
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:28:38.066Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Environmental impacts of digital technologies"@en;
+  skos:altLabel "Protecting the environment"@en;
+  skos:definition "To be aware of the environmental impacts of digital technologies, including device production, operation, repair, recycling, disposal, data storage infrastructure, energy consumption and usage of tools and applications. To take action to reduce such impact and to use digital technologies to support sustainability."@en ;
+  skos:notation "4.4";
+  dcterms:modified "2025-03-03T05:47:43.781Z"^^xsd:dateTime;
+  skos:broader digcomp:a4f9a0b6-3415-471d-8eb1-72fcbbf0800b .
+
+digcomp:7b36b6e6-e9c6-43fa-a874-8c1bc09e46cf
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:16:24.835Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:topConceptOf digcompcs:;
+  skos:prefLabel "Problem identification and solving"@en;
+  skos:altLabel "Problem solving"@en;
+  skos:definition "To identify and assess needs, and to use digital technologies and adapt digital environments to meet these needs. To identify and resolve technical and conceptual problems and problem situations in digital environments. To use digital technologies to make improvements in, or new solutions for, processes and products. To build capabilities to operate autonomously in digital environments. To stay informed about digital technological developments and their implications. "@en ;
+  skos:notation "5";
+  skos:narrower digcomp:e89ea019-00b8-40ee-8f36-4c67ee247fc9 ,
+    digcomp:3be27c3d-fc74-46c3-933c-a5c3a2dc18e9 ,
+    digcomp:ad231929-18d3-4001-b955-df68b1b0e305 ,
+    digcomp:effcbb68-404b-4093-b9df-66f98a46c50f .
+
+digcomp:effcbb68-404b-4093-b9df-66f98a46c50f
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:29:41.155Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Identifying and solving technical problems"@en;
+  skos:altLabel "Solving technical problems"@en;
+  skos:definition "To identify technical problems when operating digital devices and in digital environments, and to solve them through a variety of means."@en ;
+  skos:notation "5.1";
+  dcterms:modified "2025-03-03T05:47:28.629Z"^^xsd:dateTime;
+  skos:broader digcomp:7b36b6e6-e9c6-43fa-a874-8c1bc09e46cf .
+
+digcomp:ad231929-18d3-4001-b955-df68b1b0e305
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:30:01.344Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Identifying needs and technologial responses"@en;
+  skos:definition "To assess one’s own and others’ needs and to evaluate, select, use and adapt digital technologies to meet these needs. To adjust and customise digital environments to the contexts, goals and needs (e.g. accessibility) of oneself and others."@en ;
+  skos:notation "5.2";
+  dcterms:modified "2025-03-03T05:47:26.509Z"^^xsd:dateTime;
+  skos:broader digcomp:7b36b6e6-e9c6-43fa-a874-8c1bc09e46cf .
+
+digcomp:e89ea019-00b8-40ee-8f36-4c67ee247fc9
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:30:24.792Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Identifying creative solutions using digital technologies"@en;
+  skos:altLabel "Creatively using digital technologies"@en;
+  skos:definition "To use digital technologies to make improvements in or new solutions for processes and products, using a human-centric approach. To engage individually and collectively in critical thinking processes, and the creative and purposeful use of digital technologies, to understand and resolve conceptual problems and problem situations"@en ;
+  skos:notation "5.3";
+  dcterms:modified "2025-03-03T05:47:22.111Z"^^xsd:dateTime;
+  skos:broader digcomp:7b36b6e6-e9c6-43fa-a874-8c1bc09e46cf .
+
+digcomp:3be27c3d-fc74-46c3-933c-a5c3a2dc18e9
+  a skos:Concept , esco:Skill ;
+  dcterms:created "2025-02-25T23:30:42.508Z"^^xsd:dateTime;
+  dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI  ;
+  skos:inScheme digcompcs:;
+  skos:prefLabel "Identifying and addressing digital competence needs"@en;
+  skos:altLabel "Identifying digital competence gaps"@en;
+  skos:definition "To recognise where one’s own digital competence needs to be improved or updated. To address digital competence needs within a broader process of lifelong learning, building capacity and autonomy. To support others with their digital competence development. To stay informed about digital technological developments and their personal, professional and societal implications."@en ;
+  skos:notation "5.4";
+  dcterms:modified "2025-03-03T05:47:24.323Z"^^xsd:dateTime;
+  skos:broader digcomp:7b36b6e6-e9c6-43fa-a874-8c1bc09e46cf .
+
+# Proficiency levels
+
+digproflvlcs:
+  a skos:ConceptScheme;
+  dcterms:creator ror:04j5wtv36 ;
+  dcterms:contributor ror:01qanyf14 ;
+  dcterms:publisher jsa: ;
+  dcterms:title "DigComp proficiency levels"@en;
+  skos:prefLabel "DigComp proficiency levels"@en;
+  dcterms:created "2025"^^xsd:date;
+  dcterms:modified "2025"^^xsd:date;
+  dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+  dcterms:description "Jobs and Skills Australia RDF presentation of the Digital competency framework for citizens proficiency levels"@en;
+  skos:definition "Jobs and Skills Australia RDF presentation of the Digital competency framework for citizens proficiency levles"@en;
+  dcterms:subject "Skill levels"@en;
+  dcterms:source "https://data.europa.eu/doi/10.2760/0001149"^^xsd:anyURI ;
+  dcterms:bibliographicCitation "Cosgrove, J. and Cachia, R., DigComp 3.0: European Digital Competence Framework - Fifth Edition, Publications Office of the European Union, Luxembourg, 2025, https://data.europa.eu/doi/10.2760/0001149, JRC144121." ;
+  schema:identifier "9789268326770"^^id:isbn , "JRC144121" ;
+  skos:hasTopConcept digproflvl:basic , digproflvl:intermediate , digproflvl:advanced , digproflvl:highlyadvanced
+  .
+
+digproflvl:basic
+a skos:Concept , schema:Action ;
+skos:prefLabel "Basic"@en ;
+skos:definition "At basic level, individuals remember and implement simple tasks with guidance as needed."@en ;
+schema:potentialAction "To support personal, learning and/or working goals and participate in society"@en ;
+skos:inScheme digproflvlcs: ;
+skos:topConceptOf digproflvlcs:
+.
+
+digproflvl:intermediate
+a skos:Concept , schema:Action ;
+skos:prefLabel "Inrermediate"@en ;
+skos:definition "At intermediate level, individuals identify and implement well-defined tasks and solve well-defined problems autonomously."@en ;
+schema:potentialAction "To support personal, learning and/or working goals and participate autonomously in society."@en ;
+skos:inScheme digproflvlcs: ;
+skos:topConceptOf digproflvlcs:
+.
+
+digproflvl:advanced
+a skos:Concept , schema:Action ;
+skos:prefLabel "Advanced"@en ;
+skos:definition "At advanced level, individuals assess and apply solutions to a variety of complex tasks autonomously and adapt to a variety of contexts to evaluate and execute tasks appropriately, guiding others if and as required."@en ;
+schema:potentialAction "To support personal, learning and/or working goals, participate effectively in society, and manage or support others in achieving their goals."@en ;
+skos:inScheme digproflvlcs: ;
+skos:topConceptOf digproflvlcs:
+.
+
+digproflvl:highlyadvanced
+a skos:Concept , schema:Action ;
+skos:prefLabel "Highly advanced"@en ;
+skos:definition "At highly advanced level, individuals assess, evaluate and resolve highly complex or specialised problems to create new solutions or adapt existing ones, leading and guiding others if and as required."@en ;
+schema:potentialAction "To support personal, learning and/or working goals, help others to participate effectively in society, lead or support others to achieve complex goals, and/or lead or contribute to improvements in or new solutions for highly complex problems."@en ;
+skos:inScheme digproflvlcs: ;
+skos:topConceptOf digproflvlcs:
+.

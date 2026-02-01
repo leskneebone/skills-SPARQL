@@ -1,0 +1,55 @@
+PREFIX skillctx:    <https://example.com/skillctx/>
+PREFIX skillctxcs:  <https://example.com/skillctxcs>
+PREFIX dcterms:     <http://purl.org/dc/terms/> 
+PREFIX dewr:        <https://linked.data.gov.au/org/dewr>
+PREFIX jsa:         <https://linked.data.gov.au/org/jsa>
+PREFIX nst:         <https://test.linked.data.gov.au/def/nst>
+PREFIX owl:         <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs:        <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ror:         <https://ror.org/>
+PREFIX schema:      <https://schema.org/>
+PREFIX skos:        <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd:         <http://www.w3.org/2001/XMLSchema#>
+
+dewr:
+a schema:Organization ;
+schema:name "Jobs and Skills Australia"@en ;
+schema:alternateName "JSA"@en ;
+schema:url "https://www.jobsandskills.gov.au"^^xsd:anyURI
+.
+
+jsa:
+a schema:Organization ;
+schema:name "Jobs and Skills Australia"@en ;
+schema:alternateName "JSA"@en ;
+schema:url "https://www.jobsandskills.gov.au"^^xsd:anyURI
+.
+
+skillctxcs: a skos:ConceptScheme ;
+dcterms:creator jsa: ;
+dcterms:publisher dewr: ;
+skos:PrefLabel "Skill context"@en ;
+skos:Definition "Indicates the educational context  of the skill and whether taught/learnt in theory or practice: theoretical, practical or hybrid"@en ;
+skos:hasTopConcept skillctx:hybrid , skillctx:practial , skillcxt:theoretical
+.
+
+skillctx:hybrid a skos:Concept ;
+skos:prefLabel: "Hybrid"@en ;
+skos:definition: "Skills requiring BOTH theoretical understanding AND practical application"@en ;
+skos:inScheme skillctxcs: ;
+skos:topConceptOf skillctxcs: 
+.
+
+skillctx:practial a skos:Concept ;
+skos:prefLabel: "Practical"@en ;
+skos:definition: "Skills focused on hands-on application, implementation, and doing"@en ;
+skos:inScheme skillctxcs: ;
+skos:topConceptOf skillctxcs: 
+.
+
+skillctx:theoretical a skos:Concept ;
+skos:prefLabel: "Theoretical"@en ;
+skos:definition: "Skills focused on understanding concepts, principles, and knowledge without direct application"@en ;
+skos:inScheme skillctxcs: ;
+skos:topConceptOf skillctxcs: 
+.

@@ -1,0 +1,2634 @@
+@prefix asn: <http://purl.org/ASN/schema/core/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix digcomp: <http://example.com/digComp/> .
+@prefix digcompai: <http://example.com/digComp/ai/> .
+@prefix digcompaics: <http://example.com/digComp/ai> .
+@prefix digcompcs: <http://example.com/digComp> .
+@prefix digcompstat: <http://example.com/digComp/statement/> .
+@prefix digproflvl: <http://example.com/digComp/level/> .
+@prefix digproflvlcs: <http://example.com/digComp/level> .
+@prefix esco: <http://data.europa.eu/esco/model#> .
+@prefix ex: <http://example.com/> .
+@prefix id: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix jsa: <https://linked.data.gov.au/org/jsa> .
+@prefix ror: <https://ror.org/> .
+@prefix schema: <https://schema.org/> .
+@prefix sfia: <https://rdf.sfia-online.org/9/ontology/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+jsa: a schema:Organization ;
+    schema:name "Jobs and Skills Australia"@en ;
+    schema:url "https://www.jobsandskills.gov.au"^^xsd:anyURI .
+
+ror:01qanyf14 a schema:Organization ;
+    schema:name "Directorate-General for Employment, Social Affairs and Inclusion"@en ;
+    schema:url "https://ec.europa.eu/social/"^^xsd:anyURI .
+
+ror:04j5wtv36 a schema:Organization ;
+    schema:name "Directorate-General Joint Research Centre"@en ;
+    schema:url "https://ec.europa.eu/info/departments/joint-research-centre_en"^^xsd:anyURI .
+
+digcomp:135ca7d8-bf57-44e8-ba27-0016a0871dda a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS2.6.01,
+        digcompstat:CS2.6.02,
+        digcompstat:CS2.6.03,
+        digcompstat:CS2.6.04,
+        digcompstat:CS2.6.05,
+        digcompstat:CS2.6.06,
+        digcompstat:CS2.6.07,
+        digcompstat:CS2.6.08,
+        digcompstat:CS2.6.09,
+        digcompstat:CS2.6.10,
+        digcompstat:CS2.6.11,
+        digcompstat:CS2.6.12,
+        digcompstat:CS2.6.13,
+        digcompstat:CS2.6.14,
+        digcompstat:CS2.6.15,
+        digcompstat:CS2.6.16,
+        digcompstat:CS2.6.17,
+        digcompstat:CS2.6.18,
+        digcompstat:CS2.6.19 ;
+    dcterms:created "2025-02-25T23:24:36.838000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:46:47.340000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:broader digcomp:ded05862-dc66-4564-9223-890481316a44 ;
+    skos:definition "To manage one or multiple digital identities. To take actions to help protect one’s digital reputation (how one is perceived based on online presence), and to manage one’s digital footprint (the data that is produced through use of and by digital platforms and services)."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "2.6" ;
+    skos:prefLabel "Managing digital identity"@en .
+
+digcomp:22191328-30b0-4b90-8ddb-c49d38a44cd2 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS2.3.01,
+        digcompstat:CS2.3.02,
+        digcompstat:CS2.3.03,
+        digcompstat:CS2.3.04,
+        digcompstat:CS2.3.05,
+        digcompstat:CS2.3.06,
+        digcompstat:CS2.3.07,
+        digcompstat:CS2.3.08,
+        digcompstat:CS2.3.09,
+        digcompstat:CS2.3.10,
+        digcompstat:CS2.3.11,
+        digcompstat:CS2.3.12,
+        digcompstat:CS2.3.13,
+        digcompstat:CS2.3.14,
+        digcompstat:CS2.3.15,
+        digcompstat:CS2.3.16,
+        digcompstat:CS2.3.17,
+        digcompstat:CS2.3.18,
+        digcompstat:CS2.3.19,
+        digcompstat:CS2.3.20,
+        digcompstat:CS2.3.21 ;
+    dcterms:created "2025-02-25T23:24:06.313000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:46:42.515000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:broader digcomp:ded05862-dc66-4564-9223-890481316a44 ;
+    skos:definition "To participate in society through the ethical and responsible use of digital platforms and services. To seek opportunities for self-empowerment and participation through appropriate digital technologies. To be aware of and assert one’s rights, and to exercise choice, in digital environments."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "2.3" ;
+    skos:prefLabel "Engaging in citizenship through digital technologies"@en .
+
+digcomp:3be27c3d-fc74-46c3-933c-a5c3a2dc18e9 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS5.4.01,
+        digcompstat:CS5.4.02,
+        digcompstat:CS5.4.03,
+        digcompstat:CS5.4.04,
+        digcompstat:CS5.4.05,
+        digcompstat:CS5.4.06,
+        digcompstat:CS5.4.07,
+        digcompstat:CS5.4.08,
+        digcompstat:CS5.4.09,
+        digcompstat:CS5.4.10,
+        digcompstat:CS5.4.11,
+        digcompstat:CS5.4.12,
+        digcompstat:CS5.4.13 ;
+    dcterms:created "2025-02-25T23:30:42.508000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:24.323000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Identifying digital competence gaps"@en ;
+    skos:broader digcomp:7b36b6e6-e9c6-43fa-a874-8c1bc09e46cf ;
+    skos:definition "To recognise where one’s own digital competence needs to be improved or updated. To address digital competence needs within a broader process of lifelong learning, building capacity and autonomy. To support others with their digital competence development. To stay informed about digital technological developments and their personal, professional and societal implications."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "5.4" ;
+    skos:prefLabel "Identifying and addressing digital competence needs"@en .
+
+digcomp:43d68b7a-6bcf-4e2f-bc14-4f601bb73fb0 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS2.5.01,
+        digcompstat:CS2.5.02,
+        digcompstat:CS2.5.03,
+        digcompstat:CS2.5.04,
+        digcompstat:CS2.5.05,
+        digcompstat:CS2.5.06,
+        digcompstat:CS2.5.07,
+        digcompstat:CS2.5.08,
+        digcompstat:CS2.5.09,
+        digcompstat:CS2.5.10,
+        digcompstat:CS2.5.11,
+        digcompstat:CS2.5.12,
+        digcompstat:CS2.5.13,
+        digcompstat:CS2.5.14,
+        digcompstat:CS2.5.15 ;
+    dcterms:created "2025-02-25T23:24:25.906000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:46:49.530000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Netiquette"@en ;
+    skos:broader digcomp:ded05862-dc66-4564-9223-890481316a44 ;
+    skos:definition "To be aware of behavioural norms, and to know how to behave respectfully while using digital technologies and interacting in digital environments. To adapt communication to specific contexts, and to be aware of and respect cultural, generational and other diversity in digital environments."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "2.5" ;
+    skos:prefLabel "Digital behaviour"@en .
+
+digcomp:4a0b2c9c-9a1a-4530-95bb-607321707d1d a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS3.3.01,
+        digcompstat:CS3.3.02,
+        digcompstat:CS3.3.03,
+        digcompstat:CS3.3.04,
+        digcompstat:CS3.3.05,
+        digcompstat:CS3.3.06,
+        digcompstat:CS3.3.07,
+        digcompstat:CS3.3.08,
+        digcompstat:CS3.3.09,
+        digcompstat:CS3.3.10,
+        digcompstat:CS3.3.11,
+        digcompstat:CS3.3.12,
+        digcompstat:CS3.3.13,
+        digcompstat:CS3.3.14,
+        digcompstat:CS3.3.15,
+        digcompstat:CS3.3.16,
+        digcompstat:CS3.3.17 ;
+    dcterms:created "2025-02-25T23:26:58.910000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:46:57.811000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:broader digcomp:6e024199-248f-40cb-84c3-c0ae3dd36e06 ;
+    skos:definition "To understand how copyright and licences, as well as associated legal and ethical issues, apply to digital content, and how to correctly apply them."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "3.3" ;
+    skos:prefLabel "Copyright and licenses"@en .
+
+digcomp:4b7ad738-5959-422c-aacf-0ce9c4073e77 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS2.2.01,
+        digcompstat:CS2.2.02,
+        digcompstat:CS2.2.03,
+        digcompstat:CS2.2.04,
+        digcompstat:CS2.2.05,
+        digcompstat:CS2.2.06,
+        digcompstat:CS2.2.07,
+        digcompstat:CS2.2.08,
+        digcompstat:CS2.2.09,
+        digcompstat:CS2.2.10,
+        digcompstat:CS2.2.11,
+        digcompstat:CS2.2.12,
+        digcompstat:CS2.2.13,
+        digcompstat:CS2.2.14,
+        digcompstat:CS2.2.15,
+        digcompstat:CS2.2.16 ;
+    dcterms:created "2025-02-25T23:23:47.973000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:46:51.648000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:broader digcomp:ded05862-dc66-4564-9223-890481316a44 ;
+    skos:definition "To share information and content ethically and responsibly with others through appropriate digital technologies."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "2.2" ;
+    skos:prefLabel "Sharing through digital technologies"@en .
+
+digcomp:5aed599f-7889-4a73-8e74-90e592c38467 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS4.2.01,
+        digcompstat:CS4.2.02,
+        digcompstat:CS4.2.03,
+        digcompstat:CS4.2.04,
+        digcompstat:CS4.2.05,
+        digcompstat:CS4.2.06,
+        digcompstat:CS4.2.07,
+        digcompstat:CS4.2.08,
+        digcompstat:CS4.2.09,
+        digcompstat:CS4.2.10,
+        digcompstat:CS4.2.11,
+        digcompstat:CS4.2.12,
+        digcompstat:CS4.2.13,
+        digcompstat:CS4.2.14,
+        digcompstat:CS4.2.15,
+        digcompstat:CS4.2.16,
+        digcompstat:CS4.2.17,
+        digcompstat:CS4.2.18,
+        digcompstat:CS4.2.19,
+        digcompstat:CS4.2.20,
+        digcompstat:CS4.2.21 ;
+    dcterms:created "2025-02-25T23:28:17.277000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:40.728000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:broader digcomp:a4f9a0b6-3415-471d-8eb1-72fcbbf0800b ;
+    skos:definition "To be aware of and exercise one’s rights in relation to personal data and privacy in digital environments. To evaluate and manage privacy risks and protect personal data and privacy in digital environments. To use and share one’s own and others’ personal data safely, ethically and responsibly. "@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "4.2" ;
+    skos:prefLabel "Protecting personal data and privacy"@en .
+
+digcomp:5ee39c36-4d89-4bfb-97bc-d1b904386960 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS1.1.01,
+        digcompstat:CS1.1.02,
+        digcompstat:CS1.1.03,
+        digcompstat:CS1.1.04,
+        digcompstat:CS1.1.05,
+        digcompstat:CS1.1.06,
+        digcompstat:CS1.1.07,
+        digcompstat:CS1.1.08,
+        digcompstat:CS1.1.09,
+        digcompstat:CS1.1.10,
+        digcompstat:CS1.1.11,
+        digcompstat:CS1.1.12,
+        digcompstat:CS1.1.13,
+        digcompstat:CS1.1.14,
+        digcompstat:CS1.1.15 ;
+    dcterms:created "2025-02-25T23:18:04.291000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:12.460000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Browsing, searching and filtering data, information and digital content"@en ;
+    skos:broader digcomp:6a85adb3-9529-4630-85d2-8831f5be8ee6 ;
+    skos:definition "To articulate information needs, to know how and where to search for information and content in digital environments, and to access and navigate between them. To select appropriate digital tools to create, implement and update searches in digital environments and to be able to distinguish between relevant and irrelevant information and content."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "1.1" ;
+    skos:prefLabel "Browsing, searching and filtering information"@en .
+
+digcomp:63d748e7-ff24-4392-82ae-47d780c0cbee a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS3.4.01,
+        digcompstat:CS3.4.02,
+        digcompstat:CS3.4.03,
+        digcompstat:CS3.4.04,
+        digcompstat:CS3.4.05,
+        digcompstat:CS3.4.06,
+        digcompstat:CS3.4.07,
+        digcompstat:CS3.4.08,
+        digcompstat:CS3.4.09,
+        digcompstat:CS3.4.10,
+        digcompstat:CS3.4.11,
+        digcompstat:CS3.4.12,
+        digcompstat:CS3.4.13,
+        digcompstat:CS3.4.14,
+        digcompstat:CS3.4.15,
+        digcompstat:CS3.4.16,
+        digcompstat:CS3.4.17,
+        digcompstat:CS3.4.18,
+        digcompstat:CS3.4.19,
+        digcompstat:CS3.4.20,
+        digcompstat:CS3.4.21,
+        digcompstat:CS3.4.22 ;
+    dcterms:created "2025-02-25T23:27:05.058000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:06.906000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Programming"@en ;
+    skos:broader digcomp:6e024199-248f-40cb-84c3-c0ae3dd36e06 ;
+    skos:definition "To plan and develop a sequence of understandable instructions for a computing system to solve a given problem or perform a specific task."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "3.4" ;
+    skos:prefLabel "Computational thinking and programming"@en .
+
+digcomp:776fb14b-1793-4412-a666-9629f28f7048 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS4.1.01,
+        digcompstat:CS4.1.02,
+        digcompstat:CS4.1.03,
+        digcompstat:CS4.1.04,
+        digcompstat:CS4.1.05,
+        digcompstat:CS4.1.06,
+        digcompstat:CS4.1.07,
+        digcompstat:CS4.1.08,
+        digcompstat:CS4.1.09,
+        digcompstat:CS4.1.10,
+        digcompstat:CS4.1.11,
+        digcompstat:CS4.1.12,
+        digcompstat:CS4.1.13,
+        digcompstat:CS4.1.14,
+        digcompstat:CS4.1.15 ;
+    dcterms:created "2025-02-25T23:28:06.406000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:36.433000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:broader digcomp:a4f9a0b6-3415-471d-8eb1-72fcbbf0800b ;
+    skos:definition "To apply safety and cybersecurity measures in order to protect digital devices and content. To be aware of the evolving nature of risks and threats in digital environments, and to have due regard to security of digital devices and their contents"@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "4.1" ;
+    skos:prefLabel "Protecting devices"@en .
+
+digcomp:8ab59992-805e-42ce-8de1-bb5da0d8c32a a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS4.3.01,
+        digcompstat:CS4.3.02,
+        digcompstat:CS4.3.03,
+        digcompstat:CS4.3.04,
+        digcompstat:CS4.3.05,
+        digcompstat:CS4.3.06,
+        digcompstat:CS4.3.07,
+        digcompstat:CS4.3.08,
+        digcompstat:CS4.3.09,
+        digcompstat:CS4.3.10,
+        digcompstat:CS4.3.11,
+        digcompstat:CS4.3.12,
+        digcompstat:CS4.3.13,
+        digcompstat:CS4.3.14,
+        digcompstat:CS4.3.15,
+        digcompstat:CS4.3.16,
+        digcompstat:CS4.3.17,
+        digcompstat:CS4.3.18,
+        digcompstat:CS4.3.19,
+        digcompstat:CS4.3.20,
+        digcompstat:CS4.3.21,
+        digcompstat:CS4.3.22 ;
+    dcterms:created "2025-02-25T23:28:28.850000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:38.791000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Protecting health and well-being"@en ;
+    skos:broader digcomp:a4f9a0b6-3415-471d-8eb1-72fcbbf0800b ;
+    skos:definition "To use digital technologies in ways that support wellbeing and inclusion. To minimise risks and threats to physical, mental and social wellbeing of oneself and others while using digital technologies. To balance usage of digital technologies with offline activities to support wellbeing. To take action to help protect oneself and others from possible dangers in digital environments (e.g. cyberbullying, harmful content), and to know how to respond to such dangers. "@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "4.3" ;
+    skos:prefLabel "Supporting wellbeing"@en .
+
+digcomp:9ef843e5-a771-4fed-896c-27070a8173bb a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS1.2.01,
+        digcompstat:CS1.2.02,
+        digcompstat:CS1.2.03,
+        digcompstat:CS1.2.04,
+        digcompstat:CS1.2.05,
+        digcompstat:CS1.2.06,
+        digcompstat:CS1.2.07,
+        digcompstat:CS1.2.08,
+        digcompstat:CS1.2.09,
+        digcompstat:CS1.2.10,
+        digcompstat:CS1.2.11,
+        digcompstat:CS1.2.12,
+        digcompstat:CS1.2.13,
+        digcompstat:CS1.2.14,
+        digcompstat:CS1.2.15,
+        digcompstat:CS1.2.16,
+        digcompstat:CS1.2.17,
+        digcompstat:CS1.2.18,
+        digcompstat:CS1.2.19,
+        digcompstat:CS1.2.20,
+        digcompstat:CS1.2.21 ;
+    dcterms:created "2025-02-25T23:18:23.925000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:14.565000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Evaluating data, information and digital content"@en ;
+    skos:broader digcomp:6a85adb3-9529-4630-85d2-8831f5be8ee6 ;
+    skos:definition "To assess and compare the credibility and reliability of sources of information and content in digital environments. To interpret and critically evaluate information and content in digital environments, and the processes used to generate them."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "1.2" ;
+    skos:prefLabel "Evaluating information"@en .
+
+digcomp:ad231929-18d3-4001-b955-df68b1b0e305 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS5.2.01,
+        digcompstat:CS5.2.02,
+        digcompstat:CS5.2.03,
+        digcompstat:CS5.2.04,
+        digcompstat:CS5.2.05,
+        digcompstat:CS5.2.06,
+        digcompstat:CS5.2.07,
+        digcompstat:CS5.2.08,
+        digcompstat:CS5.2.09,
+        digcompstat:CS5.2.10,
+        digcompstat:CS5.2.11,
+        digcompstat:CS5.2.12,
+        digcompstat:CS5.2.13 ;
+    dcterms:created "2025-02-25T23:30:01.344000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:26.509000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:broader digcomp:7b36b6e6-e9c6-43fa-a874-8c1bc09e46cf ;
+    skos:definition "To assess one’s own and others’ needs and to evaluate, select, use and adapt digital technologies to meet these needs. To adjust and customise digital environments to the contexts, goals and needs (e.g. accessibility) of oneself and others."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "5.2" ;
+    skos:prefLabel "Identifying needs and technologial responses"@en .
+
+digcomp:b0d88c6e-42da-44ab-a156-51e0b14f0180 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS2.1.01,
+        digcompstat:CS2.1.02,
+        digcompstat:CS2.1.03,
+        digcompstat:CS2.1.04,
+        digcompstat:CS2.1.05,
+        digcompstat:CS2.1.06,
+        digcompstat:CS2.1.07,
+        digcompstat:CS2.1.08,
+        digcompstat:CS2.1.09,
+        digcompstat:CS2.1.10,
+        digcompstat:CS2.1.11,
+        digcompstat:CS2.1.12,
+        digcompstat:CS2.1.13,
+        digcompstat:CS2.1.14,
+        digcompstat:CS2.1.15,
+        digcompstat:CS2.1.16,
+        digcompstat:CS2.1.17,
+        digcompstat:CS2.1.18,
+        digcompstat:CS2.1.19,
+        digcompstat:CS2.1.20,
+        digcompstat:CS2.1.21 ;
+    dcterms:created "2025-02-25T23:23:34.086000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:46:44.689000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Interacting through digital technologies"@en ;
+    skos:broader digcomp:ded05862-dc66-4564-9223-890481316a44 ;
+    skos:definition "To interact through and with a variety of digital technologies, and to use appropriate digital communication for a given context."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "2.1" ;
+    skos:prefLabel "Interacting through and with digital technologies"@en .
+
+digcomp:c31c4623-ece5-4c15-be4e-f6d5bde77e71 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS3.2.01,
+        digcompstat:CS3.2.02,
+        digcompstat:CS3.2.03,
+        digcompstat:CS3.2.04,
+        digcompstat:CS3.2.05,
+        digcompstat:CS3.2.06,
+        digcompstat:CS3.2.07,
+        digcompstat:CS3.2.08,
+        digcompstat:CS3.2.09,
+        digcompstat:CS3.2.10,
+        digcompstat:CS3.2.11,
+        digcompstat:CS3.2.12,
+        digcompstat:CS3.2.13,
+        digcompstat:CS3.2.14,
+        digcompstat:CS3.2.15 ;
+    dcterms:created "2025-02-25T23:26:47.952000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:02.328000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:broader digcomp:6e024199-248f-40cb-84c3-c0ae3dd36e06 ;
+    skos:definition "To modify, refine and integrate new information and content into existing knowledge and resources to create new and original content and knowledge."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "3.2" ;
+    skos:prefLabel "Integrating and re-elaborating digital content"@en .
+
+digcomp:ccd20172-7e9c-4d36-9aba-3a0986081c65 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS1.3.01,
+        digcompstat:CS1.3.02,
+        digcompstat:CS1.3.03,
+        digcompstat:CS1.3.04,
+        digcompstat:CS1.3.05,
+        digcompstat:CS1.3.06,
+        digcompstat:CS1.3.07,
+        digcompstat:CS1.3.08,
+        digcompstat:CS1.3.09,
+        digcompstat:CS1.3.10,
+        digcompstat:CS1.3.11,
+        digcompstat:CS1.3.12,
+        digcompstat:CS1.3.13,
+        digcompstat:CS1.3.14,
+        digcompstat:CS1.3.15,
+        digcompstat:CS1.3.16,
+        digcompstat:CS1.3.17,
+        digcompstat:CS1.3.18,
+        digcompstat:CS1.3.19,
+        digcompstat:CS1.3.20,
+        digcompstat:CS1.3.21,
+        digcompstat:CS1.3.22 ;
+    dcterms:created "2025-02-25T23:18:36.527000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:16.662000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Managing data, information and digital content"@en ;
+    skos:broader digcomp:6a85adb3-9529-4630-85d2-8831f5be8ee6 ;
+    skos:definition "To organise, store and retrieve information and data in digital environments. To collect, process and analyse information and data in structured digital environments."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "1.3" ;
+    skos:prefLabel "Managing information"@en .
+
+digcomp:d1aec613-7e6c-4e8a-bb49-f7273fc4c5fe a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS4.4.01,
+        digcompstat:CS4.4.02,
+        digcompstat:CS4.4.03,
+        digcompstat:CS4.4.04,
+        digcompstat:CS4.4.05,
+        digcompstat:CS4.4.06,
+        digcompstat:CS4.4.07,
+        digcompstat:CS4.4.08,
+        digcompstat:CS4.4.09,
+        digcompstat:CS4.4.10,
+        digcompstat:CS4.4.11,
+        digcompstat:CS4.4.12,
+        digcompstat:CS4.4.13,
+        digcompstat:CS4.4.14,
+        digcompstat:CS4.4.15,
+        digcompstat:CS4.4.16,
+        digcompstat:CS4.4.17 ;
+    dcterms:created "2025-02-25T23:28:38.066000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:43.781000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Protecting the environment"@en ;
+    skos:broader digcomp:a4f9a0b6-3415-471d-8eb1-72fcbbf0800b ;
+    skos:definition "To be aware of the environmental impacts of digital technologies, including device production, operation, repair, recycling, disposal, data storage infrastructure, energy consumption and usage of tools and applications. To take action to reduce such impact and to use digital technologies to support sustainability."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "4.4" ;
+    skos:prefLabel "Environmental impacts of digital technologies"@en .
+
+digcomp:d6bb5cf7-1480-402a-9eb3-a511eb4cb945 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS2.4.01,
+        digcompstat:CS2.4.02,
+        digcompstat:CS2.4.03,
+        digcompstat:CS2.4.04,
+        digcompstat:CS2.4.05,
+        digcompstat:CS2.4.06,
+        digcompstat:CS2.4.07,
+        digcompstat:CS2.4.08,
+        digcompstat:CS2.4.09,
+        digcompstat:CS2.4.10,
+        digcompstat:CS2.4.11,
+        digcompstat:CS2.4.12,
+        digcompstat:CS2.4.13,
+        digcompstat:CS2.4.14 ;
+    dcterms:created "2025-02-25T23:24:18.416000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:46:40.470000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:broader digcomp:ded05862-dc66-4564-9223-890481316a44 ;
+    skos:definition "To use digital technologies ethically and responsibly for collaborative purposes, and for the co-construction and co-creation of information, resources and knowledge."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "2.4" ;
+    skos:prefLabel "Collaborating through digital technologies"@en .
+
+digcomp:e3c81318-0964-4d71-ba5f-b85c099d4bf9 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS3.1.01,
+        digcompstat:CS3.1.02,
+        digcompstat:CS3.1.03,
+        digcompstat:CS3.1.04,
+        digcompstat:CS3.1.05,
+        digcompstat:CS3.1.06,
+        digcompstat:CS3.1.07,
+        digcompstat:CS3.1.08,
+        digcompstat:CS3.1.09,
+        digcompstat:CS3.1.10,
+        digcompstat:CS3.1.11,
+        digcompstat:CS3.1.12,
+        digcompstat:CS3.1.13,
+        digcompstat:CS3.1.14,
+        digcompstat:CS3.1.15,
+        digcompstat:CS3.1.16,
+        digcompstat:CS3.1.17,
+        digcompstat:CS3.1.18,
+        digcompstat:CS3.1.19 ;
+    dcterms:created "2025-02-25T23:26:32.363000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:00.468000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:broader digcomp:6e024199-248f-40cb-84c3-c0ae3dd36e06 ;
+    skos:definition "To use digital technologies ethically and responsibly to create and edit a variety of content. To express oneself through digital means."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "3.1" ;
+    skos:prefLabel "Developing digital content"@en .
+
+digcomp:e89ea019-00b8-40ee-8f36-4c67ee247fc9 a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS5.3.01,
+        digcompstat:CS5.3.02,
+        digcompstat:CS5.3.03,
+        digcompstat:CS5.3.04,
+        digcompstat:CS5.3.05,
+        digcompstat:CS5.3.06,
+        digcompstat:CS5.3.07,
+        digcompstat:CS5.3.08,
+        digcompstat:CS5.3.09,
+        digcompstat:CS5.3.10,
+        digcompstat:CS5.3.11,
+        digcompstat:CS5.3.12 ;
+    dcterms:created "2025-02-25T23:30:24.792000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:22.111000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Creatively using digital technologies"@en ;
+    skos:broader digcomp:7b36b6e6-e9c6-43fa-a874-8c1bc09e46cf ;
+    skos:definition "To use digital technologies to make improvements in or new solutions for processes and products, using a human-centric approach. To engage individually and collectively in critical thinking processes, and the creative and purposeful use of digital technologies, to understand and resolve conceptual problems and problem situations"@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "5.3" ;
+    skos:prefLabel "Identifying creative solutions using digital technologies"@en .
+
+digcomp:effcbb68-404b-4093-b9df-66f98a46c50f a esco:Skill,
+        skos:Concept ;
+    ex:hasCompStat digcompstat:CS5.1.01,
+        digcompstat:CS5.1.02,
+        digcompstat:CS5.1.03,
+        digcompstat:CS5.1.04,
+        digcompstat:CS5.1.05,
+        digcompstat:CS5.1.06,
+        digcompstat:CS5.1.07,
+        digcompstat:CS5.1.08,
+        digcompstat:CS5.1.09,
+        digcompstat:CS5.1.10,
+        digcompstat:CS5.1.11,
+        digcompstat:CS5.1.12 ;
+    dcterms:created "2025-02-25T23:29:41.155000+00:00"^^xsd:dateTime ;
+    dcterms:modified "2025-03-03T05:47:28.629000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Solving technical problems"@en ;
+    skos:broader digcomp:7b36b6e6-e9c6-43fa-a874-8c1bc09e46cf ;
+    skos:definition "To identify technical problems when operating digital devices and in digital environments, and to solve them through a variety of means."@en ;
+    skos:inScheme digcompcs: ;
+    skos:notation "5.1" ;
+    skos:prefLabel "Identifying and solving technical problems"@en .
+
+digcompstat:CS1.1.01 a asn:Statement ;
+    dcterms:description "Acknowledge the benefits of using different digital search tools and methods, depending on one’s purpose."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.02 a asn:Statement ;
+    dcterms:description "Identify the main features of commonly-used AI-driven and traditional search tools."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS1.1.03 a asn:Statement ;
+    dcterms:description "Recognise that digital search results or outputs can contain information that may not be relevant, and that they depend on the digital search tool used and the way that an individual specifies the search."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.04 a asn:Statement ;
+    dcterms:description "Use digital search tools to implement, refine and update basic information searches."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.05 a asn:Statement ;
+    dcterms:description "Purposefully explore new digital search tools and strategies."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.06 a asn:Statement ;
+    dcterms:description "Select appropriate digital search tools based on information needs."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.07 a asn:Statement ;
+    dcterms:description "Distinguish between more and less relevant digital search results or outputs."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.08 a asn:Statement ;
+    dcterms:description "Translate information needs into effective digital search queries, commands or statements, and apply appropriate strategies to refine or filter results."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.09 a asn:Statement ;
+    dcterms:description "Continually explore functions and features of familiar and novel digital search tools to deepen capabilities."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.10 a asn:Statement ;
+    dcterms:description "Combine a variety of digital search tools and strategies to address complex information needs."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.11 a asn:Statement ;
+    dcterms:description "Assist others in developing their digital search capabilities."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.12 a asn:Statement ;
+    dcterms:description "Stay informed about developments in digital search technologies."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.13 a asn:Statement ;
+    dcterms:description "Combine a variety of digital search tools and strategies to address highly complex or specialised information needs."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.14 a asn:Statement ;
+    dcterms:description "Assist others to implement and refine complex or specialised searches in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.1.15 a asn:Statement ;
+    dcterms:description "Contribute to improvements in or new solutions for complex or specialised searches in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.01 a asn:Statement ;
+    dcterms:description "Acknowledge the benefits of a cautious approach in interpreting information and content in digital environments."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.02 a asn:Statement ;
+    dcterms:description "Recognise that some digital information sources and systems may not be trustworthy."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.03 a asn:Statement ;
+    dcterms:description "Recognise that it can be difficult to distinguish between information and content generated by humans and AI systems."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS1.2.04 a asn:Statement ;
+    dcterms:description "Recognise examples of misinformation, disinformation, and sources of bias."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.05 a asn:Statement ;
+    dcterms:description "Recognise examples of social media influencing and filter bubbles."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.06 a asn:Statement ;
+    dcterms:description "Make a basic assessment of the reliability and credibility of digital information sources and content."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.07 a asn:Statement ;
+    dcterms:description "Identify the source of online information and the purposes of fact-checking services to develop pre-bunking and de-bunking capabilities."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.08 a asn:Statement ;
+    dcterms:description "Recognise that the data used to train AI systems and how they are trained affects the reliability of the information they provide."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS1.2.09 a asn:Statement ;
+    dcterms:description "Recognise that some digital technologies, such as AI systems, might function like a 'black box', making it difficult to explain why or how an output has been produced."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS1.2.10 a asn:Statement ;
+    dcterms:description "Recognise that AI systems may produce output which is inaccurate, even if it may seem plausible, and that the human using the AI system is responsible for checking the quality and validity of information and content generated. "@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS1.2.11 a asn:Statement ;
+    dcterms:description "Recognise that individual (cognitive and affective) biases and AI system biases play a role in the generation and interpretation of information."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS1.2.12 a asn:Statement ;
+    dcterms:description "Recognise and respond effectively to user-directing strategies in digital environments such as clickbait, nudging and gamification."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.13 a asn:Statement ;
+    dcterms:description "Critically assess the reliability of sources, information and content in digital environments, considering the role of AI systems, personalisation effects, and commercial or other interests."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS1.2.14 a asn:Statement ;
+    dcterms:description "Continually scrutinise how AI systems, biases, and various interests shape generation, presentation and interpretation of information in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS1.2.15 a asn:Statement ;
+    dcterms:description "Describe features of trustworthy digital technologies, such as AI systems."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS1.2.16 a asn:Statement ;
+    dcterms:description "Describe personal, social and political consequences of misinformation, disinformation, sources of bias, social media influencing and filter bubbles."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.17 a asn:Statement ;
+    dcterms:description "Thoroughly assess the reliability and accuracy of a diversity of digital sources, information and content, considering a range of potential influencing factors."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.18 a asn:Statement ;
+    dcterms:description "Support others to develop capabilities to assess the credibility and reliability of digital sources, information and content."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.19 a asn:Statement ;
+    dcterms:description "Systematically assess and evaluate digital sources, information and content to support complex decision-making."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.20 a asn:Statement ;
+    dcterms:description "Help others to develop capabilities to critically evaluate information and content, and resilience to misinformation and disinformation, in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.2.21 a asn:Statement ;
+    dcterms:description "Lead or contribute to initiatives that support accurate interpretation of information in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.01 a asn:Statement ;
+    dcterms:description "Acknowledge the benefits of managing and organising information in digital environments."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS1.3.02 a asn:Statement ;
+    dcterms:description "Recognise functions of data removal, restoration and backup, and main properties of digital files and folders."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS1.3.03 a asn:Statement ;
+    dcterms:description "Download, save, retrieve, move and delete digital files."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS1.3.04 a asn:Statement ;
+    dcterms:description "Organise and format simple data in a structured digital environment, such as in spreadsheets."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS1.3.05 a asn:Statement ;
+    dcterms:description "Update one's contacts, such as on phone, email or social media."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS1.3.06 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of careful and ethical management of data and information in digital environments."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.07 a asn:Statement ;
+    dcterms:description "Apply naming conventions to digital files and hierarchies to digital folders."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS1.3.08 a asn:Statement ;
+    dcterms:description "Organise folders, and manage, save and delete files on digital devices, external storage, and cloud services."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS1.3.09 a asn:Statement ;
+    dcterms:description "Identify common types of data and their formats, and use data collection tools for simple processing of data."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.10 a asn:Statement ;
+    dcterms:description "Manage information in one's digital accounts, such as email."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.11 a asn:Statement ;
+    dcterms:description "Organise and format data and apply basic formulas in a structured digital environment, such as in spreadsheets."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS1.3.12 a asn:Statement ;
+    dcterms:description "Prioritise ethical and transparent management and processing of data and information in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.13 a asn:Statement ;
+    dcterms:description "Apply a variety of functions to transfer and manage data and information in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.14 a asn:Statement ;
+    dcterms:description "Describe examples, applications and limitations of open data and big data."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.15 a asn:Statement ;
+    dcterms:description "Use range of digital tools and methods to collect and process a variety of data and information."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.16 a asn:Statement ;
+    dcterms:description "Apply appropriate analysis to information and data in digital environments to contribute to complex decision-making."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.17 a asn:Statement ;
+    dcterms:description "Assist others with data and information management, processing and analysis in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.18 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of structuring and documenting data and information in digital environments for the benefit of others."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS1.3.19 a asn:Statement ;
+    dcterms:description "Develop and implement strategies for complex or specialised data and information management, processing and analysis in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.20 a asn:Statement ;
+    dcterms:description "Use a variety of digital tools and methods to process, manage or analyse complex data or large volumes of information."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.21 a asn:Statement ;
+    dcterms:description "Lead or contribute to initiatives that support others in advanced information and data management, processing and analysis in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS1.3.22 a asn:Statement ;
+    dcterms:description "Contribute to improvements in or new solutions for data management, processing or analysis in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.01 a asn:Statement ;
+    dcterms:description "Identify and use basic features of digital communication tools to interact with individuals and groups."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.02 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of taking others’ preferences into account in digital communication."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.1.03 a asn:Statement ;
+    dcterms:description "Recognise differences between digital and non-digital interactions, and between physical and virtual realities."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.04 a asn:Statement ;
+    dcterms:description "Identify basic features of virtual assistants (chatbots) and recognise key differences between human-to-machine and human-to-human interactions."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.05 a asn:Statement ;
+    dcterms:description "Recognise in general terms what a robot is, the non-human nature of robots, and that humans interact with robots to carry out tasks."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.06 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of tailoring one's digital communication to specific contexts."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.1.07 a asn:Statement ;
+    dcterms:description "Recognise that there is a reality-virtuality continuum in digital environments."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.08 a asn:Statement ;
+    dcterms:description "Identify a suitable communication means for a given context or purpose."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.09 a asn:Statement ;
+    dcterms:description "Use multiple features of a variety of digital communication tools to interact with and manage individuals, groups and channels."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.10 a asn:Statement ;
+    dcterms:description "Develop and refine questions, commands or statements (prompts) for virtual assistants (chatbots) and AI systems to handle non-complex interactions."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS2.1.11 a asn:Statement ;
+    dcterms:description "Define how humans can interact with robots, identifying their key features (such as sensors, software, motion controls and human interface), and recognising that they can operate with varying degrees of autonomy."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.12 a asn:Statement ;
+    dcterms:description "Continually adapt communication in digital environments in response to a variety of contexts."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.1.13 a asn:Statement ;
+    dcterms:description "Combine digital communication tools and methods for complex communication and interaction tasks."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.14 a asn:Statement ;
+    dcterms:description "Systematically develop and progressively refine questions, commands or statements (prompts) for AI systems to handle complex interactions."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS2.1.15 a asn:Statement ;
+    dcterms:description "Assist others to assess and select suitable digital communication tools for a given purpose."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.16 a asn:Statement ;
+    dcterms:description "Organise and/or moderate complex digital events."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.17 a asn:Statement ;
+    dcterms:description "Assess benefits and disadvantages of robotic applications in a specific context."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.18 a asn:Statement ;
+    dcterms:description "Stay informed about developments in digital communication and interaction tools and methods."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.19 a asn:Statement ;
+    dcterms:description "Assess and combine digital communication and interaction tools for highly complex or novel tasks."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.20 a asn:Statement ;
+    dcterms:description "Provide guidance, support or leadership in the advanced use of communication and interaction tools."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.1.21 a asn:Statement ;
+    dcterms:description "Lead or contribute to improvements in or new solutions for digital communication or human-machine interaction."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.2.01 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of ethical and responsible sharing of information and content."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.2.02 a asn:Statement ;
+    dcterms:description "Identify functions and uses of social media, and examples of common social media platforms."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.2.03 a asn:Statement ;
+    dcterms:description "Recognise benefits and risks of sharing information and content in digital environments, and that individuals can choose how and what to share."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.2.04 a asn:Statement ;
+    dcterms:description "Recognise that content can be shared in a variety of ways by AI systems as well as humans."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS2.2.05 a asn:Statement ;
+    dcterms:description "Identify purpose and target audience of information and content to be shared in digital environments."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.2.06 a asn:Statement ;
+    dcterms:description "Use simple processes to share information and content in digital environments appropriately and in accordance with goals."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.2.07 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of assessing the value and accuracy of information and content prior to sharing it in digital environments."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.2.08 a asn:Statement ;
+    dcterms:description "Define responsibilities associated with sharing information and content in digital environments."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.2.09 a asn:Statement ;
+    dcterms:description "Describe and implement effective and ethical ways to share information and content in a variety of digital environments."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.2.10 a asn:Statement ;
+    dcterms:description "Report or flag misinformation and disinformation that has been shared in digital environments."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.2.11 a asn:Statement ;
+    dcterms:description "Acknowledge the value of sharing information and content in digital environments to assist others."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.2.12 a asn:Statement ;
+    dcterms:description "Share information and content in digital environments to support personal, learning or professional goals of oneself and others."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.2.13 a asn:Statement ;
+    dcterms:description "Advise others on effective and ethical ways to share information and content in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.2.14 a asn:Statement ;
+    dcterms:description "Facilitate complex sharing of information across a variety of digital technologies, exploring new and alternative means as needed."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.2.15 a asn:Statement ;
+    dcterms:description "Contribute to complex or specialised initiatives for sharing information and content in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.2.16 a asn:Statement ;
+    dcterms:description "Lead or contribute to improvements in or new solutions for sharing information and content in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.01 a asn:Statement ;
+    dcterms:description "Identify main purposes and functions of digital platforms and services, using them with assistance as needed."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.02 a asn:Statement ;
+    dcterms:description "Recognise the potential of digital technologies for participation and empowerment – and exclusion – of oneself and specific groups and communities."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.03 a asn:Statement ;
+    dcterms:description "Recognise that there are laws and regulations to protect the rights of users of digital platforms and services."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.04 a asn:Statement ;
+    dcterms:description "Use digital tools to search for and find communities for civic participation on issues of interest."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.05 a asn:Statement ;
+    dcterms:description "Participate in discussions on digital citizenship topics."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.06 a asn:Statement ;
+    dcterms:description "Prioritise the exploration of ways that digital technologies can enhance one’s civic and societal participation."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.07 a asn:Statement ;
+    dcterms:description "Describe the potential benefits of common forms of digital participation, recognising that civic participation occurs along a continuum."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.3.08 a asn:Statement ;
+    dcterms:description "Recognise key rights under relevant digital laws and regulations, and define how to exercise them."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.09 a asn:Statement ;
+    dcterms:description "Describe how digital technologies such as social media platforms can influence some aspects of basic democracy (for example, distortion of the electoral process)."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.10 a asn:Statement ;
+    dcterms:description "Describe the concept of the platform economy, including opportunities, risks, social and ethical implications."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.11 a asn:Statement ;
+    dcterms:description "Describe the concepts and functions of civic monitoring and e-Government."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.3.12 a asn:Statement ;
+    dcterms:description "Interact autonomously and effectively with digital platforms and services."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.13 a asn:Statement ;
+    dcterms:description "Participate in discussions on digital technologies' ethical, political and social implications, prioritising the continual exploration of ways in which digital technologies can support empowerment and civic participation."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.14 a asn:Statement ;
+    dcterms:description "Assess the potential of digital technologies for inclusion, exclusion, and civic intervention."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.15 a asn:Statement ;
+    dcterms:description "Assess several implications of digital technologies such as social media platforms in democratic processes."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.16 a asn:Statement ;
+    dcterms:description "Distinguish between high-risk and prohibited AI systems (according to legislation) and their potential societal, political or economic impacts."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS2.3.17 a asn:Statement ;
+    dcterms:description "Assist others to identify opportunities and participate in digital environments for (self or community) empowerment and civic participation."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.3.18 a asn:Statement ;
+    dcterms:description "Support others to inform themselves about and exercise their rights under digital legislation."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.19 a asn:Statement ;
+    dcterms:description "Use up-to-date knowledge of digital technologies and legislative developments to evaluate impacts of digital technologies on society, political processes, or the economy, from a range of perspectives."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.20 a asn:Statement ;
+    dcterms:description "Assist others to comprehend the main provisions of digital legislation, given a specific context."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.3.21 a asn:Statement ;
+    dcterms:description "Lead or design digital citizenship initiatives, for example to promote civic participation, inclusion or empowerment."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.4.01 a asn:Statement ;
+    dcterms:description "Participate in collaborative groups via digital collaboration tools, recognising their benefits and limitations."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.4.02 a asn:Statement ;
+    dcterms:description "Recognise the presence of AI systems in digital collaboration tools."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS2.4.03 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of effective communication skills for successful collaboration in digital environments."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.4.04 a asn:Statement ;
+    dcterms:description "Create, manage and contribute effectively to simple collaborative tasks in digital environments."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.4.05 a asn:Statement ;
+    dcterms:description "Recognise main features and functions of a variety of collaboration tools, selecting them to meet collaboration goals."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.4.06 a asn:Statement ;
+    dcterms:description "Identify examples of ethical, responsible and effective human-AI collaboration."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS2.4.07 a asn:Statement ;
+    dcterms:description "Take account of different perspectives to help achieve a common goal in digital environments."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.4.08 a asn:Statement ;
+    dcterms:description "Use and combine a variety of digital collaboration tools, ensuring proportionate and ethical use of digital technologies and human-AI collaboration processes that meet the needs of projects, tasks and groups."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS2.4.09 a asn:Statement ;
+    dcterms:description "Lead collaboration in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.4.10 a asn:Statement ;
+    dcterms:description "Help others to develop their capabilities to collaborate in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.4.11 a asn:Statement ;
+    dcterms:description "Promote and support proportionate, ethical and effective use of digital technologies including AI systems in collaborations."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS2.4.12 a asn:Statement ;
+    dcterms:description "Design complex or specialised collaboration strategies or systems for digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.4.13 a asn:Statement ;
+    dcterms:description "Assist others to develop capabilities to lead collaboration in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.4.14 a asn:Statement ;
+    dcterms:description "Lead or contribute to improvements in or new solutions for human-AI collaboration."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS2.5.01 a asn:Statement ;
+    dcterms:description "Recognise differences in verbal and non-verbal behaviour in digital and non-digital environments, and that there are cultural and contextual differences in verbal and non-verbal digital communication."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.5.02 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of giving space to the opinions of others in digital environments."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.5.03 a asn:Statement ;
+    dcterms:description "Recognise that some behaviour in digital environments may not be acceptable to others, and/or may have legal consequences."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.5.04 a asn:Statement ;
+    dcterms:description "Use appropriate tone and visual expression such as emoji in formal and non-formal digital environments."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.5.05 a asn:Statement ;
+    dcterms:description "Describe the relationship between digital behaviour and digital reputation."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.5.06 a asn:Statement ;
+    dcterms:description "Prioritise behaviour that supports inclusion and a positive digital reputation for oneself and others."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.5.07 a asn:Statement ;
+    dcterms:description "Identify key rights and responsibilities of children and adults in relation to digital behaviour."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.5.08 a asn:Statement ;
+    dcterms:description "Respond with effective and respectful communication and behaviour to difficult or complex situations in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.5.09 a asn:Statement ;
+    dcterms:description "Distinguish between ethical, legal and illegal behaviours in digital environments, recognising that these distinctions may be complex."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.5.10 a asn:Statement ;
+    dcterms:description "Analyse patterns of abuse of specific groups in digital environments and their potential impacts, and describe ways in which they can be reported and tackled."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.5.11 a asn:Statement ;
+    dcterms:description "Promote and support inclusive and respectful behaviour in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.5.12 a asn:Statement ;
+    dcterms:description "Support others to develop their capacities for inclusive and respectful behaviour in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.5.13 a asn:Statement ;
+    dcterms:description "Stay informed about developments in policies and legislation relating to behaviour in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.5.14 a asn:Statement ;
+    dcterms:description "Assist others to understand key rights and responsibilities under policies or legislation relating to digital behaviour in a given context."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.5.15 a asn:Statement ;
+    dcterms:description "Lead or contribute to digital behaviour policies or initiatives."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.01 a asn:Statement ;
+    dcterms:description "Acknowledge the benefits of implementing measures to help manage one's digital identity."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.6.02 a asn:Statement ;
+    dcterms:description "Recognise features of physical and digital identities, and identify aspects of physical identity that can be linked to digital identity."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.6.03 a asn:Statement ;
+    dcterms:description "Recognise digital identity as both a means of authenticating (validating) an individual and the data generated by an individual's online activities, and identify common forms and uses of digital identity."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.04 a asn:Statement ;
+    dcterms:description "Recognise the concept and components of a digital footprint."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.05 a asn:Statement ;
+    dcterms:description "Recognise that digital identity protection laws protect individuals' data and privacy."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.06 a asn:Statement ;
+    dcterms:description "Identify and implement simple measures, such as limiting tracking and deleting browsing history, to manage digital identity."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS2.6.07 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of one's own role and rights in the management of digital identity."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.08 a asn:Statement ;
+    dcterms:description "Identify examples of actively and passively generated information in relation to digital identity."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.09 a asn:Statement ;
+    dcterms:description "Analyse the scope of one's own digital identity to implement protections."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.10 a asn:Statement ;
+    dcterms:description "Adjust settings on devices and apps, online accounts and activity tracking to help manage one’s digital identity."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.11 a asn:Statement ;
+    dcterms:description "Curate and manage one or more digital identities using a variety of features and functionalities on digital platforms or services."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.12 a asn:Statement ;
+    dcterms:description "Describe ways to exercise legal rights in issues relating to digital identity."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.13 a asn:Statement ;
+    dcterms:description "Assess one's digital identity on an ongoing basis, and use a variety of processes to manage digital identity."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.14 a asn:Statement ;
+    dcterms:description "Assess benefits, social and ethical implications of the use of AI systems in digital identity management."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS2.6.15 a asn:Statement ;
+    dcterms:description "Curate and manage digital identities for personal, professional and/or organisational purposes across a variety of platforms and services."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.16 a asn:Statement ;
+    dcterms:description "Assist others with basic digital identity management."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.17 a asn:Statement ;
+    dcterms:description "Stay informed about developments in digital technologies in relation to digital identity management and protection."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.18 a asn:Statement ;
+    dcterms:description "Support others to deepen their capabilities in the management and curation of digital identities."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS2.6.19 a asn:Statement ;
+    dcterms:description "Advise others on complex aspects of digital identity management and rights."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.01 a asn:Statement ;
+    dcterms:description "Acknowledge the benefits of exploring a variety of digital content creation tools to support content creation goals."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.02 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of accessible and inclusive digital content."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS3.1.03 a asn:Statement ;
+    dcterms:description "Identify common types of digital content and file formats, and common operational functions across digital content creation tools."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.04 a asn:Statement ;
+    dcterms:description "Recognise that while AI systems can generate content, humans are essential to ensure ethical, responsible, and context-appropriate outputs."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.1.05 a asn:Statement ;
+    dcterms:description "Recognise that generative AI is a particular type of AI and is one of various digital technologies that can be used to support content creation."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.1.06 a asn:Statement ;
+    dcterms:description "Use basic features of content creation tools to create and edit digital content."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.07 a asn:Statement ;
+    dcterms:description "Purposefully explore features and functions of digital content creation tools to deepen capabilities."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.08 a asn:Statement ;
+    dcterms:description "Describe benefits and limitations in the use of digital technologies such as AI systems for content creation, using them selectively and ethically."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.1.09 a asn:Statement ;
+    dcterms:description "Use a variety of content creation tools to create and edit digital content."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.10 a asn:Statement ;
+    dcterms:description "Apply strategies that enable efficient digital content creation."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.11 a asn:Statement ;
+    dcterms:description "Assess audience accessibility and inclusivity needs, and create and edit digital content accordingly."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.12 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of assessing capabilities, constraints and ethical aspects of digital content creation tools."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.13 a asn:Statement ;
+    dcterms:description "Select and combine digital content creation tools and methods to meet complex content creation task and audience requirements."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.14 a asn:Statement ;
+    dcterms:description "Create and edit complex or specialised digital content, tailored appropriately to goals and audience."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.15 a asn:Statement ;
+    dcterms:description "Support others to develop their capabilities in digital content creation using ethical and responsible approaches."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.16 a asn:Statement ;
+    dcterms:description "Promote and support accessibility and inclusivity, and the selective and ethical use of AI systems, in digital content creation."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.1.17 a asn:Statement ;
+    dcterms:description "Help others to develop advanced digital content creation capabilities."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.18 a asn:Statement ;
+    dcterms:description "Lead or contribute to complex or specialised digital content creation initiatives."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.1.19 a asn:Statement ;
+    dcterms:description "Lead or contribute to improvements in or new solutions for complex or specialised digital content."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.01 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of ethical and transparent practices when re-using or elaborating existing digital content."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.02 a asn:Statement ;
+    dcterms:description "Acknowledge the benefits of exploring digital content integration and elaboration tools and techniques."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.03 a asn:Statement ;
+    dcterms:description "Distinguish between editable and uneditable digital content."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS3.2.04 a asn:Statement ;
+    dcterms:description "Make changes to digital content using basic editing, formatting and integration functions."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.05 a asn:Statement ;
+    dcterms:description "Purposefully explore a variety of ways to integrate and re-elaborate digital content."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.06 a asn:Statement ;
+    dcterms:description "Adjust or integrate digital content to meet format, structure and audience requirements."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.07 a asn:Statement ;
+    dcterms:description "Modify or transform digital textual, numeric or visual representations to effectively and accurately convey the meaning of data and information."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.08 a asn:Statement ;
+    dcterms:description "Use digital technologies in a selective, ethical, transparent and responsible way to make enhancements or integrations to existing digital content."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.09 a asn:Statement ;
+    dcterms:description "Adjust or integrate a variety of digital content to meet complex format, structure, and audience requirements."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.10 a asn:Statement ;
+    dcterms:description "Apply digital technologies in a selective, ethical and transparent way to make improvements or integrations to complex digital content."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.11 a asn:Statement ;
+    dcterms:description "Support others in developing their capabilities in digital content enhancement."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.12 a asn:Statement ;
+    dcterms:description "Promote and support ethical and transparent practices in digital content integration and re-elaboration, informed by current digital technological developments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.13 a asn:Statement ;
+    dcterms:description "Evaluate and apply advanced design and data visualisation techniques to complex or specialised digital content integration and re-elaboration."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.14 a asn:Statement ;
+    dcterms:description "Assist others with complex digital content integration or re-elaboration tasks."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.2.15 a asn:Statement ;
+    dcterms:description "Lead or contribute to complex digital content integration or re-elaboration initiatives, or to improvements in or new solutions for digital content integration or re-elaboration. "@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.3.01 a asn:Statement ;
+    dcterms:description "Recognise the general concepts of copyright and licence in digital contexts, and that an individual’s original digital content is automatically copyrighted."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS3.3.02 a asn:Statement ;
+    dcterms:description "Recognise that copyright and licences can apply to digital content, including AI-generated content, and that these determine how content can be used and shared."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.3.03 a asn:Statement ;
+    dcterms:description "Recognise that AI-generated content should be labelled as such to help others understand its origin and possibilities for further use."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.3.04 a asn:Statement ;
+    dcterms:description "Use and share digital content in compliance with basic legal and ethical guidelines, and identify digital content that can be used free of charge."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.3.05 a asn:Statement ;
+    dcterms:description "Acknowledge the complexity of copyright and licences in digital contexts, prioritising a cautious approach."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.3.06 a asn:Statement ;
+    dcterms:description "Define the concept of intellectual property, and distinguish between copyright, trademark, design and patent."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.3.07 a asn:Statement ;
+    dcterms:description "Identify common types and purposes of licences in digital contexts, including Creative Commons."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS3.3.08 a asn:Statement ;
+    dcterms:description "Describe ethical, legal and commercial implications of copyright violations in digital contexts."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.3.09 a asn:Statement ;
+    dcterms:description "Identify examples of legal and ethical challenges relating to copyright in the training of AI models."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.3.10 a asn:Statement ;
+    dcterms:description "Apply legal and ethical guidelines appropriately when using and sharing digital content."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.3.11 a asn:Statement ;
+    dcterms:description "Describe key features of current legislation in relation to digital copyright and licences."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.3.12 a asn:Statement ;
+    dcterms:description "Describe examples of where copyright applies and does not apply in digital contexts, distinguishing between training data for AI systems and AI-generated content."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.3.13 a asn:Statement ;
+    dcterms:description "Assess and correctly apply legal and ethical guidelines for using and sharing digital content in complex contexts (for example in relation to AI systems)."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.3.14 a asn:Statement ;
+    dcterms:description "Assist others to use and share digital content in compliance with legal and ethical guidelines."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.3.15 a asn:Statement ;
+    dcterms:description "Promote and support awareness and understanding of legal and ethical copyright and licensing practices in digital contexts."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.3.16 a asn:Statement ;
+    dcterms:description "Apply advanced knowledge of intellectual property rights, copyright and licensing concepts in digital contexts to inform decision-making."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.3.17 a asn:Statement ;
+    dcterms:description "Lead or contribute to policies or guidelines on copyright and licensing in digital contexts."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.4.01 a asn:Statement ;
+    dcterms:description "Recognise the role of programming in society, and common uses of computer programs and applications."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS3.4.02 a asn:Statement ;
+    dcterms:description "Recognise computational thinking as a human activity which involves the identification of steps that can be performed by a computer to solve a problem or task."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS3.4.03 a asn:Statement ;
+    dcterms:description "Recognise what AI is in general terms, making a basic distinction between what is and what is not an AI system."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.4.04 a asn:Statement ;
+    dcterms:description "Represent simple sequences symbolically, interpret simple symbolic sequences, and give basic instructions to a computer to perform simple tasks."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.4.05 a asn:Statement ;
+    dcterms:description "Acknowledge the relevance of computational thinking, algorithmic representation and programming to everyday contexts."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.4.06 a asn:Statement ;
+    dcterms:description "Distinguish between a computational model of reality and reality itself."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.4.07 a asn:Statement ;
+    dcterms:description "Define differences between a computable problem and a non-computable problem, and general steps in computational thinking."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS3.4.08 a asn:Statement ;
+    dcterms:description "Define foundational programming concepts and recognise that there are a variety of programming languages, each with a range of potential uses."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.4.09 a asn:Statement ;
+    dcterms:description "Recognise that machine learning is a type of programming used in AI that enables algorithms to learn from data and make predictions."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.4.10 a asn:Statement ;
+    dcterms:description "Recognise that there are steps that should be followed to develop, validate and deploy a computer program or an AI system."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.4.11 a asn:Statement ;
+    dcterms:description "Translate basic information into logical operations, develop basic programs with control structures, and create visual representations to illustrate basic algorithms."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.4.12 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of human oversight and human-centric approaches in the development and deployment of computer programs and AI systems."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.4.13 a asn:Statement ;
+    dcterms:description "Describe the main steps in developing, validating and deploying a computer program or an AI system."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.4.14 a asn:Statement ;
+    dcterms:description "Describe examples of the application of computational thinking and programming in robotics."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS3.4.15 a asn:Statement ;
+    dcterms:description "Distinguish between main types of machine learning."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.4.16 a asn:Statement ;
+    dcterms:description "Assess ethical and practical aspects of the development and deployment of computer programs and AI systems."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.4.17 a asn:Statement ;
+    dcterms:description "Identify and (partially or fully) automate routine tasks with programming tools or AI systems."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.4.18 a asn:Statement ;
+    dcterms:description "Apply programming tools or AI systems to complex computational thinking tasks."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.4.19 a asn:Statement ;
+    dcterms:description "Promote and support ethical programming and/or AI system development practices."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.4.20 a asn:Statement ;
+    dcterms:description "Stay informed about current developments in programming techniques and related applications of AI systems, such as robotics."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.4.21 a asn:Statement ;
+    dcterms:description "Lead or contribute to complex projects focused on applications of computational thinking, programming or AI systems, including developing, validating and deploying computer programs or AI systems."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS3.4.22 a asn:Statement ;
+    dcterms:description "Assist others to develop basic programming capabilities and/or capabilities in the application of AI systems to computational thinking tasks."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS4.1.01 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of one's individual role in protecting digital devices and their contents."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.1.02 a asn:Statement ;
+    dcterms:description "Recognise that individual actions and cybersecurity tools work together to help keep devices and their contents secure."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.1.03 a asn:Statement ;
+    dcterms:description "Recognise that there is cybersecurity legislation that helps to ensure the security of products and services."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.1.04 a asn:Statement ;
+    dcterms:description "Identify and apply basic device protection measures such as antivirus software, screen locking, strong passwords, and multi-factor authentication."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.1.05 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of remaining vigilant to and up-to-date with cybersecurity practices."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.1.06 a asn:Statement ;
+    dcterms:description "Describe main features of malware and apply a variety of malware prevention techniques to protect devices and their contents."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.1.07 a asn:Statement ;
+    dcterms:description "Recognise that recent and emerging digital technologies such as AI systems can be used for both cyberattacks and cybersecurity."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS4.1.08 a asn:Statement ;
+    dcterms:description "Prioritise regular checking and updating of cybersecurity measures to protect devices and their contents in response to evolving digital threats."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.1.09 a asn:Statement ;
+    dcterms:description "Describe key rights of individuals under current cybersecurity legislation."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.1.10 a asn:Statement ;
+    dcterms:description "Identify examples of how recent and emerging technologies such as AI systems are used in cyberattacks and cybersecurity."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS4.1.11 a asn:Statement ;
+    dcterms:description "Assist others in implementing basic cybersecurity protection measures, such as antivirus software, screen locking, strong passwords and multi-factor authentication."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.1.12 a asn:Statement ;
+    dcterms:description "Stay informed about digital technological and legislative developments in relation to cybersecurity."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.1.13 a asn:Statement ;
+    dcterms:description "Assess rights of individuals under relevant provisions of current cybersecurity legislation."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.1.14 a asn:Statement ;
+    dcterms:description "Lead or contribute to citizen-focused cybersecurity initiatives."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.1.15 a asn:Statement ;
+    dcterms:description "Support others to build their capabilities in protecting devices and their contents against digital threats."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.2.01 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of a cautious approach to the sharing of personal data in digital environments."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.2.02 a asn:Statement ;
+    dcterms:description "Recognise that personal data is collected and generated through a large variety of sources and processes."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.2.03 a asn:Statement ;
+    dcterms:description "Recognise that manipulative methods can be used in digital environments to deceive individuals into providing access to personal data, accounts or other sensitive information."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.2.04 a asn:Statement ;
+    dcterms:description "Identify risks of sharing personal data in digital environments, including specific risks in relation to AI systems."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS4.2.05 a asn:Statement ;
+    dcterms:description "Recognise that individuals have a right to privacy and that their personal data is protected under legislation."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.2.06 a asn:Statement ;
+    dcterms:description "Implement basic security measures for online payments and transactions."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.2.07 a asn:Statement ;
+    dcterms:description "Block or flag personal information that has been inappropriately shared online."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.2.08 a asn:Statement ;
+    dcterms:description "Recognise and respond appropriately to signs of identity theft."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.2.09 a asn:Statement ;
+    dcterms:description "Recognise the importance of careful handling of personal data of oneself and others, especially vulnerable individuals and children."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.2.10 a asn:Statement ;
+    dcterms:description "Recognise key concepts related to data protection and privacy legislation."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.2.11 a asn:Statement ;
+    dcterms:description "Define the purpose of online privacy statements and main privacy policy concepts."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.2.12 a asn:Statement ;
+    dcterms:description "Define personal data breach under current data protection and privacy legislation."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.2.13 a asn:Statement ;
+    dcterms:description "Describe privacy implications associated with the use of shared online content, such as to train AI systems, recognising that regulation of personal data ownership of content shared online is complex."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS4.2.14 a asn:Statement ;
+    dcterms:description "Describe techniques related to social engineering in digital environments, such as phishing or baiting, identifying and responding appropriately to instances of them."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.2.15 a asn:Statement ;
+    dcterms:description "Safely manage personal data and privacy across a variety of digital environments, including use of privacy tools."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.2.16 a asn:Statement ;
+    dcterms:description "Continually explore data ownership and privacy issues in relation to digital technological developments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.2.17 a asn:Statement ;
+    dcterms:description "Support others to understand their rights under current data protection and privacy legislation."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.2.18 a asn:Statement ;
+    dcterms:description "Assist others to implement basic strategies to protect personal data and manage privacy in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.2.19 a asn:Statement ;
+    dcterms:description "Stay informed about digital technological and legislative developments in relation to personal data, data ownership and privacy."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.2.20 a asn:Statement ;
+    dcterms:description "Advise on policy or regulatory aspects of data protection and privacy in digital contexts."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.2.21 a asn:Statement ;
+    dcterms:description "Lead or contribute to the design of personal data protection strategies in digital contexts."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.01 a asn:Statement ;
+    dcterms:description "Acknowledge the benefits of balancing online and offline activities, and the benefits and risks to one's own physical, mental and social wellbeing in using digital technologies."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.02 a asn:Statement ;
+    dcterms:description "Acknowledge the interplay between one's own digital habits and features of digital platforms or services that are designed to capture and maintain users' attention."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.03 a asn:Statement ;
+    dcterms:description "Recognise that there is a variety of information, groups and communities in digital environments that can support one’s physical, mental and/or social wellbeing."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.04 a asn:Statement ;
+    dcterms:description "Identify limitations and risks of using virtual assistants and AI systems to support human wellbeing."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS4.3.05 a asn:Statement ;
+    dcterms:description "Recognise that there are laws and regulations that help protect the wellbeing of individuals in digital environments."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.06 a asn:Statement ;
+    dcterms:description "Make a basic assessment of one's digital habits in relation to one’s physical, mental and social wellbeing, with an awareness of signs of problematic usage, and identify and implement strategies to support one's wellbeing."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.3.07 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of one's own and others' right to disconnect and the benefits of regularly reviewing one’s digital usage patterns."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.3.08 a asn:Statement ;
+    dcterms:description "Describe impacts of harmful behaviour, content and deceptive design in digital environments on oneself and others."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.09 a asn:Statement ;
+    dcterms:description "Identify reliable sources of information, and inclusive groups and communities in digital environments, that can support one’s physical, mental and/or social wellbeing."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.10 a asn:Statement ;
+    dcterms:description "Identify possible ways to flag or intervene if harmful behaviour or content is encountered in digital environments."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.11 a asn:Statement ;
+    dcterms:description "Describe ways in which some digital technologies, such as social media, augment and perpetuate bias, stereotyping and exclusion."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.12 a asn:Statement ;
+    dcterms:description "Implement strategies to protect against and respond effectively to harmful behaviour, content and deceptive design in digital environments, and to support and maintain one's own and others' wellbeing."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.3.13 a asn:Statement ;
+    dcterms:description "Adapt to changing digital technological developments and needs to support and maintain physical, mental and social wellbeing."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.14 a asn:Statement ;
+    dcterms:description "Continually scrutinise the role of digital technologies such as social media in augmenting and perpetuating bias, stereotyping and exclusion."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.15 a asn:Statement ;
+    dcterms:description "Flag or intervene effectively in instances of harmful behaviour or content in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.16 a asn:Statement ;
+    dcterms:description "Assist others to review and adapt their usage of digital technologies and to develop awareness of harmful behaviour, content and deceptive design in digital environments. "@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.17 a asn:Statement ;
+    dcterms:description "Help others to build capacity to counteract the role of digital technologies such as social media in augmenting and perpetuating bias, stereotyping and exclusion."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.18 a asn:Statement ;
+    dcterms:description "Assist others to understand their rights in relation to wellbeing and/or inclusion in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.19 a asn:Statement ;
+    dcterms:description "Promote actions that support wellbeing and inclusion in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.20 a asn:Statement ;
+    dcterms:description "Assess and evaluate evidence on wellbeing and/or inclusion in digital environments to guide decision-making."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.21 a asn:Statement ;
+    dcterms:description "Lead or contribute to initiatives that support wellbeing and/or inclusion in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.3.22 a asn:Statement ;
+    dcterms:description "Contribute to legal and regulatory decision-making in relation to individuals' wellbeing and/or inclusion in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.01 a asn:Statement ;
+    dcterms:description "Acknowledge the role that individuals can play to help reduce the environmental impact of digital technologies."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.4.02 a asn:Statement ;
+    dcterms:description "Recognise that some digital technologies and infrastructures, such as AI systems and data centres, have large impacts on the environment."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS4.4.03 a asn:Statement ;
+    dcterms:description "Recognise that the full environmental impacts of digital technologies are not immediately apparent to an individual user."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.04 a asn:Statement ;
+    dcterms:description "Recognise the role of digital technologies in supporting energy efficiency and sustainability."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.05 a asn:Statement ;
+    dcterms:description "Identify and apply simple strategies to reduce energy and data consumption while using digital technologies."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.06 a asn:Statement ;
+    dcterms:description "Continually assess the environmental impacts of one's usage of digital technologies."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.07 a asn:Statement ;
+    dcterms:description "Identify environmental impacts of digital technologies that occur during manufacturing, usage and disposal, and of data centres and e-commerce."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.08 a asn:Statement ;
+    dcterms:description "Describe how some digital technologies can support sustainable living."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.09 a asn:Statement ;
+    dcterms:description "Describe potential environmental benefits of the digital sharing and circular economy models."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS4.4.10 a asn:Statement ;
+    dcterms:description "Assess and apply a variety of strategies to reduce the environmental impact of one's use of digital technologies and digital devices."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.11 a asn:Statement ;
+    dcterms:description "Stay informed about the environmental impacts of digital technologies and ways in which digital technologies can support sustainability."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.12 a asn:Statement ;
+    dcterms:description "Evaluate the environmental impacts of digital technologies and infrastructures to support decision-making or advocacy."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.13 a asn:Statement ;
+    dcterms:description "Help others to assess their use of digital technologies to identify ways in which to reduce environmental impact."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.14 a asn:Statement ;
+    dcterms:description "Stay informed about the environmental and sustainability implications of digital technologies across a range of sectors."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.15 a asn:Statement ;
+    dcterms:description "Promote and support actions for environmentally sustainable usage of digital technologies."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.16 a asn:Statement ;
+    dcterms:description "Lead or contribute to digital sustainability initiatives."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS4.4.17 a asn:Statement ;
+    dcterms:description "Contribute to improvements in or solutions for digital sustainability."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.1.01 a asn:Statement ;
+    dcterms:description "Acknowledge the commonplace nature of technical problems in digital environments and the benefits of seeking assistance to help resolve them."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS5.1.02 a asn:Statement ;
+    dcterms:description "Differentiate between operating systems and software and identify the main features of hardware, software, connectivity, and common peripheral devices."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS5.1.03 a asn:Statement ;
+    dcterms:description "Identify common technical issues and follow instructions to help to solve them."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS5.1.04 a asn:Statement ;
+    dcterms:description "Install and update software and applications, as needed."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS5.1.05 a asn:Statement ;
+    dcterms:description "Acknowledge the benefits of building capacity and autonomy in addressing common technical issues."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS5.1.06 a asn:Statement ;
+    dcterms:description "Troubleshoot technical problems in digital environments using a variety of search and problem-solving strategies (whether human-assisted or digital technology-assisted)."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.1.07 a asn:Statement ;
+    dcterms:description "Update and adjust settings on main and peripheral digital devices to maintain good performance."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS5.1.08 a asn:Statement ;
+    dcterms:description "Prioritise the development of one's capacity to diagnose and solve technical issues in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.1.09 a asn:Statement ;
+    dcterms:description "Assist others to diagnose and solve technical problems in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS5.1.10 a asn:Statement ;
+    dcterms:description "Use various solution-finding strategies to troubleshoot complex technical problems in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.1.11 a asn:Statement ;
+    dcterms:description "Help others to develop confidence and autonomy to solve technical problems in digital environments."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS5.1.12 a asn:Statement ;
+    dcterms:description "Design or deliver training to support the use of digital devices or systems."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.2.01 a asn:Statement ;
+    dcterms:description "Acknowledge the importance of individual choice in digital environment configurations."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiNeither .
+
+digcompstat:CS5.2.02 a asn:Statement ;
+    dcterms:description "Recognise the concept and purpose of a digital assistance tool and the presence of AI systems in such tools."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS5.2.03 a asn:Statement ;
+    dcterms:description "Identify the purpose of technology accessibility and examples of common assistive technologies."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.2.04 a asn:Statement ;
+    dcterms:description "Acknowledge the benefits of exploring adaptations to digital environment configurations and features of digital assistance tools."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.2.05 a asn:Statement ;
+    dcterms:description "Make informed use of digital assistance tools to support one's own and others' needs, with awareness of their benefits and limitations."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.2.06 a asn:Statement ;
+    dcterms:description "Adjust features of one's digital environment to suit one's own and others' needs and preferences."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.2.07 a asn:Statement ;
+    dcterms:description "Prioritise an ongoing assessment of how digital environmental configurations, digital assistance tools and/or assistive technologies can meet the needs of oneself and others."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.2.08 a asn:Statement ;
+    dcterms:description "Adjust features of digital environments, and use digital assistance tools and assistive technologies, to suit one's own and others’ needs and preferences."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.2.09 a asn:Statement ;
+    dcterms:description "Assess the accessibility, inclusivity, fairness and/or rights-sensitivity of digital technologies in a given context."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.2.10 a asn:Statement ;
+    dcterms:description "Support others to make informed use of digital assistance tools and adjustments to digital environment configurations."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.2.11 a asn:Statement ;
+    dcterms:description "Promote and support inclusive and accessible digital technologies."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.2.12 a asn:Statement ;
+    dcterms:description "Assess complex needs of individuals to identify and/or design tailored digital solutions."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.2.13 a asn:Statement ;
+    dcterms:description "Contribute to improvements in or solutions for digital assistance tools, accessible digital environment configurations, and/or assistive technologies."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.3.01 a asn:Statement ;
+    dcterms:description "Recognise that digital technologies can support, but not replace, human creativity."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.3.02 a asn:Statement ;
+    dcterms:description "Identify examples of how digital technologies are used to solve real-world problems and to make improvements to or create new solutions, products or services."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.3.03 a asn:Statement ;
+    dcterms:description "Identify examples of where digital technologies can support or augment human creativity."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.3.04 a asn:Statement ;
+    dcterms:description "Define the concept of human-centric and its role in digital technologies development and usage."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.3.05 a asn:Statement ;
+    dcterms:description "Describe strengths, weaknesses and ethical considerations of digital technologies including AI systems in relation to human creativity and problem-solving."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiExplicit .
+
+digcompstat:CS5.3.06 a asn:Statement ;
+    dcterms:description "Use a variety of digital technologies responsibly and ethically to support problem-solving as an individual or in a group."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.3.07 a asn:Statement ;
+    dcterms:description "Use a variety of digital technologies efficiently, responsibly and ethically, prioritising human-centric approaches, to help solve complex problems."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.3.08 a asn:Statement ;
+    dcterms:description "Support others to develop their confidence and capabilities in using digital technologies to help solve real-world problems."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.3.09 a asn:Statement ;
+    dcterms:description "Contribute to the (co-) creation or (co-) construction of complex knowledge about or solutions to real-world problems in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.3.10 a asn:Statement ;
+    dcterms:description "Lead or contribute to initiatives focused on the application of digital technologies for highly complex or specialised problem-solving."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.3.11 a asn:Statement ;
+    dcterms:description "Lead or contribute to initiatives that use digital technologies to help make improvements to or find new solutions for real-world problems."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.3.12 a asn:Statement ;
+    dcterms:description "Support others to develop their capabilities to use digital technologies for complex or specialised problem-solving tasks."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.01 a asn:Statement ;
+    dcterms:description "Acknowledge the value of developing one's digital competence, and the benefits of seeking support in addressing digital competence needs."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.02 a asn:Statement ;
+    dcterms:description "Recognise that digital competence is much broader than technical skills, and requires regular updating for daily life, working and learning."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.03 a asn:Statement ;
+    dcterms:description "Identify opportunities to improve one’s digital competences."@en ;
+    sfia:level digproflvl:basic ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.04 a asn:Statement ;
+    dcterms:description "Acknowledge the benefits of staying informed about developments in digital technologies to help identify learning needs."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.05 a asn:Statement ;
+    dcterms:description "Accurately assess one's own digital competences and digital competence needs."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.06 a asn:Statement ;
+    dcterms:description "Participate actively in learning to meet one's digital competence needs."@en ;
+    sfia:level digproflvl:intermediate ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.07 a asn:Statement ;
+    dcterms:description "Continually assess digital technological developments and their implications for one’s own and others’ digital competence needs."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.08 a asn:Statement ;
+    dcterms:description "Engage in ongoing self-development to meet digital competence needs."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.09 a asn:Statement ;
+    dcterms:description "Support others to develop confidence, autonomy and problem-solving capabilities in digital environments."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.10 a asn:Statement ;
+    dcterms:description "Compile available digital competence learning opportunities for a particular purpose."@en ;
+    sfia:level digproflvl:advanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.11 a asn:Statement ;
+    dcterms:description "Engage in ongoing self-development to meet complex or specialised digital competence needs."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.12 a asn:Statement ;
+    dcterms:description "Mentor others in identifying and addressing their digital competence needs."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcompstat:CS5.4.13 a asn:Statement ;
+    dcterms:description "Design learning material to help others to meet complex or specialised digital competence needs."@en ;
+    sfia:level digproflvl:highlyadvanced ;
+    schema:mentions digcompai:aiImplicit .
+
+digcomp:6a85adb3-9529-4630-85d2-8831f5be8ee6 a esco:Skill,
+        skos:Concept ;
+    dcterms:created "2025-02-25T23:15:39.154000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:definition "To articulate information needs, and to search for, locate and retrieve digital information and content. To judge the relevance of the source and its content in digital environments. To critically evaluate digital sources, content, and processes used to generate them. To store, manage, organise and analyse digital information and data."@en ;
+    skos:inScheme digcompcs: ;
+    skos:narrower digcomp:5ee39c36-4d89-4bfb-97bc-d1b904386960,
+        digcomp:9ef843e5-a771-4fed-896c-27070a8173bb,
+        digcomp:ccd20172-7e9c-4d36-9aba-3a0986081c65 ;
+    skos:notation "1" ;
+    skos:prefLabel "Information and data literacy"@en ;
+    skos:topConceptOf digcompcs: .
+
+digcomp:6e024199-248f-40cb-84c3-c0ae3dd36e06 a esco:Skill,
+        skos:Concept ;
+    dcterms:created "2025-02-25T23:16:08.407000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Digital content creation"@en ;
+    skos:definition "To create and edit digital content. To improve and integrate information and content into an existing body of knowledge while understanding how copyright and licences are to be applied, adopting an ethical and responsible approach in the creation, improvement and integration of digital content. To know how to apply computational thinking and programming techniques to give instructions to a computer system."@en ;
+    skos:inScheme digcompcs: ;
+    skos:narrower digcomp:4a0b2c9c-9a1a-4530-95bb-607321707d1d,
+        digcomp:63d748e7-ff24-4392-82ae-47d780c0cbee,
+        digcomp:c31c4623-ece5-4c15-be4e-f6d5bde77e71,
+        digcomp:e3c81318-0964-4d71-ba5f-b85c099d4bf9 ;
+    skos:notation "3" ;
+    skos:prefLabel "Content creation"@en ;
+    skos:topConceptOf digcompcs: .
+
+digcomp:7b36b6e6-e9c6-43fa-a874-8c1bc09e46cf a esco:Skill,
+        skos:Concept ;
+    dcterms:created "2025-02-25T23:16:24.835000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Problem solving"@en ;
+    skos:definition "To identify and assess needs, and to use digital technologies and adapt digital environments to meet these needs. To identify and resolve technical and conceptual problems and problem situations in digital environments. To use digital technologies to make improvements in, or new solutions for, processes and products. To build capabilities to operate autonomously in digital environments. To stay informed about digital technological developments and their implications. "@en ;
+    skos:inScheme digcompcs: ;
+    skos:narrower digcomp:3be27c3d-fc74-46c3-933c-a5c3a2dc18e9,
+        digcomp:ad231929-18d3-4001-b955-df68b1b0e305,
+        digcomp:e89ea019-00b8-40ee-8f36-4c67ee247fc9,
+        digcomp:effcbb68-404b-4093-b9df-66f98a46c50f ;
+    skos:notation "5" ;
+    skos:prefLabel "Problem identification and solving"@en ;
+    skos:topConceptOf digcompcs: .
+
+digcomp:a4f9a0b6-3415-471d-8eb1-72fcbbf0800b a esco:Skill,
+        skos:Concept ;
+    dcterms:created "2025-02-25T23:16:14.179000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:altLabel "Safety"@en ;
+    skos:definition "To protect, devices, content, personal data and privacy in digital environments. To support physical, mental and social wellbeing of oneself and others, and to be aware of the benefits and risks of digital technologies for wellbeing and social inclusion. To be aware of the environmental impact of digital technologies and their use, to take action to reduce such impact, and to use digital technologies to support sustainability."@en ;
+    skos:inScheme digcompcs: ;
+    skos:narrower digcomp:5aed599f-7889-4a73-8e74-90e592c38467,
+        digcomp:776fb14b-1793-4412-a666-9629f28f7048,
+        digcomp:8ab59992-805e-42ce-8de1-bb5da0d8c32a,
+        digcomp:d1aec613-7e6c-4e8a-bb49-f7273fc4c5fe ;
+    skos:notation "4" ;
+    skos:prefLabel "Safety, wellbeing and responsible use"@en ;
+    skos:topConceptOf digcompcs: .
+
+digcompaics: a skos:ConceptScheme ;
+    dcterms:bibliographicCitation "Cosgrove, J. and Cachia, R., DigComp 3.0: European Digital Competence Framework - Fifth Edition, Publications Office of the European Union, Luxembourg, 2025, https://data.europa.eu/doi/10.2760/0001149, JRC144121." ;
+    dcterms:contributor ror:01qanyf14 ;
+    dcterms:created "2025"^^xsd:date ;
+    dcterms:creator ror:04j5wtv36 ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:modified "2025"^^xsd:date ;
+    dcterms:publisher jsa: ;
+    dcterms:source "https://data.europa.eu/doi/10.2760/0001149"^^xsd:anyURI ;
+    dcterms:subject "Artificial intelligence"@en ;
+    dcterms:title "DigComp AI scheme"@en ;
+    skos:definition "Competence statements which explicitly mention AI systems are labelled '[AI-E]' (AI-explicit), while those for which AI or AI systems are implicitly relevant but that do not explicitly mention AI systems are labelled '[AI-I]' (AI-implicit). Similarly, individual learning outcomes are labelled as being AI-Explicit, AI-Implicit, or AI not Implicit or Explicit."@en ;
+    skos:hasTopConcept digcompai:aiExplicit,
+        digcompai:aiImplicit,
+        digcompai:aiNeither ;
+    <http://www.w3.org/2004/02/skos/core#historyNote:> "Jobs and Skills Australia RDF presentation of the Digital competency framework for citizens AI concept scheme"@en ;
+    skos:prefLable "DigComp AI scheme"@en .
+
+digcomp:ded05862-dc66-4564-9223-890481316a44 a esco:Skill,
+        skos:Concept ;
+    dcterms:created "2025-02-25T23:15:54.223000+00:00"^^xsd:dateTime ;
+    dcterms:source "https://joint-research-centre.ec.europa.eu/scientific-activities-z/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp_en"^^xsd:anyURI ;
+    skos:definition "To interact, share, communicate and collaborate in digital environments while being aware of cultural, generational and other diversity and the features and limitations of digital technologies. To participate in society through digital technologies. To assert one’s rights and exercise choice in digital environments. To manage one’s digital presence, identity and reputation."@en ;
+    skos:inScheme digcompcs: ;
+    skos:narrower digcomp:135ca7d8-bf57-44e8-ba27-0016a0871dda,
+        digcomp:22191328-30b0-4b90-8ddb-c49d38a44cd2,
+        digcomp:43d68b7a-6bcf-4e2f-bc14-4f601bb73fb0,
+        digcomp:4b7ad738-5959-422c-aacf-0ce9c4073e77,
+        digcomp:b0d88c6e-42da-44ab-a156-51e0b14f0180,
+        digcomp:d6bb5cf7-1480-402a-9eb3-a511eb4cb945 ;
+    skos:notation "2" ;
+    skos:prefLabel "Communication and collaboration"@en ;
+    skos:topConceptOf digcompcs: .
+
+digproflvlcs: a skos:ConceptScheme ;
+    dcterms:bibliographicCitation "Cosgrove, J. and Cachia, R., DigComp 3.0: European Digital Competence Framework - Fifth Edition, Publications Office of the European Union, Luxembourg, 2025, https://data.europa.eu/doi/10.2760/0001149, JRC144121." ;
+    dcterms:contributor ror:01qanyf14 ;
+    dcterms:created "2025"^^xsd:date ;
+    dcterms:creator ror:04j5wtv36 ;
+    dcterms:description "Jobs and Skills Australia RDF presentation of the Digital competency framework for citizens proficiency levels"@en ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:modified "2025"^^xsd:date ;
+    dcterms:publisher jsa: ;
+    dcterms:source "https://data.europa.eu/doi/10.2760/0001149"^^xsd:anyURI ;
+    dcterms:subject "Skill levels"@en ;
+    dcterms:title "DigComp proficiency levels"@en ;
+    skos:definition "Jobs and Skills Australia RDF presentation of the Digital competency framework for citizens proficiency levles"@en ;
+    skos:hasTopConcept digproflvl:advanced,
+        digproflvl:basic,
+        digproflvl:highlyadvanced,
+        digproflvl:intermediate ;
+    skos:prefLabel "DigComp proficiency levels"@en ;
+    schema:identifier "9789268326770"^^id:isbn,
+        "JRC144121" .
+
+digcompcs: a skos:ConceptScheme ;
+    dcterms:bibliographicCitation "Cosgrove, J. and Cachia, R., DigComp 3.0: European Digital Competence Framework - Fifth Edition, Publications Office of the European Union, Luxembourg, 2025, https://data.europa.eu/doi/10.2760/0001149, JRC144121." ;
+    dcterms:contributor ror:01qanyf14 ;
+    dcterms:created "2025"^^xsd:date ;
+    dcterms:creator ror:04j5wtv36 ;
+    dcterms:description "Jobs and Skills Australia RDF presentation of the Digital competency framework for citizens"@en ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
+    dcterms:modified "2025"^^xsd:date ;
+    dcterms:publisher jsa: ;
+    dcterms:source "https://data.europa.eu/doi/10.2760/0001149"^^xsd:anyURI ;
+    dcterms:subject "Skills"@en ;
+    dcterms:title "DigComp"@en ;
+    skos:altLable "DigComp 3.0 – European Digital Competence Framework, fifth edition"@en ;
+    skos:definition "Jobs and Skills Australia RDF presentation of the Digital competency framework for citizens"@en ;
+    skos:hasTopConcept digcomp:6a85adb3-9529-4630-85d2-8831f5be8ee6,
+        digcomp:6e024199-248f-40cb-84c3-c0ae3dd36e06,
+        digcomp:7b36b6e6-e9c6-43fa-a874-8c1bc09e46cf,
+        digcomp:a4f9a0b6-3415-471d-8eb1-72fcbbf0800b,
+        digcomp:ded05862-dc66-4564-9223-890481316a44 ;
+    skos:prefLabel "DigComp 3.0"@en ;
+    schema:identifier "9789268326770"^^id:isbn,
+        "JRC144121" .
+
+digcompai:aiExplicit a skos:Concept ;
+    skos:definition "Competence statements where AI systems are explicitly mentioned"@en ;
+    skos:inScheme digcompaics: ;
+    skos:notation "AI-E" ;
+    skos:prefLabel "AI-explicit"@en ;
+    skos:topConceptOf digcompaics: .
+
+digcompai:aiNeither a skos:Concept ;
+    skos:definition "Competence statements where AI systems are niether implicitly relevant nor explicitly mentioned"@en ;
+    skos:inScheme digcompaics: ;
+    skos:notation "AI-N" ;
+    skos:prefLabel "AI not implicit or explicit"@en ;
+    skos:topConceptOf digcompaics: .
+
+digproflvl:highlyadvanced a skos:Concept,
+        schema:Action ;
+    skos:definition "At highly advanced level, individuals assess, evaluate and resolve highly complex or specialised problems to create new solutions or adapt existing ones, leading and guiding others if and as required."@en ;
+    skos:inScheme digproflvlcs: ;
+    skos:prefLabel "Highly advanced"@en ;
+    skos:topConceptOf digproflvlcs: ;
+    schema:potentialAction "To support personal, learning and/or working goals, help others to participate effectively in society, lead or support others to achieve complex goals, and/or lead or contribute to improvements in or new solutions for highly complex problems."@en .
+
+digproflvl:advanced a skos:Concept,
+        schema:Action ;
+    skos:definition "At advanced level, individuals assess and apply solutions to a variety of complex tasks autonomously and adapt to a variety of contexts to evaluate and execute tasks appropriately, guiding others if and as required."@en ;
+    skos:inScheme digproflvlcs: ;
+    skos:prefLabel "Advanced"@en ;
+    skos:topConceptOf digproflvlcs: ;
+    schema:potentialAction "To support personal, learning and/or working goals, participate effectively in society, and manage or support others in achieving their goals."@en .
+
+digproflvl:basic a skos:Concept,
+        schema:Action ;
+    skos:definition "At basic level, individuals remember and implement simple tasks with guidance as needed."@en ;
+    skos:inScheme digproflvlcs: ;
+    skos:prefLabel "Basic"@en ;
+    skos:topConceptOf digproflvlcs: ;
+    schema:potentialAction "To support personal, learning and/or working goals and participate in society"@en .
+
+digproflvl:intermediate a skos:Concept,
+        schema:Action ;
+    skos:definition "At intermediate level, individuals identify and implement well-defined tasks and solve well-defined problems autonomously."@en ;
+    skos:inScheme digproflvlcs: ;
+    skos:prefLabel "Inrermediate"@en ;
+    skos:topConceptOf digproflvlcs: ;
+    schema:potentialAction "To support personal, learning and/or working goals and participate autonomously in society."@en .
+
+digcompai:aiImplicit a skos:Concept ;
+    skos:definition "Competence statements where AI systems are implicitly relevant but that do not explicitly mention AI systems"@en ;
+    skos:inScheme digcompaics: ;
+    skos:notation "AI-I" ;
+    skos:prefLabel "AI-implicit"@en ;
+    skos:topConceptOf digcompaics: .
+

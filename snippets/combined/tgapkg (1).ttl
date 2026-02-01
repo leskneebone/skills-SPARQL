@@ -1,0 +1,473 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX id: <http://id.loc.gov/vocabulary/identifiers/>
+PREFIX jsa: <https://linked.data.gov.au/jsa>
+PREFIX ror: <https://ror.org/>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX tgapkg: <https://training.gov.au/Package/>
+PREFIX tgapkgcs: <https://training.gov.au/Package>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+jsa: a schema:Organization ;
+    schema:alternateName "JSA"@en ;
+    schema:name "Jobs and Skills Australia"@en ;
+    schema:url "https://www.jobsandskills.gov.au"^^xsd:anyURI .
+
+ror:03z942k20 a schema:Organization ;
+    schema:alternateName "Australian Department of Education"@en ;
+    schema:name "Department of Education"@en ;
+    schema:url "https://www.education.gov.au"^^xsd:anyURI .
+
+# JSCs (incomplete)
+
+<https://skillsinsight.com.au/>
+a schema:Organization ;
+schema:name "Skills Insight"@en ;
+schema:url "https://skillsinsight.com.au/"^^xsd:anyURI ;
+schema:id "26664163017"^^id:ausbn
+.
+
+<https://www.futureskillsorganisation.com.au/>
+a schema:Organization ;
+schema:name "Future Skills Organisation"@en ;
+schema:legalName "Digital Skills Organisation Limited"@en ;
+schema:url "https://www.futureskillsorganisation.com.au/"^^xsd:anyURI ;
+schema:id "83641892382"^^id:ausbn
+.
+
+# Training packages
+
+tgapkg:ACM a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+	dcterms:creator <https://skillsinsight.com.au/> ;
+    skos:prefLabel "Animal Care and Management Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/ACM"^^xsd:anyURI .
+
+tgapkg:AHC a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+	dcterms:creator <https://skillsinsight.com.au/> ;
+
+    skos:prefLabel "Agriculture, Horticulture and Conservation and Land Management Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/AHC"^^xsd:anyURI .
+
+tgapkg:AMP a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+	dcterms:creator <https://skillsinsight.com.au/> ;
+    skos:prefLabel "Australian Meat Processing Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/AMP"^^xsd:anyURI .
+
+tgapkg:AUM a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Automotive Manufacturing"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/AUM"^^xsd:anyURI .
+
+tgapkg:AUR a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Automotive Retail, Service and Repair Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/AUR"^^xsd:anyURI .
+
+tgapkg:AVI a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Aviation Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/AVI"^^xsd:anyURI .
+
+tgapkg:BSB a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+	dcterms:creator <https://www.futureskillsorganisation.com.au/> ;
+    skos:prefLabel "Business Services Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/BSB"^^xsd:anyURI .
+
+tgapkg:CHC a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Community Services"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/CHC"^^xsd:anyURI .
+
+tgapkg:CPC a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Construction, Plumbing and Services Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/CPC"^^xsd:anyURI .
+
+tgapkg:CPP a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Property Services Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/CPP"^^xsd:anyURI .
+
+tgapkg:CSC a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Correctional Services Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/CSC"^^xsd:anyURI .
+
+tgapkg:CUA a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Creative Arts and Culture Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/CUA"^^xsd:anyURI .
+
+tgapkg:DEF a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Defence Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/DEF"^^xsd:anyURI .
+
+tgapkg:FBP a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Food, Beverage and Pharmaceutical"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/FBP"^^xsd:anyURI .
+
+tgapkg:FNS a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+	dcterms:creator <https://www.futureskillsorganisation.com.au/> ;
+    skos:prefLabel "Financial Services Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/FNS"^^xsd:anyURI .
+
+tgapkg:FSK a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Foundation Skills Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/FSK"^^xsd:anyURI .
+
+tgapkg:FWP a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+	dcterms:creator <https://skillsinsight.com.au/> ;
+    skos:prefLabel "Forest and Wood Products Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/FWP"^^xsd:anyURI .
+
+tgapkg:HLT a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Health"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/HLT"^^xsd:anyURI .
+
+tgapkg:ICP a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Printing and Graphic Arts"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/ICP"^^xsd:anyURI .
+
+tgapkg:ICT a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+	dcterms:creator <https://www.futureskillsorganisation.com.au/> ;
+    skos:prefLabel "Information and Communications Technology"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/ICT"^^xsd:anyURI .
+
+tgapkg:LGA a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Local Government"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/LGA"^^xsd:anyURI .
+
+tgapkg:MAR a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Maritime Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/MAR"^^xsd:anyURI .
+
+tgapkg:MEA a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Aeroskills Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/MEA"^^xsd:anyURI .
+
+tgapkg:MEM a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Manufacturing and Engineering"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/MEM"^^xsd:anyURI .
+
+tgapkg:MSA07 a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Manufacturing Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/MSA07"^^xsd:anyURI .
+
+tgapkg:MSF a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+	dcterms:creator <https://skillsinsight.com.au/> ;
+    skos:prefLabel "Furnishing Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/MSF"^^xsd:anyURI .
+
+tgapkg:MSL a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Laboratory Operations"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/MSL"^^xsd:anyURI .
+
+tgapkg:MSM a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Manufacturing Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/MSM"^^xsd:anyURI .
+
+tgapkg:MSS a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Sustainability"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/MSS"^^xsd:anyURI .
+
+tgapkg:MST a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+	dcterms:creator <https://skillsinsight.com.au/> ;
+    skos:prefLabel "Textiles, Clothing and Footwear"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/MST"^^xsd:anyURI .
+
+tgapkg:NWP a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "National Water Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/NWP"^^xsd:anyURI .
+
+tgapkg:PMA a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Chemical, Hydrocarbons and Refining"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/PMA"^^xsd:anyURI .
+
+tgapkg:PMB a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Plastics, Rubber and Cablemaking"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/PMB"^^xsd:anyURI .
+
+tgapkg:POL a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Police Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/POL"^^xsd:anyURI .
+
+tgapkg:PPM a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+	dcterms:creator <https://skillsinsight.com.au/> ;
+    skos:prefLabel "Pulp & Paper Manufacturing Industry Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/PPM"^^xsd:anyURI .
+
+tgapkg:PSP a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Public Sector Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/PSP"^^xsd:anyURI .
+
+tgapkg:PUA a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Public Safety"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/PUA"^^xsd:anyURI .
+
+tgapkg:RGR a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+	dcterms:creator <https://skillsinsight.com.au/> ;
+    skos:prefLabel "Racing and Breeding Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/RGR"^^xsd:anyURI .
+
+tgapkg:RII a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Resources and Infrastructure Industry Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/RII"^^xsd:anyURI .
+
+tgapkg:SFI a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+	dcterms:creator <https://skillsinsight.com.au/> ;
+    skos:prefLabel "Seafood Industry"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/SFI"^^xsd:anyURI .
+
+tgapkg:SFL a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Floristry Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/SFL"^^xsd:anyURI .
+
+tgapkg:SHB a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Hairdressing and Beauty Services Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/SHB"^^xsd:anyURI .
+
+tgapkg:SIF a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Funeral Services"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/SIF"^^xsd:anyURI .
+
+tgapkg:SIR a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Retail Services Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/SIR"^^xsd:anyURI .
+
+tgapkg:SIS a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Sport, Fitness and Recreation Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/SIS"^^xsd:anyURI .
+
+tgapkg:SIT a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Tourism, Travel and Hospitality Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/SIT"^^xsd:anyURI .
+
+tgapkg:TAE a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Training and Education Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/TAE"^^xsd:anyURI .
+
+tgapkg:TLI a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Transport and Logistics Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/TLI"^^xsd:anyURI .
+
+tgapkg:UEE a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Electrotechnology Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/UEE"^^xsd:anyURI .
+
+tgapkg:UEG a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Gas Industry Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/UEG"^^xsd:anyURI .
+
+tgapkg:UEP a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Electricity Supply Industry - Generation Sector Training Package"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/UEP"^^xsd:anyURI .
+
+tgapkg:UET a skos:Concept,
+        schema:EducationalOccupationalProgram ;
+    skos:inScheme tgapkgcs: ;
+    skos:prefLabel "Transmission, Distribution and Rail Sector"@en ;
+    skos:topConceptOf tgapkgcs: ;
+    schema:citation "https://training.gov.au/training/details/UET"^^xsd:anyURI .
+
+tgapkgcs: a skos:ConceptScheme ;
+    dcterms:creator ror:03z942k20 ;
+    dcterms:publisher jsa: ;
+    skos:definition "Training packages define the competencies required by different occupations and industries. They describe how these competencies may be packaged into nationally recognised and portable qualifications that comply with the Australian Qualifications Framework (AQF). Training packages are developed by Jobs and Skills Councils (JSCs) to meet the training needs of an industry, or a group of industries. Training packages consist of nationally endorsed and non-endorsed training products, including units of competency, qualifications, skill sets."@en ;
+    skos:hasTopConcept tgapkg:ACM,
+        tgapkg:AHC,
+        tgapkg:AMP,
+        tgapkg:AUM,
+        tgapkg:AUR,
+        tgapkg:AVI,
+        tgapkg:BSB,
+        tgapkg:CHC,
+        tgapkg:CPC,
+        tgapkg:CPP,
+        tgapkg:CSC,
+        tgapkg:CUA,
+        tgapkg:DEF,
+        tgapkg:FBP,
+        tgapkg:FNS,
+        tgapkg:FSK,
+        tgapkg:FWP,
+        tgapkg:HLT,
+        tgapkg:ICP,
+        tgapkg:ICT,
+        tgapkg:LGA,
+        tgapkg:MAR,
+        tgapkg:MEA,
+        tgapkg:MEM,
+        tgapkg:MSA07,
+        tgapkg:MSF,
+        tgapkg:MSL,
+        tgapkg:MSM,
+        tgapkg:MSS,
+        tgapkg:MST,
+        tgapkg:NWP,
+        tgapkg:PMA,
+        tgapkg:PMB,
+        tgapkg:POL,
+        tgapkg:PPM,
+        tgapkg:PSP,
+        tgapkg:PUA,
+        tgapkg:RGR,
+        tgapkg:RII,
+        tgapkg:SFI,
+        tgapkg:SFL,
+        tgapkg:SHB,
+        tgapkg:SIF,
+        tgapkg:SIR,
+        tgapkg:SIS,
+        tgapkg:SIT,
+        tgapkg:TAE,
+        tgapkg:TLI,
+        tgapkg:UEE,
+        tgapkg:UEG,
+        tgapkg:UEP,
+        tgapkg:UET .
+

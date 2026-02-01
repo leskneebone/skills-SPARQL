@@ -1,0 +1,306 @@
+PREFIX ilo: <http://example.com/ILOcoreskills/>
+PREFIX ilocs: <http://example.com/ILOcoreskills>
+PREFIX esco: <http://data.europa.eu/esco/model#>
+PREFIX jsa: <https://linked.data.gov.au/org/jsa>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX ror: <https://ror.org/>
+PREFIX schema: <http://schema.org/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+ror:03tebpn36 a schema:Organization ;
+schema:name "International Labour Organization"@en ;
+schema:url "http://www.ilo.org/global/lang--en/index.htm"^^xsd:anyURI
+.
+
+jsa: a schema:Organization ;
+schema:name "Jobs and Skills Australia"@en ;
+schema:url "https://www.jobsandskills.gov.au"^^xsd:anyURI
+.
+
+ilocs: a skos:ConceptScheme ;
+  dcterms:creator ror:03tebpn36 ;
+  schema:creator ror:03tebpn36 ;
+	dcterms:publisher jsa: ;
+	schema:publisher jsa: ;
+  dcterms:title "ILO core skills"@en ;
+  skos:prefLabel "ILO core skills"@en ;
+  dcterms:created "2025-10-13T02:50:40.690Z"^^xsd:dateTime ;
+  dcterms:modified "2025-10-13T03:50:40.690Z"^^xsd:dateTime ;
+  dcterms:description "ILO core skills"@en ;
+  skos:definition "This Framework provides a shared vision of the ILO Centenary Declaration and its human-centred approach to shaping a secure future of work, with full, productive and freely chosen employment and decent work for all."@en ;
+  dcterms:subject "Skills"@en ;
+  schema:citation "https://www.ilo.org/publications/global-framework-core-skills-life-and-work-21st-century"^^xsd:anyURI ;
+	skos:historyNote "Presented here in the first time in RDF by Jobs and Skills Australia"@en ;
+  skos:hasTopConcept ilo:aab31f64-34cb-4b64-9710-7738371332ab,
+    ilo:07ba5481-13ce-4a38-89e0-6ccf9f2ca23d, ilo:0aef8f2a-4522-4297-a2b0-f25b2be5febd,
+    ilo:7f8c5ce7-ebf6-4942-95ba-500ee093cb9b .
+
+ilo:02248e24-ae5a-414d-afa0-e966e9051cf5 a skos:Concept , esco:Skill ;
+  skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T03:00:52.566Z"^^xsd:dateTime;
+  skos:prefLabel "Energy and water efficiency"@en;
+  skos:broader ilo:07ba5481-13ce-4a38-89e0-6ccf9f2ca23d;
+  skos:definition "The ability to use energy and water efficiently in ways that sustain the natural and physical environment."@en;
+  dcterms:modified "2025-10-13T04:40:41.641Z"^^xsd:dateTime .
+
+ilo:07ba5481-13ce-4a38-89e0-6ccf9f2ca23d a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:55:37.073Z"^^xsd:dateTime;
+  skos:topConceptOf ilocs: ;
+  skos:prefLabel "Basic skills for green jobs"@en;
+  skos:narrower ilo:45268654-9e0a-4d9b-9dfa-ace8acfebb9f,
+    ilo:28f1e958-769c-4b03-b2d2-65c545a491c9, ilo:02248e24-ae5a-414d-afa0-e966e9051cf5;
+  skos:definition "Basic skills for green jobs refers to those skills necessary for adapting oneself to related environmental regulation and requirements to curb climate change. These skills reflect the need for individuals to account for growing demands in a just transition towards environmentally sustainable economies and societies for all."@en;
+  dcterms:modified "2025-10-13T03:04:44.264Z"^^xsd:dateTime .
+
+ilo:0aef8f2a-4522-4297-a2b0-f25b2be5febd a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:55:46.568Z"^^xsd:dateTime;
+  skos:topConceptOf ilocs: ;
+  skos:prefLabel "Basic digital skills"@en;
+  skos:narrower ilo:75c8d47c-13a3-448b-a931-ba1230e4d124,
+    ilo:9d7eccd7-d45e-4feb-a582-bce387e3cdbf, ilo:c8c99997-20a9-4db5-bade-7a3ad7b0724b;
+  skos:definition "Basic digital skills are a set of skills for performing basic tasks involving the use of hardware, software and basic online operations. They enable individuals to gain digital literacy and flourish in society and at the workplace. Basic digital skills can enrich our lives, enabling us to interact with others and access government, commercial and financial services."@en;
+  dcterms:modified "2025-10-13T03:05:35.893Z"^^xsd:dateTime .
+
+ilo:0b33ce6d-00ee-4c32-a0dd-acc2deac1d7c a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:57:22.415Z"^^xsd:dateTime;
+  skos:prefLabel "Problem-solving and decision-making"@en;
+  skos:broader ilo:7f8c5ce7-ebf6-4942-95ba-500ee093cb9b;
+  skos:definition "The ability to identify and assess issues and problems, utilize available resources to generate and “brainstorm” potential solutions, evaluate the pros and cons of solutions and decide on a solution."@en;
+  dcterms:modified "2025-10-13T04:32:05.315Z"^^xsd:dateTime .
+
+ilo:18df18cf-8216-4181-84fa-11eb12647104 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:57:09.158Z"^^xsd:dateTime;
+  skos:prefLabel "Strategic thinking"@en;
+  skos:broader ilo:7f8c5ce7-ebf6-4942-95ba-500ee093cb9b;
+  skos:definition "The ability to think conceptually, imaginatively, systematically and opportunistically, leading to a clearly defined set of goals, plans, and the new ideas required to survive and thrive in competitive and changing environments."@en;
+  dcterms:modified "2025-10-13T04:37:50.810Z"^^xsd:dateTime .
+
+ilo:1e7be12d-b28b-4207-be7b-8bc09bb9f464 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:58:41.408Z"^^xsd:dateTime;
+  skos:prefLabel "Collaboration and teamwork"@en;
+  skos:broader ilo:aab31f64-34cb-4b64-9710-7738371332ab;
+  skos:definition """The ability to work in diverse teams effectively and respectfully, assuming shared 
+responsibility for outputs and demonstrating willingness and flexibility. The ability to identify and acknowledge the feelings, experiences and viewpoints of others, showing care, affection and kindness."""@en;
+  dcterms:modified "2025-10-13T03:55:43.283Z"^^xsd:dateTime .
+
+ilo:258daf04-2b68-4f42-924a-619eb2c8eb27 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T04:01:35.616Z"^^xsd:dateTime;
+  skos:prefLabel "Numeracy"@en;
+  skos:broader ilo:e75c6ce8-571e-488d-8d4c-fc151db0605f;
+  skos:definition """the ability to understand and have the confidence and skill to work with 
+numbers and mathematical approaches in all aspects of life."""@en;
+  dcterms:modified "2025-10-13T04:05:47.195Z"^^xsd:dateTime .
+
+ilo:28947764-af4f-4724-97d5-394a939eda65 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T04:02:30.982Z"^^xsd:dateTime;
+  skos:prefLabel "Cultural literacy"@en;
+  skos:broader ilo:e75c6ce8-571e-488d-8d4c-fc151db0605f;
+  skos:definition """the ability to understand the perspectives of people from diverse 
+backgrounds instead of considering one's cultural beliefs and practices as the correct ones."""@en;
+  dcterms:modified "2025-10-13T04:03:42.100Z"^^xsd:dateTime .
+
+ilo:28f1e958-769c-4b03-b2d2-65c545a491c9 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T03:00:41.771Z"^^xsd:dateTime;
+  skos:prefLabel "Waste reduction and waste management"@en;
+  skos:broader ilo:07ba5481-13ce-4a38-89e0-6ccf9f2ca23d;
+  skos:definition "The ability to use, manage and dispose of resources in ways that sustain the natural and physical environment."@en;
+  dcterms:modified "2025-10-13T04:40:13.306Z"^^xsd:dateTime .
+
+ilo:36c213a7-8642-4a00-a739-170ad7ed2623 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:58:30.944Z"^^xsd:dateTime;
+  skos:prefLabel "Communication"@en;
+  skos:broader ilo:aab31f64-34cb-4b64-9710-7738371332ab;
+  skos:definition "The ability to listen effectively in order to decipher meaning; articulate thoughts and ideas effectively; exchange information; and express opinions, desires, needs and fears using oral, written and non-verbal skills in diverse environments for a range of purposes."@en;
+  dcterms:modified "2025-10-13T03:07:58.052Z"^^xsd:dateTime .
+
+ilo:45268654-9e0a-4d9b-9dfa-ace8acfebb9f a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T03:00:30.077Z"^^xsd:dateTime;
+  skos:prefLabel "Environmental awareness"@en;
+  skos:broader ilo:07ba5481-13ce-4a38-89e0-6ccf9f2ca23d;
+  skos:definition "The ability to understand and demonstrate an awareness of the physical environment and the need for it to be protected."@en;
+  dcterms:modified "2025-10-13T04:39:42.481Z"^^xsd:dateTime .
+
+ilo:4b959dfa-e9da-440a-8823-4bd7ec13e9dd a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:57:53.579Z"^^xsd:dateTime;
+  skos:prefLabel "Collect, organize and analyse information"@en;
+  skos:broader ilo:7f8c5ce7-ebf6-4942-95ba-500ee093cb9b;
+  skos:definition "The ability to search, select, evaluate and organize information in order to effectively and efficiently mobilize relevant information. The ability to re-structure and model sourced information to produce personal interpretations of data."@en;
+  dcterms:modified "2025-10-13T04:30:07.100Z"^^xsd:dateTime .
+
+ilo:4ce7ffeb-c4e2-458a-ae91-25429d27858b a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T04:02:45.500Z"^^xsd:dateTime;
+  skos:prefLabel "Civic literacy"@en;
+  skos:broader ilo:e75c6ce8-571e-488d-8d4c-fc151db0605f;
+  skos:definition """the ability to participate effectively in civic life through knowing the rights 
+and obligations of residents at local, state and national levels."""@en;
+  dcterms:modified "2025-10-13T04:03:17.117Z"^^xsd:dateTime .
+
+ilo:541d523f-320b-4062-9a95-a64d4075974b a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T04:01:24.272Z"^^xsd:dateTime;
+  skos:prefLabel "Literacy"@en;
+  skos:broader ilo:e75c6ce8-571e-488d-8d4c-fc151db0605f;
+  skos:definition """the ability to understand, identify, interpret, create and communicate effectively 
+utilizing inscribed, printed, or electronic signs or symbols for representing language."""@en;
+  dcterms:modified "2025-10-13T04:06:28.421Z"^^xsd:dateTime .
+
+ilo:5f3c6f76-0e34-4f1f-8b85-c42063822117 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:56:57.626Z"^^xsd:dateTime;
+  skos:prefLabel "Creative and innovative thinking"@en;
+  skos:broader ilo:7f8c5ce7-ebf6-4942-95ba-500ee093cb9b;
+  skos:definition "The ability to utilize a wide range of idea creation techniques, so as to generate, articulate and apply inventive and original ideas and perspectives, thereby solving complex tasks and life issues through original ideas."@en;
+  dcterms:modified "2025-10-13T04:30:38.584Z"^^xsd:dateTime .
+
+ilo:60f14c34-9fc4-420c-8fd5-52a0303495bf a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T04:02:18.403Z"^^xsd:dateTime;
+  skos:prefLabel "Scientific literacy"@en;
+  skos:broader ilo:e75c6ce8-571e-488d-8d4c-fc151db0605f;
+  skos:definition """the ability to understand those scientific concepts and processes 
+required for personal decision-making, participation in civic and cultural affairs, and economic productivity."""@en;
+  dcterms:modified "2025-10-13T04:04:07.399Z"^^xsd:dateTime .
+
+ilo:6663c8a1-69d1-47a2-98bf-7b7af92b9c20 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:58:02.634Z"^^xsd:dateTime;
+  skos:prefLabel "Planning and organizing"@en;
+  skos:broader ilo:7f8c5ce7-ebf6-4942-95ba-500ee093cb9b;
+  skos:definition "The ability to plan and organize tasks in order to fulfil the job responsibilities satisfactorily within a given time and appropriately for a complex environment and situation."@en;
+  dcterms:modified "2025-10-13T04:31:31.451Z"^^xsd:dateTime .
+
+ilo:66a4a5b6-6014-40e0-a99d-3d1a808aa125 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:57:35.439Z"^^xsd:dateTime;
+  skos:prefLabel "Self-reflection and learning to learn"@en;
+  skos:broader ilo:7f8c5ce7-ebf6-4942-95ba-500ee093cb9b;
+  skos:definition "Self-reflection is the ability to apply reason to thought and behaviour, reflecting upon personal characteristics, assessing progress and identifying areas of for self-improvement. Learning to learn is the ability to apply the cognitive process of personal learning (what and how we learn) and to make use of guidance to continuously pursue learning new knowledge and skills and strive for improvement."@en;
+  dcterms:modified "2025-10-13T04:36:31.680Z"^^xsd:dateTime .
+
+ilo:730cd8a2-e98c-42fe-ba1e-8646b29d33d3 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:58:57.804Z"^^xsd:dateTime;
+  skos:prefLabel "Conflict resolution and negotiation"@en;
+  skos:broader ilo:aab31f64-34cb-4b64-9710-7738371332ab;
+  skos:definition "The ability to reach a consensus between divergent interests by utilizing logical argument and influencing others to cooperate, thereby resolving disagreement or dispute."@en;
+  dcterms:modified "2025-10-13T03:56:12.840Z"^^xsd:dateTime .
+
+ilo:75c8d47c-13a3-448b-a931-ba1230e4d124 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:59:30.825Z"^^xsd:dateTime;
+  skos:prefLabel "Use basic hardware"@en;
+  skos:broader ilo:0aef8f2a-4522-4297-a2b0-f25b2be5febd;
+  skos:definition "The ability to operate a personal computer, tablet, mobile phone or other digital device using the hardware functionalities, such as a keyboard, mouse, navigation buttons and touchscreen technology, where appropriate."@en;
+  dcterms:modified "2025-10-13T04:43:10.493Z"^^xsd:dateTime .
+
+ilo:7eab771c-6301-4126-b596-07bcf9819360 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:58:10.769Z"^^xsd:dateTime;
+  skos:prefLabel "Career management"@en;
+  skos:broader ilo:7f8c5ce7-ebf6-4942-95ba-500ee093cb9b;
+  skos:definition "The ability to establish, plan and work towards the achievement of short- and long-term goals having both tangible and intangible success criteria. The ability to exchange information and ideas with individuals and groups that share a common interest, developing relationships for mutual benefit. The ability to use labour market information and intelligence to help identify work opportunities, understand work contexts and work conditions and apply job-search skills."@en;
+  dcterms:modified "2025-10-13T04:29:02.926Z"^^xsd:dateTime .
+
+ilo:7f8c5ce7-ebf6-4942-95ba-500ee093cb9b a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:56:01.981Z"^^xsd:dateTime;
+  skos:topConceptOf ilocs: ;
+  skos:prefLabel "Cognitive and metacognitive skills"@en;
+  skos:narrower ilo:e75c6ce8-571e-488d-8d4c-fc151db0605f,
+    ilo:da8a19e7-758f-4a26-8bd0-78730610d912, ilo:5f3c6f76-0e34-4f1f-8b85-c42063822117,
+    ilo:18df18cf-8216-4181-84fa-11eb12647104, ilo:0b33ce6d-00ee-4c32-a0dd-acc2deac1d7c,
+    ilo:66a4a5b6-6014-40e0-a99d-3d1a808aa125, ilo:4b959dfa-e9da-440a-8823-4bd7ec13e9dd,
+    ilo:6663c8a1-69d1-47a2-98bf-7b7af92b9c20, ilo:7eab771c-6301-4126-b596-07bcf9819360;
+  skos:definition "Cognitive skills refer to the brain's ability to process new information, understand, remember and use it. By developing cognitive skills, an individual can better manage the process of analysing new information and apply it to other contexts more quickly and efficiently."@en;
+  dcterms:modified "2025-10-13T03:03:45.102Z"^^xsd:dateTime .
+
+ilo:9d7eccd7-d45e-4feb-a582-bce387e3cdbf a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:59:40.735Z"^^xsd:dateTime;
+  skos:prefLabel "Use basic software"@en ;
+	skos:definition "Use basic software"@en ;
+  skos:broader ilo:0aef8f2a-4522-4297-a2b0-f25b2be5febd .
+
+ilo:aab31f64-34cb-4b64-9710-7738371332ab a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:55:22.576Z"^^xsd:dateTime;
+  skos:topConceptOf ilocs: ;
+  skos:prefLabel "Social and emotional skills"@en;
+  skos:narrower ilo:36c213a7-8642-4a00-a739-170ad7ed2623,
+    ilo:1e7be12d-b28b-4207-be7b-8bc09bb9f464, ilo:730cd8a2-e98c-42fe-ba1e-8646b29d33d3,
+    ilo:f3547875-9204-49ea-809c-56c56c3d8c23;
+  skos:definition """Social and emotional skills refer to one's abilities to regulate one's thoughts, emotions and behaviour (OECD 2018). These skills dynamically interact with character traits, beliefs, values, mind-sets and attitudes, and as such are congruent with the setting, environment and society in which an individual 
+lives. They are fundamental to effective social interaction at work and have an important role to play in the learning process. They also facilitate the development and application of cognitive and metacognitive skills."""@en;
+  dcterms:modified "2025-10-13T03:02:38.955Z"^^xsd:dateTime .
+
+ilo:ae95c27e-26a1-4cb8-9141-1a3ee7034c06 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T04:02:04.095Z"^^xsd:dateTime;
+  skos:prefLabel "Financial literacy"@en;
+  skos:broader ilo:e75c6ce8-571e-488d-8d4c-fc151db0605f;
+  skos:definition "the ability to understand and apply financial management skills appropriately and to be able to make a financial plan, manage debt, calculate interest, understand the time value of money in order to make informed and effective decisions about personal financial resources."@en;
+  dcterms:modified "2025-10-13T04:04:41.209Z"^^xsd:dateTime .
+
+ilo:c8c99997-20a9-4db5-bade-7a3ad7b0724b a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:59:56.706Z"^^xsd:dateTime;
+  skos:prefLabel "Operate safely in an online environment"@en;
+  skos:broader ilo:0aef8f2a-4522-4297-a2b0-f25b2be5febd;
+  skos:definition """The ability to safely use basic online functions, applications, digital learning and 
+communication platforms and media to explore, analyse and share information safely and ethically."""@en;
+  dcterms:modified "2025-10-13T04:42:05.415Z"^^xsd:dateTime .
+
+ilo:d852ca1b-52a6-4af4-b362-40a363942c99 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T04:01:48.868Z"^^xsd:dateTime;
+  skos:prefLabel "Health literacy"@en;
+  skos:broader ilo:e75c6ce8-571e-488d-8d4c-fc151db0605f;
+  skos:definition """the ability to gain access to, understand and utilize information in ways 
+which promote and maintain good health."""@en;
+  dcterms:modified "2025-10-13T04:05:02.923Z"^^xsd:dateTime .
+
+ilo:da8a19e7-758f-4a26-8bd0-78730610d912 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:56:42.429Z"^^xsd:dateTime;
+  skos:prefLabel "Analytical and critical thinking"@en;
+  skos:broader ilo:7f8c5ce7-ebf6-4942-95ba-500ee093cb9b;
+  skos:definition "The ability to assess issues appropriately and adequately, and analyse relevant information to form an opinion or take an individual or a collective decision. The ability to think clearly, logically and rationally; to evaluate and interpret information; and to objectively analyse and evaluate an issue to make a judgement."@en;
+  dcterms:modified "2025-10-13T04:28:11.717Z"^^xsd:dateTime .
+
+ilo:e75c6ce8-571e-488d-8d4c-fc151db0605f a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:56:29.748Z"^^xsd:dateTime;
+  skos:prefLabel "Foundational literacies"@en;
+  skos:broader ilo:7f8c5ce7-ebf6-4942-95ba-500ee093cb9b;
+  skos:narrower ilo:541d523f-320b-4062-9a95-a64d4075974b,
+    ilo:258daf04-2b68-4f42-924a-619eb2c8eb27, ilo:d852ca1b-52a6-4af4-b362-40a363942c99,
+    ilo:ae95c27e-26a1-4cb8-9141-1a3ee7034c06, ilo:60f14c34-9fc4-420c-8fd5-52a0303495bf,
+    ilo:28947764-af4f-4724-97d5-394a939eda65, ilo:4ce7ffeb-c4e2-458a-ae91-25429d27858b;
+  skos:definition "Literacy, numeracy, health, financial, scientific, cultural, and civic."@en;
+  dcterms:modified "2025-10-13T04:31:07.200Z"^^xsd:dateTime .
+
+ilo:f3547875-9204-49ea-809c-56c56c3d8c23 a skos:Concept , esco:Skill ;
+skos:inScheme ilocs: ;
+  dcterms:created "2025-10-13T02:59:08.052Z"^^xsd:dateTime;
+  skos:prefLabel "Emotional intelligence"@en;
+  skos:broader ilo:aab31f64-34cb-4b64-9710-7738371332ab;
+  skos:definition "The ability to identify, understand and manage one's own emotions, as well as helping others to do the same. It can comprise of four domains: self-awareness, self-management, social awareness, and relationship management, which together have 12 competencies, including empathy, adaptability, achievement orientation and positive outlook."@en;
+  dcterms:modified "2025-10-13T03:57:03.653Z"^^xsd:dateTime .

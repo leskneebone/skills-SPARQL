@@ -1,0 +1,3048 @@
+# <https://data.jobsandskills.gov.au/dataset/edud>
+
+PREFIX dcterms:  <http://purl.org/dc/terms/>
+PREFIX ex:       <https://example.com/>
+PREFIX jsa:      <https://linked.data.gov.au/org/jsa>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ror:      <https://ror.org/>
+PREFIX schema:   <https://schema.org/>
+PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
+PREFIX tgaind:   <https://training.gov.au/tgaIndustry/>
+PREFIX tgaindcs: <https://training.gov.au/tgaIndustry>
+PREFIX tgaqual:   <https://training.gov.au/tgaQualifications/>
+PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
+
+ror:03z942k20 a schema:Organization ;
+    schema:alternateName "Australian Department of Education"@en ;
+    schema:name "Department of Education"@en ;
+    schema:url "https://www.education.gov.au/"^^xsd:anyURI .
+
+jsa: a schema:Organization ;
+    schema:alternateName "JSA"@en ;
+    schema:name "Jobs and Skills Australia"@en ;
+    schema:url "https://www.jobsandskills.gov.au"^^xsd:anyURI .
+
+tgaind:10 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.696000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Border Protection"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:100 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.394000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Real Estate"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:101 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.427000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Recreation Services"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:102 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.463000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Recreational Sport"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SIS10122,
+        tgaqual:SIS20419,
+        tgaqual:SIS30619,
+        tgaqual:SIS40621 .
+
+tgaind:103 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.495000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Retail Management"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SIR50116,
+        tgaqual:SIR50317,
+        tgaqual:SIR60221 .
+
+tgaind:104 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.529000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Retail Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SHB20121,
+        tgaqual:SIR10116,
+        tgaqual:SIR20216,
+        tgaqual:SIR30216,
+        tgaqual:SIR40316,
+        tgaqual:SIR50217 .
+
+tgaind:105 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.564000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Road Transport"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:TLI21221,
+        tgaqual:TLI31222,
+        tgaqual:TLI40122,
+        tgaqual:TLI40221,
+        tgaqual:TLI50119,
+        tgaqual:TLI60222 .
+
+tgaind:106 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.603000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Seafood Processing"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:107 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.639000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Seafood Sales and Distribution"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:108 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.672000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Security Operations"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPP30619,
+        tgaqual:CPP31418 .
+
+tgaind:109 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.706000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Staging"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:11 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.742000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Broadcasting Production"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:110 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.741000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Stevedoring"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:TLI30219 .
+
+tgaind:111 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.779000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Superannuation"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:112 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.817000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Systems Analysis and Design"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:113 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.858000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Telecommunications Engineering"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:114 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.894000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Telecommunications Equipment"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:UEE20720 .
+
+tgaind:115 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.928000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Television and Radio Production"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:UEE21220 .
+
+tgaind:116 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.960000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Textiles"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MST30222 .
+
+tgaind:117 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.992000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Theatre"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CUA40220,
+        tgaqual:CUA40520,
+        tgaqual:CUA50220 .
+
+tgaind:118 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.028000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Training"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:TAE80113,
+        tgaqual:TAE80213 .
+
+tgaind:119 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.065000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Transport"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:TLI30325,
+        tgaqual:TLI40724 .
+
+tgaind:12 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.783000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Broking"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FNS50322 .
+
+tgaind:120 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.098000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Utilities Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:UEE21420,
+        tgaqual:UET30721 .
+
+tgaind:121 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.135000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Visual Arts and Craft"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CUA10320,
+        tgaqual:CUA20320,
+        tgaqual:CUA51120,
+        tgaqual:CUA51220,
+        tgaqual:CUA60720 .
+
+tgaind:122 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.169000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Warehousing and Storage"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:123 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.207000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Waste Management"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:124 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.246000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Water Monitoring and Treatment"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:125 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.282000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Weed Management"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:126 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.321000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Electrotechnology"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:UEE20920,
+        tgaqual:UEE21620,
+        tgaqual:UEE21720,
+        tgaqual:UEE21920,
+        tgaqual:UEE22020,
+        tgaqual:UEE22120,
+        tgaqual:UEE30120,
+        tgaqual:UEE30220,
+        tgaqual:UEE30320,
+        tgaqual:UEE30420,
+        tgaqual:UEE30620,
+        tgaqual:UEE30720,
+        tgaqual:UEE30820,
+        tgaqual:UEE30920,
+        tgaqual:UEE31020,
+        tgaqual:UEE31220,
+        tgaqual:UEE31420,
+        tgaqual:UEE32120,
+        tgaqual:UEE32225,
+        tgaqual:UEE33020,
+        tgaqual:UEE40120,
+        tgaqual:UEE40220,
+        tgaqual:UEE40320,
+        tgaqual:UEE40420,
+        tgaqual:UEE40520,
+        tgaqual:UEE40620,
+        tgaqual:UEE40720,
+        tgaqual:UEE40820,
+        tgaqual:UEE40920,
+        tgaqual:UEE41020,
+        tgaqual:UEE41120,
+        tgaqual:UEE41223,
+        tgaqual:UEE41520,
+        tgaqual:UEE41720,
+        tgaqual:UEE42120,
+        tgaqual:UEE42220,
+        tgaqual:UEE42622,
+        tgaqual:UEE42725,
+        tgaqual:UEE42825,
+        tgaqual:UEE42925,
+        tgaqual:UEE43020,
+        tgaqual:UEE43220,
+        tgaqual:UEE43322,
+        tgaqual:UEE50122,
+        tgaqual:UEE50220,
+        tgaqual:UEE50325,
+        tgaqual:UEE50420,
+        tgaqual:UEE50520,
+        tgaqual:UEE50722,
+        tgaqual:UEE50920,
+        tgaqual:UEE51020,
+        tgaqual:UEE51120,
+        tgaqual:UEE51225,
+        tgaqual:UEE53020,
+        tgaqual:UEE60220,
+        tgaqual:UEE60620,
+        tgaqual:UEE60922,
+        tgaqual:UEE61222,
+        tgaqual:UEE61720,
+        tgaqual:UEE62022,
+        tgaqual:UEE62122,
+        tgaqual:UEE62220,
+        tgaqual:UEE62320,
+        tgaqual:UEE62525,
+        tgaqual:UEE63020 .
+
+tgaind:127 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.354000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Automotive Service and Repair"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AUR10120,
+        tgaqual:AUR20116,
+        tgaqual:AUR20220,
+        tgaqual:AUR20320,
+        tgaqual:AUR20420,
+        tgaqual:AUR20520,
+        tgaqual:AUR20720,
+        tgaqual:AUR20820,
+        tgaqual:AUR20920,
+        tgaqual:AUR21020,
+        tgaqual:AUR21120,
+        tgaqual:AUR21220,
+        tgaqual:AUR21520,
+        tgaqual:AUR21820,
+        tgaqual:AUR21920,
+        tgaqual:AUR22021,
+        tgaqual:AUR30116,
+        tgaqual:AUR30220,
+        tgaqual:AUR30320,
+        tgaqual:AUR30420,
+        tgaqual:AUR30520,
+        tgaqual:AUR30620,
+        tgaqual:AUR30720,
+        tgaqual:AUR30820,
+        tgaqual:AUR30920,
+        tgaqual:AUR31020,
+        tgaqual:AUR31120,
+        tgaqual:AUR31220,
+        tgaqual:AUR31316,
+        tgaqual:AUR31420,
+        tgaqual:AUR31520,
+        tgaqual:AUR31820,
+        tgaqual:AUR32120,
+        tgaqual:AUR32220,
+        tgaqual:AUR32320,
+        tgaqual:AUR32420,
+        tgaqual:AUR32518,
+        tgaqual:AUR32721,
+        tgaqual:AUR40116,
+        tgaqual:AUR40216,
+        tgaqual:AUR40320,
+        tgaqual:AUR40520,
+        tgaqual:AUR40620,
+        tgaqual:AUR40720,
+        tgaqual:AUR40820,
+        tgaqual:AUR50116,
+        tgaqual:AUR50216,
+        tgaqual:MSM31022 .
+
+tgaind:128 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.388000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Foundation/Construction Drilling"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:129 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.422000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Mineral Exploration Drilling"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:13 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.823000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Building Design"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPP40121,
+        tgaqual:CPP50921,
+        tgaqual:CPP60421,
+        tgaqual:CPP80221 .
+
+tgaind:130 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.455000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Courts"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:PSP40216,
+        tgaqual:PSP50216 .
+
+tgaind:131 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.488000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Screen and Media"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:132 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.520000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Fire Protection"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:133 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.554000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Landscaping"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC21624,
+        tgaqual:AHC30921,
+        tgaqual:AHC42021,
+        tgaqual:AHC42421,
+        tgaqual:AHC50621,
+        tgaqual:AHC52021 .
+
+tgaind:134 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.590000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Accounting and Bookkeeping"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FNS40222,
+        tgaqual:FNS60222 .
+
+tgaind:135 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.626000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Ground Operations"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MEA50219 .
+
+tgaind:136 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.659000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Information Technology"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:137 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.693000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Property Management"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPP40521,
+        tgaqual:CPP40821,
+        tgaqual:CPP50721 .
+
+tgaind:138 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.727000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Local Government Operational Works"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:139 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.763000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Mining and Drilling"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:RII21222,
+        tgaqual:RII41319,
+        tgaqual:RII41522 .
+
+tgaind:14 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.865000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Building Trades"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPC20822,
+        tgaqual:CPC30220,
+        tgaqual:CPC30320,
+        tgaqual:CPC30420,
+        tgaqual:CPC30620,
+        tgaqual:CPC30720,
+        tgaqual:CPC30820,
+        tgaqual:CPC30920,
+        tgaqual:CPC31020,
+        tgaqual:CPC31120,
+        tgaqual:CPC31220,
+        tgaqual:CPC31320,
+        tgaqual:CPC31420,
+        tgaqual:CPC31920,
+        tgaqual:CPC32320,
+        tgaqual:CPC32420,
+        tgaqual:CPC32620,
+        tgaqual:CPC32720,
+        tgaqual:CPC32820,
+        tgaqual:CPC40120,
+        tgaqual:CPC40920,
+        tgaqual:CPC41020,
+        tgaqual:CPC50220,
+        tgaqual:CPC50722,
+        tgaqual:MEM30819 .
+
+tgaind:140 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.799000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Trenchless and Directional Drilling"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:141 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.837000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Minerals Processing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:RII40520,
+        tgaqual:RII50315 .
+
+tgaind:142 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.879000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Youth Work"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CHC40521 .
+
+tgaind:143 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.920000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Animal Training"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:144 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.959000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Entertainment Customer Service"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:145 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:22.997000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Electronics and Computer Systems"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:UEE20520 .
+
+tgaind:146 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.035000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Local Government Planning"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:147 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.073000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Companion Animal Services, Pet Care and Animal Shelters"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:ACM10121,
+        tgaqual:ACM20121,
+        tgaqual:ACM30122 .
+
+tgaind:148 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.110000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Fashion"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:149 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.149000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Customer Service"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:15 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.901000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Business Administration"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MSS30322,
+        tgaqual:MSS40322,
+        tgaqual:MSS50322,
+        tgaqual:MSS80322,
+        tgaqual:MSS80422 .
+
+tgaind:150 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.189000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Occupational Health & Safety"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:BSB30719,
+        tgaqual:BSB41419 .
+
+tgaind:151 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.227000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Security and Risk Management"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:152 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.267000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Workers Compensation"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FNS30220 .
+
+tgaind:153 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.307000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Asset Security"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPP20319,
+        tgaqual:CPP30519 .
+
+tgaind:154 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.350000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Asset Maintenance"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPP30321 .
+
+tgaind:155 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.393000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Government Security Management"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:PSP50316 .
+
+tgaind:156 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.434000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Interior Design"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MSF50222,
+        tgaqual:MSF60122 .
+
+tgaind:157 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.472000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Government Regulation"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:PSP40716 .
+
+tgaind:158 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.507000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Services Industry"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:159 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.540000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Farming"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC32724,
+        tgaqual:AHC32822 .
+
+tgaind:16 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.944000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Business Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:BSB60220,
+        tgaqual:BSB80220,
+        tgaqual:BSB80320,
+        tgaqual:FNS40821 .
+
+tgaind:160 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.574000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Scenery and Set Construction"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:161 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.619000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Meat Processing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AMP30116,
+        tgaqual:AMP30216,
+        tgaqual:AMP30322,
+        tgaqual:AMP30421,
+        tgaqual:AMP30516,
+        tgaqual:AMP30622,
+        tgaqual:AMP31116,
+        tgaqual:AMP31216,
+        tgaqual:AMP40222,
+        tgaqual:AMP40522,
+        tgaqual:AMP60122 .
+
+tgaind:162 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.668000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Ancillary Health Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:HLT23221 .
+
+tgaind:163 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.705000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Laboratory Operations"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MSL20122,
+        tgaqual:MSL40122,
+        tgaqual:MSL50122,
+        tgaqual:MSL60122 .
+
+tgaind:164 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.742000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Fishing Charter Operations"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:165 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.775000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Oil and Gas Drilling"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:RII21120,
+        tgaqual:RII32020,
+        tgaqual:RII32220,
+        tgaqual:RII41120,
+        tgaqual:RII41220,
+        tgaqual:RII50820 .
+
+tgaind:166 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.808000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Services to Mining"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:RII30719 .
+
+tgaind:167 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.844000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Multimedia Technology"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:168 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.880000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Chemical, Hydrocarbon and Oil Refining"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:169 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.918000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Property"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPP31218,
+        tgaqual:CPP40421,
+        tgaqual:CPP41119,
+        tgaqual:CPP41319 .
+
+tgaind:17 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.981000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Civil Construction"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:RII20720,
+        tgaqual:RII20819,
+        tgaqual:RII30820,
+        tgaqual:RII30920,
+        tgaqual:RII41421,
+        tgaqual:RII50420,
+        tgaqual:RII60620 .
+
+tgaind:170 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.952000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Clothing Production"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:171 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:23.986000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Laundry and Dry Cleaning Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MST30622,
+        tgaqual:MST30922 .
+
+tgaind:172 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.021000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Leather Production"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MST20319,
+        tgaqual:MST30519 .
+
+tgaind:173 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.056000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Wastewater Treatment"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:174 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.094000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Water Administration"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:175 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.134000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Electricity Distribution"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:UET20321,
+        tgaqual:UET30621,
+        tgaqual:UET30821 .
+
+tgaind:176 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.171000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Quarrying"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:177 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.210000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Interactive Digital Media"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:178 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.247000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Boating Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MEM10222,
+        tgaqual:MEM20322,
+        tgaqual:MEM30719,
+        tgaqual:MEM30919,
+        tgaqual:MEM40222 .
+
+tgaind:179 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.293000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Local Government Regulation"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:PSP40522,
+        tgaqual:PSP50522 .
+
+tgaind:18 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.015000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Coal Mining"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:RII20320,
+        tgaqual:RII50920,
+        tgaqual:RII60720 .
+
+tgaind:180 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.330000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Aboriginal and Torres Strait Islander Environmental Health"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:181 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.368000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Sustainability"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MSS40122,
+        tgaqual:MSS50122 .
+
+tgaind:182 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.402000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Banking"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:183 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.442000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Agriculture"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC40122,
+        tgaqual:AHC50122,
+        tgaqual:AMP80115,
+        tgaqual:AMP80215 .
+
+tgaind:184 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.481000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Systems Electrics"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:185 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.519000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Technical Engineering"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MEM30522,
+        tgaqual:MEM40422 .
+
+tgaind:186 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.558000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Graphic Design"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CUA50720,
+        tgaqual:CUA60320,
+        tgaqual:CUA60420 .
+
+tgaind:187 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.595000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Recordkeeping"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:188 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.633000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Aquaculture"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SFI20119,
+        tgaqual:SFI30119,
+        tgaqual:SFI40119,
+        tgaqual:SFI50119 .
+
+tgaind:189 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.669000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Information Technology (Networking)"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:19 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.057000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Commerce"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:190 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.705000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Telecommunications Computer Systems"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:191 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.739000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Film Production"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:192 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.776000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Financial Planning"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FNS20120 .
+
+tgaind:193 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.809000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Small Business"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:BSB30220 .
+
+tgaind:194 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.843000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Information Technology Programming"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:195 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.882000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Seismic Drilling"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:196 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.920000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Personal Injury Management"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:197 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.956000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Governance"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:BSB41021,
+        tgaqual:LGA50220 .
+
+tgaind:198 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:24.991000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Footwear"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MST30416,
+        tgaqual:MST40316 .
+
+tgaind:199 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.025000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Water Well Drilling"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:2 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.299000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Aboriginal and Torres Strait Islander Health"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:HLT20121,
+        tgaqual:HLT30121,
+        tgaqual:HLT40121,
+        tgaqual:HLT40221,
+        tgaqual:HLT50121,
+        tgaqual:HLT50221,
+        tgaqual:HLT60121 .
+
+tgaind:20 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.098000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Community Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CHC22015,
+        tgaqual:CHC30121,
+        tgaqual:CHC30221,
+        tgaqual:CHC32015,
+        tgaqual:CHC33021,
+        tgaqual:CHC35021,
+        tgaqual:CHC40221,
+        tgaqual:CHC40321,
+        tgaqual:CHC41015,
+        tgaqual:CHC41115,
+        tgaqual:CHC41215,
+        tgaqual:CHC42021,
+        tgaqual:CHC42121,
+        tgaqual:CHC42315,
+        tgaqual:CHC43015,
+        tgaqual:CHC43121,
+        tgaqual:CHC43215,
+        tgaqual:CHC43315,
+        tgaqual:CHC43415,
+        tgaqual:CHC43515,
+        tgaqual:CHC44015,
+        tgaqual:CHC50121,
+        tgaqual:CHC50221,
+        tgaqual:CHC50321,
+        tgaqual:CHC50421,
+        tgaqual:CHC50521,
+        tgaqual:CHC52021,
+        tgaqual:CHC52121,
+        tgaqual:CHC53215,
+        tgaqual:CHC53315,
+        tgaqual:CHC53415,
+        tgaqual:CHC82015 .
+
+tgaind:200 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.060000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Automotive Industry"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:201 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.094000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Aboriginal or Torres Strait Islander Cultural Arts"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CUA10220,
+        tgaqual:CUA20420,
+        tgaqual:CUA30520,
+        tgaqual:CUA40620,
+        tgaqual:CUA50620 .
+
+tgaind:202 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.128000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Agriculture (Miscellaneous)"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC31824,
+        tgaqual:AHC51920 .
+
+tgaind:203 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.164000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Aircraft Maintenance"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MEA20418,
+        tgaqual:MEA20518,
+        tgaqual:MEA20622,
+        tgaqual:MEA30118,
+        tgaqual:MEA30222,
+        tgaqual:MEA30322,
+        tgaqual:MEA40618,
+        tgaqual:MEA40718,
+        tgaqual:MEA40922,
+        tgaqual:MEA41122,
+        tgaqual:MEA41222,
+        tgaqual:MEA41322,
+        tgaqual:MEA50118,
+        tgaqual:MEA50422,
+        tgaqual:MEA60222,
+        tgaqual:MEA60322 .
+
+tgaind:204 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.200000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Ambulance Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:HLT21020 .
+
+tgaind:205 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.234000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Animal Care and Management"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:ACM30219,
+        tgaqual:ACM40818,
+        tgaqual:ACM50119 .
+
+tgaind:206 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.266000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Animal Regulation and Management"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:ACM40122 .
+
+tgaind:207 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.300000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Arboriculture"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC20520,
+        tgaqual:AHC30824,
+        tgaqual:AHC50524,
+        tgaqual:AHC60524,
+        tgaqual:AHC80120 .
+
+tgaind:208 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.333000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Arts and Recreation Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CUA40118,
+        tgaqual:CUA50118,
+        tgaqual:CUA51320 .
+
+tgaind:209 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.367000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Baking"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FBP10221,
+        tgaqual:FBP20221,
+        tgaqual:FBP30321,
+        tgaqual:FBP30421,
+        tgaqual:FBP30521,
+        tgaqual:FBP40221 .
+
+tgaind:21 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.136000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Companion Animal Training"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:210 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.401000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Building and Construction"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPC10120,
+        tgaqual:CPC20120,
+        tgaqual:CPC20220,
+        tgaqual:CPC32920,
+        tgaqual:CPC50620,
+        tgaqual:CPC60121,
+        tgaqual:CPC60220 .
+
+tgaind:211 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.438000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Bushfire Protection"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPP51222 .
+
+tgaind:212 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.471000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Community Pharmacy"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SIR20116,
+        tgaqual:SIR30116,
+        tgaqual:SIR40116,
+        tgaqual:SIR40216 .
+
+tgaind:213 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.503000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Community Services Management"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CHC62015 .
+
+tgaind:214 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.538000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Complementary/Alternative Health"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:HLT42021,
+        tgaqual:HLT52021,
+        tgaqual:HLT52115,
+        tgaqual:HLT52215,
+        tgaqual:HLT52315,
+        tgaqual:HLT52415,
+        tgaqual:HLT52515,
+        tgaqual:HLT52615,
+        tgaqual:HLT62615 .
+
+tgaind:215 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.572000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Construction Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPC40320,
+        tgaqual:CPC40820,
+        tgaqual:CPC50320 .
+
+tgaind:216 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.608000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Correctional Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CSC20122,
+        tgaqual:CSC30122,
+        tgaqual:CSC30222,
+        tgaqual:CSC40122,
+        tgaqual:CSC50122,
+        tgaqual:CSC60120 .
+
+tgaind:217 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.643000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Crocodiles"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SFI30520 .
+
+tgaind:218 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.676000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Cultural Industries"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FSK10119,
+        tgaqual:FSK10219,
+        tgaqual:FSK20119,
+        tgaqual:TAE40122 .
+
+tgaind:219 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.709000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Defence Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:DEF10117,
+        tgaqual:DEF20120,
+        tgaqual:DEF20220,
+        tgaqual:DEF21115,
+        tgaqual:DEF30117,
+        tgaqual:DEF30120,
+        tgaqual:DEF30220,
+        tgaqual:DEF30317,
+        tgaqual:DEF30320,
+        tgaqual:DEF30420,
+        tgaqual:DEF40120,
+        tgaqual:DEF40217,
+        tgaqual:DEF40220,
+        tgaqual:DEF40317,
+        tgaqual:DEF40320,
+        tgaqual:DEF40417,
+        tgaqual:DEF40520,
+        tgaqual:DEF40722,
+        tgaqual:DEF40817,
+        tgaqual:DEF40917,
+        tgaqual:DEF41022,
+        tgaqual:DEF41122,
+        tgaqual:DEF42925,
+        tgaqual:DEF43122,
+        tgaqual:DEF50120,
+        tgaqual:DEF50217,
+        tgaqual:DEF50317,
+        tgaqual:DEF50320,
+        tgaqual:DEF50420,
+        tgaqual:DEF50422,
+        tgaqual:DEF50525,
+        tgaqual:DEF50722,
+        tgaqual:DEF50817,
+        tgaqual:DEF50922,
+        tgaqual:DEF51022,
+        tgaqual:DEF51115,
+        tgaqual:DEF53122,
+        tgaqual:DEF53415,
+        tgaqual:DEF80120,
+        tgaqual:DEF80220 .
+
+tgaind:22 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.170000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Construction and Property"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPC20720 .
+
+tgaind:220 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.742000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Electricity Transmission"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:UET20422,
+        tgaqual:UET20621,
+        tgaqual:UET30521,
+        tgaqual:UET30921,
+        tgaqual:UET40422,
+        tgaqual:UET40522,
+        tgaqual:UET60222 .
+
+tgaind:221 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.776000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Engineering"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MEM50422,
+        tgaqual:MEM50522,
+        tgaqual:MEM50622,
+        tgaqual:MEM50722,
+        tgaqual:MEM50822,
+        tgaqual:MEM60322 .
+
+tgaind:222 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.809000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Equine Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:ACM20221,
+        tgaqual:ACM30821,
+        tgaqual:ACM30921,
+        tgaqual:ACM40921,
+        tgaqual:ACM50421,
+        tgaqual:ACM50521 .
+
+tgaind:223 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.852000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Events"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SIT30522,
+        tgaqual:SIT50322,
+        tgaqual:SIT60222 .
+
+tgaind:224 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.888000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Fire and Rescue Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPP20521,
+        tgaqual:CPP30821 .
+
+tgaind:225 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.922000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Fisheries Compliance"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SFI20419,
+        tgaqual:SFI30419,
+        tgaqual:SFI40319,
+        tgaqual:SFI50219 .
+
+tgaind:226 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.955000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Floristry"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SFL20115,
+        tgaqual:SFL30115,
+        tgaqual:SFL40115,
+        tgaqual:SFL50115 .
+
+tgaind:227 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:25.987000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Food Processing Industry"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FBP10121,
+        tgaqual:FBP20122,
+        tgaqual:FBP30121,
+        tgaqual:FBP30721,
+        tgaqual:FBP40321,
+        tgaqual:FBP40421,
+        tgaqual:FBP40621,
+        tgaqual:FBP50121,
+        tgaqual:FBP50221,
+        tgaqual:FBP50321 .
+
+tgaind:228 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.020000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Forest Growing, Management and Harvesting"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FWP20122,
+        tgaqual:FWP30122,
+        tgaqual:FWP40121,
+        tgaqual:FWP50121 .
+
+tgaind:229 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.054000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Funeral Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SIF20113,
+        tgaqual:SIF30113,
+        tgaqual:SIF30213,
+        tgaqual:SIF30313,
+        tgaqual:SIF40113,
+        tgaqual:SIF40213 .
+
+tgaind:23 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.208000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Costumes and Makeup"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:230 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.087000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Gas Industry"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:UEG20122,
+        tgaqual:UEG30122,
+        tgaqual:UEG40222,
+        tgaqual:UEG50122 .
+
+tgaind:231 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.120000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Health"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:HLT33021,
+        tgaqual:HLT33115,
+        tgaqual:HLT35021,
+        tgaqual:HLT37015,
+        tgaqual:HLT37121,
+        tgaqual:HLT37215,
+        tgaqual:HLT37315,
+        tgaqual:HLT37415,
+        tgaqual:HLT43021,
+        tgaqual:HLT45021,
+        tgaqual:HLT47015,
+        tgaqual:HLT47121,
+        tgaqual:HLT47321,
+        tgaqual:HLT47415,
+        tgaqual:HLT47515,
+        tgaqual:HLT47715,
+        tgaqual:HLT47815,
+        tgaqual:HLT50321,
+        tgaqual:HLT54121,
+        tgaqual:HLT55118,
+        tgaqual:HLT57415,
+        tgaqual:HLT57715,
+        tgaqual:HLT57821,
+        tgaqual:HLT57921,
+        tgaqual:HLT64121 .
+
+tgaind:232 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.153000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Health and Community Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CHC42221,
+        tgaqual:CHC51015,
+        tgaqual:CHC51122,
+        tgaqual:CHC81015,
+        tgaqual:CHC81115,
+        tgaqual:CHC81215,
+        tgaqual:CHC81315,
+        tgaqual:HLT31020,
+        tgaqual:HLT31120,
+        tgaqual:HLT31220,
+        tgaqual:HLT35115,
+        tgaqual:HLT41020,
+        tgaqual:HLT41120,
+        tgaqual:HLT51020,
+        tgaqual:HLT65015 .
+
+tgaind:233 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.188000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "High volume production baking"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FBP31121 .
+
+tgaind:234 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.221000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Hospitality"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SIT10222,
+        tgaqual:SIT20322,
+        tgaqual:SIT20421,
+        tgaqual:SIT30622,
+        tgaqual:SIT30722,
+        tgaqual:SIT30821,
+        tgaqual:SIT30921,
+        tgaqual:SIT31021,
+        tgaqual:SIT31121,
+        tgaqual:SIT40422,
+        tgaqual:SIT40521,
+        tgaqual:SIT40621,
+        tgaqual:SIT40721,
+        tgaqual:SIT40821,
+        tgaqual:SIT50422,
+        tgaqual:SIT60322 .
+
+tgaind:235 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.253000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Irrigation"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC21124,
+        tgaqual:AHC32424,
+        tgaqual:AHC41124,
+        tgaqual:AHC51624 .
+
+tgaind:236 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.284000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Livestock Cropping Irrigation and Machinery Operation"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC10222 .
+
+tgaind:237 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.317000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Manufacturing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MEM20422,
+        tgaqual:MSM30216 .
+
+tgaind:238 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.351000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Meat Retailing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AMP20316,
+        tgaqual:AMP20415,
+        tgaqual:AMP30815,
+        tgaqual:AMP50221 .
+
+tgaind:239 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.384000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Millinery"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MST30316,
+        tgaqual:MST40416 .
+
+tgaind:24 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.246000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Dance"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CUA10120,
+        tgaqual:CUA40120,
+        tgaqual:CUA51520,
+        tgaqual:CUA60120 .
+
+tgaind:240 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.419000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Motor Vehicles"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:TLI41225 .
+
+tgaind:241 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.458000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Permaculture"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC10422,
+        tgaqual:AHC21722,
+        tgaqual:AHC33822,
+        tgaqual:AHC42122,
+        tgaqual:AHC52122 .
+
+tgaind:242 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.497000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Pharmaceutical Production"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FBP20418,
+        tgaqual:FBP30822,
+        tgaqual:FBP40522 .
+
+tgaind:243 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.538000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Police Forces"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:POL21122,
+        tgaqual:POL30125,
+        tgaqual:POL31222,
+        tgaqual:POL41225,
+        tgaqual:POL50120,
+        tgaqual:POL50124,
+        tgaqual:POL50218,
+        tgaqual:POL50225,
+        tgaqual:POL54124,
+        tgaqual:POL58121,
+        tgaqual:POL60118,
+        tgaqual:POL60120,
+        tgaqual:POL60121,
+        tgaqual:POL60225,
+        tgaqual:POL60319,
+        tgaqual:POL60421,
+        tgaqual:POL60521,
+        tgaqual:POL62124,
+        tgaqual:POL62524,
+        tgaqual:POL64124,
+        tgaqual:POL65125,
+        tgaqual:POL80125,
+        tgaqual:POL80225,
+        tgaqual:POL84124,
+        tgaqual:POL84224,
+        tgaqual:POL84324,
+        tgaqual:POL87125 .
+
+tgaind:244 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.576000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Population Health"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:HLT26015,
+        tgaqual:HLT26120,
+        tgaqual:HLT36015,
+        tgaqual:HLT36115,
+        tgaqual:HLT46015,
+        tgaqual:HLT46115 .
+
+tgaind:245 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.612000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Poultry"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC30522 .
+
+tgaind:246 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.646000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Professional Sports"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SIS20221,
+        tgaqual:SIS20321,
+        tgaqual:SIS30421,
+        tgaqual:SIS30521,
+        tgaqual:SIS40321,
+        tgaqual:SIS40421 .
+
+tgaind:247 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.680000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Property - Surveying and Spatial Information Services"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPP20121,
+        tgaqual:CPP30221,
+        tgaqual:CPP41721,
+        tgaqual:CPP50121,
+        tgaqual:CPP50221,
+        tgaqual:CPP60121 .
+
+tgaind:248 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.715000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Sawmilling and Processing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FWP31021 .
+
+tgaind:249 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.748000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Sheep"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC21325,
+        tgaqual:AHC21425,
+        tgaqual:AHC32925,
+        tgaqual:AHC33025,
+        tgaqual:AHC33125,
+        tgaqual:AHC41325 .
+
+tgaind:25 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.290000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Data Communications"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:250 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.783000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Smallgoods"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AMP30916,
+        tgaqual:AMP31016 .
+
+tgaind:251 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.818000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Sport Turf Management"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC20919,
+        tgaqual:AHC31324,
+        tgaqual:AHC51024 .
+
+tgaind:252 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.854000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Sports Coach Management"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SIS50321 .
+
+tgaind:253 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.892000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Sports Management"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SIS50421 .
+
+tgaind:254 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.927000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Taxonomy (Industry)"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:255 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.962000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Timber and Wood Products Manufacturing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FWP20322,
+        tgaqual:FWP30322,
+        tgaqual:FWP40222 .
+
+tgaind:256 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:26.996000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Timber Manufacturing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FWP30920,
+        tgaqual:FWP31121,
+        tgaqual:FWP31220,
+        tgaqual:FWP40420 .
+
+tgaind:257 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:27.032000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Timber Supply"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FWP30622 .
+
+tgaind:258 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:27.068000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Tourism"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SIT10122,
+        tgaqual:SIT20122,
+        tgaqual:SIT30122,
+        tgaqual:SIT30222,
+        tgaqual:SIT30322,
+        tgaqual:SIT40122,
+        tgaqual:SIT40222,
+        tgaqual:SIT50122,
+        tgaqual:SIT60122 .
+
+tgaind:259 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:27.102000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Veterinary Nursing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:ACM40418,
+        tgaqual:ACM50219 .
+
+tgaind:26 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.336000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Design"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CUA30720 .
+
+tgaind:260 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:27.138000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Volunteers"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CHC14015,
+        tgaqual:CHC24015,
+        tgaqual:CHC34015 .
+
+tgaind:261 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:27.172000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Water Supply"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:NWP20122,
+        tgaqual:NWP30222 .
+
+tgaind:262 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:27.209000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Wholesale Operations"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SIR30316 .
+
+tgaind:263 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:27.243000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Wine Production"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FBP20521,
+        tgaqual:FBP30921 .
+
+tgaind:27 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.377000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Drilling"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:RII51020 .
+
+tgaind:28 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.418000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Education Administration"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:29 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.465000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Education Support"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:3 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.369000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Advertising and Marketing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:BSB60520 .
+
+tgaind:30 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.502000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Electrical Engineering"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MEM31219,
+        tgaqual:UEE61521 .
+
+tgaind:31 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.542000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Electricity Generation Maintenance"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:32 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.593000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Electricity Generation Operations"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:33 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.638000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Electricity Industry"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:UEE62420,
+        tgaqual:UEP30322 .
+
+tgaind:34 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.678000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Electrotechnology Technical Support"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:35 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.724000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Engineering Design"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:36 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.764000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Entertainment Administration"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:37 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.801000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Entertainment Systems and Servicing"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:38 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.841000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Entertainment Technical Operations"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:39 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.878000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Environmental Drilling"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:4 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.416000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Airconditioning and Refrigeration"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:UEE20120 .
+
+tgaind:40 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.919000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Environmental Health"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPP40919 .
+
+tgaind:41 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:18.958000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Environmental Management"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:42 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Environmental Protection"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC51222,
+        tgaqual:MSS40222,
+        tgaqual:MSS50222 .
+
+tgaind:43 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.043000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Exhibited Animals and Wildlife Environments"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:ACM30321 .
+
+tgaind:44 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.084000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Fabrication Engineering"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MEM31119,
+        tgaqual:MEM31622,
+        tgaqual:MEM31922 .
+
+tgaind:45 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.123000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Fashion and Textiles Sales"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:46 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.160000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Financial Services"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:47 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.197000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Fire and Security"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:UEE21020 .
+
+tgaind:48 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.240000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Fishing Operations"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:49 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.283000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Fitness Industry"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SIS30321,
+        tgaqual:SIS40221 .
+
+tgaind:5 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.470000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Arts Administration"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:50 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.326000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Floriculture"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:51 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.368000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Food Processing Sales"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:52 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.406000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Fraud Control"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:PSP50716 .
+
+tgaind:53 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.445000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Furniture"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MSF10122,
+        tgaqual:MSF20122,
+        tgaqual:MSF20322,
+        tgaqual:MSF20413,
+        tgaqual:MSF20522,
+        tgaqual:MSF30122,
+        tgaqual:MSF30322,
+        tgaqual:MSF30422,
+        tgaqual:MSF30518,
+        tgaqual:MSF30722,
+        tgaqual:MSF40222,
+        tgaqual:MSF40522,
+        tgaqual:MSF50322 .
+
+tgaind:54 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.483000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Geotechnical Drilling"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:55 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.520000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Government Administration"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:PSP40616,
+        tgaqual:PSP50416,
+        tgaqual:PSP50616,
+        tgaqual:PSP50822,
+        tgaqual:PSP50922,
+        tgaqual:PSP60616,
+        tgaqual:PSP60822,
+        tgaqual:PSP60922,
+        tgaqual:PSP80116 .
+
+tgaind:56 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.559000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Government Service Delivery"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:PSP20218,
+        tgaqual:PSP30218,
+        tgaqual:PSP40818,
+        tgaqual:PSP51018 .
+
+tgaind:57 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.605000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Graphic Media"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:58 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.649000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Hairdressing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SHB30416,
+        tgaqual:SHB40216 .
+
+tgaind:59 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.693000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Home Furnishing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MSF30822,
+        tgaqual:MSF30919 .
+
+tgaind:6 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.513000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Automotive Manufacturing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AUM20118,
+        tgaqual:AUM20218,
+        tgaqual:AUM30113,
+        tgaqual:AUM30218,
+        tgaqual:AUM40113,
+        tgaqual:AUM50113,
+        tgaqual:MSM31122,
+        tgaqual:MSM41122 .
+
+tgaind:60 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.738000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Horticulture"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC21824,
+        tgaqual:AHC33722,
+        tgaqual:AHC40224 .
+
+tgaind:61 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.780000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Human Resource Management"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:62 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.823000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Information Technology Support Services"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:63 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.865000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Insurance"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:FNS41422,
+        tgaqual:FNS41521,
+        tgaqual:FNS41720,
+        tgaqual:FNS51120,
+        tgaqual:FNS51420,
+        tgaqual:FNS60920 .
+
+tgaind:64 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.907000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Jewellery"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MEM30619,
+        tgaqual:MEM40322 .
+
+tgaind:65 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.950000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Legal Administration"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:BSB40620,
+        tgaqual:BSB50720 .
+
+tgaind:66 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:19.992000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Libraries"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:67 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.038000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Lighting and Sound"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:68 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.080000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Livestock"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC20122,
+        tgaqual:AHC30122,
+        tgaqual:AHC30224,
+        tgaqual:AHC30422,
+        tgaqual:AHC33325 .
+
+tgaind:69 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.125000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Local Government Administration"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:7 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.553000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Aviation"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AVI10119,
+        tgaqual:AVI20325,
+        tgaqual:AVI30119,
+        tgaqual:AVI30219,
+        tgaqual:AVI30319,
+        tgaqual:AVI30419,
+        tgaqual:AVI30525,
+        tgaqual:AVI40122,
+        tgaqual:AVI40225,
+        tgaqual:AVI40422,
+        tgaqual:AVI50115,
+        tgaqual:AVI50119,
+        tgaqual:AVI50222,
+        tgaqual:AVI50322,
+        tgaqual:AVI50419,
+        tgaqual:AVI50519,
+        tgaqual:AVI59922,
+        tgaqual:AVI60219,
+        tgaqual:MEA50522 .
+
+tgaind:70 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.167000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Local Government"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:71 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.209000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Logistics"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:TLI20421,
+        tgaqual:TLI40521,
+        tgaqual:TLI41522,
+        tgaqual:TLI50224,
+        tgaqual:TLI50422,
+        tgaqual:TLI50716,
+        tgaqual:TLI60122 .
+
+tgaind:72 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.252000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Manufacturing Technology"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MSA30208,
+        tgaqual:MSA40108,
+        tgaqual:MSF40422,
+        tgaqual:MSM10116,
+        tgaqual:MSM10216,
+        tgaqual:MSM20116,
+        tgaqual:MSM20216,
+        tgaqual:MSM30116,
+        tgaqual:MSM40116,
+        tgaqual:MSM50316 .
+
+tgaind:73 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.297000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Maritime Operations"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MAR10224,
+        tgaqual:MAR10424,
+        tgaqual:MAR20121,
+        tgaqual:MAR20324,
+        tgaqual:MAR20424,
+        tgaqual:MAR30324,
+        tgaqual:MAR30924,
+        tgaqual:MAR31222,
+        tgaqual:MAR50120,
+        tgaqual:MAR50320,
+        tgaqual:MAR60120,
+        tgaqual:MAR60220 .
+
+tgaind:74 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.339000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Maritime"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MAR30220,
+        tgaqual:MAR30824,
+        tgaqual:MAR40121,
+        tgaqual:MAR40224,
+        tgaqual:MAR40324 .
+
+tgaind:75 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.381000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Mechanical Engineering"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MEM31822 .
+
+tgaind:76 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.424000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Mineral Mining Exploration"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:RII20420,
+        tgaqual:RII30520 .
+
+tgaind:77 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.474000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Mining"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:RII40220 .
+
+tgaind:78 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.525000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Museums"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:79 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.567000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Music Industry"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CUA50820,
+        tgaqual:CUA60520 .
+
+tgaind:8 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.595000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Beauty"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:SHB30121,
+        tgaqual:SHB30221,
+        tgaqual:SHB30321,
+        tgaqual:SHB40121,
+        tgaqual:SHB50121,
+        tgaqual:SHB50321,
+        tgaqual:SHB60118,
+        tgaqual:SHB60221 .
+
+tgaind:80 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.608000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Nurseries"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC20724,
+        tgaqual:AHC40624,
+        tgaqual:AHC41724,
+        tgaqual:AHC50820 .
+
+tgaind:81 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.648000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Off-site Construction"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CPC30216 .
+
+tgaind:82 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.686000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Paper Products"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:PPM20121,
+        tgaqual:PPM30121,
+        tgaqual:PPM40121,
+        tgaqual:PPM50121 .
+
+tgaind:83 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.723000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Parks and Gardens"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC10322,
+        tgaqual:AHC20624,
+        tgaqual:AHC31024 .
+
+tgaind:84 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.761000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Pest Management"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC30324,
+        tgaqual:AHC51324,
+        tgaqual:CPP30119,
+        tgaqual:CPP41619 .
+
+tgaind:85 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.799000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Photography"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:CUA41120,
+        tgaqual:CUA50920 .
+
+tgaind:86 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.837000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Plastics, Polymers and Rubber"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:87 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.880000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Printing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:ICP31220 .
+
+tgaind:88 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.922000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Product Design"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:89 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:20.963000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Production Engineering"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MEM20219 .
+
+tgaind:9 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:17.632000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Blast Hole Drilling"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:90 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.005000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Production Horticulture"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:AHC31124 .
+
+tgaind:91 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.048000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Public Administration"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:BSB60720 .
+
+tgaind:92 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.086000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Public Safety and Security"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:POL62422,
+        tgaqual:PUA30420,
+        tgaqual:PUA30622,
+        tgaqual:PUA30719,
+        tgaqual:PUA30822,
+        tgaqual:PUA30922,
+        tgaqual:PUA31422,
+        tgaqual:PUA40119,
+        tgaqual:PUA40219,
+        tgaqual:PUA40319,
+        tgaqual:PUA40422,
+        tgaqual:PUA41019,
+        tgaqual:PUA41120,
+        tgaqual:PUA42619,
+        tgaqual:PUA50120,
+        tgaqual:PUA50419,
+        tgaqual:PUA50519,
+        tgaqual:PUA50622,
+        tgaqual:PUA50919,
+        tgaqual:PUA51019,
+        tgaqual:PUA60219,
+        tgaqual:PUA60519,
+        tgaqual:PUA60719,
+        tgaqual:PUA60922,
+        tgaqual:PUA80119 .
+
+tgaind:93 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.124000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Public Safety"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:PUA20119,
+        tgaqual:PUA20219,
+        tgaqual:PUA20622,
+        tgaqual:PUA20719,
+        tgaqual:PUA30322,
+        tgaqual:PUA30519,
+        tgaqual:PUA50722 .
+
+tgaind:94 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.163000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Purchasing and Procurement"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:95 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.208000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Quality Auditing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:BSB50920 .
+
+tgaind:96 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.247000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Racing Administration"@en ;
+    skos:topConceptOf tgaindcs: .
+
+tgaind:97 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.284000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Racing Industry"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:RGR20221,
+        tgaqual:RGR30318,
+        tgaqual:RGR30419,
+        tgaqual:RGR30619,
+        tgaqual:RGR40118,
+        tgaqual:RGR40221,
+        tgaqual:RGR40318,
+        tgaqual:RGR40419,
+        tgaqual:RGR40518,
+        tgaqual:RGR40619,
+        tgaqual:RGR50118,
+        tgaqual:RGR50218,
+        tgaqual:RGR50319 .
+
+tgaind:98 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.322000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Rail Transport"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:TLI21921,
+        tgaqual:TLI22321,
+        tgaqual:TLI23221,
+        tgaqual:TLI27121,
+        tgaqual:TLI27221,
+        tgaqual:TLI29921,
+        tgaqual:TLI30521,
+        tgaqual:TLI31421,
+        tgaqual:TLI31921,
+        tgaqual:TLI32121,
+        tgaqual:TLI32721,
+        tgaqual:TLI32821,
+        tgaqual:TLI33021,
+        tgaqual:TLI33122,
+        tgaqual:TLI33221,
+        tgaqual:TLI40822,
+        tgaqual:TLI40921,
+        tgaqual:TLI42422,
+        tgaqual:TLI47121,
+        tgaqual:TLI50621 .
+
+tgaind:99 a skos:Concept,
+        ex:Industry ;
+    dcterms:modified "2025-08-05T22:59:21.360000+00:00"^^xsd:dateTime ;
+    skos:inScheme tgaindcs: ;
+    skos:prefLabel "Raw Material Manufacturing"@en ;
+    skos:topConceptOf tgaindcs: ;
+    schema:qualifications tgaqual:MSM30318,
+        tgaqual:PMB30121 .
+
+tgaindcs: a skos:ConceptScheme ;
+    dcterms:creator ror:0314h5y94 ;
+    dcterms:modified "2025-08-05T22:59:27.243000+00:00"^^xsd:dateTime ;
+    dcterms:publisher jsa: ;
+    dcterms:title "Training Industry"@en ;
+    skos:definition "Industry classifications as set out by training.gov.au"@en ;
+    skos:hasTopConcept tgaind:10,
+        tgaind:100,
+        tgaind:101,
+        tgaind:102,
+        tgaind:103,
+        tgaind:104,
+        tgaind:105,
+        tgaind:106,
+        tgaind:107,
+        tgaind:108,
+        tgaind:109,
+        tgaind:11,
+        tgaind:110,
+        tgaind:111,
+        tgaind:112,
+        tgaind:113,
+        tgaind:114,
+        tgaind:115,
+        tgaind:116,
+        tgaind:117,
+        tgaind:118,
+        tgaind:119,
+        tgaind:12,
+        tgaind:120,
+        tgaind:121,
+        tgaind:122,
+        tgaind:123,
+        tgaind:124,
+        tgaind:125,
+        tgaind:126,
+        tgaind:127,
+        tgaind:128,
+        tgaind:129,
+        tgaind:13,
+        tgaind:130,
+        tgaind:131,
+        tgaind:132,
+        tgaind:133,
+        tgaind:134,
+        tgaind:135,
+        tgaind:136,
+        tgaind:137,
+        tgaind:138,
+        tgaind:139,
+        tgaind:14,
+        tgaind:140,
+        tgaind:141,
+        tgaind:142,
+        tgaind:143,
+        tgaind:144,
+        tgaind:145,
+        tgaind:146,
+        tgaind:147,
+        tgaind:148,
+        tgaind:149,
+        tgaind:15,
+        tgaind:150,
+        tgaind:151,
+        tgaind:152,
+        tgaind:153,
+        tgaind:154,
+        tgaind:155,
+        tgaind:156,
+        tgaind:157,
+        tgaind:158,
+        tgaind:159,
+        tgaind:16,
+        tgaind:160,
+        tgaind:161,
+        tgaind:162,
+        tgaind:163,
+        tgaind:164,
+        tgaind:165,
+        tgaind:166,
+        tgaind:167,
+        tgaind:168,
+        tgaind:169,
+        tgaind:17,
+        tgaind:170,
+        tgaind:171,
+        tgaind:172,
+        tgaind:173,
+        tgaind:174,
+        tgaind:175,
+        tgaind:176,
+        tgaind:177,
+        tgaind:178,
+        tgaind:179,
+        tgaind:18,
+        tgaind:180,
+        tgaind:181,
+        tgaind:182,
+        tgaind:183,
+        tgaind:184,
+        tgaind:185,
+        tgaind:186,
+        tgaind:187,
+        tgaind:188,
+        tgaind:189,
+        tgaind:19,
+        tgaind:190,
+        tgaind:191,
+        tgaind:192,
+        tgaind:193,
+        tgaind:194,
+        tgaind:195,
+        tgaind:196,
+        tgaind:197,
+        tgaind:198,
+        tgaind:199,
+        tgaind:2,
+        tgaind:20,
+        tgaind:200,
+        tgaind:201,
+        tgaind:202,
+        tgaind:203,
+        tgaind:204,
+        tgaind:205,
+        tgaind:206,
+        tgaind:207,
+        tgaind:208,
+        tgaind:209,
+        tgaind:21,
+        tgaind:210,
+        tgaind:211,
+        tgaind:212,
+        tgaind:213,
+        tgaind:214,
+        tgaind:215,
+        tgaind:216,
+        tgaind:217,
+        tgaind:218,
+        tgaind:219,
+        tgaind:22,
+        tgaind:220,
+        tgaind:221,
+        tgaind:222,
+        tgaind:223,
+        tgaind:224,
+        tgaind:225,
+        tgaind:226,
+        tgaind:227,
+        tgaind:228,
+        tgaind:229,
+        tgaind:23,
+        tgaind:230,
+        tgaind:231,
+        tgaind:232,
+        tgaind:233,
+        tgaind:234,
+        tgaind:235,
+        tgaind:236,
+        tgaind:237,
+        tgaind:238,
+        tgaind:239,
+        tgaind:24,
+        tgaind:240,
+        tgaind:241,
+        tgaind:242,
+        tgaind:243,
+        tgaind:244,
+        tgaind:245,
+        tgaind:246,
+        tgaind:247,
+        tgaind:248,
+        tgaind:249,
+        tgaind:25,
+        tgaind:250,
+        tgaind:251,
+        tgaind:252,
+        tgaind:253,
+        tgaind:254,
+        tgaind:255,
+        tgaind:256,
+        tgaind:257,
+        tgaind:258,
+        tgaind:259,
+        tgaind:26,
+        tgaind:260,
+        tgaind:261,
+        tgaind:262,
+        tgaind:263,
+        tgaind:27,
+        tgaind:28,
+        tgaind:29,
+        tgaind:3,
+        tgaind:30,
+        tgaind:31,
+        tgaind:32,
+        tgaind:33,
+        tgaind:34,
+        tgaind:35,
+        tgaind:36,
+        tgaind:37,
+        tgaind:38,
+        tgaind:39,
+        tgaind:4,
+        tgaind:40,
+        tgaind:41,
+        tgaind:42,
+        tgaind:43,
+        tgaind:44,
+        tgaind:45,
+        tgaind:46,
+        tgaind:47,
+        tgaind:48,
+        tgaind:49,
+        tgaind:5,
+        tgaind:50,
+        tgaind:51,
+        tgaind:52,
+        tgaind:53,
+        tgaind:54,
+        tgaind:55,
+        tgaind:56,
+        tgaind:57,
+        tgaind:58,
+        tgaind:59,
+        tgaind:6,
+        tgaind:60,
+        tgaind:61,
+        tgaind:62,
+        tgaind:63,
+        tgaind:64,
+        tgaind:65,
+        tgaind:66,
+        tgaind:67,
+        tgaind:68,
+        tgaind:69,
+        tgaind:7,
+        tgaind:70,
+        tgaind:71,
+        tgaind:72,
+        tgaind:73,
+        tgaind:74,
+        tgaind:75,
+        tgaind:76,
+        tgaind:77,
+        tgaind:78,
+        tgaind:79,
+        tgaind:8,
+        tgaind:80,
+        tgaind:81,
+        tgaind:82,
+        tgaind:83,
+        tgaind:84,
+        tgaind:85,
+        tgaind:86,
+        tgaind:87,
+        tgaind:88,
+        tgaind:89,
+        tgaind:9,
+        tgaind:90,
+        tgaind:91,
+        tgaind:92,
+        tgaind:93,
+        tgaind:94,
+        tgaind:95,
+        tgaind:96,
+        tgaind:97,
+        tgaind:98,
+        tgaind:99 ;
+    skos:prefLabel "Training Industry"@en ;
+    schema:citation "https://training.gov.au"^^xsd:anyURI .
+
+ex:Industry a rdfs:Class;
+rdfs:comment  "An industry Class used in vocational training and higher education contexts.";
+rdfs:label    "Industry" .

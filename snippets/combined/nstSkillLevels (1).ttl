@@ -1,0 +1,104 @@
+PREFIX attributes: <https://rdf.sfia-online.org/9/attributes/>
+PREFIX categories: <https://rdf.sfia-online.org/9/categories/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX dewr: <https://linked.data.gov.au/org/dewr>
+PREFIX esco: <http://data.europa.eu/esco/model#>
+PREFIX jsa: <https://linked.data.gov.au/org/jsa>
+PREFIX nst: <https://test.linked.data.gov.au/def/nst>
+PREFIX nstsl: <https://test.linked.data.gov.au/def/nstlevel/>
+PREFIX nstslcs: <https://test.linked.data.gov.au/def/nstlevel>
+PREFIX nsto: <https://test.linked.data.gov.au/def/nst/ontology#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+jsa:
+a schema:Organization ;
+schema:name "Jobs and Skills Australia"@en ;
+schema:alternateName "JSA"@en ;
+schema:url "https://www.jobsandskills.gov.au"^^xsd:anyURI
+.
+
+dewr:
+a schema:Organization ;
+schema:name "Department of Employment and Workplace Relations"@en ;
+schema:alternateName "DEWR"@en ;
+schema:url "https://dewr.gov.au"^^xsd:anyURI
+.
+
+nstslcs: a skos:ConceptScheme ;
+    skos:prefLabel "Skill levels"@en ;
+    skos:definition "Skill level concept scheme. Concepts indicates the level of competencies and responsibilities for a Skill"@en ;
+    dcterms:creator jsa: ;
+    dcterms:publisher dewr: ;
+    skos:hasTopConcept 
+        nstsl:1 , nstsl:2 , nstsl:3 , nstsl:4 , nstsl:5 , nstsl:6 , nstsl:7 
+.
+
+nstsl:1 a nsto:SkillLevel , skos:Concept ;
+    skos:inScheme nstslcs: ;
+    skos:topConceptOf nstslcs: ;
+    skos:prefLabel "Follow"@en ;
+    skos:definition "Works under close supervision"@en ;
+    skos:notation "1" ;
+.
+
+nstsl:2 a nsto:SkillLevel , skos:Concept ;
+    skos:inScheme nstslcs: ;
+    skos:topConceptOf nstslcs: ;
+    skos:prefLabel "Assist"@en ;
+    skos:definition "Works under routine supervision"@en ;
+    skos:notation "2" ;
+.
+
+nstsl:3 a nsto:SkillLevel , skos:Concept ;
+    skos:inScheme nstslcs: ;
+    skos:topConceptOf nstslcs: ;
+    skos:prefLabel "Apply"@en ;
+    skos:definition "Works under general supervision"@en ;
+    skos:notation "3" ;
+.
+
+nstsl:4 a nsto:SkillLevel , skos:Concept ;
+    skos:inScheme nstslcs: ;
+    skos:topConceptOf nstslcs: ;
+    skos:prefLabel "Enable"@en ;
+    skos:definition "Works autonomously"@en ;
+    skos:notation "4" ;
+.
+
+nstsl:5 a nsto:SkillLevel , skos:Concept ;
+    skos:inScheme nstslcs: ;
+    skos:topConceptOf nstslcs: ;
+    skos:prefLabel "Ensure/Advise"@en ;
+    skos:definition "Provides authoritative guidance"@en ;
+    skos:notation "5" ;
+.
+
+nstsl:6 a nsto:SkillLevel , skos:Concept ;
+    skos:inScheme nstslcs: ;
+    skos:topConceptOf nstslcs: ;
+    skos:prefLabel "Initiate/Influence"@en ;
+    skos:definition "Has organizational influence"@en ;
+    skos:notation "6" ;
+.
+
+nstsl:7 a nsto:SkillLevel , skos:Concept ;
+    skos:inScheme nstslcs: ;
+    skos:topConceptOf nstslcs: ;
+    skos:prefLabel "Set Strategy"@en ;
+    skos:definition "Determines vision and strategy"@en ;
+    skos:notation "7" ;
+.
+
+# owl axioms
+
+nsto:SkillLevel a owl:Class ;
+rdfs:label "Skill Level"@en ;
+rdfs:comment "A Skill level indicates the level of competencies and responsibilities for a Skill."@en ;
+rdfs:isDefinedBy nsto:
+.
+
+

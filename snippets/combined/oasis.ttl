@@ -1,0 +1,583 @@
+@prefix : <http://example.com/oasis/> .
+@prefix cs: <http://example.com/oasis> .
+@prefix ca: <https://www.canada.ca> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix esco: <http://data.europa.eu/esco/model#> .
+@prefix jsa: <https://linked.data.gov.au/org/jsa> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ca:
+a schema:Organization ;
+schema:name "Government of Canada"@en ;
+schema:url "https://www.canada.ca"^^xsd:anyURI
+.
+
+jsa:
+a schema:Organization ;
+schema:name "Jobs and Skills Australia"@en ;
+schema:url "https://www.jobsandskills.gov.au"^^xsd:anyURI
+.
+
+cs:
+  a skos:ConceptScheme;
+  dcterms:creator ca: ;
+	dcterms:publisher jsa: ;
+  skos:prefLabel "OaSIS Skills and Competencies Taxonomy"@en ;
+  dcterms:created "2025-02-27T23:16:34.893Z"^^xsd:dateTime;
+  skos:prefLabel "OaSIS Skills and Competencies Taxonomy"@en ;
+  skos:definition "The Skills and Competencies Taxonomy is composed of hundreds of occupational descriptors used in the labour market to describe job requirements and/or individuals’ personal characteristics. Each descriptor is associated with one of the eight main categories of the Taxonomy (skills, personal abilities and attributes, knowledge, interests, work context, work activities, tools, and technology) and more specifically, into a sub-category."@en ;
+  schema:citation: "https://noc.esdc.gc.ca/SkillsTaxonomy/SkillsTaxonomyWelcome"^^xsd:anyURI ;
+	skos:historyNote "Presented here in RDF for the Jobs and Skills Australia National Taxonomy Project"@en ;
+  dcterms:subject "Skills"@en ;
+    skos:hasTopConcept 
+		:8c8588be-dabf-4c4d-9b2e-c696260b67b3 ,
+    :83799946-1790-46f3-842e-2c49c3f6b1e8 ,
+    :cb8133b5-e3f6-4d77-aee7-893bbd83028f ,
+    :d7ad0e1d-7a9f-4a29-921a-f421de6e4cda ,
+    :c366eb5c-b80c-4d69-9882-e4be84a7d12f ,
+    :0ccbe213-98a3-475c-b4d9-2cd805e1cf73 ,
+    :f3b3ec6d-012b-4883-9fb2-a88fd57c0e63 ,
+    :5822f85e-bb62-4da5-ade8-a9c5961c3e6e ,
+    :c1dae1ee-2013-456a-97e9-678c63c08aa7 ,
+    :61b35ecb-62b8-4152-96d1-03c5458387a9 ,
+    :5db6bdac-40f2-4c43-9f68-5efa7f238f03 ,
+    :a605a772-2a82-4ca1-9202-148dbab00bed ,
+    :90d5ec7f-354a-421f-90cf-8cf5613a2c08 ,
+    :bd0d2b2c-a2ee-4850-87c7-307a0cc43743 ,
+    :ffe79998-d5a8-44e4-b7cb-2916a3654062 ,
+    :3cd154c1-a3ea-4eb7-9be2-2b0c9ae54df8 ,
+    :cb304c55-d777-4028-8611-8532f89d1eac ,
+    :4df53e13-0a65-4ac5-a23b-52b95128141f ,
+    :cad9691a-1f9c-4ed6-b261-0a6dcfb86f82 ,
+    :a8067409-e9b0-4042-b6bc-9f3bcebcb1bd ,
+    :783893f1-9bc4-4f63-a0ee-29f1f50c114e ,
+    :3e73f28b-b88c-4bd7-869f-86f8ed1808a5 ,
+    :232148a6-c8a8-4b91-bd6e-0a46e2b97efc ,
+    :85afc6c9-53b1-4f13-ae5d-7803d2a89f9e ,
+    :83238f89-da18-4054-8cdc-e80a97fdd055 ,
+    :beee3e8c-b707-4fd8-a9ec-21007275d904 ,
+    :0e719d07-2f20-411d-a13a-810bd63f59d7 ,
+    :9533b726-20fc-4632-81c9-9535dc2e30ae ,
+    :33a488d6-eb05-411d-8122-8ba24d70bb79 ,
+    :8127f945-29ca-4e53-9425-d630fc90c1f4 ,
+    :87f550ec-43b2-4aff-a23f-b28e939ea87c ,
+    :b509d8a0-d817-46a6-82c0-4ebf48b62b41 ,
+    :328d67f0-511e-4c00-b9dc-82a26444cc95 ,
+    :d660cc08-5b9c-4c38-9627-f81678e8d075 ,
+    :436affd3-4b46-4fd3-b9c6-2a41353a4616 ,
+    :b996b86c-5417-4b3b-b03f-fd4fd9a3b125 ,
+    :a3ef2cde-7352-4ef8-85b8-315b4aa90d41 ,
+    :beaf8690-b399-48db-8bc3-b9181547cf4b ,
+    :72e04608-fd1f-4e74-b4ad-d206f7173c8c ,
+    :b4b72a2b-cc6f-45dd-9be9-e0c8c0842293 ,
+    :f6d7f3d2-85f0-4248-a6cf-762d63785464 .
+
+:AnalyticalSkills a skos:Collection;
+  skos:inScheme cs: ;
+  skos:prefLabel "Analytical Skills"@en ;
+  skos:prefLabel "Analytical Skills"@en ;
+  skos:definition "Developed capability that people need to process information and data logically to produce useable results."@en ;
+  skos:member :0ccbe213-98a3-475c-b4d9-2cd805e1cf73 ,
+    :f3b3ec6d-012b-4883-9fb2-a88fd57c0e63 ,
+    :5822f85e-bb62-4da5-ade8-a9c5961c3e6e ,
+    :c1dae1ee-2013-456a-97e9-678c63c08aa7 ,
+    :61b35ecb-62b8-4152-96d1-03c5458387a9 ,
+    :87f550ec-43b2-4aff-a23f-b28e939ea87c ,
+    :b509d8a0-d817-46a6-82c0-4ebf48b62b41 ,
+    :328d67f0-511e-4c00-b9dc-82a26444cc95 .
+
+:FoundationSkills a skos:Collection;
+  skos:inScheme cs: ;
+  skos:prefLabel "Foundation skills"@en ;
+  skos:prefLabel "Foundation skills"@en ;
+  skos:definition "Developed capabilities that facilitate the more rapid acquisition of other skills and knowledge."@en ;
+  skos:member :8c8588be-dabf-4c4d-9b2e-c696260b67b3 ,
+    :83799946-1790-46f3-842e-2c49c3f6b1e8 ,
+    :cb8133b5-e3f6-4d77-aee7-893bbd83028f ,
+    :d7ad0e1d-7a9f-4a29-921a-f421de6e4cda ,
+    :c366eb5c-b80c-4d69-9882-e4be84a7d12f ,
+    :a7e073e1-903f-413d-be06-4b8801fc37c2 ,
+    :8241fdc8-84dd-484d-b979-c5d19eb9f234 ,
+    :5afe6a24-472e-4609-b84b-57d69428a246 .
+
+:InterpersonalSkills a skos:Collection ;
+  skos:inScheme cs: ;
+  skos:prefLabel "Interpersonal Skills"@en ;
+  skos:prefLabel "Interpersonal Skills"@en ;
+  skos:definition "Developed capabilities used to work with people to achieve goals."@en ;
+  skos:member :beee3e8c-b707-4fd8-a9ec-21007275d904 ,
+    :0e719d07-2f20-411d-a13a-810bd63f59d7 ,
+    :9533b726-20fc-4632-81c9-9535dc2e30ae ,
+    :33a488d6-eb05-411d-8122-8ba24d70bb79 ,
+    :8127f945-29ca-4e53-9425-d630fc90c1f4 ,
+    :b4b72a2b-cc6f-45dd-9be9-e0c8c0842293 ,
+    :f6d7f3d2-85f0-4248-a6cf-762d63785464 .
+
+:ResourceManagementSkills a skos:Collection ;
+   skos:inScheme cs: ;
+ skos:prefLabel "Resource Management Skills"@en ;
+  skos:prefLabel "Resource Management Skills"@en ;
+  skos:definition "Developed capabilities to plan, organize, monitor or control the resources to achieve goals."@en ;
+  skos:member :783893f1-9bc4-4f63-a0ee-29f1f50c114e ,
+    :3e73f28b-b88c-4bd7-869f-86f8ed1808a5 ,
+    :232148a6-c8a8-4b91-bd6e-0a46e2b97efc ,
+    :85afc6c9-53b1-4f13-ae5d-7803d2a89f9e ,
+    :83238f89-da18-4054-8cdc-e80a97fdd055 ,
+    :d660cc08-5b9c-4c38-9627-f81678e8d075 ,
+    :436affd3-4b46-4fd3-b9c6-2a41353a4616 ,
+    :b996b86c-5417-4b3b-b03f-fd4fd9a3b125 ,
+    :a3ef2cde-7352-4ef8-85b8-315b4aa90d41 ,
+    :beaf8690-b399-48db-8bc3-b9181547cf4b ,
+    :72e04608-fd1f-4e74-b4ad-d206f7173c8c .
+
+:TechnicalSkills a skos:Collection ;
+   skos:inScheme cs: ;
+ skos:prefLabel "Technical Skills"@en ;
+  skos:prefLabel "Technical Skills"@en ;
+  skos:definition "Developed capabilities that relate to the practical or mechanical side of an activity, the application of a set of technical processes and required know-how."@en ;
+  skos:member :5db6bdac-40f2-4c43-9f68-5efa7f238f03 ,
+    :a605a772-2a82-4ca1-9202-148dbab00bed ,
+    :90d5ec7f-354a-421f-90cf-8cf5613a2c08 ,
+    :bd0d2b2c-a2ee-4850-87c7-307a0cc43743 ,
+    :ffe79998-d5a8-44e4-b7cb-2916a3654062 ,
+    :3cd154c1-a3ea-4eb7-9be2-2b0c9ae54df8 ,
+    :cb304c55-d777-4028-8611-8532f89d1eac ,
+    :4df53e13-0a65-4ac5-a23b-52b95128141f ,
+    :cad9691a-1f9c-4ed6-b261-0a6dcfb86f82 ,
+    :a8067409-e9b0-4042-b6bc-9f3bcebcb1bd .
+
+
+:8c8588be-dabf-4c4d-9b2e-c696260b67b3
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:38:36.283Z"^^xsd:dateTime;
+  skos:definition "The capability to understand written information presented through words, sentences, paragraphs, symbols, and images in work-related documents."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Reading Comprehension"@en
+	.
+  
+:83799946-1790-46f3-842e-2c49c3f6b1e8
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:38:43.892Z"^^xsd:dateTime;
+  skos:definition "The capability to communicate in writing by using written words, sentences, paragraphs, symbols, and images and adapted for the needs of the audience."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Writing"@en .
+  
+:cb8133b5-e3f6-4d77-aee7-893bbd83028f
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:38:52.247Z"^^xsd:dateTime;
+  skos:definition "The capability to understand, use and report numbers and other mathematical information presented through words, numbers, symbols, and graphics."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Numeracy"@en .
+
+:d7ad0e1d-7a9f-4a29-921a-f421de6e4cda
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:39:03.919Z"^^xsd:dateTime;
+  skos:definition "The capability to understand and use digital devices and tools to obtain, exchange, create or process digital information in a secure manner."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Digital literacy"@en
+	.
+  
+:c366eb5c-b80c-4d69-9882-e4be84a7d12f
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:39:15.903Z"^^xsd:dateTime;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Oral Communication"@en ;
+  skos:narrower :a7e073e1-903f-413d-be06-4b8801fc37c2 ,
+    :8241fdc8-84dd-484d-b979-c5d19eb9f234 ,
+    :5afe6a24-472e-4609-b84b-57d69428a246
+	.
+  
+:5afe6a24-472e-4609-b84b-57d69428a246
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:47:52.189Z"^^xsd:dateTime;
+  skos:definition "The capability to talk to others to convey information effectively."@en ;
+  skos:inScheme cs: ;
+  skos:prefLabel "Oral Expression"@en ;
+    skos:broader :c366eb5c-b80c-4d69-9882-e4be84a7d12f
+	.
+
+:a7e073e1-903f-413d-be06-4b8801fc37c2
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:47:34.304Z"^^xsd:dateTime;
+  skos:definition "The capability to give full attention to what other people are saying, take time to understand the points being made, ask questions as appropriate, and not interrupt at inappropriate times."@en ;
+  skos:inScheme cs: ;
+  skos:prefLabel "Active Listening"@en ;
+    skos:broader :c366eb5c-b80c-4d69-9882-e4be84a7d12f
+	.
+
+:8241fdc8-84dd-484d-b979-c5d19eb9f234
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:47:45.549Z"^^xsd:dateTime;
+  skos:definition "The capability to listen to and understand information and ideas presented through spoken words and sentences."@en ;
+  skos:inScheme cs: ;
+  skos:prefLabel "Oral Comprehension"@en ;
+    skos:broader :c366eb5c-b80c-4d69-9882-e4be84a7d12f .
+
+:0ccbe213-98a3-475c-b4d9-2cd805e1cf73
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:39:35.489Z"^^xsd:dateTime;
+  skos:definition "The capability to analyze information among a set of alternatives, to evaluate potential outcome and choose the most appropriate solutions to achieve a predetermined objective."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Decision Making"@en
+	.
+  
+:f3b3ec6d-012b-4883-9fb2-a88fd57c0e63
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:39:44.828Z"^^xsd:dateTime;
+  skos:definition "The capability to systematically assess products, services or processes using measurable indicators with the goal of ensuring or improving performance."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Evaluation"@en
+	.
+  
+:5822f85e-bb62-4da5-ade8-a9c5961c3e6e
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:39:56.922Z"^^xsd:dateTime;
+  skos:definition "The capability to select and use training/instructional methods and procedures appropriate for the situation when learning or teaching new things."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Learning and Teaching Strategies"@en
+	.
+  
+:c1dae1ee-2013-456a-97e9-678c63c08aa7
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:40:06.303Z"^^xsd:dateTime;
+  skos:definition "The capability to identify problems and review related information to develop solutions or feasible options to achieve the desired end state."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Problem solving"@en
+	.
+  
+:61b35ecb-62b8-4152-96d1-03c5458387a9
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:40:21.877Z"^^xsd:dateTime;
+  skos:definition "The capability to determine how a system should work and how changes in conditions, operations, and the environment will affect outcomes."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Systems Analysis"@en
+	.
+  
+:5db6bdac-40f2-4c43-9f68-5efa7f238f03
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:40:30.810Z"^^xsd:dateTime;
+  skos:definition "The capacity to design, develop, adapt, or integrate hardware, software applications, electronic devices or digital technologies while adhering to cybersecurity standards."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Digital Production"@en
+	.
+  
+:a605a772-2a82-4ca1-9202-148dbab00bed
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:40:40.223Z"^^xsd:dateTime;
+  skos:definition "The capability to perform maintenance on equipment, devices, building or machinery to keep them in functional and to prevent damage or failures."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Preventative Maintenance"@en
+	.
+  
+:90d5ec7f-354a-421f-90cf-8cf5613a2c08
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:41:02.208Z"^^xsd:dateTime;
+  skos:definition "The capability to choose between two or more types of tools, equipment or, machinery to perform a job."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Equipment and Tool Selection"@en
+	.
+  
+:bd0d2b2c-a2ee-4850-87c7-307a0cc43743
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:41:09.732Z"^^xsd:dateTime;
+  skos:definition "The capability to maneuver and control operations of equipment, machines, vehicles or systems."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Operation and Control"@en
+	.
+  
+:ffe79998-d5a8-44e4-b7cb-2916a3654062
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:41:32.345Z"^^xsd:dateTime;
+  skos:definition "The capability to watch gauges, dials, digital displays or other indicators to ensure a machine or piece of equipment is working according to specifications."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Operation Monitoring of Machinery and Equipment"@en
+	.
+  
+:3cd154c1-a3ea-4eb7-9be2-2b0c9ae54df8
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:41:44.984Z"^^xsd:dateTime;
+  skos:definition "The capability to conduct tests or inspections of prototypes, products, services, or processes to ensure their quality."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Quality Control Testing"@en
+	.
+  
+:cb304c55-d777-4028-8611-8532f89d1eac
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:41:52.718Z"^^xsd:dateTime;
+  skos:definition "The capability to replace, restore or adjust defective or deficient components in equipment, machines, and technical systems and test for function, appearance, operation and safety."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Repairing"@en
+	.
+  
+:4df53e13-0a65-4ac5-a23b-52b95128141f
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:41:59.417Z"^^xsd:dateTime;
+  skos:definition "The capability to set up, adjust, install and assemble equipment, machines, parts or to prepare them for their functioning and use."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Setting up"@en
+	.
+  
+:cad9691a-1f9c-4ed6-b261-0a6dcfb86f82
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:42:05.885Z"^^xsd:dateTime;
+  skos:definition "The capacity to design and develop layouts for the construction of objects, equipment, machinery, structures, or engineering systems (excluding software and hardware)."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Product Design"@en
+	.
+  
+:a8067409-e9b0-4042-b6bc-9f3bcebcb1bd
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:43:22.125Z"^^xsd:dateTime;
+  skos:definition "The capability to determine causes of operating errors in equipment, machinery, or technological systems and decide how to resolve the issues."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Troubleshooting"@en
+	.
+  
+:783893f1-9bc4-4f63-a0ee-29f1f50c114e
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:43:34.951Z"^^xsd:dateTime;
+  skos:definition "The capability to plan, organize, direct, control or monitor financial resources and activities and account for the use of theses resources to ensure their utilization are conform to the objectives and purposes."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Management of Financial Resources"@en
+	.
+  
+:3e73f28b-b88c-4bd7-869f-86f8ed1808a5
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:43:55.449Z"^^xsd:dateTime;
+  skos:definition "The capability to plan and manage the purchase, inventory, warehousing, transportation, or distribution of products or materials and their use."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Management of Material Resources"@en
+	.
+  
+:232148a6-c8a8-4b91-bd6e-0a46e2b97efc
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:44:10.001Z"^^xsd:dateTime;
+  skos:definition "The capability to recruit, train, motivate, develop and direct employees, identify the best person for the tasks to be performed and establish their work objectives in relation to the objectives of the organization."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Management of Personnel Resources"@en
+	.
+  
+:85afc6c9-53b1-4f13-ae5d-7803d2a89f9e
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:46:21.204Z"^^xsd:dateTime;
+  skos:definition "The capability to monitor and assess the performance of yourself, other individuals or the organization to make improvements or take corrective action."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Monitoring"@en
+	.
+  
+:83238f89-da18-4054-8cdc-e80a97fdd055
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:46:28.155Z"^^xsd:dateTime;
+  skos:definition "The capability to manage one's own time and the time of others."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Time management"@en
+	.
+  
+:beee3e8c-b707-4fd8-a9ec-21007275d904
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:46:35.083Z"^^xsd:dateTime;
+  skos:definition "The capability to organize people or groups by adjusting activities in relation to others' activities so that they work effectively as a whole."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Coordinating"@en
+	.
+  
+:0e719d07-2f20-411d-a13a-810bd63f59d7
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:46:41.601Z"^^xsd:dateTime;
+  skos:definition "The capability to teach others knowledge, or how to do something."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Instructing"@en
+	.
+  
+:9533b726-20fc-4632-81c9-9535dc2e30ae
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:46:51.589Z"^^xsd:dateTime;
+  skos:definition "The capability to participate in, or facilitate communication between parties, in order to resolve differences, and reach a mutually acceptable or viable agreement."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Negotiating"@en
+	.
+  
+:33a488d6-eb05-411d-8122-8ba24d70bb79
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:47:00.358Z"^^xsd:dateTime;
+  skos:definition "The capability to convince others to change their minds, beliefs, intentions or behaviours."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Persuading"@en
+	.
+  
+:8127f945-29ca-4e53-9425-d630fc90c1f4
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-02-27T23:47:09.755Z"^^xsd:dateTime;
+  skos:definition "The capability to be aware of others' reactions, unspoken communication, body language cues and feelings and discern the reasons behind their behaviours."@en ;
+  skos:inScheme cs: ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Social Perceptiveness"@en
+	.
+  
+:87f550ec-43b2-4aff-a23f-b28e939ea87c
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-09-18T00:14:35.631Z"^^xsd:dateTime;
+  skos:definition "The capability to use logic and reasoning to question, discern, interpret and analyze various types of information to form an evidence-based conclusion or judgment."@en ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Critical Thinking"@en
+	.
+  
+:b509d8a0-d817-46a6-82c0-4ebf48b62b41
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-09-18T00:16:15.626Z"^^xsd:dateTime;
+  skos:definition "The capability to analyze needs and product requirements to create a design."@en ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Requirements Analysis"@en
+	.
+  
+:328d67f0-511e-4c00-b9dc-82a26444cc95
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-09-18T00:17:30.622Z"^^xsd:dateTime;
+  skos:definition "The capability to conduct studies and to examine information and data to increase knowledge, understand facts, find causes, test hypotheses and draw conclusions or make recommendations."@en ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Researching and Investigating"@en
+	.
+  
+:d660cc08-5b9c-4c38-9627-f81678e8d075
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-09-18T00:38:24.014Z"^^xsd:dateTime;
+  skos:definition "The capability to determine phases and steps, define activities and tasks, and establish schedules to complete objectives on time and within budget."@en ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Operational Planning"@en
+	.
+  
+:436affd3-4b46-4fd3-b9c6-2a41353a4616
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-09-18T00:39:02.822Z"^^xsd:dateTime;
+  skos:definition "The capability to estimate, predict and forecast results and outcomes of an action or a series of actions based on data and indicators."@en ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Projecting Outcomes"@en
+	.
+  
+:b996b86c-5417-4b3b-b03f-fd4fd9a3b125
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-09-18T00:39:31.929Z"^^xsd:dateTime;
+  skos:definition "The capability to identify and assess risks and determine procedures to be followed to reduce or avoid their impact."@en ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Risk Management"@en
+	.
+  
+:a3ef2cde-7352-4ef8-85b8-315b4aa90d41
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-09-18T00:40:12.312Z"^^xsd:dateTime;
+  skos:definition "The capability set goals according to organization’s needs, to develop strategies, and action plans to achieve."@en ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Strategic Planning"@en
+	.
+  
+:beaf8690-b399-48db-8bc3-b9181547cf4b
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-09-18T00:41:53.628Z"^^xsd:dateTime;
+  skos:definition "The capability to plan and implement strategies for effecting change, communicate the effects of change, and provide guidance and support to those affected by change."@en ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Change Management"@en
+	.
+  
+:72e04608-fd1f-4e74-b4ad-d206f7173c8c
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-09-18T00:42:21.882Z"^^xsd:dateTime;
+  skos:definition "The capability to establish a response plan for emergencies, to apply it and adapt it to situations while limiting the impact on people, customers, employees and the organisation."@en ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Crisis Management"@en
+	.
+  
+:b4b72a2b-cc6f-45dd-9be9-e0c8c0842293
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-09-18T00:47:26.777Z"^^xsd:dateTime;
+  skos:definition "The capability to communicate, interact and work appropriately with people from different cultural backgrounds, in recognition that diversity is being both between and within cultural groups and can be expressed in customs, values, and ways of thinking and acting."@en ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Cross-Cultural Sensitivity"@en
+	.
+  
+:f6d7f3d2-85f0-4248-a6cf-762d63785464
+  a skos:Concept , esco:Skill ;
+  dcterms:creator ca: ;
+  dcterms:created "2025-09-18T00:48:02.534Z"^^xsd:dateTime;
+  skos:definition "The capability to lead and facilitate dialogue between two or more people."@en ;
+  skos:topConceptOf cs: ;
+  skos:prefLabel "Managing Conversation"@en
+	.
+  
