@@ -1,18 +1,70 @@
-Cool — yes, we can absolutely start **saving outputs** and turning them into **report-ready tables + narrative**.
+Perfect — for **MS Word**, the main things are:
 
-Two practical points up front:
+* keep the table simple (no Markdown pipes)
+* put the **caption as a normal Word caption** (or bold line above the table)
+* include the short narrative **immediately after the table**, not embedded in it
 
-1. **I can’t directly “see” what your Fuseki returns unless you paste it here or save it to a file and paste the file contents.**
-2. The **terminal workflow is ideal** from here because it’s reproducible (and you can commit the query + outputs alongside the report). But if you prefer the Fuseki UI, we can do that too — terminal just keeps things tidy.
+Below is **exactly what to paste into Word**, in order.
 
-## A clean workflow from now on
+---
 
-### 1) Save query results as CSV (best for tables)
+## 1) Table (Word-friendly)
 
-Run the query, but ask Fuseki for CSV and write it to a file:
+Paste this **as plain text** into Word, then use
+**Insert → Table → Convert Text to Table…**
+with **Separate text at: Tabs**.
 
-```bash
-cd /Users/leskneebone/Projects/skills-SPARQL
+```
+IT2017 concept	Francis-mapped NST skills	Skills	Source units
+Software Fundamentals (https://data.jobsandskills.gov.au/def/it2017/ITE-SWF)	2	Programming Problem Solving; Algorithm Design	ICTPRG302
+```
+
+After conversion:
+
+* you can turn the IT2017 concept into a clickable hyperlink
+* you can centre or right-align the “2” column if you like
+* semicolons are better than pipes for Word tables
+
+---
+
+## 2) Caption (paste immediately above the table)
+
+**Table X. Worked example: VET unit → NST skills → IT2017 concept (current graph coverage).**
+
+(If you’re using Word’s caption feature:
+*References → Insert Caption → Label: Table*.)
+
+---
+
+## 3) Short narrative (paste immediately after the table)
+
+This table demonstrates the method for computing overlap between vocational achievement and higher-education curriculum structure using skills as a stable semantic bridge. In the graph, NST skills are linked to completed TGA units via `dcterms:source`. Where either units or skills are linked to IT2017 curriculum concepts (e.g. via `schema:about`, `dcterms:subject`, or SKOS mapping predicates), an “overlap view” can be generated that identifies which curriculum concepts are evidenced by a learner’s completed units.
+
+In the current dataset, the unit **ICTPRG302 (Apply introductory programming techniques)** contributes two NST skills — **Programming Problem Solving** and **Algorithm Design** — which align to IT2017 **Software Fundamentals**. This provides an auditable proof-of-method: vocational unit completion is connected to higher-education curriculum concepts through explicit skill entities with clear provenance back to training.gov.au units. Expanding the overlap beyond this worked example requires additional unit- or skill-to-IT2017 mappings in the graph, rather than changes to the method itself.
+
+---
+
+## 4) Optional tightening (if the audience is very executive)
+
+If you want a **one-sentence version** instead of the full narrative, use this instead:
+
+> This worked example shows how completion of ICTPRG302 maps to two NST skills (Programming Problem Solving; Algorithm Design), which align to IT2017 Software Fundamentals, demonstrating a unit → skill → curriculum concept pathway with explicit provenance.
+
+---
+
+If you want, next we can:
+
+* rewrite this to match **APS / JSA house style**, or
+* compress it to fit a **single half-page briefing**, or
+* add a **one-line method call-out** you can reuse elsewhere in the document.
+
+
+<----------------->
+
+
+
+
+
 
 DATASET="Skills"
 GRAPH="https://data.jobsandskills.gov.au/graph/skills-sparql/combined"
@@ -191,3 +243,6 @@ If you run the CSV export now, tell me:
 * roughly how many rows?
 
 (If it’s empty, I’ll give you one short diagnostic query to find which linking predicate/path is missing.)
+
+Table X. Francis → IT2017 overlap (via NST skills evidenced by TGA unit completion).
+This table summarises IT2017 curriculum concepts that are supported by NST skills associated with the TGA units Francis completed in Certificate III in IT. In the current graph, unit ICTPRG302 (Apply introductory programming techniques) is linked (via dcterms:source) to two NST skills — Programming Problem Solving and Algorithm Design — which in turn align to IT2017 Software Fundamentals. This provides an auditable “skills as semantic bridge” example: vocational achievement is connected to higher-education curriculum structure through stable skill entities with clear provenance back to specific units.
