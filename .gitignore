@@ -1,2 +1,5 @@
 .DS_Store
 .DS_Store
+prefix_inventory.csv
+prefix_clashes_same_prefix.csv
+prefix_clashes_same_base.csv
