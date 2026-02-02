@@ -1,19 +1,21 @@
 
 ## the table!
 
-Cert III unit	NST skills evidenced	IT2017 domains	ICT40120 aligned?	SM0056 aligned?
-BSBXCS302	Cyber Threat Identification; Breach Blocking; Policy Review			
-ICTICT310				
-ICTICT317	Operating Environment Advantage Evaluation; Soe Application Reporting Oversight; Soe Deployment Decision-Making; Soe Deployment Assessment; End User Device Analysis			
-ICTSAS305	Ict Documentation Development; Ict Technical Instruction			
-ICTICT313	Ip Policy Interpretation; Ict Policy Access Management			
-ICTNWK309	Network Operating System Feature Assessment; Network Os Upgrade Strategy			
-BSBXTW301	Commitment Communication			
-ICTNWK307	Network Systems Problem Solving			
-ICTPRG302	Algorithm Design; Programming Problem Solving	Software Fundamentals		
-BSBCRT301	Assumption Evaluation; Connection Assessment; Critical Questioning			
-ICTWEB304	Web Page Accessibility Assessment; Web Directory Structure Management; Web Ftp Transfer Management; Webpage Hyperlink Integration; Web Page Multimedia Integration; Web Text Design			
-BSBXCS303	Personal Information Data Management; Sensitive Pii Identification; Cyber Security Stakeholder Consultation; Infrastructure Fault Reporting; Privacy Policy Application; Sensitive Data Identification	
+
+| Cert III unit | NST skills evidenced | IT2017 domains | ICT40120 aligned? | SM0056 aligned? |
+|---|---|---|---|---|
+| BSBXCS302 | Cyber Threat Identification; Breach Blocking; Policy Review |  |  |  |
+| ICTICT310 |  |  |  |  |
+| ICTICT317 | Operating Environment Advantage Evaluation; Soe Application Reporting Oversight; Soe Deployment Decision-Making; Soe Deployment Assessment; End User Device Analysis |  |  |  |
+| ICTSAS305 | Ict Documentation Development; Ict Technical Instruction |  |  |  |
+| ICTICT313 | Ip Policy Interpretation; Ict Policy Access Management |  |  |  |
+| ICTNWK309 | Network Operating System Feature Assessment; Network Os Upgrade Strategy |  |  |  |
+| BSBXTW301 | Commitment Communication |  |  |  |
+| ICTNWK307 | Network Systems Problem Solving |  |  |  |
+| ICTPRG302 | Algorithm Design; Programming Problem Solving | Software Fundamentals |  |  |
+| BSBCRT301 | Assumption Evaluation; Connection Assessment; Critical Questioning |  |  |  |
+| ICTWEB304 | Web Page Accessibility Assessment; Web Directory Structure Management; Web Ftp Transfer Management; Webpage Hyperlink Integration; Web Page Multimedia Integration; Web Text Design |  |  |  |
+| BSBXCS303 | Personal Information Data Management; Sensitive Pii Identification; Cyber Security Stakeholder Consultation; Infrastructure Fault Reporting; Privacy Policy Application; Sensitive Data Identification |  |  |  |
 
 <---------------->
 
