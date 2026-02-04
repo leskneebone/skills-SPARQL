@@ -1,0 +1,4 @@
+SELECT (SUM(?c) AS ?total)
+WHERE {
+  { SELECT (COUNT(*) AS ?c) WHERE { GRAPH ?g { ?s ?p ?o } } GROUP BY ?g }
+}
