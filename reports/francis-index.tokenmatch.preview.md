@@ -1,0 +1,120 @@
+| target | targetLabel | skill | skillLabel | score | sharedTokens |
+|---|---|---|---|---|---|
+| https://training.gov.au/training/details/BSBXCS404 | Contribute to cyber security risk management | https://test.linked.data.gov.au/def/nst/SK051803 | Cyber Threat Identification | 1 | cyber |
+| https://training.gov.au/training/details/BSBXCS404 | Contribute to cyber security risk management | https://test.linked.data.gov.au/def/nst/SK121207 | Ict Policy Access Management | 1 | management |
+| https://training.gov.au/training/details/BSBXCS404 | Contribute to cyber security risk management | https://test.linked.data.gov.au/def/nst/SK127626 | Web Directory Structure Management | 1 | management |
+| https://training.gov.au/training/details/BSBXCS404 | Contribute to cyber security risk management | https://test.linked.data.gov.au/def/nst/SK127629 | Web Ftp Transfer Management | 1 | management |
+| https://training.gov.au/training/details/BSBXCS404 | Contribute to cyber security risk management | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 2 | cyber security |
+| https://training.gov.au/training/details/BSBXCS404 | Contribute to cyber security risk management | https://test.linked.data.gov.au/def/nst/SK051808 | Personal Information Data Management | 1 | management |
+| https://training.gov.au/training/details/ICTICT451 | Comply with IP, ethics and privacy policies in ICT environments | https://test.linked.data.gov.au/def/nst/SK051925 | Privacy Policy Application | 1 | privacy |
+| https://training.gov.au/training/details/BSBPEF402 | Develop personal work priorities | https://test.linked.data.gov.au/def/nst/SK051808 | Personal Information Data Management | 1 | personal |
+| https://training.gov.au/training/details/ICTICT424 | Address cyber security requirements | https://test.linked.data.gov.au/def/nst/SK051803 | Cyber Threat Identification | 1 | cyber |
+| https://training.gov.au/training/details/ICTICT424 | Address cyber security requirements | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 2 | cyber security |
+| https://training.gov.au/training/details/ICTWEB434 | Transfer content to websites | https://test.linked.data.gov.au/def/nst/SK127629 | Web Ftp Transfer Management | 1 | transfer |
+| https://training.gov.au/training/details/ICTSAS446 | Fault find and troubleshoot ICT equipment, hardware and software problems | https://test.linked.data.gov.au/def/nst/SK051921 | Infrastructure Fault Reporting | 1 | fault |
+| https://training.gov.au/training/details/ICTSAS440 | Monitor and administer security of ICT systems | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 1 | security |
+| https://training.gov.au/training/details/ICTAUT401 | Design business process automation solutions | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTCYS401 | Design and implement network security infrastructure for an organisation | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | network |
+| https://training.gov.au/training/details/ICTCYS401 | Design and implement network security infrastructure for an organisation | https://test.linked.data.gov.au/def/nst/SK122519 | Network Os Upgrade Strategy | 1 | network |
+| https://training.gov.au/training/details/ICTCYS401 | Design and implement network security infrastructure for an organisation | https://test.linked.data.gov.au/def/nst/SK122493 | Network Systems Problem Solving | 1 | network |
+| https://training.gov.au/training/details/ICTCYS401 | Design and implement network security infrastructure for an organisation | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTCYS401 | Design and implement network security infrastructure for an organisation | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 1 | security |
+| https://training.gov.au/training/details/ICTCYS401 | Design and implement network security infrastructure for an organisation | https://test.linked.data.gov.au/def/nst/SK051921 | Infrastructure Fault Reporting | 1 | infrastructure |
+| https://training.gov.au/training/details/ICTCYS402 | Identify and confirm cyber security incidents | https://test.linked.data.gov.au/def/nst/SK051803 | Cyber Threat Identification | 1 | cyber |
+| https://training.gov.au/training/details/ICTCYS402 | Identify and confirm cyber security incidents | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 2 | cyber security |
+| https://training.gov.au/training/details/ICTCYS403 | Plan and implement information security strategies for an organisation | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 1 | security |
+| https://training.gov.au/training/details/ICTCYS405 | Develop cyber security incident response plans | https://test.linked.data.gov.au/def/nst/SK051803 | Cyber Threat Identification | 1 | cyber |
+| https://training.gov.au/training/details/ICTCYS405 | Develop cyber security incident response plans | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 2 | cyber security |
+| https://training.gov.au/training/details/ICTCYS406 | Respond to cyber security incidents | https://test.linked.data.gov.au/def/nst/SK051803 | Cyber Threat Identification | 1 | cyber |
+| https://training.gov.au/training/details/ICTCYS406 | Respond to cyber security incidents | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 2 | cyber security |
+| https://training.gov.au/training/details/ICTCYS407 | Gather, analyse and interpret threat data | https://test.linked.data.gov.au/def/nst/SK051803 | Cyber Threat Identification | 1 | threat |
+| https://training.gov.au/training/details/ICTDMT404 | Create visual design components for digital media | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTDSN401 | Design digital user interfaces | https://test.linked.data.gov.au/def/nst/SK121266 | End User Device Analysis | 1 | user |
+| https://training.gov.au/training/details/ICTDSN401 | Design digital user interfaces | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTDSN402 | Develop digital user interfaces | https://test.linked.data.gov.au/def/nst/SK121266 | End User Device Analysis | 1 | user |
+| https://training.gov.au/training/details/ICTGAM421 | Identify and apply games design and game play principles | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTGAM422 | Create design documents for interactive games | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTGAM425 | Create visual design components in interactive games | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTGAM430 | Design interactive media | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTGAM431 | Design and create 3-D digital models | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTICT432 | Develop detailed technical design | https://test.linked.data.gov.au/def/nst/SK125531 | Ict Technical Instruction | 1 | technical |
+| https://training.gov.au/training/details/ICTICT432 | Develop detailed technical design | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTICT433 | Build graphical user interfaces | https://test.linked.data.gov.au/def/nst/SK121266 | End User Device Analysis | 1 | user |
+| https://training.gov.au/training/details/ICTICT435 | Create technical documentation | https://test.linked.data.gov.au/def/nst/SK125531 | Ict Technical Instruction | 1 | technical |
+| https://training.gov.au/training/details/ICTICT435 | Create technical documentation | https://test.linked.data.gov.au/def/nst/SK125525 | Ict Documentation Development | 1 | documentation |
+| https://training.gov.au/training/details/ICTICT444 | Develop client user interfaces | https://test.linked.data.gov.au/def/nst/SK121266 | End User Device Analysis | 1 | user |
+| https://training.gov.au/training/details/ICTICT446 | Apply ICT service management principles | https://test.linked.data.gov.au/def/nst/SK121207 | Ict Policy Access Management | 1 | management |
+| https://training.gov.au/training/details/ICTICT446 | Apply ICT service management principles | https://test.linked.data.gov.au/def/nst/SK127626 | Web Directory Structure Management | 1 | management |
+| https://training.gov.au/training/details/ICTICT446 | Apply ICT service management principles | https://test.linked.data.gov.au/def/nst/SK127629 | Web Ftp Transfer Management | 1 | management |
+| https://training.gov.au/training/details/ICTICT446 | Apply ICT service management principles | https://test.linked.data.gov.au/def/nst/SK051808 | Personal Information Data Management | 1 | management |
+| https://training.gov.au/training/details/ICTICT453 | Evaluate accessibility of organisational systems, programs and software | https://test.linked.data.gov.au/def/nst/SK127623 | Web Page Accessibility Assessment | 1 | accessibility |
+| https://training.gov.au/training/details/ICTNWK421 | Install, configure and test network security | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | network |
+| https://training.gov.au/training/details/ICTNWK421 | Install, configure and test network security | https://test.linked.data.gov.au/def/nst/SK122519 | Network Os Upgrade Strategy | 1 | network |
+| https://training.gov.au/training/details/ICTNWK421 | Install, configure and test network security | https://test.linked.data.gov.au/def/nst/SK122493 | Network Systems Problem Solving | 1 | network |
+| https://training.gov.au/training/details/ICTNWK421 | Install, configure and test network security | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 1 | security |
+| https://training.gov.au/training/details/ICTNWK423 | Manage network and data integrity | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | network |
+| https://training.gov.au/training/details/ICTNWK423 | Manage network and data integrity | https://test.linked.data.gov.au/def/nst/SK122519 | Network Os Upgrade Strategy | 1 | network |
+| https://training.gov.au/training/details/ICTNWK423 | Manage network and data integrity | https://test.linked.data.gov.au/def/nst/SK122493 | Network Systems Problem Solving | 1 | network |
+| https://training.gov.au/training/details/ICTNWK431 | Create network documentation | https://test.linked.data.gov.au/def/nst/SK125525 | Ict Documentation Development | 1 | documentation |
+| https://training.gov.au/training/details/ICTNWK431 | Create network documentation | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | network |
+| https://training.gov.au/training/details/ICTNWK431 | Create network documentation | https://test.linked.data.gov.au/def/nst/SK122519 | Network Os Upgrade Strategy | 1 | network |
+| https://training.gov.au/training/details/ICTNWK431 | Create network documentation | https://test.linked.data.gov.au/def/nst/SK122493 | Network Systems Problem Solving | 1 | network |
+| https://training.gov.au/training/details/ICTNWK432 | Build an enterprise wireless network | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | network |
+| https://training.gov.au/training/details/ICTNWK432 | Build an enterprise wireless network | https://test.linked.data.gov.au/def/nst/SK122519 | Network Os Upgrade Strategy | 1 | network |
+| https://training.gov.au/training/details/ICTNWK432 | Build an enterprise wireless network | https://test.linked.data.gov.au/def/nst/SK122493 | Network Systems Problem Solving | 1 | network |
+| https://training.gov.au/training/details/ICTNWK433 | Install backbone technologies in a local area network | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | network |
+| https://training.gov.au/training/details/ICTNWK433 | Install backbone technologies in a local area network | https://test.linked.data.gov.au/def/nst/SK122519 | Network Os Upgrade Strategy | 1 | network |
+| https://training.gov.au/training/details/ICTNWK433 | Install backbone technologies in a local area network | https://test.linked.data.gov.au/def/nst/SK122493 | Network Systems Problem Solving | 1 | network |
+| https://training.gov.au/training/details/ICTPRG437 | Build a user interface | https://test.linked.data.gov.au/def/nst/SK121266 | End User Device Analysis | 1 | user |
+| https://training.gov.au/training/details/ICTPRG441 | Apply skills in object-oriented design | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTPRG446 | Prepare software development review | https://test.linked.data.gov.au/def/nst/SK051908 | Policy Review | 1 | review |
+| https://training.gov.au/training/details/ICTSAS433 | Update ICT client support procedures and assist with policy development | https://test.linked.data.gov.au/def/nst/SK051908 | Policy Review | 1 | policy |
+| https://training.gov.au/training/details/ICTSAS433 | Update ICT client support procedures and assist with policy development | https://test.linked.data.gov.au/def/nst/SK121203 | Ip Policy Interpretation | 1 | policy |
+| https://training.gov.au/training/details/ICTSAS433 | Update ICT client support procedures and assist with policy development | https://test.linked.data.gov.au/def/nst/SK121207 | Ict Policy Access Management | 1 | policy |
+| https://training.gov.au/training/details/ICTSAS433 | Update ICT client support procedures and assist with policy development | https://test.linked.data.gov.au/def/nst/SK051925 | Privacy Policy Application | 1 | policy |
+| https://training.gov.au/training/details/ICTSAS443 | Support operating system users and troubleshoot applications | https://test.linked.data.gov.au/def/nst/SK121259 | Operating Environment Advantage Evaluation | 1 | operating |
+| https://training.gov.au/training/details/ICTSAS443 | Support operating system users and troubleshoot applications | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | operating |
+| https://training.gov.au/training/details/ICTSAS444 | Repair operating systems boot up procedures | https://test.linked.data.gov.au/def/nst/SK121259 | Operating Environment Advantage Evaluation | 1 | operating |
+| https://training.gov.au/training/details/ICTSAS444 | Repair operating systems boot up procedures | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | operating |
+| https://training.gov.au/training/details/ICTSAS445 | Configure and troubleshoot operating system software | https://test.linked.data.gov.au/def/nst/SK121259 | Operating Environment Advantage Evaluation | 1 | operating |
+| https://training.gov.au/training/details/ICTSAS445 | Configure and troubleshoot operating system software | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | operating |
+| https://training.gov.au/training/details/ICTSUS403 | Install and test power management software | https://test.linked.data.gov.au/def/nst/SK121207 | Ict Policy Access Management | 1 | management |
+| https://training.gov.au/training/details/ICTSUS403 | Install and test power management software | https://test.linked.data.gov.au/def/nst/SK127626 | Web Directory Structure Management | 1 | management |
+| https://training.gov.au/training/details/ICTSUS403 | Install and test power management software | https://test.linked.data.gov.au/def/nst/SK127629 | Web Ftp Transfer Management | 1 | management |
+| https://training.gov.au/training/details/ICTSUS403 | Install and test power management software | https://test.linked.data.gov.au/def/nst/SK051808 | Personal Information Data Management | 1 | management |
+| https://training.gov.au/training/details/ICTTEN418 | Install and test a radio frequency identification system | https://test.linked.data.gov.au/def/nst/SK051803 | Cyber Threat Identification | 1 | identification |
+| https://training.gov.au/training/details/ICTTEN418 | Install and test a radio frequency identification system | https://test.linked.data.gov.au/def/nst/SK051817 | Sensitive Pii Identification | 1 | identification |
+| https://training.gov.au/training/details/ICTTEN418 | Install and test a radio frequency identification system | https://test.linked.data.gov.au/def/nst/SK051927 | Sensitive Data Identification | 1 | identification |
+| https://training.gov.au/training/details/ICTTEN420 | Design, install and configure an internetwork | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTTEN525 | Install, configure and test local area network switches | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | network |
+| https://training.gov.au/training/details/ICTTEN525 | Install, configure and test local area network switches | https://test.linked.data.gov.au/def/nst/SK122519 | Network Os Upgrade Strategy | 1 | network |
+| https://training.gov.au/training/details/ICTTEN525 | Install, configure and test local area network switches | https://test.linked.data.gov.au/def/nst/SK122493 | Network Systems Problem Solving | 1 | network |
+| https://training.gov.au/training/details/ICTWEB432 | Design website layouts | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://training.gov.au/training/details/ICTWEB433 | Confirm accessibility of websites | https://test.linked.data.gov.au/def/nst/SK127623 | Web Page Accessibility Assessment | 1 | accessibility |
+| https://training.gov.au/training/details/ICTWEB439 | Confirm basic website security | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 1 | security |
+| https://training.gov.au/training/details/ICTWEB445 | Implement content management systems | https://test.linked.data.gov.au/def/nst/SK121207 | Ict Policy Access Management | 1 | management |
+| https://training.gov.au/training/details/ICTWEB445 | Implement content management systems | https://test.linked.data.gov.au/def/nst/SK127626 | Web Directory Structure Management | 1 | management |
+| https://training.gov.au/training/details/ICTWEB445 | Implement content management systems | https://test.linked.data.gov.au/def/nst/SK127629 | Web Ftp Transfer Management | 1 | management |
+| https://training.gov.au/training/details/ICTWEB445 | Implement content management systems | https://test.linked.data.gov.au/def/nst/SK051808 | Personal Information Data Management | 1 | management |
+| https://training.gov.au/training/details/ICTWEB448 | Confirm website content meets technical protocols and standards | https://test.linked.data.gov.au/def/nst/SK125531 | Ict Technical Instruction | 1 | technical |
+| https://training.gov.au/training/details/ICTWEB449 | Confirm website access and useability | https://test.linked.data.gov.au/def/nst/SK121207 | Ict Policy Access Management | 1 | access |
+| https://training.gov.au/training/details/ICTXRE403 | Design mixed reality solutions | https://test.linked.data.gov.au/def/nst/SK127636 | Web Text Design | 1 | design |
+| https://www.canberra.edu.au/unit/11484 | Network Architecture 11484 | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | network |
+| https://www.canberra.edu.au/unit/11484 | Network Architecture 11484 | https://test.linked.data.gov.au/def/nst/SK122519 | Network Os Upgrade Strategy | 1 | network |
+| https://www.canberra.edu.au/unit/11484 | Network Architecture 11484 | https://test.linked.data.gov.au/def/nst/SK122493 | Network Systems Problem Solving | 1 | network |
+| https://www.canberra.edu.au/unit/11485 | Introduction to Network Engineering 11485 | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | network |
+| https://www.canberra.edu.au/unit/11485 | Introduction to Network Engineering 11485 | https://test.linked.data.gov.au/def/nst/SK122519 | Network Os Upgrade Strategy | 1 | network |
+| https://www.canberra.edu.au/unit/11485 | Introduction to Network Engineering 11485 | https://test.linked.data.gov.au/def/nst/SK122493 | Network Systems Problem Solving | 1 | network |
+| https://www.canberra.edu.au/unit/11759 | Information Security 11759 | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 1 | security |
+| https://www.canberra.edu.au/unit/11488 | Security and Support in IT 11488 | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 1 | security |
+| https://www.canberra.edu.au/unit/11906 | Introduction to Cyber Security 11906 | https://test.linked.data.gov.au/def/nst/SK051803 | Cyber Threat Identification | 1 | cyber |
+| https://www.canberra.edu.au/unit/11906 | Introduction to Cyber Security 11906 | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 2 | cyber security |
+| https://www.canberra.edu.au/unit/11514 | System and Network Administration 11514 | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | network |
+| https://www.canberra.edu.au/unit/11514 | System and Network Administration 11514 | https://test.linked.data.gov.au/def/nst/SK122519 | Network Os Upgrade Strategy | 1 | network |
+| https://www.canberra.edu.au/unit/11514 | System and Network Administration 11514 | https://test.linked.data.gov.au/def/nst/SK122493 | Network Systems Problem Solving | 1 | network |
+| https://www.canberra.edu.au/unit/8019 | Computer and Network Security 8019 | https://test.linked.data.gov.au/def/nst/SK122518 | Network Operating System Feature Assessment | 1 | network |
+| https://www.canberra.edu.au/unit/8019 | Computer and Network Security 8019 | https://test.linked.data.gov.au/def/nst/SK122519 | Network Os Upgrade Strategy | 1 | network |
+| https://www.canberra.edu.au/unit/8019 | Computer and Network Security 8019 | https://test.linked.data.gov.au/def/nst/SK122493 | Network Systems Problem Solving | 1 | network |
+| https://www.canberra.edu.au/unit/8019 | Computer and Network Security 8019 | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 1 | security |
+| https://www.canberra.edu.au/unit/11907 | Advanced Cyber Security 11907 | https://test.linked.data.gov.au/def/nst/SK051803 | Cyber Threat Identification | 1 | cyber |
+| https://www.canberra.edu.au/unit/11907 | Advanced Cyber Security 11907 | https://test.linked.data.gov.au/def/nst/SK051918 | Cyber Security Stakeholder Consultation | 2 | cyber security |

@@ -1,0 +1,42 @@
+PREFIX dcterms:<http://purl.org/dc/terms/>
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX tga:    <https://training.gov.au/training/details/>
+
+SELECT
+  (CONCAT(?unitCode, " — ", ?unitLabel) AS ?unitDisplay)
+  (COALESCE(GROUP_CONCAT(DISTINCT ?skillLabel; separator="; "), "") AS ?nstSkillsEvidenced)
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+    VALUES ?unit {
+      tga:BSBXCS302
+      tga:ICTICT310
+      tga:ICTICT317
+      tga:ICTSAS305
+      tga:ICTICT313
+      tga:ICTNWK309
+      tga:BSBXTW301
+      tga:ICTNWK307
+      tga:ICTPRG302
+      tga:BSBCRT301
+      tga:ICTWEB304
+      tga:BSBXCS303
+    }
+
+    BIND(STRAFTER(STR(?unit), "https://training.gov.au/training/details/") AS ?unitCode)
+
+    OPTIONAL { ?unit skos:prefLabel ?uPL }
+    OPTIONAL { ?unit rdfs:label     ?uRL }
+    OPTIONAL { ?unit dcterms:title  ?uTL }
+    BIND(COALESCE(STR(?uPL), STR(?uRL), STR(?uTL), ?unitCode) AS ?unitLabel)
+
+    OPTIONAL {
+      ?skill dcterms:source ?unit .
+      OPTIONAL { ?skill skos:prefLabel ?sPL }
+      OPTIONAL { ?skill rdfs:label     ?sRL }
+      BIND(COALESCE(STR(?sPL), STR(?sRL), STR(?skill)) AS ?skillLabel)
+    }
+  }
+}
+GROUP BY ?unitCode ?unitLabel
+ORDER BY LCASE(?unitDisplay)

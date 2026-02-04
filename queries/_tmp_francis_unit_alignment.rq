@@ -1,0 +1,90 @@
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms:<http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX tga:    <https://training.gov.au/training/details/>
+PREFIX ucmajor:<https://data.jobsandskills.gov.au/def/ucmajor/>
+
+SELECT
+  ?unitDisplay
+  (GROUP_CONCAT(DISTINCT ?skillLabel; separator="; ") AS ?nstSkillsEvidenced)
+  (GROUP_CONCAT(DISTINCT ?itLabel; separator="; ")    AS ?it2017Domains)
+  (IF(?hasCertIV, "Yes (shared NST skills)", "")       AS ?ict40120Alignment)
+  (IF(?hasUC,     "Yes (shared NST skills)", "")       AS ?sm0056Alignment)
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+
+    # --- Francis's completed Cert III units (your current list) ---
+    VALUES ?unit {
+      tga:BSBXCS302
+      tga:ICTICT310
+      tga:ICTICT317
+      tga:ICTSAS305
+      tga:ICTICT313
+      tga:ICTNWK309
+      tga:BSBXTW301
+      tga:ICTNWK307
+      tga:ICTPRG302
+      tga:BSBCRT301
+      tga:ICTWEB304
+      tga:BSBXCS303
+    }
+
+    # Unit code for display
+    BIND(STRAFTER(STR(?unit), "https://training.gov.au/training/details/") AS ?unitCode)
+
+    # Unit label (best effort)
+    OPTIONAL { ?unit rdfs:label ?uRL }
+    OPTIONAL { ?unit dcterms:title ?uTL }
+    OPTIONAL { ?unit skos:prefLabel ?uPL }
+    BIND(COALESCE(STR(?uPL), STR(?uRL), STR(?uTL), ?unitCode) AS ?unitLabel)
+
+    # Completed unit display string for Word table
+    BIND(CONCAT(?unitCode, " — ", ?unitLabel) AS ?unitDisplay)
+
+    # Skills evidenced by unit
+    ?skill dcterms:source ?unit .
+    OPTIONAL { ?skill skos:prefLabel ?sPL }
+    OPTIONAL { ?skill rdfs:label     ?sRL }
+    BIND(COALESCE(STR(?sPL), STR(?sRL), STR(?skill)) AS ?skillLabel)
+
+    # IT2017 domains reached via skill (or unit), using your established predicate set
+    {
+      ?skill ?link ?it2017 .
+    }
+    UNION
+    {
+      ?unit  ?link ?it2017 .
+    }
+
+    FILTER(?link IN (
+      schema:about,
+      dcterms:subject,
+      skos:related,
+      skos:closeMatch,
+      skos:exactMatch,
+      skos:broadMatch,
+      skos:narrowMatch
+    ))
+
+    FILTER(CONTAINS(LCASE(STR(?it2017)), "it2017"))
+
+    OPTIONAL { ?it2017 skos:prefLabel ?itPL }
+    OPTIONAL { ?it2017 rdfs:label     ?itRL }
+    OPTIONAL { ?it2017 dcterms:title  ?itTL }
+    BIND(COALESCE(STR(?itPL), STR(?itRL), STR(?itTL), STR(?it2017)) AS ?itLabel)
+
+    # Cert IV and UC alignment flags (via shared NST skills)
+    BIND(EXISTS {
+      ?skill ?p4 ?q4 .
+      FILTER(CONTAINS(LCASE(STR(?q4)), "ict40120"))
+    } AS ?hasCertIV)
+
+    BIND(EXISTS {
+      ?skill ?pu ?uc .
+      FILTER(CONTAINS(LCASE(STR(?uc)), "sm0056"))
+    } AS ?hasUC)
+  }
+}
+GROUP BY ?unitDisplay ?hasCertIV ?hasUC
+ORDER BY LCASE(?unitDisplay)

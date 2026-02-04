@@ -1,0 +1,241 @@
+<https://test.linked.data.gov.au/def/nst/SK051927>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBXCS303>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Sensitive Data Identification"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK051925>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBXCS303>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Privacy Policy Application"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK051921>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBXCS303>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Infrastructure Fault Reporting"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK051808>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBXCS303>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Personal Information Data Management"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK051817>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBXCS303>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Sensitive Pii Identification"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK051918>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBXCS303>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Data Set Organization"@en , "Cyber Security Stakeholder Consultation"@en .
+
+<https://training.gov.au/training/details/BSBXCS303>
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Securely manage personally identifiable information and workplace information"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK127629>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTWEB304>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Web Ftp Transfer Management"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK127626>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTWEB304>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Web Directory Structure Management"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK127633>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTWEB304>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Web Page Multimedia Integration"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK127623>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTWEB304>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Web Page Accessibility Assessment"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK127636>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTWEB304>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Web Text Design"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK127631>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTWEB304>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Webpage Hyperlink Integration"@en .
+
+<https://training.gov.au/training/details/ICTWEB304>
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Build simple web pages"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK042805>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBCRT301>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Connection Assessment"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK042815>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBCRT301>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Critical Questioning"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK042803>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBCRT301>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Assumption Evaluation"@en .
+
+<https://test.linked.data.gov.au/def/nst/125985>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTPRG302>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Programming Problem Solving"@en .
+
+<https://test.linked.data.gov.au/def/nst/125975>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTPRG302>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Algorithm Design"@en .
+
+<https://training.gov.au/training/details/ICTPRG302>
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Apply introductory programming techniques"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK122493>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTNWK307>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Network Systems Problem Solving"@en .
+
+<https://training.gov.au/training/details/ICTNWK307>
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Provide network systems administration"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK052048>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBXTW301>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Commitment Communication"@en .
+
+<https://training.gov.au/training/details/BSBXTW301>
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Work in a team"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK122519>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTNWK309>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Network Os Upgrade Strategy"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK122518>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTNWK309>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Network Operating System Feature Assessment"@en .
+
+<https://training.gov.au/training/details/ICTNWK309>
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Configure and administer network operating systems"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK121207>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTICT313>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Ict Policy Access Management"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK121203>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTICT313>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Ip Policy Interpretation"@en .
+
+<https://training.gov.au/training/details/ICTICT313>
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Identify IP, ethics and privacy policies in ICT environments"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK125525>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTSAS305>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Ict Documentation Development"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK125531>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTSAS305>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Ict Technical Instruction"@en .
+
+<https://training.gov.au/training/details/ICTSAS305>
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Provide ICT advice to clients"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK121264>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTICT317>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Soe Deployment Assessment"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK121259>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTICT317>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Operating Environment Advantage Evaluation"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK121260>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTICT317>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Soe Application Reporting Oversight"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK121262>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTICT317>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Soe Deployment Decision-Making"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK121266>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/ICTICT317>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "End User Device Analysis"@en .
+
+<https://training.gov.au/training/details/ICTICT317>
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Maintain standard operating environments"@en .
+
+<https://training.gov.au/training/details/ICTICT310>
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Identify and use industry specific technologies"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK051908>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBXCS302>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Policy Review"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK051900>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBXCS302>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Breach Blocking"@en .
+
+<https://test.linked.data.gov.au/def/nst/SK051803>
+        <http://purl.org/dc/terms/source>
+                <https://training.gov.au/training/details/BSBXCS302>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Cyber Threat Identification"@en .
+
+<https://training.gov.au/training/details/BSBXCS302>
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Identify and report online security threats"@en .

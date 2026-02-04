@@ -1,0 +1,5 @@
+@prefix schema: <https://schema.org/> .
+
+<https://training.gov.au/training/details/ICTPRG302> schema:about <https://training.gov.au/training/details/ICTPRG302> .
+
+<https://training.gov.au/tgaQualifications/ICT40120> schema:about <https://training.gov.au/training/details/ICTPRG302> .

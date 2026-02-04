@@ -1,0 +1,59 @@
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+PREFIX dcterms:<http://purl.org/dc/terms/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX tgaunit:<https://training.gov.au/training/details/>
+
+SELECT
+  ?it2017
+  (SAMPLE(?itLabel) AS ?it2017Label)
+  (COUNT(DISTINCT ?skill) AS ?francisSkillsMapped)
+  (GROUP_CONCAT(DISTINCT ?skillLabel; separator=" | ") AS ?skills)
+  (GROUP_CONCAT(DISTINCT ?unitCode; separator=", ") AS ?sourceUnits)
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+
+    VALUES ?unit {
+      tgaunit:BSBXCS302
+      tgaunit:ICTICT310
+      tgaunit:ICTICT317
+      tgaunit:ICTSAS305
+      tgaunit:ICTICT313
+      tgaunit:ICTNWK309
+      tgaunit:BSBXTW301
+      tgaunit:ICTNWK307
+      tgaunit:ICTPRG302
+      tgaunit:BSBCRT301
+      tgaunit:ICTWEB304
+      tgaunit:BSBXCS303
+    }
+
+    BIND(STRAFTER(STR(?unit), "https://training.gov.au/training/details/") AS ?unitCode)
+
+    ?skill dcterms:source ?unit .
+    OPTIONAL { ?skill skos:prefLabel ?skillLabel }
+
+    { ?skill ?link ?it2017 . }
+    UNION
+    { ?unit  ?link ?it2017 . }
+
+    FILTER(?link IN (
+      schema:about,
+      dcterms:subject,
+      skos:related,
+      skos:closeMatch,
+      skos:exactMatch,
+      skos:broadMatch,
+      skos:narrowMatch
+    ))
+
+    FILTER(CONTAINS(LCASE(STR(?it2017)), "it2017"))
+
+    OPTIONAL { ?it2017 skos:prefLabel ?itPL }
+    OPTIONAL { ?it2017 rdfs:label ?itRL }
+    OPTIONAL { ?it2017 dcterms:title ?itTL }
+    BIND(COALESCE(STR(?itPL), STR(?itRL), STR(?itTL), STR(?it2017)) AS ?itLabel)
+  }
+}
+GROUP BY ?it2017
+ORDER BY DESC(?francisSkillsMapped) LCASE(STR(?it2017))
