@@ -1,4 +1,13 @@
 # skills-SPARQL
+
+This repo uses Git LFS for large Turtle files:
+- data/*.ttl
+- snippets/combined/*.ttl
+
+After cloning, run:
+  git lfs install
+  git lfs pull
+
 SPARQL code and resources to support skills vocabulary projects
 
 Purpose (SPARQL for JSA skills + training)
