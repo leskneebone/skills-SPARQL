@@ -1,0 +1,18 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+  ?prop a rdf:Property ;
+        rdfs:label ?lab .
+}
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+    ?s ?prop ?o .
+    FILTER(isIRI(?prop))
+
+    OPTIONAL { ?prop rdfs:label ?l1 . FILTER(langMatches(lang(?l1), "en")) }
+    OPTIONAL { ?prop skos:prefLabel ?l2 . FILTER(langMatches(lang(?l2), "en")) }
+    BIND(COALESCE(?l1, ?l2, STRLANG(REPLACE(STR(?prop), '^.*[#/]', ''), 'en')) AS ?lab)
+  }
+}

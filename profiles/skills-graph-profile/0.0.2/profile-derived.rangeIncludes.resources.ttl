@@ -1,0 +1,179 @@
+<https://rdf.sfia-online.org/9/ontology/skillCategory>
+        <https://schema.org/rangeIncludes>
+                <https://rdf.sfia-online.org/9/ontology/Category> .
+
+<https://rdf.sfia-online.org/9/ontology/definedAtLevel>
+        <https://schema.org/rangeIncludes>
+                <https://rdf.sfia-online.org/9/ontology/SkillLevel> .
+
+<http://www.w3.org/2000/01/rdf-schema#range>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2002/07/owl#Class> .
+
+<http://www.w3.org/2000/01/rdf-schema#domain>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2002/07/owl#Class> .
+
+<http://www.w3.org/2002/07/owl#equivalentClass>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2002/07/owl#Class> .
+
+<https://data.jobsandskills.gov.au/def/hasCompStat>
+        <https://schema.org/rangeIncludes>
+                <http://purl.org/ASN/schema/core/Statement> .
+
+<https://schema.org/creator>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Organization> .
+
+<http://www.w3.org/2004/02/skos/core#publisher>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Organization> .
+
+<http://purl.org/dc/terms/contributor>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Organization> .
+
+<http://www.w3.org/2004/02/skos/core#creator>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Organization> .
+
+<https://schema.org/publisher>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Organization> .
+
+<http://purl.org/dc/terms/publisher>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Organization> .
+
+<http://purl.org/dc/terms/creator>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Orgainzation> , <https://schema.org/Organization> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2000/01/rdf-schema#Class> .
+
+<http://purl.org/dc/terms/replacedBy>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Course> .
+
+<http://www.w3.org/2004/02/skos/core#member>
+        <https://schema.org/rangeIncludes>
+                <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://purl.org/dc/terms/type>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/esco/model#regulatedProfessionNote>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/esco/model#hasNACECode>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://purl.org/dc/terms/replaces>
+        <https://schema.org/rangeIncludes>
+                <http://data.europa.eu/esco/model#Occupation> , <http://data.europa.eu/esco/model#Skill> , <https://schema.org/Course> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://purl.org/dc/terms/isReplacedBy>
+        <https://schema.org/rangeIncludes>
+                <http://data.europa.eu/esco/model#Occupation> , <http://data.europa.eu/esco/model#Skill> , <https://schema.org/Course> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/esco/model#skillType>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/esco/model#skillReuseLevel>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/esco/model#isOptionalSkillFor>
+        <https://schema.org/rangeIncludes>
+                <http://data.europa.eu/esco/model#Occupation> , <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/esco/model#isEssentialSkillFor>
+        <https://schema.org/rangeIncludes>
+                <http://data.europa.eu/esco/model#Occupation> , <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/esco/model#relatedOptionalSkill>
+        <https://schema.org/rangeIncludes>
+                <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/esco/model#relatedEssentialSkill>
+        <https://schema.org/rangeIncludes>
+                <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<https://schema.org/mentions>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<https://rdf.sfia-online.org/9/ontology/level>
+        <https://schema.org/rangeIncludes>
+                <https://rdf.sfia-online.org/9/ontology/Level> , <https://schema.org/Action> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<https://schema.org/credentialCategory>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<https://schema.org/qualifications>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/EducationalOccupationalCredential> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://purl.org/dc/terms/isRequiredBy>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/EducationalOccupationalCredential> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://purl.org/dc/terms/isReferencedBy>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/EducationalOccupationalCredential> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<https://schema.org/hasPart>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Course> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<https://schema.org/about>
+        <https://schema.org/rangeIncludes>
+                <http://purl.org/ASN/schema/core/Statement> , <https://schema.org/Occupation> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://www.w3.org/2004/02/skos/core#broader>
+        <https://schema.org/rangeIncludes>
+                <https://rdf.sfia-online.org/9/ontology/Category> , <http://data.europa.eu/esco/model#Occupation> , <http://purl.org/ASN/schema/core/Statement> , <https://schema.org/Occupation> , <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://www.w3.org/2004/02/skos/core#narrower>
+        <https://schema.org/rangeIncludes>
+                <http://data.europa.eu/esco/model#Occupation> , <http://purl.org/ASN/schema/core/Statement> , <http://www.w3.org/2004/02/skos/core#Concpet> , <https://schema.org/Occupation> , <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://purl.org/dc/terms/isPartOf>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/EducationalOccupationalProgram> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://www.w3.org/2004/02/skos/core#hasTopConcept>
+        <https://schema.org/rangeIncludes>
+                <https://data.jobsandskills.gov.au/def/Industry> , <https://rdf.sfia-online.org/9/ontology/Category> , <https://rdf.sfia-online.org/9/ontology/Level> , <https://test.linked.data.gov.au/def/nst/ontology#SkillLevel> , <http://data.europa.eu/esco/model#Occupation> , <https://schema.org/Action> , <http://purl.org/ASN/schema/core/Statement> , <https://schema.org/Occupation> , <http://data.europa.eu/esco/model#Skill> , <https://schema.org/EducationalOccupationalProgram> , <https://schema.org/EducationalOccupationalCredential> , <https://schema.org/Course> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://purl.org/dc/terms/source>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Course> , <http://www.w3.org/2004/02/skos/core#Concept> .
+
+<http://data.europa.eu/esco/model#codeList>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+<http://data.europa.eu/esco/model#structureFor>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+<http://purl.org/dc/terms/references>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+<http://www.w3.org/2004/02/skos/core#topConceptOf>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+<http://www.w3.org/2004/02/skos/core#inScheme>
+        <https://schema.org/rangeIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .

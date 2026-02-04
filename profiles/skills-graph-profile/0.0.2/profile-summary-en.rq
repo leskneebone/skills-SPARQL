@@ -1,0 +1,96 @@
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+  # Classes used
+  ?class a rdfs:Class ;
+         rdfs:label ?classLabel .
+
+  # Properties used + observed (soft) domain/range
+  ?prop a rdf:Property ;
+        rdfs:label ?propLabel .
+
+  ?prop schema:domainIncludes ?d .
+  ?prop schema:rangeIncludes  ?r .
+
+  # ConceptSchemes (English label only)
+  ?cs a skos:ConceptScheme ;
+      skos:prefLabel ?csLabel .
+}
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+
+    # --- Classes ---
+    OPTIONAL {
+      ?s a ?class .
+      FILTER(isIRI(?class))
+    }
+
+    # Prefer English rdfs:label / skos:prefLabel; fallback to localname
+    OPTIONAL { ?class rdfs:label ?cl1 . FILTER(langMatches(lang(?cl1), "en")) }
+    OPTIONAL { ?class skos:prefLabel ?cl2 . FILTER(langMatches(lang(?cl2), "en")) }
+    BIND(
+      COALESCE(
+        ?cl1,
+        ?cl2,
+        STRLANG(REPLACE(STR(?class), '^.*[#/]', ''), 'en')
+      ) AS ?classLabel
+    )
+
+    # --- Properties ---
+    OPTIONAL {
+      ?s ?prop ?o .
+      FILTER(isIRI(?prop))
+    }
+
+    OPTIONAL { ?prop rdfs:label ?pl1 . FILTER(langMatches(lang(?pl1), "en")) }
+    OPTIONAL { ?prop skos:prefLabel ?pl2 . FILTER(langMatches(lang(?pl2), "en")) }
+    BIND(
+      COALESCE(
+        ?pl1,
+        ?pl2,
+        STRLANG(REPLACE(STR(?prop), '^.*[#/]', ''), 'en')
+      ) AS ?propLabel
+    )
+
+    # Observed domain: subject has rdf:type
+    OPTIONAL {
+      ?s ?prop ?o .
+      ?s a ?d .
+      FILTER(isIRI(?prop) && isIRI(?d))
+    }
+
+    # Observed range: object has rdf:type (IRI objects)
+    OPTIONAL {
+      ?s ?prop ?o .
+      ?o a ?r .
+      FILTER(isIRI(?prop) && isIRI(?r))
+    }
+
+    # Observed range: literal datatype -> schema:* soft type
+    OPTIONAL {
+      ?s ?prop ?o .
+      FILTER(isLiteral(?o))
+      BIND(datatype(?o) AS ?dt)
+      BIND(
+        IF(?dt = xsd:string, schema:Text,
+        IF(?dt = xsd:integer || ?dt = xsd:decimal || ?dt = xsd:float || ?dt = xsd:double, schema:Number,
+        IF(?dt = xsd:boolean, schema:Boolean,
+        IF(?dt = xsd:date, schema:Date,
+        IF(?dt = xsd:dateTime, schema:DateTime,
+        schema:Text)))))
+        AS ?r
+      )
+    }
+
+    # --- Concept schemes (English only) ---
+    OPTIONAL {
+      ?cs a skos:ConceptScheme ;
+          skos:prefLabel ?csLabel .
+      FILTER(langMatches(lang(?csLabel), "en"))
+    }
+  }
+}

@@ -1,0 +1,225 @@
+<https://data.jobsandskills.gov.au/def/wefgst>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "WEF Global Skills Taxonomy"@en .
+
+<https://training.gov.au/tgaQualifications>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "TGA Qualifications"@en .
+
+<https://training.gov.au/Package>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+<https://training.gov.au/tgaOccupation>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "TGA Occupation"@en .
+
+<https://training.gov.au/tgaIndustry>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Training Industry"@en .
+
+<https://data.jobsandskills.gov.au/def/skillctx>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+<https://data.jobsandskills.gov.au/def/skillcat>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+
+<https://rdf.sfia-online.org/9/lor>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Scheme for the Levels of Responsibility"@en .
+
+<https://rdf.sfia-online.org/9/ontology/CategoryScheme>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Scheme for the Skills' Categories"@en;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Scheme for the Skills' Categories"@en .
+
+<https://data.jobsandskills.gov.au/def/skillcs>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "SFIA skills concept scheme"@en .
+
+<https://data.jobsandskills.gov.au/def/ONET>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ONET"@en .
+
+<https://data.jobsandskills.gov.au/def/oasis>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "OaSIS Skills and Competencies Taxonomy"@en .
+
+<http://training.gov.au/tgaUnit>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Units of competency"@en .
+
+<https://test.linked.data.gov.au/def/nst>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "National Skills Taxonomy"@en .
+
+<https://test.linked.data.gov.au/def/nstlevel>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Skill levels"@en .
+
+<https://data.jobsandskills.gov.au/def/lightCastCat>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Lightcast Categories"@en .
+
+<https://data.jobsandskills.gov.au/def/it2017>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "IT2017 Essential IT Domains and Subdomains (stub)"@en .
+
+<https://data.jobsandskills.gov.au/def/ILOcoreskills>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ILO core skills"@en .
+
+<http://data.europa.eu/esco/concept-scheme/label-role>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ESCO tähistuste liigid"@et , "ESCO nemi címkék"@hu , "Ir-rwol tat-tikketti tal-ESCO"@mt , "ESCO-rolleangivelser"@da , "Escoetikett - roller"@sv , "Uloge ESCO oznaka"@hr , "Označení rodu v systému ESCO"@cs , "ESCO gramatinė giminė"@lt , "Oznaczenia ESCO dotyczące płci"@pl , "étiquette de rôle ESCO"@fr , "ESCO hlutverkamiðar"@is , "ruoli delle etichette ESCO"@it , "Etichetă de rol ESCO"@ro , "Etiquetas de género ESCO"@es , "taken labels ESCO"@nl , "ESCO dzimšu apzīmējumi"@lv , "ESCO-rolleetikett"@no , "ESCO label roles"@en , "ESCO-sukuluokitus"@fi , "Видове етикети в ESCO"@bg , "Vrste oznak ESCO"@sl , "ESCO-Kennzeichnungen"@de , "róil lipéid ESCO"@ga , "Etiquetas de género ESCO"@pt , "Ρόλοι ετικετών ESCO"@el , "Funkcie označení v systéme ESCO"@sk .
+
+<http://data.europa.eu/esco/concept-scheme/relationship-types>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "type ESCO-forhold"@no , "Tipos de relación ESCO"@es , "Az ESCO-n belüli kapcsolatok típusai"@hu , "ESCO-suhdetyypit"@fi , "Types de relation ESCO"@fr , "ESCO vastavustase"@et , "Tipi ta’ relazzjonijiet tal-ESCO"@mt , "ESCO sąryšių tipai"@lt , "Typ av Escorelation"@sv , "typy vztahů v systému ESCO"@cs , "ESCO tengsl færnitegundar"@is , "ESCO relationship types"@en , "types relaties ESCO"@nl , "Rodzaje relacji ESCO"@pl , "cineálacha caidrimh ESCO"@ga , "Tipuri de relație ESCO"@ro , "Verbindungsarten in ESCO"@de , "Tipos de relação ESCO"@pt , "vrste odnosa u okviru klasifikacije ESCO"@hr , "Typy vzťahov v systéme ESCO"@sk , "ESCO attiecību veidi"@lv , "Τύποι σχέσεων ESCO"@el , "ESCO - relationstyper"@da , "vrste razmerij ESCO"@sl , "Tipi di relazioni ESCO"@it , "Видове връзки в ESCO"@bg .
+
+<http://data.europa.eu/esco/concept-scheme/isco>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "CITP 2008"@pt , "ISCO 2008"@lt , "ISCO 2008"@en , "ISCO 2008"@mt , "ISCO 2008"@de , "CITP 2008"@fr , "ISCO 2008"@sk , "ISCO 2008"@ga , "ISCO 2008"@ro , "ISCO 2008"@hr , "ISCO 2008"@it , "ISCO 2008"@no , "ISCO 2008"@pl , "ISCO 2008"@hu , "ISCO 2008"@da , "ISCO 2008"@lv , "ISCO 2008"@bg , "ISCO 2008"@et , "ISCO 2008"@el , "CIUO 2008"@es , "ISCO 2008"@fi , "Isco 2008"@sv , "ISCO 2008"@cs , "ISCO 2008"@sl , "ISCO 2008"@nl , "ISCO 2008"@is .
+
+<http://data.europa.eu/esco/concept-scheme/regulated-professions>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Regulated Professions"@en .
+
+<http://data.europa.eu/ux2/nace2.1/nace2.1>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Statistische Systematik der Wirtschaftszweige in der Europäischen Gemeinschaft (NACE Rev. 2.1)"@de , "Classificazione statistica delle attività economiche nella Comunità europea (NACE Rev. 2.1)"@it , "Euroopa Ühenduse majandustegevuse statistiline liigitus (NACE Rev. 2.1)"@et , "A gazdasági tevékenységek statisztikai osztályozása az Európai Közösségben (NACE Rev. 2.1)"@hu , "Euroopan yhteisön tilastollinen toimialaluokitus (NACE Rev. 2.1)"@fi , "Nomenclatura estatística das actividades económicas na Comunidade Europeia (NACE Rev. 2.1)"@pt , "Statistinis Europos Bendrijos ekonominės veiklos rūšių klasifikatorius (NACE Rev. 2.1)"@lt , "Nomenclature statistique des activités économiques dans la Communauté européenne (NACE Rev. 2.1)"@fr , "Statistical Classification of Economic Activities in the European Community, Rev. 2.1 (NACE Rev. 2.1)"@en , "Statistička klasifikacija ekonomskih djelatnosti u Europskoj zajednici (NACE Rev. 2.1)"@hr , "Klassifikazzjoni Statistika ta’ Attivitajiet Ekonomiċi fil-Komunità Ekonomika Ewropea (NACE Rev. 2.1)"@mt , "Štatistické zatriedenie hospodárskych činností v Európskom spoločenstve (NACE Rev. 2.1)"@sk , "Aicmiú staidrimh ar ghníomhaíochtaí eacnamaíocha sa Chomhphobal Eorpach (NACE Ath. 2.1)"@ga , "Saimniecisko darbību statistiskā klasifikācija Eiropas Kopienā (NACE Rev. 2.1)"@lv , "Den statistiske nomenklatur for økonomiske aktiviteter i Det Europæiske Fællesskab (NACE Rev. 2.1)"@da , "Nomenclatura estadística de actividades económicas de la Comunidad Europea (NACE Rev. 2.1)"@es , "Clasificarea statistică a activităților economice în Comunitatea Europeană (NACE Rev. 2.1)"@ro , "Statistična klasifikacija gospodarskih dejavnosti v Evropski skupnosti (NACE Rev. 2.1)"@sl , "Statistische nomenclatuur van de economische activiteiten in de Europese Gemeenschap (NACE Rev. 2.1)"@nl , "Europeiske Unionens standard for næringsgruppering (NACE Rev. 2.1)"@no , "Europeiske Unionens standard for næringsgruppering (NACE Rev. 2.1)"@sv , "Στατιστική ταξινόμηση των οικονομικών δραστηριοτήτων στην Ευρωπαϊκή Κοινότητα (NACE αναθ. 2)"@el , "Statistická klasifikace ekonomických činností v Evropském společenství (NACE Rev. 2.1)"@cs , "Статистическа класификация на икономическите дейности за Европейската общност (NACE Rev. 2.1)"@bg , "Statystycznej Klasyfikacji Działalności Gospodarczej we Wspólnocie Europejskiej (NACE Rev. 2.1)"@pl .
+
+<http://data.europa.eu/esco/concept-scheme/occupations>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ESCO - stillingsbetegnelser"@da , "Esco - yrken"@sv , "beroepen ESCO"@nl , "ESCO foglalkozások"@hu , "Professioni ESCO"@it , "Ocupaciones ESCO"@es , "Professions ESCO"@fr , "ESCO-yrker"@no , "Poklici ESCO"@sl , "ESCO Occupations"@en , "ESCO ametirühmad ja ametid"@et , "ESCO profesijos"@lt , "ESCO Störf"@is , "Povolání ESCO"@cs , "ESCO - Επαγγέλματα"@el , "ESCO profesijas"@lv , "Povolania ESCO"@sk , "ESCO-ammatit"@fi , "ESCO – filar zawodów"@pl , "ESCO-Berufe"@de , "Okkupazzjonijiet fl-ESCO"@mt , "Професии в ESCO"@bg , "gairmeacha ESCO"@ga , "ESCO zanimanja"@hr , "Ocupații ESCO"@ro , "Profissões ESCO"@pt .
+
+<http://data.europa.eu/esco/concept-scheme/8ae4b9f3-507e-4057-a145-2f96f0132613>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Research occupations"@en .
+
+<http://data.europa.eu/esco/concept-scheme/member-occupations>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Voci professionali ESCO"@it , "ESCO - individuelle stillingsbetegnelser"@da , "ESCO egyedi foglalkozások"@hu , "ESCO-yksittäiset ammatit"@fi , "Ocupaciones individuales ESCO"@es , "ESCO atskiros profesijos"@lt , "Jednotlivé povolania ESCO"@sk , "ESCO üksikametid"@et , "Индивидуални професии в ESCO"@bg , "ballghairmeacha ESCO"@ga , "Berufe auf der ESCO-Ebene"@de , "Clasificare ESCO - nivel de ocupație"@ro , "ESCO member occupations"@en , "Delpost ESCO-yrker"@no , "Zanimanja u okviru klasifikacije ESCO"@hr , "Okkupazzjonijiet tal-membri fl-ESCO"@mt , "ESCO störf einstaklings"@is , "Esco - yrken som omfattas"@sv , "Profissões individuais ESCO"@pt , "ESCO - μεμονωμένα επαγγέλματα"@el , "Item de profession ESCO"@fr , "beroepen onderdeel ESCO"@nl , "Zawody ESCO"@pl , "ESCO apakšprofesijas"@lv , "Jednotlivá povolání ESCO"@cs , "poklici konceptov ESCO"@sl .
+
+<http://data.europa.eu/esco/concept-scheme/digcomp>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "DigComp"@en .
+
+<http://data.europa.eu/esco/concept-scheme/skill-language-groups>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Language" , "Language"@en .
+
+<http://data.europa.eu/esco/concept-scheme/6c930acd-c104-4ece-acf7-f44fd7333036>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Digital"@en .
+
+<http://data.europa.eu/esco/concept-scheme/research>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Research"@en .
+
+<http://data.europa.eu/esco/concept-scheme/skill-transversal-groups>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ESCO-laaja-alaisten taitojen ryhmät"@fi , "grupaí scileanna idirdhisciplíneacha ESCO"@ga , "Gruppi ta’ ħiliet trasversali fl-ESCO"@mt , "Gruppi di abilità trasversali ESCO"@it , "Grupe transverzalnih vještina u okviru klasifikacije ESCO"@hr , "Groupes d'aptitudes transversales ESCO"@fr , "ESCO - ομάδες εγκάρσιων δεξιοτήτων"@el , "Skupiny prierezových zručností ESCO"@sk , "ESCO üldoskuste rühmad"@et , "ESCO universaliųjų gebėjimų grupės"@lt , "Gruppen von ESCO-Querschnittsfähigkeiten"@de , "ESCO transversālo prasmju grupas"@lv , "ESCO transzverzális készségcsoportok"@hu , "Overgripende ESCO-ferdighetsgrupper"@no , "Grupy umiejętności o charakterze ogólnym ESCO"@pl , "ESCO þverfaglegir færniflokkar"@is , "Průřezové skupiny dovedností ESCO"@cs , "Grupe de aptitudini transversale ESCO"@ro , "ESCO transversal skill groups"@en , "ESCO - tværgående færdighedsgrupper"@da , "Grupos de competências transversais ESCO"@pt , "Esco - grupper av övergripande färdigheter"@sv , "groepen transversale vaardigheden ESCO"@nl , "skupine prečnih spretnosti ESCO"@sl , "Grupos de capacidades transversales ESCO"@es , "Групи от трансверсални умения в ESCO"@bg .
+
+<http://data.europa.eu/esco/concept-scheme/isced-f>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "International standard classification of education: fields of education and training 2013"@en .
+
+<http://data.europa.eu/esco/concept-scheme/skills-hierarchy>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ESCO skills hierarchy"@en .
+
+<http://data.europa.eu/esco/concept-scheme/skill-competence-type>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Typy/podtypy nosných pojmov ESCO"@sk , "Podvrste koncepata u okviru stupa vještina klasifikacije ESCO"@hr , "(под-) Вид понятие от стълба на ЕSCO за уменията"@bg , "(Sub)tipi di concetto del pilastro abilità ESCO"@it , "Escopelaren för färdigheter - typer/undertyper av begrepp"@sv , "(Sub)Tipos de conceptos del pilar de capacidades ESCO"@es , "Az ESCO készségpillérjének fogalomtípusai (és altípusai)"@hu , "(υπο-)τύποι εννοιών του πυλώνα δεξιοτήτων ESCO"@el , "ESCO oskuste samba mõistete (alam)liigid"@et , "(Sub)tipi tal-kunċett ta’ Pilastru tal-Ħiliet fl-ESCO"@mt , "ESCO gebėjimų dalies sąvokų tipai ir potipiai"@lt , "ESCO Skill Pillar concept (sub-) Types"@en , "(Sous-)Types de concept pour les socles d'aptitudes ESCO"@fr , "(Sub-)Tipuri de concept pentru pilonul de aptitudini ESCO"@ro , "ESCO prasmju pīlāra jēdzienu (apakš)tipi"@lv , "fochineálacha/cineálacha coincheapa colúin scileanna ESCO"@ga , "ESCO ferdighetsdel begrep (under)typer"@no , "(sub)types pijlerconcepten vaardigheden ESCO"@nl , "(Pod)typy pojęć filaru umiejętności ESCO"@pl , "(Pod-)vrste koncepta stebra spretnosti ESCO"@sl , "ESCO (undir-)Tegundadálkur færnihugtaka"@is , "(Sub)Tipos de conceitos do pilar de competências ESCO"@pt , "Typy/podtypy pojmu nosných dovedností ESCO"@cs , "ESCOn taidot -osion käsitteiden (ala)tyypit"@fi , "Arten und Unterarten der Konzepte in der ESCO-Säule „Fähigkeiten“"@de , "ESCO-søjle for færdigheder - begrebstyper/-undertyper"@da .
+
+<http://data.europa.eu/esco/concept-scheme/skill-reuse-level>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ESCO oskuste samba mõiste taaskasutatavuse tasandid"@et , "Níveis de polivalência de um conceito do pilar de competências ESCO"@pt , "ESCO prasmju pīlāra jēdzienu atkārtotas izmantošanas līmeņi"@lv , "Escopelaren för färdigheter - återanvändbarhetsnivå"@sv , "Livelli di riutilizzo del concetto del pilastro abilità ESCO"@it , "Wiederverwendbarkeit der Konzepte in der ESCO-Säule „Fähigkeiten“"@de , "Niveaux de réutilisabilité d'un concept pour socle d'aptitudes ESCO"@fr , "niveaus herbruikbaarheid pijlerconcepten vaardigheden ESCO"@nl , "Степени на многократна използваемост на понятие от стълба на ЕSCO за уменията"@bg , "Niveles de polivalencia de conceptos del pilar de capacidades ESCO"@es , "Razine ponovnog iskorištavanja koncepata iz stupa vještina klasifikacije ESCO"@hr , "ESCO Skill Pillar concept reusability levels"@en , "Stupně rozsahu využití pojmu nosných dovedností ESCO"@cs , "A készségek jellege az ESCO készségpillérjében"@hu , "ESCO Stigsdálkur um endurnýtanleika færnihugtaka"@is , "Επίπεδο επαναχρησιμοποίησης των εννοιών του πυλώνα δεξιοτήτων ESCO"@el , "Niveluri ale potențialului de reutilizare a unui concept pentru pilonul de aptitudini ESCO"@ro , "ESCO gebėjimų dalies sąvokų pasikartojimo lygis"@lt , "Livelli tal-użabbiltà mill-ġdid tal-kunċetti tal-Pilastru tal-Ħiliet fl-ESCO"@mt , "Stupne rozsahu využitia pojmov nosných zručností ESCO"@sk , "Poziomy możliwości wielosektorowego zastosowania pojęć filaru umiejętności ESCO"@pl , "ESCO ferdighetsdel begrep gjenbrukbarhetsnivå"@no , "Ravni ponovne uporabe koncepta stebra spretnosti ESCO"@sl , "ESCOn taidot -osion käsitteen uudelleenkäytettävyystasot"@fi , "leibhéil ath-inúsáidteachta coincheapa colúin scileanna ESCO"@ga , "ESCO-søjle for færdigheder - begrebernes anvendelsesbredde"@da .
+
+<http://data.europa.eu/esco/concept-scheme/member-skills>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ESCO færni einstaklings"@is , "ESCO member skills"@en , "ESCO üksikoskused"@et , "Ħiliet tal-membri fl-ESCO"@mt , "ESCO - individuelle færdigheder"@da , "ESCO egyedi készségek"@hu , "Competências individuais ESCO"@pt , "Umiejętności ESCO"@pl , "Jednotlivé dovednosti ESCO"@cs , "Capacidades individuales ESCO"@es , "Fähigkeiten auf der ESCO-Ebene"@de , "vaardigheden onderdeel ESCO"@nl , "ESCO apakšprasmes"@lv , "Esco - färdigheter som omfattas"@sv , "Delpost ESCO-ferdigheter"@no , "Jednotlivé zručnosti ESCO"@sk , "posamezne spretnosti ESCO"@sl , "Vještine u okviru klasifikacije ESCO"@hr , "ESCO - μεμονωμένες δεξιότητες"@el , "Clasificare ESCO - nivel de aptitudine"@ro , "ESCO-yksittäiset taidot"@fi , "Item d'aptitude ESCO"@fr , "ESCO atskiri gebėjimai"@lt , "Индивидуални умения в ESCO"@bg , "ballscileanna ESCO"@ga , "Abilità individuali ESCO"@it .
+
+<http://data.europa.eu/esco/concept-scheme/green>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Green"@en .
+
+<http://data.europa.eu/esco/concept-scheme/skills>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Dovednosti ESCO"@cs , "Abilità ESCO"@it , "ESCO-taidot"@fi , "ESCO - δεξιότητες"@el , "ESCO gebėjimai"@lt , "ESCO prasmes"@lv , "ESCO - færdigheder"@da , "ESCO færni"@is , "ESCO oskusterühmad ja oskused"@et , "ESCO készségek"@hu , "ESCO-ferdigheter"@no , "Aptitudes ESCO"@fr , "Ħiliet fl-ESCO"@mt , "Esco - färdigheter"@sv , "Zručnosti ESCO"@sk , "ESCO-Fähigkeiten"@de , "spretnosti ESCO"@sl , "vaardigheden ESCO"@nl , "Aptitudini ESCO"@ro , "ESCO vještine"@hr , "ESCO – filar umiejętności"@pl , "Competências ESCO"@pt , "Capacidades ESCO"@es , "ESCO skills"@en , "Умения в ESCO"@bg , "scileanna ESCO"@ga .
+
+<https://data.jobsandskills.gov.au/def/digComp/level>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "DigComp proficiency levels"@en .
+
+<https://data.jobsandskills.gov.au/def/digComp/ai>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "DigComp AI scheme"@en .
+
+<https://data.jobsandskills.gov.au/def/digComp>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "DigComp 3.0"@en .
+
+<https://training.gov.au/aqfLevel>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "AQF Levels"@en .
+
+<https://training.gov.au/aqfType>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "AQF Qualification Types"@en .
+
+<https://abs.gov.au/classifications/ANZSCO>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ANZSCO"@en .
+
+<https://data.jobsandskills.gov.au/occupationTasks>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Occupation Task Concepts"@en .
+
+<https://abs.gov.au/classifications/ASCED>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ASCED"@en .

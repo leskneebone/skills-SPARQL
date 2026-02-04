@@ -1,0 +1,79 @@
+<https://data.jobsandskills.gov.au/def/wefgst>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "WEF Global Skills Taxonomy"@en .
+
+<https://training.gov.au/tgaQualifications>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "TGA Qualifications"@en .
+
+<https://training.gov.au/tgaOccupation>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "TGA Occupation"@en .
+
+<https://training.gov.au/tgaIndustry>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Training Industry"@en .
+
+<https://rdf.sfia-online.org/9/lor>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Scheme for the Levels of Responsibility"@en .
+
+<https://rdf.sfia-online.org/9/ontology/CategoryScheme>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Scheme for the Skills' Categories"@en .
+
+<https://data.jobsandskills.gov.au/def/skillcs>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "SFIA skills concept scheme"@en .
+
+<https://data.jobsandskills.gov.au/def/ONET>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ONET"@en .
+
+<https://data.jobsandskills.gov.au/def/oasis>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "OaSIS Skills and Competencies Taxonomy"@en .
+
+<https://data.jobsandskills.gov.au/def/lightCastCat>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Lightcast Categories"@en .
+
+<https://data.jobsandskills.gov.au/def/it2017>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "IT2017 Essential IT Domains and Subdomains (stub)"@en .
+
+<https://data.jobsandskills.gov.au/def/ILOcoreskills>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ILO core skills"@en .
+
+<https://data.jobsandskills.gov.au/def/digComp/level>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "DigComp proficiency levels"@en .
+
+<https://data.jobsandskills.gov.au/def/digComp/ai>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "DigComp AI scheme"@en .
+
+<https://data.jobsandskills.gov.au/def/digComp>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "DigComp 3.0"@en .
+
+<https://training.gov.au/aqfLevel>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "AQF Levels"@en .
+
+<https://training.gov.au/aqfType>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "AQF Qualification Types"@en .
+
+<https://abs.gov.au/classifications/ANZSCO>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ANZSCO"@en .
+
+<https://data.jobsandskills.gov.au/occupationTasks>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Occupation Task Concepts"@en .
+
+<https://abs.gov.au/classifications/ASCED>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ASCED"@en .

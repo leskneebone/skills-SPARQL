@@ -1,0 +1,43 @@
+PREFIX schema: <https://schema.org/>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT {
+  ?p schema:domainIncludes ?d .
+  ?p schema:rangeIncludes  ?r .
+}
+WHERE {
+  {
+    GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+      ?s ?p ?o .
+      ?s a ?d .
+    }
+    FILTER(isIRI(?p) && isIRI(?d))
+  }
+  UNION
+  {
+    GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+      ?s ?p ?o .
+      ?o a ?r .
+    }
+    FILTER(isIRI(?p) && isIRI(?r))
+  }
+  UNION
+  {
+    GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+      ?s ?p ?o .
+      FILTER(isLiteral(?o))
+      BIND(datatype(?o) AS ?dt)
+      BIND(
+        IF(?dt = xsd:string || ?dt = rdf:langString, schema:Text,
+        IF(?dt = xsd:integer || ?dt = xsd:decimal || ?dt = xsd:float || ?dt = xsd:double, schema:Number,
+        IF(?dt = xsd:boolean, schema:Boolean,
+        IF(?dt = xsd:date, schema:Date,
+        IF(?dt = xsd:dateTime, schema:DateTime,
+        schema:Text)))))
+        AS ?r
+      )
+    }
+    FILTER(isIRI(?p))
+  }
+}

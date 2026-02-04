@@ -1,0 +1,134 @@
+<https://data.jobsandskills.gov.au/def/Industry>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Industry"@en .
+
+<https://rdf.sfia-online.org/9/ontology/Category>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Category"@en .
+
+<https://rdf.sfia-online.org/9/ontology/Level>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Level of Responsibility"@en .
+
+<https://rdf.sfia-online.org/9/ontology/SkillLevel>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Skill Level"@en .
+
+<https://rdf.sfia-online.org/9/ontology/Skill>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Skill"@en .
+
+<http://www.w3.org/2002/07/owl#ObjectProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ObjectProperty"@en .
+
+<http://www.w3.org/2002/07/owl#AnnotationProperty>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "AnnotationProperty"@en .
+
+<http://www.w3.org/2004/02/skos/core#Collection>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Collection"@en .
+
+<https://test.linked.data.gov.au/def/nst/ontology#Skill>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Skill"@en .
+
+<http://www.w3.org/2002/07/owl#Class>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Class"@en .
+
+<https://test.linked.data.gov.au/def/nst/ontology#SkillLevel>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Skill Level"@en .
+
+<http://data.europa.eu/esco/model#Occupation>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Occupation"@en .
+
+<https://schema.org/Action>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Action"@en .
+
+<http://purl.org/ASN/schema/core/Statement>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Statement"@en .
+
+<https://schema.org/Orgainzation>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Orgainzation"@en .
+
+<https://schema.org/Organization>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Organization"@en .
+
+<https://schema.org/CreativeWork>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "CreativeWork"@en .
+
+<http://www.w3.org/ns/dcat#Dataset>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Dataset"@en .
+
+<http://www.w3.org/2004/02/skos/core#Concpet>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Concpet"@en .
+
+<http://www.w3.org/2000/01/rdf-schema#Class>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Class"@en .
+
+<https://schema.org/Occupation>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Occupation"@en .
+
+<http://data.europa.eu/esco/model#Skill>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Skill"@en .
+
+<https://schema.org/EducationalOccupationalProgram>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "EducationalOccupationalProgram"@en .
+
+<https://schema.org/EducationalOccupationalCredential>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "EducationalOccupationalCredential"@en .
+
+<https://schema.org/Course>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Course"@en .
+
+<http://www.w3.org/2004/02/skos/core#Concept>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Concept"@en .
+
+<http://www.w3.org/2004/02/skos/core#ConceptScheme>
+        a       <http://www.w3.org/2000/01/rdf-schema#Class>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ConceptScheme"@en .

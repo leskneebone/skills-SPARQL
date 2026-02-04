@@ -1,0 +1,64 @@
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+  ?class a rdfs:Class .
+  ?prop  a rdf:Property .
+  ?term  rdfs:label ?label .
+
+  ?prop schema:domainIncludes ?d .
+  ?prop schema:rangeIncludes  ?r .
+}
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+
+    # Classes used
+    OPTIONAL {
+      ?s a ?class .
+      FILTER(isIRI(?class))
+    }
+
+    # Properties used
+    OPTIONAL {
+      ?s ?prop ?o .
+      FILTER(isIRI(?prop))
+    }
+
+    # Observed domain
+    OPTIONAL {
+      ?s ?prop ?o .
+      ?s a ?d .
+      FILTER(isIRI(?prop) && isIRI(?d))
+    }
+
+    # Observed range (IRI objects)
+    OPTIONAL {
+      ?s ?prop ?o .
+      ?o a ?r .
+      FILTER(isIRI(?prop) && isIRI(?r))
+    }
+
+    # Observed range (literal → schema type)
+    OPTIONAL {
+      ?s ?prop ?o .
+      FILTER(isLiteral(?o))
+      BIND(datatype(?o) AS ?dt)
+      BIND(
+        IF(?dt = xsd:string, schema:Text,
+        IF(?dt = xsd:integer || ?dt = xsd:decimal || ?dt = xsd:float || ?dt = xsd:double, schema:Number,
+        IF(?dt = xsd:boolean, schema:Boolean,
+        IF(?dt = xsd:date, schema:Date,
+        IF(?dt = xsd:dateTime, schema:DateTime,
+        schema:Text)))))
+        AS ?r
+      )
+    }
+  }
+
+  # Label fallback for terms that appear
+  BIND(COALESCE(?class, ?prop, ?d, ?r) AS ?term)
+  FILTER(BOUND(?term))
+  BIND(STRLANG(REPLACE(STR(?term), '^.*[#/]', ''), 'en') AS ?label)
+}

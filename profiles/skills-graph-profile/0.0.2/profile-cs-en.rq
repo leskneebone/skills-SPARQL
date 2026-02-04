@@ -1,0 +1,13 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+  ?cs a skos:ConceptScheme ;
+      skos:prefLabel ?lab .
+}
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+    ?cs a skos:ConceptScheme ;
+        skos:prefLabel ?lab .
+    FILTER(langMatches(lang(?lab), "en"))
+  }
+}

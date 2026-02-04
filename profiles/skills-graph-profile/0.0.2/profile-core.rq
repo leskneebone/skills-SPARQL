@@ -1,0 +1,17 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+CONSTRUCT {
+  ?class a rdfs:Class .
+  ?prop  a rdf:Property .
+  ?term  rdfs:label ?label .
+}
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+    { ?s a ?class . BIND(?class AS ?term) }
+    UNION
+    { ?s ?prop ?o . BIND(?prop AS ?term) }
+  }
+  FILTER(isIRI(?term))
+  BIND(STRLANG(REPLACE(STR(?term), '^.*[#/]', ''), 'en') AS ?label)
+}

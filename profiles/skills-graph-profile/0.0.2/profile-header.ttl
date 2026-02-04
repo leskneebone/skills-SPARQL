@@ -1,0 +1,49 @@
+@prefix prof:    <http://www.w3.org/ns/dx/prof/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+
+<https://data.jobsandskills.gov.au/def/skills-profile>
+  a prof:Profile ;
+  rdfs:label "Skills Graph Profile"@en ;
+  skos:prefLabel "Skills Graph Profile"@en ;
+  dcterms:title "Skills Graph Profile"@en ;
+  dcterms:description
+    "Derived profile summary from the National Skills Taxonomy; lists classes, properties, concept schemes, and observed domain/range usage using schema:domainIncludes and schema:rangeIncludes."@en ;
+  dcterms:hasVersion "0.0.2" ;
+  <http://www.w3.org/2002/07/owl#versionInfo> "0.0.2" ;
+  prof:isProfileOf
+    <http://www.w3.org/2004/02/skos/core> ,
+    <https://schema.org/> ,
+    <http://purl.org/dc/terms/> ,
+    <http://purl.org/ASN/schema/core/> .
+
+<https://data.jobsandskills.gov.au/def/skills-profile#inScopeSchemes>
+  a skos:Collection ;
+  skos:prefLabel "In-scope Concept Schemes"@en ;
+  skos:note "Curated list of concept schemes in scope for this profile document."@en ;
+  skos:member
+    <https://test.linked.data.gov.au/def/nst> ,
+    <https://test.linked.data.gov.au/def/nstlevel> ,
+    <http://training.gov.au/tgaUnit> ,
+    <https://training.gov.au/tgaQualifications> ,
+    <https://training.gov.au/tgaOccupation> ,
+    <https://training.gov.au/tgaIndustry> ,
+    <https://training.gov.au/Package> ,
+    <https://abs.gov.au/classifications/ANZSCO> ,
+    <https://abs.gov.au/classifications/ASCED> ,
+    <https://training.gov.au/aqfLevel> ,
+    <https://training.gov.au/aqfType> ,
+    <https://data.jobsandskills.gov.au/def/wefgst> ,
+    <https://data.jobsandskills.gov.au/def/lightCastCat> ,
+    <https://data.jobsandskills.gov.au/def/it2017> ,
+    <https://data.jobsandskills.gov.au/def/oasis> ,
+    <https://data.jobsandskills.gov.au/def/ILOcoreskills> ,
+    <https://data.jobsandskills.gov.au/def/ONET> ,
+    <https://data.jobsandskills.gov.au/occupationTasks> ,
+    <https://data.jobsandskills.gov.au/def/digComp> ,
+    <https://data.jobsandskills.gov.au/def/digComp/level> ,
+    <https://data.jobsandskills.gov.au/def/digComp/ai> ,
+    <https://rdf.sfia-online.org/9/lor> ,
+    <https://rdf.sfia-online.org/9/ontology/CategoryScheme> ,
+    <https://data.jobsandskills.gov.au/def/skillcs> .

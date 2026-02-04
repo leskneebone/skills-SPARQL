@@ -1,0 +1,619 @@
+<https://schema.org/legalName>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "legalName"@en .
+
+<https://schema.org/id>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "id"@en .
+
+<http://www.w3.org/2004/02/skos/core#definition:>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "definition:"@en .
+
+<http://www.w3.org/2004/02/skos/core#altLabel:>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "altLabel:"@en .
+
+<http://www.w3.org/2004/02/skos/core#prefLabel:>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "prefLabel:"@en .
+
+<http://www.w3.org/2004/02/skos/core#Definition>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Definition"@en .
+
+<http://www.w3.org/2004/02/skos/core#PrefLabel>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "PrefLabel"@en .
+
+<https://rdf.sfia-online.org/9/ontology/levelGuidingPhrase>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "levelGuidingPhrase"@en .
+
+<https://rdf.sfia-online.org/9/attributes/SCPE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "SCPE"@en .
+
+<https://rdf.sfia-online.org/9/attributes/PROB>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "PROB"@en .
+
+<https://rdf.sfia-online.org/9/attributes/PLAN>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "PLAN"@en .
+
+<https://rdf.sfia-online.org/9/attributes/LEAD>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "LEAD"@en .
+
+<https://rdf.sfia-online.org/9/attributes/LADV>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "LADV"@en .
+
+<https://rdf.sfia-online.org/9/attributes/INFL>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "INFL"@en .
+
+<https://rdf.sfia-online.org/9/attributes/IMPM>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "IMPM"@en .
+
+<https://rdf.sfia-online.org/9/attributes/DIGI>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "DIGI"@en .
+
+<https://rdf.sfia-online.org/9/attributes/DECM>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "DECM"@en .
+
+<https://rdf.sfia-online.org/9/attributes/CRTY>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "CRTY"@en .
+
+<https://rdf.sfia-online.org/9/attributes/COMP>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "COMP"@en .
+
+<https://rdf.sfia-online.org/9/attributes/COMM>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "COMM"@en .
+
+<https://rdf.sfia-online.org/9/attributes/COLL>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "COLL"@en .
+
+<https://rdf.sfia-online.org/9/attributes/AUTO>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "AUTO"@en .
+
+<https://rdf.sfia-online.org/9/attributes/ADAP>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ADAP"@en .
+
+<https://rdf.sfia-online.org/9/ontology/skillLevelDescription>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "skillLevelDescription"@en .
+
+<https://rdf.sfia-online.org/9/ontology/skillCategory>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "skillCategory"@en .
+
+<https://rdf.sfia-online.org/9/ontology/definedAtLevel>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "definedAtLevel"@en .
+
+<http://www.w3.org/2000/01/rdf-schema#subClassOf>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "subClassOf"@en .
+
+<http://www.w3.org/2004/02/skos/core#member>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "member"@en .
+
+<https://schema.org/citation:>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "citation:"@en .
+
+<http://purl.org/dc/terms/>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                ""@en .
+
+<http://purl.org/dc/terms/replacedBy>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "replacedBy"@en .
+
+<http://www.w3.org/2002/07/owl#deprecated>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "deprecated"@en .
+
+<https://schema.org/numberOfCredits>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "numberOfCredits"@en .
+
+<https://schema.org/learningOutcome>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "learningOutcome"@en .
+
+<https://schema.org/educationalLevel>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "educationalLevel"@en .
+
+<https://schema.org/courseCode>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "courseCode"@en .
+
+<https://schema.org/keywords>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "keywords"@en .
+
+<https://test.linked.data.gov.au/def/nst/ontology#level>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "level"@en .
+
+<http://www.w3.org/2004/02/skos/core#publisher>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "publisher"@en .
+
+<http://www.w3.org/2004/02/skos/core#creator>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "creator"@en .
+
+<http://www.w3.org/2002/07/owl#versionIRI>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "versionIRI"@en .
+
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "isDefinedBy"@en .
+
+<http://www.w3.org/2004/02/skos/core#inScheme:>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "inScheme:"@en .
+
+<https://schema.org/skills>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "skills"@en .
+
+<https://schema.org/teaches>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "teaches"@en .
+
+<https://schema.org/name:>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "name:"@en .
+
+<https://schema.org/publisher>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "publisher"@en .
+
+<https://schema.org/creator>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "creator"@en .
+
+<http://purl.org/dc/terms/type>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "type"@en .
+
+<http://purl.org/dc/terms/issued>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "issued"@en .
+
+<http://data.europa.eu/esco/model#structureFor>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "structureFor"@en .
+
+<http://data.europa.eu/esco/model#codedProperty>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "codedProperty"@en .
+
+<http://data.europa.eu/esco/model#codeList>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "codeList"@en .
+
+<http://www.w3.org/ns/adms#schemeVersion>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "schemeVersion"@en .
+
+<http://purl.org/dc/terms/isReplacedBy>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "isReplacedBy"@en .
+
+<http://purl.org/dc/terms/replaces>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "replaces"@en .
+
+<http://data.europa.eu/esco/model#regulatedProfessionNote>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "regulatedProfessionNote"@en .
+
+<http://data.europa.eu/esco/model#hasNACECode>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "hasNACECode"@en .
+
+<http://data.europa.eu/esco/model#relatedEssentialSkill>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "relatedEssentialSkill"@en .
+
+<http://data.europa.eu/esco/model#relatedOptionalSkill>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "relatedOptionalSkill"@en .
+
+<http://www.w3.org/ns/adms#identifier>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "identifier"@en .
+
+<http://purl.org/iso25964/skos-thes#status>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "status"@en .
+
+<http://data.europa.eu/esco/model#skillType>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "skillType"@en .
+
+<http://data.europa.eu/esco/model#skillReuseLevel>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "skillReuseLevel"@en .
+
+<http://data.europa.eu/esco/model#referenceLanguage>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "referenceLanguage"@en .
+
+<http://data.europa.eu/esco/model#isOptionalSkillFor>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "isOptionalSkillFor"@en .
+
+<http://data.europa.eu/esco/model#isEssentialSkillFor>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "isEssentialSkillFor"@en .
+
+<https://schema.org/potentialAction>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "potentialAction"@en .
+
+<http://www.w3.org/2004/02/skos/core#altLable>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "altLable"@en .
+
+<https://schema.org/identifier>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "identifier"@en .
+
+<http://purl.org/dc/terms/bibliographicCitation>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "bibliographicCitation"@en .
+
+<http://purl.org/dc/terms/contributor>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "contributor"@en .
+
+<http://purl.org/dc/terms/subject>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "subject"@en .
+
+<https://schema.org/mentions>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "mentions"@en .
+
+<https://data.jobsandskills.gov.au/def/hasCompStat>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "hasCompStat"@en .
+
+<https://rdf.sfia-online.org/9/ontology/attributeType>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "attributeType"@en .
+
+<https://rdf.sfia-online.org/9/ontology/attributeGuidanceNotes>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "attributeGuidanceNotes"@en .
+
+<http://www.w3.org/2000/01/rdf-schema#comment>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "comment"@en .
+
+<https://rdf.sfia-online.org/9/ontology/levelEssence>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "levelEssence"@en .
+
+<https://rdf.sfia-online.org/9/attributes/KNGE>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "KNGE"@en .
+
+<http://purl.org/ASN/schema/core/skillEmbodied>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "skillEmbodied"@en .
+
+<http://www.w3.org/2000/01/rdf-schema#range>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "range"@en .
+
+<http://www.w3.org/2000/01/rdf-schema#domain>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "domain"@en .
+
+<https://rdf.sfia-online.org/9/ontology/level>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "level"@en .
+
+<http://www.w3.org/2004/02/skos/core#narrowMatch>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "narrowMatch"@en .
+
+<https://schema.org/OccupationalExperienceRequirements>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "OccupationalExperienceRequirements"@en .
+
+<https://schema.org/conditionsOfAccess>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "conditionsOfAccess"@en .
+
+<http://www.w3.org/2004/02/skos/core#exactMatch>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "exactMatch"@en .
+
+<https://schema.org/credentialCategory>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "credentialCategory"@en .
+
+<https://schema.org/recognizedBy>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "recognizedBy"@en .
+
+<http://purl.org/dc/terms/isPartOf>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "isPartOf"@en .
+
+<https://schema.org/qualifications>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "qualifications"@en .
+
+<https://schema.org/alternateName>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "alternateName"@en .
+
+<https://schema.org/url:>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "url:"@en .
+
+<https://schema.org/url>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "url"@en .
+
+<https://schema.org/name>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "name"@en .
+
+<https://schema.org/hasPart>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "hasPart"@en .
+
+<https://schema.org/description>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "description"@en .
+
+<http://www.w3.org/ns/dcat#accessService>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "accessService"@en .
+
+<http://purl.org/dc/terms/references>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "references"@en .
+
+<http://purl.org/dc/terms/description>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "description"@en .
+
+<http://purl.org/dc/terms/license>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "license"@en .
+
+<http://purl.org/dc/terms/source>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "source"@en .
+
+<http://www.w3.org/2004/02/skos/core#scopeNote>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "scopeNote"@en .
+
+<http://www.w3.org/2004/02/skos/core#example>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "example"@en .
+
+<http://www.w3.org/2004/02/skos/core#closeMatch>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "closeMatch"@en .
+
+<http://www.w3.org/2004/02/skos/core#historyNote>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "historyNote"@en .
+
+<http://purl.org/dc/terms/publisher>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "publisher"@en .
+
+<http://www.w3.org/2004/02/skos/core#altLabel>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "altLabel"@en .
+
+<http://www.w3.org/2004/02/skos/core#hasTopConcept>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "hasTopConcept"@en .
+
+<http://purl.org/dc/terms/title>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "title"@en .
+
+<http://www.w3.org/2004/02/skos/core#definition>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "definition"@en .
+
+<http://purl.org/dc/terms/modified>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "modified"@en .
+
+<http://www.w3.org/2004/02/skos/core#notation>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "notation"@en .
+
+<http://www.w3.org/2004/02/skos/core#narrower>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "narrower"@en .
+
+<http://www.w3.org/2004/02/skos/core#broader>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "broader"@en .
+
+<http://purl.org/dc/terms/created>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "created"@en .
+
+<http://www.w3.org/2002/07/owl#equivalentClass>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "equivalentClass"@en .
+
+<http://www.w3.org/2000/01/rdf-schema#label>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "label"@en .
+
+<https://schema.org/citation>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "citation"@en .
+
+<http://purl.org/dc/terms/creator>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "creator"@en .
+
+<https://schema.org/about>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "about"@en .
+
+<http://purl.org/dc/terms/isReferencedBy>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "isReferencedBy"@en .
+
+<http://purl.org/dc/terms/isRequiredBy>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "isRequiredBy"@en .
+
+<http://www.w3.org/2004/02/skos/core#prefLabel>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "prefLabel"@en .
+
+<http://www.w3.org/2004/02/skos/core#topConceptOf>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "topConceptOf"@en .
+
+<http://www.w3.org/2004/02/skos/core#inScheme>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "inScheme"@en .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "type"@en .
+
+<https://data.jobsandskills.gov.au/def/Industry>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Industry"@en .
+
+<https://rdf.sfia-online.org/9/ontology/Category>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Category"@en .
+
+<https://rdf.sfia-online.org/9/ontology/Level>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Level"@en .
+
+<https://rdf.sfia-online.org/9/ontology/SkillLevel>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "SkillLevel"@en .
+
+<https://rdf.sfia-online.org/9/ontology/Skill>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Skill"@en .
+
+<http://www.w3.org/2002/07/owl#ObjectProperty>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ObjectProperty"@en .
+
+<http://www.w3.org/2002/07/owl#AnnotationProperty>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "AnnotationProperty"@en .
+
+<http://www.w3.org/2004/02/skos/core#Collection>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Collection"@en .
+
+<https://test.linked.data.gov.au/def/nst/ontology#Skill>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Skill"@en .
+
+<http://www.w3.org/2002/07/owl#Class>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Class"@en .
+
+<https://test.linked.data.gov.au/def/nst/ontology#SkillLevel>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "SkillLevel"@en .
+
+<http://data.europa.eu/esco/model#Occupation>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Occupation"@en .
+
+<https://schema.org/Action>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Action"@en .
+
+<http://purl.org/ASN/schema/core/Statement>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Statement"@en .
+
+<https://schema.org/Orgainzation>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Orgainzation"@en .
+
+<https://schema.org/Organization>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Organization"@en .
+
+<https://schema.org/CreativeWork>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "CreativeWork"@en .
+
+<http://www.w3.org/ns/dcat#Dataset>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Dataset"@en .
+
+<http://www.w3.org/2004/02/skos/core#Concpet>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Concpet"@en .
+
+<http://www.w3.org/2000/01/rdf-schema#Class>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Class"@en .
+
+<https://schema.org/Occupation>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Occupation"@en .
+
+<http://data.europa.eu/esco/model#Skill>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Skill"@en .
+
+<https://schema.org/EducationalOccupationalProgram>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "EducationalOccupationalProgram"@en .
+
+<https://schema.org/EducationalOccupationalCredential>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "EducationalOccupationalCredential"@en .
+
+<https://schema.org/Course>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Course"@en .
+
+<http://www.w3.org/2004/02/skos/core#Concept>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Concept"@en .
+
+<http://www.w3.org/2004/02/skos/core#ConceptScheme>
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "ConceptScheme"@en .

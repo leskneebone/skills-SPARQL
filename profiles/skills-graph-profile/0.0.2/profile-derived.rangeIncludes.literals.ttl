@@ -1,0 +1,287 @@
+<https://schema.org/legalName>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/id>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#definition:>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#altLabel:>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#prefLabel:>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#Definition>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#PrefLabel>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/ontology/levelGuidingPhrase>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/SCPE>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/PROB>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/PLAN>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/LEAD>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/LADV>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/INFL>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/IMPM>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/DIGI>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/DECM>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/CRTY>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/COMP>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/COMM>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/COLL>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/AUTO>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/ADAP>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/ontology/skillLevelDescription>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/citation:>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2002/07/owl#deprecated>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Boolean> .
+
+<https://schema.org/numberOfCredits>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Number> .
+
+<https://schema.org/learningOutcome>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/educationalLevel>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/courseCode>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/keywords>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/references>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/skills>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/teaches>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/name:>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/issued>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Date> .
+
+<http://www.w3.org/ns/adms#schemeVersion>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/iso25964/skos-thes#status>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://data.europa.eu/esco/model#referenceLanguage>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/potentialAction>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#altLable>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/identifier>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/bibliographicCitation>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/license>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/subject>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/ontology/attributeType>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/ontology/attributeGuidanceNotes>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2000/01/rdf-schema#comment>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/ontology/levelEssence>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/KNGE>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/ASN/schema/core/skillEmbodied>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/OccupationalExperienceRequirements>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/alternateName>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/url:>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/url>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/name>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/description>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/description>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/source>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#scopeNote>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#example>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#historyNote>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#altLabel>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/title>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#definition>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/modified>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Date> , <https://schema.org/Text> , <https://schema.org/DateTime> .
+
+<http://www.w3.org/2004/02/skos/core#notation>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/created>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> , <https://schema.org/Date> , <https://schema.org/DateTime> .
+
+<http://www.w3.org/2000/01/rdf-schema#label>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/citation>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#prefLabel>
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
