@@ -1,0 +1,35 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+  ?class a rdfs:Class ;
+         rdfs:label ?label .
+}
+WHERE {
+  {
+    SELECT DISTINCT ?class
+    WHERE {
+      GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+        ?s rdf:type ?class .
+        FILTER(isIRI(?class))
+
+        FILTER(
+          STRSTARTS(STR(?class), "https://data.jobsandskills.gov.au/def/") ||
+          STRSTARTS(STR(?class), "https://test.linked.data.gov.au/def/nst") ||
+          STRSTARTS(STR(?class), "https://training.gov.au/") ||
+          STRSTARTS(STR(?class), "https://abs.gov.au/") ||
+          STRSTARTS(STR(?class), "https://schema.org/") ||
+          STRSTARTS(STR(?class), "http://www.w3.org/2004/02/skos/core#") ||
+          STRSTARTS(STR(?class), "http://purl.org/dc/terms/") ||
+          STRSTARTS(STR(?class), "http://purl.org/ASN/schema/core/")
+        )
+      }
+    }
+  }
+
+  OPTIONAL { ?class rdfs:label ?l0 . FILTER(langMatches(lang(?l0),"en")) }
+  OPTIONAL { ?class skos:prefLabel ?l1 . FILTER(langMatches(lang(?l1),"en")) }
+
+  BIND(COALESCE(?l0, ?l1, STRLANG(REPLACE(STR(?class), '^.*[#/]', ''), 'en')) AS ?label)
+}

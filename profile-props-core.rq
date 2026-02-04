@@ -1,0 +1,52 @@
+PREFIX rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+PREFIX schema: <https://schema.org/>
+PREFIX xsd:    <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT {
+  ?prop a rdf:Property ;
+        rdfs:label ?label ;
+        schema:domainIncludes ?d ;
+        schema:rangeIncludes  ?r .
+}
+WHERE {
+  {
+    SELECT DISTINCT ?prop ?d ?r
+    WHERE {
+      GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+        ?s ?prop ?o .
+        FILTER(isIRI(?prop))
+
+        # "Core-ish subjects": anything in JSA + NST + TGA/AQF/ABS space
+        FILTER(
+          STRSTARTS(STR(?s), "https://data.jobsandskills.gov.au/") ||
+          STRSTARTS(STR(?s), "https://test.linked.data.gov.au/def/nst") ||
+          STRSTARTS(STR(?s), "https://training.gov.au/") ||
+          STRSTARTS(STR(?s), "https://abs.gov.au/")
+        )
+
+        # Optional domain hint from rdf:type
+        OPTIONAL { ?s a ?d0 . FILTER(isIRI(?d0)) }
+        BIND(COALESCE(?d0, schema:Thing) AS ?d)
+
+        # Range hint: IRI -> Thing; literal -> map datatype to schema where possible
+        BIND(
+          IF(isIRI(?o), schema:Thing,
+            IF(datatype(?o) = xsd:boolean, schema:Boolean,
+            IF(datatype(?o) = xsd:date,    schema:Date,
+            IF(datatype(?o) = xsd:dateTime,schema:DateTime,
+            IF(datatype(?o) = xsd:integer || datatype(?o) = xsd:decimal || datatype(?o) = xsd:float || datatype(?o) = xsd:double,
+               schema:Number,
+               schema:Text)))))
+          AS ?r
+        )
+      }
+    }
+  }
+
+  OPTIONAL { ?prop rdfs:label ?l0 . FILTER(langMatches(lang(?l0),"en")) }
+  OPTIONAL { ?prop skos:prefLabel ?l1 . FILTER(langMatches(lang(?l1),"en")) }
+
+  BIND(COALESCE(?l0, ?l1, STRLANG(REPLACE(STR(?prop), '^.*[#/]', ''), 'en')) AS ?label)
+}

@@ -1,0 +1,647 @@
+<http://www.w3.org/2004/02/skos/core#definition:>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "definition:"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#altLabel:>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "altLabel:"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#prefLabel:>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "prefLabel:"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#Definition>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Definition"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#PrefLabel>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "PrefLabel"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#member>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "member"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#Collection>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://schema.org/citation:>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "citation:"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/keywords>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "keywords"@en;
+        <https://schema.org/domainIncludes>
+                <https://test.linked.data.gov.au/def/nst/ontology#Skill> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://test.linked.data.gov.au/def/nst/ontology#level>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "level"@en;
+        <https://schema.org/domainIncludes>
+                <https://test.linked.data.gov.au/def/nst/ontology#Skill> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2004/02/skos/core#publisher>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "publisher"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2004/02/skos/core#creator>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "creator"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2002/07/owl#versionIRI>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "versionIRI"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "isDefinedBy"@en;
+        <https://schema.org/domainIncludes>
+                <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> , <http://www.w3.org/2002/07/owl#Class>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2000/01/rdf-schema#comment>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "comment"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2000/01/rdf-schema#label>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "label"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2000/01/rdf-schema#Class> , <http://www.w3.org/2002/07/owl#Class>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/type>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "type"@en;
+        <https://schema.org/domainIncludes>
+                <https://test.linked.data.gov.au/def/nst/ontology#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://schema.org/Thing>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://data.europa.eu/esco/model#skillType>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "skillType"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/Thing> , <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2004/02/skos/core#inScheme:>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "inScheme:"@en;
+        <https://schema.org/domainIncludes>
+                <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://schema.org/skills>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "skills"@en;
+        <https://schema.org/domainIncludes>
+                <http://purl.org/ASN/schema/core/Statement> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/teaches>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "teaches"@en;
+        <https://schema.org/domainIncludes>
+                <http://purl.org/ASN/schema/core/Statement> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/publisher>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "publisher"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://schema.org/creator>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "creator"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://schema.org/potentialAction>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "potentialAction"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/Action> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#altLable>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "altLable"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/identifier>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "identifier"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/bibliographicCitation>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "bibliographicCitation"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/contributor>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "contributor"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://purl.org/dc/terms/subject>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "subject"@en;
+        <https://schema.org/domainIncludes>
+                <https://test.linked.data.gov.au/def/nst/ontology#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> , <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> , <https://schema.org/Text> .
+
+<https://schema.org/mentions>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "mentions"@en;
+        <https://schema.org/domainIncludes>
+                <http://purl.org/ASN/schema/core/Statement>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://data.jobsandskills.gov.au/def/hasCompStat>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "hasCompStat"@en;
+        <https://schema.org/domainIncludes>
+                <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://rdf.sfia-online.org/9/ontology/levelEssence>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "levelEssence"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/attributes/KNGE>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "KNGE"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/ASN/schema/core/skillEmbodied>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "skillEmbodied"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://rdf.sfia-online.org/9/ontology/level>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "level"@en;
+        <https://schema.org/domainIncludes>
+                <http://purl.org/ASN/schema/core/Statement> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2004/02/skos/core#narrowMatch>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "narrowMatch"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/Occupation> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://schema.org/OccupationalExperienceRequirements>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "OccupationalExperienceRequirements"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/EducationalOccupationalCredential> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<https://schema.org/conditionsOfAccess>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "conditionsOfAccess"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/EducationalOccupationalCredential> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2004/02/skos/core#exactMatch>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "exactMatch"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/Occupation> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://schema.org/credentialCategory>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "credentialCategory"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/EducationalOccupationalCredential> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://schema.org/recognizedBy>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "recognizedBy"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/EducationalOccupationalCredential> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://purl.org/dc/terms/isPartOf>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "isPartOf"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/EducationalOccupationalCredential> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://schema.org/qualifications>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "qualifications"@en;
+        <https://schema.org/domainIncludes>
+                <https://data.jobsandskills.gov.au/def/Industry> , <https://schema.org/Occupation> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://schema.org/hasPart>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "hasPart"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/CreativeWork>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://schema.org/description>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "description"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/CreativeWork>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/ns/dcat#accessService>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "accessService"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/ns/dcat#Dataset>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://purl.org/dc/terms/references>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "references"@en;
+        <https://schema.org/domainIncludes>
+                <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> , <http://www.w3.org/ns/dcat#Dataset>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> , <https://schema.org/Thing> .
+
+<http://purl.org/dc/terms/description>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "description"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <http://purl.org/ASN/schema/core/Statement> , <http://www.w3.org/2004/02/skos/core#Concept> , <http://www.w3.org/ns/dcat#Dataset>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/license>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "license"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/ns/dcat#Dataset> , <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> , <https://schema.org/Thing> .
+
+<http://purl.org/dc/terms/source>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "source"@en;
+        <https://schema.org/domainIncludes>
+                <https://test.linked.data.gov.au/def/nst/ontology#Skill> , <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> , <http://www.w3.org/ns/dcat#Dataset> , <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> , <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#scopeNote>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "scopeNote"@en;
+        <https://schema.org/domainIncludes>
+                <http://purl.org/ASN/schema/core/Statement> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#example>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "example"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concpet> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#closeMatch>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "closeMatch"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2004/02/skos/core#historyNote>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "historyNote"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/publisher>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "publisher"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/ns/dcat#Dataset> , <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2004/02/skos/core#altLabel>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "altLabel"@en;
+        <https://schema.org/domainIncludes>
+                <https://test.linked.data.gov.au/def/nst/ontology#Skill> , <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concept> , <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#hasTopConcept>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "hasTopConcept"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/Thing> , <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://purl.org/dc/terms/title>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "title"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/ns/dcat#Dataset> , <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#definition>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "definition"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#Collection> , <https://test.linked.data.gov.au/def/nst/ontology#Skill> , <https://test.linked.data.gov.au/def/nst/ontology#SkillLevel> , <https://schema.org/Action> , <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concpet> , <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/modified>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "modified"@en;
+        <https://schema.org/domainIncludes>
+                <https://data.jobsandskills.gov.au/def/Industry> , <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <https://schema.org/Occupation> , <http://www.w3.org/2004/02/skos/core#Concpet> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> , <https://schema.org/DateTime> .
+
+<http://www.w3.org/2004/02/skos/core#notation>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "notation"@en;
+        <https://schema.org/domainIncludes>
+                <https://test.linked.data.gov.au/def/nst/ontology#SkillLevel> , <http://purl.org/ASN/schema/core/Statement> , <http://data.europa.eu/esco/model#Skill> , <https://schema.org/Occupation> , <http://www.w3.org/2004/02/skos/core#Concpet> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#narrower>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "narrower"@en;
+        <https://schema.org/domainIncludes>
+                <http://purl.org/ASN/schema/core/Statement> , <http://data.europa.eu/esco/model#Skill> , <https://schema.org/Occupation> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2004/02/skos/core#broader>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "broader"@en;
+        <https://schema.org/domainIncludes>
+                <http://purl.org/ASN/schema/core/Statement> , <http://data.europa.eu/esco/model#Skill> , <https://schema.org/Occupation> , <http://www.w3.org/2004/02/skos/core#Concpet> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://purl.org/dc/terms/created>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "created"@en;
+        <https://schema.org/domainIncludes>
+                <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/2004/02/skos/core#Concpet> , <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> , <https://schema.org/Date> , <https://schema.org/DateTime> .
+
+<https://schema.org/citation>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "citation"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <https://schema.org/EducationalOccupationalProgram> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://purl.org/dc/terms/creator>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "creator"@en;
+        <https://schema.org/domainIncludes>
+                <http://data.europa.eu/esco/model#Skill> , <http://www.w3.org/ns/dcat#Dataset> , <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <https://schema.org/EducationalOccupationalProgram> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<https://schema.org/about>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "about"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/EducationalOccupationalCredential> , <https://schema.org/CreativeWork> , <https://schema.org/Course> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://purl.org/dc/terms/isReferencedBy>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "isReferencedBy"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/Course> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://purl.org/dc/terms/isRequiredBy>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "isRequiredBy"@en;
+        <https://schema.org/domainIncludes>
+                <https://schema.org/Course> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2004/02/skos/core#prefLabel>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "prefLabel"@en;
+        <https://schema.org/domainIncludes>
+                <https://data.jobsandskills.gov.au/def/Industry> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://schema.org/Course> , <https://schema.org/EducationalOccupationalProgram> , <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <http://www.w3.org/2004/02/skos/core#Concpet> , <https://schema.org/Occupation> , <https://schema.org/EducationalOccupationalCredential> , <http://data.europa.eu/esco/model#Skill> , <https://schema.org/Action> , <http://purl.org/ASN/schema/core/Statement> , <https://test.linked.data.gov.au/def/nst/ontology#SkillLevel> , <https://test.linked.data.gov.au/def/nst/ontology#Skill> , <http://www.w3.org/2004/02/skos/core#Collection>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Text> .
+
+<http://www.w3.org/2004/02/skos/core#topConceptOf>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "topConceptOf"@en;
+        <https://schema.org/domainIncludes>
+                <https://data.jobsandskills.gov.au/def/Industry> , <https://test.linked.data.gov.au/def/nst/ontology#SkillLevel> , <http://purl.org/ASN/schema/core/Statement> , <https://schema.org/Action> , <http://data.europa.eu/esco/model#Skill> , <https://schema.org/Occupation> , <https://schema.org/EducationalOccupationalCredential> , <https://schema.org/EducationalOccupationalProgram> , <https://schema.org/Course> , <http://www.w3.org/2004/02/skos/core#Concept>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/2004/02/skos/core#inScheme>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "inScheme"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2004/02/skos/core#Concept> , <https://schema.org/Course> , <https://schema.org/EducationalOccupationalProgram> , <http://www.w3.org/2004/02/skos/core#Concpet> , <https://schema.org/Occupation> , <https://schema.org/EducationalOccupationalCredential> , <http://data.europa.eu/esco/model#Skill> , <https://schema.org/Action> , <http://purl.org/ASN/schema/core/Statement> , <https://test.linked.data.gov.au/def/nst/ontology#SkillLevel> , <https://test.linked.data.gov.au/def/nst/ontology#Skill> , <http://www.w3.org/2004/02/skos/core#Collection> , <https://data.jobsandskills.gov.au/def/Industry>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .
+
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+        a       <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property>;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "type"@en;
+        <https://schema.org/domainIncludes>
+                <http://www.w3.org/2000/01/rdf-schema#Class> , <https://data.jobsandskills.gov.au/def/Industry> , <http://www.w3.org/2004/02/skos/core#Collection> , <https://test.linked.data.gov.au/def/nst/ontology#Skill> , <http://www.w3.org/2002/07/owl#Class> , <http://www.w3.org/2004/02/skos/core#Concept> , <https://schema.org/Course> , <https://schema.org/EducationalOccupationalProgram> , <http://www.w3.org/2004/02/skos/core#ConceptScheme> , <http://www.w3.org/2004/02/skos/core#Concpet> , <http://www.w3.org/ns/dcat#Dataset> , <https://schema.org/CreativeWork> , <https://schema.org/Occupation> , <https://schema.org/EducationalOccupationalCredential> , <http://data.europa.eu/esco/model#Skill> , <http://purl.org/ASN/schema/core/Statement> , <https://schema.org/Action> , <https://test.linked.data.gov.au/def/nst/ontology#SkillLevel>;
+        <https://schema.org/rangeIncludes>
+                <https://schema.org/Thing> .

@@ -1,0 +1,19 @@
+@prefix prof:    <http://www.w3.org/ns/dx/prof/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix jsadef:  <https://data.jobsandskills.gov.au/def/> .
+
+<https://data.jobsandskills.gov.au/def/skills-profile>
+  a prof:Profile , owl:Ontology ;
+  rdfs:label "Skills Graph Profile"@en ;
+  skos:prefLabel "Skills Graph Profile"@en ;
+  dcterms:title "Skills Graph Profile"@en ;
+  dcterms:description "Derived profile summary from the National Skills Taxonomy; lists classes, properties, concept schemes, and observed domain/range usage using schema:domainIncludes and schema:rangeIncludes."@en ;
+  dcterms:hasVersion "0.0.2" ;
+  prof:isProfileOf
+    <http://www.w3.org/2004/02/skos/core> ,
+    <https://schema.org/> ,
+    <http://purl.org/dc/terms/> ,
+    <http://purl.org/ASN/schema/core/> .
