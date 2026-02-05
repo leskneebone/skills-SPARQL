@@ -1,0 +1,13 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?bad (COUNT(*) AS ?uses)
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+    ?s rdf:type ?bad .
+    VALUES ?bad {
+      <https://schema.org/Orgainzation>
+      <http://www.w3.org/2004/02/skos/core#Concpet>
+    }
+  }
+}
+GROUP BY ?bad
