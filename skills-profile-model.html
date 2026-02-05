@@ -1,0 +1,3622 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Skills Graph Profile</title>
+    <style>
+        #pylode {
+            position: fixed;
+            top: 205px;
+            left: -150px;
+            font-size: small;
+            transform: rotate(-90deg);
+            color: grey;
+        }
+        #pylode a {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #005A9C;
+        }
+        #pylode a:hover {
+            color: #333;
+        }
+        #pylode #p {
+            color: #329545;
+        }
+        #pylode #y {
+            color: #f9cb33;
+        }
+        #pylode #version {
+            font-size: 1.0em;
+        }
+
+        #profile {
+            font-style: italic;
+            font-size: 1.25em;
+            color: darkred!important;
+        }
+
+        .cardinality {
+            font-style: italic;
+            color: #aa00aa;
+        }
+
+        dl {
+            /*border: 1px solid navy;*/
+            /*padding:5px;*/
+        }
+
+        dt {
+            font-weight: bold;
+            padding: 0;
+        }
+
+        dd {
+            margin-bottom: 10px;
+            padding-top: 7px;
+        }
+
+        #metadata ul,
+        #classes ul {
+            list-style-type: none;
+        }
+
+        #metadata ul li,
+        #classes ul li {
+            margin-left: -40px;
+        }
+
+        ul.hlist {
+            list-style-type: none;
+            border: 1px solid navy;
+            padding:5px;
+            background-color: #F4FFFF;
+        }
+
+        ul.hierarchy {
+            border: 1px solid navy;
+            padding: 5px 25px 5px 25px;
+            background-color: #F4FFFF;
+        }
+
+
+        ul.hlist li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .entity {
+            border: 1px solid navy;
+            margin:5px 0 5px 0;
+            padding: 5px;
+        }
+
+        .entity th {
+            width: 150px;
+            vertical-align: top;
+        }
+
+        .entity th,
+        .entity td {
+            padding-bottom: 20px;
+        }
+
+        .entity table th {
+            text-align: left;
+        }
+
+        section#overview img {
+            max-width: 1000px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left
+        }
+        h1, h2, h3 {
+            color: #005A9C; background: white
+        }
+        h1 {
+            font: 170% sans-serif;
+            line-height: 110%;
+        }
+        h2 {
+            font: 140% sans-serif;
+            margin-top:40px;
+        }
+        h3 {
+            font: 120% sans-serif;
+            margin-top: 20px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid navy;
+        }
+        h4 { font: bold 100% sans-serif }
+        h5 { font: italic 100% sans-serif }
+        h6 { font: small-caps 100% sans-serif }
+
+        body {
+            padding: 2em 70px 2em 70px;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            background: white;
+            background-position: top left;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: left;
+        }
+
+        section {
+            max-width: 1500px;
+        }
+
+        .figure {
+            margin-bottom: 20px;
+        }
+
+        :link { color: #00C; background: transparent }
+        :visited { color: #609; background: transparent }
+        a:active { color: #C00; background: transparent }
+
+        .sup-c,
+        .sup-op,
+        .sup-fp,
+        .sup-dp,
+        .sup-ap,
+        .sup-p,
+        .sup-ni,
+        .sup-con,
+        .sup-col {
+            cursor:help;
+        }
+
+        .sup-c {
+            color:orange;
+        }
+
+        .sup-op {
+            color:navy;
+        }
+
+        .sup-fp {
+            color:lightskyblue;
+        }
+
+        .sup-dp {
+            color:green;
+        }
+
+        .sup-ap {
+            color:darkred;
+        }
+
+        .sup-p {
+            color:black;
+        }
+
+        .sup-ni {
+            color:brown;
+        }
+
+        .sup-con {
+            color:orange;
+        }
+
+        .sup-col {
+            color:darkred;
+        }
+
+        sup {
+            margin-left: -3px;
+        }
+        code {
+            font-size: large;
+            color: darkred;
+        }
+
+        /* less prominent links for properties */
+        .proplink {
+            color: #336;
+            text-decoration: none;
+        }
+
+#toc {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px;
+    border: solid 1px navy;
+    font-size: small;
+    width: 180px;
+}
+#toc h3 {
+    margin-top: 5px;
+}
+
+#toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#toc .first > li {
+    margin-top: 5px;
+}
+
+#toc .second,
+#toc .third {
+    padding-left: 10px;
+}
+
+#content {
+    width: calc(100% - 150px);
+}
+
+.hover_property {
+    cursor: help;
+    text-decoration: none;
+    border-bottom: dashed 1px;
+}
+
+.setclass {
+    list-style-type: none;
+}
+
+code{
+    word-wrap: break-word;
+  }
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+td {
+    word-wrap: break-word;
+}
+#legend table.entity {
+    width: 25%;
+}
+	</style>
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhklEQVQ4jbWPzStEURjG3yQLirlGKUnKFO45Z+SjmXvnnmthQcpCoVhYmD/AwmJiI3OvZuZc2U3UlKU0/gAslMw9JgvhHxAr2fko7r0jHSsl+TgbTz2Lt5731/MASEiJW9ONml2QyX6rsGalmnT74v8BDf12hxJfpV8d1uwNKUBYszabdFv84L8B9X0rESVmmUup2fme0cVhJWaZHw4NWL1SewEAfDe6H3Dy6Ll456WEJsRZS630MwCAOI20ei5OBpxse5zcBZw8eS4uPpfIuDiCainIg9umBCU0GZzgLZ9Hn31OgoATL+CkLDGB5H1OKj4nFd/FBxUXJ0UZNb4edw/6nLyJXaj5FeCVyPLNIVmYK8TG1IwWb16L1gEACAFV90ftoT8bdOX0EeyY99gxBXZMgRz6qGb1KantAACI0UvE6F5XJqEjpsdURouI0Vt5gGOUkUNnPu7ObGIIMfNaGqDmjDRi9FZldF1lRgYzeqUyeoiY4ag5Iy3RgOYRM8+/M2bG8efsO4hGrpmJseyMAAAAAElFTkSuQmCC" rel="icon" sizes="16x16" type="image/png">
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC40lEQVRYhe2UT0hUQRzHp6Iss1B3VZKIDbbdfW9mnoi4f3zzjkJQeOgS0SEIb1EWBGGlLLu460zQPQM1unUIIjA6rfpm6ZAhHjoIRVQUFUlEbG+euTsdXG1d3VL3bVD4g+9h+L35fT/8fvN7ADgY9aHY5fpIvK82HO9ysu66wxWOzbkjcekKx0a2ALYA/n2AGi3a6ArFezcidziecQygNhhrcUficjP6PwBqtGijKxy/thnVBePHywYoDsFhl53GV8SEcsTx4usCMLUewTVpc23BNvEzm6Neyf1+KcG2vwqwUjgrOJq2JmHftwmkVBRGTvncFodnbI7vChO/FRznCmHsNM7aHM9Yk7Df5iqsLMw9sMNOK2g+jS4IEz0UJv4iuJZb2RltWnB4UZqH6ioGAgAAGe5vtiZhtzDx7OoRadLmeM7m6IRjhnLMW2Vx1bA5GhAmnhIcz6/xNj4Ujsky8UspwfayjDPjsF2Y6L7N8Vzx/BfP+KPg6LbgSqd8DnfJW2CnbaLhfH5ephpqygJYvQU4Z3P82TLRsDDhUTnmrSq+Y3N0Mg+Xldy/zwEAnLMWZ3pHpNExmfLs/t0dOdVcbT0JeKxUwFP2VljjqiE47Jp53LTXNxhsUZjerTByXWX6VZWRs/4bIQ2ACv+UAomgDzLCISNZxAxZKMhIDjLy1JfsaK+I+eGBUBNk5E2x8RogX/PdcDZUqieWTSh5D6nOVKqfhoycUmlHFFIyu5RXqf7AcQDISCpv/tqbMBqK883RtmpISRoxQyJKPgGn3wNk5NEigDFa6hslqV/Kj+FdBQD0bshIDlKSLlVcoWQo36UhR80BAMB73lulMn0EMpJTqD6qJiOt3mho/8GbkT2BZNgDB/V+RI0fkOrT3kRIVQbaDizJm2hdNbINBxwk5xAj3yEjuV9rZ1iIkgxixkLBA83mz8uCjLwoGwAx0vOnFSy5mtR4VTaAQvVORMnwZgSpzkrV/QmdE2tKe46+MQAAAABJRU5ErkJggg==" rel="icon" sizes="32x32" type="image/png">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <script id="schema.org" type="application/ld+json">
+[
+  {
+    "@id": "https://data.jobsandskills.gov.au/def/skills-profile",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/description": [
+      {
+        "@language": "en",
+        "@value": "Derived profile summary from the National Skills Taxonomy; lists classes, properties, concept schemes, and observed domain/range usage using schema:domainIncludes and schema:rangeIncludes."
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@language": "en",
+        "@value": "Skills Graph Profile"
+      }
+    ]
+  }
+]
+	</script>
+  </head>
+  <body>
+    <div id="content">
+      <div class="section" id="metadata">
+        <h1>Skills Graph Profile</h1>
+        <h2>Metadata</h2>
+        <dl>
+          <div>
+            <dt>
+              <strong>IRI</strong>
+            </dt>
+            <dd>
+              <code>https://data.jobsandskills.gov.au/def/skills-profile</code>
+            </dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/title" title="A name given to the resource. Defined in DCMI Metadata Terms">Title</a>
+            </dt>
+            <dd><p>Skills Graph Profile</p></dd>
+          </div>
+          <div>
+            <dt>
+              <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
+            </dt>
+            <dd><p>Derived profile summary from the National Skills Taxonomy; lists classes, properties, concept schemes, and observed domain/range usage using schema:domainIncludes and schema:rangeIncludes.</p></dd>
+          </div>
+        </dl>
+      </div>
+      <div class="section" id="properties">
+        <h2>Properties</h2>
+        <div class="property entity" id="definition:">
+          <h3>definition:
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#definition:</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="altLabel:">
+          <h3>altLabel:
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#altLabel:</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="prefLabel:">
+          <h3>prefLabel:
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#prefLabel:</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="Definition">
+          <h3>Definition
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#Definition</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="PrefLabel">
+          <h3>PrefLabel
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#PrefLabel</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="member">
+          <h3>member
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#member</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#Collection">Collection</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="citation:">
+          <h3>citation:
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/citation:</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="keywords">
+          <h3>keywords
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/keywords</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#Skill">Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="level">
+          <h3>level
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://test.linked.data.gov.au/def/nst/ontology#level</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#Skill">Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="publisher">
+          <h3>publisher
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#publisher</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="creator">
+          <h3>creator
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#creator</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="versionIRI">
+          <h3>versionIRI
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2002/07/owl#versionIRI</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="isDefinedBy">
+          <h3>isDefinedBy
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2000/01/rdf-schema#isDefinedBy</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/2002/07/owl#Class">Class</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="comment">
+          <h3>comment
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2000/01/rdf-schema#comment</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/2002/07/owl#Class">Class</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="label">
+          <h3>label
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2000/01/rdf-schema#label</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/2002/07/owl#Class">Class</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="type">
+          <h3>type
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/type</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#Skill">Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="skillType">
+          <h3>skillType
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://data.europa.eu/esco/model#skillType</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+                  </li>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="inScheme:">
+          <h3>inScheme:
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#inScheme:</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="skills">
+          <h3>skills
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/skills</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="teaches">
+          <h3>teaches
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/teaches</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="publisher1">
+          <h3>publisher
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/publisher</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="creator1">
+          <h3>creator
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/creator</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="potentialAction">
+          <h3>potentialAction
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/potentialAction</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Action">Action</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="altLable">
+          <h3>altLable
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#altLable</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="identifier">
+          <h3>identifier
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/identifier</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="bibliographicCitation">
+          <h3>bibliographicCitation
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/bibliographicCitation</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="contributor">
+          <h3>contributor
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/contributor</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="subject">
+          <h3>subject
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/subject</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#Skill">Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Text">https://schema.org/Text</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="mentions">
+          <h3>mentions
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/mentions</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasCompStat">
+          <h3>hasCompStat
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://data.jobsandskills.gov.au/def/hasCompStat</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="levelEssence">
+          <h3>levelEssence
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://rdf.sfia-online.org/9/ontology/levelEssence</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="KNGE">
+          <h3>KNGE
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://rdf.sfia-online.org/9/attributes/KNGE</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="skillEmbodied">
+          <h3>skillEmbodied
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/ASN/schema/core/skillEmbodied</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="level1">
+          <h3>level
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://rdf.sfia-online.org/9/ontology/level</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="narrowMatch">
+          <h3>narrowMatch
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#narrowMatch</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Occupation">Occupation</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="OccupationalExperienceRequirements">
+          <h3>OccupationalExperienceRequirements
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/OccupationalExperienceRequirements</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalCredential">EducationalOccupationalCredential</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="conditionsOfAccess">
+          <h3>conditionsOfAccess
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/conditionsOfAccess</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalCredential">EducationalOccupationalCredential</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="exactMatch">
+          <h3>exactMatch
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#exactMatch</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Occupation">Occupation</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="credentialCategory">
+          <h3>credentialCategory
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/credentialCategory</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalCredential">EducationalOccupationalCredential</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="recognizedBy">
+          <h3>recognizedBy
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/recognizedBy</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalCredential">EducationalOccupationalCredential</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="isPartOf">
+          <h3>isPartOf
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/isPartOf</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalCredential">EducationalOccupationalCredential</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="qualifications">
+          <h3>qualifications
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/qualifications</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://data.jobsandskills.gov.au/def/Industry">Industry</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Occupation">Occupation</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasPart">
+          <h3>hasPart
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/hasPart</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/CreativeWork">CreativeWork</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="description">
+          <h3>description
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/description</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/CreativeWork">CreativeWork</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="accessService">
+          <h3>accessService
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/ns/dcat#accessService</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <a href="http://www.w3.org/ns/dcat#Dataset">http://www.w3.org/ns/dcat#Dataset</a>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="references">
+          <h3>references
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/references</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">http://www.w3.org/ns/dcat#Dataset</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Text">https://schema.org/Text</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="description1">
+          <h3>description
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/description</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">http://www.w3.org/ns/dcat#Dataset</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="license">
+          <h3>license
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/license</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">http://www.w3.org/ns/dcat#Dataset</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Text">https://schema.org/Text</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="source">
+          <h3>source
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/source</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#Skill">Skill</a>
+                  </li>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">http://www.w3.org/ns/dcat#Dataset</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Text">https://schema.org/Text</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="scopeNote">
+          <h3>scopeNote
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#scopeNote</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="example">
+          <h3>example
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#example</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concpet">Concpet</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="closeMatch">
+          <h3>closeMatch
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#closeMatch</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="historyNote">
+          <h3>historyNote
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#historyNote</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <span>
+                  <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                  <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="publisher1">
+          <h3>publisher
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/publisher</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">http://www.w3.org/ns/dcat#Dataset</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="altLabel">
+          <h3>altLabel
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#altLabel</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#Skill">Skill</a>
+                  </li>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="hasTopConcept">
+          <h3>hasTopConcept
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#hasTopConcept</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="title">
+          <h3>title
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/title</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">http://www.w3.org/ns/dcat#Dataset</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="definition">
+          <h3>definition
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#definition</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Collection">Collection</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#Skill">Skill</a>
+                  </li>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#SkillLevel">SkillLevel</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Action">Action</a>
+                  </li>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concpet">Concpet</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="modified">
+          <h3>modified
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/modified</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://data.jobsandskills.gov.au/def/Industry">Industry</a>
+                  </li>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Occupation">Occupation</a>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concpet">Concpet</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Text">https://schema.org/Text</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/DateTime">https://schema.org/DateTime</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="notation">
+          <h3>notation
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#notation</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#SkillLevel">SkillLevel</a>
+                  </li>
+                  <li>
+                    <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+                  </li>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Occupation">Occupation</a>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concpet">Concpet</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="narrower">
+          <h3>narrower
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#narrower</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+                  </li>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Occupation">Occupation</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="broader">
+          <h3>broader
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#broader</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+                  </li>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Occupation">Occupation</a>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concpet">Concpet</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="created">
+          <h3>created
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/created</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concpet">Concpet</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Text">https://schema.org/Text</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Date">https://schema.org/Date</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/DateTime">https://schema.org/DateTime</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="citation">
+          <h3>citation
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/citation</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalProgram">EducationalOccupationalProgram</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="creator1">
+          <h3>creator
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/creator</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">http://www.w3.org/ns/dcat#Dataset</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalProgram">EducationalOccupationalProgram</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="about">
+          <h3>about
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>https://schema.org/about</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalCredential">EducationalOccupationalCredential</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/CreativeWork">CreativeWork</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Course">Course</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="isReferencedBy">
+          <h3>isReferencedBy
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/isReferencedBy</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Course">Course</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="isRequiredBy">
+          <h3>isRequiredBy
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://purl.org/dc/terms/isRequiredBy</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://schema.org/Course">Course</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="prefLabel">
+          <h3>prefLabel
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#prefLabel</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://data.jobsandskills.gov.au/def/Industry">Industry</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Course">Course</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalProgram">EducationalOccupationalProgram</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concpet">Concpet</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Occupation">Occupation</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalCredential">EducationalOccupationalCredential</a>
+                  </li>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Action">Action</a>
+                  </li>
+                  <li>
+                    <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+                  </li>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#SkillLevel">SkillLevel</a>
+                  </li>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#Skill">Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Collection">Collection</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Text">https://schema.org/Text</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="topConceptOf">
+          <h3>topConceptOf
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#topConceptOf</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="https://data.jobsandskills.gov.au/def/Industry">Industry</a>
+                  </li>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#SkillLevel">SkillLevel</a>
+                  </li>
+                  <li>
+                    <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Action">Action</a>
+                  </li>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Occupation">Occupation</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalCredential">EducationalOccupationalCredential</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalProgram">EducationalOccupationalProgram</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Course">Course</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="inScheme">
+          <h3>inScheme
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/2004/02/skos/core#inScheme</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Course">Course</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalProgram">EducationalOccupationalProgram</a>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concpet">Concpet</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Occupation">Occupation</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalCredential">EducationalOccupationalCredential</a>
+                  </li>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Action">Action</a>
+                  </li>
+                  <li>
+                    <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+                  </li>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#SkillLevel">SkillLevel</a>
+                  </li>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#Skill">Skill</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Collection">Collection</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="https://data.jobsandskills.gov.au/def/Industry">Industry</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="property entity" id="type1">
+          <h3>type
+            <sup class="sup-p" title="RDF Property">p</sup>
+          </h3>
+          <table>
+            <tr>
+              <th>IRI</th>
+              <td>
+                <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</code>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/domainIncludes" title="Relates a property to a class that is (one of) the type(s) the property is expected to be used on. Defined in None">Domainincludes</a>
+              </th>
+              <td>
+                <ul>
+                  <li>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a>
+                  </li>
+                  <li>
+                    <a href="https://data.jobsandskills.gov.au/def/Industry">Industry</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Collection">Collection</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#Skill">Skill</a>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/2002/07/owl#Class">Class</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Course">Course</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalProgram">EducationalOccupationalProgram</a>
+                  </li>
+                  <li>
+                    <span>
+                      <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
+                      <sup class="sup-c" title="OWL/RDFS Class">c</sup>
+                    </span>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/2004/02/skos/core#Concpet">Concpet</a>
+                  </li>
+                  <li>
+                    <a href="http://www.w3.org/ns/dcat#Dataset">http://www.w3.org/ns/dcat#Dataset</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/CreativeWork">CreativeWork</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Occupation">Occupation</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/EducationalOccupationalCredential">EducationalOccupationalCredential</a>
+                  </li>
+                  <li>
+                    <a href="http://data.europa.eu/esco/model#Skill">http://data.europa.eu/esco/model#Skill</a>
+                  </li>
+                  <li>
+                    <a href="http://purl.org/ASN/schema/core/Statement">Statement</a>
+                  </li>
+                  <li>
+                    <a href="https://schema.org/Action">Action</a>
+                  </li>
+                  <li>
+                    <a href="https://test.linked.data.gov.au/def/nst/ontology#SkillLevel">SkillLevel</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <a class="hover_property" href="https://schema.org/rangeIncludes" title="Relates a property to a class that constitutes (one of) the expected type(s) for values of the property. Defined in None">Rangeincludes</a>
+              </th>
+              <td>
+                <a href="https://schema.org/Thing">https://schema.org/Thing</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div id="namespaces">
+        <h2>Namespaces</h2>
+        <dl>
+          <dt id="dcterms">dcterms</dt>
+          <dd>
+            <code>http://purl.org/dc/terms/</code>
+          </dd>
+          <dt id="jsadef">jsadef</dt>
+          <dd>
+            <code>https://data.jobsandskills.gov.au/def/</code>
+          </dd>
+          <dt id="owl">owl</dt>
+          <dd>
+            <code>http://www.w3.org/2002/07/owl#</code>
+          </dd>
+          <dt id="prof">prof</dt>
+          <dd>
+            <code>http://www.w3.org/ns/dx/prof/</code>
+          </dd>
+          <dt id="rdf">rdf</dt>
+          <dd>
+            <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>
+          </dd>
+          <dt id="rdfs">rdfs</dt>
+          <dd>
+            <code>http://www.w3.org/2000/01/rdf-schema#</code>
+          </dd>
+        </dl>
+      </div>
+      <div id="legend">
+        <h2>Legend</h2>
+        <table class="entity">
+          <tr>
+            <td>
+              <sup class="sup-p" title="RDF Property">p</sup>
+            </td>
+            <td>Properties</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="pylode">
+      <p>made by 
+        <a href="https://github.com/rdflib/pyLODE">
+          <span id="p">p</span>
+          <span id="y">y</span>
+          <span>LODE</span>
+        </a>
+        <a href="https://github.com/rdflib/pyLODE/release/3.2.1" id="version">3.2.1</a>
+        <span> with the </span>
+        <a href="https://w3id.org/profile/ontpub" id="profile">OntPub</a>
+        <span>profile</span>
+      </p>
+    </div>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <ul class="first">
+        <li>
+          <h4>
+            <a href="#metadata">Metadata</a>
+          </h4>
+        </li>
+        <li>
+          <h4>
+            <a href="#properties">Properties</a>
+          </h4>
+          <ul class="second">
+            <li>
+              <a href="#definition:">definition:</a>
+            </li>
+            <li>
+              <a href="#altLabel:">altLabel:</a>
+            </li>
+            <li>
+              <a href="#prefLabel:">prefLabel:</a>
+            </li>
+            <li>
+              <a href="#Definition">Definition</a>
+            </li>
+            <li>
+              <a href="#PrefLabel">PrefLabel</a>
+            </li>
+            <li>
+              <a href="#member">member</a>
+            </li>
+            <li>
+              <a href="#citation:">citation:</a>
+            </li>
+            <li>
+              <a href="#keywords">keywords</a>
+            </li>
+            <li>
+              <a href="#level">level</a>
+            </li>
+            <li>
+              <a href="#publisher">publisher</a>
+            </li>
+            <li>
+              <a href="#creator">creator</a>
+            </li>
+            <li>
+              <a href="#versionIRI">versionIRI</a>
+            </li>
+            <li>
+              <a href="#isDefinedBy">isDefinedBy</a>
+            </li>
+            <li>
+              <a href="#comment">comment</a>
+            </li>
+            <li>
+              <a href="#label">label</a>
+            </li>
+            <li>
+              <a href="#type">type</a>
+            </li>
+            <li>
+              <a href="#skillType">skillType</a>
+            </li>
+            <li>
+              <a href="#inScheme:">inScheme:</a>
+            </li>
+            <li>
+              <a href="#skills">skills</a>
+            </li>
+            <li>
+              <a href="#teaches">teaches</a>
+            </li>
+            <li>
+              <a href="#publisher1">publisher</a>
+            </li>
+            <li>
+              <a href="#creator1">creator</a>
+            </li>
+            <li>
+              <a href="#potentialAction">potentialAction</a>
+            </li>
+            <li>
+              <a href="#altLable">altLable</a>
+            </li>
+            <li>
+              <a href="#identifier">identifier</a>
+            </li>
+            <li>
+              <a href="#bibliographicCitation">bibliographicCitation</a>
+            </li>
+            <li>
+              <a href="#contributor">contributor</a>
+            </li>
+            <li>
+              <a href="#subject">subject</a>
+            </li>
+            <li>
+              <a href="#mentions">mentions</a>
+            </li>
+            <li>
+              <a href="#hasCompStat">hasCompStat</a>
+            </li>
+            <li>
+              <a href="#levelEssence">levelEssence</a>
+            </li>
+            <li>
+              <a href="#KNGE">KNGE</a>
+            </li>
+            <li>
+              <a href="#skillEmbodied">skillEmbodied</a>
+            </li>
+            <li>
+              <a href="#level1">level</a>
+            </li>
+            <li>
+              <a href="#narrowMatch">narrowMatch</a>
+            </li>
+            <li>
+              <a href="#OccupationalExperienceRequirements">OccupationalExperienceRequirements</a>
+            </li>
+            <li>
+              <a href="#conditionsOfAccess">conditionsOfAccess</a>
+            </li>
+            <li>
+              <a href="#exactMatch">exactMatch</a>
+            </li>
+            <li>
+              <a href="#credentialCategory">credentialCategory</a>
+            </li>
+            <li>
+              <a href="#recognizedBy">recognizedBy</a>
+            </li>
+            <li>
+              <a href="#isPartOf">isPartOf</a>
+            </li>
+            <li>
+              <a href="#qualifications">qualifications</a>
+            </li>
+            <li>
+              <a href="#hasPart">hasPart</a>
+            </li>
+            <li>
+              <a href="#description">description</a>
+            </li>
+            <li>
+              <a href="#accessService">accessService</a>
+            </li>
+            <li>
+              <a href="#references">references</a>
+            </li>
+            <li>
+              <a href="#description1">description</a>
+            </li>
+            <li>
+              <a href="#license">license</a>
+            </li>
+            <li>
+              <a href="#source">source</a>
+            </li>
+            <li>
+              <a href="#scopeNote">scopeNote</a>
+            </li>
+            <li>
+              <a href="#example">example</a>
+            </li>
+            <li>
+              <a href="#closeMatch">closeMatch</a>
+            </li>
+            <li>
+              <a href="#historyNote">historyNote</a>
+            </li>
+            <li>
+              <a href="#publisher1">publisher</a>
+            </li>
+            <li>
+              <a href="#altLabel">altLabel</a>
+            </li>
+            <li>
+              <a href="#hasTopConcept">hasTopConcept</a>
+            </li>
+            <li>
+              <a href="#title">title</a>
+            </li>
+            <li>
+              <a href="#definition">definition</a>
+            </li>
+            <li>
+              <a href="#modified">modified</a>
+            </li>
+            <li>
+              <a href="#notation">notation</a>
+            </li>
+            <li>
+              <a href="#narrower">narrower</a>
+            </li>
+            <li>
+              <a href="#broader">broader</a>
+            </li>
+            <li>
+              <a href="#created">created</a>
+            </li>
+            <li>
+              <a href="#citation">citation</a>
+            </li>
+            <li>
+              <a href="#creator1">creator</a>
+            </li>
+            <li>
+              <a href="#about">about</a>
+            </li>
+            <li>
+              <a href="#isReferencedBy">isReferencedBy</a>
+            </li>
+            <li>
+              <a href="#isRequiredBy">isRequiredBy</a>
+            </li>
+            <li>
+              <a href="#prefLabel">prefLabel</a>
+            </li>
+            <li>
+              <a href="#topConceptOf">topConceptOf</a>
+            </li>
+            <li>
+              <a href="#inScheme">inScheme</a>
+            </li>
+            <li>
+              <a href="#type1">type</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>
+            <a href="#namespaces">Namespaces</a>
+          </h4>
+          <ul class="second">
+            <li>
+              <a href="#dcterms">dcterms</a>
+            </li>
+            <li>
+              <a href="#jsadef">jsadef</a>
+            </li>
+            <li>
+              <a href="#owl">owl</a>
+            </li>
+            <li>
+              <a href="#prof">prof</a>
+            </li>
+            <li>
+              <a href="#rdf">rdf</a>
+            </li>
+            <li>
+              <a href="#rdfs">rdfs</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>
+            <a href="#legend">Legend</a>
+          </h4>
+          <ul class="second"></ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
