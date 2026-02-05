@@ -1,0 +1,12 @@
+SELECT ?badClass (COUNT(*) AS ?uses)
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+    ?s a ?badClass .
+    FILTER(?badClass IN (
+      <https://schema.org/Orgainzation>,
+      <http://www.w3.org/2004/02/skos/core#Concpet>
+    ))
+  }
+}
+GROUP BY ?badClass
+ORDER BY DESC(?uses)
