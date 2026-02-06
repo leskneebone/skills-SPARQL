@@ -1,0 +1,109 @@
+<https://data.jobsandskills.gov.au/def/wefgst>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "WEF Global Skills Taxonomy"@en .
+
+<https://training.gov.au/tgaQualifications>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "TGA Qualifications"@en .
+
+<https://training.gov.au/tgaOccupation>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "TGA Occupation"@en .
+
+<https://training.gov.au/tgaIndustry>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Training Industry"@en .
+
+<https://data.jobsandskills.gov.au/def/skillctx>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Indicates the educational context  of the skill and whether taught/learnt in theory or practice: theoretical, practical or hybrid"@en , "Skill context"@en .
+
+<https://data.jobsandskills.gov.au/def/skillcat>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Indicates the Skill category: Cognitive; Domain knowledge; Interpersonal; Technical"@en , "Skill categroy"@en .
+
+<https://rdf.sfia-online.org/9/lor>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Scheme for the Levels of Responsibility"@en .
+
+<https://rdf.sfia-online.org/9/ontology/CategoryScheme>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Scheme for the Skills' Categories"@en .
+
+<https://data.jobsandskills.gov.au/def/skillcs>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "SFIA skills concept scheme"@en .
+
+<https://data.jobsandskills.gov.au/def/ONET>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ONET"@en .
+
+<https://data.jobsandskills.gov.au/def/oasis>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "OaSIS Skills and Competencies Taxonomy"@en .
+
+<https://data.jobsandskills.gov.au/def/lightCastCat>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Lightcast Categories"@en .
+
+<https://data.jobsandskills.gov.au/def/it2017>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "IT2017 Essential IT Domains and Subdomains (stub)"@en .
+
+<https://data.jobsandskills.gov.au/def/ILOcoreskills>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ILO core skills"@en .
+
+<https://data.jobsandskills.gov.au/def/digComp/level>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "DigComp proficiency levels"@en .
+
+<https://data.jobsandskills.gov.au/def/digComp/ai>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "DigComp AI scheme"@en .
+
+<https://data.jobsandskills.gov.au/def/digComp>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "DigComp 3.0"@en .
+
+<https://training.gov.au/aqfLevel>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "AQF Levels"@en .
+
+<https://training.gov.au/aqfType>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "AQF Qualification Types"@en .
+
+<https://abs.gov.au/classifications/ANZSCO>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ANZSCO"@en .
+
+<https://data.jobsandskills.gov.au/occupationTasks>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Occupation Task Concepts"@en .
+
+<https://abs.gov.au/classifications/ASCED>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "ASCED"@en .

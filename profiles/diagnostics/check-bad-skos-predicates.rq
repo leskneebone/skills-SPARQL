@@ -1,0 +1,18 @@
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?p (COUNT(*) AS ?uses)
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+    ?s ?p ?o .
+    FILTER(STRSTARTS(STR(?p), STR(skos:)))
+    FILTER(
+      REGEX(STR(?p), ":$") ||
+      REGEX(STR(?p), "skos/core#PrefLabel$") ||
+      REGEX(STR(?p), "skos/core#Definition$") ||
+      REGEX(STR(?p), "skos/core#AltLabel$") ||
+      REGEX(STR(?p), "skos/core#InScheme$")
+    )
+  }
+}
+GROUP BY ?p
+ORDER BY DESC(?uses)

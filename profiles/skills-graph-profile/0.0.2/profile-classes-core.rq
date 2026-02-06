@@ -1,0 +1,26 @@
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+  ?class a owl:Class ;
+         rdfs:label ?label .
+}
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/combined> {
+    ?s rdf:type ?class .
+    FILTER(isIRI(?class))
+
+    OPTIONAL { ?class rdfs:label ?lab1 . FILTER(langMatches(lang(?lab1), "en")) }
+    OPTIONAL { ?class skos:prefLabel ?lab2 . FILTER(langMatches(lang(?lab2), "en")) }
+
+    BIND(
+      COALESCE(
+        ?lab1,
+        ?lab2,
+        STRLANG(REPLACE(STR(?class), "^.*[#/]", ""), "en")
+      ) AS ?label
+    )
+  }
+}
