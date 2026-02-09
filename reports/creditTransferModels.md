@@ -38,6 +38,7 @@ flowchart LR
   linkStyle 0,1,2,3,4,5 stroke-width:0px;
 ```
 
+```mermaid
 flowchart LR
   %% Diagram 2 — attempt mapping via IT2017 (helps HE more than VET)
 
