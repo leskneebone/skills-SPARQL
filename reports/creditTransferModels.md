@@ -52,6 +52,7 @@ flowchart LR
   subgraph UCBIT["UC B.IT (Maj/Specialisation)"]
     spacer[" "]:::spacer
     UC["Courses (A…n)"]:::unit
+    spacer --> UC
   end
 
   subgraph IT2017["ACM IT2017"]
