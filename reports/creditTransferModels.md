@@ -6,6 +6,8 @@ flowchart LR
     C3a["Unit A"]:::unit
     C3b["Unit B"]:::unit
     C3d["Elective X"]:::unit
+    C3a --> C3b
+    C3b --> C3d
   end
 
   subgraph CertIV["TGA Cert IV (Qualification)"]
