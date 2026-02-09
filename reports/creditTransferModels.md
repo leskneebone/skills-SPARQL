@@ -38,7 +38,6 @@ flowchart LR
   linkStyle 0,1,2,3,4,5 stroke-width:0px;
 ```
 
-```mermaid
 flowchart LR
   %% Diagram 2 — attempt mapping via IT2017 (helps HE more than VET)
 
@@ -51,8 +50,7 @@ flowchart LR
   end
 
   subgraph UCBIT["UC B.IT (Maj/Specialisation)"]
-    UC1["Course (A…n)"]:::unit
-    spacer_uc --> UC1
+    UC["Courses (A…n)"]:::unit
   end
 
   subgraph IT2017["ACM IT2017"]
@@ -63,22 +61,17 @@ flowchart LR
   UCBIT -- "Mapped (assumed) UC courses → IT2017" --> IT2017
 
   %% VET: possible mapping, with no explicit IT2017 mapping
-  CertIII -. "Constructed by not authoritative TGA > IT2017 mapping" .-> IT2017
-  CertIV  -. "Constructed by not authoritative TGA > IT2017 mapping" .-> IT2017
+  CertIII -. "Constructed (not authoritative)\nTGA → IT2017 mapping" .-> IT2017
+  CertIV  -. "Constructed (not authoritative)\nTGA → IT2017 mapping" .-> IT2017
 
   %% therefore crosswalk is still partial/uneven
-  CertIII -. "Partial harmonisation via IT2017" .-> UCBIT
-  CertIV  -. "Partial harmonisation via IT2017" .-> UCBIT
+  CertIII -. "Partial harmonisation\nvia IT2017" .-> UCBIT
+  CertIV  -. "Partial harmonisation\nvia IT2017" .-> UCBIT
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
   classDef scheme fill:#f8f8f8,stroke:#333,stroke-width:1px;
-  classDef spacer fill:none,stroke:none;
-
-  %% Hide ONLY the internal spacer/stacking links (indices 0..2)
-  linkStyle 0,1,2 stroke-width:0px;
-```
-
 ```mermaid
+
 flowchart LR
   %% Diagram 3 — NST Skills as the bridge (indexes VET + HE + IT2017)
   subgraph CertIII["TGA Cert III"]
