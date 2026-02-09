@@ -70,8 +70,8 @@ VetITMap -.-> IT2017
 
 
   %% therefore crosswalk is still partial/uneven
-  CertIII -. "Partial harmonisation\nvia IT2017" .-> UCBIT
-  CertIV  -. "Partial harmonisation\nvia IT2017" .-> UCBIT
+  CertIII -. "Partial harmonisation via IT2017" .-> UCBIT
+  CertIV  -. "Partial harmonisation via IT2017" .-> UCBIT
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
   classDef scheme fill:#f8f8f8,stroke:#333,stroke-width:1px;
