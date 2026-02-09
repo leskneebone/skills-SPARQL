@@ -41,6 +41,7 @@ flowchart LR
 ```mermaid
 flowchart LR
   %% Diagram 2 — attempt mapping via IT2017 (helps HE more than VET)
+
   subgraph CertIII["TGA Cert III"]
     C3["Units (A…n)"]:::unit
   end
@@ -50,12 +51,13 @@ flowchart LR
   end
 
   subgraph UCBIT["UC B.IT (Maj/Specialisation)"]
-    spacer[" "]:::spacer
+    spacer_uc[" "]:::spacer
     UC1["Course 101"]:::unit
     UC2["Course 102"]:::unit
     UC3["Course 201"]:::unit
-    spacer --> UC1
-    UC1 --> UC2 --> UC3
+    spacer_uc --> UC1
+    UC1 --> UC2
+    UC2 --> UC3
   end
 
   subgraph IT2017["ACM IT2017"]
@@ -64,7 +66,6 @@ flowchart LR
 
   %% HE aligns (assumed mapping)
   UCBIT -- "Mapped (assumed) UC courses → IT2017" --> IT2017
-
 
   %% VET: possible mapping, with no explicit IT2017 mapping
   CertIII -. "Constructed by not authoritative TGA > IT2017 mapping" .-> IT2017
@@ -76,9 +77,10 @@ flowchart LR
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
   classDef scheme fill:#f8f8f8,stroke:#333,stroke-width:1px;
+  classDef spacer fill:none,stroke:none;
 
-  %% Hide the internal “stacking” links (indices 0..5)
-  linkStyle 0,1,2,3,4,5 stroke-width:0px;
+  %% Hide ONLY the internal spacer/stacking links (indices 0..2)
+  linkStyle 0,1,2 stroke-width:0px;
 ```
 
 ```mermaid
