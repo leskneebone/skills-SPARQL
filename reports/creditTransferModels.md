@@ -71,8 +71,9 @@ flowchart LR
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
   classDef scheme fill:#f8f8f8,stroke:#333,stroke-width:1px;
-```mermaid
+```
 
+```mermaid
 flowchart LR
   %% Diagram 3 — NST Skills as the bridge (indexes VET + HE + IT2017)
   subgraph CertIII["TGA Cert III"]
