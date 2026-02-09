@@ -62,8 +62,12 @@ flowchart LR
   UCBIT -- "Mapped (assumed) UC courses → IT2017" --> IT2017
 
   %% VET: possible mapping, with no explicit IT2017 mapping
-  CertIII -. "Constructed (not authoritative)\nTGA → IT2017 mapping" .-> IT2017
-  CertIV  -. "Constructed (not authoritative)\nTGA → IT2017 mapping" .-> IT2017
+VetITMap["Constructed mapping\n(not authoritative)\nTGA → IT2017"]:::mapping
+
+CertIII -.-> VetITMap
+CertIV  -.-> VetITMap
+VetITMap -.-> IT2017
+
 
   %% therefore crosswalk is still partial/uneven
   CertIII -. "Partial harmonisation\nvia IT2017" .-> UCBIT
