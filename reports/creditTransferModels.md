@@ -104,7 +104,7 @@ flowchart LR
   end
 
   subgraph NST["NST Skills"]
-    Skills["Skill concepts (SK…) (+ domains / groupings)"]:::hero
+    Skills["Skill concepts (+ domains / groupings)"]:::hero
   end
 
   %% NST indexes everything
@@ -115,7 +115,6 @@ flowchart LR
 
   %% Credit transfer becomes skill-mediated
   CertIII == "Skill-mediated equivalence + gap analysis" ==> UCBIT
-  CertIV  == "Skill-mediated equivalence + gap analysis" ==> UCBIT
   CertIII == "Skill-mediated equivalence (shared skills)" ==> CertIV
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
