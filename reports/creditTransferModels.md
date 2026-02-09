@@ -16,13 +16,10 @@ flowchart LR
     C4b --> C4x
   end
 
-  subgraph UCBIT["Uni Canberra Bachelor IT (Major/Specialisation)"]
+  subgraph UCBIT["Uni Canberra B.IT (Maj/Specialisation)"]
     spacer[" "]:::spacer
-    UC1["Course 101"]:::unit
-    UC2["Course 102"]:::unit
-    UC3["Course 201"]:::unit
-    spacer --> UC1
-    UC1 --> UC2 --> UC3
+    UC["Courses (A…n)"]:::unit
+    spacer --> UC
   end
 
   CertIII -- "Less complicated (shared units / similar semantics)" --> CertIV
