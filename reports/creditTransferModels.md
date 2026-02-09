@@ -3,32 +3,37 @@ flowchart LR
   %% Diagram 1 — direct mappings (VET↔VET easier than VET↔HE)
 
   subgraph CertIII["TGA Cert III (Qualification)"]
-    direction TB
     C3a["Unit A"]:::unit
     C3b["Unit B"]:::unit
     C3d["Elective X"]:::unit
+    C3a --> C3b
+    C3b --> C3d
   end
 
   subgraph CertIV["TGA Cert IV (Qualification)"]
-    direction TB
     C4a["Unit A'"]:::unit
     C4b["Unit B'"]:::unit
     C4x["Elective X (shared)"]:::unit
+    C4a --> C4b
+    C4b --> C4x
   end
 
   subgraph UCBIT["Uni Canberra Bachelor IT (Major/Specialisation)"]
-    direction TB
     UC1["Course 101"]:::unit
     UC2["Course 102"]:::unit
     UC3["Course 201"]:::unit
     UC4["Course 202"]:::unit
+    UC1 --> UC2 --> UC3 --> UC4
   end
 
   CertIII -- "Less complicated (shared units / similar outcomes)" --> CertIV
-  CertIII -. "Less direct (different learning-outcome semantics; uni-specific, no national framework)" .-> UCBIT
+  CertIII -. "Less direct (different learning-outcome semantics; uni-specific)" .-> UCBIT
   CertIV  -. "Less direct (same as Cert III)" .-> UCBIT
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
+
+  %% hide internal ordering arrows
+  linkStyle 0,1,2,3,4,5 stroke-width:0px;
 ```
 
 ```mermaid
