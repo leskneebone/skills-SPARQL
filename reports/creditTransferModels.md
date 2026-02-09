@@ -29,7 +29,6 @@ flowchart LR
 
   CertIII -- "Less complicated (shared units / similar semantics)" --> CertIV
   CertIII -. "Less direct (different outcome semantics; uni-specific)" .-> UCBIT
-  CertIV  -. "Less direct (same as Cert III)" .-> UCBIT
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
   classDef spacer fill:none,stroke:none;
