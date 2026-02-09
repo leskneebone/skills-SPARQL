@@ -27,8 +27,8 @@ flowchart LR
     UC1 --> UC2 --> UC3
   end
 
-  CertIII -- "Less complicated (shared units / similar outcomes)" --> CertIV
-  CertIII -. "Less direct (different learning-outcome semantics; uni-specific)" .-> UCBIT
+  CertIII -- "Less complicated (shared units / similar semantics)" --> CertIV
+  CertIII -. "Less direct (different outcome semantics; uni-specific)" .-> UCBIT
   CertIV  -. "Less direct (same as Cert III)" .-> UCBIT
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
