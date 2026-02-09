@@ -36,6 +36,7 @@ flowchart LR
 
   %% Hide the internal “stacking” links (indices 0..5)
   linkStyle 0,1,2,3,4,5 stroke-width:0px;
+```
 
 ```mermaid
 flowchart LR
