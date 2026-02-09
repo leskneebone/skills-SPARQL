@@ -121,5 +121,6 @@ flowchart LR
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
   classDef scheme fill:#f8f8f8,stroke:#333,stroke-width:1px;
+  classDef spacer fill:none,stroke:none;
   classDef hero fill:#fff,stroke:#333,stroke-width:2px;
 ```
