@@ -106,7 +106,7 @@ flowchart LR
   end
 
   subgraph NST["NST Skills"]
-    Skills["Skill concepts (+ domains / groupings)"]:::hero
+    Skills["Skill concepts"]:::hero
   end
 
   %% NST indexes everything
