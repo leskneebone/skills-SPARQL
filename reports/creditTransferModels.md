@@ -95,8 +95,10 @@ flowchart LR
     C4["Units (A…n)"]:::unit
   end
 
-  subgraph UCBIT["UC B.IT (Maj/Specialisation)"]
-    UC["Courses (101…n)"]:::unit
+ subgraph UCBIT["UC B.IT (Maj/Specialisation)"]
+    spacer[" "]:::spacer
+    UC["Courses (A…n)"]:::unit
+    spacer --> UC
   end
 
   subgraph IT2017["IT2017"]
