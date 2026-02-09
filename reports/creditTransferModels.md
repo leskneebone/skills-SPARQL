@@ -78,6 +78,8 @@ VetITMap -.-> IT2017
   classDef scheme fill:#f8f8f8,stroke:#333,stroke-width:1px;
   classDef mapping fill:#fff,stroke:#666,stroke-dasharray: 4 2;
 
+  %% Hide the internal “stacking” links (indices 0..5)
+  linkStyle 0,1,2,3,4,5 stroke-width:0px;
 ```
 
 ```mermaid
