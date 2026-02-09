@@ -1,3 +1,4 @@
+```mermaid
 flowchart LR
   %% Diagram 1 — direct mappings (VET↔VET easier than VET↔HE)
   subgraph CertIII["TGA Cert III (Qualification)"]
@@ -26,8 +27,9 @@ flowchart LR
   CertIV  -. "Harder / less direct\n(same issues)" .-> UCBIT
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
+```
 
-
+```mermaid
 flowchart LR
   %% Diagram 2 — attempt harmonisation via IT2017 (helps HE more than VET)
   subgraph CertIII["TGA Cert III"]
@@ -60,8 +62,9 @@ flowchart LR
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
   classDef scheme fill:#f8f8f8,stroke:#333,stroke-width:1px;
+```
 
-
+```mermaid
 flowchart LR
   %% Diagram 3 — NST Skills as the bridge (indexes VET + HE + IT2017)
   subgraph CertIII["TGA Cert III"]
@@ -98,3 +101,4 @@ flowchart LR
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
   classDef scheme fill:#f8f8f8,stroke:#333,stroke-width:1px;
   classDef hero fill:#fff,stroke:#333,stroke-width:2px;
+```
