@@ -22,8 +22,7 @@ flowchart LR
     UC1["Course 101"]:::unit
     UC2["Course 102"]:::unit
     UC3["Course 201"]:::unit
-    UC4["Course 202"]:::unit
-    UC1 --> UC2 --> UC3 --> UC4
+    UC1 --> UC2 --> UC3
   end
 
   CertIII -- "Less complicated (shared units / similar outcomes)" --> CertIV
