@@ -63,12 +63,10 @@ flowchart LR
   UCBIT -- "Mapped (assumed) UC courses → IT2017" --> IT2017
 
   %% VET: possible mapping, with no explicit IT2017 mapping
-VetITMap["Mapping (non-authorised) TGA → IT2017"]:::mapping
-
-CertIII -.-> VetITMap
-CertIV  -.-> VetITMap
-VetITMap -.-> IT2017
-
+  VetITMap["Mapping (non-authorised)\nTGA → IT2017"]:::mapping
+  CertIII -.-> VetITMap
+  CertIV  -.-> VetITMap
+  VetITMap -.-> IT2017
 
   %% therefore crosswalk is still partial/uneven
   CertIII -. "Partial harmonisation via IT2017" .-> UCBIT
@@ -76,10 +74,11 @@ VetITMap -.-> IT2017
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
   classDef scheme fill:#f8f8f8,stroke:#333,stroke-width:1px;
+  classDef spacer fill:none,stroke:none;
   classDef mapping fill:#fff,stroke:#666,stroke-dasharray: 4 2;
 
-  %% Hide the internal “stacking” links (indices 0..5)
-  linkStyle 0,1,2,3,4,5 stroke-width:0px;
+  %% Hide ONLY the spacer link (the first link defined in this diagram)
+  linkStyle 0 stroke-width:0px;
 ```
 
 ```mermaid
