@@ -86,7 +86,7 @@ PartialXwalk -.-> UCBIT
 
 ```mermaid
 flowchart LR
-  %% Diagram 3 — NST Skills as the bridge (indexes VET + HE + IT2017)
+  %% Diagram 3 — NST Skills as bridge (indexes VET + HE + IT2017)
   subgraph CertIII["TGA Cert III"]
     C3["Units (A…n)"]:::unit
   end
@@ -95,15 +95,15 @@ flowchart LR
     C4["Units (A…n)"]:::unit
   end
 
-  subgraph UCBIT["UC Bachelor IT (Maj/Specialisation)"]
+  subgraph UCBIT["UC B.IT (Maj/Specialisation)"]
     UC["Courses (101…n)"]:::unit
   end
 
   subgraph IT2017["IT2017"]
-    KA["Domains / Subdomains"]:::scheme
+    KA["Domains"]:::scheme
   end
 
-  subgraph NST["National Skills Taxonomy (NST Skills)"]
+  subgraph NST["NST Skills"]
     Skills["Skill concepts (SK…) (+ domains / groupings)"]:::hero
   end
 
