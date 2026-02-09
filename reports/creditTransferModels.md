@@ -63,14 +63,17 @@ flowchart LR
   UCBIT -- "Mapped (assumed) UC courses → IT2017" --> IT2017
 
   %% VET: possible mapping, with no explicit IT2017 mapping
-  VetITMap["Mapping (non-authorised)\nTGA → IT2017"]:::mapping
+  VetITMap["Mapping (non-authorised) TGA → IT2017"]:::mapping
   CertIII -.-> VetITMap
   CertIV  -.-> VetITMap
   VetITMap -.-> IT2017
 
-  %% therefore crosswalk is still partial/uneven
-  CertIII -. "Partial harmonisation via IT2017" .-> UCBIT
-  CertIV  -. "Partial harmonisation via IT2017" .-> UCBIT
+ %% therefore crosswalk is still partial/uneven
+PartialXwalk["Partial / uneven crosswalk\n(via IT2017)"]:::mapping
+
+CertIII -.-> PartialXwalk
+CertIV  -.-> PartialXwalk
+PartialXwalk -.-> UCBIT
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
   classDef scheme fill:#f8f8f8,stroke:#333,stroke-width:1px;
