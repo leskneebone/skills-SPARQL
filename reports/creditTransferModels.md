@@ -22,14 +22,19 @@ flowchart LR
     spacer --> UC
   end
 
+  %% Semantic arrows (the ones you care about)
   CertIII -- "Less complicated (shared units / similar semantics)" --> CertIV
   CertIII -. "Less direct (different outcome semantics; uni-specific)" .-> UCBIT
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
   classDef spacer fill:none,stroke:none;
 
-  %% Hide the internal “stacking” links (indices 0..5)
-  linkStyle 0,1,2,3,4,5 stroke-width:0px;
+  %% Hide ONLY the internal stacking links:
+  %% 0: C3a-->C3d
+  %% 1: C4a-->C4b
+  %% 2: C4b-->C4x
+  %% 3: spacer-->UC
+  linkStyle 0,1,2,3 stroke-width:0px;
 ```
 
 ```mermaid
