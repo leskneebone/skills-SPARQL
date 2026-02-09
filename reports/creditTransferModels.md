@@ -62,7 +62,7 @@ flowchart LR
   UCBIT -- "Mapped (assumed) UC courses → IT2017" --> IT2017
 
   %% VET: possible mapping, with no explicit IT2017 mapping
-VetITMap["Constructed mapping\n(not authoritative)\nTGA → IT2017"]:::mapping
+VetITMap["Mapping (non-authorised) TGA → IT2017"]:::mapping
 
 CertIII -.-> VetITMap
 CertIV  -.-> VetITMap
@@ -75,6 +75,8 @@ VetITMap -.-> IT2017
 
   classDef unit fill:#fff,stroke:#333,stroke-width:1px;
   classDef scheme fill:#f8f8f8,stroke:#333,stroke-width:1px;
+  classDef mapping fill:#fff,stroke:#666,stroke-dasharray: 4 2;
+
 ```
 
 ```mermaid
