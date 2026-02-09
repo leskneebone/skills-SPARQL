@@ -2,6 +2,7 @@
 flowchart LR
   %% Diagram 1 — direct mappings (VET↔VET easier than VET↔HE)
   subgraph CertIII["TGA Cert III (Qualification)"]
+   direction TB
     C3a["Unit A"]:::unit
     C3b["Unit B"]:::unit
     C3d["Elective X"]:::unit
