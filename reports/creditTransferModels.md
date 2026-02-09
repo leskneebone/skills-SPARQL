@@ -69,7 +69,7 @@ flowchart LR
   VetITMap -.-> IT2017
 
  %% therefore crosswalk is still partial/uneven
-PartialXwalk["Partial / uneven crosswalk\n(via IT2017)"]:::mapping
+PartialXwalk["Partial / uneven crosswalk (via IT2017)"]:::mapping
 
 CertIII -.-> PartialXwalk
 CertIV  -.-> PartialXwalk
@@ -104,7 +104,7 @@ flowchart LR
   end
 
   subgraph NST["National Skills Taxonomy (NST Skills)"]
-    Skills["Skill concepts (SK…)\n(+ domains / groupings)"]:::hero
+    Skills["Skill concepts (SK…) (+ domains / groupings)"]:::hero
   end
 
   %% NST indexes everything
