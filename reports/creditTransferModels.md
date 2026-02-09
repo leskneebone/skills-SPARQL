@@ -50,6 +50,7 @@ flowchart LR
   end
 
   subgraph UCBIT["UC B.IT (Maj/Specialisation)"]
+    spacer[" "]:::spacer
     UC["Courses (101…n)"]:::unit
   end
 
@@ -59,6 +60,7 @@ flowchart LR
 
   %% HE aligns (assumed mapping)
   UCBIT -- "Mapped (assumed) UC courses → IT2017" --> IT2017
+
 
   %% VET: possible mapping, with no explicit IT2017 mapping
   CertIII -. "Constructed by not authoritative TGA > IT2017 mapping" .-> IT2017
