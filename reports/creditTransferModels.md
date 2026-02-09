@@ -3,17 +3,15 @@ flowchart LR
   %% Diagram 1 — direct mappings (VET↔VET easier than VET↔HE)
 
   subgraph CertIII["TGA Cert III (Qualification)"]
-    C3a["Unit A"]:::unit
-    C3b["Unit B"]:::unit
+    C3a["Unit 3A"]:::unit
     C3d["Elective X"]:::unit
-    C3a --> C3b
-    C3b --> C3d
+    C3a --> C3d
   end
 
   subgraph CertIV["TGA Cert IV (Qualification)"]
-    C4a["Unit A'"]:::unit
-    C4b["Unit B'"]:::unit
-    C4x["Elective X (shared)"]:::unit
+    C4a["Unit 4A'"]:::unit
+    C4b["Unit 4B'"]:::unit
+    C4x["Elective X (some shared)"]:::unit
     C4a --> C4b
     C4b --> C4x
   end
