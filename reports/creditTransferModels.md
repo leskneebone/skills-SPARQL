@@ -55,8 +55,8 @@ flowchart LR
     spacer --> UC
   end
 
-  subgraph IT2017["ACM IT2017"]
-    KA["Domains / Subdomains"]:::scheme
+  subgraph IT2017["IT2017"]
+    KA["Domains"]:::scheme
   end
 
   %% HE aligns (assumed mapping)
