@@ -4,9 +4,9 @@ A and B share some overlapping words and phrases, which allows a simple probabil
 
 ```mermaid
 flowchart LR
-  A["Course A\n(text only)"] --> M["Raw keyword match\n(out of context)"]
-  B["Course B\n(text only)"] --> M
-  M --> O["Estimated overlap\n10%"]
+  A["Course A(text only)"] --> M["Raw keyword match(out of context)"]
+  B["Course B(text only)"] --> M
+  M --> O["Estimated overlap10%"]
 ```
 **[Figure 1: A and B show 10% overlap from raw string matching]**
 
@@ -14,10 +14,10 @@ Next, we introduce a controlled vocabulary of skill concepts. Where terms in eit
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match against\npreferred skill labels"]
+  A["Course A"] --> M["Match againstpreferred skill labels"]
   B["Course B"] --> M
-  S["Skills vocabulary\n(SKOS ConceptScheme)"] --> M
-  M --> O["Estimated overlap\n20%"]
+  S["Skills vocabulary(SKOS ConceptScheme)"] --> M
+  M --> O["Estimated overlap20%"]
 ```
 **[Figure 2: Preferred skill labels increase overlap to 20%]**
 
@@ -25,10 +25,10 @@ The vocabulary also includes alternative labels (synonyms). Matching against bot
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match against\nprefLabel + altLabel"]
+  A["Course A"] --> M["Match againstprefLabel + altLabel"]
   B["Course B"] --> M
-  S["Skills vocabulary\n(prefLabel, altLabel)"] --> M
-  M --> O["Estimated overlap\n30%"]
+  S["Skills vocabulary(prefLabel, altLabel)"] --> M
+  M --> O["Estimated overlap30%"]
 ```
 **[Figure 3: Preferred + alternative labels increase overlap to 30%]**
 
@@ -36,10 +36,10 @@ The skills vocabulary is organised as a taxonomy. Where skills referenced by A a
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match concepts +\nboost related concepts\n(broader/narrower/related)"]
+  A["Course A"] --> M["Match concepts +boost related concepts(broader/narrower/related)"]
   B["Course B"] --> M
-  S["Skills taxonomy\n(SKOS relations)"] --> M
-  M --> O["Estimated overlap\n40%"]
+  S["Skills taxonomy(SKOS relations)"] --> M
+  M --> O["Estimated overlap40%"]
 ```
 **[Figure 4: Skill hierarchy and relatedness increase overlap to 40%]**
 
@@ -47,10 +47,10 @@ Skill descriptions provide an additional text source for matching (beyond labels
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match using\nlabels + descriptions"]
+  A["Course A"] --> M["Match usinglabels + descriptions"]
   B["Course B"] --> M
-  S["Skills concepts\n(+ definitions/descriptions)"] --> M
-  M --> O["Estimated overlap\n50%"]
+  S["Skills concepts(+ definitions/descriptions)"] --> M
+  M --> O["Estimated overlap50%"]
 ```
 **[Figure 5: Skill descriptions increase overlap to 50%]**
 
@@ -58,11 +58,11 @@ Skills can also be annotated using an education taxonomy (e.g., education contex
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match skills +\nmatch education-context\nannotations"]
+  A["Course A"] --> M["Match skills +match education-contextannotations"]
   B["Course B"] --> M
   S["Skills concepts"] --> M
-  E["Education taxonomy\n(concepts + hierarchy)"] --> M
-  M --> O["Estimated overlap\n60%"]
+  E["Education taxonomy(concepts + hierarchy)"] --> M
+  M --> O["Estimated overlap60%"]
 ```
 **[Figure 6: Education taxonomy annotations increase overlap to 60%]**
 
@@ -70,11 +70,11 @@ Additional small “dimension vocabularies” (learning context, transferability
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match skills +\nmatch dimension annotations\n(context, transferability, etc.)"]
+  A["Course A"] --> M["Match skills +match dimension annotations(context, transferability, etc.)"]
   B["Course B"] --> M
   S["Skills concepts"] --> M
-  D["Dimension vocabularies\n(small ConceptSchemes)"] --> M
-  M --> O["Estimated overlap\n70%"]
+  D["Dimension vocabularies(small ConceptSchemes)"] --> M
+  M --> O["Estimated overlap70%"]
 ```
 **[Figure 7: Skill dimension vocabularies increase overlap to 70%]**
 
@@ -82,10 +82,10 @@ Skills may be tagged with keywords extracted from authoritative sources. These k
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match skills +\nmatch extracted keywords"]
+  A["Course A"] --> M["Match skills +match extracted keywords"]
   B["Course B"] --> M
-  S["Skills concepts\n(+ keyword tags)"] --> M
-  M --> O["Estimated overlap\n80%"]
+  S["Skills concepts(+ keyword tags)"] --> M
+  M --> O["Estimated overlap80%"]
 ```
 **[Figure 8: Skill keyword enrichment increases overlap to 80%]**
 
@@ -93,11 +93,11 @@ Finally, applying weighting for proficiency/complexity levels (where available) 
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match skills +\nboost where\nlevels align"]
+  A["Course A"] --> M["Match skills +boost wherelevels align"]
   B["Course B"] --> M
   S["Skills concepts"] --> M
-  L["Level scheme\n(proficiency/complexity)"] --> M
-  M --> O["Estimated overlap\n90%"]
+  L["Level scheme(proficiency/complexity)"] --> M
+  M --> O["Estimated overlap90%"]
 ```
 **[Figure 9: Level alignment increases overlap to 90%]**
 
@@ -108,91 +108,91 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-  A["Course A\n(text only)"] --> M["Raw keyword match\n(out of context)"]
-  B["Course B\n(text only)"] --> M
-  M --> O["Estimated overlap\n10%"]
+  A["Course A(text only)"] --> M["Raw keyword match(out of context)"]
+  B["Course B(text only)"] --> M
+  M --> O["Estimated overlap10%"]
 ```
 
 ## Figure 2 — preferred labels (20%)
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match against\npreferred skill labels"]
+  A["Course A"] --> M["Match againstpreferred skill labels"]
   B["Course B"] --> M
-  S["Skills vocabulary\n(SKOS ConceptScheme)"] --> M
-  M --> O["Estimated overlap\n20%"]
+  S["Skills vocabulary(SKOS ConceptScheme)"] --> M
+  M --> O["Estimated overlap20%"]
 ```
 
 ## Figure 3 — preferred + alternative labels (30%)
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match against\nprefLabel + altLabel"]
+  A["Course A"] --> M["Match againstprefLabel + altLabel"]
   B["Course B"] --> M
-  S["Skills vocabulary\n(prefLabel, altLabel)"] --> M
-  M --> O["Estimated overlap\n30%"]
+  S["Skills vocabulary(prefLabel, altLabel)"] --> M
+  M --> O["Estimated overlap30%"]
 ```
 
 ## Figure 4 — hierarchy + relatedness (40%)
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match concepts +\nboost related concepts\n(broader/narrower/related)"]
+  A["Course A"] --> M["Match concepts +boost related concepts(broader/narrower/related)"]
   B["Course B"] --> M
-  S["Skills taxonomy\n(SKOS relations)"] --> M
-  M --> O["Estimated overlap\n40%"]
+  S["Skills taxonomy(SKOS relations)"] --> M
+  M --> O["Estimated overlap40%"]
 ```
 
 ## Figure 5 — skill descriptions (50%)
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match using\nlabels + descriptions"]
+  A["Course A"] --> M["Match usinglabels + descriptions"]
   B["Course B"] --> M
-  S["Skills concepts\n(+ definitions/descriptions)"] --> M
-  M --> O["Estimated overlap\n50%"]
+  S["Skills concepts(+ definitions/descriptions)"] --> M
+  M --> O["Estimated overlap50%"]
 ```
 
 ## Figure 6 — education taxonomy annotations (60%)
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match skills +\nmatch education-context\nannotations"]
+  A["Course A"] --> M["Match skills +match education-contextannotations"]
   B["Course B"] --> M
   S["Skills concepts"] --> M
-  E["Education taxonomy\n(concepts + hierarchy)"] --> M
-  M --> O["Estimated overlap\n60%"]
+  E["Education taxonomy(concepts + hierarchy)"] --> M
+  M --> O["Estimated overlap60%"]
 ```
 
 ## Figure 7 — dimension vocabularies (70%)
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match skills +\nmatch dimension annotations\n(context, transferability, etc.)"]
+  A["Course A"] --> M["Match skills +match dimension annotations(context, transferability, etc.)"]
   B["Course B"] --> M
   S["Skills concepts"] --> M
-  D["Dimension vocabularies\n(small ConceptSchemes)"] --> M
-  M --> O["Estimated overlap\n70%"]
+  D["Dimension vocabularies(small ConceptSchemes)"] --> M
+  M --> O["Estimated overlap70%"]
 ```
 
 ## Figure 8 — keyword enrichment (80%)
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match skills +\nmatch extracted keywords"]
+  A["Course A"] --> M["Match skills +match extracted keywords"]
   B["Course B"] --> M
-  S["Skills concepts\n(+ keyword tags)"] --> M
-  M --> O["Estimated overlap\n80%"]
+  S["Skills concepts(+ keyword tags)"] --> M
+  M --> O["Estimated overlap80%"]
 ```
 
 ## Figure 9 — level alignment (90%)
 
 ```mermaid
 flowchart LR
-  A["Course A"] --> M["Match skills +\nboost where\nlevels align"]
+  A["Course A"] --> M["Match skills +boost wherelevels align"]
   B["Course B"] --> M
   S["Skills concepts"] --> M
-  L["Level scheme\n(proficiency/complexity)"] --> M
-  M --> O["Estimated overlap\n90%"]
+  L["Level scheme(proficiency/complexity)"] --> M
+  M --> O["Estimated overlap90%"]
 ```
 
