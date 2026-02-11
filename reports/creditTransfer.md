@@ -4,8 +4,8 @@ A and B share some overlapping words and phrases, which allows a simple probabil
 
 ```mermaid
 flowchart LR
-  A["Course A(text only)"] --> M["Raw keyword match (out of context)"]
-  B["Course B(text only)"] --> M
+  A["Course A (text only)"] --> M["Raw keyword match (out of context)"]
+  B["Course B (text only)"] --> M
   M --> O["Estimated overlap10%"]
 ```
 **[Figure 1: A and B show 10% overlap from raw string matching]**
@@ -108,9 +108,9 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-  A["Course A(text only)"] --> M["Raw keyword match (out of context)"]
-  B["Course B(text only)"] --> M
-  M --> O["Estimated overlap10%"]
+  A["Course A( text only)"] --> M["Raw keyword match (out of context)"]
+  B["Course B (text only)"] --> M
+  M --> O["Estimated overlap 10%"]
 ```
 
 ## Figure 2 — preferred labels (20%)
@@ -120,7 +120,7 @@ flowchart LR
   A["Course A"] --> M["Match against preferred skill labels"]
   B["Course B"] --> M
   S["Skills vocabulary(SKOS ConceptScheme)"] --> M
-  M --> O["Estimated overlap20%"]
+  M --> O["Estimated overlap 20%"]
 ```
 
 ## Figure 3 — preferred + alternative labels (30%)
@@ -130,7 +130,7 @@ flowchart LR
   A["Course A"] --> M["Match against prefLabel + altLabel"]
   B["Course B"] --> M
   S["Skills vocabulary(prefLabel, altLabel)"] --> M
-  M --> O["Estimated overlap30%"]
+  M --> O["Estimated overlap 30%"]
 ```
 
 ## Figure 4 — hierarchy + relatedness (40%)
@@ -140,7 +140,7 @@ flowchart LR
   A["Course A"] --> M["Match concepts +boost related concepts (broader/narrower/related)"]
   B["Course B"] --> M
   S["Skills taxonomy(SKOS relations)"] --> M
-  M --> O["Estimated overlap40%"]
+  M --> O["Estimated overlap 40%"]
 ```
 
 ## Figure 5 — skill descriptions (50%)
@@ -150,7 +150,7 @@ flowchart LR
   A["Course A"] --> M["Match using labels + descriptions"]
   B["Course B"] --> M
   S["Skills concepts(+ definitions/descriptions)"] --> M
-  M --> O["Estimated overlap50%"]
+  M --> O["Estimated overlap 50%"]
 ```
 
 ## Figure 6 — education taxonomy annotations (60%)
@@ -161,7 +161,7 @@ flowchart LR
   B["Course B"] --> M
   S["Skills concepts"] --> M
   E["Education taxonomy(concepts + hierarchy)"] --> M
-  M --> O["Estimated overlap60%"]
+  M --> O["Estimated overlap 60%"]
 ```
 
 ## Figure 7 — dimension vocabularies (70%)
@@ -171,8 +171,8 @@ flowchart LR
   A["Course A"] --> M["Match skills +match dimension annotations (context, transferability, etc.)"]
   B["Course B"] --> M
   S["Skills concepts"] --> M
-  D["Dimension vocabularies(small ConceptSchemes)"] --> M
-  M --> O["Estimated overlap70%"]
+  D["Dimension vocabularies (small ConceptSchemes)"] --> M
+  M --> O["Estimated overlap 70%"]
 ```
 
 ## Figure 8 — keyword enrichment (80%)
@@ -182,7 +182,7 @@ flowchart LR
   A["Course A"] --> M["Match skills +match extracted keywords"]
   B["Course B"] --> M
   S["Skills concepts(+ keyword tags)"] --> M
-  M --> O["Estimated overlap80%"]
+  M --> O["Estimated overlap8 0%"]
 ```
 
 ## Figure 9 — level alignment (90%)
@@ -192,7 +192,7 @@ flowchart LR
   A["Course A"] --> M["Match skills +boost where levels align"]
   B["Course B"] --> M
   S["Skills concepts"] --> M
-  L["Level scheme(proficiency/complexity)"] --> M
-  M --> O["Estimated overlap90%"]
+  L["Level scheme (proficiency/complexity)"] --> M
+  M --> O["Estimated overlap 90%"]
 ```
 
