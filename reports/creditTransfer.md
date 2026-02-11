@@ -9,7 +9,7 @@ flowchart LR
   M --> O["Estimated overlap10%"]
 ```
 **[Figure 1: A and B show 10% overlap from raw string matching]**
-
+<p></p>
 Next, we introduce a controlled vocabulary of skill concepts. Where terms in either record match a preferred skill label, they are given higher weight. This increases the estimated overlap to **20%**.
 
 ```mermaid
