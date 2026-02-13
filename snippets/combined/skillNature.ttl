@@ -1,0 +1,81 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dewr: <https://linked.data.gov.au/org/dewr> .
+@prefix jsa: <https://linked.data.gov.au/org/jsa> .
+@prefix nsto: <https://test.linked.data.gov.au/def/nst/ontology#> .
+@prefix nstsn: <https://test.linked.data.gov.au/def/skillNature/> .
+@prefix nstsncs: <https://test.linked.data.gov.au/def/skillNature> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+jsa:
+a schema:Organization ;
+schema:name "Jobs and Skills Australia"@en ;
+schema:url "https://wwww.jobsandskills.gov.au"^^xsd:anyURI
+.
+
+dewr:
+a schema:Organization ;
+schema:name "Department of Employment and Work Relations"@en ;
+schema:url "https://wwww.dewr.gov.au"^^xsd:anyURI
+.
+
+nstsncs: a skos:ConceptScheme ;
+dcterms:created "2026-02-05"^^xsd:date ;
+dcterms:modified "2026-02-05"^^xsd:date ;
+owl:versionIRI <https://test.linked.data.gov.au/def/skillNature/0.0.1> ;
+skos:prefLabel "Skill Nature"@en ;
+skos:definition "Nature of skills"@en ;
+skos:creator jsa: ;
+skos:publisher dewr: ;
+skos:hasTopConcept 
+  nstsn:TEC ,
+  nstsn:COG ,
+  nstsn:SOC ,
+  nstsn:SLF ,
+  nstsn:FND ,
+  nstsn:REG
+.
+
+nstsn:TEC a skos:Concept ;
+skos:inScheme nstsncs: ;
+skos:topConceptOf nstsncs: ;
+skos:definition "Practical, industry-specific skills for operating tools, equipment, and technical systems"@en ;
+skos:prefLabel "Technical/Procedural"@en
+.
+
+nstsn:COG a skos:Concept ;
+skos:inScheme nstsncs: ;
+skos:topConceptOf nstsncs: ;
+skos:definition "Skills for analysis, reasoning, problem-solving, and informed decision-making"@en ;
+skos:prefLabel "Cognitive/Analytical"@en
+.
+
+nstsn:SOC a skos:Concept ;
+skos:inScheme nstsncs: ;
+skos:topConceptOf nstsncs: ;
+skos:definition "Skills for collaboration, communication, and managing interpersonal relationships"@en ;
+skos:prefLabel "Social/Interpersonal"@en
+.
+
+nstsn:SLF a skos:Concept ;
+skos:inScheme nstsncs: ;
+skos:topConceptOf nstsncs: ;
+skos:definition "Capabilities for self-organisation, adaptability, and maintaining professional conduct"@en ;
+skos:prefLabel "Self-Management"@en
+.
+
+nstsn:FND a skos:Concept ;
+skos:inScheme nstsncs: ;
+skos:topConceptOf nstsncs: ;
+skos:definition "Essential skills in literacy, numeracy, and basic digital fluency"@en ;
+skos:prefLabel "Foundational/Core"@en
+.
+
+nstsn:REG a skos:Concept ;
+skos:inScheme nstsncs: ;
+skos:topConceptOf nstsncs: ;
+skos:definition "Skills ensuring safety, ethical practice, and compliance with standards"@en ;
+skos:prefLabel "Regulatory/Compliance"@en
+.
