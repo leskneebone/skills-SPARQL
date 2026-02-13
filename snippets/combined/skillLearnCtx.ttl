@@ -1,0 +1,74 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dewr: <https://linked.data.gov.au/org/dewr> .
+@prefix jsa: <https://linked.data.gov.au/org/jsa> .
+@prefix nsto: <https://test.linked.data.gov.au/def/nst/ontology#> .
+@prefix nstslrnctx: <https://test.linked.data.gov.au/def/skilllearnctx/> .
+@prefix nstslrnctxcs: <https://test.linked.data.gov.au/def/skilllearnctx> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+jsa:
+a schema:Organization ;
+schema:name "Jobs and Skills Australia"@en ;
+schema:url "https://wwww.jobsandskills.gov.au"^^xsd:anyURI
+.
+
+dewr:
+a schema:Organization ;
+schema:name "Department of Employment and Work Relations"@en ;
+schema:url "https://wwww.dewr.gov.au"^^xsd:anyURI
+.
+
+nstslrnctxcs: a skos:ConceptScheme ;
+dcterms:created "2026-02-05"^^xsd:date ;
+dcterms:modified "2026-02-13"^^xsd:date ;
+owl:versionIRI <https://test.linked.data.gov.au/def/nstslrnctx/0.0.1> ;
+skos:prefLabel "Skill Learning Context"@en ;
+skos:definition "Classification defining typical environment for skill development"@en ;
+skos:creator jsa: ;
+skos:publisher dewr: ;
+skos:hasTopConcept 
+  nstslrnctx:THE ,
+  nstslrnctx:PRA ,
+  nstslrnctx:WRK ,
+  nstslrnctx:HYB ,
+  nstslrnctx:DIG
+.
+
+nstslrnctx:THE a skos:Concept ;
+skos:inScheme nstslrnctxcs: ;
+skos:topConceptOf nstslrnctxcs: ;
+skos:definition "Learning focused on theoretical concepts in academic settings"@en ;
+skos:prefLabel "Theoretical/Academic"@en
+.
+
+nstslrnctx:PRA a skos:Concept ;
+skos:inScheme nstslrnctxcs: ;
+skos:topConceptOf nstslrnctxcs: ;
+skos:definition "Learning through hands-on practice in workshops, labs, or simulations"@en ;
+skos:prefLabel "Practical/Hands-on"@en
+.
+
+nstslrnctx:WRK a skos:Concept ;
+skos:inScheme nstslrnctxcs: ;
+skos:topConceptOf nstslrnctxcs: ;
+skos:definition "Learning through real-world workplace experience"@en ;
+skos:prefLabel "Workplace/On-the-Job"@en
+.
+
+nstslrnctx:HYB a skos:Concept ;
+skos:inScheme nstslrnctxcs: ;
+skos:topConceptOf nstslrnctxcs: ;
+skos:definition "Combining theoretical instruction with practical application"@en ;
+skos:prefLabel "Hybrid/Blended"@en
+.
+
+nstslrnctx:DIG a skos:Concept ;
+skos:inScheme nstslrnctxcs: ;
+skos:topConceptOf nstslrnctxcs: ;
+skos:definition "Learning via digital platforms and self-paced study"@en ;
+skos:prefLabel "Digital/Self-Paced"@en
+.
+
