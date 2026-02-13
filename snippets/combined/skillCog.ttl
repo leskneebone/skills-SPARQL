@@ -1,0 +1,89 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dewr: <https://linked.data.gov.au/org/dewr> .
+@prefix id: <http://id.loc.gov/vocabulary/identifiers/> .
+@prefix jsa: <https://linked.data.gov.au/org/jsa> .
+@prefix nsto: <https://test.linked.data.gov.au/def/nst/ontology#> .
+@prefix nstscog: <https://test.linked.data.gov.au/def/skillCog/> .
+@prefix nstscogcs: <https://test.linked.data.gov.au/def/skillCog> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+jsa:
+a schema:Organization ;
+schema:name "Jobs and Skills Australia"@en ;
+schema:url "https://wwww.jobsandskills.gov.au"^^xsd:anyURI
+.
+
+dewr:
+a schema:Organization ;
+schema:name "Department of Employment and Work Relations"@en ;
+schema:url "https://wwww.dewr.gov.au"^^xsd:anyURI
+.
+
+nstscogcs: a skos:ConceptScheme ;
+dcterms:created "2026-02-05"^^xsd:date ;
+dcterms:modified "2026-02-13"^^xsd:date ;
+owl:versionIRI <https://test.linked.data.gov.au/def/skillCog/0.0.1> ;
+skos:prefLabel "Skill Cognitive Level"@en ;
+skos:definition "Classification indicating cognitive processing depth required (Bloom's Taxonomy aligned)"@en ;
+schema:citation "0321084055"^^id:isbn ;
+skos:creator jsa: ;
+skos:publisher dewr: ;
+skos:hasTopConcept 
+  nstscog:REM ,
+  nstscog:UND ,
+  nstscog:APP ,
+  nstscog:ANA ,
+  nstscog:EVA ,
+  nstscog:CRE
+.
+
+nstscog:REM a skos:Concept ;
+skos:inScheme nstscogcs: ;
+skos:topConceptOf nstscogcs: ;
+skos:notation "1" ;
+skos:definition "Recall and recognize facts, terms, and basic concepts"@en ;
+skos:prefLabel "Remember"@en
+.
+
+nstscog:UND a skos:Concept ;
+skos:inScheme nstscogcs: ;
+skos:topConceptOf nstscogcs: ;
+skos:notation "2" ;
+skos:definition "Explain, interpret, and demonstrate understanding of concepts"@en ;
+skos:prefLabel "Understand"@en
+.
+
+nstscog:APP a skos:Concept ;
+skos:inScheme nstscogcs: ;
+skos:topConceptOf nstscogcs: ;
+skos:notation "3" ;
+skos:definition "Apply knowledge and execute procedures in familiar contexts"@en ;
+skos:prefLabel "Apply"@en
+.
+
+nstscog:ANA a skos:Concept ;
+skos:inScheme nstscogcs: ;
+skos:topConceptOf nstscogcs: ;
+skos:notation "4" ;
+skos:definition "Analyze information, identify relationships, and diagnose issues"@en ;
+skos:prefLabel "Analyse"@en
+.
+
+nstscog:EVA a skos:Concept ;
+skos:inScheme nstscogcs: ;
+skos:topConceptOf nstscogcs: ;
+skos:notation "5" ;
+skos:definition "Evaluate, critique, and make judgments using defined criteria"@en ;
+skos:prefLabel "Evaluate"@en
+.
+
+nstscog:CRE a skos:Concept ;
+skos:inScheme nstscogcs: ;
+skos:topConceptOf nstscogcs: ;
+skos:notation "6" ;
+skos:definition "Create, design, and develop innovative solutions"@en ;
+skos:prefLabel "Create"@en
+.
