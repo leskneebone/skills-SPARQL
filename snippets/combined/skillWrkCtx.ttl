@@ -1,0 +1,74 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dewr: <https://linked.data.gov.au/org/dewr> .
+@prefix jsa: <https://linked.data.gov.au/org/jsa> .
+@prefix nsto: <https://test.linked.data.gov.au/def/nst/ontology#> .
+@prefix nstswrkctx: <https://test.linked.data.gov.au/def/skillwrkctx/> .
+@prefix nstswrkctxcs: <https://test.linked.data.gov.au/def/skillwrkctx> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+jsa:
+a schema:Organization ;
+schema:name "Jobs and Skills Australia"@en ;
+schema:url "https://wwww.jobsandskills.gov.au"^^xsd:anyURI
+.
+
+dewr:
+a schema:Organization ;
+schema:name "Department of Employment and Work Relations"@en ;
+schema:url "https://wwww.dewr.gov.au"^^xsd:anyURI
+.
+
+nstswrkctxcs: a skos:ConceptScheme ;
+dcterms:created "2026-02-05"^^xsd:date ;
+dcterms:modified "2026-02-05"^^xsd:date ;
+owl:versionIRI <https://test.linked.data.gov.au/def/skillwrkctx/0.0.1> ;
+skos:prefLabel "Skill Work Context"@en ;
+skos:definition "Work context of skills"@en ;
+skos:creator jsa: ;
+skos:publisher dewr: ;
+skos:hasTopConcept 
+  nstswrkctx:INF ,
+  nstswrkctx:PEO ,
+  nstswrkctx:THG ,
+  nstswrkctx:SYS ,
+  nstswrkctx:IDE
+.
+
+nstswrkctx:INF a skos:Concept ;
+skos:inScheme nstswrkctxcs: ;
+skos:topConceptOf nstswrkctxcs: ;
+skos:definition "Gathering, processing, and analyzing data and information"@en ;
+skos:prefLabel "Information Activities"@en
+.
+
+nstswrkctx:PEO a skos:Concept ;
+skos:inScheme nstswrkctxcs: ;
+skos:topConceptOf nstswrkctxcs: ;
+skos:definition "Interaction, collaboration, and support for individuals or groups"@en ;
+skos:prefLabel "People Activities"@en
+.
+
+nstswrkctx:THG a skos:Concept ;
+skos:inScheme nstswrkctxcs: ;
+skos:topConceptOf nstswrkctxcs: ;
+skos:definition "Handling, operating, or constructing physical objects and equipment"@en ;
+skos:prefLabel "Things/Physical Activities"@en
+.
+
+nstswrkctx:SYS a skos:Concept ;
+skos:inScheme nstswrkctxcs: ;
+skos:topConceptOf nstswrkctxcs: ;
+skos:definition "Managing, optimizing, and coordinating systems and workflows"@en ;
+skos:prefLabel "Systems Activities"@en
+.
+
+nstswrkctx:IDE a skos:Concept ;
+skos:inScheme nstswrkctxcs: ;
+skos:topConceptOf nstswrkctxcs: ;
+skos:definition "Conceptual thinking, design, and creative innovation"@en ;
+skos:prefLabel "Ideas/Creative Activities"@en
+.
+
