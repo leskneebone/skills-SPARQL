@@ -1,3 +1,8 @@
+<https://test.linked.data.gov.au/def/nst-level>
+https://printdlsaueajsaops.blob.core.windows.net/specific-purpose/ASC_Data/Taxonomy_Frameworks/nstSkillLevels.ttl
+
+<https://test.linked.data.gov.au/def/nst-percent-range>
+https://printdlsaueajsaops.blob.core.windows.net/specific-purpose/ASC_Data/Taxonomy_Frameworks/skillDigIntense.ttl
 
 <https://test.linked.data.gov.au/def/nst>
 https://printdlsaueajsaops.blob.core.windows.net/specific-purpose/ASC_Data/Taxonomy_Frameworks/nstSkills_20251212.ttl
