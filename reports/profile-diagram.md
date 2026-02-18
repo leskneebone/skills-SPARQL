@@ -29,13 +29,13 @@ flowchart LR
     %% Facet links (predicate labels illustrative)
     Skill -->|classified by | Level
     Skill -->|classified by| Dig
-    Skill -->|classified by| Fut
+    Dig -->|classified by| Percent
     Skill -->|classified by| Learn
     Skill -->|classified by| Cog
     Skill -->|classified by| Nature
     Skill -->|classified by| Trans
     Skill -->|classified by| Work
-    Skill -->|classified by| Percent
+    Skill -->|classified by| Fut
 
     Ont -->|defines terms| NSTScheme
   end
