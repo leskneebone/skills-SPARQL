@@ -70,7 +70,7 @@ flowchart LR
   %% CROSS-BOUNDARY LINKS
   %% =========================
 
-  Skill -->|dcterms:source (evidence)| Unit
+  Skill -->|dcterms:source - evidence| Unit
 
   Qual -->|dcterms:isPartOf| Pack
   Qual -->|schema:about| ASCED
