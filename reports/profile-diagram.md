@@ -7,21 +7,21 @@ flowchart LR
   subgraph NST["NST Profile artefacts (JSA/DEWR)"]
     direction LR
 
-    Ont["NST Ontology\n<https://test.linked.data.gov.au/def/nst/ontology>"]
+    Ont["NST Ontology <https://test.linked.data.gov.au/def/nst/ontology>"]
 
-    NSTScheme["NST scheme\n<https://test.linked.data.gov.au/def/nst>"]
-    Cog["Cognitive Domain\n<https://test.linked.data.gov.au/def/nst-cognitive-domain>"]
-    Dig["Digital Intensity\n<https://test.linked.data.gov.au/def/nst-digital-intensity>"]
-    Fut["Future Readiness\n<https://test.linked.data.gov.au/def/nst-futureready>"]
-    Learn["Learning Context\n<https://test.linked.data.gov.au/def/nst-learning-context>"]
-    Level["Skill Levels\n<https://test.linked.data.gov.au/def/nst-level>"]
-    Nature["Skill Nature\n<https://test.linked.data.gov.au/def/nst-nature>"]
-    Trans["Transferability\n<https://test.linked.data.gov.au/def/nst-transferability>"]
-    Work["Work Context\n<https://test.linked.data.gov.au/def/nst-work-context>"]
-    Percent["Percent Range\n<https://test.linked.data.gov.au/def/nst-percent-range>"]
+    NSTScheme["NST scheme <https://test.linked.data.gov.au/def/nst>"]
+    Cog["Cognitive Domain <https://test.linked.data.gov.au/def/nst-cognitive-domain>"]
+    Dig["Digital Intensity <ttps://test.linked.data.gov.au/def/nst-digital-intensity>"]
+    Fut["Future Readiness <https://test.linked.data.gov.au/def/nst-futureready>"]
+    Learn["Learning Context <https://test.linked.data.gov.au/def/nst-learning-context>"]
+    Level["Skill Levels <https://test.linked.data.gov.au/def/nst-level>"]
+    Nature["Skill Nature <https://test.linked.data.gov.au/def/nst-nature>"]
+    Trans["Transferability <https://test.linked.data.gov.au/def/nst-transferability>"]
+    Work["Work Context <https://test.linked.data.gov.au/def/nst-work-context>"]
+    Percent["Percent Range <https://test.linked.data.gov.au/def/nst-percent-range>"]
 
-    Skill["NST Skill\n(skos:Concept)"]
-    Narrower["NST Skill (narrower)"]
+    Skill["NST Skill (skos:Concept)"]
+    Narrower["NST Skill (skos:narrower)"]
 
     Skill -->|skos:narrower| Narrower
     Skill -->|skos:inScheme| NSTScheme
@@ -46,15 +46,15 @@ flowchart LR
   subgraph EXT["External reference frameworks (not NST Profile)"]
     direction LR
 
-    Unit["Training.gov.au Unit"]
-    Qual["Training.gov.au Qualification"]
-    Pack["Training Package"]
+    Unit["tgaunit"]
+    Qual["tgaqual"]
+    Pack["tgapkg"]
 
     ASCED["ASCED"]
-    AQFType["AQF credential type"]
+    AQFType["AQF type"]
     AQFLevel["AQF level"]
 
-    ANZSCO["ANZSCO occupation (ABS)"]
+    ANZSCO["ANZSCO occupation"]
     OSCA["OSCA occupation"]
   end
 
@@ -63,7 +63,7 @@ flowchart LR
   %% =========================
   subgraph JSAEXT["JSA artefacts about external frameworks"]
     direction LR
-    OccProfile["JSA Occupation Profile\n(schema:CreativeWork)"]
+    OccProfile["JSA Occupation Profile (schema:CreativeWork)"]
   end
 
   %% =========================
