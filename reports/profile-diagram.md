@@ -1,31 +1,31 @@
-flowchart LR
+```flowchart LR
 
   %% =========================
   %% NST PROFILE ARTEFACTS (published by JSA/DEWR)
   %% =========================
-  subgraph NST["NST Profile artefacts (published by JSA/DEWR)"]
+  subgraph NST["NST Profile artefacts (JSA/DEWR)"]
     direction LR
 
-    Skill["NST Skill (skos:Concept)"]
-    NarrowerSkill["NST Skill (narrower)"]
+    Ont["NST Ontology\n<https://test.linked.data.gov.au/def/nst/ontology>"]
 
-    NSTScheme["NST scheme\n<.../def/nst>"]
-    Ontology["NST Ontology\n<.../def/nst/ontology>"]
+    NSTScheme["NST scheme\n<https://test.linked.data.gov.au/def/nst>"]
+    Cog["Cognitive Domain\n<https://test.linked.data.gov.au/def/nst-cognitive-domain>"]
+    Dig["Digital Intensity\n<https://test.linked.data.gov.au/def/nst-digital-intensity>"]
+    Fut["Future Readiness\n<https://test.linked.data.gov.au/def/nst-futureready>"]
+    Learn["Learning Context\n<https://test.linked.data.gov.au/def/nst-learning-context>"]
+    Level["Skill Levels\n<https://test.linked.data.gov.au/def/nst-level>"]
+    Nature["Skill Nature\n<https://test.linked.data.gov.au/def/nst-nature>"]
+    Trans["Transferability\n<https://test.linked.data.gov.au/def/nst-transferability>"]
+    Work["Work Context\n<https://test.linked.data.gov.au/def/nst-work-context>"]
+    Percent["Percent Range\n<https://test.linked.data.gov.au/def/nst-percent-range>"]
 
-    Cog["NST Cognitive Domain scheme\n<.../def/nst-cognitive-domain>"]
-    Dig["NST Digital Intensity scheme\n<.../def/nst-digital-intensity>"]
-    Fut["NST Future Readiness scheme\n<.../def/nst-futureready>"]
-    Learn["NST Learning Context scheme\n<.../def/nst-learning-context>"]
-    Level["NST Skill Levels scheme\n<.../def/nst-level>"]
-    Nature["NST Skill Nature scheme\n<.../def/nst-nature>"]
-    Trans["NST Skill Transferability scheme\n<.../def/nst-transferability>"]
-    Work["NST Work Context scheme\n<.../def/nst-work-context>"]
-    Percent["NST Percent Range scheme\n<.../def/nst-percent-range>"]
+    Skill["NST Skill\n(skos:Concept)"]
+    Narrower["NST Skill (narrower)"]
 
-    Skill -->|skos:narrower| NarrowerSkill
+    Skill -->|skos:narrower| Narrower
     Skill -->|skos:inScheme| NSTScheme
 
-    %% Attribute / facet links (predicate names are placeholders)
+    %% Facet links (predicate labels illustrative)
     Skill -->|nst:cognitiveDomain| Cog
     Skill -->|nst:digitalIntensity| Dig
     Skill -->|nst:futureReadiness| Fut
@@ -36,19 +36,18 @@ flowchart LR
     Skill -->|nst:workContext| Work
     Skill -->|nst:percentRange| Percent
 
-    %% Ontology defines the terms used above
-    Ontology -->|rdfs:seeAlso| NSTScheme
+    Ont -->|defines terms| NSTScheme
   end
 
   %% =========================
   %% EXTERNAL REFERENCE FRAMEWORKS (not published by NST Profile)
   %% =========================
-  subgraph EXT["External reference frameworks (not published by NST Profile)"]
+  subgraph EXT["External reference frameworks (not NST Profile)"]
     direction LR
 
-    Unit["Training.gov.au Unit\n(tga unit URI)"]
-    Qual["Training.gov.au Qualification\n(tga qualification URI)"]
-    Package["Training Package"]
+    Unit["Training.gov.au Unit"]
+    Qual["Training.gov.au Qualification"]
+    Pack["Training Package"]
 
     ASCED["ASCED"]
     AQFType["AQF credential type"]
@@ -59,7 +58,7 @@ flowchart LR
   end
 
   %% =========================
-  %% JSA ARTEFACTS ABOUT EXTERNALS (published by JSA/DEWR, but about externals)
+  %% JSA ARTEFACTS ABOUT EXTERNALS
   %% =========================
   subgraph JSAEXT["JSA artefacts about external frameworks"]
     direction LR
@@ -67,23 +66,20 @@ flowchart LR
   end
 
   %% =========================
-  %% CROSS-BOUNDARY LINKS (keep ownership clear)
+  %% CROSS-BOUNDARY LINKS
   %% =========================
 
-  %% Evidence link: skills are evidenced by training units
   Skill -->|dcterms:source (evidence)| Unit
 
-  %% Qualification classification (external)
+  Qual -->|dcterms:isPartOf| Pack
   Qual -->|schema:about| ASCED
   Qual -->|schema:credentialCategory| AQFType
   AQFType -->|schema:about| AQFLevel
 
-  %% Occupation crosswalk (external)
-  ANZSCO -->|skos:exactMatch| OSCA
+  %% Corrected canonical direction:
+  Qual -->|schema:about| ANZSCO
 
-  %% JSA occupation profile is about ANZSCO (already in your occProfiles TTL)
   OccProfile -->|schema:about| ANZSCO
 
-  %% Canonical direction you just implemented:
-  %% Qualification is about ANZSCO (in your updated tgaunitqual TTL)
-  Qual -->|schema:about| ANZSCO
+  ANZSCO -->|skos:exactMatch| OSCA
+```
