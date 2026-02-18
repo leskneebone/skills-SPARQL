@@ -41,9 +41,9 @@ flowchart LR
   end
 
   %% =========================
-  %% EXTERNAL REFERENCE FRAMEWORKS (not published by NST Profile)
+  %% EXTERNAL REFERENCE FRAMEWORKS
   %% =========================
-  subgraph EXT["External reference frameworks (not NST Profile)"]
+  subgraph EXT["External reference frameworks"]
     direction LR
 
     Unit["TGA unit"]
@@ -72,6 +72,7 @@ flowchart LR
 
   Skill -->|dcterms:source - evidence| Unit
 
+  Unit -->|dcterms:isReferencedBy / isRequiredBy| Qual
   Qual -->|dcterms:isPartOf| Pack
   Qual -->|schema:about| ASCED
   Qual -->|schema:credentialCategory| AQFType
