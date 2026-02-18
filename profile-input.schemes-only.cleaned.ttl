@@ -1,0 +1,163 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://test.linked.data.gov.au/def/nst> a skos:ConceptScheme ;
+    dcterms:created "2026-01-01"^^xsd:date ;
+    dcterms:hasVersion <https://test.linked.data.gov.au/def/nst/0.0.2> ;
+    dcterms:modified "2026-01-01"^^xsd:date ;
+    owl:versionInfo "0.0.2" ;
+    skos:creator <https://linked.data.gov.au/org/jsa> ;
+    skos:definition "The National Skills Taxonomy (NST) is a new, evidence-based framework that provides a common language for describing the skills Australians gain, develop, and use across education and employment. Developed by Jobs and Skills Australia (JSA), the NST is designed to make every skill visible, valued, and transferable - helping individuals, educators, employers, and policymakers navigate a rapidly changing world of work."@en ;
+    skos:prefLabel "National Skills Taxonomy"@en ;
+    skos:publisher <https://linked.data.gov.au/org/dewr> ;
+    dcat:distribution <https://test.linked.data.gov.au/def/nst/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-cognitive-domain> a skos:ConceptScheme ;
+    dcterms:created "2026-02-05"^^xsd:date ;
+    dcterms:hasVersion <https://test.linked.data.gov.au/def/nst-cognitive-domain/0.0.1> ;
+    dcterms:modified "2026-02-13"^^xsd:date ;
+    owl:versionInfo "0.0.2" ;
+    skos:creator <https://linked.data.gov.au/org/jsa> ;
+    skos:definition "Classification indicating cognitive processing depth required (Bloom's Taxonomy aligned)"@en ;
+    skos:hasTopConcept <https://test.linked.data.gov.au/def/nst-cognitive-domain/ANA>,
+        <https://test.linked.data.gov.au/def/nst-cognitive-domain/APP>,
+        <https://test.linked.data.gov.au/def/nst-cognitive-domain/CRE>,
+        <https://test.linked.data.gov.au/def/nst-cognitive-domain/EVA>,
+        <https://test.linked.data.gov.au/def/nst-cognitive-domain/REM>,
+        <https://test.linked.data.gov.au/def/nst-cognitive-domain/UND> ;
+    skos:prefLabel "Skill Cognitive Level"@en ;
+    skos:publisher <https://linked.data.gov.au/org/dewr> ;
+    dcat:distribution <https://test.linked.data.gov.au/def/nst-cognitive-domain/distribution/turtle> ;
+    schema:citation "0321084055"^^<http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<https://test.linked.data.gov.au/def/nst-digital-intensity> a skos:ConceptScheme ;
+    dcterms:created "2026-02-05"^^xsd:date ;
+    dcterms:hasVersion <https://test.linked.data.gov.au/def/nstdi/0.0.1> ;
+    dcterms:modified "2026-02-13"^^xsd:date ;
+    owl:versionInfo "0.0.2" ;
+    skos:creator <https://linked.data.gov.au/org/jsa> ;
+    skos:definition "Classification indicating extent of digital technology use required"@en ;
+    skos:hasTopConcept <https://test.linked.data.gov.au/def/nst-digital-intensity/ADV>,
+        <https://test.linked.data.gov.au/def/nst-digital-intensity/HIG>,
+        <https://test.linked.data.gov.au/def/nst-digital-intensity/LOW>,
+        <https://test.linked.data.gov.au/def/nst-digital-intensity/MED>,
+        <https://test.linked.data.gov.au/def/nst-digital-intensity/MIN> ;
+    skos:prefLabel "Skill Digital Intensity"@en ;
+    skos:publisher <https://linked.data.gov.au/org/dewr> ;
+    dcat:distribution <https://test.linked.data.gov.au/def/nst-digital-intensity/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-futureready> a skos:ConceptScheme ;
+    dcterms:created "2026-02-05"^^xsd:date ;
+    dcterms:hasVersion <https://test.linked.data.gov.au/def/nstsfutread/0.0.1> ;
+    dcterms:modified "2026-02-13"^^xsd:date ;
+    owl:versionInfo "0.0.2" ;
+    skos:creator <https://linked.data.gov.au/org/jsa> ;
+    skos:definition "Classification indicating skill's resilience to automation and future demand"@en ;
+    skos:hasTopConcept <https://test.linked.data.gov.au/def/nst-futureready/AUG>,
+        <https://test.linked.data.gov.au/def/nst-futureready/AUT>,
+        <https://test.linked.data.gov.au/def/nst-futureready/COL>,
+        <https://test.linked.data.gov.au/def/nst-futureready/EMG>,
+        <https://test.linked.data.gov.au/def/nst-futureready/HUM> ;
+    skos:prefLabel "Skill Future Readiness"@en ;
+    skos:publisher <https://linked.data.gov.au/org/dewr> ;
+    dcat:distribution <https://test.linked.data.gov.au/def/nst-futureready/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-learning-context> a skos:ConceptScheme ;
+    dcterms:created "2026-02-05"^^xsd:date ;
+    dcterms:hasVersion <https://test.linked.data.gov.au/def/nstslrnctx/0.0.1> ;
+    dcterms:modified "2026-02-13"^^xsd:date ;
+    owl:versionInfo "0.0.2" ;
+    skos:creator <https://linked.data.gov.au/org/jsa> ;
+    skos:definition "Classification defining typical environment for skill development"@en ;
+    skos:hasTopConcept <https://test.linked.data.gov.au/def/nst-learning-context/DIG>,
+        <https://test.linked.data.gov.au/def/nst-learning-context/HYB>,
+        <https://test.linked.data.gov.au/def/nst-learning-context/PRA>,
+        <https://test.linked.data.gov.au/def/nst-learning-context/THE>,
+        <https://test.linked.data.gov.au/def/nst-learning-context/WRK> ;
+    skos:prefLabel "Skill Learning Context"@en ;
+    skos:publisher <https://linked.data.gov.au/org/dewr> ;
+    dcat:distribution <https://test.linked.data.gov.au/def/nst-learning-context/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-level> a skos:ConceptScheme ;
+    dcterms:creator <https://linked.data.gov.au/org/jsa> ;
+    dcterms:publisher <https://linked.data.gov.au/org/dewr> ;
+    owl:versionInfo "0.0.2" ;
+    skos:definition "Skill level concept scheme. Concepts indicates the level of competencies and responsibilities for a Skill"@en ;
+    skos:hasTopConcept <https://test.linked.data.gov.au/def/nst-level/1>,
+        <https://test.linked.data.gov.au/def/nst-level/2>,
+        <https://test.linked.data.gov.au/def/nst-level/3>,
+        <https://test.linked.data.gov.au/def/nst-level/4>,
+        <https://test.linked.data.gov.au/def/nst-level/5>,
+        <https://test.linked.data.gov.au/def/nst-level/6>,
+        <https://test.linked.data.gov.au/def/nst-level/7> ;
+    skos:prefLabel "Skill levels"@en ;
+    dcat:distribution <https://test.linked.data.gov.au/def/nst-level/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-nature> a skos:ConceptScheme ;
+    dcterms:created "2026-02-05"^^xsd:date ;
+    dcterms:hasVersion <https://test.linked.data.gov.au/def/nst-nature/0.0.1> ;
+    dcterms:modified "2026-02-05"^^xsd:date ;
+    owl:versionInfo "0.0.2" ;
+    skos:creator <https://linked.data.gov.au/org/jsa> ;
+    skos:definition "Nature of skills"@en ;
+    skos:hasTopConcept <https://test.linked.data.gov.au/def/nst-nature/COG>,
+        <https://test.linked.data.gov.au/def/nst-nature/FND>,
+        <https://test.linked.data.gov.au/def/nst-nature/REG>,
+        <https://test.linked.data.gov.au/def/nst-nature/SLF>,
+        <https://test.linked.data.gov.au/def/nst-nature/SOC>,
+        <https://test.linked.data.gov.au/def/nst-nature/TEC> ;
+    skos:prefLabel "Skill Nature"@en ;
+    skos:publisher <https://linked.data.gov.au/org/dewr> ;
+    dcat:distribution <https://test.linked.data.gov.au/def/nst-nature/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-percent-range> a skos:ConceptScheme ;
+    owl:versionInfo "0.0.2" ;
+    skos:creator <https://linked.data.gov.au/org/jsa> ;
+    skos:definition "Percentage ranges applied to skill attributes, including the digital intensity of a skill"@en ;
+    skos:hasTopConcept <https://test.linked.data.gov.au/def/nst-percent-range/_0_10>,
+        <https://test.linked.data.gov.au/def/nst-percent-range/_11_30>,
+        <https://test.linked.data.gov.au/def/nst-percent-range/_31_60>,
+        <https://test.linked.data.gov.au/def/nst-percent-range/_61_85>,
+        <https://test.linked.data.gov.au/def/nst-percent-range/_86_100> ;
+    skos:prefLabel "Percentage ranges"@en ;
+    skos:publisher <https://linked.data.gov.au/org/dewr> ;
+    dcat:distribution <https://test.linked.data.gov.au/def/nst-percent-range/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-transferability> a skos:ConceptScheme ;
+    dcterms:created "2026-02-05"^^xsd:date ;
+    dcterms:hasVersion <https://test.linked.data.gov.au/def/nst-transferability/0.0.1> ;
+    dcterms:modified "2026-02-05"^^xsd:date ;
+    owl:versionInfo "0.0.2" ;
+    skos:creator <https://linked.data.gov.au/org/jsa> ;
+    skos:definition "Transferability of skills"@en ;
+    skos:hasTopConcept <https://test.linked.data.gov.au/def/nst-transferability/BRD>,
+        <https://test.linked.data.gov.au/def/nst-transferability/OCC>,
+        <https://test.linked.data.gov.au/def/nst-transferability/SEC>,
+        <https://test.linked.data.gov.au/def/nst-transferability/UNI> ;
+    skos:prefLabel "Skill Transferability"@en ;
+    skos:publisher <https://linked.data.gov.au/org/dewr> ;
+    dcat:distribution <https://test.linked.data.gov.au/def/nst-transferability/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-work-context> a skos:ConceptScheme ;
+    dcterms:created "2026-02-05"^^xsd:date ;
+    dcterms:hasVersion <https://test.linked.data.gov.au/def/nst-work-context/0.0.1> ;
+    dcterms:modified "2026-02-05"^^xsd:date ;
+    rdfs:seeAlso "https://AZURE_URL_WORK_CONTEXT"^^xsd:anyURI ;
+    owl:versionInfo "0.0.2" ;
+    skos:creator <https://linked.data.gov.au/org/jsa> ;
+    skos:definition "Work context of skills"@en ;
+    skos:hasTopConcept <https://test.linked.data.gov.au/def/nst-work-context/IDE>,
+        <https://test.linked.data.gov.au/def/nst-work-context/INF>,
+        <https://test.linked.data.gov.au/def/nst-work-context/PEO>,
+        <https://test.linked.data.gov.au/def/nst-work-context/SYS>,
+        <https://test.linked.data.gov.au/def/nst-work-context/THG> ;
+    skos:prefLabel "Skill Work Context"@en ;
+    skos:publisher <https://linked.data.gov.au/org/dewr> ;
+    dcat:distribution <https://test.linked.data.gov.au/def/nst-work-context#dist-ttl>,
+        <https://test.linked.data.gov.au/def/nst-work-context/distribution/turtle> .
+

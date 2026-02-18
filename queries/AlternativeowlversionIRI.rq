@@ -1,0 +1,34 @@
+# (3B) Alternative: owl:versionIRI -> schema:version "0.0.1" (literal)
+# This assumes your versionIRI ends in /0.0.X and extracts that tail.
+# Use this only if you *want* a literal version string.
+
+PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+PREFIX schema: <https://schema.org/>
+
+DELETE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/profile-input> {
+    ?cs owl:versionIRI ?v .
+  }
+}
+INSERT {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/profile-input> {
+    ?cs schema:version ?ver .
+  }
+}
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/profile-input> {
+    VALUES ?cs {
+      <https://test.linked.data.gov.au/def/nst-level>
+      <https://test.linked.data.gov.au/def/nst-cognitive-domain>
+      <https://test.linked.data.gov.au/def/nst-nature>
+      <https://test.linked.data.gov.au/def/nst-transferability>
+      <https://test.linked.data.gov.au/def/nst-learning-context>
+      <https://test.linked.data.gov.au/def/nst-work-context>
+      <https://test.linked.data.gov.au/def/nst-digital-intensity>
+      <https://test.linked.data.gov.au/def/nst-futureready>
+      <https://test.linked.data.gov.au/def/nst-percent-range>
+    }
+    ?cs owl:versionIRI ?v .
+    BIND(REPLACE(STR(?v), ".*/([^/]+)$", "$1") AS ?ver)  # grabs "0.0.1"
+  }
+}

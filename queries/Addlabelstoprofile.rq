@@ -1,0 +1,14 @@
+# (1) Add extra labels to the profile (idempotent-ish: it will add even if already present)
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+PREFIX schema:  <https://schema.org/>
+
+INSERT DATA {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/profile-input> {
+    <https://test.linked.data.gov.au/def/skills-profile>
+      rdfs:label     "Skills Graph Profile"@en ;
+      skos:prefLabel "Skills Graph Profile"@en ;
+      schema:name    "Skills Graph Profile"@en .
+  }
+}

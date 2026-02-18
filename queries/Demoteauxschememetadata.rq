@@ -1,0 +1,38 @@
+# (2) Demote aux scheme metadata in-place:
+#     dcterms:created  -> schema:dateCreated
+#     dcterms:modified -> schema:dateModified
+#
+# IMPORTANT: Put your aux-scheme URIs in the VALUES list.
+
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema:  <https://schema.org/>
+
+DELETE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/profile-input> {
+    ?cs dcterms:created  ?created .
+    ?cs dcterms:modified ?modified .
+  }
+}
+INSERT {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/profile-input> {
+    ?cs schema:dateCreated  ?created .
+    ?cs schema:dateModified ?modified .
+  }
+}
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/profile-input> {
+    VALUES ?cs {
+      <https://test.linked.data.gov.au/def/nst-level>
+      <https://test.linked.data.gov.au/def/nst-cognitive-domain>
+      <https://test.linked.data.gov.au/def/nst-nature>
+      <https://test.linked.data.gov.au/def/nst-transferability>
+      <https://test.linked.data.gov.au/def/nst-learning-context>
+      <https://test.linked.data.gov.au/def/nst-work-context>
+      <https://test.linked.data.gov.au/def/nst-digital-intensity>
+      <https://test.linked.data.gov.au/def/nst-futureready>
+      <https://test.linked.data.gov.au/def/nst-percent-range>
+    }
+    OPTIONAL { ?cs dcterms:created  ?created  }
+    OPTIONAL { ?cs dcterms:modified ?modified }
+  }
+}

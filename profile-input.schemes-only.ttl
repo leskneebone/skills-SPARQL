@@ -1,0 +1,219 @@
+<https://test.linked.data.gov.au/def/nst-percent-range>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2002/07/owl#versionInfo>
+                "0.0.2";
+        <http://www.w3.org/2004/02/skos/core#creator>
+                <https://linked.data.gov.au/org/jsa>;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Percentage ranges applied to skill attributes, including the digital intensity of a skill"@en;
+        <http://www.w3.org/2004/02/skos/core#hasTopConcept>
+                <https://test.linked.data.gov.au/def/nst-percent-range/_86_100> , <https://test.linked.data.gov.au/def/nst-percent-range/_61_85> , <https://test.linked.data.gov.au/def/nst-percent-range/_31_60> , <https://test.linked.data.gov.au/def/nst-percent-range/_11_30> , <https://test.linked.data.gov.au/def/nst-percent-range/_0_10>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Percentage ranges"@en;
+        <http://www.w3.org/2004/02/skos/core#publisher>
+                <https://linked.data.gov.au/org/dewr>;
+        <http://www.w3.org/ns/dcat#distribution>
+                <https://test.linked.data.gov.au/def/nst-percent-range/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-work-context>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://www.w3.org/2000/01/rdf-schema#seeAlso>
+                "https://AZURE_URL_WORK_CONTEXT"^^<http://www.w3.org/2001/XMLSchema#anyURI>;
+        <http://purl.org/dc/terms/created>
+                "2026-02-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/hasVersion>
+                <https://test.linked.data.gov.au/def/nst-work-context/0.0.1>;
+        <http://purl.org/dc/terms/modified>
+                "2026-02-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://www.w3.org/2002/07/owl#versionInfo>
+                "0.0.2";
+        <http://www.w3.org/2004/02/skos/core#creator>
+                <https://linked.data.gov.au/org/jsa>;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Work context of skills"@en;
+        <http://www.w3.org/2004/02/skos/core#hasTopConcept>
+                <https://test.linked.data.gov.au/def/nst-work-context/INF> , <https://test.linked.data.gov.au/def/nst-work-context/PEO> , <https://test.linked.data.gov.au/def/nst-work-context/THG> , <https://test.linked.data.gov.au/def/nst-work-context/SYS> , <https://test.linked.data.gov.au/def/nst-work-context/IDE>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Skill Work Context"@en;
+        <http://www.w3.org/2004/02/skos/core#publisher>
+                <https://linked.data.gov.au/org/dewr>;
+        <http://www.w3.org/ns/dcat#distribution>
+                <https://test.linked.data.gov.au/def/nst-work-context#dist-ttl> , <https://test.linked.data.gov.au/def/nst-work-context/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-transferability>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://purl.org/dc/terms/created>
+                "2026-02-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/hasVersion>
+                <https://test.linked.data.gov.au/def/nst-transferability/0.0.1>;
+        <http://purl.org/dc/terms/modified>
+                "2026-02-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://www.w3.org/2002/07/owl#versionInfo>
+                "0.0.2";
+        <http://www.w3.org/2004/02/skos/core#creator>
+                <https://linked.data.gov.au/org/jsa>;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Transferability of skills"@en;
+        <http://www.w3.org/2004/02/skos/core#hasTopConcept>
+                <https://test.linked.data.gov.au/def/nst-transferability/OCC> , <https://test.linked.data.gov.au/def/nst-transferability/SEC> , <https://test.linked.data.gov.au/def/nst-transferability/BRD> , <https://test.linked.data.gov.au/def/nst-transferability/UNI>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Skill Transferability"@en;
+        <http://www.w3.org/2004/02/skos/core#publisher>
+                <https://linked.data.gov.au/org/dewr>;
+        <http://www.w3.org/ns/dcat#distribution>
+                <https://test.linked.data.gov.au/def/nst-transferability/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-nature>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://purl.org/dc/terms/created>
+                "2026-02-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/hasVersion>
+                <https://test.linked.data.gov.au/def/nst-nature/0.0.1>;
+        <http://purl.org/dc/terms/modified>
+                "2026-02-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://www.w3.org/2002/07/owl#versionInfo>
+                "0.0.2";
+        <http://www.w3.org/2004/02/skos/core#creator>
+                <https://linked.data.gov.au/org/jsa>;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Nature of skills"@en;
+        <http://www.w3.org/2004/02/skos/core#hasTopConcept>
+                <https://test.linked.data.gov.au/def/nst-nature/REG> , <https://test.linked.data.gov.au/def/nst-nature/FND> , <https://test.linked.data.gov.au/def/nst-nature/SLF> , <https://test.linked.data.gov.au/def/nst-nature/SOC> , <https://test.linked.data.gov.au/def/nst-nature/COG> , <https://test.linked.data.gov.au/def/nst-nature/TEC>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Skill Nature"@en;
+        <http://www.w3.org/2004/02/skos/core#publisher>
+                <https://linked.data.gov.au/org/dewr>;
+        <http://www.w3.org/ns/dcat#distribution>
+                <https://test.linked.data.gov.au/def/nst-nature/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-learning-context>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://purl.org/dc/terms/created>
+                "2026-02-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/hasVersion>
+                <https://test.linked.data.gov.au/def/nstslrnctx/0.0.1>;
+        <http://purl.org/dc/terms/modified>
+                "2026-02-13"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://www.w3.org/2002/07/owl#versionInfo>
+                "0.0.2";
+        <http://www.w3.org/2004/02/skos/core#creator>
+                <https://linked.data.gov.au/org/jsa>;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Classification defining typical environment for skill development"@en;
+        <http://www.w3.org/2004/02/skos/core#hasTopConcept>
+                <https://test.linked.data.gov.au/def/nst-learning-context/DIG> , <https://test.linked.data.gov.au/def/nst-learning-context/HYB> , <https://test.linked.data.gov.au/def/nst-learning-context/WRK> , <https://test.linked.data.gov.au/def/nst-learning-context/PRA> , <https://test.linked.data.gov.au/def/nst-learning-context/THE>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Skill Learning Context"@en;
+        <http://www.w3.org/2004/02/skos/core#publisher>
+                <https://linked.data.gov.au/org/dewr>;
+        <http://www.w3.org/ns/dcat#distribution>
+                <https://test.linked.data.gov.au/def/nst-learning-context/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-futureready>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://purl.org/dc/terms/created>
+                "2026-02-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/hasVersion>
+                <https://test.linked.data.gov.au/def/nstsfutread/0.0.1>;
+        <http://purl.org/dc/terms/modified>
+                "2026-02-13"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://www.w3.org/2002/07/owl#versionInfo>
+                "0.0.2";
+        <http://www.w3.org/2004/02/skos/core#creator>
+                <https://linked.data.gov.au/org/jsa>;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Classification indicating skill's resilience to automation and future demand"@en;
+        <http://www.w3.org/2004/02/skos/core#hasTopConcept>
+                <https://test.linked.data.gov.au/def/nst-futureready/EMG> , <https://test.linked.data.gov.au/def/nst-futureready/AUT> , <https://test.linked.data.gov.au/def/nst-futureready/AUG> , <https://test.linked.data.gov.au/def/nst-futureready/COL> , <https://test.linked.data.gov.au/def/nst-futureready/HUM>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Skill Future Readiness"@en;
+        <http://www.w3.org/2004/02/skos/core#publisher>
+                <https://linked.data.gov.au/org/dewr>;
+        <http://www.w3.org/ns/dcat#distribution>
+                <https://test.linked.data.gov.au/def/nst-futureready/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-digital-intensity>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://purl.org/dc/terms/created>
+                "2026-02-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/hasVersion>
+                <https://test.linked.data.gov.au/def/nstdi/0.0.1>;
+        <http://purl.org/dc/terms/modified>
+                "2026-02-13"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://www.w3.org/2002/07/owl#versionInfo>
+                "0.0.2";
+        <http://www.w3.org/2004/02/skos/core#creator>
+                <https://linked.data.gov.au/org/jsa>;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Classification indicating extent of digital technology use required"@en;
+        <http://www.w3.org/2004/02/skos/core#hasTopConcept>
+                <https://test.linked.data.gov.au/def/nst-digital-intensity/ADV> , <https://test.linked.data.gov.au/def/nst-digital-intensity/HIG> , <https://test.linked.data.gov.au/def/nst-digital-intensity/MED> , <https://test.linked.data.gov.au/def/nst-digital-intensity/LOW> , <https://test.linked.data.gov.au/def/nst-digital-intensity/MIN>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Skill Digital Intensity"@en;
+        <http://www.w3.org/2004/02/skos/core#publisher>
+                <https://linked.data.gov.au/org/dewr>;
+        <http://www.w3.org/ns/dcat#distribution>
+                <https://test.linked.data.gov.au/def/nst-digital-intensity/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-cognitive-domain>
+        a                              <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://purl.org/dc/terms/created>
+                "2026-02-05"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/hasVersion>
+                <https://test.linked.data.gov.au/def/nst-cognitive-domain/0.0.1>;
+        <http://purl.org/dc/terms/modified>
+                "2026-02-13"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://www.w3.org/2002/07/owl#versionInfo>
+                "0.0.2";
+        <http://www.w3.org/2004/02/skos/core#creator>
+                <https://linked.data.gov.au/org/jsa>;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Classification indicating cognitive processing depth required (Bloom's Taxonomy aligned)"@en;
+        <http://www.w3.org/2004/02/skos/core#hasTopConcept>
+                <https://test.linked.data.gov.au/def/nst-cognitive-domain/REM> , <https://test.linked.data.gov.au/def/nst-cognitive-domain/UND> , <https://test.linked.data.gov.au/def/nst-cognitive-domain/APP> , <https://test.linked.data.gov.au/def/nst-cognitive-domain/ANA> , <https://test.linked.data.gov.au/def/nst-cognitive-domain/EVA> , <https://test.linked.data.gov.au/def/nst-cognitive-domain/CRE>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Skill Cognitive Level"@en;
+        <http://www.w3.org/2004/02/skos/core#publisher>
+                <https://linked.data.gov.au/org/dewr>;
+        <http://www.w3.org/ns/dcat#distribution>
+                <https://test.linked.data.gov.au/def/nst-cognitive-domain/distribution/turtle>;
+        <https://schema.org/citation>  "0321084055"^^<http://id.loc.gov/vocabulary/identifiers/isbn> .
+
+<https://test.linked.data.gov.au/def/nst-level>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://purl.org/dc/terms/creator>
+                <https://linked.data.gov.au/org/jsa>;
+        <http://purl.org/dc/terms/publisher>
+                <https://linked.data.gov.au/org/dewr>;
+        <http://www.w3.org/2002/07/owl#versionInfo>
+                "0.0.2";
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Skill level concept scheme. Concepts indicates the level of competencies and responsibilities for a Skill"@en;
+        <http://www.w3.org/2004/02/skos/core#hasTopConcept>
+                <https://test.linked.data.gov.au/def/nst-level/7> , <https://test.linked.data.gov.au/def/nst-level/6> , <https://test.linked.data.gov.au/def/nst-level/5> , <https://test.linked.data.gov.au/def/nst-level/4> , <https://test.linked.data.gov.au/def/nst-level/3> , <https://test.linked.data.gov.au/def/nst-level/2> , <https://test.linked.data.gov.au/def/nst-level/1>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Skill levels"@en;
+        <http://www.w3.org/ns/dcat#distribution>
+                <https://test.linked.data.gov.au/def/nst-level/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst>
+        a                             <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://purl.org/dc/terms/created>
+                "2026-01-01"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://purl.org/dc/terms/hasVersion>
+                <https://test.linked.data.gov.au/def/nst/0.0.2>;
+        <http://purl.org/dc/terms/modified>
+                "2026-01-01"^^<http://www.w3.org/2001/XMLSchema#date>;
+        <http://www.w3.org/2002/07/owl#versionInfo>
+                "0.0.2";
+        <http://www.w3.org/2004/02/skos/core#creator>
+                <https://linked.data.gov.au/org/jsa>;
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "The National Skills Taxonomy (NST) is a new, evidence-based framework that provides a common language for describing the skills Australians gain, develop, and use across education and employment. Developed by Jobs and Skills Australia (JSA), the NST is designed to make every skill visible, valued, and transferable - helping individuals, educators, employers, and policymakers navigate a rapidly changing world of work."@en;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "National Skills Taxonomy"@en;
+        <http://www.w3.org/2004/02/skos/core#publisher>
+                <https://linked.data.gov.au/org/dewr>;
+        <http://www.w3.org/ns/dcat#distribution>
+                <https://test.linked.data.gov.au/def/nst/distribution/turtle>;
+        <https://schema.org/hasPart>  <https://test.linked.data.gov.au/def/nst-level> , <https://test.linked.data.gov.au/def/nst-cognitive-domain> , <https://test.linked.data.gov.au/def/nst-digital-intensity> , <https://test.linked.data.gov.au/def/nst-futureready> , <https://test.linked.data.gov.au/def/nst-learning-context> , <https://test.linked.data.gov.au/def/nst-nature> , <https://test.linked.data.gov.au/def/nst-transferability> , <https://test.linked.data.gov.au/def/nst-work-context> , <https://test.linked.data.gov.au/def/nst-percent-range> .

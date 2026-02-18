@@ -1,0 +1,32 @@
+# (3A) Demote owl:versionIRI -> dcterms:hasVersion (IRI -> IRI)
+# If you prefer schema:version as a literal, use (3B) instead.
+
+PREFIX owl:    <http://www.w3.org/2002/07/owl#>
+PREFIX dcterms:<http://purl.org/dc/terms/>
+
+DELETE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/profile-input> {
+    ?cs owl:versionIRI ?v .
+  }
+}
+INSERT {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/profile-input> {
+    ?cs dcterms:hasVersion ?v .
+  }
+}
+WHERE {
+  GRAPH <https://data.jobsandskills.gov.au/graph/skills-sparql/profile-input> {
+    VALUES ?cs {
+      <https://test.linked.data.gov.au/def/nst-level>
+      <https://test.linked.data.gov.au/def/nst-cognitive-domain>
+      <https://test.linked.data.gov.au/def/nst-nature>
+      <https://test.linked.data.gov.au/def/nst-transferability>
+      <https://test.linked.data.gov.au/def/nst-learning-context>
+      <https://test.linked.data.gov.au/def/nst-work-context>
+      <https://test.linked.data.gov.au/def/nst-digital-intensity>
+      <https://test.linked.data.gov.au/def/nst-futureready>
+      <https://test.linked.data.gov.au/def/nst-percent-range>
+    }
+    ?cs owl:versionIRI ?v .
+  }
+}
