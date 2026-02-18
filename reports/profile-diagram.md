@@ -1,4 +1,5 @@
-```flowchart LR
+```mermaid
+flowchart LR
 
   %% =========================
   %% NST PROFILE ARTEFACTS (published by JSA/DEWR)
