@@ -1,0 +1,16 @@
+diagram.html
+manifest.txt
+nst-profile-architecture.svg
+scheme-nst-cognitive-domain.html
+scheme-nst-digital-intensity.html
+scheme-nst-futureready.html
+scheme-nst-learning-context.html
+scheme-nst-level.html
+scheme-nst-nature.html
+scheme-nst-percent-range.html
+scheme-nst-transferability.html
+scheme-nst-work-context.html
+scheme-nst.html
+skills-docs-index.html
+skills-profile.html
+skills-schema.html
