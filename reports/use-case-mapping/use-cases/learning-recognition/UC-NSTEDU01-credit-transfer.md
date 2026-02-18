@@ -1,17 +1,17 @@
 # UC-NSTEDU01 — Credit Transfer
 
 ## 1. Summary
-A prospective student who holds an existing accredited qualification seeks entry into a new qualification with credit. The use case requires consistent mapping of skills and learning outcomes across frameworks to support repeatable credit decisions.
+A prospective student who holds an existing qualification wants to start a new qualification with some credits transfered. The use case requires consistent mapping of skills and learning outcomes across frameworks to support reuseable credit transfer decisitions.
 
 ## 2. Business Context
 - Domain / policy area: Education (Tertiary Harmonisation)
-- Institutions: VET provider(s), University provider(s), regulators
+- Institutions: VET providers; Higher Education (HE) institutions; regulators
 - Why now: persistent inconsistency and manual effort in cross-sector credit decisions
 
 ## 3. Actors and Stakeholders
 ### Actors
 - Prospective student
-- Prospective VET or university institution (assessor / admissions)
+- Prospective VET or HE institutions (assessor / admissions)
 
 ### Stakeholders
 - Student
@@ -32,7 +32,7 @@ Student seeks credit for education already completed.
 ## 6. Baseline Process
 - Student submits transcripts/records
 - Institution interprets equivalence manually
-- Decision varies by assessor/institution; evidence trail inconsistent
+- Decision varies by assessor/institution; evidence trail is inconsistent
 
 ## 7. Basic Flow (Target)
 - Identify the completed qualification and its learning outcomes
@@ -42,7 +42,7 @@ Student seeks credit for education already completed.
 
 ## 8. Alternate Flows
 - Alt 1: student does not wish to complete current qualification (partial completion evidence)
-- Alt 2: qualification displaced/disbanded (archived/legacy evidence sources)
+- Alt 2: qualification superceded/disbanded (legacy evidence sources)
 
 ## 9. Pain Points
 - Semantic mismatch between frameworks
@@ -51,45 +51,46 @@ Student seeks credit for education already completed.
 - Weak traceability to evidence
 
 ## 10. Desired Capability
-Enable evidence-based, repeatable credit transfer decisions using comparable skill entities across education frameworks.
+Enable evidence-based, repeatable credit transfer decisions using comparable skill concepts across education frameworks.
 
 ## 11. Information Requirements
-- Identifiers for qualifications/units
-- Learning outcomes statements
+- Identifiers for qualifications/units/courses
+- Qualification types / levels
+- Learning outcomes statements / descriptions
 - Mappings from learning outcomes to skills
-- Policy constraints / rules (as external governance, not hardcoded)
+- Accreditation rules (prerequistites, qualification or work experience)
 
 ## 12. Semantic / Model Requirements
 - Skills are first-class entities with stable IDs
-- Education outcomes can be aligned to skills (mapping artefact + provenance)
+- Education outcomes can be aligned to skills (mapping model + evidence)
 - Ability to represent “covers / partially covers” relationships
-- Evidence links to source documents (handbook pages, training package units)
+- Evidence links to source documents (unit / course descriptions)
 
 ## 13. Enabling Assets
-- NST skills concept scheme(s)
-- Education-aligned schemes (e.g., IT2017 domains or similar bridging concepts)
-- Provenance pattern for evidence (citations to authoritative sources)
-- Profile/validator to ensure mappings are structurally consistent
+- NST skills taxonomy and supporting schemes
+- Education-aligned schemes (e.g., curriculum domains or similar bridging concepts)
+- Citations to authoritative sources
+- Profile to ensure mappings are structurally consistent
 
 ## 14. Success Criteria
 - Reduced assessment time
 - Increased cross-institution consistency
 - Transparent evidence trail supporting credit decisions
+- Focus or 'skills gap' industries are addressed
 
 ## 15. Out of Scope
 - Institution-specific policy rule engines
-- Grade equivalence and student eligibility checks
+- Qualification equivalence checks
 
 ## 16. Traceability
 | Requirement | Proposed representation |
 |---|---|
 | Comparable skills across frameworks | NST skills as SKOS concepts |
 | Evidence trail | schema:citation / dcterms:source links to authoritative docs |
-| Consistent mapping structure | SHACL validation under profile |
+| Consistent mapping structure | Validation against NST Profile |
 
 ## 17. Status
 Draft
 
 ## 18. Links
 - Related: UC-NSTEDU02
-
