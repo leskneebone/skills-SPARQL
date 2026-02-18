@@ -46,9 +46,9 @@ flowchart LR
   subgraph EXT["External reference frameworks (not NST Profile)"]
     direction LR
 
-    Unit["tgaunit"]
-    Qual["tgaqual"]
-    Pack["tgapkg"]
+    Unit["TGA unit"]
+    Qual["TGA qual"]
+    Pack["TGA pkg"]
 
     ASCED["ASCED"]
     AQFType["AQF type"]
