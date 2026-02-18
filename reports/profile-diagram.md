@@ -64,6 +64,8 @@ flowchart LR
   subgraph JSAEXT["JSA artefacts about external frameworks"]
     direction LR
     OccProfile["JSA Occupation Profile (schema:CreativeWork)"]
+    OccTasks["JSA Occupation Tasks (skos:Concept)"]
+    OccProfile -->|schema:hasPart| OccTasks
   end
 
   %% =========================
