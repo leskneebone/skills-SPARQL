@@ -27,11 +27,11 @@ flowchart LR
     Skill -->|skos:inScheme| NSTScheme
 
     %% Facet links (predicate labels illustrative)
-    Skill -->|classified by | Cog
+    Skill -->|classified by | Level
     Skill -->|classified by| Dig
     Skill -->|classified by| Fut
     Skill -->|classified by| Learn
-    Skill -->|classified by| Level
+    Skill -->|classified by| Cog
     Skill -->|classified by| Nature
     Skill -->|classified by| Trans
     Skill -->|classified by| Work
@@ -76,6 +76,7 @@ flowchart LR
   Qual -->|schema:about| ASCED
   Qual -->|schema:credentialCategory| AQFType
   AQFType -->|schema:about| AQFLevel
+  Level -->|skos:closeMatch| AQFLevel
 
   %% Corrected canonical direction:
   Qual -->|schema:about| ANZSCO
