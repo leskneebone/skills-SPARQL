@@ -27,15 +27,15 @@ flowchart LR
     Skill -->|skos:inScheme| NSTScheme
 
     %% Facet links (predicate labels illustrative)
-    Skill -->|nst:cognitiveDomain| Cog
-    Skill -->|nst:digitalIntensity| Dig
-    Skill -->|nst:futureReadiness| Fut
-    Skill -->|nst:learningContext| Learn
-    Skill -->|nst:skillLevel| Level
-    Skill -->|nst:skillNature| Nature
-    Skill -->|nst:transferability| Trans
-    Skill -->|nst:workContext| Work
-    Skill -->|nst:percentRange| Percent
+    Skill -->|classified by | Cog
+    Skill -->|classified by| Dig
+    Skill -->|classified by| Fut
+    Skill -->|classified by| Learn
+    Skill -->|classified by| Level
+    Skill -->|classified by| Nature
+    Skill -->|classified by| Trans
+    Skill -->|classified by| Work
+    Skill -->|classified by| Percent
 
     Ont -->|defines terms| NSTScheme
   end
