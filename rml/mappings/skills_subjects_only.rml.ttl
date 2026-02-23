@@ -1,0 +1,177 @@
+@base <http://example.com/rml/> .
+@prefix asced: <https://abs.gov.au/classifications/ASCED/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix esco: <http://data.europa.eu/esco/model#> .
+@prefix nsto: <https://test.linked.data.gov.au/def/nst/ontology#> .
+@prefix rr:  <http://www.w3.org/ns/r2rml#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix ql:  <http://semweb.mmlab.be/ns/ql#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<#SkillTriplesMap>
+  a rr:TriplesMap ;
+
+  rml:logicalSource [
+    rml:source "source/faceted_taxonomy_with_qual_occ.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+
+  rr:subjectMap [
+    rr:template "https://test.linked.data.gov.au/def/nst/{skill_id}" ;
+    rr:class skos:Concept
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate skos:inScheme ;
+    rr:objectMap [
+      rr:constant <https://test.linked.data.gov.au/def/nst>
+    ]
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate skos:prefLabel ;
+    rr:objectMap [
+      rml:reference "skill_name" ;
+      rr:language "en"
+    ]
+  ] ;
+
+rr:predicateObjectMap [
+    rr:predicate skos:definition ;
+    rr:objectMap [
+      rml:reference "descripition" ;
+      rr:language "en"
+    ]
+  ] ;
+
+rr:predicateObjectMap [
+    rr:predicate skos:notation ;
+    rr:objectMap [
+      rml:reference "skill_id" ;
+    ]
+  ] .
+
+<#AltLabelTriplesMap>
+  a rr:TriplesMap ;
+
+  rml:logicalSource [
+    rml:source "source/skill_altlabels.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+
+  rr:subjectMap [
+    rr:template "https://test.linked.data.gov.au/def/nst/{skill_id}"
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate skos:altLabel ;
+    rr:objectMap [
+      rml:reference "alt_label" ;
+      rr:language "en"
+    ]
+  ] .
+
+<#KeywordsTriplesMap>
+  a rr:TriplesMap ;
+
+  rml:logicalSource [
+    rml:source "source/skill_keywords.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+
+  rr:subjectMap [
+    rr:template "https://test.linked.data.gov.au/def/nst/{skill_id}"
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate schema:keywords ;
+    rr:objectMap [
+      rml:reference "keywords" ;
+      rr:language "en"
+    ]
+  ] .
+
+<#NatFacetTriplesMap>
+  a rr:TriplesMap ;
+  rml:logicalSource [ rml:source "source/skill_nat.csv" ; rml:referenceFormulation ql:CSV ] ;
+  rr:subjectMap [ rr:template "https://test.linked.data.gov.au/def/nst/{skill_id}" ] ;
+  rr:predicateObjectMap [
+    rr:predicate dcterms:subject ;
+    rr:objectMap [ rr:template "https://test.linked.data.gov.au/def/nst-nature/{suffix}" ]
+  ] .
+
+<#TrfFacetTriplesMap>
+  a rr:TriplesMap ;
+  rml:logicalSource [ rml:source "source/skill_trf.csv" ; rml:referenceFormulation ql:CSV ] ;
+  rr:subjectMap [ rr:template "https://test.linked.data.gov.au/def/nst/{skill_id}" ] ;
+  rr:predicateObjectMap [
+    rr:predicate esco:skillReuseLevel ;
+    rr:objectMap [ rr:template "https://test.linked.data.gov.au/def/nst-transferability/{suffix}" ]
+  ] .
+
+<#CogFacetTriplesMap>
+  a rr:TriplesMap ;
+  rml:logicalSource [ rml:source "source/skill_cog.csv" ; rml:referenceFormulation ql:CSV ] ;
+  rr:subjectMap [ rr:template "https://test.linked.data.gov.au/def/nst/{skill_id}" ] ;
+  rr:predicateObjectMap [
+    rr:predicate nsto:cognitiveProcess ;
+    rr:objectMap [ rr:template "https://test.linked.data.gov.au/def/nst-cognitive-domain/{suffix}" ]
+  ] .
+
+<#CtxFacetTriplesMap>
+  a rr:TriplesMap ;
+  rml:logicalSource [ rml:source "source/skill_ctx.csv" ; rml:referenceFormulation ql:CSV ] ;
+  rr:subjectMap [ rr:template "https://test.linked.data.gov.au/def/nst/{skill_id}" ] ;
+  rr:predicateObjectMap [
+    rr:predicate nsto:workContext ;
+    rr:objectMap [ rr:template "https://test.linked.data.gov.au/def/nst-work-context/{suffix}" ]
+  ] .
+
+<#FutFacetTriplesMap>
+  a rr:TriplesMap ;
+  rml:logicalSource [ rml:source "source/skill_fut.csv" ; rml:referenceFormulation ql:CSV ] ;
+  rr:subjectMap [ rr:template "https://test.linked.data.gov.au/def/nst/{skill_id}" ] ;
+  rr:predicateObjectMap [
+    rr:predicate nsto:skillResilience ;
+    rr:objectMap [ rr:template "https://test.linked.data.gov.au/def/nst-futureready/{suffix}" ]
+  ] .
+
+<#LrnFacetTriplesMap>
+  a rr:TriplesMap ;
+  rml:logicalSource [ rml:source "source/skill_lrn.csv" ; rml:referenceFormulation ql:CSV ] ;
+  rr:subjectMap [ rr:template "https://test.linked.data.gov.au/def/nst/{skill_id}" ] ;
+  rr:predicateObjectMap [
+    rr:predicate nsto:learningContext ;
+    rr:objectMap [ rr:template "https://test.linked.data.gov.au/def/nst-learning-context/{suffix}" ]
+  ] .
+
+<#DigFacetTriplesMap>
+  a rr:TriplesMap ;
+  rml:logicalSource [ rml:source "source/skill_dig.csv" ; rml:referenceFormulation ql:CSV ] ;
+  rr:subjectMap [ rr:template "https://test.linked.data.gov.au/def/nst/{skill_id}" ] ;
+  rr:predicateObjectMap [
+    rr:predicate nsto:digitalIntensity ;
+    rr:objectMap [ rr:template "https://test.linked.data.gov.au/def/nst-digital-intensity/{suffix}" ]
+  ] .
+
+  <#AscedFacetTriplesMap>
+  a rr:TriplesMap ;
+
+  rml:logicalSource [
+    rml:source "source/skill_asced.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+
+  rr:subjectMap [
+    rr:template "https://test.linked.data.gov.au/def/nst/{skill_id}"
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate schema:about ;
+    rr:objectMap [
+      rr:template "https://abs.gov.au/classifications/ASCED/{asced4}"
+    ]
+  ] .
+
+  

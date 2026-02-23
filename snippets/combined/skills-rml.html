@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NST Skills — RML Mapping Notes</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.5; margin: 2rem; max-width: 60rem; }
+    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    pre { background: #f6f8fa; padding: 1rem; overflow-x: auto; border-radius: 8px; }
+    h1, h2 { line-height: 1.2; }
+    .card { background: #f6f8fa; padding: 1rem; border-radius: 10px; margin: 1rem 0; }
+    .muted { color: #555; }
+    a { color: #0645ad; }
+  </style>
+</head>
+<body>
+
+<h1>NST Skills — RML Mapping Notes</h1>
+
+<p class="muted">
+Local documentation page for the RML mappings used to transform extracted NST skills tabular data (CSV) into RDF (Turtle),
+including helper CSV generation steps for multi-valued columns and facet lookups.
+</p>
+
+<div class="card">
+  <h2>Quick links</h2>
+  <ul>
+    <li><a href="../../rml/mappings/skills_subjects_only.rml.ttl">RML mapping: skills_subjects_only.rml.ttl</a></li>
+    <li><a href="../../rml/source/faceted_taxonomy_with_qual_occ.csv">Source CSV: faceted_taxonomy_with_qual_occ.csv</a></li>
+    <li><a href="../../rml/output/">RML outputs folder</a> (generated TTL)</li>
+    <li><a href="../../rml/tools/rmlmapper-8.1.0-r380-all.jar">RMLMapper JAR</a></li>
+  </ul>
+</div>
+
+<h2>What this mapping produces</h2>
+<ul>
+  <li>Creates one <code>skos:Concept</code> per <code>skill_id</code> with stable subject IRI <code>.../def/nst/{skill_id}</code></li>
+  <li>Adds core SKOS: <code>skos:prefLabel</code>, <code>skos:definition</code> (if present), <code>skos:notation</code>, <code>skos:inScheme</code></li>
+  <li>Explodes delimited columns into helper CSVs and emits multi-valued properties:
+    <ul>
+      <li><code>skos:altLabel</code> from <code>alternative_titles</code></li>
+      <li><code>schema:keywords</code> from <code>all_related_keywords</code></li>
+    </ul>
+  </li>
+  <li>Maps facet codes (e.g. <code>NAT.TEC</code>) to mini-vocabulary concept IRIs using helper CSVs (suffix extraction)</li>
+  <li>Handles ASCED codes by left-padding to 4 digits and emitting ABS ASCED IRIs (e.g. <code>.../ASCED/0313</code>)</li>
+</ul>
+
+<h2>Run the mapper</h2>
+<p>From <code>/Users/leskneebone/Projects/skills-SPARQL/rml</code>:</p>
+
+<pre><code>mkdir -p output
+
+java -jar tools/rmlmapper-8.1.0-r380-all.jar \
+  -m mappings/skills_subjects_only.rml.ttl \
+  -o output/skills.ttl \
+  -s turtle
+</code></pre>
+
+<h2>Helper CSVs</h2>
+<p class="muted">These helper CSVs make the mapping predictable and keep the RML itself simple.</p>
+<ul>
+  <li><code>source/skill_altlabels.csv</code> — exploded from <code>alternative_titles</code></li>
+  <li><code>source/skill_keywords.csv</code> — exploded from <code>all_related_keywords</code></li>
+  <li><code>source/skill_*.csv</code> — facet-specific (NAT/TRF/COG/CTX/FUT/LRN/DIG) with suffixes for mini vocab IRIs</li>
+  <li><code>source/skill_asced.csv</code> — ASCED codes padded to 4 digits</li>
+</ul>
+
+<h2>Notes</h2>
+<ul>
+  <li>This is local documentation first. The PROF/pyLODE linkage will be added later as a <code>prof:ResourceDescriptor</code>.</li>
+  <li>If you move files, update the relative links above.</li>
+</ul>
+
+</body>
+</html>
