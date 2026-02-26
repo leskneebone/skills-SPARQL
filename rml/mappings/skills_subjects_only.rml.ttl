@@ -40,7 +40,7 @@
 rr:predicateObjectMap [
     rr:predicate skos:definition ;
     rr:objectMap [
-      rml:reference "descripition" ;
+      rml:reference "description" ;
       rr:language "en"
     ]
   ] ;
@@ -48,7 +48,7 @@ rr:predicateObjectMap [
 rr:predicateObjectMap [
     rr:predicate skos:notation ;
     rr:objectMap [
-      rml:reference "skill_id" ;
+      rml:reference "skill_id"
     ]
   ] .
 
@@ -174,4 +174,21 @@ rr:predicateObjectMap [
     ]
   ] .
 
-  
+  <#TGAunitTriplesMap>
+  a rr:TriplesMap ;
+
+  rml:logicalSource [
+    rml:source "source/faceted_taxonomy_with_qual_occ.csv" ;
+    rml:referenceFormulation ql:CSV
+  ] ;
+
+  rr:subjectMap [
+    rr:template "https://test.linked.data.gov.au/def/nst/{skill_id}"
+  ] ;
+
+  rr:predicateObjectMap [
+    rr:predicate dcterms:source ;
+    rr:objectMap [
+      rr:template "https://training.gov.au/training/details/{code}"
+    ]
+  ] .
