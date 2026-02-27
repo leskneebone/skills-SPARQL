@@ -1,0 +1,51 @@
+# unitCode column
+# minimum threshold
+# includes graph so you can see duplicates
+# returns matched fields if you want (optional)
+
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX schema:  <https://schema.org/>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?g ?tgaunit
+       (STRAFTER(STR(?tgaunit), "https://training.gov.au/training/details/") AS ?unitCode)
+       ?skill ?prefLabel
+       (COUNT(DISTINCT ?term) AS ?termHits)
+WHERE {
+  VALUES ?g {
+    <https://data.jobsandskills.gov.au/graph/skills-sparql/combined>
+    <https://data.jobsandskills.gov.au/graph/skills-sparql/profile-input>
+  }
+
+  GRAPH ?g {
+    ?skill dcterms:source ?tgaunit ;
+           skos:prefLabel ?prefLabel .
+
+    # Terms from your cyber incident definition (tune as you like)
+    VALUES ?term {
+      "cyber" "incident"
+      "confidentiality" "integrity" "availability"
+      "unauthorised" "unauthorized" "malicious"
+      "sharing" "manipulation" "destruction"
+      "disruption" "exploitation"
+      "network" "system" "data"
+      "critical infrastructure" "essential services"
+      "response"
+    }
+
+    { ?skill skos:prefLabel ?txt . }
+    UNION { ?skill skos:altLabel ?txt . }
+    UNION { ?skill schema:keywords ?txt . }
+    UNION { ?skill skos:definition ?txt . }
+
+    FILTER(langMatches(lang(?txt), "en") || lang(?txt) = "")
+    FILTER(CONTAINS(LCASE(STR(?txt)), LCASE(?term)))
+  }
+
+  FILTER(STRSTARTS(STR(?tgaunit), "https://training.gov.au/training/details/"))
+  FILTER(STRSTARTS(STR(?skill), "https://test.linked.data.gov.au/def/nst/"))
+}
+GROUP BY ?g ?tgaunit ?skill ?prefLabel
+HAVING (COUNT(DISTINCT ?term) >= 2)   # raise to 3 if too many weak matches
+ORDER BY DESC(?termHits) ?unitCode ?prefLabel
+LIMIT 1000
