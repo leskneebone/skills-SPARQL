@@ -35,10 +35,11 @@ echo "==> Regenerating pyLODE outputs..."
 shopt -s nullglob
 scheme_ttls=(scheme-nst*.ttl)
 if (( ${#scheme_ttls[@]} )); then
-  for ttl in "${scheme_ttls[@]}"; do
-    html="${ttl%.ttl}.html"
-    "${PYLODE_CMD[@]}" -p vocpub "$ttl" -o "$html"
-  done
+for ttl in "${scheme_ttls[@]}"; do
+  html="${ttl%.ttl}.html"
+  "${PYLODE_CMD[@]}" -p vocpub "$ttl" -o "$html"
+  "$COMBINED/inject-top-concepts.sh" "$ttl" "$html"
+done
 else
   echo "WARN: No scheme-nst*.ttl files found; skipping scheme pages."
 fi

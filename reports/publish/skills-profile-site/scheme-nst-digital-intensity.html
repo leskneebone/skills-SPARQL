@@ -319,6 +319,22 @@ td {
     <div id="content">
       <div class="section" id="metadata">
         <h1>Skill Digital Intensity</h1>
+<section id="top-concepts">
+  <style>
+    #top-concepts ul { list-style: none; padding-left: 10; }
+    #top-concepts li { margin-bottom: 0.9rem; }
+    #top-concepts .concept-def { margin-top: 0.25rem; }
+  </style>
+  <h2>Top concepts</h2>
+  <ul>
+    <li class="concept-item"><strong>Advanced Digital</strong><div class="concept-def">Expertise in cutting-edge technologies</div></li>
+    <li class="concept-item"><strong>High Digital</strong><div class="concept-def">Advanced digital skills, complex software</div></li>
+    <li class="concept-item"><strong>Low Digital</strong><div class="concept-def">Basic digital literacy and simple tools</div></li>
+    <li class="concept-item"><strong>Medium Digital</strong><div class="concept-def">Frequent use of specialized software and platforms</div></li>
+    <li class="concept-item"><strong>Minimal Digital</strong><div class="concept-def">Tasks mostly manual with minimal digital involvement</div></li>
+  </ul>
+</section>
+
         <h2>Metadata</h2>
         <dl>
           <div>
@@ -349,6 +365,14 @@ td {
           </div>
           <div>
             <dt>
+              <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionIRI" title="The property that identifies the version IRI of an ontology. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Iri</a>
+            </dt>
+            <dd>
+              <a href="https://test.linked.data.gov.au/def/nstdi/0.0.1">https://test.linked.data.gov.au/def/nstdi/0.0.1</a>
+            </dd>
+          </div>
+          <div>
+            <dt>
               <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionInfo" title="The annotation property that provides version information for an ontology or another OWL construct. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Info</a>
             </dt>
             <dd><p>0.0.2</p></dd>
@@ -372,17 +396,49 @@ td {
       <div id="namespaces">
         <h2>Namespaces</h2>
         <dl>
-          <dt id="ns1">ns1</dt>
+          <dt id="dcat">dcat</dt>
           <dd>
-            <code>https://test.linked.data.gov.au/def/</code>
+            <code>http://www.w3.org/ns/dcat#</code>
+          </dd>
+          <dt id="dcterms">dcterms</dt>
+          <dd>
+            <code>http://purl.org/dc/terms/</code>
+          </dd>
+          <dt id="dewr">dewr</dt>
+          <dd>
+            <code>https://linked.data.gov.au/org/dewr</code>
+          </dd>
+          <dt id="jsa">jsa</dt>
+          <dd>
+            <code>https://linked.data.gov.au/org/jsa</code>
+          </dd>
+          <dt id="nsto">nsto</dt>
+          <dd>
+            <code>https://test.linked.data.gov.au/def/nst/ontology#</code>
           </dd>
           <dt id="owl">owl</dt>
           <dd>
             <code>http://www.w3.org/2002/07/owl#</code>
           </dd>
+          <dt id="percentrange">percentrange</dt>
+          <dd>
+            <code>https://test.linked.data.gov.au/def/nst-percent-range/</code>
+          </dd>
           <dt id="rdf">rdf</dt>
           <dd>
             <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>
+          </dd>
+          <dt id="sdi">sdi</dt>
+          <dd>
+            <code>https://test.linked.data.gov.au/def/nst-digital-intensity/</code>
+          </dd>
+          <dt id="sdics">sdics</dt>
+          <dd>
+            <code>https://test.linked.data.gov.au/def/nst-digital-intensity</code>
+          </dd>
+          <dt id="skos">skos</dt>
+          <dd>
+            <code>http://www.w3.org/2004/02/skos/core#</code>
           </dd>
         </dl>
       </div>
@@ -418,13 +474,37 @@ td {
           </h4>
           <ul class="second">
             <li>
-              <a href="#ns1">ns1</a>
+              <a href="#dcat">dcat</a>
+            </li>
+            <li>
+              <a href="#dcterms">dcterms</a>
+            </li>
+            <li>
+              <a href="#dewr">dewr</a>
+            </li>
+            <li>
+              <a href="#jsa">jsa</a>
+            </li>
+            <li>
+              <a href="#nsto">nsto</a>
             </li>
             <li>
               <a href="#owl">owl</a>
             </li>
             <li>
+              <a href="#percentrange">percentrange</a>
+            </li>
+            <li>
               <a href="#rdf">rdf</a>
+            </li>
+            <li>
+              <a href="#sdi">sdi</a>
+            </li>
+            <li>
+              <a href="#sdics">sdics</a>
+            </li>
+            <li>
+              <a href="#skos">skos</a>
             </li>
           </ul>
         </li>

@@ -307,6 +307,22 @@ td {
     <div id="content">
       <div class="section" id="metadata">
         <h1>Percentage ranges</h1>
+<section id="top-concepts">
+  <style>
+    #top-concepts ul { list-style: none; padding-left: 10; }
+    #top-concepts li { margin-bottom: 0.9rem; }
+    #top-concepts .concept-def { margin-top: 0.25rem; }
+  </style>
+  <h2>Top concepts</h2>
+  <ul>
+    <li class="concept-item"><strong>0-10%</strong></li>
+    <li class="concept-item"><strong>11-30%</strong></li>
+    <li class="concept-item"><strong>31-60%</strong></li>
+    <li class="concept-item"><strong>61-85%</strong></li>
+    <li class="concept-item"><strong>86-100%</strong></li>
+  </ul>
+</section>
+
         <h2>Metadata</h2>
         <dl>
           <div>
@@ -325,20 +341,6 @@ td {
           </div>
           <div>
             <dt>
-              <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionInfo" title="The annotation property that provides version information for an ontology or another OWL construct. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Info</a>
-            </dt>
-            <dd><p>0.0.2</p></dd>
-          </div>
-          <div>
-            <dt>
-              <a class="hover_property" href="http://purl.org/dc/terms/source" title="A related resource from which the described resource is derived. Defined in DCMI Metadata Terms">Source</a>
-            </dt>
-            <dd>
-              <a href="https://printdlsaueajsaops.blob.core.windows.net/specific-purpose/ASC_Data/Taxonomy_Frameworks/skillDigIntense.ttl">https://printdlsaueajsaops.blob.core.windows.net/specific-purpose/ASC_Data/Taxonomy_Frameworks/skillDigIntense.ttl</a>
-            </dd>
-          </div>
-          <div>
-            <dt>
               <a class="hover_property" href="http://purl.org/dc/terms/description" title="An account of the resource. Defined in DCMI Metadata Terms">Description</a>
             </dt>
             <dd><p>Percentage ranges applied to skill attributes, including the digital intensity of a skill</p></dd>
@@ -348,17 +350,33 @@ td {
       <div id="namespaces">
         <h2>Namespaces</h2>
         <dl>
-          <dt id="ns1">ns1</dt>
+          <dt id="dewr">dewr</dt>
           <dd>
-            <code>https://test.linked.data.gov.au/def/</code>
+            <code>https://linked.data.gov.au/org/dewr</code>
           </dd>
-          <dt id="owl">owl</dt>
+          <dt id="jsa">jsa</dt>
           <dd>
-            <code>http://www.w3.org/2002/07/owl#</code>
+            <code>https://linked.data.gov.au/org/jsa</code>
+          </dd>
+          <dt id="percentrange">percentrange</dt>
+          <dd>
+            <code>https://test.linked.data.gov.au/def/nst-percent-range/</code>
+          </dd>
+          <dt id="percentrangecs">percentrangecs</dt>
+          <dd>
+            <code>https://test.linked.data.gov.au/def/nst-percent-range</code>
           </dd>
           <dt id="rdf">rdf</dt>
           <dd>
             <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>
+          </dd>
+          <dt id="schema">schema</dt>
+          <dd>
+            <code>https://schema.org/</code>
+          </dd>
+          <dt id="skos">skos</dt>
+          <dd>
+            <code>http://www.w3.org/2004/02/skos/core#</code>
           </dd>
         </dl>
       </div>
@@ -394,13 +412,25 @@ td {
           </h4>
           <ul class="second">
             <li>
-              <a href="#ns1">ns1</a>
+              <a href="#dewr">dewr</a>
             </li>
             <li>
-              <a href="#owl">owl</a>
+              <a href="#jsa">jsa</a>
+            </li>
+            <li>
+              <a href="#percentrange">percentrange</a>
+            </li>
+            <li>
+              <a href="#percentrangecs">percentrangecs</a>
             </li>
             <li>
               <a href="#rdf">rdf</a>
+            </li>
+            <li>
+              <a href="#schema">schema</a>
+            </li>
+            <li>
+              <a href="#skos">skos</a>
             </li>
           </ul>
         </li>

@@ -94,8 +94,19 @@ do
   curl -sS -H "Accept: text/turtle" "$FUSEKI/$DATASET/sparql" \
     --data-urlencode "query=
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-CONSTRUCT { <${IRI}> ?p ?o . }
-WHERE { GRAPH <${GRAPH}> { <${IRI}> ?p ?o . } }" \
+CONSTRUCT {
+  <${IRI}> ?p ?o .
+  ?c ?cp ?co .
+}
+WHERE {
+  GRAPH <${GRAPH}> {
+    <${IRI}> ?p ?o .
+    OPTIONAL {
+      <${IRI}> skos:hasTopConcept ?c .
+      ?c ?cp ?co .
+    }
+  }
+}" \
     -o "$TTL"
 
   pylode -p vocpub "$TTL" -o "$HTML"

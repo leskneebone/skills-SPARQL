@@ -319,6 +319,22 @@ td {
     <div id="content">
       <div class="section" id="metadata">
         <h1>Skill Learning Context</h1>
+<section id="top-concepts">
+  <style>
+    #top-concepts ul { list-style: none; padding-left: 10; }
+    #top-concepts li { margin-bottom: 0.9rem; }
+    #top-concepts .concept-def { margin-top: 0.25rem; }
+  </style>
+  <h2>Top concepts</h2>
+  <ul>
+    <li class="concept-item"><strong>Digital/Self-Paced</strong><div class="concept-def">Learning via digital platforms and self-paced study</div></li>
+    <li class="concept-item"><strong>Hybrid/Blended</strong><div class="concept-def">Combining theoretical instruction with practical application</div></li>
+    <li class="concept-item"><strong>Practical/Hands-on</strong><div class="concept-def">Learning through hands-on practice in workshops, labs, or simulations</div></li>
+    <li class="concept-item"><strong>Theoretical/Academic</strong><div class="concept-def">Learning focused on theoretical concepts in academic settings</div></li>
+    <li class="concept-item"><strong>Workplace/On-the-Job</strong><div class="concept-def">Learning through real-world workplace experience</div></li>
+  </ul>
+</section>
+
         <h2>Metadata</h2>
         <dl>
           <div>
@@ -349,6 +365,14 @@ td {
           </div>
           <div>
             <dt>
+              <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionIRI" title="The property that identifies the version IRI of an ontology. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Iri</a>
+            </dt>
+            <dd>
+              <a href="https://test.linked.data.gov.au/def/nstslrnctx/0.0.1">https://test.linked.data.gov.au/def/nstslrnctx/0.0.1</a>
+            </dd>
+          </div>
+          <div>
+            <dt>
               <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionInfo" title="The annotation property that provides version information for an ontology or another OWL construct. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Info</a>
             </dt>
             <dd><p>0.0.2</p></dd>
@@ -372,9 +396,25 @@ td {
       <div id="namespaces">
         <h2>Namespaces</h2>
         <dl>
-          <dt id="ns1">ns1</dt>
+          <dt id="dcterms">dcterms</dt>
           <dd>
-            <code>https://test.linked.data.gov.au/def/</code>
+            <code>http://purl.org/dc/terms/</code>
+          </dd>
+          <dt id="dewr">dewr</dt>
+          <dd>
+            <code>https://linked.data.gov.au/org/dewr</code>
+          </dd>
+          <dt id="jsa">jsa</dt>
+          <dd>
+            <code>https://linked.data.gov.au/org/jsa</code>
+          </dd>
+          <dt id="nstslrnctx">nstslrnctx</dt>
+          <dd>
+            <code>https://test.linked.data.gov.au/def/nst-learning-context/</code>
+          </dd>
+          <dt id="nstslrnctxcs">nstslrnctxcs</dt>
+          <dd>
+            <code>https://test.linked.data.gov.au/def/nst-learning-context</code>
           </dd>
           <dt id="owl">owl</dt>
           <dd>
@@ -383,6 +423,14 @@ td {
           <dt id="rdf">rdf</dt>
           <dd>
             <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>
+          </dd>
+          <dt id="schema">schema</dt>
+          <dd>
+            <code>https://schema.org/</code>
+          </dd>
+          <dt id="skos">skos</dt>
+          <dd>
+            <code>http://www.w3.org/2004/02/skos/core#</code>
           </dd>
         </dl>
       </div>
@@ -418,13 +466,31 @@ td {
           </h4>
           <ul class="second">
             <li>
-              <a href="#ns1">ns1</a>
+              <a href="#dcterms">dcterms</a>
+            </li>
+            <li>
+              <a href="#dewr">dewr</a>
+            </li>
+            <li>
+              <a href="#jsa">jsa</a>
+            </li>
+            <li>
+              <a href="#nstslrnctx">nstslrnctx</a>
+            </li>
+            <li>
+              <a href="#nstslrnctxcs">nstslrnctxcs</a>
             </li>
             <li>
               <a href="#owl">owl</a>
             </li>
             <li>
               <a href="#rdf">rdf</a>
+            </li>
+            <li>
+              <a href="#schema">schema</a>
+            </li>
+            <li>
+              <a href="#skos">skos</a>
             </li>
           </ul>
         </li>

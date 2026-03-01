@@ -1,0 +1,49 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix dewr: <https://linked.data.gov.au/org/dewr> .
+@prefix jsa: <https://linked.data.gov.au/org/jsa> .
+
+@prefix nsto: <https://test.linked.data.gov.au/def/nst/ontology#> .
+@prefix nstcs: <https://test.linked.data.gov.au/def/nst> .
+
+@prefix cog: <https://test.linked.data.gov.au/def/nst-cognitive-domain/> .
+@prefix dig: <https://test.linked.data.gov.au/def/nst-digital-intensity/> .
+@prefix fut: <https://test.linked.data.gov.au/def/nst-futureready/> .
+@prefix lrn: <https://test.linked.data.gov.au/def/nst-learning-context/> .
+@prefix nat: <https://test.linked.data.gov.au/def/nst-nature/> .
+@prefix reuse: <https://test.linked.data.gov.au/def/nst-transferability/> .
+@prefix wrk: <https://test.linked.data.gov.au/def/nst-work-context/> .
+<https://test.linked.data.gov.au/def/nst-level>
+  <http://www.w3.org/ns/dcat#distribution>
+    <https://test.linked.data.gov.au/def/nst-level/distribution/turtle> .
+
+<https://test.linked.data.gov.au/def/nst-level/distribution/turtle>
+  a <http://www.w3.org/ns/dcat#Distribution> ;
+  <http://purl.org/dc/terms/title>
+    "NST skill levels scheme (Turtle)"@en ;
+  <http://www.w3.org/ns/dcat#downloadURL>
+    <https://printdlsaueajsaops.blob.core.windows.net/specific-purpose/ASC_Data/Taxonomy_Frameworks/nstSkillLevels.ttl> ;
+  <http://www.w3.org/ns/dcat#mediaType>
+    "text/turtle" .
+
+<https://test.linked.data.gov.au/def/nst-level>
+        a       <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+        <http://purl.org/dc/terms/creator>
+                <https://linked.data.gov.au/org/jsa>;
+        <http://purl.org/dc/terms/publisher>
+                <https://linked.data.gov.au/org/dewr>;
+        <http://www.w3.org/2002/07/owl#versionInfo>
+                "0.0.2";
+        <http://www.w3.org/2004/02/skos/core#definition>
+                "Skill level concept scheme. Concepts indicates the level of competencies and responsibilities for a Skill"@en;
+        <http://www.w3.org/2004/02/skos/core#hasTopConcept>
+                <https://test.linked.data.gov.au/def/nst-level/7> , <https://test.linked.data.gov.au/def/nst-level/6> , <https://test.linked.data.gov.au/def/nst-level/5> , <https://test.linked.data.gov.au/def/nst-level/4> , <https://test.linked.data.gov.au/def/nst-level/3> , <https://test.linked.data.gov.au/def/nst-level/2> , <https://test.linked.data.gov.au/def/nst-level/1>;
+        <http://www.w3.org/2004/02/skos/core#prefLabel>
+                "Skill levels"@en .
+<https://test.linked.data.gov.au/def/nst-level> <http://purl.org/dc/terms/source> <https://printdlsaueajsaops.blob.core.windows.net/specific-purpose/ASC_Data/Taxonomy_Frameworks/nstSkillLevels.ttl> .

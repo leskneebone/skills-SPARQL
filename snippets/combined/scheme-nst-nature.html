@@ -319,6 +319,23 @@ td {
     <div id="content">
       <div class="section" id="metadata">
         <h1>Skill Nature</h1>
+<section id="top-concepts">
+  <style>
+    #top-concepts ul { list-style: none; padding-left: 10; }
+    #top-concepts li { margin-bottom: 0.9rem; }
+    #top-concepts .concept-def { margin-top: 0.25rem; }
+  </style>
+  <h2>Top concepts</h2>
+  <ul>
+    <li class="concept-item"><strong>Cognitive/Analytical</strong><div class="concept-def">Skills for analysis, reasoning, problem-solving, and informed decision-making</div></li>
+    <li class="concept-item"><strong>Foundational/Core</strong><div class="concept-def">Essential skills in literacy, numeracy, and basic digital fluency</div></li>
+    <li class="concept-item"><strong>Regulatory/Compliance</strong><div class="concept-def">Skills ensuring safety, ethical practice, and compliance with standards</div></li>
+    <li class="concept-item"><strong>Self-Management</strong><div class="concept-def">Capabilities for self-organisation, adaptability, and maintaining professional conduct</div></li>
+    <li class="concept-item"><strong>Social/Interpersonal</strong><div class="concept-def">Skills for collaboration, communication, and managing interpersonal relationships</div></li>
+    <li class="concept-item"><strong>Technical/Procedural</strong><div class="concept-def">Practical, industry-specific skills for operating tools, equipment, and technical systems</div></li>
+  </ul>
+</section>
+
         <h2>Metadata</h2>
         <dl>
           <div>
@@ -349,6 +366,14 @@ td {
           </div>
           <div>
             <dt>
+              <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionIRI" title="The property that identifies the version IRI of an ontology. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Iri</a>
+            </dt>
+            <dd>
+              <a href="#0.0.1">nstsn:0.0.1</a>
+            </dd>
+          </div>
+          <div>
+            <dt>
               <a class="hover_property" href="http://www.w3.org/2002/07/owl#versionInfo" title="The annotation property that provides version information for an ontology or another OWL construct. Defined in The OWL 2 Schema vocabulary (OWL 2)">Version Info</a>
             </dt>
             <dd><p>0.0.2</p></dd>
@@ -372,9 +397,25 @@ td {
       <div id="namespaces">
         <h2>Namespaces</h2>
         <dl>
-          <dt id="ns1">ns1</dt>
+          <dt id="dcterms">dcterms</dt>
           <dd>
-            <code>https://test.linked.data.gov.au/def/</code>
+            <code>http://purl.org/dc/terms/</code>
+          </dd>
+          <dt id="dewr">dewr</dt>
+          <dd>
+            <code>https://linked.data.gov.au/org/dewr</code>
+          </dd>
+          <dt id="jsa">jsa</dt>
+          <dd>
+            <code>https://linked.data.gov.au/org/jsa</code>
+          </dd>
+          <dt id="nstsn">nstsn</dt>
+          <dd>
+            <code>https://test.linked.data.gov.au/def/nst-nature/</code>
+          </dd>
+          <dt id="nstsncs">nstsncs</dt>
+          <dd>
+            <code>https://test.linked.data.gov.au/def/nst-nature</code>
           </dd>
           <dt id="owl">owl</dt>
           <dd>
@@ -383,6 +424,14 @@ td {
           <dt id="rdf">rdf</dt>
           <dd>
             <code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code>
+          </dd>
+          <dt id="schema">schema</dt>
+          <dd>
+            <code>https://schema.org/</code>
+          </dd>
+          <dt id="skos">skos</dt>
+          <dd>
+            <code>http://www.w3.org/2004/02/skos/core#</code>
           </dd>
         </dl>
       </div>
@@ -418,13 +467,31 @@ td {
           </h4>
           <ul class="second">
             <li>
-              <a href="#ns1">ns1</a>
+              <a href="#dcterms">dcterms</a>
+            </li>
+            <li>
+              <a href="#dewr">dewr</a>
+            </li>
+            <li>
+              <a href="#jsa">jsa</a>
+            </li>
+            <li>
+              <a href="#nstsn">nstsn</a>
+            </li>
+            <li>
+              <a href="#nstsncs">nstsncs</a>
             </li>
             <li>
               <a href="#owl">owl</a>
             </li>
             <li>
               <a href="#rdf">rdf</a>
+            </li>
+            <li>
+              <a href="#schema">schema</a>
+            </li>
+            <li>
+              <a href="#skos">skos</a>
             </li>
           </ul>
         </li>
